@@ -2,7 +2,7 @@
 
 ## Niveaux mesurés (EBU R128)
 
-- Mix final : **-14.0 LUFS** intégrés ; crête vraie **-1.5 dBTP** ; crête échantillon -1.5 dBFS ; échantillons saturés : **0**.
+- Mix final : **-14.2 LUFS** intégrés ; crête vraie **-2.4 dBTP** ; crête échantillon -2.4 dBFS ; échantillons saturés : **0**.
 - Voix seule : -14.1 LUFS.
 - Musique pendant qu'il parle : -29.3 LUFS, soit **-15.3 LU** sous la voix.
 - Musique pendant les plein écran : -24.7 LUFS (-10.6 LU).
@@ -16,11 +16,9 @@ Chaque effet démarre sur l'image indiquée (1 image = 1/30 s).
 | Moment | Image | Effet | Ce qui apparaît | Effet / voix |
 |---|---|---|---|---|
 | 0:00.00 | 0 | ouverture | Titre d'accroche : Tirez-vous | -3.2 LU |
-| 0:00.27 | 8 | mot | Titre d'accroche : de | -11.8 LU |
-| 0:00.53 | 16 | mot | Titre d'accroche : la | -11.8 LU |
-| 0:00.80 | 24 | mot | Titre d'accroche : valeur | -11.6 LU |
-| 0:01.07 | 32 | mot | Titre d'accroche : de | -11.4 LU |
-| 0:01.33 | 40 | mot | Titre d'accroche : l'IA ? | -10.6 LU |
+| 0:00.17 | 5 | mot | Titre d'accroche : de la valeur | -11.9 LU |
+| 0:00.33 | 10 | mot | Titre d'accroche : de l'IA ? | -11.8 LU |
+| 0:01.53 | 46 | zoom | Changement de cadrage | -21.6 LU |
 | 0:02.93 | 88 | zoom | Changement de cadrage | -22.4 LU |
 | 0:04.67 | 140 | zoom | Changement de cadrage | -23.5 LU |
 | 0:05.90 | 177 | zoom | Changement de cadrage | -21.6 LU |
@@ -78,7 +76,6 @@ Chaque effet démarre sur l'image indiquée (1 image = 1/30 s).
 
 ## Effets écartés (trop proches d'un effet plus important)
 
-- 0:01.50 (image 45) : zoom — Changement de cadrage
 - 0:16.27 (image 488) : zoom — Changement de cadrage
 - 0:19.77 (image 593) : zoom — Changement de cadrage
 - 0:23.43 (image 703) : zoom — Changement de cadrage

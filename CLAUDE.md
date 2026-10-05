@@ -44,13 +44,18 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
   - aucun démarrage en douceur : la première parole arrive dans les 0,2 premières secondes (`MARGE_DEBUT`
     = 0,03 s de silence gardé au début, au lieu de 0,15 s) ; la musique démarre franchement à la première image
     (pas de fondu d'entrée), avec l'impact d'ouverture ;
-  - coup de zoom : visage serré à 30 % sur la première image, recul jusqu'au cadre normal en 0,3 s,
-    léger tremblement de l'image à l'impact ; flash blanc de 2 images (`OUVERTURE` dans `src/charte.ts`) ;
-  - **titre d'accroche géant à adapter à chaque vidéo** (`titre.lignes` dans `montage.json`, une entrée par
-    ligne, 3 lignes courtes ; `motsCles` en jaune) : au centre, sur le buste (sous le menton), sur ~85 % de la
-    zone sûre, blanc à contour noir épais ; les mots claquent un par un toutes les 8 images (trop gros puis se
-    posent, sans jamais toucher un voisin ni sortir de la zone sûre) ; à `geant` = 2,5 s il rétrécit et monte
-    dans un bandeau en haut, où il reste jusqu'à `duree` = 5 s ; sous-titres masqués tant qu'il est géant ;
+  - coup de zoom : visage serré à **35 %** sur la première image, **recul linéaire** jusqu'au cadre normal en
+    **0,4 s** (12 images : le visage rétrécit nettement à chaque image, vérifié 1,30 → 1,24 → 1,15 → 1,06 → 1,00
+    aux images 0, 3, 6, 9, 12), léger tremblement amorti ; flash blanc de 2 images assez léger (opacité 0,6 puis
+    0,3) pour que le visage se voie dès l'image 0 (`OUVERTURE` dans `src/charte.ts`) ;
+  - **titre d'accroche géant à adapter à chaque vidéo** (`titre.lignes` dans `montage.json` : 3 lignes courtes ;
+    `motsCles` → mot en **noir sur un bloc jaune plein**) : chaque ligne a sa propre taille pour remplir
+    **toute la largeur de la zone sûre** (la ligne la plus courte est donc la plus haute), centrée, blanc à
+    contour noir épais ; posé en bas de la zone sûre sur le buste, jamais au-dessus de 1 088 px (menton à
+    ~1 084 px avec le zoom de 35 %) ; les **lignes arrivent une à une toutes les 5 images** (titre complet en
+    0,33 s), chacune avec un claquement visuel (étirement vertical qui se pose en 4 images ; pas de grossissement
+    en largeur, la ligne remplit déjà la zone) et sonore ; à `geant` = 2,5 s il rétrécit et monte dans un bandeau
+    en haut, où il reste jusqu'à `duree` = 5 s ; sous-titres masqués tant qu'il est géant ;
   - cadrage qui change toutes les ~1,5 s pendant les 5 premières secondes, puis rythme normal.
 - **Pas de barre de progression.**
 - Silences de plus de 0,6 s coupés (détection au volume sonore, −30 dB, marge de 0,15 s).
@@ -80,22 +85,23 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - **Niveaux par défaut** (`MUSIQUE` dans `scripts/mixer.py`, validés par Joseph) : voix normalisée, musique
   **16 LU sous la voix quand il parle**, **10 LU sous la voix en plein écran et sur le carton de fin**
   (1 s à ce niveau puis fondu jusqu'au silence), sans fondu d'entrée, 12 LU sous la voix dans les silences. La voix reste toujours
-  parfaitement compréhensible. **Mix final à −14 LUFS**, limiteur de crête : **crête vraie sous −1 dBTP**,
+  parfaitement compréhensible. **Mix final à −14 LUFS**, limiteur de crête à −2 dBTP (l'encodage AAC remonte les
+  crêtes d'environ 0,8 dB) : **crête vraie du fichier final sous −1 dBTP**, à mesurer sur le fichier envoyé,
   aucune saturation. Effets sonores : calage et niveaux inchangés (ci-dessous).
 - **Effets sonores** fabriqués par `scripts/sons.py` (une seule famille : impacts graves accordés sur la tonique,
   cloches sur l'accord de tonique, souffles filtrés, même réverbération), **accordés sur la tonalité de la
   musique** — relancer `python3 scripts/sons.py` si la musique change. Un son par type, toujours le même :
   ouverture (impact grave et puissant sur la première image, le plus fort de tous : ~−2 LU sous la voix),
-  mot du titre (claquement court et sec, un par mot), croix rouge (« non » court et sec, quinte → tonique), coche verte (« ding »
+  ligne du titre (claquement court et sec, un par ligne, autorisé à 5 images d'écart), croix rouge (« non » court et sec, quinte → tonique), coche verte (« ding »
   montant, quinte → tonique), apparition d'un élément de panneau sans croix ni coche (glissement léger),
   entrée d'un plein écran (souffle + petit impact), date / lieu / numéro (impact marqué + cloches),
   changement de cadrage (souffle à peine perceptible), carton de fin (montée douce + impact final).
 - **Calage** : chaque effet démarre sur l'échantillon exact de la **première image où l'élément est visible**
-  (image de départ + 1, car les animations partent de 0 ; les mots du titre, visibles dès leur image, sonnent
-  sur cette image : impact d'ouverture à l'image 0).
+  (image de départ + 1, car les animations partent de 0 ; les lignes du titre, visibles dès leur image, sonnent
+  sur cette image : impact d'ouverture à l'image 0, claquements aux images 5 et 10).
 - **Dosage** : effets toujours sous la voix (de −2 à −25 LU selon le type), **un seul effet à la fois** :
   deux effets à moins de 8 images d'écart → seul le plus important est gardé (ouverture > carton > info > plein écran
-  > croix/coche/mot du titre > glissement > cadrage). Le premier élément d'un panneau sonne avec sa croix/coche
+  > croix/coche/ligne du titre > glissement > cadrage). Le premier élément d'un panneau sonne avec sa croix/coche
   (pas de glissement en plus) ; une info qui ouvre un plein écran remplace le son d'entrée.
 - `scripts/rendre.sh` rend l'image sans son puis ajoute `public/<projet>/mix.wav` tel quel (calage vérifié :
   0 échantillon de décalage).

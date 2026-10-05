@@ -22,7 +22,7 @@ ECH_PAR_IMAGE = SR // FPS  # 1600 : chaque image tombe sur un échantillon exact
 
 VOIX_LUFS = -16.0      # voix normalisée avant mixage
 SORTIE_LUFS = -14.0    # niveau final (réseaux sociaux)
-CRETE_MAX_DB = -1.0    # limiteur de crête
+CRETE_MAX_DB = -2.0    # limiteur de crête : marge pour l’encodage AAC (crête vraie finale sous −1 dBTP)
 
 # Musique, en LU par rapport à la voix : très basse quand il parle, remonte dans les silences,
 # un peu plus haute en plein écran, et sur le carton de fin.
@@ -144,10 +144,12 @@ def evenements(props):
             ev.append((image, "zoom", "Changement de cadrage"))
 
     # Un seul effet à la fois : si deux effets sont trop proches, on garde le plus important.
+    # Exception : les lignes du titre d'accroche (une toutes les 5 images) ont chacune leur claquement.
     ev.sort(key=lambda e: (e[0], -PRIORITE[e[1]]))
+    titre = ("ouverture", "mot")
     garde = []
     for e in ev:
-        proches = [g for g in garde if abs(g[0] - e[0]) < ECART_MIN]
+        proches = [g for g in garde if abs(g[0] - e[0]) < ECART_MIN and not (e[1] in titre and g[1] in titre)]
         if not proches:
             garde.append(e)
         elif all(PRIORITE[e[1]] > PRIORITE[g[1]] for g in proches):

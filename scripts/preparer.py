@@ -22,7 +22,7 @@ MARGE = 0.15          # on garde un peu de silence de chaque côté de la coupe
 MARGE_DEBUT = 0.03    # au tout début : la première parole doit arriver dans les 0,2 premières secondes
 # Ouverture : cadrage qui change toutes les ~1,5 s pendant les 5 premières secondes.
 OUVERTURE = 5 * FPS
-PAS_MOTS_TITRE = 8    # images entre deux mots du titre d'accroche (= écart mini entre deux effets)
+PAS_LIGNES_TITRE = 5  # images entre deux lignes du titre d'accroche (titre complet lisible en < 0,5 s)
 MOTS_PAR_GROUPE = 4
 BANDES_ONDE = 12
 
@@ -258,20 +258,13 @@ def plans_zoom(mots, images):
 
 
 def mots_titre(titre):
-    """Mots du titre d'accroche, ligne par ligne, avec l'image où chacun claque (un toutes les 8 images).
-    Une ponctuation isolée (« ? ») reste collée au mot précédent."""
-    mots, image = [], 0
+    """Lignes du titre d'accroche avec l'image où chacune claque (une toutes les 5 images).
+    Une ponctuation isolée (« ? ») reste collée au mot précédent (espace insécable)."""
+    lignes = []
     for l, ligne in enumerate(titre["lignes"]):
-        jetons = []
-        for j in ligne.split():
-            if jetons and all(c in "?!:;." for c in j):
-                jetons[-1] += "\u00a0" + j
-            else:
-                jetons.append(j)
-        for j in jetons:
-            mots.append({"texte": j, "ligne": l, "image": image})
-            image += PAS_MOTS_TITRE
-    return mots
+        texte = re.sub(r"\s+([?!:;])", "\u00a0\\1", ligne.strip())
+        lignes.append({"texte": texte, "ligne": l, "image": l * PAS_LIGNES_TITRE})
+    return lignes
 
 
 def jetons_significatifs(texte):

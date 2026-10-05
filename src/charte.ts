@@ -25,8 +25,9 @@ export const PANNEAU = {haut: ZONE_SURE.haut, hauteur: 320, tailleTexte: 76};
 export const VISAGE = {x: 540, y: 760};
 export const ZOOM_SERRE = 1.11;
 export const ZOOM_SERRE_PANNEAU = 1.06; // zoom limité quand un panneau est affiché
-// Ouverture : coup de zoom (30 % → cadre normal en 0,3 s), tremblement et flash blanc à l'impact.
-export const OUVERTURE = {zoom: 1.3, recul: 9, tremblement: 9, amplitude: 14, flash: 2};
+// Ouverture : coup de zoom (35 % → cadre normal en 0,4 s, recul linéaire pour qu'il se voie à chaque image),
+// tremblement et flash blanc de 2 images à l'impact.
+export const OUVERTURE = {zoom: 1.35, recul: 12, tremblement: 12, amplitude: 14, flash: 2};
 
 export const FONDS: Record<Fond, [string, string, string]> = {
   nuit: ['#070B1F', '#1B2A6B', '#3B1F6E'],

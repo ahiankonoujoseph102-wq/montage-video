@@ -32,7 +32,7 @@ const Visage: React.FC<{video: string; debuts: number[]; panneaux: Scene[]; fin:
   });
   // Ouverture : coup de zoom (visage serré à 30 %, recul jusqu'au cadre normal) et tremblement à l'impact.
   const zoom = f < OUVERTURE.recul
-    ? interpolate(f, [0, OUVERTURE.recul], [OUVERTURE.zoom, zoomPlan], {easing: Easing.out(Easing.cubic)})
+    ? interpolate(f, [0, OUVERTURE.recul], [OUVERTURE.zoom, zoomPlan])
     : zoomPlan;
   const amorti = Math.max(0, 1 - f / OUVERTURE.tremblement) * OUVERTURE.amplitude;
   const dx = amorti * Math.sin(f * 2.7);
@@ -78,7 +78,8 @@ export const Montage: React.FC<MontageProps> = (p) => {
 const Flash: React.FC = () => {
   const f = useCurrentFrame();
   if (f >= OUVERTURE.flash) return null;
-  return <AbsoluteFill style={{background: 'white', opacity: f === 0 ? 0.85 : 0.4}} />;
+  // Assez léger pour que le visage reste visible sous le flash (le coup de zoom doit se voir dès l'image 0).
+  return <AbsoluteFill style={{background: 'white', opacity: f === 0 ? 0.6 : 0.3}} />;
 };
 
 const MontageCharge: React.FC<MontageProps> = (p) => {
