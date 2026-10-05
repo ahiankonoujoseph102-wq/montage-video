@@ -21,7 +21,8 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
    Les écrire dans `projets/<projet>/montage.json` (voir l'exemple `projets/formation-ia/`).
 4. **Attendre son accord avant le rendu complet.** Un extrait court (`scripts/rendre.sh <projet> 45`)
    est possible pour juger le style.
-5. `python3 scripts/preparer.py <projet>` puis `scripts/rendre.sh <projet>` ;
+5. `python3 scripts/preparer.py <projet>`, `python3 scripts/mixer.py <projet>` (bande son), puis
+   `scripts/rendre.sh <projet>` ; donner les niveaux et la liste des effets (`projets/<projet>/sons.md`) ;
    **vérifier des images du rendu** (rien ne déborde, textes lisibles, animations qui ne cachent
    pas les sous-titres), puis lui envoyer la vidéo finale.
 
@@ -59,6 +60,30 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - **Carton de fin** de 3 s en plein écran après le dernier mot (`carton` dans `montage.json`, `\n` pour couper
   le titre) : par défaut fond `nuit`, « LOMÉ IA / SCHOOL » en grand, puis « Formation gratuite », la date,
   le lieu, le numéro et « Lien en description ». Le son baisse en fondu sur la dernière demi-seconde.
+
+## Son (fixé)
+
+- **Musique par défaut** : `sons/musique_defaut.m4a` (musique personnelle de Joseph, droits OK), décrite dans
+  `sons/musique.json` (tonalité **Sol mineur**, ~65 BPM, mesurées avec librosa). En boucle si plus courte que la
+  vidéo (fondu enchaîné de 1,5 s au raccord), fondu d'entrée de 1 s, fondu de sortie sur tout le carton de fin.
+- **Voix toujours compréhensible** (`scripts/mixer.py`) : voix normalisée, musique baissée automatiquement quand
+  il parle (−23,5 LU sous la voix), un peu remontée en plein écran (−19,5 LU) et sur le carton de fin (−18 LU),
+  et dans les silences. Mix final à −14 LUFS, limiteur de crête : crête vraie ≤ −1 dBTP, aucune saturation.
+- **Effets sonores** fabriqués par `scripts/sons.py` (une seule famille : impacts graves accordés sur la tonique,
+  cloches sur l'accord de tonique, souffles filtrés, même réverbération), **accordés sur la tonalité de la
+  musique** — relancer `python3 scripts/sons.py` si la musique change. Un son par type, toujours le même :
+  titre (impact grave et net), croix rouge (« non » court et sec, quinte → tonique), coche verte (« ding »
+  montant, quinte → tonique), apparition d'un élément de panneau sans croix ni coche (glissement léger),
+  entrée d'un plein écran (souffle + petit impact), date / lieu / numéro (impact marqué + cloches),
+  changement de cadrage (souffle à peine perceptible), carton de fin (montée douce + impact final).
+- **Calage** : chaque effet démarre sur l'échantillon exact de la **première image où l'élément est visible**
+  (image de départ + 1, car les animations partent de 0 ; le titre, visible dès l'image 0, sonne à 0).
+- **Dosage** : effets toujours sous la voix (de −5 à −23 LU selon le type), **un seul effet à la fois** :
+  deux effets à moins de 8 images d'écart → seul le plus important est gardé (carton > titre/info > plein écran
+  > croix/coche > glissement > cadrage). Le premier élément d'un panneau sonne avec sa croix/coche
+  (pas de glissement en plus) ; une info qui ouvre un plein écran remplace le son d'entrée.
+- `scripts/rendre.sh` rend l'image sans son puis ajoute `public/<projet>/mix.wav` tel quel (calage vérifié :
+  0 échantillon de décalage).
 
 ## Glossaire
 
