@@ -33,9 +33,12 @@ const tailleGroupe = (mots: string[]) => {
   return 40;
 };
 
-export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]; masques: number[]}> = ({mots, groupes, masques}) => {
+export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]; masques: number[]; masquerAvant?: number}> = ({
+  mots, groupes, masques, masquerAvant = 0,
+}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  if (frame < masquerAvant) return null; // titre géant affiché : pas de sous-titres
 
   let g = -1;
   for (let i = 0; i < groupes.length; i++) if (mots[groupes[i][0]].debut <= frame) g = i;

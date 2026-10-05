@@ -24,7 +24,10 @@ export type Scene = {
 
 export type Carton = {debut: number; fin: number; fond: Fond; titre: string; lignes: string[]};
 
-export type Titre = {lignes: string[]; motsCles: string[]; duree: number};
+export type MotTitre = {texte: string; ligne: number; image: number};
+
+// Titre d'accroche : géant pendant `geant` s, puis rangé dans le bandeau du haut jusqu'à `duree` s.
+export type Titre = {lignes: string[]; motsCles: string[]; geant: number; duree: number; mots: MotTitre[]};
 
 export type MontageProps = {
   video: string;

@@ -130,14 +130,25 @@ def fabriquer(tonique, mode):
     quinte4, tierce4 = note(tonique, 7, 4), note(tonique, tierce, 4)
     sons = {}
 
-    # Titre : impact grave et net — boum sur la tonique, claquement médium, clic d'attaque.
-    d = 1.6
+    # Ouverture (première image) : impact grave et puissant — sub-basse longue qui tombe de deux octaves,
+    # deuxième couche à l'octave, claquement médium, clic d'attaque, accord de tonique grave en résonance.
+    d = 2.4
     x = np.zeros(int(d * SR))
-    place(x, boum(d, G2 * 3, G1, 0.45), 0)
-    place(x, 0.5 * boum(d, G3 * 2, G2, 0.25), 0)
-    place(x, 0.5 * filtre(bruit(0.15), 300, 1800, 2) * enveloppe(t_(0.15), 0.001, 0.03), 0)
-    place(x, 0.35 * clic(), 0)
-    sons["titre"] = finir(reverb(x, 0.22, 1.4))
+    place(x, boum(d, G2 * 4, G1, 0.75, 0.05), 0)
+    place(x, 0.6 * boum(d, G3 * 2, G2, 0.35), 0)
+    place(x, 0.6 * filtre(bruit(0.2), 250, 2200, 2) * enveloppe(t_(0.2), 0.001, 0.045), 0)
+    place(x, 0.45 * clic(0.015, 2000), 0)
+    for f, a in [(G3, 0.18), (quinte4 / 2, 0.12)]:
+        place(x, a * cloche(2.0, f, 0.8, 0.4), 0)
+    sons["ouverture"] = finir(reverb(x, 0.26, 1.8))
+
+    # Mot du titre d'accroche : claquement court et sec (clic + médium + petite note de tonique).
+    d = 0.3
+    x = np.zeros(int(d * SR))
+    place(x, 0.7 * filtre(bruit(0.08), 900, 3500, 2) * enveloppe(t_(0.08), 0.0005, 0.018), 0)
+    place(x, 0.5 * clic(0.01, 3000), 0)
+    place(x, 0.5 * boum(0.12, G3 * 2, G3, 0.03, 0.01), 0)
+    sons["mot"] = finir(reverb(x, 0.08, 0.35))
 
     # Croix rouge : « non » court et sec, un peu grave — deux notes qui tombent (quinte → tonique).
     d = 0.35

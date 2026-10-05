@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import {AbsoluteFill, continueRender, delayRender, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
-import {VISAGE, ZOOM_SERRE, ZOOM_SERRE_PANNEAU} from './charte';
+import {AbsoluteFill, continueRender, delayRender, Easing, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame,
+  useVideoConfig} from 'remotion';
+import {OUVERTURE, VISAGE, ZOOM_SERRE, ZOOM_SERRE_PANNEAU} from './charte';
 import {CartonFin} from './composants/CartonFin';
 import {Onde} from './composants/Onde';
 import {Panneau} from './composants/Panneau';
 import {PassageAnime} from './composants/PassageAnime';
 import {SousTitres} from './composants/SousTitres';
-import {TitreAccroche} from './composants/TitreAccroche';
+import {finTitreGeant, TitreAccroche} from './composants/TitreAccroche';
 import type {MontageProps, Scene} from './types';
 
 const TRANSITION_ZOOM = 4; // images : changement de cadrage très rapide
@@ -25,12 +26,20 @@ const Visage: React.FC<{video: string; debuts: number[]; panneaux: Scene[]; fin:
   )));
   const serre = ZOOM_SERRE - (ZOOM_SERRE - ZOOM_SERRE_PANNEAU) * poidsPanneau;
   const zoomDe = (k: number) => (k % 2 === 1 ? serre : 1);
-  const zoom = interpolate(f, [debuts[n] ?? 0, (debuts[n] ?? 0) + TRANSITION_ZOOM], [zoomDe(n - 1), zoomDe(n)], {
+  const zoomPlan = interpolate(f, [debuts[n] ?? 0, (debuts[n] ?? 0) + TRANSITION_ZOOM], [zoomDe(n - 1), zoomDe(n)], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
+  // Ouverture : coup de zoom (visage serré à 30 %, recul jusqu'au cadre normal) et tremblement à l'impact.
+  const zoom = f < OUVERTURE.recul
+    ? interpolate(f, [0, OUVERTURE.recul], [OUVERTURE.zoom, zoomPlan], {easing: Easing.out(Easing.cubic)})
+    : zoomPlan;
+  const amorti = Math.max(0, 1 - f / OUVERTURE.tremblement) * OUVERTURE.amplitude;
+  const dx = amorti * Math.sin(f * 2.7);
+  const dy = amorti * 0.7 * Math.cos(f * 3.3);
   return (
-    <AbsoluteFill style={{transform: `scale(${zoom})`, transformOrigin: `${VISAGE.x}px ${VISAGE.y}px`}}>
+    <AbsoluteFill style={{transform: `translate(${dx}px, ${dy}px) scale(${zoom})`,
+      transformOrigin: `${VISAGE.x}px ${VISAGE.y}px`}}>
       {/* La vidéo est déjà coupée et recadrée en 1080 × 1920 par scripts/preparer.py. */}
       {/* Le son baisse doucement sur la dernière demi-seconde avant le carton de fin. */}
       <OffthreadVideo src={staticFile(video)} style={{width: '100%', height: '100%'}}
@@ -65,8 +74,16 @@ export const Montage: React.FC<MontageProps> = (p) => {
   return pret ? <MontageCharge {...p} /> : null;
 };
 
+// Flash blanc très bref (2 images) à l'apparition du premier mot du titre.
+const Flash: React.FC = () => {
+  const f = useCurrentFrame();
+  if (f >= OUVERTURE.flash) return null;
+  return <AbsoluteFill style={{background: 'white', opacity: f === 0 ? 0.85 : 0.4}} />;
+};
+
 const MontageCharge: React.FC<MontageProps> = (p) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   const pleinEcran = p.scenes.filter((s) => s.disposition !== 'panneau');
   const panneaux = p.scenes.filter((s) => s.disposition === 'panneau');
   const dansPleinEcran = pleinEcran.some((s) => frame >= s.debut && frame < s.fin);
@@ -88,9 +105,11 @@ const MontageCharge: React.FC<MontageProps> = (p) => {
         </Sequence>
       ))}
       {p.titre ? <TitreAccroche titre={p.titre} /> : null}
+      {p.titre ? <Flash /> : null}
       {/* L'onde sonore n'apparaît que dans les passages plein écran. */}
       {dansPleinEcran ? <Onde onde={p.onde} /> : null}
-      <SousTitres mots={p.mots} groupes={p.groupes} masques={p.masques} />
+      <SousTitres mots={p.mots} groupes={p.groupes} masques={p.masques}
+        masquerAvant={p.titre ? finTitreGeant(p.titre, fps) : 0} />
       {p.carton ? (
         <Sequence from={p.carton.debut} durationInFrames={p.carton.fin - p.carton.debut} layout="none">
           <CartonFin carton={p.carton} />

@@ -1,13 +1,15 @@
 {
   "titre": {
     "lignes": [
-      "Tirez-vous de la",
-      "valeur de l'IA ?"
+      "Tirez-vous",
+      "de la valeur",
+      "de l'IA ?"
     ],
     "motsCles": [
       "valeur"
     ],
-    "duree": 3
+    "geant": 2.5,
+    "duree": 5
   },
   "motsCles": [
     "valeur",

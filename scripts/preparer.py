@@ -19,6 +19,10 @@ LARGEUR, HAUTEUR = 1080, 1920
 SILENCE_MIN = 0.6     # un silence plus long que ça est coupé
 SEUIL_SILENCE_DB = -30
 MARGE = 0.15          # on garde un peu de silence de chaque côté de la coupe
+MARGE_DEBUT = 0.03    # au tout début : la première parole doit arriver dans les 0,2 premières secondes
+# Ouverture : cadrage qui change toutes les ~1,5 s pendant les 5 premières secondes.
+OUVERTURE = 5 * FPS
+PAS_MOTS_TITRE = 8    # images entre deux mots du titre d'accroche (= écart mini entre deux effets)
 MOTS_PAR_GROUPE = 4
 BANDES_ONDE = 12
 
@@ -53,7 +57,7 @@ def segments_gardes(silences, total):
     gardes, t = [], 0.0
     for debut, fin in silences:
         coupe_debut = debut + MARGE if debut > 0 else 0.0
-        coupe_fin = fin - MARGE if fin < total else total
+        coupe_fin = fin - (MARGE_DEBUT if debut == 0 else MARGE) if fin < total else total
         if coupe_fin - coupe_debut <= 0:
             continue
         if coupe_debut > t:
@@ -226,25 +230,48 @@ def grouper(mots, coupures):
 
 def plans_zoom(mots, images):
     """Images où le cadrage alterne : débuts de phrase et mots après une virgule, en visant un
-    changement toutes les 3 à 4 s, jamais plus de 5 s sans changement."""
-    mini, cible, maxi = 3 * FPS, 3.5 * FPS, 5 * FPS
+    changement toutes les 3 à 4 s, jamais plus de 5 s sans changement. Pendant l'ouverture (5 premières
+    secondes), un changement toutes les ~1,5 s."""
     candidats = [images[i] for i in range(1, len(mots)) if mots[i - 1]["mot"][-1] in ".?!,;:"]
     tous = sorted(set(images))
     plans = [0]
     while True:
         dernier = plans[-1]
+        if dernier < OUVERTURE:
+            mini, cible, maxi = 1.2 * FPS, 1.5 * FPS, 1.8 * FPS
+        else:
+            mini, cible, maxi = 3 * FPS, 3.5 * FPS, 5 * FPS
         possibles = [c for c in candidats if dernier + mini <= c <= dernier + maxi]
         if possibles:
             plans.append(min(possibles, key=lambda c: abs(c - dernier - cible)))
         else:
-            # Pas de ponctuation au bon moment : on change au début d'un mot, vers 4 s.
+            # Pas de ponctuation au bon moment : on change au début d'un mot, au plus près de la cible
+            # (4 s en rythme normal).
+            vise = cible if dernier < OUVERTURE else 4 * FPS
             mots_possibles = [t for t in tous if dernier + mini <= t <= dernier + maxi]
             suivants = [t for t in tous if t >= dernier + mini]
             if not suivants:
                 break
-            plans.append(min(mots_possibles, key=lambda t: abs(t - dernier - 4 * FPS)) if mots_possibles
+            plans.append(min(mots_possibles, key=lambda t: abs(t - dernier - vise)) if mots_possibles
                          else suivants[0])
     return plans
+
+
+def mots_titre(titre):
+    """Mots du titre d'accroche, ligne par ligne, avec l'image où chacun claque (un toutes les 8 images).
+    Une ponctuation isolée (« ? ») reste collée au mot précédent."""
+    mots, image = [], 0
+    for l, ligne in enumerate(titre["lignes"]):
+        jetons = []
+        for j in ligne.split():
+            if jetons and all(c in "?!:;." for c in j):
+                jetons[-1] += "\u00a0" + j
+            else:
+                jetons.append(j)
+        for j in jetons:
+            mots.append({"texte": j, "ligne": l, "image": image})
+            image += PAS_MOTS_TITRE
+    return mots
 
 
 def jetons_significatifs(texte):
@@ -338,7 +365,7 @@ def main():
         "video": f"{nom}/video.mp4",
         "dureeImages": carton["fin"] if carton else nb_images,
         "carton": carton,
-        "titre": config.get("titre"),
+        "titre": {**config["titre"], "mots": mots_titre(config["titre"])} if config.get("titre") else None,
         "mots": mots_sortie,
         "groupes": groupes,
         "plans": plans_zoom(mots, [m["debut"] for m in mots_sortie]),

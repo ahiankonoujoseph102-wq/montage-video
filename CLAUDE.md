@@ -40,8 +40,18 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
   sombre en bas d'image. Jamais un mot seul à l'écran : le 2e mot d'un groupe apparaît avec le 1er, et
   un groupe d'un mot est rattaché au voisin (sauf phrase d'un seul mot). Un numéro de téléphone
   s'affiche seul sur sa ligne.
-- Titre d'accroche animé pendant les 3 premières secondes, sur deux lignes ajustées à la largeur
-  (`titre.lignes` dans `montage.json`), mot-clé en jaune.
+- **Ouverture par défaut (5 premières secondes, à garder pour toutes les vidéos)** :
+  - aucun démarrage en douceur : la première parole arrive dans les 0,2 premières secondes (`MARGE_DEBUT`
+    = 0,03 s de silence gardé au début, au lieu de 0,15 s) ; la musique démarre franchement à la première image
+    (pas de fondu d'entrée), avec l'impact d'ouverture ;
+  - coup de zoom : visage serré à 30 % sur la première image, recul jusqu'au cadre normal en 0,3 s,
+    léger tremblement de l'image à l'impact ; flash blanc de 2 images (`OUVERTURE` dans `src/charte.ts`) ;
+  - **titre d'accroche géant à adapter à chaque vidéo** (`titre.lignes` dans `montage.json`, une entrée par
+    ligne, 3 lignes courtes ; `motsCles` en jaune) : au centre, sur le buste (sous le menton), sur ~85 % de la
+    zone sûre, blanc à contour noir épais ; les mots claquent un par un toutes les 8 images (trop gros puis se
+    posent, sans jamais toucher un voisin ni sortir de la zone sûre) ; à `geant` = 2,5 s il rétrécit et monte
+    dans un bandeau en haut, où il reste jusqu'à `duree` = 5 s ; sous-titres masqués tant qu'il est géant ;
+  - cadrage qui change toutes les ~1,5 s pendant les 5 premières secondes, puis rythme normal.
 - **Pas de barre de progression.**
 - Silences de plus de 0,6 s coupés (détection au volume sonore, −30 dB, marge de 0,15 s).
 - **Listes et énumérations** (erreurs, « Apprendre à », publics, question finale) : disposition
@@ -65,24 +75,27 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 
 - **Musique par défaut** : `sons/musique_defaut.m4a` (musique personnelle de Joseph, droits OK), décrite dans
   `sons/musique.json` (tonalité **Sol mineur**, ~65 BPM, mesurées avec librosa). En boucle si plus courte que la
-  vidéo (fondu enchaîné de 1,5 s au raccord), fondu d'entrée de 1 s, fondu de sortie sur tout le carton de fin.
+  vidéo (fondu enchaîné de 1,5 s au raccord), démarrage franc à la première image (pas de fondu d'entrée),
+  fondu de sortie sur le carton de fin.
 - **Niveaux par défaut** (`MUSIQUE` dans `scripts/mixer.py`, validés par Joseph) : voix normalisée, musique
   **16 LU sous la voix quand il parle**, **10 LU sous la voix en plein écran et sur le carton de fin**
-  (1 s à ce niveau puis fondu jusqu'au silence), 12 LU sous la voix dans les silences. La voix reste toujours
+  (1 s à ce niveau puis fondu jusqu'au silence), sans fondu d'entrée, 12 LU sous la voix dans les silences. La voix reste toujours
   parfaitement compréhensible. **Mix final à −14 LUFS**, limiteur de crête : **crête vraie sous −1 dBTP**,
   aucune saturation. Effets sonores : calage et niveaux inchangés (ci-dessous).
 - **Effets sonores** fabriqués par `scripts/sons.py` (une seule famille : impacts graves accordés sur la tonique,
   cloches sur l'accord de tonique, souffles filtrés, même réverbération), **accordés sur la tonalité de la
   musique** — relancer `python3 scripts/sons.py` si la musique change. Un son par type, toujours le même :
-  titre (impact grave et net), croix rouge (« non » court et sec, quinte → tonique), coche verte (« ding »
+  ouverture (impact grave et puissant sur la première image, le plus fort de tous : ~−2 LU sous la voix),
+  mot du titre (claquement court et sec, un par mot), croix rouge (« non » court et sec, quinte → tonique), coche verte (« ding »
   montant, quinte → tonique), apparition d'un élément de panneau sans croix ni coche (glissement léger),
   entrée d'un plein écran (souffle + petit impact), date / lieu / numéro (impact marqué + cloches),
   changement de cadrage (souffle à peine perceptible), carton de fin (montée douce + impact final).
 - **Calage** : chaque effet démarre sur l'échantillon exact de la **première image où l'élément est visible**
-  (image de départ + 1, car les animations partent de 0 ; le titre, visible dès l'image 0, sonne à 0).
-- **Dosage** : effets toujours sous la voix (de −5 à −23 LU selon le type), **un seul effet à la fois** :
-  deux effets à moins de 8 images d'écart → seul le plus important est gardé (carton > titre/info > plein écran
-  > croix/coche > glissement > cadrage). Le premier élément d'un panneau sonne avec sa croix/coche
+  (image de départ + 1, car les animations partent de 0 ; les mots du titre, visibles dès leur image, sonnent
+  sur cette image : impact d'ouverture à l'image 0).
+- **Dosage** : effets toujours sous la voix (de −2 à −25 LU selon le type), **un seul effet à la fois** :
+  deux effets à moins de 8 images d'écart → seul le plus important est gardé (ouverture > carton > info > plein écran
+  > croix/coche/mot du titre > glissement > cadrage). Le premier élément d'un panneau sonne avec sa croix/coche
   (pas de glissement en plus) ; une info qui ouvre un plein écran remplace le son d'entrée.
 - `scripts/rendre.sh` rend l'image sans son puis ajoute `public/<projet>/mix.wav` tel quel (calage vérifié :
   0 échantillon de décalage).
@@ -104,6 +117,9 @@ partout ; « Lomé IA School » ne change pas.
 - Tailles de texte mesurées (`fitText`, `measureText`) : `Montage` attend le chargement de Montserrat
   avant d'afficher quoi que ce soit, sinon la taille varie d'une image à l'autre.
 - Vérifier les sous-titres sur des images prises **pendant** l'apparition des mots, pas seulement après.
+- `scripts/sons.py` tire du bruit aléatoire dans l'ordre des sons : ajouter un son change le grain des
+  suivants. Les effets versionnés dans `sons/effets/` font foi ; ne régénérer que le son ajouté
+  (restaurer les autres avec `git checkout -- sons/effets/<nom>.wav`).
 - Réseau : huggingface.co, drive.google.com et drive.usercontent.google.com doivent être autorisés
   dans l'environnement.
 - Vidéos WhatsApp en basse résolution (464 × 832) : agrandies, donc un peu floues. Demander l'original.

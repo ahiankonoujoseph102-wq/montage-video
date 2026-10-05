@@ -27,15 +27,15 @@ CRETE_MAX_DB = -1.0    # limiteur de crête
 # Musique, en LU par rapport à la voix : très basse quand il parle, remonte dans les silences,
 # un peu plus haute en plein écran, et sur le carton de fin.
 MUSIQUE = {"parle": -16.0, "parle_plein_ecran": -10.0, "silence": -12.0, "carton": -10.0}
-FONDU_ENTREE = 1.0
+FONDU_ENTREE = 0.0  # aucun démarrage en douceur : la musique part franchement à la première image
 
 # Effets : niveau (sonie de l'effet, en LU par rapport à la voix) — toujours sous la voix.
 EFFETS = {
-    "titre": -6.0, "info": -6.0, "carton": -5.0, "plein_ecran": -9.0,
+    "ouverture": -2.0, "mot": -11.0, "info": -6.0, "carton": -5.0, "plein_ecran": -9.0,
     "croix": -10.0, "coche": -10.0, "panneau": -13.0, "zoom": -22.0,
 }
 # Priorité quand deux effets tomberaient presque ensemble : on ne garde que le plus important.
-PRIORITE = {"carton": 6, "titre": 5, "info": 5, "plein_ecran": 4, "croix": 3, "coche": 3, "panneau": 2, "zoom": 1}
+PRIORITE = {"ouverture": 7, "carton": 6, "mot": 3, "info": 5, "plein_ecran": 4, "croix": 3, "coche": 3, "panneau": 2, "zoom": 1}
 ECART_MIN = 8  # images (≈ 0,27 s) entre deux effets, pour ne jamais les empiler
 # Les animations partent de 0 (opacité, ouverture du cercle, zoom) sur leur image de départ :
 # l'élément n'est visible qu'à l'image suivante. L'effet tombe sur cette première image visible.
@@ -110,8 +110,11 @@ def lisser_db(cible_db, attaque=0.06, relache=0.45):
 def evenements(props):
     """Liste (image, type, description) de tout ce qui apparaît à l'écran."""
     ev = []
+    # Ouverture : impact puissant sur la première image (premier mot du titre), puis un claquement
+    # par mot du titre d'accroche.
     if props.get("titre"):
-        ev.append((0, "titre", "Titre d'accroche"))
+        for k, m in enumerate(props["titre"]["mots"]):
+            ev.append((m["image"], "ouverture" if k == 0 else "mot", f"Titre d'accroche : {m['texte']}"))
     for s in props["scenes"]:
         if s["disposition"] == "panneau":
             for k, e in enumerate(s["elements"]):
@@ -153,8 +156,9 @@ def evenements(props):
             garde.append(e)
     garde.sort()
     ecartes = [e for e in ev if e not in garde]
-    # Le titre est visible dès l'image 0 ; tout le reste apparaît une image après son départ.
-    visible = [(i if q == "titre" else i + DECALAGE_VISIBLE, q, t) for i, q, t in garde]
+    # Les mots du titre sont visibles dès leur image (ils claquent en grand, sans fondu) ;
+    # tout le reste apparaît une image après son départ.
+    visible = [(i if q in ("ouverture", "mot") else i + DECALAGE_VISIBLE, q, t) for i, q, t in garde]
     return visible, ecartes
 
 
@@ -200,7 +204,8 @@ def main():
     gain_db = lisser_db(cible)
     gain = np.repeat(db(gain_db), SR // 100)
     gain = np.pad(gain, (0, max(0, n - len(gain))), mode="edge")[:n]
-    gain[:int(FONDU_ENTREE * SR)] *= np.linspace(0, 1, int(FONDU_ENTREE * SR))
+    if FONDU_ENTREE:
+        gain[:int(FONDU_ENTREE * SR)] *= np.linspace(0, 1, int(FONDU_ENTREE * SR))
     if carton:  # carton : 1 s au niveau « carton », puis fondu de sortie jusqu'à la dernière image
         d = carton["debut"] * ECH_PAR_IMAGE + SR
         gain[d:] *= np.linspace(1, 0, n - d) ** 1.5
