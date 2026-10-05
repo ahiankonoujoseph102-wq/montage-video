@@ -1,170 +1,224 @@
 [
  {
-  "word": "Bonjour",
-  "start": 0.3,
-  "end": 0.775,
+  "word": "Vous",
+  "start": 0.5,
+  "end": 1.02,
   "keyword": false
  },
  {
-  "word": "à",
-  "start": 0.855,
-  "end": 1.03,
+  "word": "utilisez",
+  "start": 1.02,
+  "end": 1.5,
   "keyword": false
  },
  {
-  "word": "tous,",
-  "start": 1.11,
-  "end": 1.412,
+  "word": "l'IA,",
+  "start": 1.5,
+  "end": 1.82,
+  "keyword": true
+ },
+ {
+  "word": "mais",
+  "start": 1.98,
+  "end": 2.06,
   "keyword": false
  },
  {
-  "word": "aujourd'hui",
-  "start": 1.492,
-  "end": 2.068,
+  "word": "est-ce",
+  "start": 2.06,
+  "end": 2.28,
   "keyword": false
  },
  {
-  "word": "je",
-  "start": 2.148,
-  "end": 2.386,
-  "keyword": false
- },
- {
-  "word": "vais",
-  "start": 2.466,
-  "end": 2.732,
+  "word": "que",
+  "start": 2.28,
+  "end": 2.4,
   "keyword": false
  },
  {
   "word": "vous",
-  "start": 2.812,
-  "end": 3.088,
+  "start": 2.4,
+  "end": 2.5,
   "keyword": false
  },
  {
-  "word": "montrer",
-  "start": 3.168,
-  "end": 3.66,
+  "word": "savez",
+  "start": 2.5,
+  "end": 2.76,
   "keyword": false
  },
  {
-  "word": "comment",
-  "start": 3.74,
-  "end": 4.129,
+  "word": "vraiment",
+  "start": 2.76,
+  "end": 3.16,
   "keyword": false
  },
  {
-  "word": "monter",
-  "start": 4.209,
-  "end": 4.611,
+  "word": "en",
+  "start": 3.16,
+  "end": 3.46,
   "keyword": false
  },
  {
-  "word": "une",
-  "start": 4.691,
-  "end": 5.002,
+  "word": "tirer",
+  "start": 3.46,
+  "end": 3.62,
   "keyword": false
  },
  {
-  "word": "vidéo",
-  "start": 5.082,
-  "end": 5.549,
+  "word": "de",
+  "start": 3.62,
+  "end": 3.7,
+  "keyword": false
+ },
+ {
+  "word": "la",
+  "start": 3.7,
+  "end": 3.8,
+  "keyword": false
+ },
+ {
+  "word": "valeur?",
+  "start": 3.8,
+  "end": 4.48,
   "keyword": true
  },
  {
-  "word": "automatiquement",
-  "start": 5.629,
-  "end": 6.476,
-  "keyword": true
- },
- {
-  "word": "avec",
-  "start": 6.556,
-  "end": 6.991,
+  "word": "Aujourd'hui,",
+  "start": 4.48,
+  "end": 5.3,
   "keyword": false
  },
  {
-  "word": "Claude,",
-  "start": 7.071,
-  "end": 7.42,
+  "word": "l'IA",
+  "start": 5.52,
+  "end": 5.78,
+  "keyword": true
+ },
+ {
+  "word": "peut",
+  "start": 5.78,
+  "end": 5.98,
+  "keyword": false
+ },
+ {
+  "word": "vous",
+  "start": 5.98,
+  "end": 6.18,
+  "keyword": false
+ },
+ {
+  "word": "aider",
+  "start": 6.18,
+  "end": 6.44,
+  "keyword": false
+ },
+ {
+  "word": "à",
+  "start": 6.44,
+  "end": 6.76,
+  "keyword": false
+ },
+ {
+  "word": "apprendre,",
+  "start": 6.76,
+  "end": 7.22,
+  "keyword": true
+ },
+ {
+  "word": "créer",
+  "start": 7.38,
+  "end": 7.76,
+  "keyword": false
+ },
+ {
+  "word": "du",
+  "start": 7.76,
+  "end": 7.9,
+  "keyword": false
+ },
+ {
+  "word": "contenu,",
+  "start": 7.9,
+  "end": 8.36,
+  "keyword": true
+ },
+ {
+  "word": "gagner",
+  "start": 8.58,
+  "end": 8.8,
+  "keyword": false
+ },
+ {
+  "word": "du",
+  "start": 8.8,
+  "end": 8.98,
+  "keyword": false
+ },
+ {
+  "word": "temps,",
+  "start": 8.98,
+  "end": 9.2,
+  "keyword": true
+ },
+ {
+  "word": "automatiser",
+  "start": 9.58,
+  "end": 10.14,
   "keyword": true
  },
  {
   "word": "des",
-  "start": 7.5,
-  "end": 7.66,
+  "start": 10.14,
+  "end": 10.34,
   "keyword": false
  },
  {
-  "word": "sous-titres",
-  "start": 7.74,
-  "end": 8.282,
-  "keyword": false
- },
- {
-  "word": "mot",
-  "start": 8.362,
-  "end": 8.616,
-  "keyword": false
- },
- {
-  "word": "par",
-  "start": 8.696,
-  "end": 8.987,
-  "keyword": false
- },
- {
-  "word": "mot",
-  "start": 9.067,
-  "end": 9.321,
+  "word": "tâches",
+  "start": 10.34,
+  "end": 10.66,
   "keyword": false
  },
  {
   "word": "et",
-  "start": 9.401,
-  "end": 9.576,
+  "start": 10.66,
+  "end": 10.86,
   "keyword": false
  },
  {
-  "word": "un",
-  "start": 9.656,
-  "end": 9.855,
+  "word": "développer",
+  "start": 10.86,
+  "end": 11.58,
   "keyword": false
  },
  {
-  "word": "rendu",
-  "start": 9.935,
-  "end": 10.375,
+  "word": "de",
+  "start": 11.58,
+  "end": 11.88,
   "keyword": false
  },
  {
-  "word": "vertical",
-  "start": 10.455,
-  "end": 11.149,
+  "word": "nouvelles",
+  "start": 11.88,
+  "end": 12.44,
+  "keyword": false
+ },
+ {
+  "word": "opportunités.",
+  "start": 12.44,
+  "end": 13.32,
   "keyword": true
  },
  {
-  "word": "parfait",
-  "start": 11.229,
-  "end": 11.664,
+  "word": "Mais",
+  "start": 14.32,
+  "end": 14.84,
   "keyword": false
  },
  {
-  "word": "pour",
-  "start": 11.744,
-  "end": 12.023,
-  "keyword": false
- },
- {
-  "word": "les",
-  "start": 12.103,
-  "end": 12.277,
-  "keyword": false
- },
- {
-  "word": "réseaux.",
-  "start": 12.357,
-  "end": 12.796,
+  "word": "beaucoup",
+  "start": 14.84,
+  "end": 15.18,
   "keyword": false
  }
 ]

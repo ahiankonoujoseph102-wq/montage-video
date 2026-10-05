@@ -22,7 +22,7 @@ export const Clip: React.FC = () => {
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
       <OffthreadVideo src={staticFile('source.mp4')} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-      <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 520}}>
+      <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 400}}>
         <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 22, padding: '0 60px'}}>
           {visible.map((w, i) => (
             <span
