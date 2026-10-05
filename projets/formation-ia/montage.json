@@ -1,0 +1,272 @@
+{
+  "titre": {
+    "lignes": [
+      "Tirez-vous",
+      "de la valeur",
+      "de l'IA ?"
+    ],
+    "motsCles": [
+      "valeur"
+    ],
+    "geant": 2.5,
+    "duree": 5
+  },
+  "motsCles": [
+    "valeur",
+    "contenu",
+    "temps",
+    "automatiser",
+    "opportunités",
+    "erreurs",
+    "copient",
+    "réfléchir",
+    "prompts",
+    "pratiquent",
+    "vérifient",
+    "vagues",
+    "dépendantes",
+    "compétences",
+    "progresser",
+    "autrement",
+    "communiquer",
+    "questions",
+    "résultats",
+    "outils",
+    "concrètes",
+    "gratuite",
+    "présentiel",
+    "efficace",
+    "étudiant",
+    "entrepreneur",
+    "créateur",
+    "salarié",
+    "occasion",
+    "gratuit",
+    "lien",
+    "évoluer",
+    "objectif",
+    "partagez",
+    "WhatsApp",
+    "découvrir",
+    "Inscrivez-vous",
+    "samedi",
+    "ChatGPT",
+    "Claude",
+    "Perplexity",
+    "Adidogomé",
+    "Lomé",
+    "IA School",
+    "+228 72 24 02 31",
+    "vibe coding"
+  ],
+  "scenes": [
+    {
+      "id": "erreurs",
+      "debut": "Elles copient",
+      "fin": "propres compétences",
+      "disposition": "panneau",
+      "titre": "8 erreurs",
+      "compteur": true,
+      "elements": [
+        {
+          "a": "Elles copient",
+          "marque": "croix",
+          "texte": "Copier sans comprendre"
+        },
+        {
+          "a": "Elles laissent",
+          "marque": "croix",
+          "texte": "Laisser l'IA réfléchir"
+        },
+        {
+          "a": "Elles pensent",
+          "marque": "croix",
+          "texte": "Prompts magiques"
+        },
+        {
+          "a": "Elles ne pratiquent",
+          "marque": "croix",
+          "texte": "Ne pas pratiquer"
+        },
+        {
+          "a": "Elles ne vérifient",
+          "marque": "croix",
+          "texte": "Ne pas vérifier"
+        },
+        {
+          "a": "Elles posent",
+          "marque": "croix",
+          "texte": "Questions vagues"
+        },
+        {
+          "a": "Elles deviennent",
+          "marque": "croix",
+          "texte": "Dépendance à l'outil"
+        },
+        {
+          "a": "Elles oublient",
+          "marque": "croix",
+          "texte": "Oublier ses compétences"
+        }
+      ]
+    },
+    {
+      "id": "apprendre",
+      "debut": "Apprendre à mieux",
+      "fin": "applications concrètes",
+      "disposition": "panneau",
+      "titre": "Apprendre à…",
+      "elements": [
+        {
+          "a": "Apprendre à mieux",
+          "texte": "Mieux communiquer",
+          "marque": "coche"
+        },
+        {
+          "a": "Apprendre à poser",
+          "texte": "Meilleures questions",
+          "marque": "coche"
+        },
+        {
+          "a": "Apprendre à vérifier",
+          "texte": "Vérifier les résultats",
+          "marque": "coche"
+        },
+        {
+          "a": "Apprendre à utiliser",
+          "texte": "Utiliser les bons outils",
+          "marque": "coche"
+        },
+        {
+          "a": "apprendre à transformer",
+          "texte": "Passer à la pratique",
+          "marque": "coche"
+        }
+      ]
+    },
+    {
+      "id": "date-lieu",
+      "debut": "Samedi 10 octobre",
+      "fin": "Lycée Moderne 2",
+      "fond": "orange",
+      "disposition": "focus",
+      "elements": [
+        {
+          "a": "Samedi 10 octobre",
+          "icone": "calendrier",
+          "texte": "SAMEDI\n10 OCTOBRE"
+        },
+        {
+          "a": "Adidogomé",
+          "icone": "epingle",
+          "texte": "Adidogomé, Lycée Moderne 2"
+        }
+      ]
+    },
+    {
+      "id": "outils",
+      "debut": "ChatGPT",
+      "fin": "Perplexity",
+      "prolonger": 0.8,
+      "fond": "violet",
+      "disposition": "liste",
+      "titre": "Au programme",
+      "elements": [
+        {
+          "a": "ChatGPT",
+          "texte": "ChatGPT"
+        },
+        {
+          "a": "Claude",
+          "texte": "Claude"
+        },
+        {
+          "a": "Perplexity",
+          "texte": "Perplexity"
+        }
+      ]
+    },
+    {
+      "id": "publics",
+      "debut": "Vous êtes étudiant",
+      "fin": "Vous êtes salarié",
+      "disposition": "panneau",
+      "titre": "Vous êtes…",
+      "elements": [
+        {
+          "a": "étudiant",
+          "icone": "etudiant",
+          "texte": "Étudiant"
+        },
+        {
+          "a": "entrepreneur",
+          "icone": "mallette",
+          "texte": "Entrepreneur"
+        },
+        {
+          "a": "créateur",
+          "icone": "camera",
+          "texte": "Créateur de contenu"
+        },
+        {
+          "a": "salarié",
+          "icone": "badge",
+          "texte": "Salarié"
+        }
+      ]
+    },
+    {
+      "id": "numero",
+      "debut": "Besoin d'informations",
+      "fin": "+228 72 24 02 31",
+      "prolonger": 0.5,
+      "fond": "orange",
+      "disposition": "focus",
+      "titre": "Besoin d'infos ?",
+      "elements": [
+        {
+          "a": "Besoin d'informations",
+          "icone": "telephone",
+          "texte": "+228 72 24 02 31",
+          "grand": true
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "debut": "qu'aimeriez-vous",
+      "fin": "à vos collègues",
+      "disposition": "panneau",
+      "elements": [
+        {
+          "a": "qu'aimeriez-vous",
+          "icone": "cible",
+          "texte": "Votre objectif avec l'IA ?"
+        },
+        {
+          "a": "en commentaire",
+          "icone": "commentaire",
+          "texte": "Répondez en commentaire"
+        },
+        {
+          "a": "partagez",
+          "icone": "partage",
+          "texte": "Partagez la vidéo"
+        }
+      ],
+      "titre": "À vous !"
+    }
+  ],
+  "carton": {
+    "duree": 3,
+    "fond": "nuit",
+    "titre": "Lomé IA\nSchool",
+    "lignes": [
+      "Formation gratuite",
+      "Samedi 10 octobre",
+      "Adidogomé, Lycée Moderne 2",
+      "+228 72 24 02 31",
+      "Lien en description"
+    ]
+  }
+}

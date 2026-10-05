@@ -1,0 +1,95 @@
+{
+  "_note": "Noms propres appliqués automatiquement à chaque transcription. « terme » = orthographe à afficher ; « variantes » = ce que Whisper entend souvent à la place (en minuscules). Le lieu s'écrit « Adidogomé, Lycée Moderne 2 », sans « Lomé ».",
+  "termes": [
+    {
+      "terme": "ChatGPT",
+      "variantes": [
+        "chat gpt",
+        "chatgpt",
+        "la gpt",
+        "tchat gpt",
+        "chat gépété"
+      ]
+    },
+    {
+      "terme": "Claude",
+      "variantes": [
+        "cloud",
+        "clode",
+        "clod"
+      ]
+    },
+    {
+      "terme": "Perplexity",
+      "variantes": [
+        "peplest",
+        "perplexité",
+        "perplexiti",
+        "perplexe city"
+      ]
+    },
+    {
+      "terme": "Lomé IA School",
+      "variantes": [
+        "le meilleur school",
+        "lomé ia school",
+        "lomé i a school",
+        "lomé ai school",
+        "l'homme et ia school"
+      ]
+    },
+    {
+      "terme": "Adidogomé",
+      "variantes": [
+        "j2gomm",
+        "jdgomi",
+        "adidogome",
+        "adi dogomé",
+        "adidogomé"
+      ]
+    },
+    {
+      "terme": "Lycée Moderne 2",
+      "variantes": [
+        "lycée ou 22",
+        "lycée maudien 2",
+        "lycée moderne deux",
+        "lycée moderne 2"
+      ]
+    },
+    {
+      "terme": "+228 72 24 02 31",
+      "variantes": [
+        "plus de 228-712-24-0231",
+        "au plus de 228-712-24-0231",
+        "228-712-24-0231",
+        "72 24 02 31",
+        "72-24-02-31",
+        "722-402-31"
+      ]
+    },
+    {
+      "terme": "Joseph Academy",
+      "variantes": [
+        "joseph académie",
+        "joseph academie"
+      ]
+    },
+    {
+      "terme": "Coach Joseph",
+      "variantes": [
+        "coach josef",
+        "coche joseph"
+      ]
+    },
+    {
+      "terme": "vibe coding",
+      "variantes": [
+        "web coding",
+        "vibe codding",
+        "vaïbe coding",
+        "vibe-coding"
+      ]
+    }
+  ]
+}

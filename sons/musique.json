@@ -1,0 +1,7 @@
+{
+  "_note": "Musique par défaut de toutes les vidéos (droits : Joseph). Tonalité mesurée avec librosa : les effets sonores sont accordés dessus (scripts/sons.py).",
+  "fichier": "musique_defaut.m4a",
+  "tonique": "Sol",
+  "mode": "mineur",
+  "tempo": 64.6
+}
