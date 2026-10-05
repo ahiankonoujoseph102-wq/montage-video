@@ -247,6 +247,27 @@ def plans_zoom(mots, images):
     return plans
 
 
+def jetons_significatifs(texte):
+    """Mots qui comptent pour repérer un doublon (on ignore « à », « de », « la »… mais pas les chiffres)."""
+    jetons = [sans_elision(t).strip("+'") for t in texte.replace("\n", " ").split()]
+    return [t for t in jetons if t and (len(t) > 2 or t.isdigit())]
+
+
+def groupes_masques(mots, groupes, scenes):
+    """Groupes de sous-titres qui répètent mot pour mot le texte affiché en grand dans un plein écran."""
+    masques = []
+    for k, g in enumerate(groupes):
+        debut = mots[g[0]]["debut"]
+        for s in scenes:
+            if s["disposition"] == "panneau" or not (s["debut"] <= debut < s["fin"]):
+                continue
+            affiche = " ".join([s.get("titre", "")] + [e.get("texte", "") for e in s["elements"]])
+            jetons = jetons_significatifs(" ".join(mots[i]["mot"] for i in g))
+            if jetons and set(jetons) <= set(jetons_significatifs(affiche)):
+                masques.append(k)
+    return masques
+
+
 def main():
     nom = sys.argv[1]
     projet = ROOT / "projets" / nom
@@ -305,13 +326,24 @@ def main():
                          for e in s["elements"]],
         })
 
+    # Carton de fin : il démarre 6 images avant la fin de la vidéo (le son baisse pendant la transition).
+    carton = None
+    if config.get("carton"):
+        c = config["carton"]
+        debut = nb_images - 6
+        carton = {"debut": debut, "fin": debut + round(c.get("duree", 3) * FPS), "fond": c.get("fond", "nuit"),
+                  "titre": c["titre"], "lignes": c["lignes"]}
+
     props = {
         "video": f"{nom}/video.mp4",
-        "dureeImages": nb_images,
+        "dureeImages": carton["fin"] if carton else nb_images,
+        "carton": carton,
         "titre": config.get("titre"),
         "mots": mots_sortie,
         "groupes": groupes,
         "plans": plans_zoom(mots, [m["debut"] for m in mots_sortie]),
+        "masques": groupes_masques(mots_sortie, groupes, scenes_sortie),
+        "dureeVideo": nb_images,
         "scenes": scenes_sortie,
         "onde": calculer_onde(video, nb_images),
     }

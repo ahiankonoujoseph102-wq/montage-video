@@ -30,29 +30,35 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - 1080 × 1920, 30 i/s. Son visage reste à l'écran, sauf pendant les passages plein écran.
 - **Zone sûre TikTok** (`ZONE_SURE` dans `src/charte.ts`) : rien dans les 10 % du haut, les 20 % du bas
   ni dans la bande de 12 % à droite (boutons). Titre, panneaux, plein écran et sous-titres y restent.
-  La fine barre de progression, tout en haut, est la seule exception.
 - Cadrage dynamique sur le visage : on alterne cadre normal / léger zoom avant de 11 % centré sur le
   visage, aux débuts de phrase et aux virgules, toutes les 3 à 4 s, jamais plus de 5 s sans changement
-  (`plans_zoom` dans `scripts/preparer.py`), transition de 4 images.
+  (`plans_zoom` dans `scripts/preparer.py`), transition de 4 images. **Pendant un panneau, le zoom est
+  limité à 6 %** (`ZOOM_SERRE_PANNEAU`) pour que le panneau ne touche jamais le haut de la tête.
 - Sous-titres mot par mot dans le tiers inférieur, 3 ou 4 mots à la fois, 94 px au plus, deux lignes
-  au plus, texte blanc, mot-clé en jaune souligné (`motsCles` dans `montage.json`), sur un léger dégradé
+  au plus, **jamais plus larges que 80 % de l'image** (860 px, sinon retour à la ligne ou texte réduit), texte blanc, mot-clé en jaune souligné (`motsCles` dans `montage.json`), sur un léger dégradé
   sombre en bas d'image. Jamais un mot seul à l'écran : le 2e mot d'un groupe apparaît avec le 1er, et
   un groupe d'un mot est rattaché au voisin (sauf phrase d'un seul mot). Un numéro de téléphone
   s'affiche seul sur sa ligne.
 - Titre d'accroche animé pendant les 3 premières secondes, sur deux lignes ajustées à la largeur
   (`titre.lignes` dans `montage.json`), mot-clé en jaune.
-- Fine barre de progression en haut.
+- **Pas de barre de progression.**
 - Silences de plus de 0,6 s coupés (détection au volume sonore, −30 dB, marge de 0,15 s).
 - **Listes et énumérations** (erreurs, « Apprendre à », publics, question finale) : disposition
   `panneau` — le visage reste à l'écran, panneau sombre semi-transparent dans le tiers supérieur
   (au-dessus de la tête), titre, compteur facultatif, puis un élément à la fois au rythme de la voix,
-  texte court, gros et gras (`tailleUniforme: true` pour imposer la même taille à tous les éléments : textes courts),
-  avec croix rouge / coche verte / icône.
+  avec croix rouge / coche verte / icône. **Tous les panneaux ont la même taille de texte (76 px, celle des
+  8 erreurs), 2 lignes au plus** : écrire des textes courts (≈ 12 caractères par ligne, ex. « Passer à la
+  pratique », « Votre objectif avec l'IA ? »). Un texte trop long ferait rétrécir tout le panneau : le raccourcir.
 - **Plein écran réservé aux passages courts** (date et lieu, outils, numéro de téléphone) :
   dispositions `focus` (une grande icône + grand texte ajusté à la largeur ; `\n` pour couper la ligne)
   ou `liste` (grandes étiquettes de texte). Fond en dégradé animé (`nuit`, `orange`, `bleu`,
   `violet`, on change selon la partie). Contenu centré, sans grand vide. Pas de logos de marque.
 - Onde sonore animée au-dessus des sous-titres **uniquement pendant les passages plein écran**.
+- **Pas de doublon** : en plein écran, un sous-titre qui répète ce qui est affiché en grand (numéro,
+  date, lieu, noms d'outils) est masqué automatiquement (`groupes_masques` dans `scripts/preparer.py`).
+- **Carton de fin** de 3 s en plein écran après le dernier mot (`carton` dans `montage.json`, `\n` pour couper
+  le titre) : par défaut fond `nuit`, « LOMÉ IA / SCHOOL » en grand, puis « Formation gratuite », la date,
+  le lieu, le numéro et « Lien en description ». Le son baisse en fondu sur la dernière demi-seconde.
 
 ## Glossaire
 

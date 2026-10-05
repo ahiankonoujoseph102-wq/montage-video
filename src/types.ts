@@ -19,9 +19,10 @@ export type Scene = {
   titre?: string;
   icone?: string;
   compteur?: boolean;
-  tailleUniforme?: boolean; // panneau : même taille de texte pour tous les éléments
   elements: Element[];
 };
+
+export type Carton = {debut: number; fin: number; fond: Fond; titre: string; lignes: string[]};
 
 export type Titre = {lignes: string[]; motsCles: string[]; duree: number};
 
@@ -32,6 +33,9 @@ export type MontageProps = {
   mots: Mot[];
   groupes: number[][];
   plans: number[]; // images où le cadrage alterne (normal / zoom)
+  masques: number[]; // groupes de sous-titres masqués (doublons d'un texte affiché en grand)
+  dureeVideo: number; // images de la vidéo coupée ; le carton de fin vient après
+  carton?: Carton;
   scenes: Scene[];
   onde: number[][];
 };

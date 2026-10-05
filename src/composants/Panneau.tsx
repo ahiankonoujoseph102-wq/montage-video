@@ -30,7 +30,7 @@ const nbLignes = (texte: string, taille: number) => {
 
 // Plus grande taille qui tient en 2 lignes ; sinon 3 lignes en plus petit.
 const tailleTexte = (texte: string) => {
-  for (const t of [76, 70, 64, 58]) if (nbLignes(texte, t) <= 2) return t;
+  for (const t of [PANNEAU.tailleTexte, 70, 64, 58]) if (nbLignes(texte, t) <= 2) return t;
   return 52;
 };
 
@@ -46,20 +46,18 @@ export const Panneau: React.FC<{scene: Scene}> = ({scene}) => {
 
   let i = 0;
   for (let k = 0; k < elements.length; k++) if (elements[k].debut <= f) i = k;
-  // « tailleUniforme » : même taille pour tous les éléments (celle du texte le plus long) ;
-  // sinon chaque élément prend la plus grande taille qui lui convient.
-  const taille = scene.tailleUniforme
-    ? Math.min(...elements.map((e) => tailleTexte(e.texte ?? '')))
-    : tailleTexte(elements[i].texte ?? '');
+  // Même taille de texte pour tous les panneaux. Un texte trop long pour 2 lignes à cette taille
+  // est réduit (filet de sécurité) : il faut alors le raccourcir dans montage.json.
+  const taille = Math.min(...elements.map((e) => tailleTexte(e.texte ?? '')));
 
   return (
     <div style={{position: 'absolute', top: PANNEAU.haut, left: ZONE_SURE.gauche, width: ZONE_SURE.droite - ZONE_SURE.gauche,
       height: PANNEAU.hauteur, borderRadius: 40, background: 'rgba(6,8,24,0.74)',
       border: '3px solid rgba(255,255,255,0.14)', boxShadow: '0 18px 40px rgba(0,0,0,0.35)',
       opacity: Math.min(entree, sortie), transform: `translateY(${(1 - entree) * -50}px)`,
-      display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 32px', boxSizing: 'border-box'}}>
+      display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '14px 32px', boxSizing: 'border-box'}}>
       {scene.titre ? (
-        <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 52, color: BLANC, textTransform: 'uppercase',
+        <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 48, color: BLANC, textTransform: 'uppercase',
           letterSpacing: 2, borderBottom: `7px solid ${JAUNE}`, lineHeight: 1.1, paddingBottom: 4}}>
           {scene.titre}
         </div>
@@ -75,7 +73,7 @@ export const Panneau: React.FC<{scene: Scene}> = ({scene}) => {
 const Compteur: React.FC<{elements: Element[]}> = ({elements}) => {
   const f = useCurrentFrame();
   return (
-    <div style={{display: 'flex', gap: 18, marginTop: 16, alignItems: 'center'}}>
+    <div style={{display: 'flex', gap: 18, marginTop: 12, alignItems: 'center'}}>
       {elements.map((e, i) => {
         const actif = f >= e.debut;
         const courant = actif && (i === elements.length - 1 || f < elements[i + 1].debut);

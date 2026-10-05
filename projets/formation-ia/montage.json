@@ -106,8 +106,7 @@
           "marque": "croix",
           "texte": "Oublier ses compétences"
         }
-      ],
-      "tailleUniforme": true
+      ]
     },
     {
       "id": "apprendre",
@@ -118,12 +117,12 @@
       "elements": [
         {
           "a": "Apprendre à mieux",
-          "texte": "Mieux communiquer avec l'IA",
+          "texte": "Mieux communiquer",
           "marque": "coche"
         },
         {
           "a": "Apprendre à poser",
-          "texte": "Poser de meilleures questions",
+          "texte": "Meilleures questions",
           "marque": "coche"
         },
         {
@@ -138,7 +137,7 @@
         },
         {
           "a": "apprendre à transformer",
-          "texte": "Transformer vos compétences en applications concrètes",
+          "texte": "Passer à la pratique",
           "marque": "coche"
         }
       ]
@@ -240,7 +239,7 @@
         {
           "a": "qu'aimeriez-vous",
           "icone": "cible",
-          "texte": "Qu'aimeriez-vous faire grâce à l'IA ?"
+          "texte": "Votre objectif avec l'IA ?"
         },
         {
           "a": "en commentaire",
@@ -255,5 +254,17 @@
       ],
       "titre": "À vous !"
     }
-  ]
+  ],
+  "carton": {
+    "duree": 3,
+    "fond": "nuit",
+    "titre": "Lomé IA\nSchool",
+    "lignes": [
+      "Formation gratuite",
+      "Samedi 10 octobre",
+      "Adidogomé, Lycée Moderne 2",
+      "+228 72 24 02 31",
+      "Lien en description"
+    ]
+  }
 }

@@ -33,13 +33,14 @@ const tailleGroupe = (mots: string[]) => {
   return 40;
 };
 
-export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]}> = ({mots, groupes}) => {
+export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]; masques: number[]}> = ({mots, groupes, masques}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
 
   let g = -1;
   for (let i = 0; i < groupes.length; i++) if (mots[groupes[i][0]].debut <= frame) g = i;
-  if (g < 0) return null;
+  // Groupe masqué : il répète mot pour mot le texte affiché en grand (plein écran).
+  if (g < 0 || masques.includes(g)) return null;
   const groupe = groupes[g];
   if (frame > mots[groupe[groupe.length - 1]].fin + MAINTIEN_APRES) return null;
 
