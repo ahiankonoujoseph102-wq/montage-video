@@ -1,3 +1,6 @@
 node_modules/
 out/
-public/*.mp4
+projets/*/source.mp4
+public/*/
+!public/polices/
+__pycache__/

@@ -1,0 +1,2629 @@
+[
+ {
+  "mot": "Vous",
+  "debut": 0.5,
+  "fin": 1.02,
+  "proba": 0.95,
+  "statut": "ok"
+ },
+ {
+  "mot": "utilisez",
+  "debut": 1.02,
+  "fin": 1.5,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA,",
+  "debut": 1.5,
+  "fin": 1.82,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "mais",
+  "debut": 1.98,
+  "fin": 2.06,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "est-ce",
+  "debut": 2.06,
+  "fin": 2.28,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "que",
+  "debut": 2.28,
+  "fin": 2.4,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vous",
+  "debut": 2.4,
+  "fin": 2.5,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "savez",
+  "debut": 2.5,
+  "fin": 2.76,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "vraiment",
+  "debut": 2.76,
+  "fin": 3.16,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "en",
+  "debut": 3.16,
+  "fin": 3.46,
+  "proba": 0.92,
+  "statut": "ok"
+ },
+ {
+  "mot": "tirer",
+  "debut": 3.46,
+  "fin": 3.62,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 3.62,
+  "fin": 3.7,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "la",
+  "debut": 3.7,
+  "fin": 3.8,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "valeur ?",
+  "debut": 3.8,
+  "fin": 4.48,
+  "proba": 0.48,
+  "statut": "ok"
+ },
+ {
+  "mot": "Aujourd'hui,",
+  "debut": 4.48,
+  "fin": 5.3,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA",
+  "debut": 5.52,
+  "fin": 5.78,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "peut",
+  "debut": 5.78,
+  "fin": 5.98,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vous",
+  "debut": 5.98,
+  "fin": 6.18,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "aider",
+  "debut": 6.18,
+  "fin": 6.44,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 6.44,
+  "fin": 6.76,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "apprendre,",
+  "debut": 6.76,
+  "fin": 7.22,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "créer",
+  "debut": 7.38,
+  "fin": 7.76,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "du",
+  "debut": 7.76,
+  "fin": 7.9,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "contenu,",
+  "debut": 7.9,
+  "fin": 8.36,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "gagner",
+  "debut": 8.58,
+  "fin": 8.8,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "du",
+  "debut": 8.8,
+  "fin": 8.98,
+  "proba": 0.96,
+  "statut": "ok"
+ },
+ {
+  "mot": "temps,",
+  "debut": 8.98,
+  "fin": 9.2,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "automatiser",
+  "debut": 9.58,
+  "fin": 10.14,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "des",
+  "debut": 10.14,
+  "fin": 10.34,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "tâches",
+  "debut": 10.34,
+  "fin": 10.66,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "et",
+  "debut": 10.66,
+  "fin": 10.86,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "développer",
+  "debut": 10.86,
+  "fin": 11.58,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 11.58,
+  "fin": 11.88,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "nouvelles",
+  "debut": 11.88,
+  "fin": 12.44,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "opportunités.",
+  "debut": 12.44,
+  "fin": 13.32,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Mais",
+  "debut": 14.32,
+  "fin": 14.84,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "beaucoup",
+  "debut": 14.84,
+  "fin": 15.18,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 15.18,
+  "fin": 15.3,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "personnes",
+  "debut": 15.3,
+  "fin": 15.66,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "commettent",
+  "debut": 15.66,
+  "fin": 16.38,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "les",
+  "debut": 16.38,
+  "fin": 16.82,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "mêmes",
+  "debut": 16.82,
+  "fin": 17.14,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "erreurs.",
+  "debut": 17.14,
+  "fin": 17.62,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 18.02,
+  "fin": 18.24,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "copient",
+  "debut": 18.24,
+  "fin": 18.52,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "sans",
+  "debut": 18.52,
+  "fin": 18.68,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "comprendre.",
+  "debut": 18.68,
+  "fin": 19.12,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 19.38,
+  "fin": 19.76,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "laissent",
+  "debut": 19.76,
+  "fin": 19.98,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA",
+  "debut": 19.98,
+  "fin": 20.24,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "réfléchir",
+  "debut": 20.24,
+  "fin": 20.72,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 20.72,
+  "fin": 20.78,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "leur",
+  "debut": 20.78,
+  "fin": 20.9,
+  "proba": 0.91,
+  "statut": "ok"
+ },
+ {
+  "mot": "place.",
+  "debut": 20.9,
+  "fin": 21.22,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 21.52,
+  "fin": 21.68,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "pensent",
+  "debut": 21.68,
+  "fin": 22.06,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "que",
+  "debut": 22.06,
+  "fin": 22.18,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "les",
+  "debut": 22.18,
+  "fin": 22.36,
+  "proba": 0.38,
+  "statut": "hors script"
+ },
+ {
+  "mot": "quelques",
+  "debut": 22.36,
+  "fin": 22.64,
+  "proba": 0.93,
+  "statut": "ok"
+ },
+ {
+  "mot": "prompts",
+  "debut": 22.64,
+  "fin": 23.14,
+  "statut": "corrigé",
+  "proba": 1.0
+ },
+ {
+  "mot": "suffisent.",
+  "debut": 23.14,
+  "fin": 23.64,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 23.78,
+  "fin": 24.2,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "ne",
+  "debut": 24.2,
+  "fin": 24.36,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "pratiquent",
+  "debut": 24.36,
+  "fin": 24.74,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "pas.",
+  "debut": 24.74,
+  "fin": 25.0,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 25.18,
+  "fin": 25.6,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "ne",
+  "debut": 25.6,
+  "fin": 25.7,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vérifient",
+  "debut": 25.7,
+  "fin": 26.2,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "pas",
+  "debut": 26.2,
+  "fin": 26.42,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "leurs",
+  "debut": 26.42,
+  "fin": 26.7,
+  "proba": 0.79,
+  "statut": "écart"
+ },
+ {
+  "mot": "réponses.",
+  "debut": 26.7,
+  "fin": 27.22,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 27.22,
+  "fin": 28.12,
+  "proba": 0.91,
+  "statut": "ok"
+ },
+ {
+  "mot": "posent",
+  "debut": 28.12,
+  "fin": 28.44,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "des",
+  "debut": 28.44,
+  "fin": 28.58,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "questions",
+  "debut": 28.58,
+  "fin": 28.86,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vagues.",
+  "debut": 28.86,
+  "fin": 29.22,
+  "proba": 0.93,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 29.56,
+  "fin": 29.74,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "deviennent",
+  "debut": 29.74,
+  "fin": 30.28,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "dépendantes",
+  "debut": 30.28,
+  "fin": 31.54,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 31.54,
+  "fin": 31.68,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'outil.",
+  "debut": 31.68,
+  "fin": 32.02,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 32.24,
+  "fin": 32.8,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "oublient",
+  "debut": 32.8,
+  "fin": 33.24,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 33.24,
+  "fin": 33.52,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "développer",
+  "debut": 33.52,
+  "fin": 34.18,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "leurs",
+  "debut": 34.18,
+  "fin": 34.44,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "propres",
+  "debut": 34.44,
+  "fin": 34.74,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "compétences.",
+  "debut": 34.74,
+  "fin": 35.34,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Résultat ?",
+  "debut": 35.76,
+  "fin": 36.4,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "Elles",
+  "debut": 38.71,
+  "fin": 41.19,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "utilisent",
+  "debut": 41.19,
+  "fin": 41.61,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA",
+  "debut": 41.61,
+  "fin": 41.91,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "sans",
+  "debut": 41.91,
+  "fin": 42.25,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "réellement",
+  "debut": 42.25,
+  "fin": 42.63,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "progresser.",
+  "debut": 42.63,
+  "fin": 43.23,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "Mais",
+  "debut": 43.41,
+  "fin": 43.73,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vous",
+  "debut": 43.73,
+  "fin": 43.89,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "pouvez",
+  "debut": 43.89,
+  "fin": 44.07,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "faire",
+  "debut": 44.07,
+  "fin": 44.29,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "autrement.",
+  "debut": 44.29,
+  "fin": 44.83,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Apprendre",
+  "debut": 45.35,
+  "fin": 45.83,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 45.83,
+  "fin": 46.07,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "mieux",
+  "debut": 46.07,
+  "fin": 46.33,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "communiquer",
+  "debut": 46.33,
+  "fin": 46.77,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "avec",
+  "debut": 46.77,
+  "fin": 47.01,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA.",
+  "debut": 47.01,
+  "fin": 47.33,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Apprendre",
+  "debut": 47.63,
+  "fin": 48.13,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 48.13,
+  "fin": 48.35,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "poser",
+  "debut": 48.35,
+  "fin": 48.69,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 48.69,
+  "fin": 48.87,
+  "proba": 0.8,
+  "statut": "ok"
+ },
+ {
+  "mot": "meilleures",
+  "debut": 48.87,
+  "fin": 49.15,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "questions.",
+  "debut": 49.15,
+  "fin": 49.49,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Apprendre",
+  "debut": 49.83,
+  "fin": 50.35,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 50.35,
+  "fin": 50.59,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vérifier",
+  "debut": 50.59,
+  "fin": 51.01,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "les",
+  "debut": 51.01,
+  "fin": 51.19,
+  "statut": "corrigé",
+  "proba": 1.0
+ },
+ {
+  "mot": "résultats.",
+  "debut": 51.19,
+  "fin": 51.73,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Apprendre",
+  "debut": 52.01,
+  "fin": 52.57,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 52.57,
+  "fin": 52.81,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "utiliser",
+  "debut": 52.81,
+  "fin": 53.19,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "les",
+  "debut": 53.19,
+  "fin": 53.41,
+  "proba": 0.96,
+  "statut": "ok"
+ },
+ {
+  "mot": "bons",
+  "debut": 53.41,
+  "fin": 53.71,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "outils",
+  "debut": 53.71,
+  "fin": 54.15,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "selon",
+  "debut": 54.15,
+  "fin": 54.73,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "leurs",
+  "debut": 54.73,
+  "fin": 54.95,
+  "proba": 0.77,
+  "statut": "écart"
+ },
+ {
+  "mot": "besoins.",
+  "debut": 54.95,
+  "fin": 55.53,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Et",
+  "debut": 55.53,
+  "fin": 55.95,
+  "proba": 0.39,
+  "statut": "ok"
+ },
+ {
+  "mot": "surtout,",
+  "debut": 55.95,
+  "fin": 56.39,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "apprendre",
+  "debut": 56.57,
+  "fin": 57.27,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 57.27,
+  "fin": 57.71,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "transformer",
+  "debut": 57.71,
+  "fin": 58.43,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vos",
+  "debut": 58.43,
+  "fin": 58.65,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "compétences",
+  "debut": 58.65,
+  "fin": 59.31,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "en",
+  "debut": 59.31,
+  "fin": 59.89,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "applications",
+  "debut": 59.89,
+  "fin": 60.73,
+  "proba": 0.8,
+  "statut": "ok"
+ },
+ {
+  "mot": "concrètes.",
+  "debut": 60.73,
+  "fin": 61.69,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "C'est",
+  "debut": 62.85,
+  "fin": 63.53,
+  "proba": 0.9,
+  "statut": "ok"
+ },
+ {
+  "mot": "exactement",
+  "debut": 63.53,
+  "fin": 64.05,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'objectif",
+  "debut": 64.05,
+  "fin": 64.71,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "d'une",
+  "debut": 64.71,
+  "fin": 64.89,
+  "proba": 0.82,
+  "statut": "écart"
+ },
+ {
+  "mot": "formation",
+  "debut": 64.89,
+  "fin": 65.25,
+  "proba": 0.63,
+  "statut": "ok"
+ },
+ {
+  "mot": "gratuite",
+  "debut": 65.25,
+  "fin": 65.81,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "sur",
+  "debut": 65.81,
+  "fin": 66.01,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA.",
+  "debut": 66.01,
+  "fin": 66.37,
+  "proba": 0.97,
+  "statut": "écart"
+ },
+ {
+  "mot": "Samedi",
+  "debut": 66.93,
+  "fin": 67.49,
+  "proba": 0.86,
+  "statut": "ok"
+ },
+ {
+  "mot": "10",
+  "debut": 67.49,
+  "fin": 67.71,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "octobre.",
+  "debut": 67.71,
+  "fin": 68.25,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 68.25,
+  "fin": 68.43,
+  "proba": 0.66,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Adidogomé,",
+  "debut": 68.43,
+  "fin": 68.87,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "Lycée",
+  "debut": 68.87,
+  "fin": 69.149,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "Moderne",
+  "debut": 69.149,
+  "fin": 69.539,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "2.",
+  "debut": 69.539,
+  "fin": 69.65,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "Nous",
+  "debut": 70.11,
+  "fin": 70.67,
+  "proba": 0.98,
+  "statut": "hors script"
+ },
+ {
+  "mot": "organisons",
+  "debut": 70.67,
+  "fin": 71.45,
+  "proba": 0.86,
+  "statut": "hors script"
+ },
+ {
+  "mot": "une",
+  "debut": 71.45,
+  "fin": 71.61,
+  "proba": 0.98,
+  "statut": "hors script"
+ },
+ {
+  "mot": "formation",
+  "debut": 71.61,
+  "fin": 71.89,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "en",
+  "debut": 71.89,
+  "fin": 72.23,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "présentiel.",
+  "debut": 72.23,
+  "fin": 72.75,
+  "proba": 0.96,
+  "statut": "ok"
+ },
+ {
+  "mot": "Au",
+  "debut": 73.09,
+  "fin": 73.43,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "programme",
+  "debut": 73.43,
+  "fin": 73.83,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vous",
+  "debut": 74.07,
+  "fin": 74.15,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "allez",
+  "debut": 74.15,
+  "fin": 74.27,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "apprendre",
+  "debut": 74.27,
+  "fin": 74.65,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 74.65,
+  "fin": 74.87,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "utiliser",
+  "debut": 74.87,
+  "fin": 75.15,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "ChatGPT,",
+  "debut": 75.15,
+  "fin": 75.93,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Claude,",
+  "debut": 76.17,
+  "fin": 76.51,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Perplexity,",
+  "debut": 76.77,
+  "fin": 77.19,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Petit.",
+  "debut": 77.29,
+  "fin": 77.47,
+  "proba": 0.59,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Ce",
+  "debut": 77.67,
+  "fin": 77.95,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "qui",
+  "debut": 77.95,
+  "fin": 78.03,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "vous",
+  "debut": 78.03,
+  "fin": 78.15,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "permettra",
+  "debut": 78.15,
+  "fin": 78.65,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "de",
+  "debut": 78.65,
+  "fin": 78.93,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "pouvoir",
+  "debut": 78.93,
+  "fin": 79.25,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "être",
+  "debut": 79.25,
+  "fin": 79.67,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "initié",
+  "debut": 79.67,
+  "fin": 80.13,
+  "proba": 0.94,
+  "statut": "hors script"
+ },
+ {
+  "mot": "à",
+  "debut": 80.13,
+  "fin": 80.23,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "l'IA,",
+  "debut": 80.23,
+  "fin": 80.49,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "pouvoir",
+  "debut": 80.81,
+  "fin": 81.01,
+  "proba": 0.95,
+  "statut": "hors script"
+ },
+ {
+  "mot": "créer",
+  "debut": 81.01,
+  "fin": 81.29,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "du",
+  "debut": 81.29,
+  "fin": 81.39,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "contenu,",
+  "debut": 81.39,
+  "fin": 81.87,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "créer",
+  "debut": 82.23,
+  "fin": 82.41,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "des",
+  "debut": 82.41,
+  "fin": 82.83,
+  "proba": 0.85,
+  "statut": "hors script"
+ },
+ {
+  "mot": "images,",
+  "debut": 82.83,
+  "fin": 83.79,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "créer",
+  "debut": 84.19,
+  "fin": 84.31,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "des",
+  "debut": 84.31,
+  "fin": 84.49,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "vidéos",
+  "debut": 84.49,
+  "fin": 84.79,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "et",
+  "debut": 84.79,
+  "fin": 85.03,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "automatiser",
+  "debut": 85.03,
+  "fin": 85.49,
+  "proba": 0.97,
+  "statut": "hors script"
+ },
+ {
+  "mot": "vos",
+  "debut": 85.49,
+  "fin": 85.71,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "tâches.",
+  "debut": 85.71,
+  "fin": 85.99,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Également",
+  "debut": 86.19,
+  "fin": 86.43,
+  "proba": 0.84,
+  "statut": "hors script"
+ },
+ {
+  "mot": "le",
+  "debut": 86.43,
+  "fin": 86.57,
+  "proba": 0.92,
+  "statut": "hors script"
+ },
+ {
+  "mot": "web",
+  "debut": 86.57,
+  "fin": 86.73,
+  "proba": 0.79,
+  "statut": "hors script"
+ },
+ {
+  "mot": "coding.",
+  "debut": 86.73,
+  "fin": 86.97,
+  "proba": 0.2,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Vous",
+  "debut": 86.97,
+  "fin": 87.67,
+  "proba": 0.82,
+  "statut": "hors script"
+ },
+ {
+  "mot": "allez",
+  "debut": 87.67,
+  "fin": 87.83,
+  "proba": 0.98,
+  "statut": "hors script"
+ },
+ {
+  "mot": "aussi",
+  "debut": 87.83,
+  "fin": 87.99,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "apprendre",
+  "debut": 87.99,
+  "fin": 88.33,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "à",
+  "debut": 88.33,
+  "fin": 88.57,
+  "proba": 0.98,
+  "statut": "hors script"
+ },
+ {
+  "mot": "utiliser",
+  "debut": 88.57,
+  "fin": 88.85,
+  "proba": 0.91,
+  "statut": "hors script",
+  "manuel": "étudier"
+ },
+ {
+  "mot": "l'IA",
+  "debut": 88.85,
+  "fin": 89.15,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 89.15,
+  "fin": 89.37,
+  "proba": 0.82,
+  "statut": "ok"
+ },
+ {
+  "mot": "manière",
+  "debut": 89.37,
+  "fin": 89.59,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "beaucoup",
+  "debut": 89.59,
+  "fin": 89.83,
+  "proba": 0.96,
+  "statut": "hors script"
+ },
+ {
+  "mot": "plus",
+  "debut": 89.83,
+  "fin": 90.01,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "efficace",
+  "debut": 90.01,
+  "fin": 90.75,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "pour",
+  "debut": 90.75,
+  "fin": 91.21,
+  "proba": 0.92,
+  "statut": "ok"
+ },
+ {
+  "mot": "apprendre,",
+  "debut": 91.21,
+  "fin": 91.77,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 91.77,
+  "fin": 92.25,
+  "proba": 0.92,
+  "statut": "hors script"
+ },
+ {
+  "mot": "travailler,",
+  "debut": 92.25,
+  "fin": 92.75,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 93.13,
+  "fin": 93.19,
+  "proba": 0.99,
+  "statut": "hors script"
+ },
+ {
+  "mot": "créer",
+  "debut": 93.19,
+  "fin": 93.55,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "et",
+  "debut": 93.55,
+  "fin": 93.85,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "développer",
+  "debut": 93.85,
+  "fin": 94.47,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "des",
+  "debut": 94.47,
+  "fin": 94.65,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "opportunités.",
+  "debut": 94.65,
+  "fin": 95.35,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Vous",
+  "debut": 95.67,
+  "fin": 95.95,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "êtes",
+  "debut": 95.95,
+  "fin": 96.05,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "étudiant ?",
+  "debut": 96.05,
+  "fin": 96.55,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Vous",
+  "debut": 96.99,
+  "fin": 97.07,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "êtes",
+  "debut": 97.07,
+  "fin": 97.23,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "entrepreneur ?",
+  "debut": 97.23,
+  "fin": 97.61,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "Vous",
+  "debut": 98.07,
+  "fin": 98.15,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "êtes",
+  "debut": 98.15,
+  "fin": 98.27,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "créateur",
+  "debut": 98.27,
+  "fin": 98.69,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 98.69,
+  "fin": 98.81,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "contenu ?",
+  "debut": 98.81,
+  "fin": 99.29,
+  "proba": 0.81,
+  "statut": "ok"
+ },
+ {
+  "mot": "Vous",
+  "debut": 99.61,
+  "fin": 99.73,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "êtes",
+  "debut": 99.73,
+  "fin": 99.85,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "salarié ?",
+  "debut": 99.85,
+  "fin": 100.49,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Vous",
+  "debut": 100.67,
+  "fin": 100.91,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "cherchez",
+  "debut": 100.91,
+  "fin": 101.35,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 101.35,
+  "fin": 101.55,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "développer",
+  "debut": 101.55,
+  "fin": 102.23,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "une",
+  "debut": 102.23,
+  "fin": 102.39,
+  "proba": 0.94,
+  "statut": "ok"
+ },
+ {
+  "mot": "nouvelle",
+  "debut": 102.39,
+  "fin": 102.59,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "compétence ?",
+  "debut": 102.59,
+  "fin": 103.23,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Alors",
+  "debut": 103.23,
+  "fin": 103.59,
+  "proba": 0.43,
+  "statut": "ok"
+ },
+ {
+  "mot": "ne",
+  "debut": 103.59,
+  "fin": 104.11,
+  "proba": 0.93,
+  "statut": "ok"
+ },
+ {
+  "mot": "laissez",
+  "debut": 104.11,
+  "fin": 104.59,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "pas",
+  "debut": 104.59,
+  "fin": 104.77,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "passer",
+  "debut": 104.77,
+  "fin": 105.65,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "cette",
+  "debut": 105.65,
+  "fin": 105.83,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "occasion.",
+  "debut": 105.83,
+  "fin": 106.25,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "C'est",
+  "debut": 106.51,
+  "fin": 107.13,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "totalement",
+  "debut": 107.13,
+  "fin": 107.49,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "gratuit.",
+  "debut": 107.49,
+  "fin": 107.89,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "Donc,",
+  "debut": 107.89,
+  "fin": 108.21,
+  "proba": 0.84,
+  "statut": "écart"
+ },
+ {
+  "mot": "veuillez",
+  "debut": 108.29,
+  "fin": 108.55,
+  "proba": 0.85,
+  "statut": "écart"
+ },
+ {
+  "mot": "cliquer",
+  "debut": 108.55,
+  "fin": 108.91,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "sur",
+  "debut": 108.91,
+  "fin": 109.41,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "le",
+  "debut": 109.41,
+  "fin": 109.53,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "lien",
+  "debut": 109.53,
+  "fin": 109.73,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "en",
+  "debut": 109.73,
+  "fin": 109.97,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "description.",
+  "debut": 109.97,
+  "fin": 110.33,
+  "proba": 0.68,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 110.33,
+  "fin": 110.55,
+  "proba": 0.98,
+  "statut": "écart"
+ },
+ {
+  "mot": "cette",
+  "debut": 110.55,
+  "fin": 110.55,
+  "proba": 0.94,
+  "statut": "écart"
+ },
+ {
+  "mot": "vidéo",
+  "debut": 110.55,
+  "fin": 110.93,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "pour",
+  "debut": 110.93,
+  "fin": 111.33,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "vous",
+  "debut": 111.33,
+  "fin": 111.53,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "inscrire.",
+  "debut": 111.53,
+  "fin": 111.95,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "Besoin",
+  "debut": 112.79,
+  "fin": 113.17,
+  "proba": 0.73,
+  "statut": "ok"
+ },
+ {
+  "mot": "d'informations ?",
+  "debut": 113.17,
+  "fin": 114.23,
+  "proba": 0.33,
+  "statut": "ok"
+ },
+ {
+  "mot": "Veuillez",
+  "debut": 114.23,
+  "fin": 114.51,
+  "proba": 0.93,
+  "statut": "hors script"
+ },
+ {
+  "mot": "vous",
+  "debut": 114.51,
+  "fin": 114.61,
+  "proba": 0.98,
+  "statut": "hors script"
+ },
+ {
+  "mot": "contacter",
+  "debut": 114.61,
+  "fin": 115.11,
+  "proba": 0.98,
+  "statut": "hors script"
+ },
+ {
+  "mot": "+228 72 24 02 31.",
+  "debut": 115.11,
+  "fin": 118.41,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "Ne",
+  "debut": 118.67,
+  "fin": 119.03,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vous",
+  "debut": 119.03,
+  "fin": 119.15,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "contentez",
+  "debut": 119.15,
+  "fin": 119.65,
+  "proba": 0.89,
+  "statut": "ok"
+ },
+ {
+  "mot": "pas",
+  "debut": 119.65,
+  "fin": 119.81,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 119.81,
+  "fin": 119.95,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "regarder",
+  "debut": 119.95,
+  "fin": 120.29,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA",
+  "debut": 120.29,
+  "fin": 120.59,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "évoluer.",
+  "debut": 120.59,
+  "fin": 121.13,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Apprenez",
+  "debut": 121.53,
+  "fin": 121.95,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 121.95,
+  "fin": 122.41,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'utiliser.",
+  "debut": 122.41,
+  "fin": 122.95,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Lomé",
+  "debut": 123.59,
+  "fin": 123.855,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "IA",
+  "debut": 123.855,
+  "fin": 123.987,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "School.",
+  "debut": 123.987,
+  "fin": 124.45,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "Maîtrisez",
+  "debut": 124.77,
+  "fin": 125.27,
+  "statut": "corrigé",
+  "proba": 1.0
+ },
+ {
+  "mot": "l'IA.",
+  "debut": 125.27,
+  "fin": 125.63,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "et",
+  "debut": 125.63,
+  "fin": 126.23,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "transformer",
+  "debut": 126.23,
+  "fin": 126.77,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "vos",
+  "debut": 126.77,
+  "fin": 126.95,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "compétences",
+  "debut": 126.95,
+  "fin": 127.45,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "en",
+  "debut": 127.45,
+  "fin": 127.63,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "opportunités.",
+  "debut": 127.63,
+  "fin": 128.15,
+  "proba": 0.93,
+  "statut": "ok"
+ },
+ {
+  "mot": "Un",
+  "debut": 128.67,
+  "fin": 128.89,
+  "proba": 0.57,
+  "statut": "hors script"
+ },
+ {
+  "mot": "instant,",
+  "debut": 128.89,
+  "fin": 129.15,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "ce",
+  "debut": 129.23,
+  "fin": 129.27,
+  "proba": 0.73,
+  "statut": "ok"
+ },
+ {
+  "mot": "n'est",
+  "debut": 129.27,
+  "fin": 129.35,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "pas",
+  "debut": 129.35,
+  "fin": 129.43,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "fini,",
+  "debut": 129.43,
+  "fin": 129.67,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "j'ai",
+  "debut": 129.77,
+  "fin": 129.91,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "une",
+  "debut": 129.91,
+  "fin": 129.97,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "question",
+  "debut": 129.97,
+  "fin": 130.19,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "pour",
+  "debut": 130.19,
+  "fin": 130.43,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vous :",
+  "debut": 130.43,
+  "fin": 130.63,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "aujourd'hui,",
+  "debut": 130.87,
+  "fin": 131.59,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "qu'aimeriez-vous",
+  "debut": 131.91,
+  "fin": 132.57,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "être",
+  "debut": 132.57,
+  "fin": 132.87,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "capable",
+  "debut": 132.87,
+  "fin": 133.41,
+  "proba": 0.96,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 133.41,
+  "fin": 133.63,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "faire",
+  "debut": 133.63,
+  "fin": 133.85,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "grâce",
+  "debut": 133.85,
+  "fin": 134.19,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 134.19,
+  "fin": 134.31,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA ?",
+  "debut": 134.31,
+  "fin": 135.03,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "Veuillez",
+  "debut": 135.03,
+  "fin": 135.49,
+  "proba": 1.0,
+  "statut": "écart"
+ },
+ {
+  "mot": "répondre",
+  "debut": 135.49,
+  "fin": 135.89,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "en",
+  "debut": 135.89,
+  "fin": 136.43,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "commentaire",
+  "debut": 136.43,
+  "fin": 136.95,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "avec",
+  "debut": 136.95,
+  "fin": 137.17,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "votre",
+  "debut": 137.17,
+  "fin": 137.39,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "objectif.",
+  "debut": 137.39,
+  "fin": 137.81,
+  "proba": 0.95,
+  "statut": "ok"
+ },
+ {
+  "mot": "Puis",
+  "debut": 137.89,
+  "fin": 138.23,
+  "proba": 0.1,
+  "statut": "ok"
+ },
+ {
+  "mot": "partagez",
+  "debut": 138.41,
+  "fin": 138.85,
+  "proba": 0.96,
+  "statut": "ok"
+ },
+ {
+  "mot": "cette",
+  "debut": 138.85,
+  "fin": 138.99,
+  "proba": 0.89,
+  "statut": "ok"
+ },
+ {
+  "mot": "vidéo",
+  "debut": 138.99,
+  "fin": 139.37,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "dans",
+  "debut": 139.37,
+  "fin": 139.97,
+  "proba": 0.96,
+  "statut": "ok"
+ },
+ {
+  "mot": "vos",
+  "debut": 139.97,
+  "fin": 140.45,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "groupes",
+  "debut": 140.45,
+  "fin": 140.97,
+  "proba": 0.99,
+  "statut": "écart"
+ },
+ {
+  "mot": "WhatsApp,",
+  "debut": 140.97,
+  "fin": 141.65,
+  "proba": 0.76,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 141.89,
+  "fin": 142.01,
+  "proba": 0.77,
+  "statut": "ok"
+ },
+ {
+  "mot": "vos",
+  "debut": 142.01,
+  "fin": 142.21,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "amis",
+  "debut": 142.21,
+  "fin": 142.57,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 142.81,
+  "fin": 142.99,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "vos",
+  "debut": 142.99,
+  "fin": 143.13,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "collègues.",
+  "debut": 143.13,
+  "fin": 143.69,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Et",
+  "debut": 144.25,
+  "fin": 144.55,
+  "proba": 0.75,
+  "statut": "hors script"
+ },
+ {
+  "mot": "voilà.",
+  "debut": 144.55,
+  "fin": 144.81,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Peut-être",
+  "debut": 145.33,
+  "fin": 145.97,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "que",
+  "debut": 145.97,
+  "fin": 146.15,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "votre",
+  "debut": 146.15,
+  "fin": 146.45,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "partage",
+  "debut": 146.45,
+  "fin": 146.95,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "sera",
+  "debut": 146.95,
+  "fin": 147.23,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "justement",
+  "debut": 147.23,
+  "fin": 147.97,
+  "proba": 0.94,
+  "statut": "ok"
+ },
+ {
+  "mot": "ce",
+  "debut": 147.97,
+  "fin": 148.69,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "qui",
+  "debut": 148.69,
+  "fin": 148.85,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "permettra",
+  "debut": 148.85,
+  "fin": 149.37,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 149.37,
+  "fin": 149.51,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "quelqu'un",
+  "debut": 149.51,
+  "fin": 149.99,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 149.99,
+  "fin": 150.17,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "découvrir",
+  "debut": 150.17,
+  "fin": 150.51,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "l'IA",
+  "debut": 150.51,
+  "fin": 150.91,
+  "proba": 0.97,
+  "statut": "ok"
+ },
+ {
+  "mot": "et",
+  "debut": 150.91,
+  "fin": 151.35,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 151.35,
+  "fin": 151.47,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "changer",
+  "debut": 151.47,
+  "fin": 151.87,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "sa",
+  "debut": 151.87,
+  "fin": 152.13,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "façon",
+  "debut": 152.13,
+  "fin": 152.31,
+  "proba": 0.95,
+  "statut": "ok"
+ },
+ {
+  "mot": "de",
+  "debut": 152.31,
+  "fin": 152.43,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "travailler.",
+  "debut": 152.43,
+  "fin": 152.75,
+  "statut": "corrigé",
+  "proba": 1.0
+ },
+ {
+  "mot": "Cliquez",
+  "debut": 153.15,
+  "fin": 153.73,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "sur",
+  "debut": 153.73,
+  "fin": 153.85,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "le",
+  "debut": 153.85,
+  "fin": 153.97,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "lien.",
+  "debut": 153.97,
+  "fin": 154.19,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Inscrivez-vous.",
+  "debut": 154.63,
+  "fin": 155.21,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "Et",
+  "debut": 155.21,
+  "fin": 155.57,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "rendez-vous",
+  "debut": 155.57,
+  "fin": 156.21,
+  "proba": 0.98,
+  "statut": "ok"
+ },
+ {
+  "mot": "ce",
+  "debut": 156.21,
+  "fin": 156.61,
+  "proba": 1.0,
+  "statut": "hors script"
+ },
+ {
+  "mot": "samedi",
+  "debut": 156.61,
+  "fin": 157.13,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "10",
+  "debut": 157.13,
+  "fin": 157.43,
+  "proba": 0.99,
+  "statut": "ok"
+ },
+ {
+  "mot": "octobre",
+  "debut": 157.43,
+  "fin": 158.01,
+  "proba": 1.0,
+  "statut": "ok"
+ },
+ {
+  "mot": "à",
+  "debut": 158.01,
+  "fin": 158.37,
+  "proba": 0.91,
+  "statut": "ok"
+ },
+ {
+  "mot": "Adidogomé !",
+  "debut": 158.37,
+  "fin": 158.95,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "ok"
+ },
+ {
+  "mot": "Lycée",
+  "debut": 159.13,
+  "fin": 159.387,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Moderne",
+  "debut": 159.387,
+  "fin": 159.747,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "hors script"
+ },
+ {
+  "mot": "2.",
+  "debut": 159.747,
+  "fin": 159.85,
+  "proba": 0.99,
+  "glossaire": true,
+  "statut": "hors script"
+ },
+ {
+  "mot": "Merci.",
+  "debut": 160.09,
+  "fin": 160.55,
+  "proba": 1.0,
+  "statut": "hors script"
+ }
+]
