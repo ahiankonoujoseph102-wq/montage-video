@@ -26,7 +26,7 @@ CRETE_MAX_DB = -1.0    # limiteur de crête
 
 # Musique, en LU par rapport à la voix : très basse quand il parle, remonte dans les silences,
 # un peu plus haute en plein écran, et sur le carton de fin.
-MUSIQUE = {"parle": -24.0, "parle_plein_ecran": -19.0, "silence": -14.0, "carton": -12.0}
+MUSIQUE = {"parle": -16.0, "parle_plein_ecran": -10.0, "silence": -12.0, "carton": -10.0}
 FONDU_ENTREE = 1.0
 
 # Effets : niveau (sonie de l'effet, en LU par rapport à la voix) — toujours sous la voix.
@@ -195,13 +195,14 @@ def main():
     cible[actif & plein_ecran] = MUSIQUE["parle_plein_ecran"]
     carton = props.get("carton")
     if carton:
-        cible[int(carton["debut"] / FPS * 100):] = MUSIQUE["carton"]
+        # La musique remonte dès que la voix s'éteint (15 images avant le carton).
+        cible[int((carton["debut"] - 9) / FPS * 100):] = MUSIQUE["carton"]
     gain_db = lisser_db(cible)
     gain = np.repeat(db(gain_db), SR // 100)
     gain = np.pad(gain, (0, max(0, n - len(gain))), mode="edge")[:n]
     gain[:int(FONDU_ENTREE * SR)] *= np.linspace(0, 1, int(FONDU_ENTREE * SR))
-    if carton:  # fondu de sortie sur toute la durée du carton
-        d = carton["debut"] * ECH_PAR_IMAGE
+    if carton:  # carton : 1 s au niveau « carton », puis fondu de sortie jusqu'à la dernière image
+        d = carton["debut"] * ECH_PAR_IMAGE + SR
         gain[d:] *= np.linspace(1, 0, n - d) ** 1.5
     musique *= gain[:, None]
 

@@ -3,10 +3,10 @@
 ## Niveaux mesurés (EBU R128)
 
 - Mix final : **-14.0 LUFS** intégrés ; crête vraie **-1.5 dBTP** ; crête échantillon -1.5 dBFS ; échantillons saturés : **0**.
-- Voix seule : -14.0 LUFS.
-- Musique pendant qu'il parle : -37.5 LUFS, soit **-23.5 LU** sous la voix.
-- Musique pendant les plein écran : -33.5 LUFS (-19.5 LU).
-- Musique au début du carton de fin (sans voix) : -32.4 LUFS (-18.4 LU), puis fondu jusqu'au silence.
+- Voix seule : -14.1 LUFS.
+- Musique pendant qu'il parle : -29.3 LUFS, soit **-15.2 LU** sous la voix.
+- Musique pendant les plein écran : -24.7 LUFS (-10.6 LU).
+- Musique au début du carton de fin (sans voix) : -24.9 LUFS (-10.8 LU), puis fondu jusqu'au silence.
 - Effets : de **-23.7 à -5.0 LU** par rapport à la voix au même moment (négatif = plus bas que la voix).
 
 ## Effets sonores (moment exact)

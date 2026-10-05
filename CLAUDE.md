@@ -66,9 +66,11 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - **Musique par défaut** : `sons/musique_defaut.m4a` (musique personnelle de Joseph, droits OK), décrite dans
   `sons/musique.json` (tonalité **Sol mineur**, ~65 BPM, mesurées avec librosa). En boucle si plus courte que la
   vidéo (fondu enchaîné de 1,5 s au raccord), fondu d'entrée de 1 s, fondu de sortie sur tout le carton de fin.
-- **Voix toujours compréhensible** (`scripts/mixer.py`) : voix normalisée, musique baissée automatiquement quand
-  il parle (−23,5 LU sous la voix), un peu remontée en plein écran (−19,5 LU) et sur le carton de fin (−18 LU),
-  et dans les silences. Mix final à −14 LUFS, limiteur de crête : crête vraie ≤ −1 dBTP, aucune saturation.
+- **Niveaux par défaut** (`MUSIQUE` dans `scripts/mixer.py`, validés par Joseph) : voix normalisée, musique
+  **16 LU sous la voix quand il parle**, **10 LU sous la voix en plein écran et sur le carton de fin**
+  (1 s à ce niveau puis fondu jusqu'au silence), 12 LU sous la voix dans les silences. La voix reste toujours
+  parfaitement compréhensible. **Mix final à −14 LUFS**, limiteur de crête : **crête vraie sous −1 dBTP**,
+  aucune saturation. Effets sonores : calage et niveaux inchangés (ci-dessous).
 - **Effets sonores** fabriqués par `scripts/sons.py` (une seule famille : impacts graves accordés sur la tonique,
   cloches sur l'accord de tonique, souffles filtrés, même réverbération), **accordés sur la tonalité de la
   musique** — relancer `python3 scripts/sons.py` si la musique change. Un son par type, toujours le même :
