@@ -1,7 +1,7 @@
 import React from 'react';
 import {fitText} from '@remotion/layout-utils';
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {contour, BLANC, JAUNE, ONDE, POLICE, ROUGE, VERT} from '../charte';
+import {contour, BLANC, JAUNE, ONDE, POLICE, ROUGE, VERT, ZONE_SURE} from '../charte';
 import type {Element, Scene} from '../types';
 import {FondAnime} from './FondAnime';
 import {Icone} from './Icones';
@@ -10,8 +10,8 @@ const ENTREE = 10;
 const SORTIE = 8;
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 // Zone de contenu : de sous la barre de progression jusqu'au-dessus de l'onde sonore.
-const ZONE = {haut: 150, bas: ONDE.centre - ONDE.hauteurMax / 2 - 40};
-const LARGEUR = 960;
+const ZONE = {haut: ZONE_SURE.haut, bas: ONDE.centre - ONDE.hauteurMax / 2 - 30};
+const LARGEUR = ZONE_SURE.droite - ZONE_SURE.gauche - 30;
 
 // Passage plein écran (passages courts) : remplace le visage. Le contenu est centré
 // verticalement dans la zone libre, pour ne pas laisser de grand vide.
@@ -27,7 +27,8 @@ export const PassageAnime: React.FC<{scene: Scene}> = ({scene}) => {
   return (
     <AbsoluteFill style={{clipPath: `circle(${ouverture * 120}% at 50% 40%)`}}>
       <FondAnime fond={scene.fond} />
-      <div style={{position: 'absolute', top: ZONE.haut, height: ZONE.bas - ZONE.haut, left: 0, right: 0,
+      <div style={{position: 'absolute', top: ZONE.haut, height: ZONE.bas - ZONE.haut, left: ZONE_SURE.gauche,
+        width: ZONE_SURE.droite - ZONE_SURE.gauche,
         display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 56}}>
         {scene.titre ? <EnTete texte={scene.titre} /> : null}
         {scene.disposition === 'focus' ? <Focus elements={elements} /> : <Liste elements={elements} />}
@@ -62,7 +63,7 @@ const ElementFocus: React.FC<{element: Element; local: number}> = ({element, loc
   const trait = interpolate(local, [2, 20], [0, 1], clamp);
   const marque = interpolate(local, [14, 24], [0, 1], clamp);
   const texte = spring({frame: local - 6, fps, config: {damping: 16, overshootClamping: true}});
-  const diametre = element.grand ? 440 : 520;
+  const diametre = element.grand ? 380 : 440;
   // Texte ajusté pour remplir la largeur, ligne par ligne (coupure à la virgule ou au « \n »).
   const lignes = (element.texte ?? '').split(/\n|(?<=,)\s+/);
   return (
@@ -108,8 +109,8 @@ const Liste: React.FC<{elements: Element[]}> = ({elements}) => {
       {elements.map((e, i) => {
         const s = spring({frame: f - Math.max(0, e.debut), fps, config: {damping: 14, stiffness: 170, overshootClamping: true}});
         return (
-          <div key={i} style={{fontFamily: POLICE, fontWeight: 900, fontSize: 124, lineHeight: 1.1, color: BLANC,
-            padding: '18px 64px', borderRadius: 36, background: 'rgba(255,255,255,0.16)',
+          <div key={i} style={{fontFamily: POLICE, fontWeight: 900, fontSize: 110, lineHeight: 1.1, color: BLANC,
+            padding: '16px 50px', borderRadius: 34, background: 'rgba(255,255,255,0.16)',
             border: '4px solid rgba(255,255,255,0.4)', boxShadow: '0 12px 30px rgba(0,0,0,0.25)',
             opacity: f >= e.debut ? s : 0, transform: `scale(${0.6 + 0.4 * s})`}}>
             {e.texte}

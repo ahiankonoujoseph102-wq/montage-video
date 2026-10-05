@@ -19,6 +19,7 @@ export type Scene = {
   titre?: string;
   icone?: string;
   compteur?: boolean;
+  tailleUniforme?: boolean; // panneau : même taille de texte pour tous les éléments
   elements: Element[];
 };
 
@@ -30,6 +31,7 @@ export type MontageProps = {
   titre?: Titre;
   mots: Mot[];
   groupes: number[][];
+  plans: number[]; // images où le cadrage alterne (normal / zoom)
   scenes: Scene[];
   onde: number[][];
 };

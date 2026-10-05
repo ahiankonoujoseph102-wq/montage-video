@@ -7,13 +7,18 @@ export const JAUNE = '#FFD400';
 export const ROUGE = '#FF3B3B';
 export const VERT = '#22C55E';
 
-// Le tiers inférieur commence à 1280 px. L'onde est juste au-dessus des sous-titres.
-// En dessous de ~1650 px, l'interface de TikTok / Instagram recouvre l'image.
-export const ONDE = {centre: 1320, hauteurMax: 80};
-export const SOUS_TITRES = {haut: 1390, largeur: 940};
-export const TITRE = {haut: 130};
-// Panneau sombre du tiers supérieur, posé sur le visage (s'arrête au-dessus de la tête).
-export const PANNEAU = {haut: 70, hauteur: 450, marge: 36};
+// Zone sûre TikTok : rien d'important dans les 10 % du haut (192 px), les 20 % du bas
+// (au-delà de 1536 px) ni dans la bande de 12 % à droite (au-delà de 950 px) où sont les boutons.
+export const ZONE_SURE = {haut: 200, bas: 1530, gauche: 50, droite: 950};
+export const CENTRE_X = (ZONE_SURE.gauche + ZONE_SURE.droite) / 2;
+
+// Sous-titres dans le tiers inférieur (dès 1280 px), deux lignes au plus, au-dessus de la limite basse.
+export const SOUS_TITRES = {haut: 1296, gauche: 60, largeur: 880, tailleMax: 94};
+// Onde sonore (plein écran seulement) juste au-dessus des sous-titres.
+export const ONDE = {centre: 1236, hauteurMax: 70};
+export const TITRE = {haut: ZONE_SURE.haut + 10};
+// Panneau sombre du tiers supérieur, posé sur le visage (s'arrête vers le haut de la tête).
+export const PANNEAU = {haut: ZONE_SURE.haut + 10, hauteur: 340};
 // Visage dans l'image recadrée : centre du léger zoom avant.
 export const VISAGE = {x: 540, y: 760};
 export const ZOOM_SERRE = 1.11;

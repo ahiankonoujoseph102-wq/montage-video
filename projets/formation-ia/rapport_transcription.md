@@ -25,8 +25,8 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - `  66.9 s` Samedi 10 octobre.
 - `  68.2 s` __à__ **Adidogomé,** **Lycée** **Moderne** **2.**
 - `  70.1 s` __Nous__ __organisons__ __une__ formation en présentiel.
-- `  73.1 s` Au programme vous allez apprendre à utiliser **ChatGPT,** **Claude,** **Perplexity,** ⚠️__Petit.__
-- `  77.7 s` __Ce__ __qui__ __vous__ __permettra__ __de__ __pouvoir__ __être__ __initié__ __à__ __l'IA,__ __pouvoir__ __créer__ __du__ __contenu,__ __créer__ __des__ __images,__ __créer__ __des__ __vidéos__ __et__ __automatiser__ __vos__ __tâches.__
+- `  73.1 s` Au programme vous allez apprendre à utiliser **ChatGPT,** **Claude,** **__Perplexity.__**
+- `  77.7 s` __Ce__ __qui__ __vous__ __permettra__ __de__ __pouvoir__ __être__ __initié__ __à__ __l'IA,__ **__de__** **__pouvoir__** __créer__ __du__ __contenu,__ __créer__ __des__ __images,__ __créer__ __des__ __vidéos__ __et__ __automatiser__ __vos__ __tâches.__
 - `  86.2 s` __Également__ __le__ **vibe** **coding.**
 - `  87.0 s` __Vous__ __allez__ __aussi__ __apprendre__ __à__ **__utiliser__** l'IA de manière __beaucoup__ plus efficace pour apprendre, __à__ travailler, __à__ créer et développer des opportunités.
 - `  95.7 s` Vous êtes étudiant ?
@@ -39,7 +39,7 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - ` 107.9 s` __Donc,__ __veuillez__ __cliquer__ sur le lien en description.
 - ` 110.3 s` __de__ __cette__ __vidéo__ __pour__ __vous__ __inscrire.__
 - ` 112.8 s` Besoin ⚠️d'informations ?
-- ` 114.2 s` __Veuillez__ __vous__ __contacter__ **+228 72 24 02 31.**
+- ` 114.2 s` __Veuillez__ **__nous__** __contacter__ **+228 72 24 02 31.**
 - ` 118.7 s` Ne vous contentez pas de regarder l'IA évoluer.
 - ` 121.5 s` Apprenez à l'utiliser.
 - ` 123.6 s` **Lomé** **IA** **School.**
@@ -59,6 +59,10 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 ## Corrections manuelles (corrections.json)
 
 - `  88.6 s` « étudier » → « utiliser »
+- `  76.8 s` « Perplexity, » → « Perplexity. »
+- `  77.3 s` « Petit. » → « (supprimé) »
+- `  80.8 s` « pouvoir » → « de pouvoir »
+- ` 114.5 s` « vous » → « nous »
 
 ## Glossaire appliqué
 

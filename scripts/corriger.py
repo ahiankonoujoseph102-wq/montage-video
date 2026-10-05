@@ -154,7 +154,7 @@ def aligner(mots, script_jetons, journal):
     return sortie
 
 
-def rapport(mots, journal_glossaire, journal_script, a_script):
+def rapport(mots, journal_glossaire, journal_script, a_script, journal_manuel):
     lignes = ["# Transcription corrigée", ""]
     lignes.append("Légende : **gras** = corrigé d'après le script ou le glossaire · "
                   "__souligné__ = dit à l'oral mais absent du script (gardé) · "
@@ -179,10 +179,9 @@ def rapport(mots, journal_glossaire, journal_script, a_script):
             phrase, debut = [], None
     if phrase:
         lignes.append(f"- `{debut:6.1f} s` " + " ".join(phrase))
-    manuels = [m for m in mots if m.get("manuel")]
-    if manuels:
+    if journal_manuel:
         lignes += ["", "## Corrections manuelles (corrections.json)", ""]
-        lignes += [f"- `{m['debut']:6.1f} s` « {m['manuel']} » → « {m['mot']} »" for m in manuels]
+        lignes += [f"- {j}" for j in journal_manuel]
     if journal_glossaire:
         lignes += ["", "## Glossaire appliqué", ""] + [f"- {j}" for j in journal_glossaire]
     if a_script:
@@ -221,7 +220,9 @@ def main():
         mots = aligner(mots, jetons_script(script_txt.read_text(), glossaire), journal_script)
 
     # Corrections manuelles : [{"vers": 90.0, "oral": "étudier", "affiche": "utiliser"}]
+    # « affiche » vide → le mot est supprimé ; plusieurs mots → ils se partagent la durée du mot.
     corrections = projet / "corrections.json"
+    journal_manuel = []
     if corrections.exists():
         for c in json.loads(corrections.read_text()):
             m = min((m for m in mots if normaliser(m["mot"]) == normaliser(c["oral"])),
@@ -229,13 +230,17 @@ def main():
             if m is None or abs(m["debut"] - c["vers"]) > 3:
                 print(f"Correction introuvable : {c}")
                 continue
-            m["manuel"], m["mot"] = m["mot"], c["affiche"]
+            i = mots.index(m)
+            nouveaux = repartir(m["debut"], m["fin"], c["affiche"].split(), proba=1.0, statut=m.get("statut", "ok"),
+                                manuel=m["mot"]) if c["affiche"] else []
+            journal_manuel.append(f"`{m['debut']:6.1f} s` « {m['mot']} » → « {c['affiche'] or '(supprimé)'} »")
+            mots[i:i + 1] = nouveaux
 
     for m in mots:
         m["mot"] = ponctuation_francaise(m["mot"])
     (projet / "mots.json").write_text(json.dumps(mots, ensure_ascii=False, indent=1))
     (projet / "rapport_transcription.md").write_text(
-        rapport(mots, journal_glossaire, journal_script, script_txt.exists()))
+        rapport(mots, journal_glossaire, journal_script, script_txt.exists(), journal_manuel))
     print(f"{len(mots)} mots → {projet / 'rapport_transcription.md'}")
 
 

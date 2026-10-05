@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, continueRender, delayRender, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {VISAGE, ZOOM_SERRE} from './charte';
 import {Onde} from './composants/Onde';
@@ -7,15 +7,12 @@ import {PassageAnime} from './composants/PassageAnime';
 import {Progression} from './composants/Progression';
 import {SousTitres} from './composants/SousTitres';
 import {TitreAccroche} from './composants/TitreAccroche';
-import type {MontageProps, Mot} from './types';
+import type {MontageProps} from './types';
 
 const TRANSITION_ZOOM = 4; // images : changement de cadrage très rapide
 
-// Début (en images) de chaque phrase : là où le cadrage alterne.
-const debutsDePhrase = (mots: Mot[]) =>
-  mots.filter((m, i) => i === 0 || /[.?!]$/.test(mots[i - 1].mot)).map((m) => m.debut);
-
-// Visage : cadre normal, puis léger zoom avant centré sur le visage, en alternant à chaque phrase.
+// Visage : cadre normal, puis léger zoom avant centré sur le visage, en alternant à chaque plan
+// (débuts de phrase et virgules, toutes les 3 à 4 s ; calculés par scripts/preparer.py).
 const Visage: React.FC<{video: string; debuts: number[]}> = ({video, debuts}) => {
   const f = useCurrentFrame();
   let n = 0;
@@ -61,14 +58,13 @@ export const Montage: React.FC<MontageProps> = (p) => {
 
 const MontageCharge: React.FC<MontageProps> = (p) => {
   const frame = useCurrentFrame();
-  const debuts = useMemo(() => debutsDePhrase(p.mots), [p.mots]);
   const pleinEcran = p.scenes.filter((s) => s.disposition !== 'panneau');
   const panneaux = p.scenes.filter((s) => s.disposition === 'panneau');
   const dansPleinEcran = pleinEcran.some((s) => frame >= s.debut && frame < s.fin);
 
   return (
     <AbsoluteFill style={{backgroundColor: 'black'}}>
-      <Visage video={p.video} debuts={debuts} />
+      <Visage video={p.video} debuts={p.plans} />
       <DegradeBas />
       {panneaux.map((s) => (
         <Sequence key={s.id} from={s.debut} durationInFrames={s.fin - s.debut} layout="none">

@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 projet=$1
 mkdir -p out
 navigateur=$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell 2>/dev/null | head -1 || true)
-options=(--props="public/$projet/props.json" --concurrency=4 --crf=18)
+options=(--props="public/$projet/props.json" --concurrency=4 --crf=16)
 [ -n "$navigateur" ] && options+=(--browser-executable="$navigateur")
 if [ $# -ge 2 ]; then
   options+=(--frames="0-$(( $2 * 30 - 1 ))")

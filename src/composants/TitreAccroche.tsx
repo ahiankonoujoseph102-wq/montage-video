@@ -1,10 +1,10 @@
 import React from 'react';
 import {fitText} from '@remotion/layout-utils';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {contour, BLANC, JAUNE, POLICE, TITRE} from '../charte';
+import {contour, BLANC, JAUNE, POLICE, TITRE, ZONE_SURE} from '../charte';
 import type {Titre} from '../types';
 
-const LARGEUR = 960;
+const LARGEUR = ZONE_SURE.droite - ZONE_SURE.gauche - 60; // largeur du texte, dans la zone sûre
 const TAILLE_MAX = 150;
 const ESPACE_MOTS = 0.3; // en fraction de la taille du texte, proche d'une espace normale
 
@@ -27,8 +27,8 @@ export const TitreAccroche: React.FC<{titre: Titre}> = ({titre}) => {
       style={{
         position: 'absolute',
         top: TITRE.haut,
-        left: 0,
-        right: 0,
+        left: ZONE_SURE.gauche,
+        width: ZONE_SURE.droite - ZONE_SURE.gauche,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

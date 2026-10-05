@@ -79,7 +79,7 @@
         {
           "a": "Elles pensent",
           "marque": "croix",
-          "texte": "Croire aux prompts magiques"
+          "texte": "Prompts magiques"
         },
         {
           "a": "Elles ne pratiquent",
@@ -106,7 +106,8 @@
           "marque": "croix",
           "texte": "Oublier ses compétences"
         }
-      ]
+      ],
+      "tailleUniforme": true
     },
     {
       "id": "apprendre",

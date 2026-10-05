@@ -160,12 +160,24 @@ def resoudre_scenes(mots, config):
     return scenes
 
 
+def isole(mot):
+    """Un numéro de téléphone s'affiche seul sur sa ligne."""
+    return re.fullmatch(r"\+?[\d ]{8,}[.,!?]?", mot) is not None
+
+
+def fin_phrase(mot):
+    return mot[-1] in ".?!"
+
+
 def grouper(mots, coupures):
     """Groupes de 3 ou 4 mots, équilibrés, coupés en fin de phrase et aux bords des passages animés."""
     phrases, courant = [], []
     for i, m in enumerate(mots):
+        if isole(m["mot"]) and courant:
+            phrases.append(courant)
+            courant = []
         courant.append(i)
-        if m["mot"][-1] in ".?!" or (i + 1) in coupures:
+        if fin_phrase(m["mot"]) or (i + 1) in coupures or isole(m["mot"]) or (i + 1 < len(mots) and isole(mots[i + 1]["mot"])):
             phrases.append(courant)
             courant = []
     if courant:
@@ -185,7 +197,54 @@ def grouper(mots, coupures):
                     bornes[j] = b
                     break
         groupes += [phrase[bornes[j]:bornes[j + 1]] for j in range(k)]
+
+    # Pas de groupe d'un seul mot, sauf une phrase d'un mot ou un numéro : on le rattache au voisin.
+    def seul_autorise(i):
+        phrase_entiere = (i == 0 or fin_phrase(mots[i - 1]["mot"])) and fin_phrase(mots[i]["mot"])
+        return phrase_entiere or isole(mots[i]["mot"])
+
+    k = 0
+    while k < len(groupes):
+        g = groupes[k]
+        if len(g) == 1 and not seul_autorise(g[0]):
+            i = g[0]
+            avant = (k > 0 and i not in coupures and not fin_phrase(mots[i - 1]["mot"])
+                     and not isole(mots[i - 1]["mot"]))
+            apres = (k + 1 < len(groupes) and (i + 1) not in coupures and not fin_phrase(mots[i]["mot"])
+                     and not isole(mots[i + 1]["mot"]))
+            if avant and (not apres or len(groupes[k - 1]) <= len(groupes[k + 1])):
+                groupes[k - 1] += g
+                del groupes[k]
+                continue
+            if apres:
+                groupes[k + 1] = g + groupes[k + 1]
+                del groupes[k]
+                continue
+        k += 1
     return groupes
+
+
+def plans_zoom(mots, images):
+    """Images où le cadrage alterne : débuts de phrase et mots après une virgule, en visant un
+    changement toutes les 3 à 4 s, jamais plus de 5 s sans changement."""
+    mini, cible, maxi = 3 * FPS, 3.5 * FPS, 5 * FPS
+    candidats = [images[i] for i in range(1, len(mots)) if mots[i - 1]["mot"][-1] in ".?!,;:"]
+    tous = sorted(set(images))
+    plans = [0]
+    while True:
+        dernier = plans[-1]
+        possibles = [c for c in candidats if dernier + mini <= c <= dernier + maxi]
+        if possibles:
+            plans.append(min(possibles, key=lambda c: abs(c - dernier - cible)))
+        else:
+            # Pas de ponctuation au bon moment : on change au début d'un mot, vers 4 s.
+            mots_possibles = [t for t in tous if dernier + mini <= t <= dernier + maxi]
+            suivants = [t for t in tous if t >= dernier + mini]
+            if not suivants:
+                break
+            plans.append(min(mots_possibles, key=lambda t: abs(t - dernier - 4 * FPS)) if mots_possibles
+                         else suivants[0])
+    return plans
 
 
 def main():
@@ -252,6 +311,7 @@ def main():
         "titre": config.get("titre"),
         "mots": mots_sortie,
         "groupes": groupes,
+        "plans": plans_zoom(mots, [m["debut"] for m in mots_sortie]),
         "scenes": scenes_sortie,
         "onde": calculer_onde(video, nb_images),
     }

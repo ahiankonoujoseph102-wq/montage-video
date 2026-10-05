@@ -1,6 +1,6 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {ONDE} from '../charte';
+import {CENTRE_X, ONDE} from '../charte';
 
 const LARGEUR_BARRE = 10;
 const ECART = 8;
@@ -16,7 +16,7 @@ export const Onde: React.FC<{onde: number[][]}> = ({onde}) => {
       style={{
         position: 'absolute',
         top: ONDE.centre - ONDE.hauteurMax / 2,
-        left: (1080 - largeur) / 2,
+        left: CENTRE_X - largeur / 2,
         width: largeur,
         height: ONDE.hauteurMax,
         display: 'flex',

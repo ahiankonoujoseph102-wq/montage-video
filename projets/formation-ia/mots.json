@@ -1175,19 +1175,12 @@
   "statut": "hors script"
  },
  {
-  "mot": "Perplexity,",
+  "mot": "Perplexity.",
   "debut": 76.77,
   "fin": 77.19,
-  "proba": 0.99,
-  "glossaire": true,
-  "statut": "hors script"
- },
- {
-  "mot": "Petit.",
-  "debut": 77.29,
-  "fin": 77.47,
-  "proba": 0.59,
-  "statut": "hors script"
+  "proba": 1.0,
+  "statut": "hors script",
+  "manuel": "Perplexity,"
  },
  {
   "mot": "Ce",
@@ -1260,11 +1253,20 @@
   "statut": "hors script"
  },
  {
-  "mot": "pouvoir",
+  "mot": "de",
   "debut": 80.81,
+  "fin": 80.854,
+  "proba": 1.0,
+  "statut": "hors script",
+  "manuel": "pouvoir"
+ },
+ {
+  "mot": "pouvoir",
+  "debut": 80.854,
   "fin": 81.01,
-  "proba": 0.95,
-  "statut": "hors script"
+  "proba": 1.0,
+  "statut": "hors script",
+  "manuel": "pouvoir"
  },
  {
   "mot": "créer",
@@ -1426,7 +1428,7 @@
   "mot": "utiliser",
   "debut": 88.57,
   "fin": 88.85,
-  "proba": 0.91,
+  "proba": 1.0,
   "statut": "hors script",
   "manuel": "étudier"
  },
@@ -1879,11 +1881,12 @@
   "statut": "hors script"
  },
  {
-  "mot": "vous",
+  "mot": "nous",
   "debut": 114.51,
   "fin": 114.61,
-  "proba": 0.98,
-  "statut": "hors script"
+  "proba": 1.0,
+  "statut": "hors script",
+  "manuel": "vous"
  },
  {
   "mot": "contacter",

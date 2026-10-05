@@ -16,6 +16,7 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
      ce qui est dit à l'oral et absent du script est **gardé et signalé**.
    - Corrections à la main : `projets/<projet>/corrections.json`
      (`[{"vers": 90.0, "oral": "étudier", "affiche": "utiliser"}]`), puis relancer `corriger.py`.
+     `"affiche": ""` supprime le mot ; plusieurs mots (`"de pouvoir"`) se partagent sa durée.
 3. **Proposer la liste des passages en animation plein écran** : moment, idée, icône prévue.
    Les écrire dans `projets/<projet>/montage.json` (voir l'exemple `projets/formation-ia/`).
 4. **Attendre son accord avant le rendu complet.** Un extrait court (`scripts/rendre.sh <projet> 45`)
@@ -27,10 +28,17 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 ## Style (fixé)
 
 - 1080 × 1920, 30 i/s. Son visage reste à l'écran, sauf pendant les passages plein écran.
-- Cadrage dynamique sur le visage : à chaque nouvelle phrase, on alterne cadre normal / léger zoom
-  avant de 11 % centré sur le visage (`VISAGE`, `ZOOM_SERRE` dans `src/charte.ts`), transition de 4 images.
-- Sous-titres mot par mot dans le tiers inférieur, 3 ou 4 mots à la fois, texte blanc,
-  mot-clé en jaune souligné (`motsCles` dans `montage.json`), sur un léger dégradé sombre en bas d'image.
+- **Zone sûre TikTok** (`ZONE_SURE` dans `src/charte.ts`) : rien dans les 10 % du haut, les 20 % du bas
+  ni dans la bande de 12 % à droite (boutons). Titre, panneaux, plein écran et sous-titres y restent.
+  La fine barre de progression, tout en haut, est la seule exception.
+- Cadrage dynamique sur le visage : on alterne cadre normal / léger zoom avant de 11 % centré sur le
+  visage, aux débuts de phrase et aux virgules, toutes les 3 à 4 s, jamais plus de 5 s sans changement
+  (`plans_zoom` dans `scripts/preparer.py`), transition de 4 images.
+- Sous-titres mot par mot dans le tiers inférieur, 3 ou 4 mots à la fois, 94 px au plus, deux lignes
+  au plus, texte blanc, mot-clé en jaune souligné (`motsCles` dans `montage.json`), sur un léger dégradé
+  sombre en bas d'image. Jamais un mot seul à l'écran : le 2e mot d'un groupe apparaît avec le 1er, et
+  un groupe d'un mot est rattaché au voisin (sauf phrase d'un seul mot). Un numéro de téléphone
+  s'affiche seul sur sa ligne.
 - Titre d'accroche animé pendant les 3 premières secondes, sur deux lignes ajustées à la largeur
   (`titre.lignes` dans `montage.json`), mot-clé en jaune.
 - Fine barre de progression en haut.
@@ -38,7 +46,8 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - **Listes et énumérations** (erreurs, « Apprendre à », publics, question finale) : disposition
   `panneau` — le visage reste à l'écran, panneau sombre semi-transparent dans le tiers supérieur
   (au-dessus de la tête), titre, compteur facultatif, puis un élément à la fois au rythme de la voix,
-  texte court, gros et gras, avec croix rouge / coche verte / icône.
+  texte court, gros et gras (`tailleUniforme: true` pour imposer la même taille à tous les éléments : textes courts),
+  avec croix rouge / coche verte / icône.
 - **Plein écran réservé aux passages courts** (date et lieu, outils, numéro de téléphone) :
   dispositions `focus` (une grande icône + grand texte ajusté à la largeur ; `\n` pour couper la ligne)
   ou `liste` (grandes étiquettes de texte). Fond en dégradé animé (`nuit`, `orange`, `bleu`,

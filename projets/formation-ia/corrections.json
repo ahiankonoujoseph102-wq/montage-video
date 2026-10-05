@@ -1,3 +1,7 @@
 [
-  {"vers": 90.0, "oral": "étudier", "affiche": "utiliser", "_pourquoi": "une 2e transcription entend « utiliser » ; le script aussi"}
+  {"vers": 88.6, "oral": "étudier", "affiche": "utiliser", "_pourquoi": "une 2e transcription entend « utiliser » ; le script aussi"},
+  {"vers": 76.8, "oral": "Perplexity,", "affiche": "Perplexity.", "_pourquoi": "fin de l'énumération des outils"},
+  {"vers": 77.3, "oral": "Petit.", "affiche": "", "_pourquoi": "pas de 4e outil (confirmé par Joseph)"},
+  {"vers": 80.8, "oral": "pouvoir", "affiche": "de pouvoir", "_pourquoi": "« de pouvoir créer du contenu » (confirmé par Joseph)"},
+  {"vers": 114.5, "oral": "vous", "affiche": "nous", "_pourquoi": "« Veuillez nous contacter » (demandé par Joseph)"}
 ]
