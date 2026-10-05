@@ -4,6 +4,7 @@ import {contour, BLANC, JAUNE, POLICE, SOUS_TITRES} from '../charte';
 import type {Mot} from '../types';
 
 const TAILLE_MAX = 82;
+const ESPACE_MOTS = 0.42; // en fraction de la taille du texte
 const MAINTIEN_APRES = 20; // le groupe reste affiché 20 images après son dernier mot
 
 export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]}> = ({mots, groupes}) => {
@@ -33,7 +34,9 @@ export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]}> = ({mots, 
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignContent: 'flex-start',
-        columnGap: 24,
+        // Espace proportionnel à la taille du texte : un écart fixe paraît collé avec des
+        // capitales très grasses à contour, surtout quand le mot finit son apparition.
+        columnGap: Math.round(taille * ESPACE_MOTS),
         rowGap: 6,
       }}
     >
@@ -41,7 +44,7 @@ export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]}> = ({mots, 
         .filter((i) => mots[i].debut <= frame)
         .map((i) => {
           const m = mots[i];
-          const pop = spring({frame: frame - m.debut, fps, config: {damping: 14, stiffness: 220}, overshootClamping: true});
+          const pop = spring({frame: frame - m.debut, fps, config: {damping: 14, stiffness: 220, overshootClamping: true}});
           return (
             <span
               key={i}
@@ -59,7 +62,7 @@ export const SousTitres: React.FC<{mots: Mot[]; groupes: number[][]}> = ({mots, 
                 textUnderlineOffset: 12,
                 textDecorationSkipInk: 'none',
                 display: 'inline-block',
-                transform: `scale(${0.7 + 0.3 * pop}) translateY(${(1 - pop) * 18}px)`,
+                transform: `scale(${0.85 + 0.15 * pop}) translateY(${(1 - pop) * 14}px)`,
                 opacity: Math.min(1, pop * 1.5),
                 ...contour,
               }}

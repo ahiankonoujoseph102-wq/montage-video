@@ -206,8 +206,15 @@ def main():
 
     scenes = resoudre_scenes(mots, config)
 
+    # La coupe prend quelques minutes : on la saute si la source et les coupes n'ont pas changé.
     video = sortie / "video.mp4"
-    couper_video(source, gardes, video)
+    empreinte = {"source": source.stat().st_mtime, "taille": source.stat().st_size, "gardes": gardes}
+    cache = sortie / "coupes.json"
+    if video.exists() and cache.exists() and json.loads(cache.read_text()) == json.loads(json.dumps(empreinte)):
+        print("Vidéo coupée déjà à jour, coupe sautée")
+    else:
+        couper_video(source, gardes, video)
+        cache.write_text(json.dumps(empreinte))
     nb_images = int(duree(video) * FPS)
 
     cles = {sans_elision(k) for k in config.get("motsCles", [])}

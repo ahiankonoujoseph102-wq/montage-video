@@ -1372,17 +1372,19 @@
   "statut": "hors script"
  },
  {
-  "mot": "web",
+  "mot": "vibe",
   "debut": 86.57,
-  "fin": 86.73,
-  "proba": 0.79,
+  "fin": 86.715,
+  "proba": 0.99,
+  "glossaire": true,
   "statut": "hors script"
  },
  {
   "mot": "coding.",
-  "debut": 86.73,
+  "debut": 86.715,
   "fin": 86.97,
-  "proba": 0.2,
+  "proba": 0.99,
+  "glossaire": true,
   "statut": "hors script"
  },
  {

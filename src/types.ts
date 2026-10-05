@@ -15,14 +15,14 @@ export type Scene = {
   debut: number;
   fin: number;
   fond: Fond;
-  disposition: 'focus' | 'liste';
+  disposition: 'focus' | 'liste' | 'panneau';
   titre?: string;
   icone?: string;
   compteur?: boolean;
   elements: Element[];
 };
 
-export type Titre = {texte: string; motsCles: string[]; duree: number};
+export type Titre = {lignes: string[]; motsCles: string[]; duree: number};
 
 export type MontageProps = {
   video: string;

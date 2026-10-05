@@ -27,7 +27,7 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - `  70.1 s` __Nous__ __organisons__ __une__ formation en présentiel.
 - `  73.1 s` Au programme vous allez apprendre à utiliser **ChatGPT,** **Claude,** **Perplexity,** ⚠️__Petit.__
 - `  77.7 s` __Ce__ __qui__ __vous__ __permettra__ __de__ __pouvoir__ __être__ __initié__ __à__ __l'IA,__ __pouvoir__ __créer__ __du__ __contenu,__ __créer__ __des__ __images,__ __créer__ __des__ __vidéos__ __et__ __automatiser__ __vos__ __tâches.__
-- `  86.2 s` __Également__ __le__ __web__ ⚠️__coding.__
+- `  86.2 s` __Également__ __le__ **vibe** **coding.**
 - `  87.0 s` __Vous__ __allez__ __aussi__ __apprendre__ __à__ **__utiliser__** l'IA de manière __beaucoup__ plus efficace pour apprendre, __à__ travailler, __à__ créer et développer des opportunités.
 - `  95.7 s` Vous êtes étudiant ?
 - `  97.0 s` Vous êtes entrepreneur ?
@@ -67,6 +67,7 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - Glossaire : « la GPT, » → « ChatGPT, » (75.2 s)
 - Glossaire : « Cloud, » → « Claude, » (76.2 s)
 - Glossaire : « Peplest, » → « Perplexity, » (76.8 s)
+- Glossaire : « web coding. » → « vibe coding. » (86.6 s)
 - Glossaire : « au plus de 228-712-24-0231. » → « +228 72 24 02 31. » (115.1 s)
 - Glossaire : « Le meilleur school, » → « Lomé IA School, » (123.6 s)
 - Glossaire : « Jdgomi, » → « Adidogomé, » (158.4 s)
@@ -98,7 +99,7 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - `  22.2 s` « les »
 - `  68.2 s` « à »
 - `  70.1 s` « Nous organisons une »
-- `  75.2 s` « ChatGPT, Claude, Perplexity, Petit. Ce qui vous permettra de pouvoir être initié à l'IA, pouvoir créer du contenu, créer des images, créer des vidéos et automatiser vos tâches. Également le web coding. Vous allez aussi apprendre à étudier »
+- `  75.2 s` « ChatGPT, Claude, Perplexity, Petit. Ce qui vous permettra de pouvoir être initié à l'IA, pouvoir créer du contenu, créer des images, créer des vidéos et automatiser vos tâches. Également le vibe coding. Vous allez aussi apprendre à étudier »
 - `  89.6 s` « beaucoup »
 - `  91.8 s` « à »
 - `  93.1 s` « à »

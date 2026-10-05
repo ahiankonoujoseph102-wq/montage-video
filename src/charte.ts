@@ -11,7 +11,12 @@ export const VERT = '#22C55E';
 // En dessous de ~1650 px, l'interface de TikTok / Instagram recouvre l'image.
 export const ONDE = {centre: 1320, hauteurMax: 80};
 export const SOUS_TITRES = {haut: 1390, largeur: 940};
-export const TITRE = {haut: 150};
+export const TITRE = {haut: 130};
+// Panneau sombre du tiers supérieur, posé sur le visage (s'arrête au-dessus de la tête).
+export const PANNEAU = {haut: 70, hauteur: 450, marge: 36};
+// Visage dans l'image recadrée : centre du léger zoom avant.
+export const VISAGE = {x: 540, y: 760};
+export const ZOOM_SERRE = 1.11;
 
 export const FONDS: Record<Fond, [string, string, string]> = {
   nuit: ['#070B1F', '#1B2A6B', '#3B1F6E'],
