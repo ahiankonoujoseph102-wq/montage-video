@@ -23,44 +23,48 @@ Chaque effet démarre sur l'image indiquée (1 image = 1/30 s).
 | 0:04.37 | 131 | zoom | Changement de cadrage | -16.1 LU |
 | 0:05.73 | 172 | zoom | Changement de cadrage | -15.8 LU |
 | 0:09.80 | 294 | zoom | Changement de cadrage | -20.6 LU |
-| 0:12.50 | 375 | transition | Transition : flou | -11.9 LU |
-| 0:14.00 | 420 | info | Doré : DES ANNÉES D'ÉTUDES | -6.0 LU |
+| 0:12.70 | 381 | zoom | Changement de cadrage | -22.3 LU |
+| 0:13.67 | 410 | plein_ecran | Scène illustrée « etudes » | -8.0 LU |
+| 0:15.30 | 459 | panneau | Scène « etudes » : étape | -13.6 LU |
+| 0:16.20 | 486 | autocollant | Scène « etudes » : étape | -11.0 LU |
 | 0:17.87 | 536 | zoom | Changement de cadrage | -21.7 LU |
-| 0:19.70 | 591 | transition | Transition : bascule | -12.6 LU |
 | 0:20.90 | 627 | info | Doré : TOUTE UNE ÉQUIPE | -6.1 LU |
 | 0:21.90 | 657 | zoom | Changement de cadrage | -22.1 LU |
 | 0:25.80 | 774 | zoom | Changement de cadrage | -22.9 LU |
-| 0:28.57 | 857 | transition | Transition : zoom | -12.4 LU |
+| 0:28.57 | 857 | transition | Transition : flou | -12.4 LU |
 | 0:30.43 | 913 | zoom | Changement de cadrage | -23.1 LU |
 | 0:33.57 | 1007 | autocollant | Autocollant : interrogation | -11.3 LU |
 | 0:35.67 | 1070 | zoom | Changement de cadrage | -22.6 LU |
-| 0:37.47 | 1124 | transition | Transition : image | -10.2 LU |
+| 0:37.47 | 1124 | transition | Transition : bascule | -10.2 LU |
 | 0:37.93 | 1138 | zoom | Changement de cadrage | -21.2 LU |
 | 0:41.77 | 1253 | zoom | Changement de cadrage | -23.1 LU |
-| 0:45.27 | 1358 | transition | Transition : flou | -9.1 LU |
+| 0:45.27 | 1358 | transition | Transition : zoom | -9.1 LU |
 | 0:47.17 | 1415 | plein_ecran | Carton noir : LE PROBLÈME | -8.3 LU |
 | 0:48.57 | 1457 | zoom | Changement de cadrage | -20.6 LU |
-| 0:52.23 | 1567 | zoom | Changement de cadrage | -23.0 LU |
-| 0:54.13 | 1624 | croix | Autocollant : croix | -10.3 LU |
-| 0:54.43 | 1633 | transition | Transition : bascule | -12.0 LU |
+| 0:52.13 | 1564 | plein_ecran | Scène illustrée « reponses » | -9.8 LU |
+| 0:54.13 | 1624 | croix | Scène « reponses » : étape | -10.3 LU |
 | 0:56.33 | 1690 | zoom | Changement de cadrage | -23.2 LU |
-| 0:57.03 | 1711 | croix | Autocollant : croix | -10.2 LU |
 | 0:58.37 | 1751 | zoom | Changement de cadrage | -22.9 LU |
+| 0:58.70 | 1761 | panneau | Scène « reponses » : étape | -13.6 LU |
 | 1:00.13 | 1804 | zoom | Changement de cadrage | -21.7 LU |
-| 1:01.57 | 1847 | transition | Transition : zoom | -12.4 LU |
+| 1:00.67 | 1820 | coche | Scène « reponses » : étape | -9.9 LU |
 | 1:03.53 | 1906 | zoom | Changement de cadrage | -21.4 LU |
 | 1:05.07 | 1952 | autocollant | Autocollant : ampoule | -11.9 LU |
+| 1:06.03 | 1981 | transition | Transition : image | -12.8 LU |
 | 1:06.90 | 2007 | zoom | Changement de cadrage | -22.3 LU |
 | 1:10.57 | 2117 | zoom | Changement de cadrage | -23.4 LU |
-| 1:11.13 | 2134 | transition | Transition : image | -13.4 LU |
-| 1:14.17 | 2225 | zoom | Changement de cadrage | -22.6 LU |
-| 1:16.77 | 2303 | autocollant | Autocollant : flamme | -13.3 LU |
+| 1:13.07 | 2192 | plein_ecran | Scène illustrée « creations » | -8.9 LU |
+| 1:14.30 | 2229 | autocollant | Scène « creations » : étape | -12.7 LU |
+| 1:14.87 | 2246 | autocollant | Scène « creations » : étape | -13.4 LU |
+| 1:15.77 | 2273 | autocollant | Scène « creations » : étape | -13.4 LU |
+| 1:16.77 | 2303 | autocollant | Scène « creations » : étape | -13.3 LU |
 | 1:18.17 | 2345 | zoom | Changement de cadrage | -23.4 LU |
 | 1:21.33 | 2440 | transition | Transition : flou | -11.3 LU |
 | 1:25.07 | 2552 | zoom | Changement de cadrage | -19.4 LU |
 | 1:27.17 | 2615 | plein_ecran | Carton noir : LES CHIFFRES | -10.4 LU |
-| 1:28.70 | 2661 | info | Doré : AMAZON : + DE 15 000 LICENCIEMENTS | -3.4 LU |
+| 1:28.73 | 2662 | plein_ecran | Scène illustrée « licenciements » | -6.3 LU |
 | 1:29.43 | 2683 | zoom | Changement de cadrage | -19.3 LU |
+| 1:30.47 | 2714 | info | Scène « licenciements » : étape | -5.8 LU |
 | 1:31.63 | 2749 | info | Doré : META | -6.6 LU |
 | 1:32.77 | 2783 | transition | Transition : bascule | -12.5 LU |
 | 1:35.07 | 2852 | zoom | Changement de cadrage | -22.3 LU |
@@ -123,9 +127,10 @@ Chaque effet démarre sur l'image indiquée (1 image = 1/30 s).
 ## Effets écartés (trop proches d'un effet plus important)
 
 - 0:02.93 (image 88) : zoom — Changement de cadrage
-- 0:13.77 (image 413) : zoom — Changement de cadrage
 - 0:33.53 (image 1006) : zoom — Changement de cadrage
 - 0:45.43 (image 1363) : zoom — Changement de cadrage
+- 0:52.20 (image 1566) : zoom — Changement de cadrage
+- 1:14.13 (image 2224) : zoom — Changement de cadrage
 - 1:21.50 (image 2445) : zoom — Changement de cadrage
 - 1:32.93 (image 2788) : zoom — Changement de cadrage
 - 1:43.90 (image 3117) : zoom — Changement de cadrage

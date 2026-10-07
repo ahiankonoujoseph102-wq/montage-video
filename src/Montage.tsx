@@ -14,6 +14,7 @@ import {Autocollants} from './dynamique/Autocollants';
 import {SousTitresMot} from './dynamique/SousTitresMot';
 import {Superpositions} from './dynamique/Superpositions';
 import {FondImage, styleTransition, transitionEnCours} from './dynamique/Transitions';
+import {Illustrations, PARTAGE, progresPartage} from './dynamique/Illustrations';
 
 const TRANSITION_ZOOM = 4; // images : changement de cadrage très rapide
 
@@ -52,8 +53,10 @@ const Visage: React.FC<{video: string; debuts: number[]; panneaux: Scene[]; fin:
   const dy = amorti * 0.7 * Math.cos(f * 3.3);
   // Style dynamique : transition (flou, bascule 3D, coup de zoom, image dans l'image) autour d'une coupe.
   const tr = transitionEnCours(dyn, f);
+  // Scène illustrée (écran partagé) : l'image glisse vers le bas pour que le visage tienne dans la moitié basse.
+  const partage = progresPartage(dyn, f) * PARTAGE.decalage;
   const image = (
-    <AbsoluteFill style={{transform: `translate(${dx}px, ${dy}px) scale(${zoom})`,
+    <AbsoluteFill style={{transform: `translate(${dx}px, ${dy + partage}px) scale(${zoom})`,
       transformOrigin: `${visage.x}px ${visage.y}px`}}>
       {/* La vidéo est déjà coupée et recadrée en 1080 × 1920 par scripts/preparer.py. */}
       {/* Le son baisse doucement sur la dernière demi-seconde avant le carton de fin. */}
@@ -142,12 +145,17 @@ const MontageCharge: React.FC<MontageProps> = (p) => {
       {dansPleinEcran ? <Onde onde={p.onde} /> : null}
       {p.dynamique ? (
         <>
+          <Illustrations dyn={p.dynamique} />
           <Autocollants dyn={p.dynamique} />
+          {/* Sous-titres masqués pendant le titre géant, les plein écran, les cartons noirs, les mots dorés et le
+              numéro (affichés en grand à leur place). */}
           <SousTitresMot mots={p.mots} masques={[
             [0, p.titre ? finTitreGeant(p.titre, fps) : 0],
             ...pleinEcran.map((s) => [s.debut, s.fin] as [number, number]),
             ...p.dynamique.cartonsNoirs.map((c) => [c.debut, c.fin] as [number, number]),
-          ]} />
+            ...p.dynamique.dores.map((d) => [d.debut, d.fin] as [number, number]),
+            ...(p.dynamique.numero ? [[p.dynamique.numero.debut, p.dynamique.numero.fin] as [number, number]] : []),
+          ]} partages={(p.dynamique.illustrations ?? []).map((s) => [s.debut, s.fin] as [number, number])} />
           <Superpositions dyn={p.dynamique} />
         </>
       ) : (

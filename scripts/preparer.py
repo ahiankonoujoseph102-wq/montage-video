@@ -443,6 +443,9 @@ def groupes_masques(mots, groupes, scenes):
 TYPES_TRANSITION = ["flou", "bascule", "zoom", "image"]
 
 
+DUREE_DORE_MAX = 1.5  # s
+
+
 def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb_images, insertion=None):
     """Style dynamique : place autocollants, mots dorés, cartons noirs et numéro sur leurs mots, et choisit
     les transitions (aux coupes et débuts de phrase, toutes les 7 à 11 s, jamais deux fois la même à la suite)."""
@@ -469,7 +472,25 @@ def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb
                 duree = e["fin"] - e["debut"]
                 e["debut"] = c["fin"] + 2
                 e["fin"] = e["debut"] + duree
-    # Après ce décalage, un mot doré s'arrête 2 images avant le suivant (jamais deux dorés à la fois).
+    # Scènes illustrées (écran partagé) : début et étapes calés sur des mots ; une scène qui tomberait sous un
+    # carton noir commence juste après lui. Un doré ou un autocollant qui tombe pendant une scène est retiré.
+    illustrations, curseur = [], 0
+    for e in conf.get("illustrations", []):
+        debut, i = image_de(e["a"], curseur)
+        curseur = i
+        debut += round(e.get("decalage", 0) * FPS)
+        for c in cartons:
+            if c["debut"] - 6 <= debut < c["fin"] + 2:
+                debut = c["fin"] + 2
+        etapes = [max(debut + 6, image_de(x, i)[0]) for x in e.get("etapes", [])]
+        illustrations.append({"type": e["type"], "debut": debut, "fin": debut + round(e.get("duree", 4.0) * FPS),
+                              "etapes": etapes, "fond": e.get("fond"), "sons": e.get("sons", [])})
+    pendant = lambda x: any(x["debut"] < s["fin"] + 3 and x["fin"] > s["debut"] - 3 for s in illustrations)
+    dores = [d for d in dores if not pendant(d)]
+    autocollants = [a for a in autocollants if not pendant(a)]
+    # Un mot doré reste 1,5 s au plus, et s'arrête 2 images avant le suivant (jamais deux dorés à la fois).
+    for d in dores:
+        d["fin"] = min(d["fin"], d["debut"] + round(DUREE_DORE_MAX * FPS))
     dores.sort(key=lambda e: e["debut"])
     for a, b in zip(dores, dores[1:]):
         a["fin"] = min(a["fin"], b["debut"] - 2)
@@ -485,6 +506,9 @@ def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb
     interdits = [(0, 5 * FPS)] + [(c["debut"] - FPS, c["fin"] + FPS) for c in cartons] + \
                 [(s["debut"] - FPS, s["fin"] + FPS) for s in scenes_sortie] + [(nb_images - 3 * FPS, nb_images)] + \
                 [(e["debut"] - 12, e["debut"] + 12) for e in dores + autocollants + ([numero] if numero else [])]
+    # Les coupes pendant une scène gardent leur changement de cadrage instantané, mais aucune transition n'y tombe.
+    interdits_raccords = interdits[1:]
+    interdits += [(sc["debut"] - FPS, sc["fin"] + FPS) for sc in illustrations]
     mini, maxi = conf.get("espacement", [7, 11])
     candidats = sorted(set(raccords) | set(phrases))
     candidats = [c for c in candidats if not any(a <= c < b for a, b in interdits)]
@@ -502,9 +526,9 @@ def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb
         dernier = choix
     transitions = [{"image": c, "type": TYPES_TRANSITION[k % len(TYPES_TRANSITION)]} for k, c in enumerate(choisis)]
     # Coupes sans transition : un changement de cadrage instantané tombe exactement sur la coupe.
-    raccords_cadrage = [c for c in raccords if c not in choisis and not any(a <= c < b for a, b in interdits[1:])]
+    raccords_cadrage = [c for c in raccords if c not in choisis and not any(a <= c < b for a, b in interdits_raccords)]
     return {"transitions": transitions, "autocollants": autocollants, "dores": dores, "cartonsNoirs": cartons,
-            "numero": numero, "tete": conf["tete"], "raccords": raccords_cadrage}
+            "numero": numero, "tete": conf["tete"], "raccords": raccords_cadrage, "illustrations": illustrations}
 
 
 def caler_plans_sur_raccords(plans, raccords, fenetre=36):

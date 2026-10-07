@@ -63,5 +63,13 @@ export type Dynamique = {
   cartonsNoirs: {debut: number; fin: number; texte: string}[];
   numero?: {debut: number; fin: number; texte: string} | null;
   raccords?: number[]; // coupes sans transition : changement de cadrage instantané
+  illustrations?: Illustration[]; // scènes illustrées en écran partagé
   tete: {x: number; y: number}; // centre du visage (sur l'image affichée), pour placer les autocollants
 };
+
+// Scène illustrée animée en écran partagé : illustration dans la moitié haute, visage dans la moitié basse.
+// `etapes` : images (absolues) des moments clés, calées sur des mots de la voix.
+export type TypeIllustration = 'etudes' | 'equipe' | 'telephone' | 'reponses' | 'creations' | 'licenciements' |
+  'remplace' | 'gratuit' | 'rendezvous' | 'enligne' | 'inscription' | 'unTelephone';
+export type Illustration = {type: TypeIllustration; debut: number; fin: number; etapes: number[]; fond?: string;
+  sons?: (string | null)[]};

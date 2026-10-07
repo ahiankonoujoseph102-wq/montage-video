@@ -154,6 +154,12 @@ def evenements(props):
             ev.append((c["debut"], "plein_ecran", f"Carton noir : {c['texte']}"))
         if dyn.get("numero"):
             ev.append((dyn["numero"]["debut"], "info", f"Numéro : {dyn['numero']['texte']}"))
+        # Scène illustrée : souffle + impact à l'entrée, puis un son par étape (croix, coche, pop…) si demandé.
+        for sc in dyn.get("illustrations", []):
+            ev.append((sc["debut"], "plein_ecran", f"Scène illustrée « {sc['type']} »"))
+            for image, quoi in zip(sc["etapes"], sc.get("sons", [])):
+                if quoi:
+                    ev.append((image, quoi, f"Scène « {sc['type']} » : étape"))
     # Changements de cadrage, seulement quand le visage est à l'écran.
     caches = [(s["debut"], s["fin"]) for s in props["scenes"] if s["disposition"] != "panneau"]
     if preuve:

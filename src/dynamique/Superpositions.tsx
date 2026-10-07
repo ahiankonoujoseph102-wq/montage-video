@@ -9,21 +9,26 @@ const LARGEUR = ZONE_SURE.droite - ZONE_SURE.gauche - 40;
 const taille = (t: string, max: number, largeur = LARGEUR) =>
   Math.min(max, fitText({text: t, withinWidth: largeur, fontFamily: POLICE, fontWeight: 900, validateFontIsLoaded: true}).fontSize);
 
-// Mots et chiffres forts en doré lumineux, en grand, au-dessus de la tête (« \n » pour couper).
+// Mots et chiffres forts en doré lumineux, en grand, à la place du sous-titre (masqué pendant ce temps),
+// 1,5 s au plus (« \n » pour couper).
+const HAUT_SOUS_TITRE = 1330;
 const Dore: React.FC<{d: Dynamique['dores'][number]}> = ({d}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const pop = spring({frame: f - d.debut, fps, config: {damping: 11, stiffness: 200}});
-  const sortie = interpolate(f, [d.fin - 6, d.fin], [1, 0], clamp);
+  const sortie = interpolate(f, [d.fin - 5, d.fin], [1, 0], clamp);
   const eclat = interpolate((f - d.debut) % 40, [0, 20, 40], [0, 1, 0]);
   const lignes = d.texte.split('\n');
+  const max = lignes.length === 1 ? 160 : 115;
+  const tailles = lignes.map((l) => taille(l, max));
+  const hauteur = tailles.reduce((h, t) => h + t * 1.05, 0);
+  const haut = Math.min(HAUT_SOUS_TITRE, ZONE_SURE.bas - hauteur);
   return (
-    // Posé sur le buste, entre le menton et les sous-titres (le visage est en haut avec le cadrage serré).
-    <div style={{position: 'absolute', bottom: 1920 - 1300, left: CENTRE_X - LARGEUR / 2, width: LARGEUR, display: 'flex',
+    <div style={{position: 'absolute', top: haut, left: CENTRE_X - LARGEUR / 2, width: LARGEUR, display: 'flex',
       flexDirection: 'column', alignItems: 'center', opacity: sortie, transform: `scale(${0.4 + 0.6 * pop})`,
-      transformOrigin: '50% 100%'}}>
+      transformOrigin: '50% 50%'}}>
       {lignes.map((l, i) => {
-        const t = taille(l, 120);
+        const t = tailles[i];
         return (
           <div key={i} style={{fontFamily: POLICE, fontWeight: 900, fontSize: t, lineHeight: 1.05, whiteSpace: 'nowrap',
             backgroundImage: 'linear-gradient(180deg, #FFF6C2 0%, #FFD54A 35%, #E6A400 65%, #FFE07A 100%)',
@@ -71,17 +76,17 @@ const CartonNoir: React.FC<{c: Dynamique['cartonsNoirs'][number]}> = ({c}) => {
   );
 };
 
-// Numéro de téléphone en surimpression : bleu à contour blanc, chiffre par chiffre, en haut de la zone sûre.
+// Numéro de téléphone seul, en grand, à la place du sous-titre : bleu à contour blanc, chiffre par chiffre.
 const Numero: React.FC<{n: NonNullable<Dynamique['numero']>}> = ({n}) => {
   const f = useCurrentFrame();
   const visibles = Math.max(0, Math.floor((f - n.debut) / 2));
-  const t = taille(n.texte, 120);
+  const t = taille(n.texte, 140, LARGEUR - 30);
   const sortie = interpolate(f, [n.fin - 6, n.fin], [1, 0], clamp);
   return (
-    <div style={{position: 'absolute', top: 260, left: CENTRE_X - LARGEUR / 2, width: LARGEUR, display: 'flex',
+    <div style={{position: 'absolute', top: HAUT_SOUS_TITRE, left: CENTRE_X - LARGEUR / 2, width: LARGEUR, display: 'flex',
       justifyContent: 'center', opacity: sortie}}>
       <span style={{fontFamily: POLICE, fontWeight: 900, fontSize: t, color: '#1E5BFF', whiteSpace: 'pre',
-        WebkitTextStroke: `${Math.round(t * 0.18)}px #fff`, paintOrder: 'stroke fill',
+        WebkitTextStroke: `${Math.round(t * 0.2)}px #fff`, paintOrder: 'stroke fill',
         filter: 'drop-shadow(0 6px 10px rgba(0,0,0,0.5))'}}>
         {n.texte.split('').map((c, i) => <span key={i} style={{opacity: i < visibles ? 1 : 0}}>{c}</span>)}
       </span>

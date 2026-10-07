@@ -13,12 +13,14 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
     yeux vers 35 % de la hauteur (~670–730 px), tête jamais coupée, mains visibles quand il fait des gestes ;
     l'alternance de zoom de 11 % reste par-dessus (`visage` = centre du zoom, sur les yeux). Vérifier sur une image
     de `public/<projet>/video.mp4` avec une ligne tracée à 672 px ;
-  - sous-titres **un mot à la fois**, **taille unique 120 px** pour tous les mots ; réduite seulement pour un mot de
-    plus de 12 lettres trop large, jamais sous 75 % (90 px), sinon resserré en largeur ; **jamais un mot de 3 lettres
-    ou moins seul** (DE, ET, UNE, LA, À…) : il s'affiche avec le mot suivant (« DE FAÇON »), ou avec le précédent s'il
-    finit la phrase ; **bleu vif #1E5BFF à contour blanc épais**, sur le bas du buste (1 330 px), petit rebond à
-    l'apparition (`src/dynamique/SousTitresMot.tsx`) ; masqués pendant le titre géant, les plein écran et les
-    cartons noirs ;
+  - sous-titres **un mot à la fois, deux au plus**, **taille unique 120 px** ; réduite seulement pour un mot de plus
+    de 12 lettres trop large, jamais sous 75 % (90 px) ; **jamais resserrés en largeur** : deux mots trop larges
+    passent sur deux lignes (bas toujours dans la zone sûre) ; **jamais un mot de 3 lettres ou moins seul** (DE, ET,
+    UNE, LA, À…) : il s'affiche avec le mot suivant (« DE FAÇON »), ou avec le précédent s'il finit la phrase ou
+    précède un passage caché (« CONTACTER AU ») ; un nombre en morceaux (« 15 » « 000 ») est réuni ; **bleu vif
+    #1E5BFF à contour blanc épais**, sur le bas du buste (1 330 px) ; **rebond : le mot arrive à 110 % et se pose
+    en 3 images, jamais plus petit que sa taille** (`src/dynamique/SousTitresMot.tsx`) ; masqués pendant le titre
+    géant, les plein écran, les cartons noirs, les mots dorés et le numéro ;
   - **coupes** : fondu enchaîné de la voix de 35 ms centré sur chaque coupe (`"fonduCoupe": 0.035`, sans changer la
     durée) ; chaque coupe tombe soit sur une transition, soit sur un **changement de cadrage instantané** pile sur
     l'image de la coupe (`raccords` dans les props ; aucun autre changement de plan à moins de 1,2 s) ;
@@ -30,17 +32,54 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
     le point d'interrogation = trois « ? » épais noirs à contour blanc, de tailles et d'inclinaisons différentes ;
   - **cartons noirs** d'annonce de partie (1,5 s, texte blanc mot par mot dans un cadre à crochets, la voix
     continue dessous) ;
-  - **mots et chiffres dorés** lumineux en grand sur le buste, juste au-dessus des sous-titres (bas à 1 300 px,
-    120 px max ; `\n` pour couper) ; jamais un chiffre non vérifié ; marques en texte seulement, sans logo ;
+  - **mots et chiffres dorés** lumineux, **à la place du sous-titre** (même hauteur, sous-titre masqué), en grand
+    (160 px max sur une ligne, 115 px sur deux ; `\n` pour couper), **1,5 s au plus** ; jamais un chiffre non
+    vérifié ; marques en texte seulement, sans logo ;
     un doré ou un autocollant qui tomberait sous un carton noir apparaît 2 images après sa fin, et un doré
     s'arrête 2 images avant le suivant (jamais deux à la fois) ;
-  - **numéro de téléphone** en bleu à contour blanc, chiffre par chiffre, en haut de la zone sûre ;
+  - **numéro de téléphone** seul (sans « AU »), en grand, à la place du sous-titre, bleu à contour blanc, chiffre
+    par chiffre ;
+  - **scènes illustrées animées** en écran partagé (voir « Bibliothèque des scènes illustrées ») ; un doré ou un
+    autocollant qui tombe pendant une scène est retiré, aucune transition à moins de 1 s d'une scène ;
   - insertions d'images/vidéos de Joseph en plein écran avec léger zoom, et couverture de livre en 3D : à prévoir
     quand il en fournit (pas encore construit) ;
   - gardés du modèle classique : ouverture percutante, zone sûre, musique, niveaux, carton de fin, 1080 × 1920,
     plein écran `focus` (ex. « 100 % GRATUIT ») ;
   - son : `transition` (souffle + petit impact, calé pour culminer sur la coupe) et `autocollant` (« pop ») ;
     croix/coche gardent leurs sons ; doré et numéro = `info` ; carton noir = `plein_ecran`.
+
+## Bibliothèque des scènes illustrées (style dynamique)
+
+Scènes de 3 à 5 s (jusqu'à ~9 s si la phrase l'exige) en **écran partagé** : illustration animée dans la moitié
+haute (1080 × 960) sur un dégradé coloré qui bouge (taches de lumière, particules), visage dans la moitié basse
+(l'image glisse de 540 px vers le bas), sous-titres posés sur la limite (960 px), liseré lumineux. Entrée/sortie :
+le panneau descend du haut en 8 images. Dessins SVG détaillés, colorés, toujours en mouvement (pas d'icônes
+plates), contenu entre x 50–950 et y 200–880. Son d'entrée `plein_ecran` (souffle + impact), puis un son par étape
+au choix (`croix`, `coche`, `autocollant`, `panneau`, `info`).
+
+Dans `montage.json` → `dynamique.illustrations` : `{"type", "a": mot de départ, "decalage": s, "duree": s,
+"fond": bleu|violet|orange|nuit|vert|rose, "etapes": [mots clés], "sons": [un son ou null par étape]}`.
+Les étapes sont les mots où l'animation change (calées sur la voix). Une scène qui tomberait sous un carton noir
+démarre juste après lui. Code : `src/dynamique/Illustrations.tsx` (cadre), `src/dynamique/scenes/` (dessins,
+registre dans `index.ts`, outils communs : `pop`, `prog`, `Marque` croix/coche, `Personne`).
+
+| Type | Idée | Étapes | État |
+|---|---|---|---|
+| `etudes` | pile de livres + calendrier dont les pages s'envolent, puis horloge qui s'emballe et une personne à son ordinateur, « EN UN BREF TEMPS » | calendrier, horloge | fait |
+| `reponses` | téléphone + appli de discussion : question floue, réponse grise floue, croix ; puis question précise, réponse nette, coche | croix, croix qui reclaque, écran vidé, coche | fait |
+| `creations` | 4 écrans qui se construisent : page web qui s'assemble, application, robot qui salue, engrenages reliés | un par écran | fait |
+| `licenciements` | compteur 0 → 15 000 (marque en texte), silhouettes qui rougissent et tombent | chiffre atteint | fait |
+| `equipe` | cinq silhouettes qui fusionnent en une seule, entourée d'outils | à faire | à dessiner |
+| `telephone` | téléphone avec appli de discussion et grand point d'interrogation | à faire | à dessiner |
+| `remplace` | chaise de bureau vide, puis silhouette avec éclair « IA » qui prend la place | à faire | à dessiner |
+| `gratuit` | billet barré, puis « 100 % GRATUIT » qui éclate en confettis | à faire | à dessiner |
+| `rendezvous` | calendrier « SAMEDI 10 OCTOBRE », repère de carte « Adidogomé, Lycée Moderne 2 », cartes « JOURNÉE 9H – 17H » et « SOIRÉE 18H – 20H » | à faire | à dessiner |
+| `enligne` | globe qui tourne avec points reliés + grille de visioconférence, sans logo | à faire | à dessiner |
+| `inscription` | téléphone, trois étapes qui se cochent (créer son compte, confirmer, rejoindre le groupe) | à faire | à dessiner |
+| `unTelephone` | un téléphone d'où sortent un site web, une application et un robot | à faire | à dessiner |
+
+Aperçu de scènes : rendre chaque passage avec `npx remotion render … --frames=a-b --muted`, y poser le morceau
+correspondant de `public/<projet>/mix.wav`, puis les enchaîner.
 
 ## Méthode pour chaque vidéo (à suivre dans l'ordre)
 

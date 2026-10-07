@@ -242,7 +242,73 @@
       "a": "+228 72 24 02 31",
       "texte": "+228 72 24 02 31",
       "duree": 3.5
-    }
+    },
+    "illustrations": [
+      {
+        "type": "etudes",
+        "a": "des années d'études",
+        "decalage": -0.15,
+        "duree": 6.0,
+        "fond": "bleu",
+        "etapes": [
+          "d'apprentissage",
+          "aujourd'hui"
+        ],
+        "sons": [
+          "panneau",
+          "autocollant"
+        ]
+      },
+      {
+        "type": "reponses",
+        "a": "Ils posent des questions vagues",
+        "decalage": -0.1,
+        "duree": 9.4,
+        "fond": "violet",
+        "etapes": [
+          "réponses vagues",
+          "décevants",
+          "savoir que",
+          "instructions"
+        ],
+        "sons": [
+          "croix",
+          null,
+          "panneau",
+          "coche"
+        ]
+      },
+      {
+        "type": "creations",
+        "a": "projet web avancé",
+        "duree": 5.4,
+        "fond": "orange",
+        "etapes": [
+          "sites web",
+          "applications",
+          "agents IA",
+          "automatisations"
+        ],
+        "sons": [
+          "autocollant",
+          "autocollant",
+          "autocollant",
+          "autocollant"
+        ]
+      },
+      {
+        "type": "licenciements",
+        "a": "Amazon",
+        "duree": 2.75,
+        "fond": "nuit",
+        "etapes": [
+          "15 000"
+        ],
+        "sons": [
+          "info"
+        ]
+      }
+    ]
   },
   "carton": {
     "duree": 3,
