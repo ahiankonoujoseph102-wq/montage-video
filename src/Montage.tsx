@@ -64,7 +64,7 @@ const DegradeBas: React.FC = () => (
 
 // Les tailles de texte sont mesurées (fitText) : il faut que Montserrat soit chargée avant,
 // sinon chaque onglet de rendu mesure avec une police de secours et la taille saute d'une image à l'autre.
-const usePolicesChargees = () => {
+export const usePolicesChargees = () => {
   const [pret, setPret] = useState(false);
   const [attente] = useState(() => delayRender('Chargement de Montserrat'));
   useEffect(() => {

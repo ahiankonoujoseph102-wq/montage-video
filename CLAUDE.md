@@ -124,11 +124,23 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - `scripts/rendre.sh` rend l'image sans son puis ajoute `public/<projet>/mix.wav` tel quel (calage vérifié :
   0 échantillon de décalage).
 
-## Version longue
+## Version longue (avec carton de transition)
 
-`python3 scripts/version_longue.py <projet> <fichier>` : la vidéo montée sans son carton de fin, fondu enchaîné
-de 0,4 s, puis l'autre vidéo telle quelle ; les deux parties à −14 LUFS, en 720 × 1280 (même netteté perçue qu'en
-1080 à ce poids), moins de 30 Mo.
+`python3 scripts/version_longue.py <projet> <fichier>` : la vidéo montée sans son carton de fin, puis le
+**carton de transition** de 3 s, puis l'autre vidéo telle quelle, **coupée avant son écran noir final** (logo
+CapCut… détecté automatiquement) pour finir sur son carton Lomé IA School, avec un fondu de sortie de 0,8 s.
+Chaque partie ramenée à −14 LUFS par un gain fixe, limiteur de crête, 720 × 1280, moins de 30 Mo.
+
+**Carton de transition** (composition Remotion `Transition`, `src/Transition.tsx`, 90 images, textes dans
+`TEXTES` du script, réutilisable) :
+- entrée par un balayage en biais (7 images) par-dessus la dernière image de la vidéo précédente ;
+- fond bleu nuit animé ; « ET MAINTENANT… » en jaune qui claque (image 9) ; « REGARDEZ / LA VIDÉO » en très grand,
+  blanc à contour noir (image 36, avec l'impact) ; « MONTÉE À 100 % PAR L'IA » en noir sur bloc jaune (image 42) ;
+  bouton de lecture jaune qui pulse avec un halo (image 48) ; hauteurs fixes 380 / 520 / 880 / 1 200 px ;
+- sortie : coup de zoom avant dans le bouton (images 78–89), qui ouvre en cercle sur la première image de la vidéo
+  suivante ;
+- son : la musique continue (−10 LU sous la voix), effet « carton » (montée 1,2 s, **impact pile à l'image 36**,
+  ~−2 LU sous la voix), musique qui remonte à −6 LU après l'impact, souffle discret au zoom de sortie.
 
 ## Glossaire
 
