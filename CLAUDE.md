@@ -3,6 +3,32 @@
 Le propriétaire travaille **uniquement depuis son téléphone**. Réponses courtes, en français,
 fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il n'a pas demandé.
 
+## Deux modèles au choix (demander lequel à chaque nouvelle vidéo)
+
+- **Modèle classique** (par défaut) : tout ce qui suit dans « Style (fixé) ».
+- **Style dynamique** (`"_style": "dynamique"` et section `dynamique` dans `montage.json`, exemple :
+  `projets/ia-competence/`), inspiré d'une vidéo CapCut de Joseph, **sans aucun élément CapCut** (ni logo,
+  ni filigrane, ni autocollant) :
+  - sous-titres **un seul mot à la fois**, gros (130 px max), **bleu vif #1E5BFF à contour blanc épais**, sur le bas
+    du buste (1 330 px), petit rebond à l'apparition (`src/dynamique/SousTitresMot.tsx`) ; masqués pendant le
+    titre géant, les plein écran et les cartons noirs ;
+  - **transitions** aux raccords de coupe (sinon aux débuts de phrase), toutes les 7 à 11 s, en rotation pour ne
+    jamais répéter deux fois la même : flou rapide, bascule 3D, coup de zoom, image dans l'image à cadre blanc
+    incliné (`src/dynamique/Transitions.tsx`) ; jamais à moins de 0,4 s d'un autre événement ;
+  - **autocollants dessinés** (interrogation, flamme, éclair, ampoule, billets, billets barrés, coche, croix) à côté
+    de la tête, 1,6 s, rebond + balancement (`src/dynamique/Autocollants.tsx`), ancrés sur un mot (`a`) ;
+  - **cartons noirs** d'annonce de partie (1,5 s, texte blanc mot par mot dans un cadre à crochets, la voix
+    continue dessous) ;
+  - **mots et chiffres dorés** lumineux en grand au-dessus de la tête (`\n` pour couper) ; jamais un chiffre
+    non vérifié ; marques en texte seulement, sans logo ;
+  - **numéro de téléphone** en bleu à contour blanc, chiffre par chiffre, en haut de la zone sûre ;
+  - insertions d'images/vidéos de Joseph en plein écran avec léger zoom, et couverture de livre en 3D : à prévoir
+    quand il en fournit (pas encore construit) ;
+  - gardés du modèle classique : ouverture percutante, zone sûre, musique, niveaux, carton de fin, 1080 × 1920,
+    plein écran `focus` (ex. « 100 % GRATUIT ») ;
+  - son : `transition` (souffle + petit impact, calé pour culminer sur la coupe) et `autocollant` (« pop ») ;
+    croix/coche gardent leurs sons ; doré et numéro = `info` ; carton noir = `plein_ecran`.
+
 ## Méthode pour chaque vidéo (à suivre dans l'ordre)
 
 1. **Il envoie un lien Google Drive** et, s'il l'a, son script.

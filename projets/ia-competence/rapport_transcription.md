@@ -1,0 +1,128 @@
+# Transcription corrigée
+
+Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné__ = dit à l'oral mais absent du script (gardé) · ⚠️ = mot encore douteux.
+
+- `   0.8 s` Une nouvelle compétence est en train de bouleverser le monde du travail.
+- `   5.0 s` Son nom, c'est **l'intelligence** artificielle.
+- `   7.4 s` J'espère que vous avez une fois déjà entendu parler de l'IA.
+- `   9.8 s` Parce qu'aujourd'hui, l'IA permet absolument de tout faire, croyez-vous.
+- `  13.4 s` Ce qui demandait autrefois des années d'études, des années d'apprentissage, aujourd'hui, une personne peut arriver à le faire en un bref ⚠️temps.
+- `  20.5 s` Ce qui demandait autrefois toute une équipe ou bien plusieurs spécialistes, aujourd'hui, plus une seule personne peut arriver à le faire de façon beaucoup plus rapide et beaucoup plus **qualitative.**
+- `  29.4 s` ⚠️Et c'est une vraie réalité, c'est réel.
+- `  31.9 s` Vous devez apprendre à maîtriser l'IA.
+- `  34.2 s` Est-ce que tu sais ⚠️l'utiliser ?
+- `  35.6 s` **J'espère** que bon, là, tu as certainement installé **ça** dans ton téléphone.
+- `  41.4 s` Est-ce que tu l'utilises vraiment de façon à ce qu'il puisse répondre à tes besoins ?
+- `  45.6 s` **Est-ce** **qu'elle** **t'aide** dans tes différentes tâches **quotidiennes** **?**
+- `  49.2 s` C'est la grande question qu'il faut se poser.
+- `  50.9 s` Voilà, beaucoup l'utilisent, mais l'utilisent de façon générique.
+- `  53.8 s` ⚠️Ça, ⚠️parce qu'ils ne savent pas comment l'utiliser.
+- `  56.0 s` Ils posent des questions ⚠️vagues et obtiennent des réponses vagues.
+- `  58.4 s` ⚠️Ils posent des questions médiocres et obtiennent des résultats décevants.
+- `  62.2 s` Voyez-vous, vous devez savoir que l'IA fonctionne **sur** **la** base des **instructions** qu'on lui donne.
+- `  66.2 s` Avec l'IA, si vous savez bien l'utiliser, vous pouvez être en mesure de créer n'importe quel contenu.
+- `  70.7 s` Aujourd'hui, avec **l'intelligence** **artificielle,** **ce** **qui** **nécessitait** ⚠️hier toute une **équipe,** **vous** pouvez le faire.
+- `  75.8 s` Par exemple, vous pouvez créer n'importe quel type de projet web avancé.
+- `  78.6 s` Des sites web, applications, agents IA, des automatisations qui vont être capables d'exécuter ⚠️tes tâches répétitives à votre place.
+- `  86.0 s` ⚠️Cher ami, vous devez l'apprendre aujourd'hui parce que c'est la nouvelle technologie, la nouvelle compétence qui dirige le monde.
+- `  91.6 s` Regardez, déjà, Amazon a ⚠️déjà licencié, je pense, plus de 15 000 employés.
+- `  96.1 s` **Meta,** plus de 14 000.
+- `  97.5 s` Même quand je prends les codes ⚠️pour annoncer le ⚠️tout ⚠️fort récemment, plus de ⚠️115 ⚠️% des codes ont été écrits par l'IA.
+- ` 103.1 s` Cher ami, vous devez apprendre la nouvelle technologie.
+- ` 105.2 s` Voyez-vous, voilà.
+- ` 106.3 s` Vous devez la maîtriser.
+- ` 107.4 s` Sans quoi, demain, vous serez remplacé par des petits qui savent utiliser l'IA.
+- ` 111.2 s` ⚠️Parce ⚠️qu'un expert en IA est capable de faire **ce** **que** plusieurs **personnes** **font** ⚠️en même temps.
+- ` 115.2 s` Alors, profitez de cette opportunité pour maîtriser l'IA et demain, réussir en fait.
+- ` 119.2 s` Voyez-vous, c'est impossible qu'aujourd'hui, tu puisses maîtriser l'IA.
+- ` 122.3 s` Tu puisses être un expert en IA et être au chômage, mon frère.
+- ` 125.0 s` Tu te dis une vérité, voyez-vous, voilà.
+- ` 127.5 s` Donc, vous devez apprendre.
+- ` 128.6 s` ⚠️Comme disait l'autre fois, la réussite, c'est savoir où va le **monde,** et y arriver en premier.
+- ` 132.3 s` ⚠️Donc, lorsque tu as l'opportunité d'apprendre ⚠️cette nouvelle technologie, il faut saisir la chance.
+- ` 138.3 s` Voyez-vous.
+- ` 138.8 s` Bon, je ne vais pas trop entrer en détail, d'accord.
+- ` 140.7 s` Eh bien, tu vas te dire, ⚠️mais je vais apprendre l'IA.
+- ` 142.9 s` Je ⚠️vais m'intéresser à l'IA, mais je n'ai pas **d'argent** pour me former.
+- ` 145.9 s` Je vais apprendre, mais je n'ai pas d'argent.
+- ` 147.9 s` Bon, je pense que ça suffit.
+- ` 149.2 s` Parce qu'aujourd'hui, Dieu a répondu à **vos** prières.
+- ` 151.6 s` J'organise une formation gratuite, **pour** **maîtriser** l'IA, pour exécuter tes tâches de tous les jours, pour pouvoir apprendre tous les jours, pour pouvoir obtenir **une** **réponse** **plus** efficace, ⚠️pour pouvoir créer des projets web avancés, à savoir site web, application, logiciel, ⚠️agent, ⚠️IA, et puis automatisation, et tout ce qui va avec.
+- ` 167.2 s` Voyez-vous.
+- ` 167.7 s` Et c'est en **présentiel,** ⚠️à **Lomé,** **au** **Lycée** **Moderne** 2.
+- ` 171.4 s` La ⚠️formation se fera en journée ⚠️et puis dans la soirée.
+- ` 173.8 s` Alors, imaginez que vous ne serez pas disponible dans la journée.
+- ` 176.3 s` Vous pouvez participer à la soirée.
+- ` 177.7 s` La soirée, c'est de 18h à 20h.
+- ` 179.8 s` Et la journée, c'est de 9h à 17h.
+- ` 183.0 s` Alors, si vous ne voulez pas participer en présentiel, pas de souci.
+- ` 186.5 s` Vous pouvez aussi nous suivre en **direct** **sur** Google Meet.
+- ` 188.7 s` ⚠️Donc, peu importe votre pays, peu importe votre situation géographique, vous pouvez suivre cette formation et c'est totalement gratuit.
+- ` 196.2 s` Donc, je vais mettre le lien dans notre plateforme où vous allez vous inscrire, parce que c'est là où tout se passe.
+- ` 200.0 s` Vous allez vous inscrire, vous allez créer votre compte, et ensuite, **confirmez** votre compte ⚠️et puis vous inscrire.
+- ` 204.7 s` Et ⚠️vous rejoignez le groupe sur la plateforme, bien sûr, où vous aurez toutes les informations sur cette formation que nous organiserons ⚠️ce samedi.
+- ` 210.8 s` Donc, déjà, ce soir, j'ai ⚠️un peu le programme de la formation, ⚠️OK ?
+- ` 213.6 s` ⚠️Donc, on se retrouve de l'autre côté pour tous ceux ⚠️qui sont intéressés, qui veulent vraiment saisir cette opportunité.
+- ` 219.2 s` **C'est** cette nouvelle technologie qui **redéfinit** les règles du **jeu.**
+- ` 222.8 s` vous ⚠️voyez ?
+- ` 223.4 s` Voilà.
+- ` 223.9 s` Donc, aujourd'hui, même si tu ne maîtrises aucune ligne de **code,** tu n'es pas informaticien.
+- ` 228.4 s` Juste un seul téléphone suffit pour que tu puisses créer ⚠️n'importe quoi.
+- ` 231.3 s` Donc, c'est un peu ça, OK ?
+- ` 232.8 s` ⚠️Bien, pour toutes les informations et infos, veuillez nous contacter au **+228** **72** **24** **02** **31.**
+- ` 238.7 s` Le lien est en description de cette vidéo.
+- ` 240.9 s` Veuillez cliquer ⚠️et inscrivez-vous.
+- ` 242.5 s` Et rendez-vous ce samedi 10 octobre 2026.
+- ` 245.9 s` Merci.
+
+## Corrections manuelles (corrections.json)
+
+- `   5.9 s` « l'indiligence » → « l'intelligence »
+- `  28.7 s` « qualitatif. » → « qualitative. »
+- `  35.6 s` « Je » → « J'espère »
+- `  35.8 s` « s'espère » → « (supprimé) »
+- `  38.2 s` « le » → « ça »
+- `  38.3 s` « téléphone » → « (supprimé) »
+- `  45.6 s` « Autrement » → « Est-ce »
+- `  45.9 s` « dit, » → « qu'elle »
+- `  46.1 s` « c'est » → « (supprimé) »
+- `  46.1 s` « tâche, » → « (supprimé) »
+- `  46.9 s` « t'aider » → « t'aide »
+- `  48.4 s` « quotidiens. » → « quotidiennes ? »
+- `  64.3 s` « sur » → « sur la »
+- `  65.1 s` « solutions » → « instructions »
+- `  71.6 s` « l'intensité » → « l'intelligence »
+- `  72.3 s` « fière, » → « artificielle, »
+- `  72.9 s` « c'est » → « ce »
+- `  73.2 s` « qu'il » → « qui »
+- `  73.2 s` « nécessite » → « nécessitait »
+- `  74.7 s` « équipe. » → « équipe, »
+- `  75.0 s` « Vous » → « vous »
+- `  96.1 s` « Mais » → « Meta, »
+- `  96.2 s` « d'ailleurs, » → « (supprimé) »
+- ` 113.5 s` « sauver » → « ce que »
+- ` 114.0 s` « personnes » → « personnes font »
+- ` 131.1 s` « monde » → « monde, »
+- ` 131.5 s` « tu » → « (supprimé) »
+- ` 144.3 s` « d'agent » → « d'argent »
+- ` 151.0 s` « des » → « vos »
+- ` 152.9 s` « comme » → « pour »
+- ` 153.1 s` « a » → « maîtriser »
+- ` 153.2 s` « dit » → « (supprimé) »
+- ` 158.7 s` « le » → « une »
+- ` 158.8 s` « conseil » → « réponse plus »
+- ` 168.3 s` « présentiel » → « présentiel, »
+- ` 169.4 s` « l'IA, » → « Lomé, »
+- ` 169.6 s` « comme » → « au »
+- ` 169.9 s` « ICModern » → « Lycée Moderne »
+- ` 187.7 s` « direction » → « direct sur »
+- ` 202.7 s` « continuez » → « confirmez »
+- ` 219.1 s` « Mais » → « (supprimé) »
+- ` 219.2 s` « c'est » → « C'est »
+- ` 220.8 s` « débilise. » → « redéfinit »
+- ` 221.8 s` « Autrement, » → « (supprimé) »
+- ` 222.6 s` « jeu, » → « jeu. »
+- ` 226.4 s` « coach, » → « code, »
+- ` 236.2 s` « 112 » → « +228 72 24 02 31. »
+- ` 236.5 s` « 24 » → « (supprimé) »
+- ` 237.2 s` « 0231. » → « (supprimé) »

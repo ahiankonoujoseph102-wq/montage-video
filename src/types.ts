@@ -48,6 +48,19 @@ export type MontageProps = {
   carton?: Carton;
   preuve?: Preuve | null;
   cadres?: Cadre[];
+  dynamique?: Dynamique | null;
   scenes: Scene[];
   onde: number[][];
+};
+
+// --- Style dynamique (second modèle) ---
+export type TypeTransition = 'flou' | 'bascule' | 'zoom' | 'image';
+export type TypeAutocollant = 'interrogation' | 'flamme' | 'eclair' | 'ampoule' | 'billets' | 'billetsBarres' | 'coche' | 'croix';
+export type Dynamique = {
+  transitions: {image: number; type: TypeTransition}[];
+  autocollants: {debut: number; fin: number; type: TypeAutocollant; cote: 'gauche' | 'droite'}[];
+  dores: {debut: number; fin: number; texte: string}[];
+  cartonsNoirs: {debut: number; fin: number; texte: string}[];
+  numero?: {debut: number; fin: number; texte: string} | null;
+  tete: {x: number; y: number}; // centre du visage (sur l'image affichée), pour placer les autocollants
 };

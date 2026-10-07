@@ -392,6 +392,60 @@ def groupes_masques(mots, groupes, scenes):
     return masques
 
 
+TYPES_TRANSITION = ["flou", "bascule", "zoom", "image"]
+
+
+def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb_images, insertion=None):
+    """Style dynamique : place autocollants, mots dorés, cartons noirs et numéro sur leurs mots, et choisit
+    les transitions (aux coupes et débuts de phrase, toutes les 7 à 11 s, jamais deux fois la même à la suite)."""
+    def image_de(phrase, apres=0):
+        i, _ = trouver(mots, phrase, apres)
+        return mots_sortie[i]["debut"], i
+
+    def placer(liste, duree_defaut):
+        sortie, curseur = [], 0
+        for e in liste:
+            debut, i = image_de(e["a"], curseur)
+            curseur = i
+            sortie.append({**{k: v for k, v in e.items() if k not in ("a", "duree")}, "debut": debut,
+                           "fin": debut + round(e.get("duree", duree_defaut) * FPS)})
+        return sortie
+
+    autocollants = placer(conf.get("autocollants", []), 1.6)
+    dores = placer(conf.get("dores", []), 1.8)
+    cartons = placer(conf.get("cartonsNoirs", []), 1.5)
+    numero = placer([conf["numero"]], 3.5)[0] if conf.get("numero") else None
+
+    # Transitions : candidats = raccords des coupes (sauts d'image à masquer) et débuts de phrase.
+    raccords, t = [], 0.0
+    for d, f in gardes:
+        if t > 0:
+            raccords.append(round(t * FPS))
+        t += f - d
+    phrases = [mots_sortie[i]["debut"] for i in range(1, len(mots)) if mots[i - 1]["mot"][-1] in ".?!"]
+    interdits = [(0, 5 * FPS)] + [(c["debut"] - FPS, c["fin"] + FPS) for c in cartons] + \
+                [(s["debut"] - FPS, s["fin"] + FPS) for s in scenes_sortie] + [(nb_images - 3 * FPS, nb_images)] + \
+                [(e["debut"] - 12, e["debut"] + 12) for e in dores + autocollants + ([numero] if numero else [])]
+    mini, maxi = conf.get("espacement", [7, 11])
+    candidats = sorted(set(raccords) | set(phrases))
+    candidats = [c for c in candidats if not any(a <= c < b for a, b in interdits)]
+    choisis, dernier = [], 5 * FPS
+    while True:
+        possibles = [c for c in candidats if dernier + mini * FPS <= c <= dernier + maxi * FPS]
+        if not possibles:
+            suivants = [c for c in candidats if c > dernier + mini * FPS]
+            if not suivants:
+                break
+            possibles = suivants[:1]
+        # On préfère un raccord de coupe (il masque le saut d'image), sinon le plus proche de 9 s.
+        choix = min(possibles, key=lambda c: (c not in raccords, abs(c - dernier - 9 * FPS)))
+        choisis.append(choix)
+        dernier = choix
+    transitions = [{"image": c, "type": TYPES_TRANSITION[k % len(TYPES_TRANSITION)]} for k, c in enumerate(choisis)]
+    return {"transitions": transitions, "autocollants": autocollants, "dores": dores, "cartonsNoirs": cartons,
+            "numero": numero, "tete": conf["tete"]}
+
+
 def main():
     nom = sys.argv[1]
     projet = ROOT / "projets" / nom
@@ -493,6 +547,8 @@ def main():
         "groupes": groupes,
         "plans": plans_zoom(mots, [m["debut"] for m in mots_sortie], (preuve["debut"], preuve["fin"]) if preuve else None),
         "preuve": preuve,
+        "dynamique": preparer_dynamique(config["dynamique"], mots, mots_sortie, temps, gardes, scenes_sortie,
+                                        nb_images) if config.get("dynamique") else None,
         "cadres": cadres,
         "masques": groupes_masques(mots_sortie, groupes, scenes_sortie),
         "dureeVideo": nb_images,

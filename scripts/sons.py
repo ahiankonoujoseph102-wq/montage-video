@@ -211,6 +211,26 @@ def fabriquer(tonique, mode):
     for fr, a in [(G3, 0.3), (tierce4, 0.25), (quinte4, 0.25), (tonique5, 0.2)]:
         place(x, a * cloche(2.0, fr, 0.9, 0.5), montee)
     sons["carton"] = finir(reverb(x, 0.28, 2.0))
+
+    # --- Style dynamique (ajoutés en dernier : le grain des sons précédents ne change pas) ---
+    # Transition : souffle rapide qui monte puis redescend, avec un petit impact grave au milieu (la coupe).
+    d = 0.7
+    x = np.zeros(int(d * SR))
+    t = t_(0.36)
+    souffle = np.concatenate([balayage(0.18, 600, 6000), balayage(0.18, 6000, 900)])
+    place(x, souffle * np.concatenate([np.linspace(0.2, 1, len(t) // 2), np.linspace(1, 0, len(t) - len(t) // 2)]), 0)
+    place(x, 0.55 * boum(0.4, G2 * 2.5, G2, 0.09), 0.17)
+    sons["transition"] = finir(reverb(x, 0.18, 0.6))
+
+    # Autocollant : « pop » bref et rond (bulle sur la quinte) + petit clic, sans grave.
+    d = 0.45
+    x = np.zeros(int(d * SR))
+    t = t_(0.12)
+    f = quinte4 * (1.6 - 0.6 * np.exp(-t / 0.02))
+    place(x, np.sin(2 * np.pi * np.cumsum(f) / SR) * enveloppe(t, 0.001, 0.035), 0)
+    place(x, 0.4 * cloche(0.3, tonique5, 0.08, 0.4), 0.01)
+    place(x, 0.2 * clic(0.006, 4000), 0)
+    sons["autocollant"] = finir(reverb(x, 0.12, 0.4))
     return sons
 
 

@@ -9,7 +9,11 @@ import {PassageAnime} from './composants/PassageAnime';
 import {SousTitres} from './composants/SousTitres';
 import {finTitreGeant, TitreAccroche} from './composants/TitreAccroche';
 import {Preuve} from './composants/Preuve';
-import type {Cadre, MontageProps, Preuve as PreuveT, Scene} from './types';
+import type {Cadre, Dynamique, MontageProps, Preuve as PreuveT, Scene} from './types';
+import {Autocollants} from './dynamique/Autocollants';
+import {SousTitresMot} from './dynamique/SousTitresMot';
+import {Superpositions} from './dynamique/Superpositions';
+import {FondImage, styleTransition, transitionEnCours} from './dynamique/Transitions';
 
 const TRANSITION_ZOOM = 4; // images : changement de cadrage très rapide
 
@@ -18,7 +22,7 @@ const TRANSITION_ZOOM = 4; // images : changement de cadrage très rapide
 // Pendant un panneau, le zoom serré est limité à 6 % pour que le panneau ne touche pas la tête
 // (passage progressif sur TRANSITION_ZOOM images autour du panneau).
 const Visage: React.FC<{video: string; debuts: number[]; panneaux: Scene[]; fin: number; cadres?: Cadre[];
-  preuve?: PreuveT | null}> = ({video, debuts, panneaux, fin, cadres, preuve}) => {
+  preuve?: PreuveT | null; dyn?: Dynamique | null}> = ({video, debuts, panneaux, fin, cadres, preuve, dyn}) => {
   const f = useCurrentFrame();
   // Centre du visage du cadrage en cours (cadre large puis serré pour une prise filmée de loin).
   let visage = {x: VISAGE.x, y: VISAGE.y};
@@ -44,13 +48,24 @@ const Visage: React.FC<{video: string; debuts: number[]; panneaux: Scene[]; fin:
   const amorti = dansPreuve ? 0 : Math.max(0, 1 - f / OUVERTURE.tremblement) * OUVERTURE.amplitude;
   const dx = amorti * Math.sin(f * 2.7);
   const dy = amorti * 0.7 * Math.cos(f * 3.3);
-  return (
+  // Style dynamique : transition (flou, bascule 3D, coup de zoom, image dans l'image) autour d'une coupe.
+  const tr = transitionEnCours(dyn, f);
+  const image = (
     <AbsoluteFill style={{transform: `translate(${dx}px, ${dy}px) scale(${zoom})`,
       transformOrigin: `${visage.x}px ${visage.y}px`}}>
       {/* La vidéo est déjà coupée et recadrée en 1080 × 1920 par scripts/preparer.py. */}
       {/* Le son baisse doucement sur la dernière demi-seconde avant le carton de fin. */}
       <OffthreadVideo src={staticFile(video)} style={{width: '100%', height: '100%'}}
         volume={(v) => interpolate(v, [fin - 15, fin], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
+    </AbsoluteFill>
+  );
+  if (!tr) return image;
+  return (
+    <AbsoluteFill>
+      {tr.type === 'image' || tr.type === 'bascule' ? (
+        <FondImage><OffthreadVideo src={staticFile(video)} muted style={{width: '100%', height: '100%'}} /></FondImage>
+      ) : null}
+      <AbsoluteFill style={{...styleTransition(tr, f), transformOrigin: `${visage.x}px ${visage.y}px`}}>{image}</AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -100,7 +115,7 @@ const MontageCharge: React.FC<MontageProps> = (p) => {
     <AbsoluteFill style={{backgroundColor: 'black'}}>
       <Sequence durationInFrames={p.dureeVideo} layout="none">
         <Visage video={p.video} debuts={p.plans} panneaux={panneaux} fin={p.dureeVideo} cadres={p.cadres}
-          preuve={p.preuve} />
+          preuve={p.preuve} dyn={p.dynamique} />
       </Sequence>
       {/* L'extrait de preuve a déjà son propre dégradé. */}
       {p.preuve && frame >= p.preuve.debut && frame < p.preuve.fin ? null : <DegradeBas />}
@@ -123,8 +138,20 @@ const MontageCharge: React.FC<MontageProps> = (p) => {
       {p.titre ? <Flash /> : null}
       {/* L'onde sonore n'apparaît que dans les passages plein écran. */}
       {dansPleinEcran ? <Onde onde={p.onde} /> : null}
-      <SousTitres mots={p.mots} groupes={p.groupes} masques={p.masques}
-        masquerAvant={p.titre ? finTitreGeant(p.titre, fps) : 0} />
+      {p.dynamique ? (
+        <>
+          <Autocollants dyn={p.dynamique} />
+          <SousTitresMot mots={p.mots} masques={[
+            [0, p.titre ? finTitreGeant(p.titre, fps) : 0],
+            ...pleinEcran.map((s) => [s.debut, s.fin] as [number, number]),
+            ...p.dynamique.cartonsNoirs.map((c) => [c.debut, c.fin] as [number, number]),
+          ]} />
+          <Superpositions dyn={p.dynamique} />
+        </>
+      ) : (
+        <SousTitres mots={p.mots} groupes={p.groupes} masques={p.masques}
+          masquerAvant={p.titre ? finTitreGeant(p.titre, fps) : 0} />
+      )}
       {p.carton ? (
         <Sequence from={p.carton.debut} durationInFrames={p.carton.fin - p.carton.debut} layout="none">
           <CartonFin carton={p.carton} />
