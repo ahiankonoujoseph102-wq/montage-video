@@ -3,6 +3,84 @@
 Le propriétaire travaille **uniquement depuis son téléphone**. Réponses courtes, en français,
 fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il n'a pas demandé.
 
+## Deux modèles au choix (demander lequel à chaque nouvelle vidéo)
+
+- **Modèle classique** (par défaut) : tout ce qui suit dans « Style (fixé) ».
+- **Style dynamique** (`"_style": "dynamique"` et section `dynamique` dans `montage.json`, exemple :
+  `projets/ia-competence/`), inspiré d'une vidéo CapCut de Joseph, **sans aucun élément CapCut** (ni logo,
+  ni filigrane, ni autocollant) :
+  - **cadrage serré** : zoom de base de 35 % (`cadrage` : `echelle` 1,35, `decalage` 0, `x`/`y` = coin du recadrage),
+    yeux vers 35 % de la hauteur (~670–730 px), tête jamais coupée, mains visibles quand il fait des gestes ;
+    l'alternance de zoom de 11 % reste par-dessus (`visage` = centre du zoom, sur les yeux). Vérifier sur une image
+    de `public/<projet>/video.mp4` avec une ligne tracée à 672 px ;
+  - sous-titres **un mot à la fois, deux au plus**, **taille unique 120 px** ; réduite seulement pour un mot de plus
+    de 12 lettres trop large, jamais sous 75 % (90 px) ; **jamais resserrés en largeur** : deux mots trop larges
+    passent sur deux lignes (bas toujours dans la zone sûre) ; **jamais un mot de 3 lettres ou moins seul** (DE, ET,
+    UNE, LA, À…) : il s'affiche avec le mot suivant (« DE FAÇON »), ou avec le précédent s'il finit la phrase ou
+    précède un passage caché (« CONTACTER AU ») ; un nombre en morceaux (« 15 » « 000 ») est réuni ; **bleu vif
+    #1E5BFF à contour blanc épais**, sur le bas du buste (1 330 px) ; **rebond : le mot arrive à 110 % et se pose
+    en 3 images, jamais plus petit que sa taille** (`src/dynamique/SousTitresMot.tsx`) ; masqués pendant le titre
+    géant, les plein écran, les cartons noirs, les mots dorés et le numéro ;
+  - **coupes** : fondu enchaîné de la voix de 35 ms centré sur chaque coupe (`"fonduCoupe": 0.035`, sans changer la
+    durée) ; chaque coupe tombe soit sur une transition, soit sur un **changement de cadrage instantané** pile sur
+    l'image de la coupe (`raccords` dans les props ; aucun autre changement de plan à moins de 1,2 s) ;
+  - **transitions** aux raccords de coupe (sinon aux débuts de phrase), toutes les 7 à 11 s, en rotation pour ne
+    jamais répéter deux fois la même : flou rapide, bascule 3D, coup de zoom, image dans l'image à cadre blanc
+    incliné (`src/dynamique/Transitions.tsx`) ; jamais à moins de 0,4 s d'un autre événement ;
+  - **autocollants dessinés** (interrogation, flamme, éclair, ampoule, billets, billets barrés, coche, croix) à côté
+    de la tête (280 px), 1,6 s, rebond + balancement (`src/dynamique/Autocollants.tsx`), ancrés sur un mot (`a`) ;
+    le point d'interrogation = trois « ? » épais noirs à contour blanc, de tailles et d'inclinaisons différentes ;
+  - **cartons noirs** d'annonce de partie (1,5 s, texte blanc mot par mot dans un cadre à crochets, la voix
+    continue dessous) ;
+  - **mots et chiffres dorés** lumineux, **à la place du sous-titre** (même hauteur, sous-titre masqué), en grand
+    (160 px max sur une ligne, 115 px sur deux ; `\n` pour couper), **1,5 s au plus** ; jamais un chiffre non
+    vérifié ; marques en texte seulement, sans logo ;
+    un doré ou un autocollant qui tomberait sous un carton noir apparaît 2 images après sa fin, et un doré
+    s'arrête 2 images avant le suivant (jamais deux à la fois) ;
+  - **numéro de téléphone** seul (sans « AU »), en grand, à la place du sous-titre, bleu à contour blanc, chiffre
+    par chiffre ;
+  - **scènes illustrées animées** en écran partagé (voir « Bibliothèque des scènes illustrées ») ; un doré ou un
+    autocollant qui tombe pendant une scène est retiré, aucune transition à moins de 1 s d'une scène ;
+  - insertions d'images/vidéos de Joseph en plein écran avec léger zoom, et couverture de livre en 3D : à prévoir
+    quand il en fournit (pas encore construit) ;
+  - gardés du modèle classique : ouverture percutante, zone sûre, musique, niveaux, carton de fin, 1080 × 1920,
+    plein écran `focus` (ex. « 100 % GRATUIT ») ;
+  - son : `transition` (souffle + petit impact, calé pour culminer sur la coupe) et `autocollant` (« pop ») ;
+    croix/coche gardent leurs sons ; doré et numéro = `info` ; carton noir = `plein_ecran`.
+
+## Bibliothèque des scènes illustrées (style dynamique)
+
+Scènes de 3 à 5 s (jusqu'à ~9 s si la phrase l'exige) en **écran partagé** : illustration animée dans la moitié
+haute (1080 × 960) sur un dégradé coloré qui bouge (taches de lumière, particules), visage dans la moitié basse
+(l'image glisse de 540 px vers le bas), sous-titres posés sur la limite (960 px), liseré lumineux. Entrée/sortie :
+le panneau descend du haut en 8 images. Dessins SVG détaillés, colorés, toujours en mouvement (pas d'icônes
+plates), contenu entre x 50–950 et y 200–880. Son d'entrée `plein_ecran` (souffle + impact), puis un son par étape
+au choix (`croix`, `coche`, `autocollant`, `panneau`, `info`).
+
+Dans `montage.json` → `dynamique.illustrations` : `{"type", "a": mot de départ, "decalage": s, "duree": s,
+"fond": bleu|violet|orange|nuit|vert|rose, "etapes": [mots clés], "sons": [un son ou null par étape]}`.
+Les étapes sont les mots où l'animation change (calées sur la voix). Une scène qui tomberait sous un carton noir
+démarre juste après lui. Code : `src/dynamique/Illustrations.tsx` (cadre), `src/dynamique/scenes/` (dessins,
+registre dans `index.ts`, outils communs : `pop`, `prog`, `Marque` croix/coche, `Personne`).
+
+| Type | Idée | Étapes | État |
+|---|---|---|---|
+| `etudes` | pile de livres + calendrier dont les pages s'envolent, puis horloge qui s'emballe et une personne à son ordinateur, « EN UN BREF TEMPS » | calendrier, horloge | fait |
+| `reponses` | téléphone + appli de discussion : question floue, réponse grise floue, croix ; puis question précise, réponse nette, coche | croix, croix qui reclaque, écran vidé, coche | fait |
+| `creations` | 4 écrans qui se construisent : page web qui s'assemble, application, robot qui salue, engrenages reliés | un par écran | fait |
+| `licenciements` | compteur 0 → 15 000 (marque en texte), silhouettes qui rougissent et tombent | chiffre atteint | fait |
+| `equipe` | cinq silhouettes qui fusionnent en une seule, entourée d'outils | à faire | à dessiner |
+| `telephone` | téléphone avec appli de discussion et grand point d'interrogation | à faire | à dessiner |
+| `remplace` | chaise de bureau vide, puis silhouette avec éclair « IA » qui prend la place | à faire | à dessiner |
+| `gratuit` | billet barré, puis « 100 % GRATUIT » qui éclate en confettis | à faire | à dessiner |
+| `rendezvous` | calendrier « SAMEDI 10 OCTOBRE », repère de carte « Adidogomé, Lycée Moderne 2 », cartes « JOURNÉE 9H – 17H » et « SOIRÉE 18H – 20H » | à faire | à dessiner |
+| `enligne` | globe qui tourne avec points reliés + grille de visioconférence, sans logo | à faire | à dessiner |
+| `inscription` | téléphone, trois étapes qui se cochent (créer son compte, confirmer, rejoindre le groupe) | à faire | à dessiner |
+| `unTelephone` | un téléphone d'où sortent un site web, une application et un robot | à faire | à dessiner |
+
+Aperçu de scènes : rendre chaque passage avec `npx remotion render … --frames=a-b --muted`, y poser le morceau
+correspondant de `public/<projet>/mix.wav`, puis les enchaîner.
+
 ## Méthode pour chaque vidéo (à suivre dans l'ordre)
 
 1. **Il envoie un lien Google Drive** et, s'il l'a, son script.
@@ -14,6 +92,8 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
    - `python3 scripts/corriger.py <projet>` → `projets/<projet>/rapport_transcription.md`.
    - Règles : glossaire appliqué partout ; un mot douteux est corrigé d'après le script ;
      ce qui est dit à l'oral et absent du script est **gardé et signalé**.
+   - Si le script est un résumé (pas mot pour mot), seuls les passages courts (≤ 3 mots) sont corrigés
+     automatiquement ; le reste est gardé tel qu'il est dit et signalé.
    - Corrections à la main : `projets/<projet>/corrections.json`
      (`[{"vers": 90.0, "oral": "étudier", "affiche": "utiliser"}]`), puis relancer `corriger.py`.
      `"affiche": ""` supprime le mot ; plusieurs mots (`"de pouvoir"`) se partagent sa durée.
@@ -57,6 +137,22 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
     en largeur, la ligne remplit déjà la zone) et sonore ; à `geant` = 2,5 s il rétrécit et monte dans un bandeau
     en haut, où il reste jusqu'à `duree` = 5 s ; sous-titres masqués tant qu'il est géant ;
   - cadrage qui change toutes les ~1,5 s pendant les 5 premières secondes, puis rythme normal.
+- **Prise filmée de loin (visage haut dans l'image)** : mesurer le visage (détecteur OpenCV, `haarcascade_frontalface`)
+  sur toute la prise. Si le haut de la tête passe au-dessus de ~540 px, les panneaux le couvriraient : **recadrer**
+  avec `cadrage` dans `montage.json` (`echelle` 1,2–1,25, `decalage` vers le bas, `x` pour centrer le visage,
+  `visage` = nouveau centre du zoom) à partir d'un instant (`apres`). L'image ne peut pas descendre sans zoom plus
+  fort : la bande libérée en haut (≈ 230 px) est remplie par l'image floutée, presque entièrement sous les 10 %
+  du haut que TikTok recouvre. Vérifier ensuite sur le rendu : haut des cheveux sous le bas des panneaux (520 px,
+  zoom de panneau compris), menton au-dessus des sous-titres (1 296 px). Garder le cadre large tant qu'il faut voir
+  un objet montré (ex. une tablette) ; `visage` (racine) = centre du zoom en cadre large.
+- **Preuve / extrait inséré** (`preuve` dans `montage.json`) : extrait d'une autre vidéo en plein écran à la place
+  d'un passage coupé (`coupes`), étiquette jaune qui claque, souffle + impact à l'entrée, son de l'extrait baissé
+  (`gainDb`), notre musique coupée pendant l'extrait (il a déjà la sienne) ; pas de zoom ni de dégradé dessus.
+  Le titre d'accroche peut alors disparaître avant l'extrait (`banniere: false`, `geant` = `duree`).
+- **Coupes de mots** (`couperMots`) : « ok ? » en fin de phrase, « donc » répétés en début de phrase, seulement
+  quand la coupe est propre (vraie pause, ≤ −38 dB, des deux côtés). Les horodatages de Whisper sont souvent en
+  avance de 0,1–0,3 s : vérifier sur le niveau sonore et retranscrire la zone avec 8 s de contexte, puis donner les
+  points de coupe vérifiés (`"coupe": [début, fin]`). Sinon, garder le mot et le signaler.
 - **Pas de barre de progression.**
 - Silences de plus de 0,6 s coupés (détection au volume sonore, −30 dB, marge de 0,15 s).
 - **Listes et énumérations** (erreurs, « Apprendre à », publics, question finale) : disposition
@@ -106,6 +202,24 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - `scripts/rendre.sh` rend l'image sans son puis ajoute `public/<projet>/mix.wav` tel quel (calage vérifié :
   0 échantillon de décalage).
 
+## Version longue (avec carton de transition)
+
+`python3 scripts/version_longue.py <projet> <fichier>` : la vidéo montée sans son carton de fin, puis le
+**carton de transition** de 3 s, puis l'autre vidéo telle quelle, **coupée avant son écran noir final** (logo
+CapCut… détecté automatiquement) pour finir sur son carton Lomé IA School, avec un fondu de sortie de 0,8 s.
+Chaque partie ramenée à −14 LUFS par un gain fixe, limiteur de crête, 720 × 1280, moins de 30 Mo.
+
+**Carton de transition** (composition Remotion `Transition`, `src/Transition.tsx`, 90 images, textes dans
+`TEXTES` du script, réutilisable) :
+- entrée par un balayage en biais (7 images) par-dessus la dernière image de la vidéo précédente ;
+- fond bleu nuit animé ; « ET MAINTENANT… » en jaune qui claque (image 9) ; « REGARDEZ / LA VIDÉO » en très grand,
+  blanc à contour noir (image 36, avec l'impact) ; « MONTÉE À 100 % PAR L'IA » en noir sur bloc jaune (image 42) ;
+  bouton de lecture jaune qui pulse avec un halo (image 48) ; hauteurs fixes 380 / 520 / 880 / 1 200 px ;
+- sortie : coup de zoom avant dans le bouton (images 78–89), qui ouvre en cercle sur la première image de la vidéo
+  suivante ;
+- son : la musique continue (−10 LU sous la voix), effet « carton » (montée 1,2 s, **impact pile à l'image 36**,
+  ~−2 LU sous la voix), musique qui remonte à −6 LU après l'impact, souffle discret au zoom de sortie.
+
 ## Glossaire
 
 `glossaire.json` : noms propres appliqués automatiquement à chaque transcription.
@@ -126,6 +240,8 @@ partout ; « Lomé IA School » ne change pas.
 - `scripts/sons.py` tire du bruit aléatoire dans l'ordre des sons : ajouter un son change le grain des
   suivants. Les effets versionnés dans `sons/effets/` font foi ; ne régénérer que le son ajouté
   (restaurer les autres avec `git checkout -- sons/effets/<nom>.wav`).
+- OpenCV : installer `opencv-python-headless<5` (la version 5 n'a plus `CascadeClassifier`).
+- Mesurer les saturations sur les canaux stéréo bruts, pas après conversion en mono (faux dépassements).
 - Réseau : huggingface.co, drive.google.com et drive.usercontent.google.com doivent être autorisés
   dans l'environnement.
 - Vidéos WhatsApp en basse résolution (464 × 832) : agrandies, donc un peu floues. Demander l'original.

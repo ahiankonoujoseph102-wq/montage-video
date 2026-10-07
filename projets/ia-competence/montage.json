@@ -1,0 +1,326 @@
+{
+  "_style": "dynamique",
+  "titre": {
+    "lignes": [
+      "Cette compétence",
+      "va changer",
+      "ton travail"
+    ],
+    "motsCles": [
+      "compétence"
+    ],
+    "geant": 2.5,
+    "duree": 5
+  },
+  "coupes": [
+    [
+      12.67,
+      13.35
+    ],
+    [
+      36.3,
+      36.95
+    ],
+    [
+      38.97,
+      41.45
+    ],
+    [
+      62.16,
+      62.82
+    ],
+    [
+      97.39,
+      103.04
+    ],
+    [
+      105.16,
+      106.38
+    ],
+    [
+      126.17,
+      127.51
+    ],
+    [
+      138.25,
+      141.11
+    ],
+    [
+      145.18,
+      149.02
+    ],
+    [
+      167.08,
+      167.65
+    ],
+    [
+      210.67,
+      213.44
+    ],
+    [
+      222.78,
+      223.9
+    ],
+    [
+      231.16,
+      233.41
+    ]
+  ],
+  "visage": {
+    "x": 520,
+    "y": 672
+  },
+  "cadrage": {
+    "apres": 0.0,
+    "echelle": 1.35,
+    "decalage": 0,
+    "x": 258,
+    "y": 324,
+    "visage": {
+      "x": 520,
+      "y": 672
+    }
+  },
+  "motsCles": [],
+  "scenes": [
+    {
+      "id": "gratuit",
+      "debut": "totalement gratuit",
+      "fin": "totalement gratuit",
+      "prolonger": 1.2,
+      "fond": "violet",
+      "disposition": "focus",
+      "elements": [
+        {
+          "a": "totalement gratuit",
+          "icone": "etincelles",
+          "texte": "100 % GRATUIT",
+          "grand": true
+        }
+      ]
+    }
+  ],
+  "dynamique": {
+    "tete": {
+      "x": 520,
+      "y": 770
+    },
+    "espacement": [
+      7,
+      11
+    ],
+    "cartonsNoirs": [
+      {
+        "a": "Voilà, beaucoup",
+        "texte": "LE PROBLÈME"
+      },
+      {
+        "a": "Regardez, déjà",
+        "texte": "LES CHIFFRES"
+      },
+      {
+        "a": "J'organise",
+        "texte": "LA SOLUTION"
+      },
+      {
+        "a": "Vous allez vous inscrire, vous allez créer",
+        "texte": "COMMENT S'INSCRIRE"
+      }
+    ],
+    "dores": [
+      {
+        "a": "années d'études",
+        "texte": "DES ANNÉES\nD'ÉTUDES"
+      },
+      {
+        "a": "toute une équipe",
+        "texte": "TOUTE\nUNE ÉQUIPE"
+      },
+      {
+        "a": "licencié",
+        "texte": "AMAZON :\n+ DE 15 000\nLICENCIEMENTS",
+        "duree": 3.2
+      },
+      {
+        "a": "Meta",
+        "texte": "META",
+        "duree": 1.4
+      },
+      {
+        "a": "pour maîtriser l'IA, pour exécuter",
+        "texte": "GRATUIT"
+      },
+      {
+        "a": "présentiel, à Lomé",
+        "texte": "ADIDOGOMÉ,\nLYCÉE MODERNE 2",
+        "duree": 2.6
+      },
+      {
+        "a": "18h",
+        "texte": "18H – 20H",
+        "duree": 1.5
+      },
+      {
+        "a": "9h",
+        "texte": "9H – 17H",
+        "duree": 1.5
+      },
+      {
+        "a": "Google Meet",
+        "texte": "EN LIGNE SUR\nGOOGLE MEET",
+        "duree": 2.2
+      },
+      {
+        "a": "samedi 10 octobre",
+        "texte": "SAMEDI\n10 OCTOBRE",
+        "duree": 2.2
+      }
+    ],
+    "autocollants": [
+      {
+        "a": "bouleverser",
+        "type": "eclair",
+        "cote": "droite"
+      },
+      {
+        "a": "Est-ce que tu sais",
+        "type": "interrogation",
+        "cote": "gauche"
+      },
+      {
+        "a": "réponses vagues",
+        "type": "croix",
+        "cote": "droite"
+      },
+      {
+        "a": "résultats décevants",
+        "type": "croix",
+        "cote": "gauche"
+      },
+      {
+        "a": "n'importe quel contenu",
+        "type": "ampoule",
+        "cote": "droite"
+      },
+      {
+        "a": "automatisations",
+        "type": "flamme",
+        "cote": "gauche"
+      },
+      {
+        "a": "remplacé",
+        "type": "eclair",
+        "cote": "droite"
+      },
+      {
+        "a": "chômage",
+        "type": "croix",
+        "cote": "gauche"
+      },
+      {
+        "a": "la réussite",
+        "type": "coche",
+        "cote": "droite"
+      },
+      {
+        "a": "pas d'argent",
+        "type": "billetsBarres",
+        "cote": "gauche"
+      },
+      {
+        "a": "tes tâches de tous les jours",
+        "type": "billets",
+        "cote": "droite"
+      },
+      {
+        "a": "un seul téléphone",
+        "type": "coche",
+        "cote": "gauche"
+      }
+    ],
+    "numero": {
+      "a": "+228 72 24 02 31",
+      "texte": "+228 72 24 02 31",
+      "duree": 3.5
+    },
+    "illustrations": [
+      {
+        "type": "etudes",
+        "a": "des années d'études",
+        "decalage": -0.15,
+        "duree": 6.0,
+        "fond": "bleu",
+        "etapes": [
+          "d'apprentissage",
+          "aujourd'hui"
+        ],
+        "sons": [
+          "panneau",
+          "autocollant"
+        ]
+      },
+      {
+        "type": "reponses",
+        "a": "Ils posent des questions vagues",
+        "decalage": -0.1,
+        "duree": 9.4,
+        "fond": "violet",
+        "etapes": [
+          "réponses vagues",
+          "décevants",
+          "savoir que",
+          "instructions"
+        ],
+        "sons": [
+          "croix",
+          null,
+          "panneau",
+          "coche"
+        ]
+      },
+      {
+        "type": "creations",
+        "a": "projet web avancé",
+        "duree": 5.4,
+        "fond": "orange",
+        "etapes": [
+          "sites web",
+          "applications",
+          "agents IA",
+          "automatisations"
+        ],
+        "sons": [
+          "autocollant",
+          "autocollant",
+          "autocollant",
+          "autocollant"
+        ]
+      },
+      {
+        "type": "licenciements",
+        "a": "Amazon",
+        "duree": 2.75,
+        "fond": "nuit",
+        "etapes": [
+          "15 000"
+        ],
+        "sons": [
+          "info"
+        ]
+      }
+    ]
+  },
+  "carton": {
+    "duree": 3,
+    "fond": "nuit",
+    "titre": "Lomé IA\nSchool",
+    "lignes": [
+      "Formation gratuite",
+      "Samedi 10 octobre",
+      "Adidogomé, Lycée Moderne 2",
+      "+228 72 24 02 31",
+      "Lien en description"
+    ]
+  },
+  "fonduCoupe": 0.035
+}

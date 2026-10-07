@@ -22,7 +22,8 @@ const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const normaliser = (m: string) => m.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 
 // Fin du titre géant (en images) : les sous-titres restent masqués jusque-là.
-export const finTitreGeant = (titre: Titre, fps: number) => Math.round(titre.geant * fps) + RANGEMENT;
+export const finTitreGeant = (titre: Titre, fps: number) =>
+  titre.banniere === false ? Math.round(titre.duree * fps) : Math.round(titre.geant * fps) + RANGEMENT;
 
 // Ouverture : titre géant dont les lignes claquent une à une (toutes les 5 images), puis il rétrécit et monte
 // se ranger dans un bandeau en haut (zone sûre), où il reste jusqu'à `duree` secondes.
@@ -51,14 +52,15 @@ export const TitreAccroche: React.FC<{titre: Titre}> = ({titre}) => {
 
   // Rangement dans le bandeau : rétrécit autour du centre du bloc et monte jusqu'en haut de la zone sûre.
   const debutRangement = Math.round(titre.geant * fps);
-  const p = interpolate(frame, [debutRangement, debutRangement + RANGEMENT], [0, 1],
+  const p = titre.banniere === false ? 0 : interpolate(frame, [debutRangement, debutRangement + RANGEMENT], [0, 1],
     {...clamp, easing: Easing.inOut(Easing.cubic)});
   const hauteurBoite = hauteur + 2 * MARGE_BOITE;
   const centreBoite = haut + hauteur / 2;
   const centreBandeau = TITRE.haut + (ECHELLE_BANDEAU * hauteurBoite) / 2;
   const echelle = 1 + (ECHELLE_BANDEAU - 1) * p;
   const decalage = (centreBandeau - centreBoite) * p;
-  const sortie = interpolate(frame, [fin - 8, fin], [1, 0], clamp);
+  // Sans bandeau, le titre s'efface vite juste avant la suite (ex. l'extrait de preuve).
+  const sortie = interpolate(frame, [fin - (titre.banniere === false ? 4 : 8), fin], [1, 0], clamp);
   // Le fond du bandeau n'apparaît qu'en fin de montée, pour ne pas passer sur le visage.
   const fond = interpolate(p, [0.75, 1], [0, 1], clamp);
 

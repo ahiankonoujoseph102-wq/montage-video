@@ -1,0 +1,224 @@
+{
+  "_note": "Prise filmée de loin (visage très haut) : cadre large pendant la tablette, puis cadre serré (zoom 25 %, image descendue de 230 px, bande du haut remplie par l'image floutée).",
+  "titre": {
+    "lignes": [
+      "Cette vidéo",
+      "a été montée",
+      "par l'IA"
+    ],
+    "motsCles": [
+      "l'IA"
+    ],
+    "geant": 2.2,
+    "duree": 2.2,
+    "banniere": false
+  },
+  "coupes": [
+    [
+      0.0,
+      0.7
+    ],
+    [
+      1.55,
+      1.56
+    ],
+    [
+      2.95,
+      9.3
+    ]
+  ],
+  "sansSousTitres": [
+    [
+      1.55,
+      9.3
+    ]
+  ],
+  "gains": [
+    [
+      1.56,
+      2.95,
+      -14
+    ]
+  ],
+  "preuve": {
+    "fichier": "ancienne.mp4",
+    "debut": 16.1,
+    "duree": 5.0,
+    "apres": 9.3,
+    "gainDb": -9,
+    "etiquette": "MONTÉ À 100 % PAR L'IA"
+  },
+  "visage": {
+    "x": 500,
+    "y": 555
+  },
+  "cadrage": {
+    "apres": 9.3,
+    "echelle": 1.25,
+    "decalage": 230,
+    "x": 85,
+    "visage": {
+      "x": 540,
+      "y": 924
+    }
+  },
+  "couperMots": [
+    {
+      "vers": 13.78,
+      "mot": "ok",
+      "coupe": [
+        13.63,
+        14.35
+      ]
+    },
+    {
+      "vers": 17.44,
+      "mot": "particulièrement",
+      "nombre": 3,
+      "coupe": [
+        17.45,
+        18.83
+      ]
+    },
+    {
+      "vers": 45.32,
+      "mot": "donc",
+      "coupe": [
+        45.3,
+        46.03
+      ]
+    },
+    {
+      "vers": 83.12,
+      "mot": "ok",
+      "coupe": [
+        83.14,
+        83.35
+      ]
+    }
+  ],
+  "motsCles": [
+    "l'IA",
+    "IA",
+    "intelligence",
+    "montage",
+    "gratuitement",
+    "formation",
+    "gratuite",
+    "réservation",
+    "samedi",
+    "Adidogomé",
+    "vibe coding",
+    "sites",
+    "agents",
+    "automatisations",
+    "argent",
+    "lien",
+    "inscrire",
+    "revenus",
+    "+228 72 24 02 31"
+  ],
+  "scenes": [
+    {
+      "id": "date-lieu",
+      "debut": "samedi 10 octobre",
+      "fin": "Lycée Moderne 2",
+      "fond": "orange",
+      "disposition": "focus",
+      "elements": [
+        {
+          "a": "samedi 10 octobre",
+          "icone": "calendrier",
+          "texte": "SAMEDI\n10 OCTOBRE"
+        },
+        {
+          "a": "Adidogomé",
+          "icone": "epingle",
+          "texte": "Adidogomé, Lycée Moderne 2"
+        }
+      ]
+    },
+    {
+      "id": "apprendre",
+      "debut": "vibe coding",
+      "fin": "automatisations",
+      "prolonger": 1.0,
+      "disposition": "panneau",
+      "titre": "Vous allez apprendre",
+      "elements": [
+        {
+          "a": "vibe coding",
+          "texte": "Vibe coding",
+          "marque": "coche"
+        },
+        {
+          "a": "sites",
+          "texte": "Sites web professionnels",
+          "marque": "coche"
+        },
+        {
+          "a": "agents",
+          "texte": "Agents IA",
+          "marque": "coche"
+        },
+        {
+          "a": "automatisations",
+          "texte": "Automatisations",
+          "marque": "coche"
+        }
+      ]
+    },
+    {
+      "id": "gratuit",
+      "debut": "totalement gratuite",
+      "fin": "réservation",
+      "prolonger": 0.6,
+      "fond": "violet",
+      "disposition": "focus",
+      "elements": [
+        {
+          "a": "totalement gratuite",
+          "texte": "100 % GRATUIT",
+          "grand": true,
+          "icone": "etincelles"
+        },
+        {
+          "a": "réservation",
+          "texte": "SUR RÉSERVATION",
+          "grand": true,
+          "icone": "calendrier"
+        }
+      ]
+    },
+    {
+      "id": "numero",
+      "debut": "Pour toute info",
+      "fin": "+228 72 24 02 31",
+      "prolonger": 0.8,
+      "fond": "orange",
+      "disposition": "focus",
+      "titre": "Contact",
+      "elements": [
+        {
+          "a": "Pour toute info",
+          "icone": "telephone",
+          "texte": "+228 72 24 02 31",
+          "grand": true
+        }
+      ]
+    }
+  ],
+  "carton": {
+    "duree": 3,
+    "fond": "nuit",
+    "titre": "Lomé IA\nSchool",
+    "lignes": [
+      "Formation gratuite",
+      "Samedi 10 octobre",
+      "Adidogomé, Lycée Moderne 2",
+      "+228 72 24 02 31",
+      "Lien en description"
+    ]
+  },
+  "_coupesNonFaites": "« ok ? Donc, » (28,1 s), « Donc » (44,3 s), « Donc, » (66,5 s) : enchaînés sans pause, coupe non propre"
+}

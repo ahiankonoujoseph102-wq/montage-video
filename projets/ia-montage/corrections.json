@@ -1,0 +1,146 @@
+[
+  {
+    "vers": 10.82,
+    "oral": "l'aise",
+    "affiche": "l'ère",
+    "_pourquoi": "« à l'ère de l'IA » (résumé de Joseph)"
+  },
+  {
+    "vers": 27.0,
+    "oral": "l'intérêt",
+    "affiche": "l'intelligence",
+    "_pourquoi": "« l'intelligence artificielle »"
+  },
+  {
+    "vers": 27.42,
+    "oral": "artificiel,",
+    "affiche": "artificielle,",
+    "_pourquoi": "« l'intelligence artificielle »"
+  },
+  {
+    "vers": 29.52,
+    "oral": "de",
+    "affiche": "et",
+    "_pourquoi": "« ceux et celles »"
+  },
+  {
+    "vers": 36.18,
+    "oral": "promotion",
+    "affiche": "formation",
+    "_pourquoi": "Whisper entend « promotion » pour « formation »"
+  },
+  {
+    "vers": 41.18,
+    "oral": "l'OB,",
+    "affiche": "Lomé,",
+    "_pourquoi": "« à Lomé, précisément à Adidogomé »"
+  },
+  {
+    "vers": 42.66,
+    "oral": "Adidogomé",
+    "affiche": "Adidogomé,",
+    "_pourquoi": "virgule du lieu"
+  },
+  {
+    "vers": 44.6,
+    "oral": "promotion",
+    "affiche": "formation",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 46.38,
+    "oral": "promotion",
+    "affiche": "formation",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 72.22,
+    "oral": "promotion",
+    "affiche": "formation",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 73.36,
+    "oral": "gratuit,",
+    "affiche": "gratuite,",
+    "_pourquoi": "« une formation totalement gratuite »"
+  },
+  {
+    "vers": 74.76,
+    "oral": "sous",
+    "affiche": "sur",
+    "_pourquoi": "« sur réservation »"
+  },
+  {
+    "vers": 78.5,
+    "oral": "environs",
+    "affiche": "envoyons",
+    "_pourquoi": "« nous envoyons »"
+  },
+  {
+    "vers": 81.56,
+    "oral": "promotion",
+    "affiche": "formation",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 90.16,
+    "oral": "transmettre",
+    "affiche": "transformez vos",
+    "_pourquoi": "« transformez vos compétences »"
+  },
+  {
+    "vers": 15.86,
+    "oral": "je",
+    "affiche": "j'ai",
+    "_pourquoi": "« voici une vidéo que j'ai réalisée » (Joseph)"
+  },
+  {
+    "vers": 15.92,
+    "oral": "vais",
+    "affiche": "",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 16.0,
+    "oral": "réaliser",
+    "affiche": "réalisée",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 55.0,
+    "oral": "de",
+    "affiche": "",
+    "_pourquoi": "« de 4 parts de créer » → « capable de créer » (Joseph)"
+  },
+  {
+    "vers": 55.3,
+    "oral": "4",
+    "affiche": "capable",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 55.46,
+    "oral": "parts",
+    "affiche": "",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 61.0,
+    "oral": "un",
+    "affiche": "une",
+    "_pourquoi": "« construire une IA » (Joseph)"
+  },
+  {
+    "vers": 61.3,
+    "oral": "l'IA",
+    "affiche": "IA",
+    "_pourquoi": "idem"
+  },
+  {
+    "vers": 91.6,
+    "oral": "revenu.",
+    "affiche": "revenus.",
+    "_pourquoi": "Whisper entend « revenu » même en lui soufflant « opportunités » (10 %) : gardé"
+  }
+]

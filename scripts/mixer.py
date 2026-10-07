@@ -33,9 +33,10 @@ FONDU_ENTREE = 0.0  # aucun démarrage en douceur : la musique part franchement 
 EFFETS = {
     "ouverture": -2.0, "mot": -11.0, "info": -6.0, "carton": -5.0, "plein_ecran": -9.0,
     "croix": -10.0, "coche": -10.0, "panneau": -13.0, "zoom": -22.0,
+    "transition": -12.0, "autocollant": -12.0,  # style dynamique
 }
 # Priorité quand deux effets tomberaient presque ensemble : on ne garde que le plus important.
-PRIORITE = {"ouverture": 7, "carton": 6, "mot": 3, "info": 5, "plein_ecran": 4, "croix": 3, "coche": 3, "panneau": 2, "zoom": 1}
+PRIORITE = {"ouverture": 7, "carton": 6, "mot": 3, "transition": 3, "autocollant": 3, "info": 5, "plein_ecran": 4, "croix": 3, "coche": 3, "panneau": 2, "zoom": 1}
 ECART_MIN = 8  # images (≈ 0,27 s) entre deux effets, pour ne jamais les empiler
 # Les animations partent de 0 (opacité, ouverture du cercle, zoom) sur leur image de départ :
 # l'élément n'est visible qu'à l'image suivante. L'effet tombe sur cette première image visible.
@@ -135,8 +136,34 @@ def evenements(props):
     carton = props.get("carton")
     if carton:
         ev.append((carton["debut"], "carton", "Carton de fin"))
+    preuve = props.get("preuve")
+    if preuve:  # extrait inséré : souffle + impact quand l'étiquette claque
+        ev.append((preuve["debut"], "plein_ecran", f"Preuve : {preuve['etiquette']}"))
+    # Style dynamique : un son par transition, par autocollant, par mot doré, carton noir et numéro.
+    dyn = props.get("dynamique")
+    if dyn:
+        for t in dyn["transitions"]:
+            # Le souffle culmine 5 images après son départ : il tombe pile sur la coupe.
+            ev.append((t["image"] - 5 - DECALAGE_VISIBLE, "transition", f"Transition : {t['type']}"))
+        for a in dyn["autocollants"]:
+            quoi = a["type"] if a["type"] in ("croix", "coche") else "autocollant"
+            ev.append((a["debut"], quoi, f"Autocollant : {a['type']}"))
+        for d in dyn["dores"]:
+            ev.append((d["debut"], "info", f"Doré : {d['texte'].replace(chr(10), ' ')}"))
+        for c in dyn["cartonsNoirs"]:
+            ev.append((c["debut"], "plein_ecran", f"Carton noir : {c['texte']}"))
+        if dyn.get("numero"):
+            ev.append((dyn["numero"]["debut"], "info", f"Numéro : {dyn['numero']['texte']}"))
+        # Scène illustrée : souffle + impact à l'entrée, puis un son par étape (croix, coche, pop…) si demandé.
+        for sc in dyn.get("illustrations", []):
+            ev.append((sc["debut"], "plein_ecran", f"Scène illustrée « {sc['type']} »"))
+            for image, quoi in zip(sc["etapes"], sc.get("sons", [])):
+                if quoi:
+                    ev.append((image, quoi, f"Scène « {sc['type']} » : étape"))
     # Changements de cadrage, seulement quand le visage est à l'écran.
     caches = [(s["debut"], s["fin"]) for s in props["scenes"] if s["disposition"] != "panneau"]
+    if preuve:
+        caches.append((preuve["debut"], preuve["fin"]))
     if carton:
         caches.append((carton["debut"], carton["fin"]))
     for image in props.get("plans", [])[1:]:
@@ -199,6 +226,9 @@ def main():
             plein_ecran[int(s["debut"] / FPS * 100):int(s["fin"] / FPS * 100)] = True
     cible[actif] = MUSIQUE["parle"]
     cible[actif & plein_ecran] = MUSIQUE["parle_plein_ecran"]
+    if props.get("preuve"):  # l'extrait a déjà sa musique : la nôtre s'efface pendant qu'il passe
+        pr = props["preuve"]
+        cible[int(pr["debut"] / FPS * 100):int(pr["fin"] / FPS * 100)] = -45.0
     carton = props.get("carton")
     if carton:
         # La musique remonte dès que la voix s'éteint (15 images avant le carton).

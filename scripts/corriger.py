@@ -139,7 +139,10 @@ def aligner(mots, script_jetons, journal):
             similarite = difflib.SequenceMatcher(None, normaliser(texte_oral), normaliser(texte_ecrit)).ratio()
             douteux = min(m["proba"] for m in oral) < PROBA_DOUTEUSE or any(m.get("glossaire") for m in oral)
             homophone = len(oral) == len(ecrit) and similarite >= SIMILARITE_HOMOPHONE
-            if douteux or homophone:
+            # Un script résumé n'est pas mot pour mot : on ne remplace que des passages courts et de longueur
+            # voisine ; un passage plus long est gardé tel qu'il est dit et signalé.
+            court = len(oral) <= 3 and len(ecrit) <= 3 and abs(len(oral) - len(ecrit)) <= 1
+            if homophone or (douteux and court):
                 sortie += repartir(oral[0]["debut"], oral[-1]["fin"], ecrit, statut="corrigé", proba=1.0)
                 journal.append(("corrigé", oral[0]["debut"], texte_oral, texte_ecrit))
             else:
