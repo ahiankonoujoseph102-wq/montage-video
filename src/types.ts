@@ -62,5 +62,6 @@ export type Dynamique = {
   dores: {debut: number; fin: number; texte: string}[];
   cartonsNoirs: {debut: number; fin: number; texte: string}[];
   numero?: {debut: number; fin: number; texte: string} | null;
+  raccords?: number[]; // coupes sans transition : changement de cadrage instantané
   tete: {x: number; y: number}; // centre du visage (sur l'image affichée), pour placer les autocollants
 };

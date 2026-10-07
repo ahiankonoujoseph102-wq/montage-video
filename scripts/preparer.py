@@ -155,7 +155,36 @@ def gain_segment(d, f, gains):
     return 0.0
 
 
-def couper_video(source, gardes, sortie, insertion=None, cadrage=None, gains=()):
+def audio_fondu(source, gardes, sortie, fondu, gains=()):
+    """Voix assemblée avec un fondu enchaîné à puissance constante de `fondu` s centré sur chaque coupe
+    (la durée totale ne change pas : chaque segment déborde de fondu/2 de part et d'autre de la coupe)."""
+    sr = 48000
+    brut = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(source), "-vn", "-ac", "2", "-ar", str(sr),
+                           "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(brut, np.float32).reshape(-1, 2).astype(np.float64)
+    demi = int(fondu * sr / 2)
+    total = sum(int(round(f * sr)) - int(round(d * sr)) for d, f in gardes)
+    sortie_audio = np.zeros((total + 2 * demi, 2))
+    pos = 0
+    for k, (d, f) in enumerate(gardes):
+        i, j = int(round(d * sr)), int(round(f * sr))
+        a = max(0, i - (demi if k > 0 else 0))
+        b = min(len(x), j + (demi if k < len(gardes) - 1 else 0))
+        morceau = x[a:b] * 10 ** (gain_segment(d, f, gains) / 20)
+        n = len(morceau)
+        env = np.ones(n)
+        if k > 0:
+            env[:2 * demi] = np.sin(np.linspace(0, np.pi / 2, 2 * demi)) ** 2
+        if k < len(gardes) - 1:
+            env[-2 * demi:] = np.cos(np.linspace(0, np.pi / 2, 2 * demi)) ** 2
+        debut = pos - (i - a)
+        sortie_audio[debut + demi:debut + demi + n] += morceau * env[:, None]
+        pos += j - i
+    from scipy.io import wavfile
+    wavfile.write(sortie, sr, sortie_audio[demi:demi + total].astype(np.float32))
+
+
+def couper_video(source, gardes, sortie, insertion=None, cadrage=None, gains=(), fondu_coupe=0.0):
     """Assemble les segments gardés (et l'extrait inséré), au format 1080 × 1920.
     `cadrage` : à partir de `apres` (s, source), cadre serré : agrandi de `echelle`, recadré à partir de `x`,
     descendu de `decalage` px ; la bande libérée en haut est remplie par l'image floutée."""
@@ -169,6 +198,15 @@ def couper_video(source, gardes, sortie, insertion=None, cadrage=None, gains=())
         if serre:
             e, dy = cadrage["echelle"], cadrage["decalage"]
             l, h = round(LARGEUR * e / 2) * 2, round(HAUTEUR * e / 2) * 2
+            if not dy:  # cadre serré simple : agrandi puis recadré en (x, y), sans bande floutée
+                filtres.append(f"{v},scale={l}:{h}:flags=lanczos,crop={LARGEUR}:{HAUTEUR}:{cadrage['x']}:"
+                               f"{cadrage.get('y', 0)}[v{n}]")
+                fondu = min(0.02, (f - d) / 4)
+                filtres.append(f"[{entree}:a]atrim={d}:{f},asetpts=PTS-STARTPTS,aresample=48000,volume={gain_db}dB,"
+                               f"afade=t=in:d={fondu},afade=t=out:st={f - d - fondu}:d={fondu}[a{n}]")
+                entrees += f"[v{n}][a{n}]"
+                n += 1
+                return
             filtres.append(f"{v},split[fond{n}][avant{n}]")
             filtres.append(f"[fond{n}]boxblur=40:4,eq=brightness=-0.04[flou{n}]")
             filtres.append(f"[avant{n}]scale={l}:{h}:flags=lanczos,crop={LARGEUR}:{HAUTEUR - dy}:{cadrage['x']}:0[net{n}]")
@@ -192,9 +230,19 @@ def couper_video(source, gardes, sortie, insertion=None, cadrage=None, gains=())
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(source)]
     if insertion:
         cmd += ["-i", str(insertion["chemin"])]
-    subprocess.run(cmd + ["-filter_complex", ";".join(filtres), "-map", "[vf]", "-map", "[a]",
+    son = ["-map", "[a]"]
+    if fondu_coupe and not insertion:
+        # Voix avec fondus enchaînés aux coupes, assemblée à part (même durée que l'image).
+        wav = Path(str(sortie) + ".voix.wav")
+        audio_fondu(source, gardes, wav, fondu_coupe, gains)
+        cmd += ["-i", str(wav)]
+        son = ["-map", "1:a"]
+        filtres.append("[a]anullsink")  # le son assemblé par concat n'est pas utilisé
+    subprocess.run(cmd + ["-filter_complex", ";".join(filtres), "-map", "[vf]", *son,
                           "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
                           "-c:a", "aac", "-b:a", "192k", str(sortie)], check=True)
+    if fondu_coupe and not insertion:
+        wav.unlink()
 
 
 def calculer_onde(video, nb_images):
@@ -414,6 +462,17 @@ def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb
     autocollants = placer(conf.get("autocollants", []), 1.6)
     dores = placer(conf.get("dores", []), 1.8)
     cartons = placer(conf.get("cartonsNoirs", []), 1.5)
+    # Un mot doré ou un autocollant qui commencerait sous un carton noir apparaît juste après lui (animation visible).
+    for e in dores + autocollants:
+        for c in cartons:
+            if c["debut"] <= e["debut"] < c["fin"]:
+                duree = e["fin"] - e["debut"]
+                e["debut"] = c["fin"] + 2
+                e["fin"] = e["debut"] + duree
+    # Après ce décalage, un mot doré s'arrête 2 images avant le suivant (jamais deux dorés à la fois).
+    dores.sort(key=lambda e: e["debut"])
+    for a, b in zip(dores, dores[1:]):
+        a["fin"] = min(a["fin"], b["debut"] - 2)
     numero = placer([conf["numero"]], 3.5)[0] if conf.get("numero") else None
 
     # Transitions : candidats = raccords des coupes (sauts d'image à masquer) et débuts de phrase.
@@ -442,8 +501,17 @@ def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb
         choisis.append(choix)
         dernier = choix
     transitions = [{"image": c, "type": TYPES_TRANSITION[k % len(TYPES_TRANSITION)]} for k, c in enumerate(choisis)]
+    # Coupes sans transition : un changement de cadrage instantané tombe exactement sur la coupe.
+    raccords_cadrage = [c for c in raccords if c not in choisis and not any(a <= c < b for a, b in interdits[1:])]
     return {"transitions": transitions, "autocollants": autocollants, "dores": dores, "cartonsNoirs": cartons,
-            "numero": numero, "tete": conf["tete"]}
+            "numero": numero, "tete": conf["tete"], "raccords": raccords_cadrage}
+
+
+def caler_plans_sur_raccords(plans, raccords, fenetre=36):
+    """Chaque coupe devient un changement de cadrage : on retire les changements trop proches (< 1,2 s) et on
+    place le changement exactement sur la coupe."""
+    plans = [p for p in plans if p == 0 or all(abs(p - r) >= fenetre for r in raccords)]
+    return sorted(set(plans) | set(raccords))
 
 
 def main():
@@ -483,12 +551,14 @@ def main():
     # La coupe prend quelques minutes : on la saute si la source et les coupes n'ont pas changé.
     video = sortie / "video.mp4"
     empreinte = {"source": source.stat().st_mtime, "taille": source.stat().st_size, "gardes": gardes,
+                 "fondu": config.get("fonduCoupe"),
                  "preuve": config.get("preuve"), "cadrage": config.get("cadrage"), "gains": config.get("gains")}
     cache = sortie / "coupes.json"
     if video.exists() and cache.exists() and json.loads(cache.read_text()) == json.loads(json.dumps(empreinte)):
         print("Vidéo coupée déjà à jour, coupe sautée")
     else:
-        couper_video(source, gardes, video, insertion, config.get("cadrage"), config.get("gains", []))
+        couper_video(source, gardes, video, insertion, config.get("cadrage"), config.get("gains", []),
+                     config.get("fonduCoupe", 0.0))
         cache.write_text(json.dumps(empreinte))
     nb_images = int(duree(video) * FPS)
 
@@ -555,6 +625,8 @@ def main():
         "scenes": scenes_sortie,
         "onde": calculer_onde(video, nb_images),
     }
+    if props.get("dynamique"):
+        props["plans"] = caler_plans_sur_raccords(props["plans"], props["dynamique"]["raccords"])
     (sortie / "props.json").write_text(json.dumps(props, ensure_ascii=False, separators=(",", ":")))
     print(f"Vidéo coupée : {nb_images / FPS:.1f} s, {len(groupes)} groupes de sous-titres, {len(scenes)} passages animés")
     for s in scenes_sortie:

@@ -37,7 +37,9 @@ const Visage: React.FC<{video: string; debuts: number[]; panneaux: Scene[]; fin:
   )));
   const serre = ZOOM_SERRE - (ZOOM_SERRE - ZOOM_SERRE_PANNEAU) * poidsPanneau;
   const zoomDe = (k: number) => (k % 2 === 1 ? serre : 1);
-  const zoomPlan = interpolate(f, [debuts[n] ?? 0, (debuts[n] ?? 0) + TRANSITION_ZOOM], [zoomDe(n - 1), zoomDe(n)], {
+  // Sur une coupe (style dynamique), le changement de cadrage est instantané pour masquer le saut d'image.
+  const duree = dyn?.raccords?.includes(debuts[n] ?? -1) ? 0.001 : TRANSITION_ZOOM;
+  const zoomPlan = interpolate(f, [debuts[n] ?? 0, (debuts[n] ?? 0) + duree], [zoomDe(n - 1), zoomDe(n)], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

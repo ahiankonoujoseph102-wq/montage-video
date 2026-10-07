@@ -4,21 +4,27 @@ import {ZONE_SURE} from '../charte';
 import type {Dynamique, TypeAutocollant} from '../types';
 
 // Autocollants dessinés (style « sticker » : formes pleines, contour blanc épais, ombre), posés près de la tête.
-const TAILLE = 320;
+const TAILLE = 280;
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 const dessin = (type: TypeAutocollant) => {
   const contour = {stroke: '#fff', strokeWidth: 9, strokeLinejoin: 'round' as const, paintOrder: 'stroke' as const};
   switch (type) {
-    case 'interrogation':
+    case 'interrogation': {
+      // Trois points d'interrogation épais, noirs à contour blanc, de tailles différentes.
+      const q = (x: number, y: number, t: number, angle: number) => (
+        <text x={x} y={y} fontSize={t} fontFamily="Montserrat" fontWeight={900} fill="#111" stroke="#fff"
+          strokeWidth={t * 0.14} strokeLinejoin="round" paintOrder="stroke" textAnchor="middle"
+          transform={`rotate(${angle} ${x} ${y})`}>?</text>
+      );
       return (
-        <g {...contour}>
-          <path d="M55 42 C55 18 78 8 100 8 C126 8 146 24 146 48 C146 76 112 82 112 108 L112 120 L84 120 L84 104 C84 72 118 66 118 48 C118 36 110 30 100 30 C88 30 82 38 82 48 Z" fill="#111" transform="translate(-8 14) rotate(-12 100 70)" />
-          <circle cx="92" cy="160" r="15" fill="#111" transform="rotate(-12 100 70)" />
-          <path d="M150 70 C150 58 160 52 170 52 C182 52 190 60 190 70 C190 84 174 86 174 98 L174 104 L162 104 L162 96 C162 82 178 80 178 70 C178 64 174 62 170 62 C164 62 160 66 160 70 Z" fill="#FFD400" />
-          <circle cx="168" cy="120" r="8" fill="#FFD400" />
+        <g>
+          {q(150, 112, 78, 16)}
+          {q(52, 96, 96, -14)}
+          {q(104, 178, 168, -4)}
         </g>
       );
+    }
     case 'flamme':
       return (
         <g {...contour}>
@@ -76,7 +82,7 @@ const Autocollant: React.FC<{a: Dynamique['autocollants'][number]; tete: Dynamiq
   const balance = Math.sin(local / 5) * 6;
   const flotte = Math.sin(local / 9) * 8;
   // À côté de la tête, à hauteur du front, toujours dans la zone sûre.
-  const decal = 270;
+  const decal = 300;
   const cx = Math.min(ZONE_SURE.droite - TAILLE / 2 - 10, Math.max(ZONE_SURE.gauche + TAILLE / 2 + 10,
     tete.x + (a.cote === 'droite' ? decal : -decal)));
   const cy = Math.max(ZONE_SURE.haut + TAILLE / 2, tete.y - 150);

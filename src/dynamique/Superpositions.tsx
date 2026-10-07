@@ -18,10 +18,12 @@ const Dore: React.FC<{d: Dynamique['dores'][number]}> = ({d}) => {
   const eclat = interpolate((f - d.debut) % 40, [0, 20, 40], [0, 1, 0]);
   const lignes = d.texte.split('\n');
   return (
-    <div style={{position: 'absolute', top: 250, left: CENTRE_X - LARGEUR / 2, width: LARGEUR, display: 'flex',
-      flexDirection: 'column', alignItems: 'center', opacity: sortie, transform: `scale(${0.4 + 0.6 * pop})`}}>
+    // Posé sur le buste, entre le menton et les sous-titres (le visage est en haut avec le cadrage serré).
+    <div style={{position: 'absolute', bottom: 1920 - 1300, left: CENTRE_X - LARGEUR / 2, width: LARGEUR, display: 'flex',
+      flexDirection: 'column', alignItems: 'center', opacity: sortie, transform: `scale(${0.4 + 0.6 * pop})`,
+      transformOrigin: '50% 100%'}}>
       {lignes.map((l, i) => {
-        const t = taille(l, 140);
+        const t = taille(l, 120);
         return (
           <div key={i} style={{fontFamily: POLICE, fontWeight: 900, fontSize: t, lineHeight: 1.05, whiteSpace: 'nowrap',
             backgroundImage: 'linear-gradient(180deg, #FFF6C2 0%, #FFD54A 35%, #E6A400 65%, #FFE07A 100%)',

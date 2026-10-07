@@ -9,18 +9,31 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - **Style dynamique** (`"_style": "dynamique"` et section `dynamique` dans `montage.json`, exemple :
   `projets/ia-competence/`), inspiré d'une vidéo CapCut de Joseph, **sans aucun élément CapCut** (ni logo,
   ni filigrane, ni autocollant) :
-  - sous-titres **un seul mot à la fois**, gros (130 px max), **bleu vif #1E5BFF à contour blanc épais**, sur le bas
-    du buste (1 330 px), petit rebond à l'apparition (`src/dynamique/SousTitresMot.tsx`) ; masqués pendant le
-    titre géant, les plein écran et les cartons noirs ;
+  - **cadrage serré** : zoom de base de 35 % (`cadrage` : `echelle` 1,35, `decalage` 0, `x`/`y` = coin du recadrage),
+    yeux vers 35 % de la hauteur (~670–730 px), tête jamais coupée, mains visibles quand il fait des gestes ;
+    l'alternance de zoom de 11 % reste par-dessus (`visage` = centre du zoom, sur les yeux). Vérifier sur une image
+    de `public/<projet>/video.mp4` avec une ligne tracée à 672 px ;
+  - sous-titres **un mot à la fois**, **taille unique 120 px** pour tous les mots ; réduite seulement pour un mot de
+    plus de 12 lettres trop large, jamais sous 75 % (90 px), sinon resserré en largeur ; **jamais un mot de 3 lettres
+    ou moins seul** (DE, ET, UNE, LA, À…) : il s'affiche avec le mot suivant (« DE FAÇON »), ou avec le précédent s'il
+    finit la phrase ; **bleu vif #1E5BFF à contour blanc épais**, sur le bas du buste (1 330 px), petit rebond à
+    l'apparition (`src/dynamique/SousTitresMot.tsx`) ; masqués pendant le titre géant, les plein écran et les
+    cartons noirs ;
+  - **coupes** : fondu enchaîné de la voix de 35 ms centré sur chaque coupe (`"fonduCoupe": 0.035`, sans changer la
+    durée) ; chaque coupe tombe soit sur une transition, soit sur un **changement de cadrage instantané** pile sur
+    l'image de la coupe (`raccords` dans les props ; aucun autre changement de plan à moins de 1,2 s) ;
   - **transitions** aux raccords de coupe (sinon aux débuts de phrase), toutes les 7 à 11 s, en rotation pour ne
     jamais répéter deux fois la même : flou rapide, bascule 3D, coup de zoom, image dans l'image à cadre blanc
     incliné (`src/dynamique/Transitions.tsx`) ; jamais à moins de 0,4 s d'un autre événement ;
   - **autocollants dessinés** (interrogation, flamme, éclair, ampoule, billets, billets barrés, coche, croix) à côté
-    de la tête, 1,6 s, rebond + balancement (`src/dynamique/Autocollants.tsx`), ancrés sur un mot (`a`) ;
+    de la tête (280 px), 1,6 s, rebond + balancement (`src/dynamique/Autocollants.tsx`), ancrés sur un mot (`a`) ;
+    le point d'interrogation = trois « ? » épais noirs à contour blanc, de tailles et d'inclinaisons différentes ;
   - **cartons noirs** d'annonce de partie (1,5 s, texte blanc mot par mot dans un cadre à crochets, la voix
     continue dessous) ;
-  - **mots et chiffres dorés** lumineux en grand au-dessus de la tête (`\n` pour couper) ; jamais un chiffre
-    non vérifié ; marques en texte seulement, sans logo ;
+  - **mots et chiffres dorés** lumineux en grand sur le buste, juste au-dessus des sous-titres (bas à 1 300 px,
+    120 px max ; `\n` pour couper) ; jamais un chiffre non vérifié ; marques en texte seulement, sans logo ;
+    un doré ou un autocollant qui tomberait sous un carton noir apparaît 2 images après sa fin, et un doré
+    s'arrête 2 images avant le suivant (jamais deux à la fois) ;
   - **numéro de téléphone** en bleu à contour blanc, chiffre par chiffre, en haut de la zone sûre ;
   - insertions d'images/vidéos de Joseph en plein écran avec léger zoom, et couverture de livre en 3D : à prévoir
     quand il en fournit (pas encore construit) ;
