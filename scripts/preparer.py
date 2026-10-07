@@ -444,6 +444,8 @@ TYPES_TRANSITION = ["flou", "bascule", "zoom", "image"]
 
 
 DUREE_DORE_MAX = 1.5  # s
+DUREE_SCENE_MAX = 6.0  # s : aucune scène illustrée plus longue
+ENTREE_SCENE = 8  # images : descente du panneau (PARTAGE.entree dans src/dynamique/Illustrations.tsx)
 
 
 def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb_images, insertion=None):
@@ -483,8 +485,13 @@ def preparer_dynamique(conf, mots, mots_sortie, temps, gardes, scenes_sortie, nb
             if c["debut"] - 6 <= debut < c["fin"] + 2:
                 debut = c["fin"] + 2
         etapes = [max(debut + 6, image_de(x, i)[0]) for x in e.get("etapes", [])]
-        illustrations.append({"type": e["type"], "debut": debut, "fin": debut + round(e.get("duree", 4.0) * FPS),
+        illustrations.append({"type": e["type"], "debut": debut, "fin": debut + round(min(e.get("duree", 4.0), DUREE_SCENE_MAX) * FPS),
                               "etapes": etapes, "fond": e.get("fond"), "sons": e.get("sons", [])})
+    # Deux scènes presque collées (moins de 0,8 s d'écart) s'enchaînent : la première reste jusqu'à ce que la
+    # seconde l'ait recouverte (le visage ne remonte pas entre les deux), sans rester seule plus de 6 s.
+    for a, b in zip(illustrations, illustrations[1:]):
+        if 0 <= b["debut"] - a["fin"] <= 24 and b["debut"] - a["debut"] <= DUREE_SCENE_MAX * FPS:
+            a["fin"] = b["debut"] + ENTREE_SCENE
     pendant = lambda x: any(x["debut"] < s["fin"] + 3 and x["fin"] > s["debut"] - 3 for s in illustrations)
     dores = [d for d in dores if not pendant(d)]
     autocollants = [a for a in autocollants if not pendant(a)]

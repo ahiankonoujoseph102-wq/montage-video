@@ -71,3 +71,60 @@ export const Personne: React.FC<{couleur: string; echelle?: number; peau?: strin
     <path d="M -26 -96 C -24 -122 24 -122 26 -96 C 18 -108 -18 -108 -26 -96 Z" fill="#1E1410" />
   </g>
 );
+
+// Gros texte lisible sur un téléphone : Montserrat 900, contour épais (blanc par défaut) derrière le remplissage.
+export const Gros: React.FC<{x: number; y: number; taille: number; couleur?: string; contour?: string;
+  ancre?: 'start' | 'middle' | 'end'; opacite?: number; children: React.ReactNode}> = (
+  {x, y, taille, couleur = '#fff', contour = '#14141F', ancre = 'middle', opacite = 1, children}) => (
+  <text x={x} y={y} textAnchor={ancre} fontFamily={POLICE_SVG} fontWeight={900} fontSize={taille} fill={couleur}
+    stroke={contour} strokeWidth={taille * 0.16} strokeLinejoin="round" style={{paintOrder: 'stroke'}}
+    opacity={opacite}>{children}</text>
+);
+
+// Téléphone (coque, écran, encoche) ; le contenu est dessiné dans le repère de l'écran (0, 0 = coin haut gauche).
+export const Telephone: React.FC<React.PropsWithChildren<{x: number; y: number; l: number; h: number;
+  ecran?: string}>> = ({x, y, l, h, ecran = '#F6F6FB', children}) => {
+  const b = 18;
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <rect width={l} height={h} rx={58} fill="#14141F" />
+      <rect x={4} y={4} width={l - 8} height={h - 8} rx={54} fill="#2A2A3C" />
+      <rect x={b} y={b} width={l - 2 * b} height={h - 2 * b} rx={40} fill={ecran} />
+      <svg x={b} y={b} width={l - 2 * b} height={h - 2 * b} overflow="hidden">{children}</svg>
+      <rect x={l / 2 - 50} y={b + 8} width={100} height={18} rx={9} fill="#14141F" />
+      <rect x={l - 4} y={150} width={6} height={70} rx={3} fill="#14141F" />
+    </g>
+  );
+};
+
+// Confettis qui éclatent depuis (x, y) à partir de l'image a.
+export const Confettis: React.FC<{t: number; a: number; x: number; y: number; n?: number; graine?: string}> = (
+  {t, a, x, y, n = 40, graine = 'c'}) => {
+  if (t < a) return null;
+  const u = t - a;
+  const couleurs = ['#FFD400', '#FF4D6D', '#22C55E', '#38C6FF', '#fff', '#F0560F', '#B57BFF'];
+  return (
+    <g>
+      {Array.from({length: n}).map((_, i) => {
+        const ang = (i / n) * Math.PI * 2 + Math.sin(i * 7.3) * 0.4;
+        const v = 14 + ((i * 37) % 13);
+        const px = x + Math.cos(ang) * v * u * 0.9;
+        const py = y + Math.sin(ang) * v * u * 0.9 + 0.55 * u * u;
+        const o = Math.max(0, 1 - u / 40);
+        return <rect key={`${graine}${i}`} x={px - 15} y={py - 8} width={30} height={16} rx={4}
+          fill={couleurs[i % couleurs.length]} opacity={o} transform={`rotate(${u * (8 + (i % 5) * 4)} ${px} ${py})`} />;
+      })}
+    </g>
+  );
+};
+
+// Pastille d'icône (carré arrondi coloré + dessin blanc).
+export const Pastille: React.FC<React.PropsWithChildren<{x: number; y: number; c: string; k?: number; taille?: number}>> = (
+  {x, y, c, k = 1, taille = 110, children}) => (
+  <g transform={`translate(${x} ${y}) scale(${k * taille / 110})`} opacity={k > 0 ? 1 : 0}>
+    <rect x={-55} y={-55} width={110} height={110} rx={28} fill="#fff" />
+    <rect x={-49} y={-49} width={98} height={98} rx={24} fill={c} />
+    <rect x={-49} y={-49} width={98} height={48} rx={24} fill="#fff" opacity={0.18} />
+    {children}
+  </g>
+);

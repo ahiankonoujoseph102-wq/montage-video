@@ -3,10 +3,12 @@ import {AbsoluteFill, Easing, interpolate, random, useCurrentFrame} from 'remoti
 import type {Dynamique, Illustration} from '../types';
 import {SCENES_ILLUSTREES} from './scenes';
 
-// Écran partagé : l'illustration animée occupe la moitié haute (sur un dégradé coloré), le visage est recadré
-// dans la moitié basse, les sous-titres sont posés sur la limite. Entrée et sortie : le panneau descend du haut
-// pendant que l'image du visage glisse vers le bas (ENTREE images).
-export const PARTAGE = {hauteur: 960, decalage: 540, entree: 8};
+// Écran partagé : l'illustration animée occupe le haut (900 px, sur un dégradé coloré), puis un bandeau sombre
+// semi-transparent (135 px) porte les sous-titres, et le visage est recadré dessous : l'image glisse de 560 px vers
+// le bas (haut des cheveux vers 1 063 px avec le zoom de 11 %, jamais sous le bandeau). Entrée et sortie : le
+// panneau descend du haut pendant que l'image du visage glisse vers le bas (ENTREE images).
+export const PARTAGE = {hauteur: 900, bandeau: 135, decalage: 560, entree: 8};
+const HAUT_PANNEAU = PARTAGE.hauteur + PARTAGE.bandeau;
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 export const FONDS_ILLUSTRATION: Record<string, [string, string, string]> = {
@@ -18,16 +20,23 @@ export const FONDS_ILLUSTRATION: Record<string, [string, string, string]> = {
   rose: ['#4A0636', '#E0337E', '#FFB36B'],
 };
 
+// Progression (0 → 1 → 0) d'une scène. Deux scènes enchaînées (la seconde commence pendant la sortie de la
+// première, voir scripts/preparer.py) : la première ne remonte pas, la seconde descend par-dessus, et le visage
+// reste en bas entre les deux.
+const progresScene = (s: Illustration, toutes: Illustration[], f: number, pourVisage: boolean) => {
+  if (f < s.debut || f >= s.fin) return 0;
+  const suiviePar = toutes.some((o) => o !== s && o.debut >= s.fin - PARTAGE.entree - 1 && o.debut < s.fin);
+  const suitUne = toutes.some((o) => o !== s && o.fin > s.debut && o.fin <= s.debut + PARTAGE.entree + 1);
+  const entree = pourVisage && suitUne ? 1
+    : interpolate(f, [s.debut, s.debut + PARTAGE.entree], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const sortie = suiviePar ? 1
+    : interpolate(f, [s.fin - PARTAGE.entree, s.fin], [1, 0], {...clamp, easing: Easing.in(Easing.cubic)});
+  return Math.min(entree, sortie);
+};
+
 export const progresPartage = (dyn: Dynamique | null | undefined, f: number) => {
-  let p = 0;
-  for (const s of dyn?.illustrations ?? []) {
-    if (f < s.debut || f >= s.fin) continue;
-    p = Math.max(p, Math.min(
-      interpolate(f, [s.debut, s.debut + PARTAGE.entree], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)}),
-      interpolate(f, [s.fin - PARTAGE.entree, s.fin], [1, 0], {...clamp, easing: Easing.in(Easing.cubic)}),
-    ));
-  }
-  return p;
+  const toutes = dyn?.illustrations ?? [];
+  return Math.max(0, ...toutes.map((s) => progresScene(s, toutes, f, true)));
 };
 
 // Fond en dégradé qui bouge lentement, avec des taches de lumière et des particules qui montent.
@@ -59,22 +68,29 @@ const Fond: React.FC<{couleurs: [string, string, string]; t: number; graine: num
   );
 };
 
-const PanneauIllustration: React.FC<{s: Illustration}> = ({s}) => {
+const PanneauIllustration: React.FC<{s: Illustration; toutes: Illustration[]}> = ({s, toutes}) => {
   const f = useCurrentFrame();
   const t = f - s.debut;
-  const p = progresPartage({illustrations: [s]} as Dynamique, f);
+  const p = progresScene(s, toutes, f, false);
   const Scene = SCENES_ILLUSTREES[s.type];
   const couleurs = FONDS_ILLUSTRATION[s.fond ?? 'bleu'] ?? FONDS_ILLUSTRATION.bleu;
   return (
-    <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: PARTAGE.hauteur, overflow: 'hidden',
-      transform: `translateY(${-PARTAGE.hauteur * (1 - p)}px)`,
-      boxShadow: '0 10px 40px rgba(0,0,0,0.55)'}}>
-      <Fond couleurs={couleurs} t={t} graine={s.debut} />
-      {Scene ? <Scene t={t} etapes={s.etapes.map((e) => e - s.debut)} duree={s.fin - s.debut} /> : null}
-      {/* Liseré lumineux sur la limite avec le visage. */}
-      <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 8,
+    <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT_PANNEAU,
+      transform: `translateY(${-HAUT_PANNEAU * (1 - p)}px)`}}>
+      <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: PARTAGE.hauteur, overflow: 'hidden',
+        boxShadow: '0 10px 40px rgba(0,0,0,0.55)'}}>
+        <Fond couleurs={couleurs} t={t} graine={s.debut} />
+        {Scene ? <Scene t={t} etapes={s.etapes.map((e) => e - s.debut)} duree={s.fin - s.debut} /> : null}
+      </div>
+      {/* Bandeau sombre des sous-titres, entre l'illustration et le visage. */}
+      <div style={{position: 'absolute', left: 0, right: 0, top: PARTAGE.hauteur, height: PARTAGE.bandeau,
+        background: 'linear-gradient(180deg, rgba(6,8,22,0.82), rgba(6,8,22,0.66))'}} />
+      {/* Liserés lumineux : limite avec l'illustration, et fin trait sous le bandeau. */}
+      <div style={{position: 'absolute', left: 0, right: 0, top: PARTAGE.hauteur - 4, height: 8,
         background: 'linear-gradient(90deg, rgba(255,255,255,0.2), #fff, rgba(255,255,255,0.2))',
         boxShadow: '0 0 24px rgba(255,255,255,0.8)'}} />
+      <div style={{position: 'absolute', left: 0, right: 0, top: HAUT_PANNEAU - 3, height: 3,
+        background: 'linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.6), rgba(255,255,255,0))'}} />
     </div>
   );
 };
@@ -84,7 +100,7 @@ export const Illustrations: React.FC<{dyn: Dynamique}> = ({dyn}) => {
   return (
     <>
       {(dyn.illustrations ?? []).filter((s) => f >= s.debut && f < s.fin).map((s) => (
-        <PanneauIllustration key={s.debut} s={s} />
+        <PanneauIllustration key={s.debut} s={s} toutes={dyn.illustrations ?? []} />
       ))}
     </>
   );

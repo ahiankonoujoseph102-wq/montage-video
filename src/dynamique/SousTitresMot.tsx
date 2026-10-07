@@ -8,11 +8,13 @@ import type {Mot} from '../types';
 // « DE FAÇON », « ET C'EST »), en gros, bleu vif à contour blanc épais, sur le bas du buste.
 // Taille unique ; réduite seulement pour un mot de plus de 12 lettres, jamais sous 75 % ; jamais resserré en largeur :
 // deux mots trop larges passent sur deux lignes. Rebond : le mot arrive à 110 % et se pose en 3 images.
-// Pendant une scène illustrée (écran partagé), les sous-titres sont posés entre les deux moitiés.
+// Pendant une scène illustrée (écran partagé), les sous-titres sont dans le bandeau sombre sous l'illustration :
+// une seule ligne, 100 px, réduite si besoin (jamais sous 75 px ; deux lignes de 62 px en dernier recours).
 const BLEU = '#1E5BFF';
 const HAUT = 1330;
 const BAS_MAX = ZONE_SURE.bas; // rien sous la zone sûre
-export const MILIEU_PARTAGE = 960; // limite entre l'illustration et le visage
+export const MILIEU_PARTAGE = 900 + 135 / 2; // milieu du bandeau des sous-titres (PARTAGE dans Illustrations.tsx)
+const TAILLE_BANDEAU = 100;
 const LARGEUR = ZONE_SURE.droite - ZONE_SURE.gauche - 20;
 const TAILLE = 120;
 const TAILLE_MIN = TAILLE * 0.75;
@@ -78,6 +80,16 @@ export const miseEnPage = (mots: string[]) => {
   return {lignes, taille: reduite};
 };
 
+// Dans le bandeau : une ligne, 100 px, réduite jusqu'à 75 px ; au-delà, deux lignes de 62 px.
+export const miseEnPageBandeau = (mots: string[]) => {
+  const texte = mots.join(' ').toUpperCase();
+  const l = largeur(texte, TAILLE_BANDEAU);
+  if (l <= LARGEUR) return {lignes: [texte], taille: TAILLE_BANDEAU};
+  const t = (TAILLE_BANDEAU * LARGEUR) / l;
+  if (t >= TAILLE_BANDEAU * 0.75 || mots.length < 2) return {lignes: [texte], taille: Math.max(t, TAILLE_BANDEAU * 0.75)};
+  return {lignes: mots.map((m) => m.toUpperCase().replace(' ', '\u00a0')), taille: 62};
+};
+
 export const SousTitresMot: React.FC<{mots: Mot[]; masques: [number, number][]; partages?: [number, number][]}> = (
   {mots, masques, partages = []}) => {
   const f = useCurrentFrame();
@@ -92,9 +104,9 @@ export const SousTitresMot: React.FC<{mots: Mot[]; masques: [number, number][]; 
   const u = liste[i];
   const suivant = liste[i + 1];
   if (f > u.fin + MAINTIEN && (!suivant || suivant.debut > f)) return null;
-  const {lignes, taille} = miseEnPage(u.mots);
-  const hauteur = lignes.length * taille * INTERLIGNE;
   const partage = partages.some(([a, b]) => f >= a && f < b);
+  const {lignes, taille} = partage ? miseEnPageBandeau(u.mots) : miseEnPage(u.mots);
+  const hauteur = lignes.length * taille * INTERLIGNE;
   const haut = partage ? MILIEU_PARTAGE - hauteur / 2 : Math.min(HAUT, BAS_MAX - hauteur);
   // Le mot arrive à 110 % et se pose à sa taille en 3 images ; jamais plus petit que sa taille normale.
   const echelle = interpolate(f - u.debut, [0, REBOND.images], [REBOND.depart, 1],

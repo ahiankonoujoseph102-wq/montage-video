@@ -5,54 +5,39 @@
 ## État exact
 
 - **Vidéo en cours : `ia-competence`** (style dynamique), 3 min 44 s une fois montée (220,8 s + carton de fin 3 s).
-- Dernière vidéo complète livrée à Joseph : la version d'avant les scènes illustrées (cadrage serré 35 %,
-  coupes avec fondus, 720 × 1280, 27,8 Mo). Elle n'est pas dans le dépôt (`out/` n'est pas versionné).
-- Depuis : **partie 1 (lisibilité) faite** et **4 scènes illustrées sur 12 dessinées** (a, d, e, f), montrées dans
-  un aperçu de 30 s (`out/apercu-scenes.mp4`, non versionné). **Joseph n'a pas encore donné son avis sur
-  l'aperçu.** Aucun rendu complet avec les scènes n'a été fait.
+- **Dernier rendu complet livré à Joseph** (7 octobre) : version avec les **12 scènes illustrées** et le bandeau des
+  sous-titres, 720 × 1280, 27,8 Mo, −14,2 LUFS, crête vraie −2,2 dBTP. Pas dans le dépôt (`out/` non versionné).
+- **Joseph n'a pas encore donné son avis sur ce rendu.**
 
 ## Fait
 
 - Modèle classique (projet `formation-ia`), son (musique + effets accordés), ouverture percutante,
   version longue avec carton de transition (projet `ia-montage`).
 - Style dynamique validé : sous-titres bleus mot à mot, transitions, autocollants, cartons noirs, mots dorés,
-  cadrage serré 35 %, coupes avec fondu de 35 ms + changement de plan sur la coupe.
-- Partie 1 (lisibilité), dernière demande :
-  - mot doré : 1,5 s au plus, en grand, à la hauteur du sous-titre, sous-titre masqué pendant ce temps ;
-  - sous-titres : deux mots au plus, jamais resserrés (deux lignes si besoin), nombres réunis (« 15 000 ») ;
-  - rebond : 110 % → 100 % en 3 images, jamais plus petit ;
-  - numéro de téléphone seul, sans « AU », en grand, à la hauteur du sous-titre (pas encore vu dans un rendu).
-- Scènes illustrées en écran partagé : le cadre (`src/dynamique/Illustrations.tsx`), le placement dans
-  `scripts/preparer.py`, les sons dans `scripts/mixer.py`, et 4 dessins dans `src/dynamique/scenes/` :
-  `etudes` (a), `reponses` (d), `creations` (e), `licenciements` (f). Configurées dans
-  `projets/ia-competence/montage.json` → `dynamique.illustrations`.
+  cadrage serré 35 %, coupes avec fondu de 35 ms + changement de plan sur la coupe ; lisibilité (dorés 1,5 s,
+  deux mots au plus, rebond 110 % → 100 %, numéro seul).
+- Aperçu des scènes a, d, e, f validé par Joseph (« c'est le niveau que je veux »), puis ses ajustements :
+  - scène d : grand téléphone, bulles à très peu de mots (« Aide-moi » / « Écris 3 idées de posts pour ma
+    boutique »), réponse nette en 3 lignes, étiquettes à 76 px, 6 s ;
+  - scène a : livres et calendrier agrandis, pages qui s'envolent plus lentement (une toutes les 5 images, vol
+    de 20 images en arc) ;
+  - **bandeau des sous-titres** pendant les scènes (illustration 900 px, bandeau sombre 900–1 035 px, visage
+    descendu de 560 px : front jamais coupé) ;
+  - **8 autres scènes dessinées** (b, c, g, h, i, j, k, l), toutes ≤ 6 s, sans logo ; même son d'entrée pour toutes
+    (`plein_ecran`) + sons d'étape ;
+  - rythme vérifié : plus grand écart sans événement visuel = 9,7 s (règle : 12 s au plus).
+- Contrôle rapide des scènes : `scripts/images.mjs` (voir CLAUDE.md).
 
-## Reste à faire (dans l'ordre)
+## Reste à faire
 
-1. **Attendre l'avis de Joseph sur l'aperçu** (scènes a, d, e, f), puis faire les ajustements :
-   - **scène a** (`etudes`) : livres et calendrier plus grands ; envol des pages du calendrier moins brouillon ;
-   - **scène d** (`reponses`) : textes du téléphone trop petits (les grossir, agrandir le téléphone) ; la scène
-     dure 9,4 s, à raccourcir vers 5 s (commencer plus tard ou finir avant « instructions »).
-2. **Dessiner les 8 autres scènes** (types déjà déclarés dans `src/types.ts`, idées et ancrages ci-dessous ;
-   ajouter chaque dessin dans `src/dynamique/scenes/` et dans le registre `index.ts`, puis l'entrée dans
-   `montage.json`). Instants en secondes dans la vidéo montée :
-   - b `equipe` : « toute une équipe… une seule personne » (~20,3–25,5 s) ; remplace le doré « TOUTE UNE ÉQUIPE » ;
-   - c `telephone` : « Est-ce que tu sais l'utiliser ? … dans ton téléphone » (~32–37 s) ; remplace l'autocollant « ? » ;
-   - g `remplace` : « vous serez remplacé par des petits qui savent utiliser l'IA » (~96–100 s) ;
-   - h `gratuit` : après le carton « LA SOLUTION » (~133,8–137,8 s) ; remplace le doré « GRATUIT » ;
-   - i `rendezvous` : « La soirée, c'est de 18h à 20h. Et la journée, c'est de 9h à 17h » (~156,8–162,3 s),
-     cartes calées sur « 18h » et « 9h » ; remplace les dorés des horaires ;
-   - j `enligne` : « nous suivre en direct sur Google Meet… peu importe votre pays » (~167,5–172 s), sans logo ;
-   - k `inscription` : après le carton « COMMENT S'INSCRIRE » (~181,6–186,5 s), étapes « créer », « confirmez »,
-     « rejoignez » ;
-   - l `unTelephone` : « Juste un seul téléphone suffit… créer n'importe quoi » (~203,5–207,5 s).
-3. **Bandeau des sous-titres** : demandé par Joseph, détail à préciser avec lui au début de la session.
-4. **Rendu complet d'`ia-competence`** puis vérifications (CLAUDE.md, étape 5) : une image toutes les 2 s, chaque
-   transition et chaque scène image par image, niveaux (−14 LUFS, crête vraie < −1 dBTP sur le fichier envoyé),
-   retranscription autour des coupes ; envoi en 720 × 1280, moins de 30 Mo, avec la liste de ce qui reste imparfait.
-5. Points connus à surveiller : entre 5 s et 28 s il n'y a plus de transition (les scènes occupent cette zone) ;
-   un sous-titre sur deux lignes empiète un peu sur le bas d'une illustration ; tous les effets d'entrée de
-   scène utilisent le même son (`plein_ecran`), à confirmer avec Joseph.
+1. **Avis de Joseph sur le rendu complet**, puis ajustements.
+2. Points faibles connus (soumis à Joseph) :
+   - scène d : la version précise n'a que ~2 s avant la fin des 6 s (question, réponse et coche s'enchaînent vite) ;
+   - scène g (`remplace`) : dessin un peu petit et sage par rapport aux autres ;
+   - scène l : « N'IMPORTE QUOI ! » se pose par-dessus les cartes ;
+   - scènes a → b enchaînées (b descend par-dessus a) ;
+   - la scène h montre « 100 % GRATUIT », qui revient en plein écran à 2:55.
+3. Insertions d'images/vidéos de Joseph et couverture de livre en 3D : quand il les fournit.
 
 ## Fichiers absents du dépôt (à retélécharger)
 

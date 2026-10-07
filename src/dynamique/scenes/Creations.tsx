@@ -5,9 +5,9 @@ import {Defs, lin, POLICE_SVG, pop, type PropsScene} from './outils';
 // l'autre, chacun sur son mot (étapes 0 à 3) : une page web qui s'assemble, une application, un robot, des
 // engrenages reliés.
 const ID = 'cre';
-const L = 420;
-const HC = 300;
-const BANDE = 54;
+export const L = 420;
+export const HC = 300;
+export const BANDE = 54;
 const CARTES = [
   {x: 60, y: 212, titre: 'SITE WEB', c: '#1D7CF2'},
   {x: 520, y: 212, titre: 'APPLICATION', c: '#F0560F'},
@@ -25,7 +25,7 @@ const engrenage = (r: number, dents: number) => {
   return `M ${pts.join(' L ')} Z`;
 };
 
-const PageWeb: React.FC<{u: number}> = ({u}) => {
+export const PageWeb: React.FC<{u: number}> = ({u}) => {
   const k = (a: number) => pop(u, a, 260);
   const cx = lin(u, 26, 40, 330, 250);
   const cy = lin(u, 26, 40, 220, 150);
@@ -62,7 +62,7 @@ const PageWeb: React.FC<{u: number}> = ({u}) => {
   );
 };
 
-const Application: React.FC<{u: number}> = ({u}) => {
+export const Application: React.FC<{u: number}> = ({u}) => {
   const couleurs = ['#F0560F', '#1D7CF2', '#22C55E', '#FFC23D', '#E0337E', '#7B2FF7', '#13B5C9', '#FF5A5A', '#2E2E44'];
   return (
     <g>
@@ -97,7 +97,7 @@ const Application: React.FC<{u: number}> = ({u}) => {
   );
 };
 
-const Robot: React.FC<{u: number}> = ({u}) => {
+export const Robot: React.FC<{u: number}> = ({u}) => {
   const cligne = (u % 46) > 42 ? 0.15 : 1;
   const salut = Math.sin(u / 3.5) * 22;
   const k = pop(u, 0, 200);
@@ -138,7 +138,7 @@ const Robot: React.FC<{u: number}> = ({u}) => {
   );
 };
 
-const Engrenages: React.FC<{u: number}> = ({u}) => {
+export const Engrenages: React.FC<{u: number}> = ({u}) => {
   const a = u * 4;
   const progres = ((u * 2.2) % 100) / 100;
   return (

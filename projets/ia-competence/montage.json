@@ -247,8 +247,8 @@
       {
         "type": "etudes",
         "a": "des années d'études",
-        "decalage": -0.15,
-        "duree": 6.0,
+        "decalage": 0.0,
+        "duree": 5.5,
         "fond": "bleu",
         "etapes": [
           "d'apprentissage",
@@ -260,20 +260,46 @@
         ]
       },
       {
-        "type": "reponses",
-        "a": "Ils posent des questions vagues",
+        "type": "equipe",
+        "a": "Ce qui demandait autrefois toute",
+        "decalage": -0.45,
+        "duree": 6.0,
+        "fond": "vert",
+        "etapes": [
+          "plusieurs spécialistes",
+          "une seule personne"
+        ],
+        "sons": [
+          "autocollant",
+          "coche"
+        ]
+      },
+      {
+        "type": "telephone",
+        "a": "Est-ce que tu sais",
         "decalage": -0.1,
-        "duree": 9.4,
+        "duree": 5.8,
         "fond": "violet",
         "etapes": [
-          "réponses vagues",
-          "décevants",
-          "savoir que",
-          "instructions"
+          "téléphone"
+        ],
+        "sons": [
+          "autocollant"
+        ]
+      },
+      {
+        "type": "reponses",
+        "a": "Ils posent des questions médiocres",
+        "decalage": -0.2,
+        "duree": 6.0,
+        "fond": "violet",
+        "etapes": [
+          "résultats décevants",
+          "vous devez savoir",
+          "fonctionne sur"
         ],
         "sons": [
           "croix",
-          null,
           "panneau",
           "coche"
         ]
@@ -306,6 +332,96 @@
         ],
         "sons": [
           "info"
+        ]
+      },
+      {
+        "type": "remplace",
+        "a": "demain, vous serez",
+        "decalage": -0.1,
+        "duree": 4.0,
+        "fond": "nuit",
+        "etapes": [
+          "remplacé",
+          "petits qui savent"
+        ],
+        "sons": [
+          "croix",
+          "autocollant"
+        ]
+      },
+      {
+        "type": "gratuit",
+        "a": "J'organise",
+        "duree": 4.0,
+        "fond": "violet",
+        "etapes": [
+          "pour exécuter"
+        ],
+        "sons": [
+          "coche"
+        ]
+      },
+      {
+        "type": "rendezvous",
+        "a": "La soirée, c'est de 18h",
+        "decalage": -0.2,
+        "duree": 5.5,
+        "fond": "bleu",
+        "etapes": [
+          "18h",
+          "9h"
+        ],
+        "sons": [
+          "autocollant",
+          "autocollant"
+        ]
+      },
+      {
+        "type": "enligne",
+        "a": "nous suivre en direct",
+        "decalage": -0.1,
+        "duree": 5.0,
+        "fond": "nuit",
+        "etapes": [
+          "Google Meet",
+          "votre pays"
+        ],
+        "sons": [
+          "autocollant",
+          "coche"
+        ]
+      },
+      {
+        "type": "inscription",
+        "a": "Vous allez vous inscrire, vous allez créer",
+        "duree": 5.0,
+        "fond": "vert",
+        "etapes": [
+          "créer",
+          "confirmez",
+          "rejoignez"
+        ],
+        "sons": [
+          "coche",
+          "coche",
+          "coche"
+        ]
+      },
+      {
+        "type": "unTelephone",
+        "a": "Juste un seul téléphone",
+        "decalage": -0.1,
+        "duree": 4.2,
+        "fond": "orange",
+        "etapes": [
+          "suffit",
+          "pour que tu puisses",
+          "créer"
+        ],
+        "sons": [
+          "autocollant",
+          "autocollant",
+          "autocollant"
         ]
       }
     ]
