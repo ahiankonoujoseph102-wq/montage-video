@@ -52,52 +52,149 @@ def detecter_silences(source):
     return list(zip(debuts, fins))
 
 
-def segments_gardes(silences, total):
-    """Intervalles de la vidéo source conservés après la coupe des silences."""
-    gardes, t = [], 0.0
+def segments_gardes(silences, total, coupes=()):
+    """Intervalles de la vidéo source conservés après la coupe des silences (avec marges) et des
+    coupes exactes (`coupes` : mots retirés, passages coupés à la main)."""
+    retraits = []
     for debut, fin in silences:
         coupe_debut = debut + MARGE if debut > 0 else 0.0
         coupe_fin = fin - (MARGE_DEBUT if debut == 0 else MARGE) if fin < total else total
-        if coupe_fin - coupe_debut <= 0:
-            continue
-        if coupe_debut > t:
-            gardes.append((t, coupe_debut))
-        t = coupe_fin
+        if coupe_fin > coupe_debut:
+            retraits.append((coupe_debut, coupe_fin))
+    retraits = sorted(retraits + [tuple(c) for c in coupes])
+    gardes, t = [], 0.0
+    for debut, fin in retraits:
+        if debut > t + 0.02:
+            gardes.append((t, debut))
+        t = max(t, fin)
     if t < total:
         gardes.append((t, total))
     return gardes
 
 
-def remapper(gardes):
-    """Renvoie une fonction : temps source → temps dans la vidéo coupée."""
+def enveloppe_db(source):
+    """Niveau sonore de la source par tranches de 10 ms (dB)."""
+    brut = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(source), "-ac", "1", "-ar", "16000",
+                           "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(brut, np.float32)
+    pas = 160
+    n = len(x) // pas
+    return 20 * np.log10(np.sqrt((x[:n * pas].reshape(n, pas) ** 2).mean(axis=1)) + 1e-9)
+
+
+def point_calme(env, a, b):
+    """Instant le plus silencieux entre a et b (secondes) et son niveau."""
+    i, j = int(a * 100), max(int(a * 100) + 1, int(b * 100))
+    k = i + int(np.argmin(env[i:j]))
+    return k / 100, float(env[k])
+
+
+def couper_mots(mots, demandes, env):
+    """Retire des mots (« ok ? », « donc » répétés…) : coupe image et son au point le plus silencieux
+    autour de chaque mot, puis réajuste la ponctuation. Renvoie (mots restants, coupes, journal)."""
+    a_retirer, coupes, journal = set(), [], []
+    for d in demandes:
+        candidats = [i for i, m in enumerate(mots) if normaliser(m["mot"]).startswith(normaliser(d["mot"]))
+                     and abs(m["debut"] - d["vers"]) < 1.0]
+        if not candidats:
+            raise SystemExit(f"Mot à couper introuvable : {d}")
+        i = min(candidats, key=lambda i: abs(mots[i]["debut"] - d["vers"]))
+        j = i + d.get("nombre", 1) - 1
+        avant = mots[i - 1]["fin"] if i > 0 else 0.0
+        apres = mots[j + 1]["debut"] if j + 1 < len(mots) else mots[j]["fin"] + 0.3
+        # Point de coupe cherché entre la fin du mot gardé et le début du mot retiré (et inversement) :
+        # jamais dans un mot gardé.
+        t1, n1 = point_calme(env, avant, max(avant + 0.02, mots[i]["debut"] + 0.08))
+        t2, n2 = point_calme(env, min(mots[j]["fin"] - 0.08, apres - 0.02), apres)
+        if "coupe" in d:  # points de coupe vérifiés à la main (Whisper peut se tromper de 0,2 s)
+            (t1, t2) = d["coupe"]
+            n1, n2 = point_calme(env, t1, t1 + 0.01)[1], point_calme(env, t2, t2 + 0.01)[1]
+        coupes.append((t1, t2))
+        a_retirer.update(range(i, j + 1))
+        texte = " ".join(m["mot"] for m in mots[i:j + 1])
+        journal.append(f"{mots[i]['debut']:6.2f} s « {texte} » : coupe {t1:.2f}–{t2:.2f} s, "
+                       f"niveau aux points de coupe {n1:.0f} / {n2:.0f} dB")
+    restants = []
+    for i, m in enumerate(mots):
+        if i in a_retirer:
+            # Ponctuation : un mot retiré qui finissait la phrase la reporte sur le mot précédent.
+            if fin_phrase(m["mot"]) and restants and restants[-1]["mot"][-1] in ",;:":
+                restants[-1] = {**restants[-1], "mot": restants[-1]["mot"][:-1] + "."}
+            continue
+        # Après une coupe, un mot qui ouvre la phrase prend la majuscule.
+        if i - 1 in a_retirer and (not restants or fin_phrase(restants[-1]["mot"])):
+            m = {**m, "mot": m["mot"][:1].upper() + m["mot"][1:]}
+        restants.append(m)
+    return restants, coupes, journal
+
+
+def remapper(gardes, insertion=None):
+    """Renvoie une fonction : temps source → temps dans la vidéo coupée. `insertion` = (instant source,
+    durée) : un extrait d'une autre vidéo est inséré à cet instant (il doit tomber à la fin d'un segment gardé)."""
     def f(t):
         decale = 0.0
         for debut, fin in gardes:
+            if insertion and debut >= insertion[0] - 1e-6:
+                decale_ins = insertion[1]
+            else:
+                decale_ins = 0.0
             if t < debut:  # dans une coupe : on colle au début du segment suivant
-                return decale
+                return decale + decale_ins
             if t <= fin:
-                return decale + t - debut
+                return decale + decale_ins + t - debut
             decale += fin - debut
-        return decale
+        return decale + (insertion[1] if insertion else 0.0)
     return f
 
 
-def couper_video(source, gardes, sortie):
-    filtres, entrees = [], ""
-    for i, (d, f) in enumerate(gardes):
-        filtres.append(f"[0:v]trim={d}:{f},setpts=PTS-STARTPTS[v{i}]")
+def gain_segment(d, f, gains):
+    """Gain (dB) d'un segment : celui de la zone `gains` qui le contient, sinon 0."""
+    for a, b, g in gains:
+        if d >= a - 1e-6 and f <= b + 1e-6:
+            return g
+    return 0.0
+
+
+def couper_video(source, gardes, sortie, insertion=None, cadrage=None, gains=()):
+    """Assemble les segments gardés (et l'extrait inséré), au format 1080 × 1920.
+    `cadrage` : à partir de `apres` (s, source), cadre serré : agrandi de `echelle`, recadré à partir de `x`,
+    descendu de `decalage` px ; la bande libérée en haut est remplie par l'image floutée."""
+    filtres, entrees, n = [], "", 0
+    norme = (f"fps={FPS},scale={LARGEUR}:{HAUTEUR}:force_original_aspect_ratio=increase:flags=lanczos,"
+             f"crop={LARGEUR}:{HAUTEUR},setsar=1")
+
+    def ajouter(entree, d, f, gain_db, serre):
+        nonlocal entrees, n
+        v = f"[{entree}:v]trim={d}:{f},setpts=PTS-STARTPTS,{norme}"
+        if serre:
+            e, dy = cadrage["echelle"], cadrage["decalage"]
+            l, h = round(LARGEUR * e / 2) * 2, round(HAUTEUR * e / 2) * 2
+            filtres.append(f"{v},split[fond{n}][avant{n}]")
+            filtres.append(f"[fond{n}]boxblur=40:4,eq=brightness=-0.04[flou{n}]")
+            filtres.append(f"[avant{n}]scale={l}:{h}:flags=lanczos,crop={LARGEUR}:{HAUTEUR - dy}:{cadrage['x']}:0[net{n}]")
+            filtres.append(f"[flou{n}][net{n}]overlay=0:{dy}[v{n}]")
+        else:
+            filtres.append(f"{v}[v{n}]")
         fondu = min(0.02, (f - d) / 4)
-        filtres.append(f"[0:a]atrim={d}:{f},asetpts=PTS-STARTPTS,"
-                       f"afade=t=in:d={fondu},afade=t=out:st={f - d - fondu}:d={fondu}[a{i}]")
-        entrees += f"[v{i}][a{i}]"
-    filtres.append(f"{entrees}concat=n={len(gardes)}:v=1:a=1[v][a]")
-    # Agrandit et recadre au format vertical en remplissant tout l'écran.
-    filtres.append(f"[v]fps={FPS},scale={LARGEUR}:{HAUTEUR}:force_original_aspect_ratio=increase:flags=lanczos,"
-                   f"crop={LARGEUR}:{HAUTEUR},unsharp=5:5:0.6[vf]")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(source),
-                    "-filter_complex", ";".join(filtres), "-map", "[vf]", "-map", "[a]",
-                    "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
-                    "-c:a", "aac", "-b:a", "192k", str(sortie)], check=True)
+        filtres.append(f"[{entree}:a]atrim={d}:{f},asetpts=PTS-STARTPTS,aresample=48000,volume={gain_db}dB,"
+                       f"afade=t=in:d={fondu},afade=t=out:st={f - d - fondu}:d={fondu}[a{n}]")
+        entrees += f"[v{n}][a{n}]"
+        n += 1
+
+    for d, f in gardes:
+        if insertion and abs(d - insertion["apres"]) < 1e-6 and not insertion.get("_fait"):
+            ajouter(1, insertion["debut"], insertion["debut"] + insertion["duree"], insertion.get("gainDb", 0), False)
+            insertion["_fait"] = True
+        serre = bool(cadrage) and d >= cadrage["apres"] - 1e-6
+        ajouter(0, d, f, gain_segment(d, f, gains), serre)
+    filtres.append(f"{entrees}concat=n={n}:v=1:a=1[v][a]")
+    filtres.append("[v]unsharp=5:5:0.4[vf]")
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(source)]
+    if insertion:
+        cmd += ["-i", str(insertion["chemin"])]
+    subprocess.run(cmd + ["-filter_complex", ";".join(filtres), "-map", "[vf]", "-map", "[a]",
+                          "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
+                          "-c:a", "aac", "-b:a", "192k", str(sortie)], check=True)
 
 
 def calculer_onde(video, nb_images):
@@ -228,32 +325,39 @@ def grouper(mots, coupures):
     return groupes
 
 
-def plans_zoom(mots, images):
+def plans_zoom(mots, images, reprise=None):
     """Images où le cadrage alterne : débuts de phrase et mots après une virgule, en visant un
     changement toutes les 3 à 4 s, jamais plus de 5 s sans changement. Pendant l'ouverture (5 premières
-    secondes), un changement toutes les ~1,5 s."""
+    secondes), un changement toutes les ~1,5 s. `reprise` = (début, fin) d'un extrait inséré : le cadre
+    redevient normal pendant l'extrait et l'alternance reprend 3 à 5 s après son retour."""
     candidats = [images[i] for i in range(1, len(mots)) if mots[i - 1]["mot"][-1] in ".?!,;:"]
     tous = sorted(set(images))
-    plans = [0]
+    plans, dernier, ouverture = [0], 0, OUVERTURE
+    if reprise:
+        d, f = reprise
+        plans = [0, d, d + 1]  # 2 changements invisibles pendant l'extrait : retour en cadre normal
+        dernier, ouverture = f, 0
+        candidats = [c for c in candidats if c >= f]
+        tous = [t for t in tous if t >= f]
     while True:
-        dernier = plans[-1]
-        if dernier < OUVERTURE:
+        if dernier < ouverture:
             mini, cible, maxi = 1.2 * FPS, 1.5 * FPS, 1.8 * FPS
         else:
             mini, cible, maxi = 3 * FPS, 3.5 * FPS, 5 * FPS
         possibles = [c for c in candidats if dernier + mini <= c <= dernier + maxi]
         if possibles:
-            plans.append(min(possibles, key=lambda c: abs(c - dernier - cible)))
+            choix = min(possibles, key=lambda c: abs(c - dernier - cible))
         else:
             # Pas de ponctuation au bon moment : on change au début d'un mot, au plus près de la cible
             # (4 s en rythme normal).
-            vise = cible if dernier < OUVERTURE else 4 * FPS
+            vise = cible if dernier < ouverture else 4 * FPS
             mots_possibles = [t for t in tous if dernier + mini <= t <= dernier + maxi]
             suivants = [t for t in tous if t >= dernier + mini]
             if not suivants:
                 break
-            plans.append(min(mots_possibles, key=lambda t: abs(t - dernier - vise)) if mots_possibles
-                         else suivants[0])
+            choix = min(mots_possibles, key=lambda t: abs(t - dernier - vise)) if mots_possibles else suivants[0]
+        plans.append(choix)
+        dernier = choix
     return plans
 
 
@@ -299,21 +403,38 @@ def main():
 
     total = duree(source)
     silences = [s for s in detecter_silences(source)]
-    gardes = segments_gardes(silences, total)
-    temps = remapper(gardes)
+
+    # Mots retirés image et son (« ok ? », « donc » répétés), passages coupés à la main,
+    # et passages gardés à l'image mais sans sous-titres (ex. le son d'une tablette).
+    coupes = [tuple(c) for c in config.get("coupes", [])]
+    if config.get("couperMots"):
+        mots, coupes_mots, journal = couper_mots(mots, config["couperMots"], enveloppe_db(source))
+        coupes += coupes_mots
+        print("Mots coupés :\n  " + "\n  ".join(journal))
+    hors = [tuple(c) for c in config.get("sansSousTitres", []) + config.get("coupes", [])]
+    mots = [m for m in mots if not any(a <= m["debut"] < b for a, b in hors)]
+
+    gardes = segments_gardes(silences, total, coupes)
+    insertion = None
+    if config.get("preuve"):
+        insertion = {**config["preuve"], "chemin": projet / config["preuve"]["fichier"]}
+        if not any(abs(d - insertion["apres"]) < 1e-6 for d, _ in gardes):
+            raise SystemExit("La preuve doit être insérée au début d'un segment gardé (ajouter une coupe qui finit là)")
+    temps = remapper(gardes, (insertion["apres"], insertion["duree"]) if insertion else None)
     coupe = total - sum(f - d for d, f in gardes)
-    print(f"{len(silences)} silences coupés ({coupe:.1f} s retirées), {len(gardes)} segments gardés")
+    print(f"{len(silences)} silences et {len(coupes)} coupes ({coupe:.1f} s retirées), {len(gardes)} segments gardés")
 
     scenes = resoudre_scenes(mots, config)
 
     # La coupe prend quelques minutes : on la saute si la source et les coupes n'ont pas changé.
     video = sortie / "video.mp4"
-    empreinte = {"source": source.stat().st_mtime, "taille": source.stat().st_size, "gardes": gardes}
+    empreinte = {"source": source.stat().st_mtime, "taille": source.stat().st_size, "gardes": gardes,
+                 "preuve": config.get("preuve"), "cadrage": config.get("cadrage"), "gains": config.get("gains")}
     cache = sortie / "coupes.json"
     if video.exists() and cache.exists() and json.loads(cache.read_text()) == json.loads(json.dumps(empreinte)):
         print("Vidéo coupée déjà à jour, coupe sautée")
     else:
-        couper_video(source, gardes, video)
+        couper_video(source, gardes, video, insertion, config.get("cadrage"), config.get("gains", []))
         cache.write_text(json.dumps(empreinte))
     nb_images = int(duree(video) * FPS)
 
@@ -354,6 +475,15 @@ def main():
         carton = {"debut": debut, "fin": debut + round(c.get("duree", 3) * FPS), "fond": c.get("fond", "nuit"),
                   "titre": c["titre"], "lignes": c["lignes"]}
 
+    # Preuve (extrait inséré) et position du visage pour chaque cadrage (centre du zoom).
+    preuve = None
+    if insertion:
+        d = round((temps(insertion["apres"]) - insertion["duree"]) * FPS)  # l'extrait précède l'instant « apres »
+        preuve = {"debut": d, "fin": d + round(insertion["duree"] * FPS), "etiquette": insertion["etiquette"]}
+    cadres = [{"debut": 0, **config.get("visage", {"x": 540, "y": 760})}]
+    if config.get("cadrage"):
+        cadres.append({"debut": round(temps(config["cadrage"]["apres"]) * FPS), **config["cadrage"]["visage"]})
+
     props = {
         "video": f"{nom}/video.mp4",
         "dureeImages": carton["fin"] if carton else nb_images,
@@ -361,7 +491,9 @@ def main():
         "titre": {**config["titre"], "mots": mots_titre(config["titre"])} if config.get("titre") else None,
         "mots": mots_sortie,
         "groupes": groupes,
-        "plans": plans_zoom(mots, [m["debut"] for m in mots_sortie]),
+        "plans": plans_zoom(mots, [m["debut"] for m in mots_sortie], (preuve["debut"], preuve["fin"]) if preuve else None),
+        "preuve": preuve,
+        "cadres": cadres,
         "masques": groupes_masques(mots_sortie, groupes, scenes_sortie),
         "dureeVideo": nb_images,
         "scenes": scenes_sortie,

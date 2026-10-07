@@ -7,12 +7,12 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - `   6.8 s` __Bon,__ ⚠️__après__ __je__ __vais__ ⚠️__laisser__ __la__ __vidéo__ __complète,__ ⚠️__je__ __vais__ __suivre.__
 - `   9.4 s` Cher ami, aujourd'hui, nous sommes à **__l'ère__** de l'IA, avec l'IA vous pouvez absolument tout faire.
 - `  13.8 s` __ok ?__
-- `  14.4 s` __Et__ __bien__ __ça,__ voici une vidéo que __je__ __vais__ __réaliser__ avec l'IA.
+- `  14.4 s` __Et__ __bien__ __ça,__ voici une vidéo que **__j'ai__** **__réalisée__** avec l'IA.
 - `  17.4 s` __particulièrement,__ ⚠️__autre__ __chose.__
 - `  18.9 s` __C'est__ __pour__ __vous__ __dire__ __que__ l'IA est dans **n'importe** **quel** domaine, __et__ __donc,__ même __en__ __ce__ __qui__ __concerne__ le montage vidéo.
 - `  24.0 s` Vous pouvez réaliser n'importe quel type de montage vidéo avec **__l'intelligence__** **__artificielle,__** __ok ?__
 - `  28.3 s` ⚠️__Donc,__ pour ceux **__et__** celles qui souhaitent ⚠️__être__ __informés__ __sur__ __comment__ __faire__ __le__ __montage__ ⚠️__vidéo,__ __n'importe__ __quel__ __type__ __de__ __vidéo,__ __alors,__ ⚠️__vous__ ⚠️__pouvez__ ⚠️__participer__ gratuitement à ma **__formation__** __que__ __j'organise__ ce samedi 10 octobre **2026,** **en** présentiel, ⚠️à **__Lomé,__** __précisément__ __à__ **__Adidogomé,__** **Lycée** **Moderne** **2.**
-- `  44.3 s` __Donc,__ __c'est__ __une__ **__formation__** __gratuite,__ __donc,__ __c'est__ __une__ **__formation__** ⚠️__au__ __cours__ __de__ __laquelle__ je vais ⚠️__même__ vous initier à l'IA et vous apprendre __même__ le **vibe** **coding :** l'art ⚠️de __décrire__ à l'IA ce que vous voulez **qu'elle** fasse, __et__ __ensuite__ __pouvoir__ __être__ __en__ __mesure__ __de__ ⚠️__4__ __parts__ __de__ créer des sites web professionnels, des agents **IA,** des automatisations, et __pourquoi__ __pas__ __construire__ __un__ ⚠️__l'IA__ __qui__ __va__ __pouvoir__ __être__ __à__ __votre__ __service__ __et__ __vous__ __permettre__ __de__ gagner __beaucoup__ plus d'argent.
+- `  44.3 s` __Donc,__ __c'est__ __une__ **__formation__** __gratuite,__ __donc,__ __c'est__ __une__ **__formation__** ⚠️__au__ __cours__ __de__ __laquelle__ je vais ⚠️__même__ vous initier à l'IA et vous apprendre __même__ le **vibe** **coding :** l'art ⚠️de __décrire__ à l'IA ce que vous voulez **qu'elle** fasse, __et__ __ensuite__ __pouvoir__ __être__ __en__ __mesure__ **__capable__** __de__ créer des sites web professionnels, des agents **IA,** des automatisations, et __pourquoi__ __pas__ __construire__ **__une__** **__IA__** __qui__ __va__ __pouvoir__ __être__ __à__ __votre__ __service__ __et__ __vous__ __permettre__ __de__ gagner __beaucoup__ plus d'argent.
 - `  66.5 s` __ok ?__
 - `  66.8 s` __Donc,__ __si__ __vous__ __êtes__ __intéressé,__ __veuillez__ __cliquer__ sur le lien en __dessous__ __de__ __cette__ __vidéo__ pour vous inscrire.
 - `  72.0 s` C'est __une__ **__formation__** totalement ****gratuite,**** mais __c'est__ **__sur__** réservation : ⚠️__Si__ __vous__ __vous__ __inscrivez,__ __vous__ __rejoignez__ la plateforme, __où__ nous **__envoyons__** toutes les ⚠️informations.
@@ -38,6 +38,14 @@ Légende : **gras** = corrigé d'après le script ou le glossaire · __souligné
 - `  78.5 s` « environs » → « envoyons »
 - `  81.6 s` « promotion » → « formation »
 - `  90.2 s` « transmettre » → « transformez vos »
+- `  15.9 s` « je » → « j'ai »
+- `  15.9 s` « vais » → « (supprimé) »
+- `  16.0 s` « réaliser » → « réalisée »
+- `  55.0 s` « de » → « (supprimé) »
+- `  55.3 s` « 4 » → « capable »
+- `  55.5 s` « parts » → « (supprimé) »
+- `  61.8 s` « un » → « une »
+- `  62.1 s` « l'IA » → « IA »
 - `  91.6 s` « revenu. » → « revenus. »
 
 ## Glossaire appliqué

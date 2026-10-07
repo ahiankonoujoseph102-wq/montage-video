@@ -135,8 +135,13 @@ def evenements(props):
     carton = props.get("carton")
     if carton:
         ev.append((carton["debut"], "carton", "Carton de fin"))
+    preuve = props.get("preuve")
+    if preuve:  # extrait inséré : souffle + impact quand l'étiquette claque
+        ev.append((preuve["debut"], "plein_ecran", f"Preuve : {preuve['etiquette']}"))
     # Changements de cadrage, seulement quand le visage est à l'écran.
     caches = [(s["debut"], s["fin"]) for s in props["scenes"] if s["disposition"] != "panneau"]
+    if preuve:
+        caches.append((preuve["debut"], preuve["fin"]))
     if carton:
         caches.append((carton["debut"], carton["fin"]))
     for image in props.get("plans", [])[1:]:
@@ -199,6 +204,9 @@ def main():
             plein_ecran[int(s["debut"] / FPS * 100):int(s["fin"] / FPS * 100)] = True
     cible[actif] = MUSIQUE["parle"]
     cible[actif & plein_ecran] = MUSIQUE["parle_plein_ecran"]
+    if props.get("preuve"):  # l'extrait a déjà sa musique : la nôtre s'efface pendant qu'il passe
+        pr = props["preuve"]
+        cible[int(pr["debut"] / FPS * 100):int(pr["fin"] / FPS * 100)] = -45.0
     carton = props.get("carton")
     if carton:
         # La musique remonte dès que la voix s'éteint (15 images avant le carton).

@@ -14,6 +14,8 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
    - `python3 scripts/corriger.py <projet>` → `projets/<projet>/rapport_transcription.md`.
    - Règles : glossaire appliqué partout ; un mot douteux est corrigé d'après le script ;
      ce qui est dit à l'oral et absent du script est **gardé et signalé**.
+   - Si le script est un résumé (pas mot pour mot), seuls les passages courts (≤ 3 mots) sont corrigés
+     automatiquement ; le reste est gardé tel qu'il est dit et signalé.
    - Corrections à la main : `projets/<projet>/corrections.json`
      (`[{"vers": 90.0, "oral": "étudier", "affiche": "utiliser"}]`), puis relancer `corriger.py`.
      `"affiche": ""` supprime le mot ; plusieurs mots (`"de pouvoir"`) se partagent sa durée.
@@ -57,6 +59,22 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
     en largeur, la ligne remplit déjà la zone) et sonore ; à `geant` = 2,5 s il rétrécit et monte dans un bandeau
     en haut, où il reste jusqu'à `duree` = 5 s ; sous-titres masqués tant qu'il est géant ;
   - cadrage qui change toutes les ~1,5 s pendant les 5 premières secondes, puis rythme normal.
+- **Prise filmée de loin (visage haut dans l'image)** : mesurer le visage (détecteur OpenCV, `haarcascade_frontalface`)
+  sur toute la prise. Si le haut de la tête passe au-dessus de ~540 px, les panneaux le couvriraient : **recadrer**
+  avec `cadrage` dans `montage.json` (`echelle` 1,2–1,25, `decalage` vers le bas, `x` pour centrer le visage,
+  `visage` = nouveau centre du zoom) à partir d'un instant (`apres`). L'image ne peut pas descendre sans zoom plus
+  fort : la bande libérée en haut (≈ 230 px) est remplie par l'image floutée, presque entièrement sous les 10 %
+  du haut que TikTok recouvre. Vérifier ensuite sur le rendu : haut des cheveux sous le bas des panneaux (520 px,
+  zoom de panneau compris), menton au-dessus des sous-titres (1 296 px). Garder le cadre large tant qu'il faut voir
+  un objet montré (ex. une tablette) ; `visage` (racine) = centre du zoom en cadre large.
+- **Preuve / extrait inséré** (`preuve` dans `montage.json`) : extrait d'une autre vidéo en plein écran à la place
+  d'un passage coupé (`coupes`), étiquette jaune qui claque, souffle + impact à l'entrée, son de l'extrait baissé
+  (`gainDb`), notre musique coupée pendant l'extrait (il a déjà la sienne) ; pas de zoom ni de dégradé dessus.
+  Le titre d'accroche peut alors disparaître avant l'extrait (`banniere: false`, `geant` = `duree`).
+- **Coupes de mots** (`couperMots`) : « ok ? » en fin de phrase, « donc » répétés en début de phrase, seulement
+  quand la coupe est propre (vraie pause, ≤ −38 dB, des deux côtés). Les horodatages de Whisper sont souvent en
+  avance de 0,1–0,3 s : vérifier sur le niveau sonore et retranscrire la zone avec 8 s de contexte, puis donner les
+  points de coupe vérifiés (`"coupe": [début, fin]`). Sinon, garder le mot et le signaler.
 - **Pas de barre de progression.**
 - Silences de plus de 0,6 s coupés (détection au volume sonore, −30 dB, marge de 0,15 s).
 - **Listes et énumérations** (erreurs, « Apprendre à », publics, question finale) : disposition
@@ -106,6 +124,12 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 - `scripts/rendre.sh` rend l'image sans son puis ajoute `public/<projet>/mix.wav` tel quel (calage vérifié :
   0 échantillon de décalage).
 
+## Version longue
+
+`python3 scripts/version_longue.py <projet> <fichier>` : la vidéo montée sans son carton de fin, fondu enchaîné
+de 0,4 s, puis l'autre vidéo telle quelle ; les deux parties à −14 LUFS, en 720 × 1280 (même netteté perçue qu'en
+1080 à ce poids), moins de 30 Mo.
+
 ## Glossaire
 
 `glossaire.json` : noms propres appliqués automatiquement à chaque transcription.
@@ -126,6 +150,8 @@ partout ; « Lomé IA School » ne change pas.
 - `scripts/sons.py` tire du bruit aléatoire dans l'ordre des sons : ajouter un son change le grain des
   suivants. Les effets versionnés dans `sons/effets/` font foi ; ne régénérer que le son ajouté
   (restaurer les autres avec `git checkout -- sons/effets/<nom>.wav`).
+- OpenCV : installer `opencv-python-headless<5` (la version 5 n'a plus `CascadeClassifier`).
+- Mesurer les saturations sur les canaux stéréo bruts, pas après conversion en mono (faux dépassements).
 - Réseau : huggingface.co, drive.google.com et drive.usercontent.google.com doivent être autorisés
   dans l'environnement.
 - Vidéos WhatsApp en basse résolution (464 × 832) : agrandies, donc un peu floues. Demander l'original.

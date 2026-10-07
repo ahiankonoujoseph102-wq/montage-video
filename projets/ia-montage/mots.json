@@ -365,25 +365,20 @@
   "statut": "ok"
  },
  {
-  "mot": "je",
+  "mot": "j'ai",
   "debut": 15.86,
   "fin": 15.92,
-  "proba": 0.98,
-  "statut": "écart"
+  "proba": 1.0,
+  "statut": "écart",
+  "manuel": "je"
  },
  {
-  "mot": "vais",
-  "debut": 15.92,
-  "fin": 16.0,
-  "proba": 0.78,
-  "statut": "écart"
- },
- {
-  "mot": "réaliser",
+  "mot": "réalisée",
   "debut": 16.0,
   "fin": 16.5,
-  "proba": 0.91,
-  "statut": "écart"
+  "proba": 1.0,
+  "statut": "écart",
+  "manuel": "réaliser"
  },
  {
   "mot": "avec",
@@ -1295,25 +1290,12 @@
   "statut": "écart"
  },
  {
-  "mot": "de",
-  "debut": 55.0,
-  "fin": 55.3,
-  "proba": 0.66,
-  "statut": "écart"
- },
- {
-  "mot": "4",
+  "mot": "capable",
   "debut": 55.3,
   "fin": 55.46,
-  "proba": 0.23,
-  "statut": "écart"
- },
- {
-  "mot": "parts",
-  "debut": 55.46,
-  "fin": 55.72,
-  "proba": 0.68,
-  "statut": "écart"
+  "proba": 1.0,
+  "statut": "écart",
+  "manuel": "4"
  },
  {
   "mot": "de",
@@ -1421,18 +1403,20 @@
   "statut": "hors script"
  },
  {
-  "mot": "un",
+  "mot": "une",
   "debut": 61.76,
   "fin": 62.06,
-  "proba": 0.97,
-  "statut": "hors script"
+  "proba": 1.0,
+  "statut": "hors script",
+  "manuel": "un"
  },
  {
-  "mot": "l'IA",
+  "mot": "IA",
   "debut": 62.06,
   "fin": 62.32,
-  "proba": 0.18,
-  "statut": "hors script"
+  "proba": 1.0,
+  "statut": "hors script",
+  "manuel": "l'IA"
  },
  {
   "mot": "qui",

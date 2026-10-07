@@ -27,7 +27,14 @@ export type Carton = {debut: number; fin: number; fond: Fond; titre: string; lig
 export type MotTitre = {texte: string; ligne: number; image: number};
 
 // Titre d'accroche : géant pendant `geant` s, puis rangé dans le bandeau du haut jusqu'à `duree` s.
-export type Titre = {lignes: string[]; motsCles: string[]; geant: number; duree: number; mots: MotTitre[]};
+// `banniere: false` : le titre disparaît à `duree` au lieu de monter dans le bandeau du haut.
+export type Titre = {lignes: string[]; motsCles: string[]; geant: number; duree: number; mots: MotTitre[]; banniere?: boolean};
+
+// Extrait d'une autre vidéo inséré en plein écran (preuve), avec une étiquette.
+export type Preuve = {debut: number; fin: number; etiquette: string};
+
+// Centre du visage (origine des zooms) à partir d'une image donnée.
+export type Cadre = {debut: number; x: number; y: number};
 
 export type MontageProps = {
   video: string;
@@ -39,6 +46,8 @@ export type MontageProps = {
   masques: number[]; // groupes de sous-titres masqués (doublons d'un texte affiché en grand)
   dureeVideo: number; // images de la vidéo coupée ; le carton de fin vient après
   carton?: Carton;
+  preuve?: Preuve | null;
+  cadres?: Cadre[];
   scenes: Scene[];
   onde: number[][];
 };
