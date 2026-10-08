@@ -11,6 +11,8 @@ const LIVRES = [
 ];
 const MOIS = ['JANV.', 'FÉVR.', 'MARS', 'AVRIL', 'MAI', 'JUIN', 'JUIL.', 'AOÛT', 'SEPT.', 'OCT.', 'NOV.', 'DÉC.'];
 const H = 60;
+const PAS = 5; // images entre deux pages arrachées
+const VOL = 20; // durée de l'envol d'une page
 
 const Livre: React.FC<{l: number; c: string}> = ({l, c}) => (
   <g>
@@ -27,7 +29,7 @@ const Livre: React.FC<{l: number; c: string}> = ({l, c}) => (
 );
 
 const Calendrier: React.FC<{t: number; e0: number}> = ({t, e0}) => {
-  const n = t < e0 ? 0 : Math.floor((t - e0) / 3) + 1; // une page arrachée toutes les 3 images
+  const n = t < e0 ? 0 : Math.floor((t - e0) / PAS) + 1; // une page arrachée toutes les PAS images
   const page = (k: number) => (
     <g>
       <rect x={-150} y={-120} width={300} height={290} rx={18} fill="#fff" />
@@ -53,15 +55,17 @@ const Calendrier: React.FC<{t: number; e0: number}> = ({t, e0}) => {
       </text>
       {[-90, 90].map((x) => <rect key={x} x={x - 12} y={-226} width={24} height={60} rx={12} fill="#33334A" />)}
       <g transform="translate(0 0)">{page(n)}</g>
-      {/* Pages arrachées qui s'envolent en tournoyant. */}
-      {Array.from({length: 4}).map((_, j) => {
+      {/* Pages arrachées qui s'envolent doucement en arc, en tournant un peu. */}
+      {Array.from({length: Math.ceil(VOL / PAS) + 1}).map((_, j) => {
         const k = n - 1 - j;
         if (k < 0) return null;
-        const age = t - (e0 + k * 3);
-        if (age < 0 || age > 12) return null;
-        const a = age / 12;
+        const age = t - (e0 + k * PAS);
+        if (age < 0 || age > VOL) return null;
+        const a = Easing.inOut(Easing.quad)(age / VOL);
+        const dx = a * (380 + (k % 3) * 60);
+        const dy = -a * (260 + (k % 2) * 80) + 120 * a * a;
         return (
-          <g key={k} opacity={1 - a * a} transform={`translate(${a * (420 + (k % 3) * 80)} ${-a * (420 + (k % 2) * 140)}) rotate(${a * (k % 2 ? 160 : -140)}) scale(${1 - 0.4 * a})`}>
+          <g key={k} opacity={1 - a * a} transform={`translate(${dx} ${dy}) rotate(${a * (k % 2 ? 50 : -40)}) scale(${1 - 0.3 * a})`}>
             {page(k)}
           </g>
         );
@@ -135,7 +139,7 @@ export const Etudes: React.FC<PropsScene> = ({t, etapes}) => {
     <svg width={1080} height={960} style={{position: 'absolute', inset: 0}}>
       <Defs id="etudes" />
       <g transform={`translate(${-700 * depart} 0)`} opacity={1 - depart}>
-        <g transform={`translate(320 832)`} filter="url(#ombreetudes)">
+        <g transform={`translate(270 862) scale(1.3)`} filter="url(#ombreetudes)">
           {LIVRES.map((b, i) => {
             const k2 = pop(t, 2 + i * 4, 260);
             const y = -i * (H + 2) - (1 - k2) * 700;
@@ -161,7 +165,7 @@ export const Etudes: React.FC<PropsScene> = ({t, etapes}) => {
             );
           })()}
         </g>
-        <g transform={`translate(710 500) scale(${pop(t, 8)}) rotate(${4 * Math.sin(t / 12)})`} filter="url(#ombreetudes)">
+        <g transform={`translate(722 520) scale(${1.35 * pop(t, 8)}) rotate(${4 * Math.sin(t / 12)})`} filter="url(#ombreetudes)">
           <Calendrier t={t} e0={e0} />
         </g>
       </g>
@@ -170,7 +174,7 @@ export const Etudes: React.FC<PropsScene> = ({t, etapes}) => {
           <g transform={`translate(${620 + (1 - k) * 500} 575) scale(${0.4 + 0.6 * k})`} filter="url(#ombreetudes)">
             <Horloge tt={t - e1} />
           </g>
-          <g transform={`translate(190 832) scale(${1.5 * personne})`} filter="url(#ombreetudes)">
+          <g transform={`translate(200 870) scale(${2.4 * personne})`} filter="url(#ombreetudes)">
             <Personne couleur="#1D7CF2" />
             {/* Ordinateur portable qui brille. */}
             <g transform="translate(0 -18)">
@@ -182,7 +186,7 @@ export const Etudes: React.FC<PropsScene> = ({t, etapes}) => {
           </g>
         </>
       ) : null}
-      <text x={500} y={265} textAnchor="middle" fontFamily={POLICE_SVG} fontWeight={900} fontSize={64} fill="#fff"
+      <text x={500} y={265} textAnchor="middle" fontFamily={POLICE_SVG} fontWeight={900} fontSize={78} fill="#fff"
         opacity={lin(t, e1 + 18, e1 + 26, 0, 1)} transform={`translate(0 ${lin(t, e1 + 18, e1 + 26, -20, 0)})`}
         style={{paintOrder: 'stroke'}} stroke="#0B1E6B" strokeWidth={10}>
         EN UN BREF TEMPS

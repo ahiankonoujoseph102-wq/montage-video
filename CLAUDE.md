@@ -50,36 +50,46 @@ fichiers envoyés directement (vidéo finale, extraits). Ne construis rien qu'il
 
 ## Bibliothèque des scènes illustrées (style dynamique)
 
-Scènes de 3 à 5 s (jusqu'à ~9 s si la phrase l'exige) en **écran partagé** : illustration animée dans la moitié
-haute (1080 × 960) sur un dégradé coloré qui bouge (taches de lumière, particules), visage dans la moitié basse
-(l'image glisse de 540 px vers le bas), sous-titres posés sur la limite (960 px), liseré lumineux. Entrée/sortie :
-le panneau descend du haut en 8 images. Dessins SVG détaillés, colorés, toujours en mouvement (pas d'icônes
-plates), contenu entre x 50–950 et y 200–880. Son d'entrée `plein_ecran` (souffle + impact), puis un son par étape
-au choix (`croix`, `coche`, `autocollant`, `panneau`, `info`).
+Scènes de 3 à 6 s, **jamais plus de 6 s** (`DUREE_SCENE_MAX` dans `scripts/preparer.py`), en **écran partagé** :
+illustration animée en haut (1080 × 900) sur un dégradé coloré qui bouge (taches de lumière, particules), puis un
+**bandeau sombre semi-transparent** (900–1 035 px) qui porte les sous-titres (une ligne, 100 px, réduite jusqu'à
+75 px, deux lignes de 62 px en dernier recours), puis le visage (l'image glisse de 560 px vers le bas : haut des
+cheveux vers 1 063 px avec le zoom de 11 %, jamais coupé par le bandeau). Liseré lumineux entre l'illustration et
+le bandeau. Entrée/sortie : le panneau descend du haut en 8 images. Deux scènes à moins de 0,8 s d'écart
+s'enchaînent (la seconde descend par-dessus la première, le visage reste en bas). Dessins SVG détaillés, colorés,
+toujours en mouvement (pas d'icônes plates), **grands** (ils remplissent la zone), contenu entre x 50–950 et
+y 200–880, chaque élément apparaît sur son mot ; **textes gros** (≥ 42 px dans un écran de téléphone, 66–90 px pour
+les titres, `Gros` à contour épais). Son d'entrée `plein_ecran` (souffle + impact, le même pour toutes), puis un son
+par étape (`croix`, `coche`, `autocollant` = pop, `panneau`, `info` = compteur).
 
 Dans `montage.json` → `dynamique.illustrations` : `{"type", "a": mot de départ, "decalage": s, "duree": s,
 "fond": bleu|violet|orange|nuit|vert|rose, "etapes": [mots clés], "sons": [un son ou null par étape]}`.
 Les étapes sont les mots où l'animation change (calées sur la voix). Une scène qui tomberait sous un carton noir
-démarre juste après lui. Code : `src/dynamique/Illustrations.tsx` (cadre), `src/dynamique/scenes/` (dessins,
-registre dans `index.ts`, outils communs : `pop`, `prog`, `Marque` croix/coche, `Personne`).
+démarre juste après lui. Code : `src/dynamique/Illustrations.tsx` (cadre, bandeau), `src/dynamique/scenes/` (dessins,
+registre dans `index.ts`, outils communs dans `outils.tsx` : `pop`, `prog`, `Marque` croix/coche, `Personne`,
+`Gros`, `Telephone`, `Confettis`, `Pastille`).
 
-| Type | Idée | Étapes | État |
-|---|---|---|---|
-| `etudes` | pile de livres + calendrier dont les pages s'envolent, puis horloge qui s'emballe et une personne à son ordinateur, « EN UN BREF TEMPS » | calendrier, horloge | fait |
-| `reponses` | téléphone + appli de discussion : question floue, réponse grise floue, croix ; puis question précise, réponse nette, coche | croix, croix qui reclaque, écran vidé, coche | fait |
-| `creations` | 4 écrans qui se construisent : page web qui s'assemble, application, robot qui salue, engrenages reliés | un par écran | fait |
-| `licenciements` | compteur 0 → 15 000 (marque en texte), silhouettes qui rougissent et tombent | chiffre atteint | fait |
-| `equipe` | cinq silhouettes qui fusionnent en une seule, entourée d'outils | à faire | à dessiner |
-| `telephone` | téléphone avec appli de discussion et grand point d'interrogation | à faire | à dessiner |
-| `remplace` | chaise de bureau vide, puis silhouette avec éclair « IA » qui prend la place | à faire | à dessiner |
-| `gratuit` | billet barré, puis « 100 % GRATUIT » qui éclate en confettis | à faire | à dessiner |
-| `rendezvous` | calendrier « SAMEDI 10 OCTOBRE », repère de carte « Adidogomé, Lycée Moderne 2 », cartes « JOURNÉE 9H – 17H » et « SOIRÉE 18H – 20H » | à faire | à dessiner |
-| `enligne` | globe qui tourne avec points reliés + grille de visioconférence, sans logo | à faire | à dessiner |
-| `inscription` | téléphone, trois étapes qui se cochent (créer son compte, confirmer, rejoindre le groupe) | à faire | à dessiner |
-| `unTelephone` | un téléphone d'où sortent un site web, une application et un robot | à faire | à dessiner |
+| Type | Idée | Étapes |
+|---|---|---|
+| `etudes` | grande pile de livres + grand calendrier dont les pages s'envolent doucement en arc, puis horloge qui s'emballe et une personne à son ordinateur, « EN UN BREF TEMPS » | calendrier, horloge |
+| `equipe` | cinq spécialistes (CODE, DATA, DESIGN, PUB, VIDÉO) avec leurs outils, qui fusionnent en une seule grande personne à éclair, outils en orbite, « 1 SEULE PERSONNE » | outils, fusion |
+| `telephone` | grand téléphone (écran d'accueil, appli IA qui pulse) + trois grands « ? » ; un doigt touche l'appli, la discussion s'ouvre, « APPLI IA » | toucher |
+| `reponses` | grand téléphone : « Aide-moi » → réponse grise floue, croix ; écran vidé ; « Écris 3 idées de posts pour ma boutique » → réponse nette en 3 lignes, coche ; étiquettes 76 px à droite | croix, écran vidé, coche |
+| `creations` | 4 écrans qui se construisent : page web qui s'assemble, application, robot qui salue, engrenages reliés | un par écran |
+| `licenciements` | compteur 0 → 15 000 (marque en texte), silhouettes qui rougissent et tombent | chiffre atteint |
+| `remplace` | « VOUS » à son bureau ; il grisonne et sort, tampon « REMPLACÉ », chaise qui tourne ; un jeune à éclair « IA » s'assoit, l'écran s'allume, « IL MAÎTRISE L'IA » | remplacé, arrivée |
+| `gratuit` | « PAS D'ARGENT ? », billets barrés d'un trait rouge ; les billets s'envolent, « 100 % GRATUIT » éclate en confettis devant des rayons | éclatement |
+| `rendezvous` | calendrier « SAMEDI 10 OCTOBRE », carte avec repère « ADIDOGOMÉ / LYCÉE MODERNE 2 », puis cartes « SOIRÉE 18H – 20H » et « JOURNÉE 9H – 17H » | 18h, 9h |
+| `enligne` | badge « EN DIRECT », globe qui tourne ; ordinateur avec grille de visioconférence, « GOOGLE MEET » en texte (sans logo) ; arcs entre pays, « PARTOUT » | visio, arcs |
+| `inscription` | grand téléphone (formulaire, compte confirmé, groupe de discussion) + trois cartes d'étapes qui se cochent | créer, confirmer, rejoindre |
+| `unTelephone` | « UN SEUL TÉLÉPHONE » d'où sortent site web, appli, robot IA, automate ; « N'IMPORTE QUOI ! » | trois sorties |
 
-Aperçu de scènes : rendre chaque passage avec `npx remotion render … --frames=a-b --muted`, y poser le morceau
-correspondant de `public/<projet>/mix.wav`, puis les enchaîner.
+Contrôle des scènes : `npx remotion bundle src/index.ts --out-dir <dossier>`, puis
+`node scripts/images.mjs <dossier> public/<projet>/props.json <sortie> <images>` (une image au début, une après
+chaque étape, une à la fin). Aperçu animé : rendre chaque passage avec `npx remotion render … --frames=a-b --muted`,
+y poser le morceau correspondant de `public/<projet>/mix.wav`, puis les enchaîner.
+- **Rythme** : jamais plus de 12 s sans événement visuel (scène, transition, doré, autocollant, carton) ; à vérifier
+  sur `props.json` après `preparer.py`.
 
 ## Méthode pour chaque vidéo (à suivre dans l'ordre)
 
