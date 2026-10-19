@@ -29,12 +29,13 @@ courtes en français, fichiers envoyés directement.
   2. passages sans voix ≤ 8 s (max mesuré 7,2 s) : X04, X05, X06, X07, X08 raccourcis ;
   3. étiquettes d'écart voix/écran (`notes` des plans : étapes 1, 2, phrase 121) et animation « Joindre vos 4 clips »
      (`ScenePiecesJointes`, phrases 104–105) ;
-  4. décor du studio prolongé en miroir sur les côtés.
+  4. décor du studio prolongé en miroir sur les côtés (mur, fenêtre, plante, plateau ; sans tasse ni ordinateur ; bords assombris).
+- Vérifié en images : zoom pleine largeur, étiquettes d'écart, animation étape 6, côtés du studio.
 - Durée actuelle : 748 s (12 min 28).
 
 ## Reste à faire
 
-1. Vérifier en images les corrections ci-dessus (zoom, étiquettes, animation étape 6, côtés du studio) ;
+1. (fait) Vérifier en images les corrections ci-dessus ;
    commande planche : `PROPS=public/formation-montage-partie1/formation_props_radio.json bash <stills.sh> …`
    (ou `npx remotion still`).
 2. Revérifier la confidentialité image par image sur les extraits utilisés (une image / 0,5 s minimum).

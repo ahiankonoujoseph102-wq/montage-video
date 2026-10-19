@@ -54,6 +54,16 @@ const Scene: React.FC<{children: React.ReactNode}> = ({children}) => (
   </AbsoluteFill>
 );
 
+// Plateau du bureau de la série (mêmes couleurs que Bureau2D), sans la tasse ni l'ordinateur.
+const Plateau: React.FC = () => (
+  <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
+    <rect x={0} y={1600} width={1080} height={122} fill="#232b58" />
+    <rect x={0} y={1600} width={1080} height={10} fill="#2c3570" />
+    <rect x={0} y={1718} width={1080} height={10} fill={COULEURS.or} />
+    <rect x={0} y={1728} width={1080} height={192} fill="#121836" />
+  </svg>
+);
+
 // Fond du studio : décor de la série (mur, fenêtre au crépuscule, étagère, plante, cadre de l'écran).
 export const StudioDecor: React.FC<{d?: PropsDouble}> = ({d}) => {
   const f = useCurrentFrame();
@@ -61,14 +71,19 @@ export const StudioDecor: React.FC<{d?: PropsDouble}> = ({d}) => {
   return (
     <AbsoluteFill style={{background: COULEURS.nuitMur}}>
       <AbsoluteFill style={{top: 1600 * SC + OY, background: '#121836'}} />
-      {/* Le décor (mur, fenêtre, plante, bureau) prolongé en miroir sur les côtés : pas de bande unie. */}
+      {/* Le décor (mur, fenêtre, plante) et le plateau du bureau prolongés en miroir sur les côtés, assombris : pas de
+          bande unie (sans la tasse ni l'ordinateur, qui seraient dédoublés). */}
       <AbsoluteFill style={{transform: `translate(${OX}px, ${OY}px) scale(${-SC}, ${SC})`, transformOrigin: '0 0'}}>
-        <Decor2D /><Bureau2D />
+        <Decor2D /><Plateau />
       </AbsoluteFill>
       <AbsoluteFill style={{transform: `translate(${OX + 2 * 1080 * SC}px, ${OY}px) scale(${-SC}, ${SC})`,
         transformOrigin: '0 0'}}>
-        <Decor2D /><Bureau2D />
+        <Decor2D /><Plateau />
       </AbsoluteFill>
+      <div style={{position: 'absolute', left: 0, top: 0, width: OX + 2, height: 1920,
+        background: `linear-gradient(to right, ${COULEURS.nuitMur}d0, ${COULEURS.nuitMur}40)`}} />
+      <div style={{position: 'absolute', right: 0, top: 0, width: OX + 2, height: 1920,
+        background: `linear-gradient(to left, ${COULEURS.nuitMur}d0, ${COULEURS.nuitMur}40)`}} />
       <Scene><Decor2D /></Scene>
       <div style={{position: 'absolute', left: ECRAN.x, top: ECRAN.y, width: ECRAN.l, height: ECRAN.h, background: NUIT,
         borderRadius: 14}} />
