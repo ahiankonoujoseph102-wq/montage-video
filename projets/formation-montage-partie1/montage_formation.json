@@ -23,7 +23,7 @@
      {"titre": "Vous vous êtes filmé", "detail": "Directement au montage", "picto": "personnage", "couleur": "#E0337E"}]},
    "etapes": [[14, "Soit"], [15, "Soit"]]},
   {"de": 17, "a": 18, "type": "SceneEmploye", "etapes": [[18, "employe"], [18, "rapide"], [18, "connait"]], "illustrations": [{"src": "formation-montage-partie1/pexels/p7693151.jpg", "a": "debut", "fin": [18, "employe"], "legende": "UN EMPLOYÉ TRÈS DOUÉ", "mode": "plein"}]},
-  {"de": 19, "a": 20, "type": "ScenePromptVague", "etapes": [[20, "vague"], [20, "precis"], [20, "moyen"], [20, "professionnel"]], "illustrations": [{"src": "formation-montage-partie1/pexels/p6669813.jpg", "a": "debut", "fin": [20, "vague"], "legende": "LE PROMPT = VOTRE INSTRUCTION", "mode": "plein"}]},
+  {"de": 19, "a": 20, "type": "ScenePromptVague", "etapes": [[20, "vague"], [20, "precis"], [20, "moyen"], [20, "professionnel"]], "illustrations": [{"src": "formation-montage-partie1/pexels/p6669813.jpg", "a": "debut", "fin": [20, "vague"], "legende": "PROMPT = INSTRUCTION", "mode": "plein"}]},
   {"de": 21, "a": 23, "type": "CarteTexte", "props": {"badge": "GROUPE VIP", "titre": "Tous les prompts sont dans un document",
     "lignes": [{"texte": "Copiez le prompt", "picto": "fichier", "couleur": "#1F5BFF"},
                {"texte": "Collez-le dans l'IA", "picto": "discussion", "couleur": "#0E8F62"},

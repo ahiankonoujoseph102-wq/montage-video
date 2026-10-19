@@ -1,17 +1,16 @@
 import React from 'react';
-import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
 import {POLICE} from '../charte';
 import {Badge, FondNuit, LARGEUR_UTILE, Ligne, NUIT, OR, pop, prog, VERT, Z, texteContour} from './commun';
 
-// Carton « À RETENIR » de fin d'étape (3 s) : 2 ou 3 points courts qui arrivent un à un, coche verte.
+// Carton « À RETENIR » de fin d'étape (3 s) : 2 ou 3 points courts qui arrivent un à un, coche verte. Pas de fondu de
+// sortie : le carton d'étape ou le plan suivant prend la place d'un coup.
 export const CartonRetenir: React.FC<{numero: number; points: string[]}> = ({numero, points}) => {
   const t = useCurrentFrame();
-  const {durationInFrames: d} = useVideoConfig();
-  const sortie = prog(t, d - 10, 10);
   const pas = 210;
   const y0 = 760 - ((points.length - 1) * pas) / 2;
   return (
-    <AbsoluteFill style={{opacity: 1 - sortie}}>
+    <AbsoluteFill>
       <FondNuit teinte="vert" />
       <Badge texte={`FIN DE L'ÉTAPE ${numero}`} y={300} k={pop(t, 0)} />
       <Ligne texte="À RETENIR" y={400} taille={110} couleur={OR} contour={10} k={pop(t, 3)} />
@@ -71,7 +70,7 @@ export const Illustrations: React.FC<{liste?: Illustration[]}> = ({liste}) => {
             <div style={{position: 'absolute', left: plein ? Z.gauche : x - 40, width: plein ? LARGEUR_UTILE : l + 80,
               top: y + h - (plein ? 40 : 30), display: 'flex', justifyContent: 'center',
               transform: `scale(${Math.max(0, pop(t, a + 5, 260) * (1 - prog(t, fin - 8, 8)))})`}}>
-              <span style={{fontFamily: POLICE, fontWeight: 900, fontSize: plein ? 58 : 40, color: NUIT, background: OR,
+              <span style={{fontFamily: POLICE, fontWeight: 900, fontSize: plein ? (il.legende.length > 20 ? 48 : 58) : 40, color: NUIT, background: OR,
                 padding: plein ? '10px 34px' : '6px 22px', borderRadius: 24, border: '5px solid #fff', whiteSpace: 'nowrap',
                 ...texteContour(0)}}>{il.legende}</span>
             </div>
