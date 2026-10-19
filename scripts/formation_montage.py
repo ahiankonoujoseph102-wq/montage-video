@@ -1,8 +1,11 @@
 """Construit le montage final de la formation : voix (pauses, cartons d'étape), plans, sous-titres, musique.
 
-Usage : python3 scripts/formation_montage.py <projet>
+Usage : python3 scripts/formation_montage.py <projet> [radio]
 Lit public/<projet>/voix_propre.wav, phrases.json, extraits.json et projets/<projet>/montage_formation.json.
-Écrit public/<projet>/formation_props.json (composition Remotion « Formation ») et public/<projet>/formation_mix.wav.
+Écrit public/<projet>/formation_props.json (composition Remotion « Formation »), formation_mix.wav, formation_voix.wav
+(voix seule calée sur la vidéo, pour la bouche du double) et formation_phrases.json (phrases en temps de la vidéo).
+Variante « radio » : voix_radio.wav et phrases_radio.json (scripts/voix_radio.py), réglages de la section « radio »
+(pauses, niveaux de musique) ; fichiers écrits avec le suffixe « _radio ».
 Les silences ajoutés (cartons, tenue des cartes de prompts, changements de partie, pause minimale entre phrases)
 tombent toujours dans un silence de la voix, vérifié au niveau sonore.
 """
@@ -21,7 +24,11 @@ ROOT = Path(__file__).resolve().parent.parent
 projet = sys.argv[1]
 PUB = ROOT / "public" / projet
 cfg = json.loads((ROOT / "projets" / projet / "montage_formation.json").read_text())
-phrases = json.loads((PUB / "phrases.json").read_text())
+RADIO = len(sys.argv) > 2 and sys.argv[2] == "radio"
+SUF = "_radio" if RADIO else ""
+if RADIO:
+    cfg.update(cfg["radio"]["montage"])
+phrases = json.loads((PUB / f"phrases{SUF}.json").read_text())
 extraits = json.loads((PUB / "extraits.json").read_text())
 SR, FPS = 48000, 30
 OUV = cfg["ouverture"]
@@ -35,9 +42,10 @@ def norm(w):
 
 
 # --- Voix : compression douce, puis points de coupe entre phrases (dans un silence). ---
-brut = subprocess.run(["ffmpeg", "-v", "error", "-i", str(PUB / "voix_propre.wav"), "-af",
-                       "acompressor=threshold=-24dB:ratio=2.2:attack=8:release=140:makeup=1", "-ac", "1", "-ar", str(SR),
-                       "-f", "f32le", "-"], capture_output=True, check=True).stdout
+# (la voix radio est déjà compressée par scripts/voix_radio.py)
+brut = subprocess.run(["ffmpeg", "-v", "error", "-i", str(PUB / ("voix_radio.wav" if RADIO else "voix_propre.wav")), "-af",
+                       "anull" if RADIO else "acompressor=threshold=-24dB:ratio=2.2:attack=8:release=140:makeup=1",
+                       "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
 voix = np.frombuffer(brut, dtype=np.float32).astype(np.float64)
 mesure = pyln.Meter(SR)
 voix *= 10 ** ((-17.0 - mesure.integrated_loudness(voix)) / 20)
@@ -84,7 +92,7 @@ for k in range(1, len(phrases)):
     apres = cfg["pauseSection"] if k in cfg["sections"] or k in etapes else 0
     apres += max(0, cfg["pauseMin"] - silence) if not (tenue or carton or apres) else 0
     if suiv.get("generique") and plan_de[k - 1] != plan_de[k]:
-        apres = max(apres, 0.8)
+        apres = max(apres, cfg.get("pauseGenerique", 0.8))
     if tenue or carton or apres:
         coupures[k] = {"point": pt, "tenue": tenue, "carton": carton, "apres": round(apres, 3)}
 
@@ -193,7 +201,7 @@ for a, b in zip(sous_titres, sous_titres[1:]):
 duree_totale = T(duree_voix) + cfg["plans"][-1].get("fin", 0)
 props = {"duree": round(duree_totale * FPS), "ouverture": round(OUV * FPS), "plans": plans_props, "cartons": cartons,
          "badges": badges, "sousTitres": sous_titres, "hauteurVue": HAUTEUR_VUE}
-(PUB / "formation_props.json").write_text(json.dumps(props, ensure_ascii=False))
+(PUB / f"formation_props{SUF}.json").write_text(json.dumps(props, ensure_ascii=False))
 
 # --- Bande son : voix avec silences ajoutés, musique en boucle, effets. ---
 N = int(duree_totale * SR) + SR
@@ -228,10 +236,11 @@ while len(boucle) < N:
     boucle = np.concatenate([boucle[:-fondu], boucle[-fondu:] * (1 - r) + musique[:fondu] * r, musique[fondu:]])
 boucle = boucle[:N]
 # Niveau de la musique sous la voix (−17 LUFS) : explications −19 LU, génériques −12 LU, ouverture et cartons −6 LU.
-rel = np.full(N, -19.0)
+NIV = cfg.get("musique", {"explications": -19.0, "generiques": -12.0})
+rel = np.full(N, NIV["explications"])
 for p in plans_props:
     if p["generique"]:
-        rel[int(p["debut"] / FPS * SR):int(p["fin"] / FPS * SR)] = -12.0
+        rel[int(p["debut"] / FPS * SR):int(p["fin"] / FPS * SR)] = NIV["generiques"]
 rel[:int(OUV * SR)] = -5.0
 for c in cartons:
     rel[int(c["debut"] / FPS * SR):int(c["fin"] / FPS * SR)] = -7.0
@@ -261,6 +270,10 @@ for p in plans_props:
     if p["generique"]:
         effet("plein_ecran", p["debut"] / FPS + 1 / FPS, -26)
 mix *= 10 ** ((-14.0 - mesure.integrated_loudness(mix)) / 20)
-sf.write(PUB / "formation_mix.wav", mix.astype(np.float32), SR, subtype="FLOAT")
+sf.write(PUB / f"formation_mix{SUF}.wav", mix.astype(np.float32), SR, subtype="FLOAT")
+sf.write(PUB / f"formation_voix{SUF}.wav", piste.astype(np.float32), SR, subtype="FLOAT")
+(PUB / f"formation_phrases{SUF}.json").write_text(json.dumps(
+    [{"debut": round(T(p["debut"]), 3), "fin": round(T(p["fin"]), 3), "texte": p["texte"],
+      "mots": [[m[0], round(T(m[1]), 3), round(T(m[2]), 3)] for m in p["mots"]]} for p in phrases], ensure_ascii=False))
 print(f"Durée : {duree_totale:.1f} s ({duree_totale / 60:.1f} min), {len(plans_props)} plans, {len(cartons)} cartons, "
       f"{len(sous_titres)} sous-titres, {len(coupures)} silences ajoutés")

@@ -8,5 +8,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true
-  }
+  },
+  "exclude": ["node_modules", "double-anime"]
 }

@@ -88,5 +88,28 @@
   {"de": 152, "a": 155, "type": "GeneriqueFin", "generique": true, "fin": 3.0, "etapes": [[152, "Merci"], [155, "maitrisez"], [153, "lomeiaschool"], [153, "WhatsApp"], [154, "bureau"]]}
  ],
  "sousTitresRetirer": [[131, "animé,"]],
- "motsCles": ["ChatGPT", "Google", "Flow", "Claude", "Code", "prompt", "prompts", "9:16", "Mo", "8", "secondes", "WhatsApp", "VIP", "Fast", "x1", "gratuit", "gratuits", "fictif", "Chrome", "MP4", "Télécharger", "crédits", "script", "150", "000"]
+ "motsCles": ["ChatGPT", "Google", "Flow", "Claude", "Code", "prompt", "prompts", "9:16", "Mo", "8", "secondes", "WhatsApp", "VIP", "Fast", "x1", "gratuit", "gratuits", "fictif", "Chrome", "MP4", "Télécharger", "crédits", "script", "150", "000"],
+ "radio": {"_aide": "Voix radio (scripts/voix_radio.py, puis scripts/formation_montage.py <projet> radio) : débit × tempo, pauses entre phrases ramenées à « pause » s (« pauseEtape » avant une étape) ; « montage » remplace ces réglages du montage.",
+  "tempo": 1.05, "pause": 0.4, "pauseEtape": 0.7,
+  "montage": {"pauseSection": 0.0, "pauseMin": 0.35, "pauseGenerique": 0.45, "musique": {"explications": -17.0, "generiques": -16.0}}},
+ "double": {"_aide": "Double animé (scripts/double_formation.py). fenetres : plans où il apparaît en grand (phrases de..a) ; « bas » = bas du contenu du plan (px) à partir d'une ancre [phrase, mot] (null = début du plan), pour réserver sa place sous le contenu (le plan est réduit s'il le faut) ; « hmin » = hauteur minimale de sa zone. Les annonces d'étape (carton) sont ajoutées d'office. gestes / expressions : [phrase, mot, geste (, doigts)] en plus des gestes automatiques.",
+  "hminCarton": 640,
+  "fenetres": [
+   {"de": 5, "a": 10, "hmin": 620, "teinte": "nuit", "bas": [[null, 480], [[9, "Dans"], 760], [[10, "Dans"], 1010]]},
+   {"de": 21, "a": 23, "hmin": 620, "teinte": "nuit", "bas": [[null, 480], [[22, "copiez"], 760], [[22, "collez"], 1010], [[22, "remplacez"], 1260]]},
+   {"de": 81, "a": 86, "hmin": 500, "teinte": "violet", "bas": [[null, 600], [[83, "Sites"], 1080], [[84, "formons"], 1210], [[85, "site"], 1300], [[85, "WhatsApp"], 1420], [[86, "bureau"], 1500]]},
+   {"de": 124, "a": 129, "hmin": 500, "teinte": "nuit", "bas": [[null, 530], [[126, "formations"], 640], [[126, "mises"], 745], [[126, "accompagnement"], 850], [[127, "150"], 1110], [[128, "site"], 1215], [[128, "WhatsApp"], 1340], [[129, "bureau"], 1430]]},
+   {"de": 130, "a": 133, "hmin": 500, "teinte": "orange", "bas": [[null, 1275], [[132, "evaluation"], 1370], [[133, "talkami"], 1440], [[133, "WhatsApp"], 1530]]},
+   {"de": 134, "a": 139, "hmin": 500, "teinte": "nuit", "bas": [[null, 340], [[135, "30"], 560], [[136, "nombre"], 760], [[137, "reecoute"], 960], [[138, "animations"], 1160], [[139, "Claude"], 1490]]},
+   {"de": 140, "a": 147, "hmin": 500, "teinte": "vert", "bas": [[null, 330], [[141, "Un"], 490], [[142, "Deux"], 650], [[143, "Trois"], 810], [[144, "Quatre"], 970], [[145, "Cinq"], 1130], [[146, "Six"], 1295], [[147, "Sept"], 1460]]},
+   {"de": 148, "a": 151, "hmin": 560, "teinte": "vert", "bas": [[null, 480], [[149, "creez"], 760], [[149, "partagez"], 1010], [[150, "regarderons"], 1260]]},
+   {"de": 152, "a": 155, "hmin": 500, "teinte": "nuit", "bas": [[null, 570], [[152, "Merci"], 705], [[153, "lomeiaschool"], 800], [[153, "WhatsApp"], 1110], [[154, "bureau"], 1200], [[155, "maitrisez"], 1440]]}
+  ],
+  "gestes": [[5, "Je", "explique"], [27, "Premiere", "compte", 1], [38, "Deuxieme", "compte", 2], [46, "Troisieme", "compte", 3], [58, "Quatrieme", "compte", 4],
+   [83, "Sites", "designe"], [126, "formations", "designe"], [127, "150", "designe"], [132, "evaluation", "pouce"],
+   [135, "30", "compte", 1], [136, "Un", "compte", 2], [137, "Il", "compte", 3], [138, "Et", "compte", 4],
+   [141, "Un", "compte", 1], [142, "Deux", "compte", 2], [143, "Trois", "compte", 3], [144, "Quatre", "compte", 4],
+   [145, "Cinq", "explique"], [146, "Six", "designe"], [147, "Sept", "explique"], [149, "Votre", "designe"], [152, "Merci", "explique"], [155, "maitrisez", "explique"]],
+  "expressions": [[5, "Je", "sourire"], [5, "de", "parle"], [125, "Devenez", "sourire"], [132, "gratuite", "sourire"], [134, "Soyons", "parle"],
+   [150, "ensemble", "sourire"], [152, "Merci", "sourire"], [155, "opportunites", "sourire"]]}
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-import {AbsoluteFill, Sequence, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
 import {POLICE} from '../charte';
 import {usePolicesChargees} from '../Montage';
 import {AvantApres} from './AvantApres';
 import {CarteChoix, CarteTexte, SceneInspiration, SceneLogo} from './Cartes';
 import {CartePrompt, PromptFlowReel} from './CartePrompt';
 import {FondNuit, NUIT, OR, pop, prog, VERT} from './commun';
+import {DoubleFormation, Partage, type PropsDouble} from './DoubleFormation';
 import {ExtraitEcran} from './ExtraitEcran';
 import {GeneriqueAdhesion, GeneriqueFin, GeneriqueOuverture, GeneriqueServices, GeneriqueTalkami} from './Generiques';
 import {SceneBarre32, SceneBarriere30, SceneBesoins, SceneEmploye, SceneLimites, ScenePromptVague, SceneRecap,
@@ -17,7 +18,7 @@ type Plan = {debut: number; fin: number; type: string; props: Record<string, unk
 type Carton = {debut: number; fin: number; numero: number; titre: string};
 type SousTitre = {debut: number; fin: number; mots: {t: string; cle: boolean}[]};
 export type FormationProps = {duree: number; ouverture: number; plans: Plan[]; cartons: Carton[]; badges: Carton[];
-  sousTitres: SousTitre[]; hauteurVue: number};
+  sousTitres: SousTitre[]; hauteurVue: number; double?: PropsDouble};
 
 const ELEMENTS: Record<string, React.FC<any>> = {
   AvantApres, CarteChoix, CarteTexte, SceneInspiration, SceneLogo, Carte: CartePrompt, CarteFlow: PromptFlowReel,
@@ -30,7 +31,8 @@ const TOTAL_ETAPES = 7;
 const CartonEtape: React.FC<{numero: number; titre: string}> = ({numero, titre}) => {
   const t = useCurrentFrame();
   const k = pop(t, 0, 180);
-  const sortie = prog(t, 54, 10);
+  const {durationInFrames: d} = useVideoConfig();
+  const sortie = prog(t, d - 12, 10);
   return (
     <AbsoluteFill style={{opacity: 1 - sortie}}>
       <FondNuit teinte="violet" />
@@ -91,31 +93,42 @@ const SousTitres: React.FC<{st: SousTitre[]}> = ({st}) => {
   );
 };
 
-const Corps: React.FC<FormationProps> = ({ouverture, plans, cartons, badges, sousTitres}) => (
-  <AbsoluteFill style={{background: NUIT}}>
-    <Sequence durationInFrames={ouverture} name="Générique d'ouverture">
-      <GeneriqueOuverture />
-    </Sequence>
-    {plans.map((p, i) => {
-      const C = ELEMENTS[p.type];
-      return (
-        <Sequence key={i} from={p.debut} durationInFrames={Math.max(1, p.fin - p.debut)} name={`${p.type} ${i}`}>
-          <C {...p.props} />
-        </Sequence>
-      );
-    })}
-    {cartons.map((c) => (
-      <Sequence key={`c${c.numero}`} from={c.debut} durationInFrames={c.fin - c.debut} name={`Carton étape ${c.numero}`}>
-        <CartonEtape numero={c.numero} titre={c.titre} />
+// Un carton d'étape reste affiché pendant l'annonce du double (première phrase de l'étape) ; le badge vient après.
+const Corps: React.FC<FormationProps> = ({ouverture, plans, cartons, badges, sousTitres, double}) => {
+  const finCarton = (c: Carton) => Math.max(c.fin, double?.cartons.find((x) => x.numero === c.numero)?.fin ?? 0);
+  return (
+    <AbsoluteFill style={{background: NUIT}}>
+      <Sequence durationInFrames={ouverture} name="Générique d'ouverture">
+        <GeneriqueOuverture />
       </Sequence>
-    ))}
-    {badges.map((b) => (
-      <Sequence key={`b${b.numero}`} from={b.debut} durationInFrames={b.fin - b.debut} name={`Badge étape ${b.numero}`}>
-        <Badge numero={b.numero} titre={b.titre} />
-      </Sequence>
-    ))}
-    <SousTitres st={sousTitres} />
-  </AbsoluteFill>
-);
+      <Partage d={double}>
+        {plans.map((p, i) => {
+          const C = ELEMENTS[p.type];
+          return (
+            <Sequence key={i} from={p.debut} durationInFrames={Math.max(1, p.fin - p.debut)} name={`${p.type} ${i}`}>
+              <C {...p.props} />
+            </Sequence>
+          );
+        })}
+        {cartons.map((c) => (
+          <Sequence key={`c${c.numero}`} from={c.debut} durationInFrames={finCarton(c) - c.debut} name={`Carton étape ${c.numero}`}>
+            <CartonEtape numero={c.numero} titre={c.titre} />
+          </Sequence>
+        ))}
+      </Partage>
+      <DoubleFormation d={double} />
+      {badges.map((b) => {
+        const c = cartons.find((x) => x.numero === b.numero);
+        const debut = Math.max(b.debut, c ? finCarton(c) - 10 : 0);
+        return (
+          <Sequence key={`b${b.numero}`} from={debut} durationInFrames={b.fin - debut} name={`Badge étape ${b.numero}`}>
+            <Badge numero={b.numero} titre={b.titre} />
+          </Sequence>
+        );
+      })}
+      <SousTitres st={sousTitres} />
+    </AbsoluteFill>
+  );
+};
 
 export const Formation: React.FC<FormationProps> = (p) => (usePolicesChargees() ? <Corps {...p} /> : null);
