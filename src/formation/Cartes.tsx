@@ -200,3 +200,85 @@ const LogoCorps: React.FC<{etapes?: number[]}> = ({etapes}) => {
   );
 };
 export const SceneLogo = avecPolice(LogoCorps);
+
+// --- Joindre les clips dans Claude (étape 6) : nouvelle discussion, bouton d'ajout de fichiers, les 4 clips cochés
+// dans l'ordre, puis le prompt collé. Étapes : discussion, bouton +, clips, prompt. ---
+const PROMPT_COLLE = "Tu es un monteur vidéo professionnel. Je t'envoie 4 clips vidéo, dans l'ordre : clip 1, clip 2, clip 3, clip 4…";
+const COULEURS_CLIPS = ['#F0560F', '#1F5BFF', '#0E8F62', '#7B2FF7'];
+
+const PiecesJointesCorps: React.FC<{etapes?: number[]}> = ({etapes}) => {
+  const t = useCurrentFrame();
+  const {durationInFrames: d} = useVideoConfig();
+  const [eDiscussion, ePlus, eClips, eColler] = moments(etapes, 4, d, 0.05, 0.75);
+  const ouvert = prog(t, ePlus + 8, 10, Easing.out(Easing.cubic));
+  const ferme = prog(t, eClips + 4 * 9 + 14, 10, Easing.in(Easing.cubic));
+  const feuille = ouvert * (1 - ferme);
+  const coche = (i: number) => pop(t, eClips + i * 9);
+  const colle = pop(t, eColler);
+  const repere = (a: number, fin: number) => Math.min(prog(t, a - 4, 8), 1 - prog(t, fin, 6));
+  const kPlus = repere(ePlus, ePlus + 12);
+  const kJoindre = repere(eClips + 4 * 9, eClips + 4 * 9 + 12);
+  return (
+    <AbsoluteFill>
+      <FondNuit />
+      <Ligne texte="JOINDRE VOS 4 CLIPS" y={215} taille={66} couleur={OR} contour={8} k={pop(t, 0)} />
+      <TelephoneClaude x={CENTRE - 300} y={330} l={600} h={1100}>
+        {/* Nouvelle discussion */}
+        <div style={{position: 'absolute', left: 0, right: 0, top: 300, textAlign: 'center', fontFamily: POLICE,
+          fontWeight: 800, fontSize: 38, color: '#3A2E26', opacity: prog(t, eDiscussion, 10) * (1 - colle)}}>
+          Comment puis-je vous aider ?</div>
+        {/* Pièces jointes, dans l'ordre, au-dessus de la zone de saisie */}
+        <div style={{position: 'absolute', left: 30, right: 30, bottom: colle > 0 ? 300 : 140, display: 'flex', gap: 14}}>
+          {COULEURS_CLIPS.map((c, i) => {
+            const k = pop(t, eClips + 4 * 9 + 22 + i * 4);
+            return (
+              <div key={c} style={{width: 112, height: 150, borderRadius: 16, background: c, border: '3px solid #fff',
+                boxShadow: '0 6px 14px rgba(0,0,0,0.25)', display: 'flex', flexDirection: 'column', alignItems: 'center',
+                justifyContent: 'center', transform: `scale(${k})`, opacity: k > 0 ? 1 : 0}}>
+                <svg width={44} height={44} viewBox="0 0 44 44"><path d="M14 10 L34 22 L14 34 Z" fill="#fff" /></svg>
+                <span style={{fontFamily: POLICE, fontWeight: 900, fontSize: 26, color: '#fff'}}>clip {i + 1}</span>
+              </div>
+            );
+          })}
+        </div>
+        {/* Prompt collé dans la zone de saisie */}
+        <div style={{position: 'absolute', left: 24, right: 24, bottom: 130, borderRadius: 24, background: '#fff',
+          border: `3px solid ${OR}`, padding: '16px 20px', fontFamily: POLICE, fontWeight: 800, fontSize: 26,
+          color: '#3A2E26', lineHeight: 1.3, transform: `scale(${colle})`, transformOrigin: 'bottom center',
+          opacity: colle > 0 ? 1 : 0}}>{PROMPT_COLLE}</div>
+        {/* Bouton d'ajout de fichiers, dans la zone de saisie */}
+        <div style={{position: 'absolute', left: 40, bottom: 38, width: 70, height: 70, borderRadius: 35,
+          background: '#EFE8DD', border: '2px solid #CFC6B8', display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontFamily: POLICE, fontWeight: 900, fontSize: 52, color: '#3A2E26', lineHeight: 1}}>+</div>
+        {/* Sélecteur de fichiers : les 4 clips cochés dans l'ordre */}
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 760, borderRadius: '40px 40px 0 0',
+          background: '#fff', boxShadow: '0 -10px 40px rgba(0,0,0,0.25)', transform: `translateY(${(1 - feuille) * 780}px)`,
+          padding: '28px 30px'}}>
+          <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 36, color: '#3A2E26', marginBottom: 18}}>Fichiers</div>
+          {COULEURS_CLIPS.map((c, i) => (
+            <div key={c} style={{display: 'flex', alignItems: 'center', gap: 20, padding: '14px 0',
+              borderBottom: '2px solid #EEE7DC'}}>
+              <div style={{width: 84, height: 112, borderRadius: 12, background: c}} />
+              <span style={{flex: 1, fontFamily: POLICE, fontWeight: 800, fontSize: 32, color: '#3A2E26'}}>clip{i + 1}.mp4</span>
+              <div style={{width: 58, height: 58, borderRadius: 29, border: `4px solid ${coche(i) > 0 ? VERT : '#BDB3A5'}`,
+                background: coche(i) > 0 ? VERT : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontFamily: POLICE, fontWeight: 900, fontSize: 30, color: '#fff', transform: `scale(${0.85 + 0.15 * Math.min(1, coche(i))})`}}>
+                {coche(i) > 0 ? i + 1 : ''}</div>
+            </div>
+          ))}
+          <div style={{marginTop: 26, borderRadius: 30, background: '#D97757', textAlign: 'center', padding: '16px 0',
+            fontFamily: POLICE, fontWeight: 900, fontSize: 34, color: '#fff'}}>Joindre (4)</div>
+        </div>
+      </TelephoneClaude>
+      {/* Repères jaunes : bouton d'ajout, puis « Joindre » */}
+      <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
+        <circle cx={CENTRE - 300 + 18 + 75} cy={330 + 1100 - 18 - 73} r={62} fill="none" stroke={OR} strokeWidth={12}
+          opacity={kPlus} />
+        <circle cx={CENTRE} cy={330 + 1100 - 18 - 41} r={70} fill="none" stroke={OR} strokeWidth={12} opacity={kJoindre} />
+      </svg>
+      <Ligne texte={colle > 0 ? 'Puis collez le prompt' : ferme > 0 ? 'Les 4 clips, dans l\'ordre' : 'Touchez le bouton +'}
+        y={1452} taille={44} couleur="#fff" contour={6} k={pop(t, ePlus)} />
+    </AbsoluteFill>
+  );
+};
+export const ScenePiecesJointes = avecPolice(PiecesJointesCorps);

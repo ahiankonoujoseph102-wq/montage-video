@@ -61,6 +61,14 @@ export const StudioDecor: React.FC<{d?: PropsDouble}> = ({d}) => {
   return (
     <AbsoluteFill style={{background: COULEURS.nuitMur}}>
       <AbsoluteFill style={{top: 1600 * SC + OY, background: '#121836'}} />
+      {/* Le décor (mur, fenêtre, plante, bureau) prolongé en miroir sur les côtés : pas de bande unie. */}
+      <AbsoluteFill style={{transform: `translate(${OX}px, ${OY}px) scale(${-SC}, ${SC})`, transformOrigin: '0 0'}}>
+        <Decor2D /><Bureau2D />
+      </AbsoluteFill>
+      <AbsoluteFill style={{transform: `translate(${OX + 2 * 1080 * SC}px, ${OY}px) scale(${-SC}, ${SC})`,
+        transformOrigin: '0 0'}}>
+        <Decor2D /><Bureau2D />
+      </AbsoluteFill>
       <Scene><Decor2D /></Scene>
       <div style={{position: 'absolute', left: ECRAN.x, top: ECRAN.y, width: ECRAN.l, height: ECRAN.h, background: NUIT,
         borderRadius: 14}} />

@@ -3,10 +3,10 @@ import {AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig} from 'remotion'
 import {POLICE} from '../charte';
 import {usePolicesChargees} from '../Montage';
 import {AvantApres} from './AvantApres';
-import {CarteChoix, CarteTexte, SceneInspiration, SceneLogo} from './Cartes';
+import {CarteChoix, CarteTexte, SceneInspiration, SceneLogo, ScenePiecesJointes} from './Cartes';
 import {CartePrompt, PromptFlowReel} from './CartePrompt';
 import {FondNuit, NUIT, OR, pop, prog, VERT} from './commun';
-import {CartonRetenir, type Illustration, Illustrations} from './Ajouts';
+import {CartonRetenir, type Illustration, Illustrations, type Note, Notes} from './Ajouts';
 import {DoubleFormation, Partage, type PropsDouble, StudioDecor} from './DoubleFormation';
 import {ExtraitEcran} from './ExtraitEcran';
 import {GeneriqueAdhesion, GeneriqueFin, GeneriqueOuverture, GeneriqueServices, GeneriqueTalkami} from './Generiques';
@@ -24,7 +24,7 @@ export type FormationProps = {duree: number; ouverture: number; plans: Plan[]; c
   sousTitres: SousTitre[]; hauteurVue: number; double?: PropsDouble};
 
 const ELEMENTS: Record<string, React.FC<any>> = {
-  AvantApres, CarteChoix, CarteTexte, SceneInspiration, SceneLogo, Carte: CartePrompt, CarteFlow: PromptFlowReel,
+  AvantApres, CarteChoix, CarteTexte, SceneInspiration, SceneLogo, ScenePiecesJointes, Carte: CartePrompt, CarteFlow: PromptFlowReel,
   Extrait: ExtraitEcran, GeneriqueServices, GeneriqueAdhesion, GeneriqueTalkami, GeneriqueFin, SceneBarre32,
   SceneBarriere30, SceneBesoins, SceneEmploye, SceneLimites, ScenePromptVague, SceneRecap, SceneReglages, SceneWhatsAppFlou,
 };
@@ -109,6 +109,7 @@ const Corps: React.FC<FormationProps> = ({ouverture, plans, cartons, retenirs = 
           <Sequence key={i} from={p.debut} durationInFrames={Math.max(1, p.fin - p.debut)} name={`${p.type} ${i}`}>
             <C {...p.props} />
             <Illustrations liste={p.props.illustrations as Illustration[] | undefined} />
+            <Notes liste={p.props.notes as Note[] | undefined} />
           </Sequence>
         );
       })}

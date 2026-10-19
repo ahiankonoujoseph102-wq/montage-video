@@ -81,3 +81,34 @@ export const Illustrations: React.FC<{liste?: Illustration[]}> = ({liste}) => {
   );
 };
 
+
+// Étiquette d'explication posée sur un écran filmé quand l'écran ne fait pas exactement ce que dit la voix
+// (« Ici je dicte le prompt — vous pouvez aussi le coller »). En haut de la zone sûre, ou en bas (« bas »).
+export type Note = {texte: string; a: number; duree: number; position?: 'haut' | 'bas'};
+
+export const Notes: React.FC<{liste?: Note[]}> = ({liste}) => {
+  const t = useCurrentFrame();
+  if (!liste) return null;
+  return (
+    <>
+      {liste.map((n) => {
+        const a = Math.round(n.a * 30);
+        if (t < a || t >= a + n.duree) return null;
+        const k = Math.min(pop(t, a, 240), 1 - prog(t, a + n.duree - 8, 8));
+        return (
+          <div key={n.texte} style={{position: 'absolute', left: Z.gauche, width: LARGEUR_UTILE,
+            top: n.position === 'bas' ? 1310 : Z.haut + 20, display: 'flex', justifyContent: 'center',
+            transform: `scale(${Math.max(0, k)})`, opacity: k > 0.02 ? 1 : 0}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: 18, background: '#fff', border: `6px solid ${OR}`,
+              borderRadius: 28, padding: '14px 26px', boxShadow: '0 16px 40px rgba(0,0,0,0.55)'}}>
+              <span style={{flexShrink: 0, width: 58, height: 58, borderRadius: 29, background: OR, color: NUIT,
+                fontFamily: POLICE, fontWeight: 900, fontSize: 40, display: 'flex', alignItems: 'center',
+                justifyContent: 'center'}}>i</span>
+              <span style={{fontFamily: POLICE, fontWeight: 900, fontSize: 40, color: NUIT, lineHeight: 1.18}}>{n.texte}</span>
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};

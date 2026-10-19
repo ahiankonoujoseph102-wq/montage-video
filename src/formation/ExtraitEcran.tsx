@@ -65,6 +65,8 @@ const RepereAnime: React.FC<{r: Repere; f: number; X: number; Y: number}> = ({r,
 };
 
 const L = 1080;
+// Écran recadré en hauteur : les lignes coupées en haut et en bas s'effacent en fondu.
+const FONDU_BORDS = 'linear-gradient(to bottom, transparent 0, #000 70px, #000 calc(100% - 70px), transparent 100%)';
 const H = 2400;
 
 const cadrage = (f: number, zooms: ZoomExtrait[], hv: number) => {
@@ -82,7 +84,8 @@ const cadrage = (f: number, zooms: ZoomExtrait[], hv: number) => {
   const u = b.image === a.image ? 1 : interpolate(f, [a.image, b.image], [0, 1],
     {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
   const ajuste = (z: number) => (z < 1 ? (hv / H) * (z / 0.85) : z);
-  const z = ajuste(a.zoom) + (ajuste(b.zoom) - ajuste(a.zoom)) * u;
+  // Jamais plus que la largeur de l'écran (zoom 1) : une ligne de texte n'est jamais coupée sur les bords.
+  const z = Math.min(1, ajuste(a.zoom) + (ajuste(b.zoom) - ajuste(a.zoom)) * u);
   const cx = a.x + (b.x - a.x) * u;
   const cy = a.y + (b.y - a.y) * u;
   // Position : le point (cx, cy) au centre, sans laisser de vide quand l'écran dépasse l'image.
@@ -105,7 +108,8 @@ export const ExtraitEcran: React.FC<PropsExtrait> = ({video, dureeImages, zooms,
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <FondNuit />
-      <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: hauteurVue, overflow: 'hidden'}}>
+      <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: hauteurVue, overflow: 'hidden',
+        ...(H * z > hauteurVue + 1 ? {WebkitMaskImage: FONDU_BORDS, maskImage: FONDU_BORDS} : {})}}>
         <div style={{position: 'absolute', left: x, top: y, width: L, height: H, transform: `scale(${z})`,
           transformOrigin: '0 0', borderRadius: coins / z, overflow: 'hidden',
           boxShadow: z < 1 ? '0 30px 80px rgba(0,0,0,0.6)' : 'none'}}>

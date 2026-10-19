@@ -188,8 +188,12 @@ for _ in range(8):
             manque = True
     if not manque:
         break
-prolongs = [(cfg["plans"][plan_de[k] - 1]["id"], c["plus"]) for k, c in coupures.items() if c["plus"] > 0]
+prolongs = [(cfg["plans"][plan_de[k] - 1].get("id", cfg["plans"][plan_de[k] - 1]["type"]), c["plus"])
+            for k, c in coupures.items() if c["plus"] > 0]
 print("Extraits prolongés :", ", ".join(f"{n} +{d:.1f} s" for n, d in prolongs) or "aucun")
+for n, d in prolongs:
+    if d > 8:
+        print(f"ATTENTION : {n} laisse {d:.1f} s sans voix (8 s au plus) : raccourcir l'extrait")
 
 plans_props = []
 cartons, badges, retenirs = [], [], []
@@ -220,13 +224,13 @@ for i, p in enumerate(cfg["plans"]):
         props["etapes"] = [rel(a) for a in p["etapes"]]
         if "etapeActif" in p:
             props["etapeActif"] = rel(p["etapeActif"])
-    if "illustrations" in p:
-        props["illustrations"] = []
-        for x in p["illustrations"]:
-            a = 0.0 if x["a"] == "debut" else rel(x["a"])
-            f_il = (fin - debut if x["fin"] == "fin" else rel(x["fin"])) if "fin" in x else a + x["duree"]
-            props["illustrations"].append({**{c: v for c, v in x.items() if c != "fin"}, "a": a,
-                                           "duree": round((f_il - a) * FPS)})
+    for cle in ("illustrations", "notes"):  # photos et étiquettes posées sur le plan, de « a » à « fin »
+        if cle in p:
+            props[cle] = []
+            for x in p[cle]:
+                a = 0.0 if x["a"] == "debut" else rel(x["a"])
+                f_il = (fin - debut if x["fin"] == "fin" else rel(x["fin"])) if "fin" in x else a + x["duree"]
+                props[cle].append({**{c: v for c, v in x.items() if c != "fin"}, "a": a, "duree": round((f_il - a) * FPS)})
     plans_props.append({"debut": round(debut * FPS), "fin": round(fin * FPS), "type": t, "props": props,
                         "generique": bool(p.get("generique"))})
 
