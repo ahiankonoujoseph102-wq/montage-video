@@ -3,6 +3,7 @@ import {loadFont} from '@remotion/fonts';
 import {Composition, staticFile} from 'remotion';
 import {Montage} from './Montage';
 import {Transition, TransitionProps} from './Transition';
+import {CompositionsFormation} from './formation/Compositions';
 import type {MontageProps} from './types';
 
 loadFont({family: 'Montserrat', url: staticFile('polices/montserrat-latin-800-normal.woff2'), weight: '800'});
@@ -35,5 +36,6 @@ export const Root: React.FC = () => (
     defaultProps={exemple}
     calculateMetadata={({props}) => ({durationInFrames: Math.max(1, props.dureeImages)})}
   />
+  <CompositionsFormation />
   </>
 );
