@@ -1,0 +1,188 @@
+﻿Lomé IA School
+Formation « Monter n'importe quelle vidéo avec l'IA »
+Partie 1 : avec Claude gratuit — voix off, prompts et génériques
+Mode d'emploi de ce document
+Les paragraphes avec une barre violette à gauche sont la voix off : c'est le texte à lire et à enregistrer.
+Les lignes « À L'ÉCRAN » ne se lisent pas : elles indiquent à Claude Code quelles images montrer pendant le montage. Les temps renvoient au rapport d'analyse (enregistrement n° 1 et n° 2).
+Les encadrés bleus sont les prompts à afficher à l'écran et à donner aux élèves dans le document de la formation. Ils remplacent les prompts dictés pendant la démonstration, qui étaient incomplets.
+Durée estimée de la voix off de la partie 1 : environ 22 à 24 minutes, génériques compris. Conseil : enregistrez section par section (un fichier par section), dans une pièce calme, le téléphone à 20 centimètres de la bouche.
+Notes importantes pour Joseph (ne pas lire)
+1. Changement de compte Google quand les crédits sont épuisés : inclus, à votre demande (section 8). Masquer les adresses e-mail au montage. Attention : Google peut limiter cette pratique ou changer ses conditions à tout moment, donc on ne le présente pas comme une garantie.
+2. Ne pas enseigner à « cacher à Google Flow que c'est une vraie photo ». On enseigne la méthode propre : un personnage fictif créé par l'IA. Celui qui veut apparaître lui-même se filme avec son téléphone, et c'est le cas « vidéo filmée » de la formation.
+3. Le test réel montre que Claude gratuit sait monter une vidéo courte, mais avec des limites : 30 Mo maximum par fichier envoyé, nombre de messages limité, et il ne réécoute pas toujours le son (il a laissé passer « À mercredi » répété). On le dit honnêtement.
+4. Informations privées à couper ou flouter au montage : sélecteurs de comptes Google et adresses e-mail, captures MTN MoMo (nom et numéro d'une autre personne), menu de partage avec contacts, historiques ChatGPT, Claude et Chrome, notifications, listes de discussions WhatsApp, barre d'état. Liste complète dans la partie 6 du rapport.
+5. La démonstration utilisait CapCut pour coller les clips. Dans la formation, on enseigne la méthode sans CapCut : envoyer les clips séparément à Claude, qui les assemble lui-même.
+0. Générique d'ouverture (8 secondes)
+À L'ÉCRAN : Logo Lomé IA School qui s'illumine, titre « Monter n'importe quelle vidéo avec l'IA », sous-titre « Partie 1 : avec Claude gratuit », musique courte et énergique. Pas de voix.
+1. Introduction (environ 1 min 30)
+À L'ÉCRAN : Avant / après : la vidéo d'origine (32 s, sans sous-titres) puis la vidéo montée par Claude gratuit (18 s), côte à côte ou l'une après l'autre.
+Regardez bien ces deux vidéos. À gauche, quatre clips bruts, avec des silences, sans sous-titres, sans musique. À droite, la même vidéo… montée en quelques minutes par une intelligence artificielle. Gratuitement.
+Bienvenue dans cette formation de Lomé IA School. Je suis Coach Joseph, et aujourd'hui, je vais vous apprendre à monter n'importe quelle vidéo avec l'intelligence artificielle. Sans logiciel compliqué. Sans passer des heures sur votre téléphone. C'est l'IA qui fait le montage, et vous, vous donnez les instructions.
+Cette formation se déroule en deux parties. Dans cette première partie, nous utilisons uniquement des outils gratuits : ChatGPT, Google Flow et Claude dans sa version gratuite. Dans la deuxième partie, nous passerons à Claude Code, la version payante, pour des montages longs et encore plus professionnels.
+À la fin de cette première partie, vous saurez faire deux choses. Un : créer une vidéo publicitaire complète avec l'IA, sans vous filmer. Deux : faire monter par Claude n'importe quelle vidéo, que vous l'ayez créée avec l'IA ou filmée vous-même.
+2. Ce dont vous avez besoin (environ 1 min)
+À L'ÉCRAN : Icônes animées qui apparaissent une à une : téléphone, connexion internet, ChatGPT, Google (Google Flow), Claude, Google Chrome.
+Pour suivre cette partie, il vous faut très peu de choses. Un téléphone. Une connexion internet. Un compte ChatGPT gratuit. Un compte Google, pour utiliser Google Flow, l'outil de Google qui crée des vidéos avec l'IA. Et un compte Claude gratuit, que vous créez sur le site claude.ai. Je vous conseille d'utiliser Claude dans le navigateur Chrome : c'est là que le bouton de téléchargement des vidéos est le plus facile à trouver.
+Deux situations sont possibles. Soit vous n'avez pas de vidéo, et nous allons la créer ensemble avec l'IA. Soit vous avez déjà filmé une vidéo, par exemple vous-même face à votre téléphone, et vous voulez seulement la faire monter. Les deux cas sont dans cette formation.
+3. Comprendre l'IA et le prompt (environ 1 min 30)
+À L'ÉCRAN : Animation : un employé qui arrive dans une nouvelle entreprise, avec une bulle « Que voulez-vous que je fasse ? ». Puis deux colonnes : « Prompt vague → résultat moyen » et « Prompt précis → résultat professionnel ».
+Avant de commencer, une chose essentielle. L'IA a été entraînée sur une quantité énorme de textes, d'images et de vidéos. Elle sait faire beaucoup de choses. Mais elle ne sait pas ce que VOUS voulez.
+Imaginez un employé très doué qui arrive dans votre entreprise. Il est intelligent, rapide, compétent… mais il ne connaît ni vos clients, ni vos prix, ni votre style. C'est à vous de tout lui expliquer. Avec l'IA, c'est pareil. L'instruction que vous lui donnez s'appelle un prompt.
+Retenez cette règle : un prompt vague donne un résultat moyen. Un prompt précis donne un résultat professionnel. Dans cette formation, je vous donne des prompts prêts à l'emploi. Vous n'aurez qu'à remplacer les parties entre crochets par vos propres informations.
+Et rassurez-vous : vous n'avez rien à recopier depuis la vidéo. Tous les prompts de cette formation se trouvent dans un document, que vous retrouverez dans le groupe VIP. Il vous suffira de copier, coller et compléter. Dans la vidéo, je vous explique chaque prompt, pour que vous compreniez pourquoi chaque ligne est là, et que vous sachiez l'adapter à votre propre vidéo.
+4. Étape 1 : écrire le script avec ChatGPT (environ 2 min)
+À L'ÉCRAN : Enregistrement n° 1, 1:10 à 3:50 (ChatGPT, nouvelle discussion, réponses avec plusieurs versions). Masquer le sélecteur de comptes (0:53 à 1:06) et le menu de partage (3:12). Afficher en grand le prompt ci-dessous.
+Première étape : le script. C'est le texte qui sera prononcé dans la vidéo. Ouvrez ChatGPT, commencez une nouvelle discussion, et donnez-lui ce prompt. Remplacez les crochets par vos informations : ce que vous vendez ou annoncez, la date, le prix, votre contact.
+PROMPT 1 — Écrire le script
+Tu es un expert en publicité vidéo pour TikTok, Facebook et les statuts WhatsApp.
+Écris le script d'une vidéo publicitaire de 30 secondes maximum, en français simple, pour : [ce que j'annonce ou ce que je vends].
+Public visé : [à qui je m'adresse].
+Informations obligatoires : [date, lieu ou lien, prix, numéro WhatsApp].
+Ton : [dynamique / chaleureux / professionnel].
+Structure : une accroche forte dans les 3 premières secondes, le bénéfice principal, les informations utiles, puis un appel à l'action clair.
+Propose-moi 3 versions différentes et indique la durée estimée de chacune.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Regardez comment ce prompt est construit. Première ligne : je donne un rôle à ChatGPT, « expert en publicité vidéo ». Il va écrire comme un professionnel. Ensuite, je précise la durée : 30 secondes maximum. Puis ce que j'annonce, et à qui je m'adresse. Ensuite, les informations obligatoires : la date, le prix, le numéro WhatsApp. Si vous ne les donnez pas, ChatGPT les oublie, ou pire, il les invente. Je choisis aussi le ton. La ligne « structure » est la plus importante : une accroche dans les 3 premières secondes, sinon les gens passent à la vidéo suivante. Et enfin, je demande 3 versions, pour avoir le choix.
+ChatGPT vous propose plusieurs versions. Choisissez celle que vous préférez. Si elle est trop longue, dites-lui simplement : « Je choisis la version 2, mais raccourcis-la à 30 secondes. » Une astuce : un texte de 30 secondes, c'est environ 70 à 80 mots. Au-delà, la vidéo sera trop longue.
+5. Étape 2 : découper le script en scènes de 8 secondes (environ 1 min 30)
+À L'ÉCRAN : Enregistrement n° 1, 3:52 à 4:45 (« Divise-moi en un script de vidéo de 30 secondes… »), puis le prompt ci-dessous en grand. Animation : une barre de 32 secondes découpée en 4 blocs de 8 secondes.
+Deuxième étape. Google Flow crée des vidéos de 8 secondes maximum. Une vidéo de 30 secondes, c'est donc environ 4 scènes de 8 secondes. On demande à ChatGPT de découper le script, et de prévoir une phrase courte par scène, pour qu'elle tienne en 8 secondes.
+PROMPT 2 — Découper en scènes
+Je choisis la version [numéro]. Je vais créer la vidéo avec Google Flow, qui génère des clips de 8 secondes.
+Découpe le script en 4 scènes de 8 secondes exactement.
+Pour chaque scène, donne : la phrase exacte prononcée (15 mots maximum, pour qu'elle tienne en 8 secondes), le décor, la position du personnage, ses gestes et le cadrage.
+Garde le même personnage, la même tenue et le même décor dans les 4 scènes.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Dans ce prompt, je rappelle à ChatGPT l'outil que j'utilise, Google Flow, et sa limite de 8 secondes. Je lui demande 4 scènes, avec au maximum 15 mots par phrase : c'est ce qui tient dans 8 secondes. Pour chaque scène, il décrit le décor, les gestes et le cadrage. Et la dernière ligne est essentielle : même personnage, même tenue, même décor. Sans elle, votre présentateur peut changer de visage d'une scène à l'autre.
+6. Étape 3 : créer le personnage (environ 2 min)
+À L'ÉCRAN : Enregistrement n° 1, 5:48 à 6:30 (ChatGPT génère l'image du présentateur au bureau). Ne pas montrer la photo personnelle ni Google Photos (5:06 à 5:16), ni les captures MoMo. Afficher le prompt ci-dessous.
+Troisième étape : le présentateur de votre vidéo. Vous allez demander à ChatGPT de créer l'image d'un personnage fictif, c'est-à-dire une personne qui n'existe pas, créée par l'IA. Cette image servira de point de départ dans Google Flow, et c'est elle qui garantit que le même personnage apparaît dans toutes vos scènes.
+Attention : Google Flow refuse en général de faire parler une vraie personne à partir de sa photo. C'est une protection contre les fausses vidéos. La bonne méthode, c'est donc le personnage fictif. Et si vous voulez apparaître vous-même, c'est simple : filmez-vous avec votre téléphone. Nous verrons ce cas un peu plus loin.
+PROMPT 3 — Créer l'image du personnage
+Crée l'image d'un personnage fictif, généré par IA, qui présentera ma vidéo publicitaire.
+Description : [homme ou femme], environ [âge] ans, [tenue, par exemple : costume bleu marine et chemise blanche], [coiffure].
+Décor : [par exemple : bureau moderne et lumineux, avec un ordinateur portable].
+Format vertical 9:16, style photo réaliste, lumière naturelle, il regarde la caméra avec un léger sourire.
+Ce personnage ne doit ressembler à aucune personne réelle.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Dans ce prompt, je décris mon personnage comme si je parlais à un photographe : homme ou femme, âge, tenue, coiffure. Puis le décor. Ensuite, trois réglages importants : le format vertical 9:16, le style photo réaliste, et le regard vers la caméra, pour qu'il parle directement à vos clients. La dernière ligne précise qu'il ne doit ressembler à aucune personne réelle.
+Quand l'image vous plaît, téléchargez-la sur votre téléphone. Vous en aurez besoin dans Google Flow.
+7. Étape 4 : les prompts pour Google Flow (environ 1 min 30)
+À L'ÉCRAN : Enregistrement n° 1, 7:24 à 8:08 (série de 4 prompts avec le personnage fictif). Afficher le prompt ci-dessous, puis un extrait d'un prompt Google Flow réel (scène 1) avec les mots clés surlignés : vertical 9:16, exactly 8 seconds, exact dialogue, lip synchronization, no subtitles.
+Quatrième étape : les prompts de Google Flow. Google Flow comprend mieux l'anglais. On demande donc à ChatGPT d'écrire un prompt en anglais pour chaque scène, tout en gardant la phrase prononcée en français.
+PROMPT 4 — Prompts Google Flow
+Écris maintenant, pour chacune des 4 scènes, un prompt en anglais prêt à coller dans Google Flow.
+Chaque prompt doit :
+- décrire précisément le même personnage fictif (visage, coiffure, tenue) pour garder la continuité ;
+- préciser « vertical 9:16, exactly 8 seconds, one continuous shot » ;
+- donner la réplique exacte en français entre guillemets, avec « accurate French lip synchronization » ;
+- terminer par « No subtitles, no text overlays, no music ».
+Numérote les prompts de 1 à 4.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Ici, ChatGPT écrit les prompts en anglais à votre place. Chaque prompt décrit le même personnage avec les mêmes mots : c'est ce qui garde la continuité. Il précise le format vertical, la durée de 8 secondes et un seul plan continu. La phrase en français est mise entre guillemets, avec une demande de synchronisation des lèvres, pour que la bouche bouge au rythme des mots.
+Pourquoi « pas de sous-titres, pas de texte, pas de musique » ? Parce que c'est Claude qui ajoutera tout cela au montage, proprement. Si Google Flow met déjà du texte dans l'image, on ne pourra plus l'enlever.
+8. Étape 5 : générer les vidéos dans Google Flow (environ 2 min 30)
+À L'ÉCRAN : Montrer le changement de compte Google sans jamais afficher les adresses e-mail (flou). Enregistrement n° 1 : 8:10 à 9:30 (Chrome → Google Flow, Nouveau projet, import de l'image, collage du prompt, réglages). Mettre en évidence les réglages : Vidéo, 9:16, Veo 3.1 – Fast, x1. Accélérer les attentes de génération (9:30 à 10:58, 13:42 à 14:58, 16:54 à 17:54, 18:48 à 19:58). Montrer 10:58 à 11:40 (scène 1 générée et téléchargée). Masquer tous les sélecteurs de comptes et l'écran des crédits avec l'adresse e-mail.
+Cinquième étape. Dans Chrome, ouvrez Google Flow et touchez « Nouveau projet ». Importez l'image de votre personnage comme image de départ. Collez le prompt de la scène 1. Puis, avant de lancer, vérifiez trois réglages.
+Un : le format 9:16, c'est-à-dire vertical. C'est le format de TikTok, des Reels et des statuts WhatsApp. Le 16:9, horizontal, c'est pour YouTube. Deux : le modèle Veo, en version rapide, « Fast ». Trois : une seule vidéo à la fois, « x1 ». Générer deux versions consomme deux fois plus de crédits.
+Car oui, Google Flow fonctionne avec des crédits, et la quantité gratuite est limitée. Pendant mon essai, chaque vidéo de 8 secondes a coûté 20 crédits. Ne gaspillez pas : relisez votre prompt avant de lancer, et restez sur la page pendant la génération. Si vous quittez la page, la génération peut échouer, et les crédits sont perdus.
+Et si vos crédits sont épuisés avant la fin ? Touchez votre photo de profil en haut, déconnectez-vous, puis connectez-vous avec un autre compte Google qui vous appartient. Vous retrouvez des crédits sur ce compte, et vous continuez vos scènes. Pensez seulement à garder la même image de départ et les mêmes prompts, pour que votre personnage reste identique. Sachez aussi que Google peut changer ses règles à tout moment.
+Quand la scène est prête, regardez-la, puis téléchargez-la. Recommencez avec les scènes 2, 3 et 4, toujours avec la même image de départ. À la fin, vous avez quatre clips de 8 secondes sur votre téléphone.
+Générique publicitaire 1 : les services de Lomé IA School (15 secondes)
+À L'ÉCRAN : Coupure de style « pause publicitaire » : logo Lomé IA School, icônes animées (site web, application, agent IA, vidéo, automatisation), numéro WhatsApp. Musique.
+Petite pause. Saviez-vous que Lomé IA School réalise aussi vos projets ? Sites web, applications, agents IA, vidéos, automatisations : tout ce qui concerne l'intelligence artificielle, nous le faisons pour vous. Nous formons et accompagnons aussi les entreprises. Écrivez-nous sur WhatsApp, au 72 24 02 31.
+9. Étape 6 : préparer l'envoi à Claude — la règle des 30 Mo (environ 2 min)
+À L'ÉCRAN : Enregistrement n° 1, 26:00 à 26:50 puis 28:54 à 29:10 (« Impossible d'importer… Échec du téléchargement »). Grande animation : un fichier « 32,5 Mo » qui rebondit sur une barrière « 30 Mo maximum ». Puis 4 petits fichiers de 2 Mo qui passent.
+Maintenant, le montage. Et avant tout, une règle très importante, que j'ai moi-même apprise pendant cette démonstration. Regardez : j'envoie ma vidéo à Claude… et le message dit « échec ». J'ai d'abord cru à un problème de connexion. En réalité, ma vidéo pesait 32,5 mégaoctets. Or Claude accepte des fichiers de 30 mégaoctets au maximum.
+La solution est simple : n'assemblez pas les clips vous-même. Envoyez directement à Claude les quatre clips téléchargés depuis Google Flow. Chacun pèse seulement quelques mégaoctets, et c'est Claude qui va les assembler. Vous gardez ainsi la meilleure qualité.
+Et surtout, une erreur à ne jamais faire : envoyer une copie de la vidéo qui est passée par WhatsApp. WhatsApp compresse fortement les vidéos, et le résultat devient flou. Utilisez toujours les fichiers d'origine.
+10. Étape 7 : le montage avec Claude gratuit (environ 3 min)
+À L'ÉCRAN : Enregistrement n° 2, 0:38 à 1:36 (le prompt « MISSION » envoyé, la réponse de Claude, la version 1 lue). Puis afficher le prompt ci-dessous en grand, section par section, avec une petite icône pour chaque règle.
+Ouvrez claude.ai dans Chrome, connectez-vous à votre compte gratuit et commencez une nouvelle discussion. Touchez le bouton d'ajout de fichiers et joignez vos quatre clips, dans l'ordre. Puis collez ce prompt de montage. C'est le prompt le plus important de la formation : prenez le temps de le compléter.
+PROMPT 5 — Le montage complet (clips créés avec l'IA)
+Tu es un monteur vidéo professionnel. Je t'envoie [4] clips vidéo, dans l'ordre : clip 1, clip 2, clip 3, clip 4.
+Assemble-les en une seule vidéo publicitaire et renvoie-moi le fichier MP4 final, téléchargeable. Utilise ton environnement de code (par exemple ffmpeg).
+ 
+Texte prononcé dans la vidéo (pour les sous-titres) :
+[colle ici le script final]
+ 
+1. Format vertical 1080×1920, MP4 (H.264 et AAC), moins de 20 Mo.
+2. Coupe les silences de plus de 0,3 seconde et les répétitions, sans couper de mot.
+3. Titre d'accroche en gros pendant les 2 premières secondes : « [mon titre] ».
+4. Sous-titres en français, gros, blancs avec contour noir, mots clés en jaune : [mots importants]. Ils ne doivent jamais cacher le visage.
+5. Illustrations : petites animations bien visibles sur téléphone (icônes, étiquettes) quand on parle de [thèmes].
+6. Musique douce et énergique, toujours plus faible que la voix.
+7. À la fin, pendant 4 secondes, affiche : [informations finales], avec le numéro WhatsApp [numéro] en très grand.
+8. Avant de m'envoyer la vidéo, vérifie : aucun mot coupé, aucune répétition, orthographe correcte, numéro exact.
+Ne dis jamais que la vidéo est prête si le fichier n'a pas réellement été créé.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Prenons ce prompt partie par partie. D'abord, je donne un rôle à Claude : monteur vidéo professionnel. Je lui dis combien de clips j'envoie, et dans quel ordre. Et je lui demande clairement de me renvoyer un fichier MP4 téléchargeable, avec ses outils de code. Ensuite, je colle mon script : grâce à lui, les sous-titres seront sans faute. Puis viennent huit règles. Le format vertical, et un poids de moins de 20 mégaoctets. La coupe des silences, sans couper de mot. Un titre d'accroche pendant les 2 premières secondes. Des sous-titres bien lisibles, avec les mots importants en jaune, qui ne cachent jamais le visage. Des illustrations visibles sur téléphone. Une musique plus faible que la voix. Une carte de fin, avec votre numéro en grand. Et une vérification complète avant l'envoi. La dernière phrase est importante : elle oblige Claude à être honnête, et à ne jamais annoncer une vidéo qui n'existe pas.
+Claude va travailler quelques minutes, puis vous donner votre vidéo. Regardez-la entièrement, avec le son. La première version est rarement parfaite, et c'est normal. C'est l'étape suivante qui fait la différence.
+Vous voulez un style précis ? Montrez un exemple
+À L'ÉCRAN : Animation : trois captures d'une vidéo d'exemple qui glissent dans la discussion Claude.
+Si vous avez vu une vidéo dont vous aimez le style, faites quelques captures d'écran de cette vidéo et envoyez-les à Claude avec vos clips. Ajoutez simplement au prompt :
+COMPLÉMENT — Vidéo d'inspiration
+Je t'envoie aussi [3] captures d'écran d'une vidéo dont j'aime le style.
+Inspire-toi de : [la taille et la couleur des sous-titres / les animations / le rythme / la carte de fin].
+Ne copie ni le texte, ni le logo, ni les images de cette vidéo.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Dans ce complément, vous dites à Claude ce que vous aimez dans cette vidéo : les sous-titres, les animations, le rythme, la carte de fin. Et vous précisez qu'il ne doit pas la copier. On s'inspire d'un style ; on ne reprend jamais le contenu des autres.
+Vous avez filmé votre propre vidéo ?
+À L'ÉCRAN : Exemple : une personne qui se filme face à son téléphone, puis la même vidéo montée avec sous-titres et coupes. Afficher le prompt ci-dessous.
+Si vous vous êtes filmé vous-même, la méthode est la même, avec un prompt adapté. Une condition : votre vidéo doit peser moins de 30 mégaoctets. Pour cela, filmez des vidéos courtes, d'environ 30 secondes à une minute. Et si vous avez le texte de ce que vous dites, donnez-le à Claude : les sous-titres seront parfaits.
+PROMPT 6 — Monter une vidéo filmée
+Tu es un monteur vidéo professionnel. Je t'envoie une vidéo que j'ai filmée moi-même, face à la caméra.
+Fais-en un montage dynamique et renvoie-moi le fichier MP4 final, téléchargeable.
+Voici ce que je dis dans la vidéo : [colle ton texte, ou écris « transcris-le toi-même si tu peux »].
+1. Format vertical 1080×1920, moins de 20 Mo.
+2. Coupe les silences, les « euh », les hésitations et les phrases répétées, sans couper de mot utile.
+3. Ajoute un léger zoom à chaque coupe pour rendre le rythme dynamique.
+4. Titre d'accroche pendant 2 secondes : « [mon titre] ».
+5. Sous-titres gros, blancs avec contour noir, mots clés en jaune.
+6. Musique douce, plus faible que ma voix.
+7. Carte de fin de 4 secondes avec : [nom, offre, numéro WhatsApp].
+8. Vérifie tout avant de m'envoyer la vidéo.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Ce prompt ressemble au précédent, avec deux différences importantes. La deuxième règle demande de couper les « euh », les hésitations et les phrases répétées : quand on se filme, on en fait toujours. Et la troisième règle ajoute un léger zoom à chaque coupe : cela cache les coupures et rend la vidéo plus dynamique.
+11. Étape 8 : corriger et télécharger (environ 2 min)
+À L'ÉCRAN : Enregistrement n° 2 : 1:38 à 2:12 (« Coupe les silences… » puis la version 2 avec illustrations), 2:14 à 2:20 (correction avec l'instant précis), 2:21 à 2:38 (claude.ai dans Chrome, bouton Télécharger). Masquer l'adresse de la discussion et les notifications.
+Claude ne réécoute pas toujours le son de la vidéo qu'il vient de créer. Pendant mon essai, il a laissé une répétition à la fin. Votre rôle, c'est de vérifier. Et pour corriger, soyez précis : donnez le moment exact, en secondes.
+PROMPT 7 — Corriger un détail
+À [20] secondes, [décris le problème : il y a une répétition / le sous-titre est faux / le numéro est trop petit].
+Corrige uniquement ce point, garde tout le reste à l'identique, et renvoie-moi la vidéo.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+La correction tient en deux lignes. D'abord, le moment exact et le problème. Puis : « corrige uniquement ce point, et garde tout le reste ». Sans cette phrase, Claude risque de refaire tout le montage, et de changer ce qui était déjà bien.
+Pour télécharger, utilisez claude.ai dans Chrome : sous la vidéo, touchez « Télécharger ». Si le fichier est trop lourd pour votre connexion, demandez simplement une version plus légère.
+PROMPT 8 — Version légère
+Le fichier est trop lourd pour ma connexion. Fais-moi une version de moins de 10 Mo, sans changer le montage.
+
+À L'ÉCRAN : Chaque ligne du prompt s'allume à l'écran au moment où elle est expliquée.
+Une seule phrase suffit : la taille voulue, et « sans changer le montage ».
+Et voilà : votre vidéo est prête à être publiée sur TikTok, Facebook, Instagram ou en statut WhatsApp.
+Générique publicitaire 2 : l'adhésion à vie (15 secondes)
+À L'ÉCRAN : Logo Lomé IA School, liste animée : toutes les formations, mises à jour, accompagnement sur vos projets. Prix « 150 000 F CFA, payable en plusieurs tranches ». Numéros WhatsApp.
+Vous voulez aller plus loin ? Rejoignez Lomé IA School à vie. Une seule adhésion pour accéder à toutes nos formations, à toutes les mises à jour, et à un accompagnement personnel dans vos projets, quelle que soit leur taille. L'adhésion est de 150 000 francs CFA, payable en plusieurs tranches. Contactez-nous sur WhatsApp, au 72 24 02 31.
+Générique publicitaire 3 : Talkami (12 secondes)
+À L'ÉCRAN : Logo Talkami (Drive 1iISW1PtRImbaW9skP1OtR-4Oe4DOqqc_), Teacher Joe animé, un téléphone avec une conversation vocale, lien talkami.laravel.cloud.
+Et pour apprendre à parler anglais depuis votre téléphone, découvrez Talkami. Teacher Joe, votre professeur d'anglais animé, parle avec vous, vous écoute et vous corrige. Évaluation orale gratuite sur talkami.laravel.cloud.
+12. Les limites de Claude gratuit (environ 1 min 30)
+À L'ÉCRAN : Liste animée de 4 limites, chacune avec une icône. Puis une flèche vers « Partie 2 : Claude Code ».
+Soyons honnêtes : Claude gratuit est très utile, mais il a des limites. Un : 30 mégaoctets maximum par fichier. Les vidéos longues sont donc difficiles. Deux : le nombre de messages est limité. Si vous atteignez la limite, il faut attendre avant de continuer. Trois : il ne réécoute pas toujours le son, donc vous devez vérifier vous-même. Quatre : les animations restent assez simples.
+Pour des vidéos longues, des montages très professionnels, avec votre logo, des animations avancées et des vidéos de plusieurs minutes, il existe Claude Code. C'est la version payante, et c'est exactement ce que nous allons voir dans la deuxième partie de cette formation.
+13. Récapitulatif et exercice (environ 1 min)
+À L'ÉCRAN : Récapitulatif animé des 8 étapes, avec une coche verte sur chacune.
+Récapitulons. Étape 1 : le script avec ChatGPT. Étape 2 : le découpage en scènes de 8 secondes. Étape 3 : le personnage fictif. Étape 4 : les prompts pour Google Flow. Étape 5 : la création des clips dans Google Flow. Étape 6 : la règle des 30 mégaoctets. Étape 7 : le montage avec Claude. Étape 8 : les corrections et le téléchargement.
+N'oubliez pas : tous les prompts que vous avez vus aujourd'hui vous attendent dans le document partagé dans le groupe VIP.
+Votre exercice : créez une vidéo publicitaire de 30 secondes pour votre activité, ou pour celle d'un proche, en suivant exactement ces étapes. Puis partagez-la dans le groupe VIP. Nous la regarderons ensemble et nous vous aiderons à l'améliorer.
+Rendez-vous dans la deuxième partie, avec Claude Code.
+14. Générique de fin (10 secondes)
+À L'ÉCRAN : Logo Lomé IA School, slogan, numéros, musique.
+Merci d'avoir suivi cette formation de Lomé IA School. Pour adhérer, commander un service ou poser une question, écrivez-nous sur WhatsApp, au 72 24 02 31 ou au 79 16 23 90. Lomé IA School : maîtrisez l'IA et transformez vos compétences en opportunités.
