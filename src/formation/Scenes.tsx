@@ -305,7 +305,7 @@ const BarriereCorps: React.FC<PropsScene> = ({etapes}) => {
   const [e0, e1] = useEtapes(etapes, [0.22, 0.52]);
   const BARRIERE = 640;
   // Gros fichier : avance, heurte la barrière, rebondit en arrière et tremble.
-  const avance = interpolate(t, [8, e0], [-100, BARRIERE - 320], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  const avance = interpolate(t, [Math.min(8, e0 - 6), Math.max(e0, 7)], [-100, BARRIERE - 320], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
     easing: Easing.in(Easing.quad)});
   const recul = t > e0 ? 160 * Math.sin(Math.min(1, (t - e0) / 14) * Math.PI / 2) : 0;
   const tremble = t > e0 && t < e0 + 18 ? 14 * Math.sin((t - e0) * 2.2) * (1 - (t - e0) / 18) : 0;
