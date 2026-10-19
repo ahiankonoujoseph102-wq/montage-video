@@ -38,7 +38,9 @@ courtes en français, fichiers envoyés directement.
 1. (fait) Vérifier en images les corrections ci-dessus ;
    commande planche : `PROPS=public/formation-montage-partie1/formation_props_radio.json bash <stills.sh> …`
    (ou `npx remotion still`).
-2. Revérifier la confidentialité image par image sur les extraits utilisés (une image / 0,5 s minimum).
+2. (fait) Confidentialité revérifiée sur le rendu (2 images/s sur tous les écrans filmés) : seule la fin de X07
+   montrait l'écran d'accueil Android → X07 s'arrête à 733,4 (props mises à jour sans changer la durée du plan,
+   passage re-rendu et remplacé dans le rendu).
 3. Rendu complet : HQ + version < 100 Mo (deux passes), mesures (durée, poids, LUFS, crête vraie), planche de toute
    la vidéo ; envoyer à Joseph.
 4. Puis : dernière passe sur la voix seulement avec les temps de répétitions que Joseph enverra (ajouter des coupes

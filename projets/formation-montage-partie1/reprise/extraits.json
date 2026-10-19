@@ -991,7 +991,7 @@
   ]
  },
  "X07_flow_changement_compte": {
-  "video": "formation-montage-partie1/extraits/X07_flow_changement_compte_605c96ff.mp4",
+  "video": "formation-montage-partie1/extraits/X07_flow_changement_compte_2a20ddea.mp4",
   "reperes": [
    {
     "image": 9,
@@ -1034,7 +1034,7 @@
     "texte": "Commencer"
    }
   ],
-  "dureeImages": 632,
+  "dureeImages": 624,
   "acceleres": [
    {
     "debut": 225,
@@ -1130,12 +1130,6 @@
     "zoom": 1.4,
     "x": 540,
     "y": 760
-   },
-   {
-    "image": 636,
-    "zoom": 1.4,
-    "x": 540,
-    "y": 760
    }
   ],
   "section": "8. Étape 5 : changer de compte Google quand les crédits sont épuisés",
@@ -1173,7 +1167,7 @@
    ],
    [
     727.3,
-    733.8,
+    733.4,
     1
    ]
   ]
