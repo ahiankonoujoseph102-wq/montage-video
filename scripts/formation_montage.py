@@ -77,49 +77,122 @@ plan_de = {}
 for i, p in enumerate(cfg["plans"]):
     for k in range(p["de"], p["a"] + 1):
         plan_de[k] = i
-coupures = {}  # phrase k → {point, tenue, carton, apres}
+retenir = {int(k): v for k, v in cfg.get("retenir", {}).items()}
+annonces = {int(k): n for k, n in cfg.get("annonces", {}).items()}
+# Silences ajoutés avant la phrase k, dans l'ordre : tenue de la carte précédente (+ « plus », pour qu'un extrait
+# d'écran aille jusqu'au bout), carton « À RETENIR » de fin d'étape, carton d'étape, pause de section.
+coupures = {}  # phrase k → {point, tenue, plus, retenir, carton, apres}
 for k in range(1, len(phrases)):
     pt, silence = point_silence(phrases[k - 1]["fin"], phrases[k]["debut"])
     if pt is None:
         # Phrases enchaînées sans silence : on n'ajoute rien ici (sauf si un carton ou une tenue l'exige).
         tient = cfg["plans"][plan_de[k - 1]]["type"] in ("Carte", "CarteFlow") and plan_de[k - 1] != plan_de[k]
-        if k in etapes or k in cfg["sections"] or tient:
+        if k in etapes or k in cfg["sections"] or tient or k in retenir:
             raise SystemExit(f"Pas de silence avant la phrase {k} ({phrases[k]['texte'][:40]}…)")
         continue
     prec, suiv = cfg["plans"][plan_de[k - 1]], cfg["plans"][plan_de[k]]
     tenue = cfg["tenueCarte"] if prec["type"] in ("Carte", "CarteFlow") and plan_de[k - 1] != plan_de[k] else 0
-    carton = cfg["carton"] if k in etapes else 0
+    ret = cfg["dureeRetenir"] if k in retenir else 0
+    carton = 0
+    if k in etapes:
+        # Le carton dure cfg["carton"] s en tout : silence ajouté + reste du silence + mots annoncés (« Première étape »).
+        n = annonces.get(k, 0)
+        dit = phrases[k]["mots"][n - 1][2] + 0.12 - phrases[k]["debut"] if n else 0
+        carton = round(max(0.1, cfg["carton"] - (phrases[k]["debut"] - pt) - dit), 3)
     apres = cfg["pauseSection"] if k in cfg["sections"] or k in etapes else 0
-    apres += max(0, cfg["pauseMin"] - silence) if not (tenue or carton or apres) else 0
+    apres += max(0, cfg["pauseMin"] - silence) if not (tenue or carton or apres or ret) else 0
     if suiv.get("generique") and plan_de[k - 1] != plan_de[k]:
         apres = max(apres, cfg.get("pauseGenerique", 0.8))
-    if tenue or carton or apres:
-        coupures[k] = {"point": pt, "tenue": tenue, "carton": carton, "apres": round(apres, 3)}
+    coupures[k] = {"point": pt, "tenue": tenue, "plus": 0.0, "retenir": ret, "carton": carton, "apres": round(apres, 3)}
+
+ajout = lambda c: c["tenue"] + c["plus"] + c["retenir"] + c["carton"] + c["apres"]  # noqa: E731
 
 
 def T(t):
     """Temps de la voix nettoyée → temps de la vidéo finale."""
-    return OUV + t + sum(c["tenue"] + c["carton"] + c["apres"] for c in coupures.values() if c["point"] <= t)
+    return OUV + t + sum(ajout(c) for c in coupures.values() if c["point"] <= t)
 
 
 def debut_gap(k):
     c = coupures[k]
-    return OUV + c["point"] + sum(o["tenue"] + o["carton"] + o["apres"] for o in coupures.values() if o["point"] < c["point"])
+    return OUV + c["point"] + sum(ajout(o) for o in coupures.values() if o["point"] < c["point"])
+
+
+def debut_carton(k):
+    c = coupures[k]
+    return debut_gap(k) + c["tenue"] + c["plus"] + c["retenir"]
+
+
+def fin_carton(k):
+    n = annonces.get(k, 0)
+    return T(phrases[k]["mots"][n - 1][2]) + 0.12 if n else debut_carton(k) + cfg["carton"]
 
 
 def debut_plan(k):
     if k == 0:
         return OUV
     if k in coupures:
-        c = coupures[k]
-        return debut_gap(k) + c["tenue"] + c["carton"]
-    pt, _ = point_silence(phrases[k - 1]["fin"], phrases[k]["debut"])
-    return T(pt if pt is not None else phrases[k]["debut"])
+        return fin_carton(k) if k in etapes else debut_carton(k)
+    return T(phrases[k]["debut"])
 
 
 duree_voix = len(voix) / SR
+
+
+def bornes(i):
+    p = cfg["plans"][i]
+    debut = debut_plan(p["de"])
+    if i + 1 == len(cfg["plans"]):
+        return debut, T(duree_voix) + p.get("fin", 0)
+    k = cfg["plans"][i + 1]["de"]
+    if k in coupures:  # le carton suivant n'appartient pas au plan
+        return debut, debut_gap(k) + coupures[k]["tenue"] + coupures[k]["plus"]
+    return debut, debut_plan(k)
+
+
+def vers_sortie(t, morceaux):
+    acc = 0.0
+    for a, b, v in morceaux:
+        if a <= t <= b:
+            return acc + (t - a) / v
+        acc += (b - a) / v
+    raise SystemExit(f"Instant {t} absent des morceaux")
+
+
+def depart(p):
+    return vers_sortie(p["departSource"], extraits[p["id"]]["morceaux"]) if "departSource" in p else p.get("depart", 0)
+
+
+# Un extrait d'écran va toujours jusqu'au bout (ou jusqu'à « jusquaSource ») : silence ajouté à la fin du plan si besoin.
+for _ in range(8):
+    manque = False
+    for i, p in enumerate(cfg["plans"]):
+        if p["type"] != "Extrait":
+            continue
+        e = extraits[p["id"]]
+        dernier = not any(q.get("id") == p["id"] for q in cfg["plans"][i + 1:])
+        if "jusquaSource" in p:
+            fin_contenu = vers_sortie(p["jusquaSource"], e["morceaux"])
+        elif dernier:
+            fin_contenu = e["dureeImages"] / FPS
+        else:
+            continue
+        d, f = bornes(i)
+        besoin = fin_contenu - depart(p) + 0.3 - (f - d)
+        if besoin > 0.04:
+            k = cfg["plans"][i + 1]["de"] if i + 1 < len(cfg["plans"]) else None
+            if k is None or k not in coupures:
+                print(f"Attention : {p['id']} coupé de {besoin:.1f} s (pas de silence pour le prolonger)")
+                continue
+            coupures[k]["plus"] = round(coupures[k]["plus"] + besoin, 3)
+            manque = True
+    if not manque:
+        break
+prolongs = [(cfg["plans"][plan_de[k] - 1]["id"], c["plus"]) for k, c in coupures.items() if c["plus"] > 0]
+print("Extraits prolongés :", ", ".join(f"{n} +{d:.1f} s" for n, d in prolongs) or "aucun")
+
 plans_props = []
-cartons, badges = [], []
+cartons, badges, retenirs = [], [], []
 
 
 def ancre(a, origine):
@@ -134,37 +207,43 @@ def ancre(a, origine):
 
 
 for i, p in enumerate(cfg["plans"]):
-    debut = debut_plan(p["de"])
-    fin = debut_plan(cfg["plans"][i + 1]["de"]) if i + 1 < len(cfg["plans"]) else T(duree_voix) + p.get("fin", 0)
-    if i + 1 < len(cfg["plans"]) and cfg["plans"][i + 1]["de"] in coupures:
-        c = coupures[cfg["plans"][i + 1]["de"]]
-        fin = debut_gap(cfg["plans"][i + 1]["de"]) + c["tenue"]  # le carton suivant n'appartient pas au plan
+    debut, fin = bornes(i)
     rel = lambda a: ancre(a, debut)  # noqa: E731
     t, props = p["type"], dict(p.get("props", {}))
     if t == "Extrait":
         e = extraits[p["id"]]
         props = {"video": e["video"], "dureeImages": e["dureeImages"], "zooms": e["zooms"], "acceleres": e["acceleres"],
-                 "depart": int(p.get("depart", 0) * FPS), "hauteurVue": HAUTEUR_VUE}
+                 "reperes": e.get("reperes", []), "depart": int(round(depart(p) * FPS)), "hauteurVue": HAUTEUR_VUE}
     elif t == "Carte":
         props = {"id": p["id"], "temps": [rel(a) for a in p["lignes"]]}
     elif "etapes" in p:
         props["etapes"] = [rel(a) for a in p["etapes"]]
         if "etapeActif" in p:
             props["etapeActif"] = rel(p["etapeActif"])
+    if "illustrations" in p:
+        props["illustrations"] = []
+        for x in p["illustrations"]:
+            a = 0.0 if x["a"] == "debut" else rel(x["a"])
+            f_il = (fin - debut if x["fin"] == "fin" else rel(x["fin"])) if "fin" in x else a + x["duree"]
+            props["illustrations"].append({**{c: v for c, v in x.items() if c != "fin"}, "a": a,
+                                           "duree": round((f_il - a) * FPS)})
     plans_props.append({"debut": round(debut * FPS), "fin": round(fin * FPS), "type": t, "props": props,
                         "generique": bool(p.get("generique"))})
 
-# Cartons d'étape et badge « ÉTAPE n / 7 » jusqu'à l'étape suivante (ou la fin des étapes).
+# Cartons d'étape, cartons « À RETENIR », badge « ÉTAPE n / 7 » jusqu'à l'étape suivante (ou la fin des étapes).
 fins = sorted(cfg["finEtapes"])
 for k, (n, titre) in sorted(etapes.items()):
-    c = coupures[k]
-    a = debut_gap(k) + c["tenue"]
-    cartons.append({"debut": round(a * FPS), "fin": round((a + c["carton"]) * FPS), "numero": n, "titre": titre})
+    cartons.append({"debut": round(debut_carton(k) * FPS), "fin": round(fin_carton(k) * FPS), "numero": n, "titre": titre,
+                    "silence": round(T(phrases[k]["debut"]) * FPS)})
+for k, points in sorted(retenir.items()):
+    a = debut_gap(k) + coupures[k]["tenue"] + coupures[k]["plus"]
+    n = max(e[0] for kk, e in etapes.items() if kk < k)
+    retenirs.append({"debut": round(a * FPS), "fin": round((a + coupures[k]["retenir"]) * FPS), "numero": n, "points": points})
 for k, (n, titre) in sorted(etapes.items()):
-    bornes = [f for f in list(etapes) + fins if f > k and f in coupures]
-    f = min(bornes) if bornes else None
-    e = debut_gap(f) + coupures[f]["tenue"] if f is not None else T(duree_voix)
-    badges.append({"debut": round(debut_plan(k) * FPS), "fin": round(e * FPS), "numero": n, "titre": titre})
+    bornes_e = [f for f in list(etapes) + fins if f > k and f in coupures]
+    f = min(bornes_e) if bornes_e else None
+    e = debut_gap(f) + coupures[f]["tenue"] + coupures[f]["plus"] if f is not None else T(duree_voix)
+    badges.append({"debut": round(fin_carton(k) * FPS), "fin": round(e * FPS), "numero": n, "titre": titre})
 
 # --- Sous-titres : texte du script, temps alignés ; groupes courts, mots clés en jaune. ---
 cles = {norm(m) for m in cfg["motsCles"]}
@@ -200,7 +279,7 @@ for a, b in zip(sous_titres, sous_titres[1:]):
 
 duree_totale = T(duree_voix) + cfg["plans"][-1].get("fin", 0)
 props = {"duree": round(duree_totale * FPS), "ouverture": round(OUV * FPS), "plans": plans_props, "cartons": cartons,
-         "badges": badges, "sousTitres": sous_titres, "hauteurVue": HAUTEUR_VUE}
+         "retenirs": retenirs, "badges": badges, "sousTitres": sous_titres, "hauteurVue": HAUTEUR_VUE}
 (PUB / f"formation_props{SUF}.json").write_text(json.dumps(props, ensure_ascii=False))
 
 # --- Bande son : voix avec silences ajoutés, musique en boucle, effets. ---
@@ -242,8 +321,14 @@ for p in plans_props:
     if p["generique"]:
         rel[int(p["debut"] / FPS * SR):int(p["fin"] / FPS * SR)] = NIV["generiques"]
 rel[:int(OUV * SR)] = -5.0
-for c in cartons:
+for c in cartons:  # partie muette du carton seulement
+    rel[int(c["debut"] / FPS * SR):int(c["silence"] / FPS * SR)] = -7.0
+for c in retenirs:
     rel[int(c["debut"] / FPS * SR):int(c["fin"] / FPS * SR)] = -7.0
+for k, c in coupures.items():  # extrait d'écran prolongé sans voix : musique un peu plus présente
+    if c["plus"] > 0:
+        a_ = debut_gap(k) + c["tenue"]
+        rel[int(a_ * SR):int((a_ + c["plus"]) * SR)] = -12.0
 # Lissage (0,5 s) puis fondu de sortie sur les 2,5 dernières secondes.
 lis = int(0.5 * SR)
 noyau = np.ones(lis) / lis
@@ -266,6 +351,8 @@ def effet(nom, t, niveau):
 effet("ouverture", 0, -19)
 for c in cartons:
     effet("carton", c["debut"] / FPS + 1 / FPS, -22)
+for c in retenirs:
+    effet("panneau", c["debut"] / FPS + 1 / FPS, -24)
 for p in plans_props:
     if p["generique"]:
         effet("plein_ecran", p["debut"] / FPS + 1 / FPS, -26)
@@ -276,4 +363,4 @@ sf.write(PUB / f"formation_voix{SUF}.wav", piste.astype(np.float32), SR, subtype
     [{"debut": round(T(p["debut"]), 3), "fin": round(T(p["fin"]), 3), "texte": p["texte"],
       "mots": [[m[0], round(T(m[1]), 3), round(T(m[2]), 3)] for m in p["mots"]]} for p in phrases], ensure_ascii=False))
 print(f"Durée : {duree_totale:.1f} s ({duree_totale / 60:.1f} min), {len(plans_props)} plans, {len(cartons)} cartons, "
-      f"{len(sous_titres)} sous-titres, {len(coupures)} silences ajoutés")
+      f"{len(sous_titres)} sous-titres, {sum(1 for c in coupures.values() if ajout(c) > 0)} silences ajoutés")

@@ -4,6 +4,7 @@ Usage : python3 scripts/extraits.py <projet> <dossier des sources> [nom d'extrai
 Lit projets/<projet>/extraits.json ; écrit public/<projet>/extraits/<nom>.mp4 (1080 × 2400, 30 i/s, muet)
 et public/<projet>/extraits.json (durées, passages accélérés et zooms en images, pour Remotion).
 """
+import hashlib
 import json
 import subprocess
 import sys
@@ -49,10 +50,13 @@ for nom, e in cfg.items():
     for i, (a, b, v) in enumerate(morceaux):
         f.append(f"[s{i}]trim={a}:{b},setpts=(PTS-STARTPTS)/{v},fps={FPS}[m{i}]")
     f.append("".join(f"[m{i}]" for i in range(len(morceaux))) + f"concat=n={len(morceaux)}:v=1:a=0,format=yuv420p[v]")
-    fichier = sortie / f"{nom}.mp4"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(debut), "-i", str(sources / f"{e['source']}.mp4"),
-                    "-filter_complex", ";".join(f), "-map", "[v]", "-an", "-c:v", "libx264", "-preset", "veryfast",
-                    "-crf", "18", "-movflags", "+faststart", str(fichier)], check=True)
+    # nom propre au contenu : un extrait modifié change de nom (Remotion garde en cache les vidéos déjà lues)
+    empreinte = hashlib.sha1(json.dumps([e["source"], morceaux, flous]).encode()).hexdigest()[:8]
+    fichier = sortie / f"{nom}_{empreinte}.mp4"
+    if not fichier.exists():
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(debut), "-i", str(sources / f"{e['source']}.mp4"),
+                        "-filter_complex", ";".join(f), "-map", "[v]", "-an", "-c:v", "libx264", "-preset", "veryfast",
+                        "-crf", "18", "-movflags", "+faststart", str(fichier)], check=True)
     duree = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                                   str(fichier)], capture_output=True, text=True).stdout)
     acc, acceleres = 0.0, []
@@ -66,7 +70,16 @@ for nom, e in cfg.items():
         s = vers_sortie(t, morceaux)
         if s is not None:
             zooms.append({"image": round(s * FPS), "zoom": z, "x": x, "y": y})
-    meta[nom] = {"video": f"{projet}/extraits/{nom}.mp4", "dureeImages": int(duree * FPS), "acceleres": acceleres,
+    reperes = []
+    for t, x, y, forme, d, *reste in e.get("reperes", []):  # reste : angle de la flèche (ou null), étiquette
+        s = vers_sortie(t, morceaux)
+        if s is None:
+            raise SystemExit(f"{nom} : repère à {t} s hors des morceaux")
+        angle = reste[0] if reste else None
+        texte = reste[1] if len(reste) > 1 else None
+        reperes.append({"image": round(s * FPS), "fin": round((s + d) * FPS), "x": x, "y": y, "forme": forme,
+                        **({"angle": angle} if angle is not None else {}), **({"texte": texte} if texte else {})})
+    meta[nom] = {"video": f"{projet}/extraits/{fichier.name}", "reperes": reperes, "dureeImages": int(duree * FPS), "acceleres": acceleres,
                  "zooms": zooms, "section": e["section"], "source": e["source"], "morceaux": morceaux}
     print(f"{nom} : {duree:.1f} s")
 meta_chemin.write_text(json.dumps(meta, ensure_ascii=False, indent=1))

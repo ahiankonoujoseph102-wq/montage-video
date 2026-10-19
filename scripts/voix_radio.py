@@ -4,6 +4,9 @@ Usage : python3 scripts/voix_radio.py <projet>
 Lit public/<projet>/voix_propre.wav et phrases.json, et la section « radio » de projets/<projet>/montage_formation.json.
 Écrit public/<projet>/voix_radio.wav (48 kHz, mono) et phrases_radio.json (mêmes phrases, temps recalés).
 
+0. Reprises (mot ou passage dit deux fois) : chaque coupe [début, fin] de « reprises » retire la première version,
+   d'un silence à l'autre (vérifié au niveau sonore) ; les mots du script alignés sur la version coupée sont recalés
+   sur la version gardée (« recaler » : {phrase: [[n° du mot, seconde], …]}).
 1. Pauses entre phrases : le silence mesuré entre deux phrases (niveau sonore) est ramené à `pause` s
    (`pauseEtape` avant une nouvelle étape) une fois le débit accéléré ; on retire le milieu du silence,
    fondu de 15 ms. Un silence déjà plus court est gardé.
@@ -56,16 +59,42 @@ def silence(a, b):
     return None
 
 
+# --- 0. Reprises coupées, mots recalés sur la version gardée. ---
+reprises = R.get("reprises", [])
+recale = {}
+for r in reprises:
+    a, b = r["coupe"]
+    for x in (-2, -1, 0, 1, 2):  # la coupe doit tomber dans un silence (≤ −38 dB) aux deux bouts
+        for t in (a, b):
+            if env[int(t / 0.01) + x] > -38:
+                raise SystemExit(f"Coupe {r['coupe']} hors d'un silence ({r['texte']})")
+    for k, liste in r.get("recaler", {}).items():
+        for i, t in liste:
+            recale[(int(k), i)] = t
+for k, p in enumerate(phrases):
+    mots = []
+    for i, m in enumerate(p["mots"]):
+        m = list(m)
+        if (k, i) in recale:
+            m[1] = recale[(k, i)]
+            m[2] = recale.get((k, i + 1), m[2]) - (0.02 if (k, i + 1) in recale else 0)
+        mots.append(m)
+    p["mots"] = mots
+    p["debut"] = min(p["debut"], mots[0][1]) if (k, 0) not in recale else mots[0][1]
+    p["fin"] = max(p["fin"], mots[-1][2])
+coupes = [tuple(r["coupe"]) for r in reprises]
+
 # --- 1. Pauses : liste des passages retirés (début, durée) en temps de la voix d'origine. ---
-retraits = []
+retraits = [(a, b - a) for a, b in coupes]
 for k in range(1, len(phrases)):
     s = silence(phrases[k - 1]["fin"], phrases[k]["debut"])
-    if s is None:
+    if s is None or any(a < s[1] and s[0] < b for a, b in coupes):
         continue
     cible = (R["pauseEtape"] if k in etapes else R["pause"]) * TEMPO
     trop = (s[1] - s[0]) - cible
     if trop > 0.02:
         retraits.append(((s[0] + s[1]) / 2 - trop / 2, trop))
+retraits.sort()
 
 F = int(0.015 * SR)
 morceaux, t = [], 0
@@ -110,5 +139,5 @@ for p in phrases:
     sortie.append(q)
 (PUB / "phrases_radio.json").write_text(json.dumps(sortie, ensure_ascii=False))
 duree = sf.info(PUB / "voix_radio.wav").duration
-print(f"{len(retraits)} pauses resserrées ({sum(d for _, d in retraits):.1f} s retirées), tempo × {TEMPO} : "
+print(f"{len(coupes)} reprises coupées ({sum(b - a for a, b in coupes):.1f} s), {len(retraits) - len(coupes)} pauses resserrées ({sum(d for _, d in retraits):.1f} s retirées), tempo × {TEMPO} : "
       f"{len(voix) / SR:.1f} s → {duree:.1f} s")

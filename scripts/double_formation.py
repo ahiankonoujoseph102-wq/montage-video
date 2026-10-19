@@ -8,14 +8,14 @@ la clé « double » à formation_props.json (composition « Formation », src/f
 - Bouche : Rhubarb Lip Sync 1.13 en mode phonétique (variable RHUBARB = chemin de l'exécutable), une forme par
   image, une image d'avance, repos dans les silences (même conversion que double-anime/outils/audio.py) ;
   énergie de la voix par image pour les mouvements de tête.
-- Apparitions : plans des fenêtres (entrée 4 images après le début du plan, sortie à la fin du plan, fondu de
-  8 images ; deux fenêtres qui se suivent n'en font qu'une) et annonces d'étape (sur le carton, du début de la
-  première phrase de l'étape jusqu'à sa fin ; le carton reste affiché jusque-là).
-- Place : « bas » du contenu du plan → le plan est réduit (et remonté) juste assez pour laisser « hmin » px au
-  double au-dessus des sous-titres.
-- Gestes automatiques : mains ouvertes et mains posées en alternance aux virgules (≥ 1,2 s d'écart), mains posées
-  dans les silences ; index vers le contenu quand une ligne apparaît au-dessus de lui ; gestes et expressions
-  imposés dans la configuration.
+- Apparitions (fondu de 8 images ; deux apparitions qui se suivent n'en font qu'une) : plans des fenêtres, du début
+  du plan à sa fin (ou à la fin de la phrase « a » si « phraseSeule ») ; il sort avant qu'une ligne ne rende le
+  contenu trop haut pour l'écran du décor (« hauteurMax ») ; cartons d'étape entiers.
+- Le plan se range dans l'écran du décor (src/formation/DoubleFormation.tsx) : « cadre » = haut et bas du contenu
+  du plan (px) à partir d'une ancre [phrase, mot] (null = début du plan).
+- Gestes (logique de l'épisode 4) : mains posées sur le bureau au repos ; chaque geste de la configuration part sur
+  son mot et dure le mot, la phrase ou n secondes, puis retour au repos. Expressions : « parle » sur chaque phrase,
+  léger sourire (neutre) dans les silences, et celles de la configuration.
 """
 import json
 import os
@@ -96,28 +96,28 @@ for i in range(N):
     if max(bouche[max(0, i - 1): i + 2]) < 0.03 and lettres[i] not in "XA":
         lettres[i] = "X"
 
-# --- Apparitions et place réservée. ---
+# --- Apparitions : plans des fenêtres et cartons d'étape ; le plan se range dans l'écran du décor. ---
 plans = props["plans"]
 plan_de = {}
 for i, p in enumerate(cfg["plans"]):
     for k in range(p["de"], p["a"] + 1):
         plan_de[k] = i
-presences, bas, cartons = [], [], []
+HMAX = D["hauteurMax"]  # au-delà, le contenu serait trop petit dans l'écran : le double sort avant
+presences, cadres = [], []
 for f in D["fenetres"]:
     p0, p1 = plans[plan_de[f["de"]]], plans[plan_de[f["a"]]]
-    debut, fin = p0["debut"] + 4, p1["fin"]
-    presences.append([debut, fin])
-    for ancre, b in f["bas"]:
+    debut = p0["debut"] + 4
+    fin = round(phrases[f["a"]]["fin"] * FPS) + 6 + FONDU if f.get("phraseSeule") else p1["fin"]
+    for ancre, A, B in f["cadre"]:
         t = debut if ancre is None else round(mot(*ancre) * FPS)
-        bas.append([t, 200, b, f["hmin"], f["teinte"]])
-for k, (n, _) in sorted((int(k), v) for k, v in cfg["etapes"].items()):
-    c = next(c for c in props["cartons"] if c["numero"] == n)
-    debut = round(phrases[k]["debut"] * FPS) - FONDU
-    fin = round(phrases[k]["fin"] * FPS) + 8 + FONDU
+        if B - A > HMAX:
+            fin = min(fin, t - 2)
+            break
+        cadres.append([t, A, B])
     presences.append([debut, fin])
-    cartons.append({"numero": n, "fin": fin + 2})
-    # contenu du carton : de 520 (« ÉTAPE ») à 1290 (pastilles)
-    bas.append([c["debut"], 520, 1290, D["hminCarton"], "violet"])
+for c in props["cartons"]:
+    presences.append([c["debut"] + 2, c["fin"]])
+    cadres.append([c["debut"], 520, 1290])  # contenu du carton : de « ÉTAPE » aux pastilles
 presences.sort()
 fusion = []
 for a, b in presences:
@@ -125,64 +125,57 @@ for a, b in presences:
         fusion[-1][1] = max(fusion[-1][1], b)
     else:
         fusion.append([a, b])
-bas.sort()
+cadres.sort()
 
-# --- Gestes et expressions (temps en secondes de la vidéo). ---
+# --- Gestes (logique de l'épisode 4) : mains posées sur le bureau au repos ; chaque geste part sur le mot qu'il
+# illustre, dure le mot (« mot »), la phrase (« phrase ») ou n secondes, puis les mains reviennent au repos. ---
 dedans = lambda t: any(a <= t * FPS < b for a, b in fusion)  # noqa: E731
-gestes, expressions = [{"t": 0, "geste": "repos"}], [{"t": 0, "expression": "neutre"}]
-imposes = {(k, norm(m)): rest for k, m, *rest in D["gestes"]}
-imposes = {(k, norm(next((x[0] for x in phrases[k]["mots"] if norm(x[0]) == m), None) or
-                    next(x[0] for x in phrases[k]["mots"] if m in norm(x[0])))): r for (k, m), r in imposes.items()}
+
+
+def mot_entier(k, m):
+    cands = phrases[k]["mots"]
+    w = next((x for x in cands if norm(x[0]) == norm(m)), None) or \
+        next((x for x in cands if norm(x[0]).startswith(norm(m))), None) or \
+        next((x for x in cands if norm(m) in norm(x[0])), None)
+    if w is None:
+        raise SystemExit(f"Mot introuvable : {k} {m}")
+    return w
+
+
+gestes, expressions = [{"t": -10, "geste": "repos"}], [{"t": -10, "expression": "neutre"}]
+for k, m, g, *reste in D["gestes"]:
+    w = mot_entier(k, m)
+    doigts = next((x for x in reste if isinstance(x, int)), None)
+    duree = next((x for x in reste if not isinstance(x, int)), "mot")
+    fin = w[2] + 0.3 if duree == "mot" else phrases[k]["fin"] + 0.1 if duree == "phrase" else w[1] + float(duree)
+    if not dedans(w[1]):
+        print(f"geste hors apparition : {k} {m}")
+        continue
+    gestes.append({"t": round(w[1] - 0.15, 3), "geste": g, **({"doigts": doigts} if doigts else {}), "fin": round(fin, 3)})
+gestes.sort(key=lambda g: g["t"])
+suite = [gestes[0]]
+for i, g in enumerate(gestes[1:], 1):
+    suivant = gestes[i + 1]["t"] if i + 1 < len(gestes) else 1e9
+    suite.append({c: v for c, v in g.items() if c != "fin"})
+    if g["fin"] < suivant - 0.2:
+        suite.append({"t": g["fin"], "geste": "repos"})
+gestes = suite
 for k, p in enumerate(phrases):
     if not dedans(p["debut"]) and not dedans(p["fin"]):
         continue
-    expressions.append({"t": p["debut"] - 0.08, "expression": "parle"})
+    expressions.append({"t": round(p["debut"] - 0.08, 3), "expression": "parle"})
     suivante = phrases[k + 1]["debut"] if k + 1 < len(phrases) else p["fin"] + 9
     if suivante - p["fin"] > 0.7:
-        expressions.append({"t": p["fin"] + 0.15, "expression": "neutre"})
-    ouvert = k % 2 == 0 or p["fin"] - p["debut"] > 4
-    dernier = -9
-    for j, m in enumerate(p["mots"]):
-        cle = (k, norm(m[0]))
-        if cle in imposes:
-            g, *doigts = imposes[cle]
-            gestes.append({"t": m[1] - 0.25, "geste": g, **({"doigts": doigts[0]} if doigts else {})})
-            dernier = m[1]
-            ouvert = g == "explique"
-        elif j == 0 and m[1] - dernier > 1.2:
-            gestes.append({"t": m[1] - 0.25, "geste": "explique" if ouvert else "repos"})
-            dernier = m[1]
-        elif j and p["mots"][j - 1][0][-1] in ",:" and m[1] - dernier > 1.2 and p["fin"] - m[1] > 1.0:
-            ouvert = not ouvert
-            gestes.append({"t": m[1] - 0.25, "geste": "explique" if ouvert else "repos"})
-            dernier = m[1]
-    if suivante - p["fin"] > 0.6:
-        gestes.append({"t": p["fin"] + 0.1, "geste": "repos"})
-# Une ligne apparaît au-dessus de lui : il la montre (index levé) pendant 1,4 s, sauf geste imposé tout proche.
-for f in D["fenetres"]:
-    for ancre, _ in f["bas"][1:]:
-        t = mot(*ancre)
-        if not any(abs(g["t"] - (t - 0.25)) < 1.0 and g["geste"] in ("compte", "designe", "pouce") for g in gestes):
-            gestes.append({"t": t - 0.2, "geste": "designe"})
-            gestes.append({"t": t + 1.4, "geste": "explique"})
+        expressions.append({"t": round(p["fin"] + 0.15, 3), "expression": "neutre"})
 for k, m, e in D["expressions"]:
-    expressions.append({"t": mot(k, m) - 0.1, "expression": e})
-gestes.sort(key=lambda g: g["t"])
+    expressions.append({"t": round(mot_entier(k, m)[1] - 0.1, 3), "expression": e})
 expressions.sort(key=lambda e: e["t"])
-# Au plus un changement de geste toutes les 0,5 s (le dernier l'emporte).
-propres = []
-for g in gestes:
-    if propres and g["t"] - propres[-1]["t"] < 0.5 and propres[-1]["t"] > 0:
-        propres[-1] = g
-    else:
-        propres.append(g)
-gestes = [g for i, g in enumerate(propres) if i == 0 or g != {**propres[i - 1], "t": g["t"]}]
 
 masque = np.zeros(N, bool)
 for a, b in fusion:
     masque[max(0, a - 30):min(N, b + 30)] = True
 props["double"] = {
-    "presences": fusion, "bas": bas, "cartons": cartons, "gestes": gestes, "expressions": expressions,
+    "presences": fusion, "cadres": cadres, "gestes": gestes, "expressions": expressions,
     "bouche": [round(float(v), 2) if masque[i] else 0 for i, v in enumerate(bouche)],
     "visemes": "".join(l if masque[i] else "X" for i, l in enumerate(lettres)),
 }
