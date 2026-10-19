@@ -18,12 +18,18 @@ export const PROMPTS: Prompt[] = [
     "Pour chaque scène, donne : la phrase exacte prononcée (15 mots maximum, pour qu'elle tienne en 8 secondes), le décor, la position du personnage, ses gestes et le cadrage.",
     'Garde le même personnage, la même tenue et le même décor dans les 4 scènes.',
   ]},
-  {id: 'Prompt3', etiquette: 'PROMPT 3', titre: "Créer l'image du personnage", taille: 42, lignes: [
+  {id: 'Prompt3', etiquette: 'PROMPT 3A', titre: 'Personnage fictif', taille: 42, lignes: [
     "Crée l'image d'un personnage fictif, généré par IA, qui présentera ma vidéo publicitaire.",
     'Description : [homme ou femme], environ [âge] ans, [tenue, par exemple : costume bleu marine et chemise blanche], [coiffure].',
     'Décor : [par exemple : bureau moderne et lumineux, avec un ordinateur portable].',
     'Format vertical 9:16, style photo réaliste, lumière naturelle, il regarde la caméra avec un léger sourire.',
     'Ce personnage ne doit ressembler à aucune personne réelle.',
+  ]},
+  {id: 'Prompt3B', etiquette: 'PROMPT 3B', titre: 'Personnage à partir de votre photo', taille: 44, lignes: [
+    'Voici ma photo. Crée une image de moi, avec exactement le même visage, pour présenter ma vidéo publicitaire.',
+    'Tenue : [par exemple : costume bleu marine et chemise blanche].',
+    'Décor : [par exemple : bureau moderne et lumineux, avec un ordinateur portable].',
+    'Format vertical 9:16, style photo réaliste, lumière naturelle, je regarde la caméra avec un léger sourire.',
   ]},
   {id: 'Prompt4', etiquette: 'PROMPT 4', titre: 'Prompts Google Flow', taille: 42, lignes: [
     'Écris maintenant, pour chacune des 4 scènes, un prompt en anglais prêt à coller dans Google Flow.',
@@ -51,10 +57,10 @@ export const PROMPTS: Prompt[] = [
     "8. Avant de m'envoyer la vidéo, vérifie : aucun mot coupé, aucune répétition, orthographe correcte, numéro exact.",
     "Ne dis jamais que la vidéo est prête si le fichier n'a pas réellement été créé.",
   ]},
-  {id: 'Complement', etiquette: 'COMPLÉMENT', titre: "Vidéo d'inspiration", taille: 44, lignes: [
-    "Je t'envoie aussi [3] captures d'écran d'une vidéo dont j'aime le style.",
-    'Inspire-toi de : [la taille et la couleur des sous-titres / les animations / le rythme / la carte de fin].',
-    'Ne copie ni le texte, ni le logo, ni les images de cette vidéo.',
+  {id: 'Complement', etiquette: 'COMPLÉMENT', titre: "Vidéo d'inspiration", taille: 42, lignes: [
+    "Je t'envoie une vidéo dont j'aime beaucoup le montage. Étudie-la : le style des sous-titres, les couleurs, les animations, le rythme des coupes, la musique et la carte de fin.",
+    'Décris-moi en quelques lignes le style que tu as compris.',
+    "Ensuite, je t'enverrai mes propres clips : tu feras mon montage dans ce même style, sans copier le texte, le logo ni les images de cette vidéo.",
   ]},
   {id: 'Prompt6', etiquette: 'PROMPT 6', titre: 'Monter une vidéo filmée', taille: 34, lignes: [
     "Tu es un monteur vidéo professionnel. Je t'envoie une vidéo que j'ai filmée moi-même, face à la caméra.",
@@ -75,6 +81,12 @@ export const PROMPTS: Prompt[] = [
   ]},
   {id: 'Prompt8', etiquette: 'PROMPT 8', titre: 'Version légère', taille: 54, lignes: [
     'Le fichier est trop lourd pour ma connexion. Fais-moi une version de moins de 10 Mo, sans changer le montage.',
+  ]},
+  {id: 'Prompt9', etiquette: 'PROMPT 9', titre: 'Ajouter un logo ou une image', taille: 46, lignes: [
+    "Je t'envoie mon logo [et une image].",
+    'Place le logo en petit dans le coin en haut à gauche pendant toute la vidéo, et en grand sur la carte de fin.',
+    '[Montre l\'image en plein écran à 10 secondes, pendant 2 secondes.]',
+    'Garde tout le reste à l\'identique et renvoie-moi la vidéo.',
   ]},
 ];
 

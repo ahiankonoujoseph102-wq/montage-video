@@ -7,8 +7,8 @@ import {CENTRE, FondNuit, Ligne, NUIT, OR, pop, ROUGE, VERT, Z, texteContour} fr
 // Avant / après en écran partagé : à gauche la vidéo d'origine (4 clips bruts, 32 s), à droite la même vidéo
 // montée par Claude gratuit (18,5 s, puis figée sur sa dernière image). Muet par défaut (la voix off passe
 // dessus) ; `son` : 'avant' ou 'apres' pour garder le son d'une des deux.
-export type PropsAvantApres = {son?: 'aucun' | 'avant' | 'apres'};
-const FIN_APRES = 553; // dernière image de la vidéo montée (18,47 s)
+export type PropsAvantApres = {son?: 'aucun' | 'avant' | 'apres'; titre?: string; avant?: string; apres?: string;
+  detailAvant?: string; detailApres?: string; finApres?: number};
 
 const Colonne: React.FC<{x: number; titre: string; detail: string; couleur: string; k: number;
   children: React.ReactNode}> = ({x, titre, detail, couleur, k, children}) => (
@@ -23,24 +23,28 @@ const Colonne: React.FC<{x: number; titre: string; detail: string; couleur: stri
   </div>
 );
 
-const Corps: React.FC<PropsAvantApres> = ({son = 'aucun'}) => {
+const Corps: React.FC<PropsAvantApres> = ({son = 'aucun', titre = 'LA MÊME VIDÉO, AVANT ET APRÈS',
+  avant = 'formation-montage-partie1/avant.mp4', apres = 'formation-montage-partie1/apres.mp4',
+  detailAvant = '4 clips bruts, 32 s\nsilences, sans sous-titres', detailApres = 'Montée par Claude gratuit\n18 s, sous-titres, musique',
+  finApres = 553}) => {
+  const FIN_APRES = finApres;
   const f = useCurrentFrame();
   const style = {width: '100%', height: '100%', objectFit: 'cover' as const};
   return (
     <AbsoluteFill>
       <FondNuit />
-      <Ligne texte="LA MÊME VIDÉO, AVANT ET APRÈS" y={215} taille={58} couleur={OR} contour={7} k={pop(f, 0)} />
+      <Ligne texte={titre} y={215} taille={58} couleur={OR} contour={7} k={pop(f, 0)} />
       <Colonne x={Z.gauche - 10} titre="AVANT" couleur={ROUGE} k={pop(f, 4)}
-        detail={'4 clips bruts, 32 s\nsilences, sans sous-titres'}>
-        <OffthreadVideo src={staticFile('formation-montage-partie1/avant.mp4')} muted={son !== 'avant'} style={style} />
+        detail={detailAvant}>
+        <OffthreadVideo src={staticFile(avant)} muted={son !== 'avant'} style={style} />
       </Colonne>
       <Colonne x={CENTRE + 20} titre="APRÈS" couleur={VERT} k={pop(f, 10)}
-        detail={'Montée par Claude gratuit\n18 s, sous-titres, musique'}>
+        detail={detailApres}>
         {f < FIN_APRES ? (
-          <OffthreadVideo src={staticFile('formation-montage-partie1/apres.mp4')} muted={son !== 'apres'} style={style} />
+          <OffthreadVideo src={staticFile(apres)} muted={son !== 'apres'} style={style} />
         ) : (
           <Freeze frame={FIN_APRES}>
-            <OffthreadVideo src={staticFile('formation-montage-partie1/apres.mp4')} muted style={style} />
+            <OffthreadVideo src={staticFile(apres)} muted style={style} />
           </Freeze>
         )}
       </Colonne>

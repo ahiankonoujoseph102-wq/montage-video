@@ -428,12 +428,11 @@ const LimitesCorps: React.FC<PropsScene> = ({etapes}) => {
 export const SceneLimites = avecPolice(LimitesCorps);
 
 // 9. Récapitulatif des 8 étapes, une coche verte sur chacune.
-export const ETAPES_RECAP = ['Le script avec ChatGPT', 'Découper en scènes de 8 s', 'Le personnage fictif',
-  'Les prompts Google Flow', 'Créer les clips dans Google Flow', 'La règle des 30 Mo', 'Le montage avec Claude',
-  'Corriger et télécharger'];
+export const ETAPES_RECAP = ['Le script avec ChatGPT', 'Découper en scènes de 8 s', 'Le personnage : fictif ou vous-même',
+  'Les prompts Google Flow', 'Les clips dans Google Flow', 'Le montage avec Claude (30 Mo)', 'Corriger et télécharger'];
 const RecapCorps: React.FC<PropsScene> = ({etapes}) => {
   const t = useCurrentFrame();
-  const departs = useEtapes(etapes, ETAPES_RECAP.map((_, i) => 0.06 + i * 0.11));
+  const departs = useEtapes(etapes, ETAPES_RECAP.map((_, i) => 0.06 + i * 0.12));
   return (
     <AbsoluteFill>
       <FondNuit teinte="vert" />
@@ -442,7 +441,7 @@ const RecapCorps: React.FC<PropsScene> = ({etapes}) => {
         const k = pop(t, departs[i]);
         const c = pop(t, departs[i] + 6);
         return (
-          <div key={e} style={{position: 'absolute', left: Z.gauche, width: LARGEUR_UTILE, top: 340 + i * 146, height: 124,
+          <div key={e} style={{position: 'absolute', left: Z.gauche, width: LARGEUR_UTILE, top: 345 + i * 162, height: 138,
             borderRadius: 28, background: c > 0 ? 'rgba(22,163,74,0.28)' : 'rgba(14,18,44,0.85)',
             border: `4px solid ${c > 0 ? VERT : 'rgba(255,255,255,0.25)'}`, display: 'flex', alignItems: 'center', gap: 22,
             padding: '0 24px', boxSizing: 'border-box', opacity: k > 0 ? 1 : 0,

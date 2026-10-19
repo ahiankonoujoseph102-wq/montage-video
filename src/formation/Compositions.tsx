@@ -1,6 +1,7 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {AvantApres} from './AvantApres';
+import {Formation, type FormationProps} from './Formation';
 import {CartePrompt, dureeCarte, PromptFlowReel} from './CartePrompt';
 import {ExtraitEcran, type PropsExtrait} from './ExtraitEcran';
 import {GeneriqueAdhesion, GeneriqueFin, GeneriqueOuverture, GeneriqueServices, GeneriqueTalkami} from './Generiques';
@@ -22,10 +23,14 @@ const SCENES: [string, React.FC<{duree?: number; etapes?: number[]}>, number][] 
   ['SceneWhatsAppFlou', SceneWhatsAppFlou, 9], ['SceneLimites', SceneLimites, 12], ['SceneRecap', SceneRecap, 14],
 ];
 
+const formationVide: FormationProps = {duree: 30, ouverture: 30, plans: [], cartons: [], badges: [], sousTitres: [],
+  hauteurVue: 1530};
 const extraitVide: PropsExtrait = {video: '', dureeImages: 30, zooms: [], acceleres: []};
 
 export const CompositionsFormation: React.FC = () => (
   <>
+    <Composition id="Formation" component={Formation} {...base} durationInFrames={30} defaultProps={formationVide}
+      calculateMetadata={({props}) => ({durationInFrames: Math.max(1, props.duree)})} />
     <Composition id="GeneriqueOuverture" component={GeneriqueOuverture} {...base} durationInFrames={240} />
     <Composition id="GeneriqueServices" component={GeneriqueServices} {...base} durationInFrames={450}
       defaultProps={{duree: 15}} {...reglable(15)} />

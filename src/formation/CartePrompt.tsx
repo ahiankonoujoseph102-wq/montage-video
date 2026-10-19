@@ -94,6 +94,10 @@ const Corps: React.FC<PropsCarte> = ({id, temps}) => {
             );
           })}
         </div>
+        {defile > 4 ? (
+          <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 60,
+            background: 'linear-gradient(rgba(14,18,44,0.97), transparent)'}} />
+        ) : null}
         {depasse > 0 ? (
           <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 70, opacity: defile < depasse - 4 ? 1 : 0,
             background: 'linear-gradient(transparent, rgba(14,18,44,0.95))'}} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Easing, interpolate, OffthreadVideo, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Easing, Freeze, interpolate, OffthreadVideo, staticFile, useCurrentFrame} from 'remotion';
 import {POLICE} from '../charte';
 import {FondNuit, NUIT, OR, Z} from './commun';
 
@@ -8,13 +8,15 @@ import {FondNuit, NUIT, OR, Z} from './commun';
 // passages accélérés. Zoom : `zoom` = échelle de l'écran (0,85 : l'écran entier tient en hauteur),
 // (`x`, `y`) = point de l'écran (pixels de la source) placé au centre de l'image.
 export type ZoomExtrait = {image: number; zoom: number; x: number; y: number};
+// `depart` : image de l'extrait où commencer ; au-delà de la fin, la dernière image reste figée.
+// `hauteurVue` : hauteur de la zone d'image (le reste, en bas, est laissé aux sous-titres).
 export type PropsExtrait = {video: string; dureeImages: number; zooms: ZoomExtrait[];
-  acceleres: {debut: number; fin: number; facteur: number}[]};
+  acceleres: {debut: number; fin: number; facteur: number}[]; depart?: number; hauteurVue?: number};
 
 const L = 1080;
 const H = 2400;
 
-const cadrage = (f: number, zooms: ZoomExtrait[]) => {
+const cadrage = (f: number, zooms: ZoomExtrait[], hv: number) => {
   const pts = zooms.length ? zooms : [{image: 0, zoom: 0.85, x: 540, y: 1200}];
   let a = pts[0];
   let b = pts[0];
@@ -28,31 +30,37 @@ const cadrage = (f: number, zooms: ZoomExtrait[]) => {
   }
   const u = b.image === a.image ? 1 : interpolate(f, [a.image, b.image], [0, 1],
     {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
-  const z = a.zoom + (b.zoom - a.zoom) * u;
+  const ajuste = (z: number) => (z < 1 ? (hv / H) * (z / 0.85) : z);
+  const z = ajuste(a.zoom) + (ajuste(b.zoom) - ajuste(a.zoom)) * u;
   const cx = a.x + (b.x - a.x) * u;
   const cy = a.y + (b.y - a.y) * u;
   // Position : le point (cx, cy) au centre, sans laisser de vide quand l'écran dépasse l'image.
   const w = L * z;
   const h = H * z;
   let x = 540 - cx * z;
-  let y = 960 - cy * z;
+  let y = hv / 2 - cy * z;
   x = w <= 1080 ? (1080 - w) / 2 : Math.min(0, Math.max(1080 - w, x));
-  y = h <= 1920 ? (1920 - h) / 2 : Math.min(0, Math.max(1920 - h, y));
+  y = h <= hv ? (hv - h) / 2 : Math.min(0, Math.max(hv - h, y));
   return {z, x, y};
 };
 
-export const ExtraitEcran: React.FC<PropsExtrait> = ({video, zooms, acceleres}) => {
-  const f = useCurrentFrame();
-  const {z, x, y} = cadrage(f, zooms);
+export const ExtraitEcran: React.FC<PropsExtrait> = ({video, dureeImages, zooms, acceleres, depart = 0, hauteurVue = 1920}) => {
+  const f = Math.min(useCurrentFrame() + depart, dureeImages - 1);
+  const fige = useCurrentFrame() + depart >= dureeImages - 1;
+  const {z, x, y} = cadrage(f, zooms, hauteurVue);
   const acc = acceleres.find((a) => f >= a.debut && f < a.fin);
   const coins = z < 1 ? 38 : 0;
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <FondNuit />
-      <div style={{position: 'absolute', left: x, top: y, width: L, height: H, transform: `scale(${z})`,
-        transformOrigin: '0 0', borderRadius: coins / z, overflow: 'hidden',
-        boxShadow: z < 1 ? '0 30px 80px rgba(0,0,0,0.6)' : 'none'}}>
-        <OffthreadVideo src={staticFile(video)} muted style={{width: L, height: H}} />
+      <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: hauteurVue, overflow: 'hidden'}}>
+        <div style={{position: 'absolute', left: x, top: y, width: L, height: H, transform: `scale(${z})`,
+          transformOrigin: '0 0', borderRadius: coins / z, overflow: 'hidden',
+          boxShadow: z < 1 ? '0 30px 80px rgba(0,0,0,0.6)' : 'none'}}>
+          <Freeze frame={f} active={fige || depart > 0}>
+            <OffthreadVideo src={staticFile(video)} muted style={{width: L, height: H}} />
+          </Freeze>
+        </div>
       </div>
       {acc ? (
         <div style={{position: 'absolute', left: Z.gauche, top: Z.haut + 20, display: 'flex', alignItems: 'center', gap: 14,
