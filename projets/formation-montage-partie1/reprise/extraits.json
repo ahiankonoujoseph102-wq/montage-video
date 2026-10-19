@@ -1,0 +1,1801 @@
+{
+ "X02_chatgpt_decoupe": {
+  "video": "formation-montage-partie1/extraits/X02_chatgpt_decoupe_a9cca0a0.mp4",
+  "reperes": [
+   {
+    "image": 213,
+    "fin": 249,
+    "x": 978,
+    "y": 1350,
+    "forme": "cercle",
+    "texte": "Envoyez"
+   }
+  ],
+  "dureeImages": 537,
+  "acceleres": [
+   {
+    "debut": 240,
+    "fin": 306,
+    "facteur": 3
+   },
+   {
+    "debut": 426,
+    "fin": 530,
+    "facteur": 3
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 102,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 105,
+    "zoom": 1.4,
+    "x": 694,
+    "y": 1150
+   },
+   {
+    "image": 237,
+    "zoom": 1.4,
+    "x": 694,
+    "y": 1150
+   },
+   {
+    "image": 250,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "5. Étape 2",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    232,
+    235.5,
+    1
+   ],
+   [
+    259.5,
+    264.0,
+    1
+   ],
+   [
+    264.0,
+    270.6,
+    3
+   ],
+   [
+    270.6,
+    274.6,
+    1
+   ],
+   [
+    274.6,
+    285,
+    3
+   ]
+  ]
+ },
+ "X01_chatgpt_script": {
+  "video": "formation-montage-partie1/extraits/X01_chatgpt_script_2c7ad394.mp4",
+  "reperes": [
+   {
+    "image": 106,
+    "fin": 151,
+    "x": 853,
+    "y": 1350,
+    "forme": "cercle",
+    "texte": "Micro : dictez"
+   },
+   {
+    "image": 361,
+    "fin": 397,
+    "x": 853,
+    "y": 1350,
+    "forme": "cercle",
+    "texte": "Arrêtez la dictée"
+   },
+   {
+    "image": 411,
+    "fin": 447,
+    "x": 980,
+    "y": 1350,
+    "forme": "cercle",
+    "texte": "Envoyez"
+   },
+   {
+    "image": 563,
+    "fin": 599,
+    "x": 300,
+    "y": 2140,
+    "forme": "fleche",
+    "angle": 270,
+    "texte": "Écrivez ici"
+   },
+   {
+    "image": 680,
+    "fin": 716,
+    "x": 978,
+    "y": 1350,
+    "forme": "cercle",
+    "texte": "Envoyez"
+   },
+   {
+    "image": 1109,
+    "fin": 1145,
+    "x": 410,
+    "y": 2246,
+    "forme": "fleche",
+    "angle": 270,
+    "texte": "Écrivez ici"
+   },
+   {
+    "image": 1346,
+    "fin": 1391,
+    "x": 978,
+    "y": 1350,
+    "forme": "cercle",
+    "texte": "Envoyez"
+   },
+   {
+    "image": 1774,
+    "fin": 1810,
+    "x": 410,
+    "y": 2246,
+    "forme": "fleche",
+    "angle": 270,
+    "texte": "Écrivez ici"
+   }
+  ],
+  "dureeImages": 1883,
+  "acceleres": [
+   {
+    "debut": 0,
+    "fin": 91,
+    "facteur": 4
+   },
+   {
+    "debut": 449,
+    "fin": 488,
+    "facteur": 4
+   },
+   {
+    "debut": 710,
+    "fin": 756,
+    "facteur": 4
+   },
+   {
+    "debut": 756,
+    "fin": 776,
+    "facteur": 3
+   },
+   {
+    "debut": 1391,
+    "fin": 1471,
+    "facteur": 4
+   }
+  ],
+  "zooms": [
+   {
+    "image": 12,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 84,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 95,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1150
+   },
+   {
+    "image": 251,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1150
+   },
+   {
+    "image": 256,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1150
+   },
+   {
+    "image": 436,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1150
+   },
+   {
+    "image": 461,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 551,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 554,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1760
+   },
+   {
+    "image": 581,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1760
+   },
+   {
+    "image": 596,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1300
+   },
+   {
+    "image": 707,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1300
+   },
+   {
+    "image": 716,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 1106,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 1109,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1760
+   },
+   {
+    "image": 1127,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1760
+   },
+   {
+    "image": 1145,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 1325,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 1340,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1300
+   },
+   {
+    "image": 1379,
+    "zoom": 1.5,
+    "x": 720,
+    "y": 1300
+   },
+   {
+    "image": 1399,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 1753,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 1768,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1760
+   },
+   {
+    "image": 1795,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1760
+   },
+   {
+    "image": 1806,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1400
+   },
+   {
+    "image": 1836,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1400
+   },
+   {
+    "image": 1858,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "4. Étape 1",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    76.4,
+    88.6,
+    4
+   ],
+   [
+    88.6,
+    94.0,
+    1
+   ],
+   [
+    138.5,
+    145.0,
+    1
+   ],
+   [
+    145.0,
+    150.2,
+    4
+   ],
+   [
+    150.2,
+    152.4,
+    1
+   ],
+   [
+    155.0,
+    160.2,
+    1
+   ],
+   [
+    160.2,
+    166.4,
+    4
+   ],
+   [
+    166.4,
+    168.4,
+    3
+   ],
+   [
+    168.4,
+    173.0,
+    1
+   ],
+   [
+    180.0,
+    184.0,
+    1
+   ],
+   [
+    189.0,
+    191.5,
+    1
+   ],
+   [
+    194.0,
+    198.6,
+    1
+   ],
+   [
+    203.6,
+    208.4,
+    1
+   ],
+   [
+    208.4,
+    219.0,
+    4
+   ],
+   [
+    219.0,
+    232.0,
+    1
+   ]
+  ]
+ },
+ "X03_chatgpt_personnage": {
+  "video": "formation-montage-partie1/extraits/X03_chatgpt_personnage_04a93b4f.mp4",
+  "reperes": [
+   {
+    "image": 272,
+    "fin": 308,
+    "x": 300,
+    "y": 1175,
+    "forme": "cercle",
+    "texte": "Ouvrez l'image"
+   },
+   {
+    "image": 462,
+    "fin": 507,
+    "x": 635,
+    "y": 218,
+    "forme": "cercle",
+    "texte": "Téléchargez"
+   }
+  ],
+  "dureeImages": 597,
+  "acceleres": [
+   {
+    "debut": 120,
+    "fin": 261,
+    "facteur": 6
+   },
+   {
+    "debut": 297,
+    "fin": 321,
+    "facteur": 3
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 261,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 268,
+    "zoom": 1.4,
+    "x": 400,
+    "y": 1175
+   },
+   {
+    "image": 294,
+    "zoom": 1.4,
+    "x": 400,
+    "y": 1175
+   },
+   {
+    "image": 301,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 441,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 456,
+    "zoom": 1.4,
+    "x": 600,
+    "y": 700
+   },
+   {
+    "image": 597,
+    "zoom": 1.4,
+    "x": 600,
+    "y": 700
+   }
+  ],
+  "section": "6. Étape 3",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    347,
+    351,
+    1
+   ],
+   [
+    351,
+    379.2,
+    6
+   ],
+   [
+    379.2,
+    380.4,
+    1
+   ],
+   [
+    380.4,
+    382.8,
+    3
+   ],
+   [
+    382.8,
+    392,
+    1
+   ]
+  ]
+ },
+ "X04_chatgpt_prompts_flow": {
+  "video": "formation-montage-partie1/extraits/X04_chatgpt_prompts_flow_c8693d80.mp4",
+  "reperes": [
+   {
+    "image": 414,
+    "fin": 450,
+    "x": 570,
+    "y": 1554,
+    "forme": "cercle",
+    "texte": "Copier le prompt"
+   }
+  ],
+  "dureeImages": 425,
+  "acceleres": [],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 120,
+    "zoom": 1.25,
+    "x": 540,
+    "y": 1000
+   },
+   {
+    "image": 270,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 396,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 408,
+    "zoom": 1.4,
+    "x": 570,
+    "y": 1450
+   },
+   {
+    "image": 450,
+    "zoom": 1.4,
+    "x": 570,
+    "y": 1450
+   }
+  ],
+  "section": "7. Étape 4",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    456,
+    463,
+    1
+   ],
+   [
+    480,
+    488,
+    1
+   ]
+  ]
+ },
+ "X05_flow_reglages": {
+  "video": "formation-montage-partie1/extraits/X05_flow_reglages_799e1dcb.mp4",
+  "reperes": [
+   {
+    "image": 3,
+    "fin": 48,
+    "x": 540,
+    "y": 1870,
+    "forme": "cercle",
+    "texte": "Nouveau projet"
+   },
+   {
+    "image": 42,
+    "fin": 78,
+    "x": 861,
+    "y": 1977,
+    "forme": "cercle",
+    "texte": "Commencer"
+   },
+   {
+    "image": 78,
+    "fin": 123,
+    "x": 720,
+    "y": 2055,
+    "forme": "cercle",
+    "texte": "Réglages"
+   },
+   {
+    "image": 114,
+    "fin": 150,
+    "x": 560,
+    "y": 1725,
+    "forme": "cercle",
+    "texte": "Modèle"
+   },
+   {
+    "image": 144,
+    "fin": 189,
+    "x": 450,
+    "y": 1500,
+    "forme": "cercle",
+    "texte": "Veo 3.1 – Fast"
+   },
+   {
+    "image": 174,
+    "fin": 210,
+    "x": 400,
+    "y": 1940,
+    "forme": "fleche",
+    "angle": 90,
+    "texte": "Zone du prompt"
+   },
+   {
+    "image": 201,
+    "fin": 237,
+    "x": 350,
+    "y": 1503,
+    "forme": "cercle",
+    "texte": "Coller"
+   },
+   {
+    "image": 246,
+    "fin": 282,
+    "x": 165,
+    "y": 552,
+    "forme": "cercle",
+    "texte": "Image de départ"
+   },
+   {
+    "image": 275,
+    "fin": 311,
+    "x": 330,
+    "y": 535,
+    "forme": "cercle",
+    "texte": "Votre image"
+   },
+   {
+    "image": 306,
+    "fin": 342,
+    "x": 720,
+    "y": 2055,
+    "forme": "cercle",
+    "texte": "Réglages"
+   },
+   {
+    "image": 342,
+    "fin": 387,
+    "x": 714,
+    "y": 1590,
+    "forme": "cercle",
+    "texte": "9:16"
+   },
+   {
+    "image": 381,
+    "fin": 426,
+    "x": 972,
+    "y": 2055,
+    "forme": "cercle",
+    "texte": "Envoyer"
+   }
+  ],
+  "dureeImages": 401,
+  "acceleres": [],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1720
+   },
+   {
+    "image": 39,
+    "zoom": 1.5,
+    "x": 697,
+    "y": 1720
+   },
+   {
+    "image": 138,
+    "zoom": 1.5,
+    "x": 500,
+    "y": 1550
+   },
+   {
+    "image": 165,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 174,
+    "zoom": 1.3,
+    "x": 560,
+    "y": 1550
+   },
+   {
+    "image": 246,
+    "zoom": 1.3,
+    "x": 441,
+    "y": 800
+   },
+   {
+    "image": 291,
+    "zoom": 1.3,
+    "x": 441,
+    "y": 800
+   },
+   {
+    "image": 303,
+    "zoom": 1.4,
+    "x": 670,
+    "y": 1672
+   },
+   {
+    "image": 405,
+    "zoom": 1.4,
+    "x": 670,
+    "y": 1672
+   }
+  ],
+  "section": "8. Étape 5 : Google Flow, nouveau projet, import, prompt, réglages",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    504,
+    505.3,
+    1
+   ],
+   [
+    508,
+    509,
+    1
+   ],
+   [
+    510.2,
+    511.4,
+    1
+   ],
+   [
+    513.2,
+    515.2,
+    1
+   ],
+   [
+    538.3,
+    541,
+    1
+   ],
+   [
+    559.5,
+    563.5,
+    1
+   ],
+   [
+    567.6,
+    569,
+    1
+   ]
+  ]
+ },
+ "X06_flow_generation_scene1": {
+  "video": "formation-montage-partie1/extraits/X06_flow_generation_scene1_44a671ee.mp4",
+  "reperes": [
+   {
+    "image": 164,
+    "fin": 200,
+    "x": 150,
+    "y": 400,
+    "forme": "cercle",
+    "texte": "Scène prête"
+   },
+   {
+    "image": 237,
+    "fin": 273,
+    "x": 540,
+    "y": 1200,
+    "forme": "cercle",
+    "texte": "Lecture"
+   },
+   {
+    "image": 378,
+    "fin": 423,
+    "x": 711,
+    "y": 1131,
+    "forme": "cercle",
+    "texte": "Appui long"
+   },
+   {
+    "image": 426,
+    "fin": 471,
+    "x": 354,
+    "y": 1227,
+    "forme": "cercle",
+    "texte": "Télécharger la vidéo"
+   }
+  ],
+  "dureeImages": 564,
+  "acceleres": [
+   {
+    "debut": 0,
+    "fin": 158,
+    "facteur": 16
+   },
+   {
+    "debut": 200,
+    "fin": 234,
+    "facteur": 2
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 150,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 158,
+    "zoom": 1.4,
+    "x": 410,
+    "y": 800
+   },
+   {
+    "image": 197,
+    "zoom": 1.4,
+    "x": 410,
+    "y": 800
+   },
+   {
+    "image": 206,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 234,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 249,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 276,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 297,
+    "zoom": 1.1,
+    "x": 540,
+    "y": 1250
+   },
+   {
+    "image": 369,
+    "zoom": 1.1,
+    "x": 540,
+    "y": 1250
+   },
+   {
+    "image": 381,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1180
+   },
+   {
+    "image": 459,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1180
+   },
+   {
+    "image": 483,
+    "zoom": 1.1,
+    "x": 540,
+    "y": 1250
+   },
+   {
+    "image": 525,
+    "zoom": 1.1,
+    "x": 540,
+    "y": 1250
+   },
+   {
+    "image": 525,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 564,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "8. Étape 5 : génération accélérée, scène 1 regardée et téléchargée",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    570,
+    654.2,
+    16
+   ],
+   [
+    654.2,
+    655.6,
+    1
+   ],
+   [
+    655.6,
+    657.9,
+    2
+   ],
+   [
+    657.9,
+    662,
+    1
+   ],
+   [
+    666.6,
+    672.2,
+    1
+   ],
+   [
+    674.1,
+    675.4,
+    1
+   ]
+  ]
+ },
+ "X07_flow_changement_compte": {
+  "video": "formation-montage-partie1/extraits/X07_flow_changement_compte_605c96ff.mp4",
+  "reperes": [
+   {
+    "image": 9,
+    "fin": 45,
+    "x": 987,
+    "y": 264,
+    "forme": "cercle",
+    "texte": "Photo de profil"
+   },
+   {
+    "image": 84,
+    "fin": 120,
+    "x": 540,
+    "y": 969,
+    "forme": "cercle",
+    "texte": "Se déconnecter"
+   },
+   {
+    "image": 305,
+    "fin": 350,
+    "x": 540,
+    "y": 1890,
+    "forme": "cercle",
+    "texte": "Créer avec Google Flow"
+   },
+   {
+    "image": 385,
+    "fin": 421,
+    "x": 540,
+    "y": 1869,
+    "forme": "cercle",
+    "texte": "Nouveau projet"
+   },
+   {
+    "image": 460,
+    "fin": 496,
+    "x": 861,
+    "y": 1977,
+    "forme": "cercle",
+    "texte": "Commencer"
+   }
+  ],
+  "dureeImages": 632,
+  "acceleres": [
+   {
+    "debut": 225,
+    "fin": 275,
+    "facteur": 4
+   },
+   {
+    "debut": 331,
+    "fin": 366,
+    "facteur": 3
+   },
+   {
+    "debut": 415,
+    "fin": 441,
+    "facteur": 3
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 30,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 760
+   },
+   {
+    "image": 120,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 760
+   },
+   {
+    "image": 150,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 275,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 295,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1650
+   },
+   {
+    "image": 415,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1650
+   },
+   {
+    "image": 421,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 441,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 456,
+    "zoom": 1.4,
+    "x": 670,
+    "y": 1672
+   },
+   {
+    "image": 486,
+    "zoom": 1.4,
+    "x": 670,
+    "y": 1672
+   },
+   {
+    "image": 501,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 516,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 760
+   },
+   {
+    "image": 636,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 760
+   }
+  ],
+  "section": "8. Étape 5 : changer de compte Google quand les crédits sont épuisés",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    702.5,
+    710,
+    1
+   ],
+   [
+    711,
+    717.6,
+    4
+   ],
+   [
+    717.6,
+    719.5,
+    1
+   ],
+   [
+    719.5,
+    723.0,
+    3
+   ],
+   [
+    723.0,
+    724.6,
+    1
+   ],
+   [
+    724.6,
+    727.3,
+    3
+   ],
+   [
+    727.3,
+    733.8,
+    1
+   ]
+  ]
+ },
+ "X08_flow_scene2_credits": {
+  "video": "formation-montage-partie1/extraits/X08_flow_scene2_credits_8e045f6a.mp4",
+  "reperes": [
+   {
+    "image": 0,
+    "fin": 36,
+    "x": 726,
+    "y": 2055,
+    "forme": "cercle",
+    "texte": "Réglages"
+   },
+   {
+    "image": 66,
+    "fin": 111,
+    "x": 441,
+    "y": 1824,
+    "forme": "cercle",
+    "texte": "x2 = 40 crédits"
+   },
+   {
+    "image": 120,
+    "fin": 165,
+    "x": 255,
+    "y": 1824,
+    "forme": "cercle",
+    "texte": "x1 = 20 crédits"
+   },
+   {
+    "image": 201,
+    "fin": 246,
+    "x": 156,
+    "y": 1044,
+    "forme": "cercle",
+    "texte": "Réessayer"
+   },
+   {
+    "image": 350,
+    "fin": 386,
+    "x": 795,
+    "y": 849,
+    "forme": "cercle",
+    "texte": "Appui long"
+   },
+   {
+    "image": 386,
+    "fin": 422,
+    "x": 354,
+    "y": 1227,
+    "forme": "cercle",
+    "texte": "Télécharger la vidéo"
+   }
+  ],
+  "dureeImages": 519,
+  "acceleres": [
+   {
+    "debut": 237,
+    "fin": 289,
+    "facteur": 16
+   },
+   {
+    "debut": 289,
+    "fin": 302,
+    "facteur": 16
+   },
+   {
+    "debut": 302,
+    "fin": 326,
+    "facteur": 16
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 1.6,
+    "x": 540,
+    "y": 1700
+   },
+   {
+    "image": 117,
+    "zoom": 1.6,
+    "x": 540,
+    "y": 1700
+   },
+   {
+    "image": 237,
+    "zoom": 1.4,
+    "x": 410,
+    "y": 1000
+   },
+   {
+    "image": 237,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 326,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 326,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 341,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1100
+   },
+   {
+    "image": 425,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1100
+   },
+   {
+    "image": 446,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 491,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "8. Étape 5 : x1 contre x2 (20 / 40 crédits), échec, relance, scène 2",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    771,
+    772.5,
+    1
+   ],
+   [
+    779.6,
+    782,
+    1
+   ],
+   [
+    789.7,
+    791.5,
+    1
+   ],
+   [
+    810.8,
+    813,
+    1
+   ],
+   [
+    834.5,
+    862,
+    16
+   ],
+   [
+    867,
+    874,
+    16
+   ],
+   [
+    879,
+    892,
+    16
+   ],
+   [
+    897,
+    902.5,
+    1
+   ]
+  ]
+ },
+ "X09_flow_scene3": {
+  "video": "formation-montage-partie1/extraits/X09_flow_scene3_c38c1639.mp4",
+  "reperes": [],
+  "dureeImages": 765,
+  "acceleres": [
+   {
+    "debut": 150,
+    "fin": 394,
+    "facteur": 8
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1450
+   },
+   {
+    "image": 120,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1450
+   },
+   {
+    "image": 154,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "8. Étape 5 : scène 3 (génération accélérée)",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    1007,
+    1012,
+    1
+   ],
+   [
+    1012,
+    1077,
+    8
+   ],
+   [
+    1092,
+    1103.8,
+    1
+   ],
+   [
+    1106,
+    1108,
+    1
+   ]
+  ]
+ },
+ "X10_flow_scene4": {
+  "video": "formation-montage-partie1/extraits/X10_flow_scene4_4e25c89b.mp4",
+  "reperes": [],
+  "dureeImages": 695,
+  "acceleres": [
+   {
+    "debut": 150,
+    "fin": 394,
+    "facteur": 8
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1450
+   },
+   {
+    "image": 120,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1450
+   },
+   {
+    "image": 154,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "8. Étape 5 : scène 4 (génération accélérée)",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    1122,
+    1127,
+    1
+   ],
+   [
+    1127,
+    1192,
+    8
+   ],
+   [
+    1197,
+    1207,
+    1
+   ]
+  ]
+ },
+ "X11_claude_envoi_30mo": {
+  "video": "formation-montage-partie1/extraits/X11_claude_envoi_30mo_ced50192.mp4",
+  "reperes": [
+   {
+    "image": 258,
+    "fin": 303,
+    "x": 680,
+    "y": 1026,
+    "forme": "fleche",
+    "angle": 0,
+    "texte": "Votre vidéo : 32,5 Mo"
+   }
+  ],
+  "dureeImages": 623,
+  "acceleres": [
+   {
+    "debut": 360,
+    "fin": 510,
+    "facteur": 6
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 120,
+    "zoom": 1.6,
+    "x": 540,
+    "y": 1030
+   },
+   {
+    "image": 330,
+    "zoom": 1.6,
+    "x": 540,
+    "y": 1030
+   },
+   {
+    "image": 365,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 525,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1300
+   },
+   {
+    "image": 624,
+    "zoom": 1.5,
+    "x": 540,
+    "y": 1300
+   }
+  ],
+  "section": "9. Étape 6 : envoi de la vidéo de 32,49 Mo, échec",
+  "source": "ecran1",
+  "morceaux": [
+   [
+    1560,
+    1572,
+    1
+   ],
+   [
+    1572,
+    1602,
+    6
+   ],
+   [
+    1733,
+    1736.8,
+    1
+   ]
+  ]
+ },
+ "X12_claude_mission": {
+  "video": "formation-montage-partie1/extraits/X12_claude_mission_9d422520.mp4",
+  "reperes": [
+   {
+    "image": 435,
+    "fin": 480,
+    "x": 700,
+    "y": 945,
+    "forme": "fleche",
+    "angle": 0,
+    "texte": "Ouvrez la vidéo"
+   },
+   {
+    "image": 675,
+    "fin": 711,
+    "x": 97,
+    "y": 272,
+    "forme": "cercle",
+    "texte": "Fermer"
+   }
+  ],
+  "dureeImages": 711,
+  "acceleres": [],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 270,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 330,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1000
+   },
+   {
+    "image": 480,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1000
+   },
+   {
+    "image": 510,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 645,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 666,
+    "zoom": 1.4,
+    "x": 330,
+    "y": 740
+   },
+   {
+    "image": 699,
+    "zoom": 1.4,
+    "x": 330,
+    "y": 740
+   }
+  ],
+  "section": "10. Étape 7 : prompt MISSION, réponse de Claude, version 1",
+  "source": "ecran2",
+  "morceaux": [
+   [
+    38,
+    45,
+    1
+   ],
+   [
+    52,
+    66,
+    1
+   ],
+   [
+    95.5,
+    98,
+    1
+   ]
+  ]
+ },
+ "X13_claude_corrections": {
+  "video": "formation-montage-partie1/extraits/X13_claude_corrections_00797e7e.mp4",
+  "reperes": [
+   {
+    "image": 822,
+    "fin": 858,
+    "x": 645,
+    "y": 988,
+    "forme": "fleche",
+    "angle": 0,
+    "texte": "Votre vidéo"
+   },
+   {
+    "image": 906,
+    "fin": 951,
+    "x": 933,
+    "y": 185,
+    "forme": "cercle",
+    "texte": "Télécharger"
+   }
+  ],
+  "dureeImages": 983,
+  "acceleres": [
+   {
+    "debut": 960,
+    "fin": 996,
+    "facteur": 4
+   }
+  ],
+  "zooms": [
+   {
+    "image": 0,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 30,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 820
+   },
+   {
+    "image": 120,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 820
+   },
+   {
+    "image": 150,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 309,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 330,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 900
+   },
+   {
+    "image": 372,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 900
+   },
+   {
+    "image": 390,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 480,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1100
+   },
+   {
+    "image": 675,
+    "zoom": 1.3,
+    "x": 540,
+    "y": 1100
+   },
+   {
+    "image": 675,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 795,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 813,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1000
+   },
+   {
+    "image": 849,
+    "zoom": 1.4,
+    "x": 540,
+    "y": 1000
+   },
+   {
+    "image": 870,
+    "zoom": 1.4,
+    "x": 750,
+    "y": 730
+   },
+   {
+    "image": 960,
+    "zoom": 1.4,
+    "x": 750,
+    "y": 730
+   },
+   {
+    "image": 968,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   },
+   {
+    "image": 996,
+    "zoom": 0.85,
+    "x": 540,
+    "y": 1200
+   }
+  ],
+  "section": "11. Étape 8 : corrections et téléchargement",
+  "source": "ecran2",
+  "morceaux": [
+   [
+    98,
+    114,
+    1
+   ],
+   [
+    134,
+    140.5,
+    1
+   ],
+   [
+    143,
+    152.5,
+    1
+   ],
+   [
+    152.5,
+    157.3,
+    4
+   ]
+  ]
+ }
+}
