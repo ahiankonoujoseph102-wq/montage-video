@@ -24,3 +24,12 @@ Google Photos (5:06–5:16, 8:38–8:42, 12:30–12:44, 15:45–16:00), captures
 18:24, 11:15–11:17, 18:22–18:25, enregistrement n° 2 à 2:38). Floutés : photo de profil Google (avatar), panneau de
 compte et liste « Sélectionner un compte » (11:42–11:49, 12:08–12:13), adresses Drive dans le sélecteur de fichiers
 (26:02–26:12), adresse claude.ai/chat de la discussion (enregistrement n° 2, 2:20–2:38).
+
+## Durées par défaut
+
+Génériques : ouverture 8 s, services 15 s, adhésion 15 s, Talkami 12 s, fin 10 s.
+Cartes : prompt 1 32 s, 2 20 s, 3 24 s, 4 32 s, 5 56 s, complément 16 s, 6 48 s, 7 12 s, 8 8 s, prompt Flow réel 15 s.
+Scènes : employé 10 s, prompt vague/précis 12 s, besoins 12 s, barre 32 s 9 s, réglages 12 s, barrière 30 Mo 10 s,
+WhatsApp flou 9 s, limites 12 s, récapitulatif 14 s ; avant/après 32 s.
+Extraits : X01 99,1 s, X02 35,7 s, X03 20,8 s, X04 31,8 s, X05 47,6 s, X06 28,4 s, X07 30,3 s, X08 40,8 s,
+X09 25,5 s, X10 23,2 s, X11 22,4 s, X12 99,0 s, X13 55,3 s (9 min 20 s en tout).
