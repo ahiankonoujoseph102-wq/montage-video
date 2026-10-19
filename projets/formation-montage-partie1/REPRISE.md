@@ -33,18 +33,17 @@ courtes en français, fichiers envoyés directement.
 - Vérifié en images : zoom pleine largeur, étiquettes d'écart, animation étape 6, côtés du studio.
 - Durée actuelle : 748 s (12 min 28).
 
+## Rendu complet livré (19 octobre)
+
+- `out/formation-partie1/Formation_Partie1_HQ.mp4` : 748,1 s (12 min 28), 282,2 Mo, −14,0 LUFS, LRA 5,8, crête vraie −2,0 dBTP.
+- `out/formation-partie1/Formation_Partie1_WhatsApp.mp4` : 720 × 1280, 92,5 Mo, −14,0 LUFS, crête vraie −1,9 dBTP.
+- Planches `out/formation-partie1/planche_1.jpg`, `planche_2.jpg` (une image toutes les 12 s). `out/` n'est pas versionné.
+
 ## Reste à faire
 
-1. (fait) Vérifier en images les corrections ci-dessus ;
-   commande planche : `PROPS=public/formation-montage-partie1/formation_props_radio.json bash <stills.sh> …`
-   (ou `npx remotion still`).
-2. (fait) Confidentialité revérifiée sur le rendu (2 images/s sur tous les écrans filmés) : seule la fin de X07
-   montrait l'écran d'accueil Android → X07 s'arrête à 733,4 (props mises à jour sans changer la durée du plan,
-   passage re-rendu et remplacé dans le rendu).
-3. Rendu complet : HQ + version < 100 Mo (deux passes), mesures (durée, poids, LUFS, crête vraie), planche de toute
-   la vidéo ; envoyer à Joseph.
-4. Puis : dernière passe sur la voix seulement avec les temps de répétitions que Joseph enverra (ajouter des coupes
-   dans `radio.reprises`, relancer la chaîne).
+1. Dernière passe sur la voix seulement, avec les temps de répétitions que Joseph enverra : ajouter des coupes dans
+   `radio.reprises` (silence ≤ −38 dB aux deux bouts, `recaler` si des mots du script tombent dans la coupe),
+   relancer voix_radio → formation_montage radio → double_formation radio → rendu.
 
 ## Fichiers de reprise (`projets/formation-montage-partie1/reprise/`, à recopier dans `public/formation-montage-partie1/`)
 
