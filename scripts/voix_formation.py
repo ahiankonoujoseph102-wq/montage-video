@@ -35,11 +35,13 @@ def energie(x):
     return 20 * np.log10(np.sqrt((x[:n * h].reshape(n, h) ** 2).mean(1)) + 1e-9)
 
 
-sons = {i + 1: debruiter(dossier / f) for i, f in enumerate(cfg["fichiers"])}
+sons = {i + 1: debruiter(dossier / f) for i, f in enumerate(cfg["fichiers"] + cfg.get("sources", []))}
+assembles = range(1, len(cfg["fichiers"]) + 1)  # les sources servent seulement aux greffes
 morceaux, rapport = [], []
-for f, x in sons.items():
+for f in assembles:
+    x = sons[f]
     # Greffes : remplacer un passage par un passage d'une autre prise (fondu de 12 ms de chaque côté).
-    for g in cfg.get("greffes", []):
+    for g in sorted(cfg.get("greffes", []), key=lambda g: -g["de"][0]):
         if g["fichier"] != f:
             continue
         a, b = (int(t * SR) for t in g["de"])
@@ -118,21 +120,37 @@ def vers_sortie(f, s):
 
 
 mots = []
-for f in sons:
-    decal = sum(g.get("decalage", 0) for g in cfg.get("greffes", []) if g["fichier"] == f)
-    gref = [g for g in cfg.get("greffes", []) if g["fichier"] == f]
-    for w, a, b, p in json.loads((trans / f"v{f}.json").read_text()):
-        if any(g["de"][0] - 0.02 <= a < g["de"][1] for g in gref):
-            continue  # mot remplacé par la greffe
-        if any(a >= g["de"][1] for g in gref):
-            a, b = a + decal, b + decal
-        ta, tb = vers_sortie(f, a + 0.03), vers_sortie(f, max(a + 0.03, b - 0.03))
+trans_mots = {f: json.loads((trans / f"v{f}.json").read_text()) for f in sons}
+for f in assembles:
+    gref = sorted([g for g in cfg.get("greffes", []) if g["fichier"] == f], key=lambda g: g["de"][0])
+
+    def vers_greffe(t):
+        """Temps d'un mot du fichier f → temps dans le fichier après greffes (None si remplacé)."""
+        d = 0.0
+        for g in gref:
+            if g["de"][0] - 0.02 <= t < g["de"][1]:
+                return None
+            if t >= g["de"][1]:
+                d += g["decalage"]
+        return t + d
+
+    for w, a, b, p in trans_mots[f]:
+        a2, b2 = vers_greffe(a), vers_greffe(b)
+        if a2 is None or b2 is None:
+            continue
+        ta, tb = vers_sortie(f, a2 + 0.03), vers_sortie(f, max(a2 + 0.03, b2 - 0.03))
         if ta is not None and tb is not None:
             mots.append([w, round(ta - 0.03, 3), round(tb + 0.03, 3), p])
-for g in cfg.get("greffes", []):
-    debut = vers_sortie(g["fichier"], g["de"][0] + 0.03)
-    mots.append(["[greffe]30", round(debut, 3), round(debut + 0.25, 3), 1])
-    mots.append(["secondes", round(debut + 0.25, 3), round(debut + (g["par"]["de"][1] - g["par"]["de"][0]), 3), 1])
+    # Mots des passages greffés, pris dans la transcription de leur source.
+    for g in gref:
+        debut_g = g["de"][0] + sum(o["decalage"] for o in gref if o["de"][1] <= g["de"][0])
+        c0, c1 = g["par"]["de"]
+        for w, a, b, p in trans_mots[g["par"]["fichier"]]:
+            if c0 <= a < c1:
+                ta = vers_sortie(f, debut_g + (a - c0) + 0.03)
+                tb = vers_sortie(f, debut_g + (min(b, c1) - c0) - 0.03)
+                if ta is not None and tb is not None:
+                    mots.append([w, round(ta - 0.03, 3), round(tb + 0.03, 3), p])
 mots.sort(key=lambda m: m[1])
 dest = ROOT / "public" / projet
 dest.mkdir(parents=True, exist_ok=True)

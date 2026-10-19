@@ -1,16 +1,111 @@
 {
- "_aide": "Nettoyage de la voix off (scripts/voix_formation.py). coupes : [début, fin] en secondes de chaque fichier, toujours dans un silence vérifié au niveau sonore. greffes : un passage remplacé par un passage d'une autre prise (même voix).",
- "fichiers": ["v1.wav", "v2.wav", "v3.wav"],
+ "_aide": "Nettoyage de la voix off (scripts/voix_formation.py). coupes : [début, fin] en secondes de chaque fichier, toujours dans un silence vérifié au niveau sonore. greffes : un passage remplacé par un passage d'une autre prise (même voix). sources : fichiers utilisés seulement pour les greffes.",
+ "fichiers": [
+  "v1.wav",
+  "v2.wav",
+  "v3.wav"
+ ],
  "coupes": {
-  "1": [[0, 3.3, "silence de départ"], [226.55, 9999, "« Merci. » final, hors script"]],
-  "2": [[0, 2.5, "silence de départ"], [100.85, 105.45, "1re prise de « Cinquième étape, Google Flow »"],
-        [197.55, 201.2, "1re prise de « Passons au montage, avec Claude »"],
-        [263.96, 271.85, "faux départs de « Deuxième façon… » (dont « Ouvrez Claude dans Claude »)"],
-        [367.3, 9999, "fin du fichier"]],
-  "3": [[0, 1.45, "silence de départ"], [66.4, 71.04, "1re prise de « Récapitulons. Le script avec ChatGPT »"],
-        [86.9, 98.2, "1re prise de « Tous les prompts… » et prise ratée de l'exercice"],
-        [119.9, 130.6, "1re prise de « Pour adhérer… »"], [150.12, 9999, "« Merci. » final, hors script"]]
+  "1": [
+   [
+    0,
+    3.3,
+    "silence de départ"
+   ],
+   [
+    226.55,
+    9999,
+    "« Merci. » final, hors script"
+   ]
+  ],
+  "2": [
+   [
+    0,
+    2.5,
+    "silence de départ"
+   ],
+   [
+    100.85,
+    105.45,
+    "1re prise de « Cinquième étape, Google Flow »"
+   ],
+   [
+    197.55,
+    201.2,
+    "1re prise de « Passons au montage, avec Claude »"
+   ],
+   [
+    263.96,
+    271.85,
+    "faux départs de « Deuxième façon… » (dont « Ouvrez Claude dans Claude »)"
+   ],
+   [
+    367.3,
+    9999,
+    "fin du fichier"
+   ]
+  ],
+  "3": [
+   [
+    0,
+    1.45,
+    "silence de départ"
+   ],
+   [
+    66.4,
+    71.04,
+    "1re prise de « Récapitulons. Le script avec ChatGPT »"
+   ],
+   [
+    86.9,
+    98.2,
+    "1re prise de « Tous les prompts… » et prise ratée de l'exercice"
+   ],
+   [
+    119.9,
+    130.6,
+    "1re prise de « Pour adhérer… »"
+   ],
+   [
+    150.12,
+    9999,
+    "« Merci. » final, hors script"
+   ]
+  ]
  },
- "greffes": [{"fichier": 3, "de": [105.07, 105.51], "par": {"fichier": 3, "de": [94.97, 95.57]},
-              "raison": "« 30 Mo » dit à la place de « 30 secondes » dans l'exercice : « 30 secondes » repris de la prise ratée"}]
+ "greffes": [
+  {
+   "fichier": 3,
+   "de": [
+    101.4,
+    109.92
+   ],
+   "par": {
+    "fichier": 4,
+    "de": [
+     2.2,
+     10.36
+    ]
+   },
+   "raison": "phrase 149 (exercice) : nouvelle prise du réenregistrement"
+  },
+  {
+   "fichier": 3,
+   "de": [
+    145.6,
+    150.1
+   ],
+   "par": {
+    "fichier": 4,
+    "de": [
+     10.9,
+     15.3
+    ]
+   },
+   "raison": "phrase 155 (slogan) : nouvelle prise du réenregistrement"
+  }
+ ],
+ "sources": [
+  "v4.wav"
+ ]
 }

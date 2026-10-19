@@ -23,22 +23,22 @@ Débruitage léger, compression douce, voix normalisée ; mix à −14 LUFS. Vit
 
 Pauses de plus de 0,6 s ramenées à 0,5 s (37 endroits). Aucun « euh » détecté dans les prises gardées.
 
-**Greffe** : dans l'exercice, la dernière prise dit « 30 Mo » (pas de « s » de « secondes » à la mesure du son) ;
-« 30 secondes » vient de la prise ratée juste avant. Si cela s'entend, réenregistrez la phrase 149.
+**Réenregistrement (fichier 4)** : la phrase 149 (exercice, « de 30 secondes », vérifié au son « s ») et la phrase 155
+(slogan, « maîtrisez l'IA et transformez vos compétences en opportunités ») remplacent les anciennes prises.
+Raccords dans des silences des deux côtés.
 
 ## Ajouts gardés
 
 - Phrase 11 : « un compte Claude gratuit **créé** sur claude.ai ».
 
-## À réenregistrer ou à réécouter
+## Réécoute des phrases 37, 43 et 147 (fenêtres courtes, trois réglages de transcription)
 
-Aucune phrase ne manque : les 156 phrases du script sont présentes.
-- **Phrase 155 (slogan)** : « maîtriser l'IA et transformer vos compétences **à l'opportunité** » au lieu de
-  « maîtrisez l'IA, et transformez vos compétences **en opportunités** » → à réenregistrer de préférence.
-- **Phrase 149 (exercice)** : greffe « 30 secondes » (voir plus haut) → à réenregistrer si elle ne vous convient pas.
-- À réécouter (doute de la transcription, sans doute bien dit) : 37 « raccourcis-la », 43 « Il demande 4 scènes »,
-  147 « Sept : les corrections ».
-- Phrase 131 : « animé » n'est pas dit (sans gravité ; retiré des sous-titres).
+- 37 : « Je choisis la version 2, mais raccourcis-la à 30 secondes » : dit vite, mais juste. Gardée.
+- 42–43 : vous dites « Dans la même **description**, collez ce prompt » au lieu de « discussion » (net dans les trois
+  analyses). Le reste (« Il demande 4 scènes… ») est juste. Gardée en attendant votre avis ; les sous-titres
+  affichent « discussion ».
+- 147 : « Sept : la correction et le téléchargement » : juste (« la correction » au singulier). Gardée.
+- 131 : « animé » n'est pas dit (retiré des sous-titres).
 
 ## Texte final (numéro de phrase, moment dans la voix nettoyée)
 
@@ -81,13 +81,13 @@ Aucune phrase ne manque : les 156 phrases du script sont présentes.
 34. [154.2 s] Je demande une accroche dans les 3 premières secondes, sinon les gens passent à la vidéo suivante.
 35. [159.6 s] Et je demande 3 versions, pour avoir le choix.
 36. [163.6 s] Choisissez votre version.
-37. [164.9 s] Si elle est trop longue, écrivez : « Je choisis la version 2, mais raccourcis-la à 30 secondes. » Repère utile : 30 secondes, c'est environ 70 à 80 mots.  ⚠️ « raccourcis-la » est entendu « rapprochons-la » par la transcription : à réécouter
+37. [164.9 s] Si elle est trop longue, écrivez : « Je choisis la version 2, mais raccourcis-la à 30 secondes. » Repère utile : 30 secondes, c'est environ 70 à 80 mots.
 38. [176.3 s] Deuxième étape, et elle est indispensable : découper le script en morceaux de 8 secondes.
 39. [181.9 s] Pourquoi ?
 40. [182.6 s] Parce que Google Flow, l'outil qui va créer la vidéo, fait des clips de 8 secondes maximum.
 41. [186.8 s] Pour une vidéo de 30 secondes, il faut donc 4 scènes de 8 secondes.
 42. [191.0 s] Dans la même discussion, collez ce prompt.
-43. [193.8 s] Il demande 4 scènes, avec une phrase de 15 mots maximum chacune : c'est ce qui tient en 8 secondes.  ⚠️ le début est entendu « et demandez 4 scènes » au lieu de « Il demande 4 scènes » : à réécouter
+43. [193.8 s] Il demande 4 scènes, avec une phrase de 15 mots maximum chacune : c'est ce qui tient en 8 secondes.  ⚠️ phrase précédente (42) : « description » dit au lieu de « discussion »
 44. [201.3 s] Pour chaque scène, ChatGPT décrit le décor, les gestes et le cadrage.
 45. [205.0 s] Et la dernière ligne demande le même personnage, la même tenue et le même décor dans les 4 scènes : sinon, votre présentateur change de visage d'une scène à l'autre.
 
@@ -200,12 +200,12 @@ Aucune phrase ne manque : les 156 phrases du script sont présentes.
 144. [627.1 s] Quatre : les prompts pour Google Flow.
 145. [629.2 s] Cinq : les clips dans Google Flow.
 146. [630.9 s] Six : le montage avec Claude, en respectant les 30 Mo.
-147. [633.8 s] Sept : les corrections et le téléchargement.  ⚠️ « Sept » est entendu « c'est » : à réécouter
+147. [633.8 s] Sept : les corrections et le téléchargement.
 148. [635.7 s] Tous les prompts sont dans le document du groupe VIP.
-149. [639.4 s] Votre exercice : créez une vidéo publicitaire de 30 secondes pour votre activité, ou pour celle d'un proche, et partagez-la dans le groupe VIP.  ⚠️ GREFFE : vous dites « 30 Mo » ; « 30 secondes » est repris de votre prise ratée juste avant (même voix)
+149. [639.4 s] Votre exercice : créez une vidéo publicitaire de 30 secondes pour votre activité, ou pour celle d'un proche, et partagez-la dans le groupe VIP.  (nouvelle prise)
 150. [647.5 s] Nous la regarderons ensemble pour l'améliorer.
 151. [649.9 s] Rendez-vous dans la deuxième partie, avec Claude Code.
 152. [652.9 s] Merci d'avoir suivi cette formation de Lomé IA School.
 153. [656.1 s] Pour adhérer, commander un service ou poser une question, rendez-vous sur lomeiaschool point laravel point cloud, ou écrivez-nous sur WhatsApp au 72 24 02 31 ou au 79 16 23 90.
 154. [668.1 s] Notre bureau est à Adidogomé, Lycée Moderne 2.
-155. [670.7 s] Lomé IA School : maîtrisez l'IA, et transformez vos compétences en opportunités.  ⚠️ vous dites « maîtriser l'IA et transformer vos compétences à l'opportunité » au lieu de « en opportunités »
+155. [670.7 s] Lomé IA School : maîtrisez l'IA, et transformez vos compétences en opportunités.  (nouvelle prise)
