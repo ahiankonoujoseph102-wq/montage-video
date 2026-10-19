@@ -1,0 +1,799 @@
+[
+ {
+  "texte": "Aucune",
+  "debut": 0.045,
+  "fin": 0.464
+ },
+ {
+  "texte": "de",
+  "debut": 0.464,
+  "fin": 0.627
+ },
+ {
+  "texte": "ces",
+  "debut": 0.627,
+  "fin": 0.773
+ },
+ {
+  "texte": "vidéos",
+  "debut": 0.773,
+  "fin": 1.082
+ },
+ {
+  "texte": "n'a",
+  "debut": 1.082,
+  "fin": 1.7
+ },
+ {
+  "texte": "été",
+  "debut": 1.7,
+  "fin": 1.882
+ },
+ {
+  "texte": "filmée.",
+  "debut": 1.882,
+  "fin": 2.3
+ },
+ {
+  "texte": "Pas",
+  "debut": 2.436,
+  "fin": 2.636
+ },
+ {
+  "texte": "de",
+  "debut": 2.636,
+  "fin": 2.8
+ },
+ {
+  "texte": "caméra.",
+  "debut": 2.8,
+  "fin": 3.236
+ },
+ {
+  "texte": "Pas",
+  "debut": 3.418,
+  "fin": 3.509
+ },
+ {
+  "texte": "d'acteur.",
+  "debut": 3.509,
+  "fin": 4.018
+ },
+ {
+  "texte": "Juste",
+  "debut": 4.218,
+  "fin": 4.473
+ },
+ {
+  "texte": "l'intelligence",
+  "debut": 4.473,
+  "fin": 5.145
+ },
+ {
+  "texte": "artificielle.",
+  "debut": 5.145,
+  "fin": 5.709
+ },
+ {
+  "texte": "Pendant",
+  "debut": 5.818,
+  "fin": 6.2
+ },
+ {
+  "texte": "que",
+  "debut": 6.2,
+  "fin": 6.291
+ },
+ {
+  "texte": "tu",
+  "debut": 6.291,
+  "fin": 6.4
+ },
+ {
+  "texte": "regardes,",
+  "debut": 6.4,
+  "fin": 6.891
+ },
+ {
+  "texte": "d'autres",
+  "debut": 7.0,
+  "fin": 7.2
+ },
+ {
+  "texte": "créent",
+  "debut": 7.2,
+  "fin": 7.382
+ },
+ {
+  "texte": "ces",
+  "debut": 7.382,
+  "fin": 7.491
+ },
+ {
+  "texte": "vidéos",
+  "debut": 7.491,
+  "fin": 7.764
+ },
+ {
+  "texte": "depuis",
+  "debut": 7.764,
+  "fin": 8.036
+ },
+ {
+  "texte": "leur",
+  "debut": 8.036,
+  "fin": 8.2
+ },
+ {
+  "texte": "téléphone…",
+  "debut": 8.2,
+  "fin": 8.655
+ },
+ {
+  "texte": "et",
+  "debut": 8.655,
+  "fin": 9.045
+ },
+ {
+  "texte": "se",
+  "debut": 9.045,
+  "fin": 9.245
+ },
+ {
+  "texte": "font",
+  "debut": 9.245,
+  "fin": 9.445
+ },
+ {
+  "texte": "payer",
+  "debut": 9.445,
+  "fin": 9.645
+ },
+ {
+  "texte": "pour",
+  "debut": 9.645,
+  "fin": 9.809
+ },
+ {
+  "texte": "ça.",
+  "debut": 9.809,
+  "fin": 9.991
+ },
+ {
+  "texte": "Les",
+  "debut": 10.155,
+  "fin": 10.409
+ },
+ {
+  "texte": "boutiques,",
+  "debut": 10.409,
+  "fin": 10.809
+ },
+ {
+  "texte": "les",
+  "debut": 10.955,
+  "fin": 11.118
+ },
+ {
+  "texte": "salons,",
+  "debut": 11.118,
+  "fin": 11.482
+ },
+ {
+  "texte": "les",
+  "debut": 11.609,
+  "fin": 11.736
+ },
+ {
+  "texte": "églises,",
+  "debut": 11.736,
+  "fin": 12.1
+ },
+ {
+  "texte": "les",
+  "debut": 12.209,
+  "fin": 12.318
+ },
+ {
+  "texte": "entreprises :",
+  "debut": 12.318,
+  "fin": 12.664
+ },
+ {
+  "texte": "tout",
+  "debut": 12.955,
+  "fin": 13.136
+ },
+ {
+  "texte": "le",
+  "debut": 13.136,
+  "fin": 13.3
+ },
+ {
+  "texte": "monde",
+  "debut": 13.3,
+  "fin": 13.518
+ },
+ {
+  "texte": "cherche",
+  "debut": 13.518,
+  "fin": 13.9
+ },
+ {
+  "texte": "quelqu'un",
+  "debut": 13.9,
+  "fin": 14.336
+ },
+ {
+  "texte": "pour",
+  "debut": 14.336,
+  "fin": 14.536
+ },
+ {
+  "texte": "faire",
+  "debut": 14.536,
+  "fin": 14.736
+ },
+ {
+  "texte": "ses",
+  "debut": 14.736,
+  "fin": 14.9
+ },
+ {
+  "texte": "vidéos.",
+  "debut": 14.9,
+  "fin": 15.173
+ },
+ {
+  "texte": "Moi,",
+  "debut": 15.418,
+  "fin": 15.727
+ },
+ {
+  "texte": "c'est",
+  "debut": 15.855,
+  "fin": 16.036
+ },
+ {
+  "texte": "Coach",
+  "debut": 16.036,
+  "fin": 16.355
+ },
+ {
+  "texte": "Joseph.",
+  "debut": 16.355,
+  "fin": 16.727
+ },
+ {
+  "texte": "Depuis",
+  "debut": 16.782,
+  "fin": 17.082
+ },
+ {
+  "texte": "2023,",
+  "debut": 17.082,
+  "fin": 17.591
+ },
+ {
+  "texte": "j'ai",
+  "debut": 17.882,
+  "fin": 18.027
+ },
+ {
+  "texte": "formé",
+  "debut": 18.027,
+  "fin": 18.245
+ },
+ {
+  "texte": "plus",
+  "debut": 18.245,
+  "fin": 18.391
+ },
+ {
+  "texte": "de",
+  "debut": 18.391,
+  "fin": 18.536
+ },
+ {
+  "texte": "1",
+  "debut": 18.536,
+  "fin": 18.615
+ },
+ {
+  "texte": "000",
+  "debut": 18.615,
+  "fin": 18.773
+ },
+ {
+  "texte": "personnes",
+  "debut": 18.773,
+  "fin": 19.191
+ },
+ {
+  "texte": "à",
+  "debut": 19.191,
+  "fin": 19.427
+ },
+ {
+  "texte": "l'IA.",
+  "debut": 19.427,
+  "fin": 19.645
+ },
+ {
+  "texte": "Et",
+  "debut": 19.645,
+  "fin": 20.009
+ },
+ {
+  "texte": "ces",
+  "debut": 20.009,
+  "fin": 20.155
+ },
+ {
+  "texte": "publicités,",
+  "debut": 20.155,
+  "fin": 20.682
+ },
+ {
+  "texte": "je",
+  "debut": 20.809,
+  "fin": 20.973
+ },
+ {
+  "texte": "les",
+  "debut": 20.973,
+  "fin": 21.1
+ },
+ {
+  "texte": "crée",
+  "debut": 21.1,
+  "fin": 21.445
+ },
+ {
+  "texte": "pour",
+  "debut": 21.445,
+  "fin": 21.645
+ },
+ {
+  "texte": "mes",
+  "debut": 21.645,
+  "fin": 21.773
+ },
+ {
+  "texte": "clients.",
+  "debut": 21.773,
+  "fin": 22.045
+ },
+ {
+  "texte": "Dans",
+  "debut": 22.218,
+  "fin": 22.391
+ },
+ {
+  "texte": "ma",
+  "debut": 22.391,
+  "fin": 22.536
+ },
+ {
+  "texte": "formation,",
+  "debut": 22.536,
+  "fin": 22.9
+ },
+ {
+  "texte": "je",
+  "debut": 23.191,
+  "fin": 23.227
+ },
+ {
+  "texte": "te",
+  "debut": 23.227,
+  "fin": 23.355
+ },
+ {
+  "texte": "montre",
+  "debut": 23.355,
+  "fin": 23.591
+ },
+ {
+  "texte": "tout,",
+  "debut": 23.591,
+  "fin": 23.827
+ },
+ {
+  "texte": "étape",
+  "debut": 23.827,
+  "fin": 24.409
+ },
+ {
+  "texte": "par",
+  "debut": 24.409,
+  "fin": 24.555
+ },
+ {
+  "texte": "étape.",
+  "debut": 24.555,
+  "fin": 24.955
+ },
+ {
+  "texte": "Même",
+  "debut": 24.991,
+  "fin": 25.318
+ },
+ {
+  "texte": "si",
+  "debut": 25.318,
+  "fin": 25.464
+ },
+ {
+  "texte": "tu",
+  "debut": 25.464,
+  "fin": 25.573
+ },
+ {
+  "texte": "pars",
+  "debut": 25.573,
+  "fin": 25.773
+ },
+ {
+  "texte": "de",
+  "debut": 25.773,
+  "fin": 25.9
+ },
+ {
+  "texte": "zéro.",
+  "debut": 25.9,
+  "fin": 26.209
+ },
+ {
+  "texte": "Même",
+  "debut": 26.409,
+  "fin": 26.7
+ },
+ {
+  "texte": "sans",
+  "debut": 26.7,
+  "fin": 26.882
+ },
+ {
+  "texte": "montrer",
+  "debut": 26.882,
+  "fin": 27.227
+ },
+ {
+  "texte": "ton",
+  "debut": 27.227,
+  "fin": 27.355
+ },
+ {
+  "texte": "visage.",
+  "debut": 27.355,
+  "fin": 27.791
+ },
+ {
+  "texte": "Créer",
+  "debut": 27.936,
+  "fin": 28.227
+ },
+ {
+  "texte": "la",
+  "debut": 28.227,
+  "fin": 28.318
+ },
+ {
+  "texte": "vidéo,",
+  "debut": 28.318,
+  "fin": 28.664
+ },
+ {
+  "texte": "la",
+  "debut": 28.991,
+  "fin": 29.064
+ },
+ {
+  "texte": "monter,",
+  "debut": 29.064,
+  "fin": 29.518
+ },
+ {
+  "texte": "et",
+  "debut": 29.518,
+  "fin": 29.7
+ },
+ {
+  "texte": "trouver",
+  "debut": 29.7,
+  "fin": 30.027
+ },
+ {
+  "texte": "des",
+  "debut": 30.027,
+  "fin": 30.173
+ },
+ {
+  "texte": "clients",
+  "debut": 30.173,
+  "fin": 30.427
+ },
+ {
+  "texte": "qui",
+  "debut": 30.427,
+  "fin": 30.591
+ },
+ {
+  "texte": "paient.",
+  "debut": 30.591,
+  "fin": 30.845
+ },
+ {
+  "texte": "Elle",
+  "debut": 30.973,
+  "fin": 31.209
+ },
+ {
+  "texte": "vaut",
+  "debut": 31.209,
+  "fin": 31.445
+ },
+ {
+  "texte": "25",
+  "debut": 31.445,
+  "fin": 31.955
+ },
+ {
+  "texte": "000",
+  "debut": 31.955,
+  "fin": 32.227
+ },
+ {
+  "texte": "francs.",
+  "debut": 32.227,
+  "fin": 32.445
+ },
+ {
+  "texte": "Aujourd'hui",
+  "debut": 32.836,
+  "fin": 33.282
+ },
+ {
+  "texte": "seulement,",
+  "debut": 33.282,
+  "fin": 33.627
+ },
+ {
+  "texte": "elle",
+  "debut": 33.827,
+  "fin": 34.082
+ },
+ {
+  "texte": "est",
+  "debut": 34.082,
+  "fin": 34.264
+ },
+ {
+  "texte": "à",
+  "debut": 34.264,
+  "fin": 34.609
+ },
+ {
+  "texte": "3",
+  "debut": 34.609,
+  "fin": 34.955
+ },
+ {
+  "texte": "600",
+  "debut": 34.955,
+  "fin": 35.355
+ },
+ {
+  "texte": "francs.",
+  "debut": 35.355,
+  "fin": 35.718
+ },
+ {
+  "texte": "Pour",
+  "debut": 35.955,
+  "fin": 36.318
+ },
+ {
+  "texte": "10",
+  "debut": 36.318,
+  "fin": 36.536
+ },
+ {
+  "texte": "personnes",
+  "debut": 36.536,
+  "fin": 36.809
+ },
+ {
+  "texte": "seulement.",
+  "debut": 36.809,
+  "fin": 37.136
+ },
+ {
+  "texte": "L'offre",
+  "debut": 37.327,
+  "fin": 37.855
+ },
+ {
+  "texte": "prend",
+  "debut": 37.855,
+  "fin": 38.091
+ },
+ {
+  "texte": "fin",
+  "debut": 38.091,
+  "fin": 38.255
+ },
+ {
+  "texte": "à",
+  "debut": 38.255,
+  "fin": 38.509
+ },
+ {
+  "texte": "23",
+  "debut": 38.509,
+  "fin": 38.891
+ },
+ {
+  "texte": "h",
+  "debut": 38.891,
+  "fin": 39.145
+ },
+ {
+  "texte": "59.",
+  "debut": 39.145,
+  "fin": 39.527
+ },
+ {
+  "texte": "Écris-moi",
+  "debut": 39.709,
+  "fin": 40.264
+ },
+ {
+  "texte": "maintenant",
+  "debut": 40.264,
+  "fin": 40.536
+ },
+ {
+  "texte": "sur",
+  "debut": 40.536,
+  "fin": 40.773
+ },
+ {
+  "texte": "WhatsApp,",
+  "debut": 40.773,
+  "fin": 41.118
+ },
+ {
+  "texte": "au",
+  "debut": 41.118,
+  "fin": 41.482
+ },
+ {
+  "texte": "72",
+  "debut": 41.482,
+  "fin": 42.027
+ },
+ {
+  "texte": "24",
+  "debut": 42.027,
+  "fin": 42.955
+ },
+ {
+  "texte": "02",
+  "debut": 42.955,
+  "fin": 43.809
+ },
+ {
+  "texte": "31.",
+  "debut": 43.809,
+  "fin": 44.391
+ },
+ {
+  "texte": "Dis",
+  "debut": 44.391,
+  "fin": 44.891
+ },
+ {
+  "texte": "simplement :",
+  "debut": 44.891,
+  "fin": 45.364
+ },
+ {
+  "texte": "Coach",
+  "debutCitation": true,
+  "debut": 45.573,
+  "fin": 45.823
+ },
+ {
+  "texte": "Joseph,",
+  "debut": 45.823,
+  "fin": 46.264
+ },
+ {
+  "texte": "je",
+  "debut": 46.355,
+  "fin": 46.445
+ },
+ {
+  "texte": "suis",
+  "debut": 46.445,
+  "fin": 46.609
+ },
+ {
+  "texte": "prêt.",
+  "finCitation": true,
+  "debut": 46.609,
+  "fin": 46.827
+ },
+ {
+  "texte": "Je",
+  "debut": 47.073,
+  "fin": 47.127
+ },
+ {
+  "texte": "répète :",
+  "debut": 47.127,
+  "fin": 47.6
+ },
+ {
+  "texte": "72",
+  "debut": 47.7,
+  "fin": 48.155
+ },
+ {
+  "texte": "24",
+  "debut": 48.373,
+  "fin": 48.809
+ },
+ {
+  "texte": "02",
+  "debut": 49.027,
+  "fin": 49.264
+ },
+ {
+  "texte": "31.",
+  "debut": 49.536,
+  "fin": 49.827
+ },
+ {
+  "texte": "Quand",
+  "debut": 50.009,
+  "fin": 50.209
+ },
+ {
+  "texte": "les",
+  "debut": 50.209,
+  "fin": 50.373
+ },
+ {
+  "texte": "10",
+  "debut": 50.373,
+  "fin": 50.482
+ },
+ {
+  "texte": "places",
+  "debut": 50.482,
+  "fin": 50.791
+ },
+ {
+  "texte": "sont",
+  "debut": 50.791,
+  "fin": 51.1
+ },
+ {
+  "texte": "prises,",
+  "debut": 51.1,
+  "fin": 51.445
+ },
+ {
+  "texte": "c'est",
+  "debut": 51.655,
+  "fin": 51.8
+ },
+ {
+  "texte": "fini.",
+  "debut": 51.8,
+  "fin": 51.982
+ }
+]

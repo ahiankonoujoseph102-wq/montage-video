@@ -1,0 +1,30 @@
+{
+  "_note": "Montage de l'enregistrement d'écran (1080x2400). Segments : [voix_debut, voix_fin, enreg_debut, enreg_fin] en secondes ; enreg_debut = enreg_fin : image figée. Cadrage : [voix, y du haut de la fenêtre dans l'enregistrement, zoom] (zoom 1 : fenêtre de 940 px de large ; 1,35 : gros plan sur la zone de saisie, calé à gauche). Fenêtre de 940 px de large (x 70 à 1010) : la barre d'état (y < 160) et le clavier (y > 1450) restent toujours hors champ ; le passage du presse-papiers (≈ 20,8 à 23,4 s) n'est jamais utilisé.",
+  "x": 70,
+  "largeur": 940,
+  "clips": [
+    {
+      "nom": "banale",
+      "segments": [
+        [0.0, 6.55, 0.3, 0.3],
+        [6.55, 8.15, 0.5, 6.3],
+        [8.15, 8.55, 6.3, 7.2],
+        [8.55, 8.75, 7.2, 8.45],
+        [8.75, 10.15, 8.45, 10.5],
+        [10.15, 11.75, 10.5, 12.5]
+      ],
+      "cadrage": [[0.0, 790, 1], [6.3, 790, 1], [6.7, 970, 1.35], [8.15, 970, 1.35], [8.45, 300, 1], [9.1, 300, 1], [10.6, 1000, 1]]
+    },
+    {
+      "nom": "complete",
+      "segments": [
+        [31.15, 31.6, 23.6, 24.2],
+        [31.6, 31.95, 25.1, 26.0],
+        [31.95, 32.15, 26.0, 28.0],
+        [32.15, 33.45, 28.0, 29.6],
+        [33.45, 34.75, 29.6, 31.6]
+      ],
+      "cadrage": [[31.15, 790, 1], [31.6, 790, 1], [31.9, 290, 1], [32.3, 290, 1], [33.4, 880, 1]]
+    }
+  ]
+}

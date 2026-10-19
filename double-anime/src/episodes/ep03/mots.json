@@ -1,0 +1,1771 @@
+[
+ {
+  "texte": "Arrête",
+  "debut": 0.046,
+  "fin": 0.528
+ },
+ {
+  "texte": "de",
+  "debut": 0.528,
+  "fin": 0.694
+ },
+ {
+  "texte": "dire",
+  "debut": 0.694,
+  "fin": 0.88
+ },
+ {
+  "texte": "à",
+  "debut": 0.88,
+  "fin": 1.083
+ },
+ {
+  "texte": "ChatGPT",
+  "debut": 1.083,
+  "fin": 1.769
+ },
+ {
+  "texte": "améliore",
+  "debutCitation": true,
+  "debut": 1.912,
+  "fin": 2.421
+ },
+ {
+  "texte": "ça ».",
+  "debut": 2.421,
+  "fin": 2.606
+ },
+ {
+  "texte": "Un",
+  "debut": 2.815,
+  "fin": 3.056
+ },
+ {
+  "texte": "mauvais",
+  "debut": 3.056,
+  "fin": 3.296
+ },
+ {
+  "texte": "prompt,",
+  "debut": 3.296,
+  "fin": 3.685
+ },
+ {
+  "texte": "c'est",
+  "debut": 3.722,
+  "fin": 3.889
+ },
+ {
+  "texte": "un",
+  "debut": 3.889,
+  "fin": 4.0
+ },
+ {
+  "texte": "mauvais",
+  "debut": 4.0,
+  "fin": 4.296
+ },
+ {
+  "texte": "résultat.",
+  "debut": 4.296,
+  "fin": 4.87
+ },
+ {
+  "texte": "Utilise",
+  "debut": 5.079,
+  "fin": 5.412
+ },
+ {
+  "texte": "plutôt",
+  "debut": 5.412,
+  "fin": 5.653
+ },
+ {
+  "texte": "ces",
+  "debut": 5.653,
+  "fin": 5.801
+ },
+ {
+  "texte": "formulations,",
+  "debut": 5.801,
+  "fin": 6.338
+ },
+ {
+  "texte": "et",
+  "debut": 6.338,
+  "fin": 6.671
+ },
+ {
+  "texte": "regarde",
+  "debut": 6.671,
+  "fin": 6.912
+ },
+ {
+  "texte": "la",
+  "debut": 6.912,
+  "fin": 7.079
+ },
+ {
+  "texte": "magie",
+  "debut": 7.079,
+  "fin": 7.394
+ },
+ {
+  "texte": "opérer.",
+  "debut": 7.394,
+  "fin": 7.819
+ },
+ {
+  "texte": "Numéro",
+  "debut": 8.037,
+  "fin": 8.296
+ },
+ {
+  "texte": "un :",
+  "debut": 8.296,
+  "fin": 8.537
+ },
+ {
+  "texte": "l'amélioration",
+  "debut": 8.796,
+  "fin": 9.722
+ },
+ {
+  "texte": "du",
+  "debut": 9.722,
+  "fin": 9.907
+ },
+ {
+  "texte": "style",
+  "debut": 9.907,
+  "fin": 10.13
+ },
+ {
+  "texte": "d'écriture.",
+  "debut": 10.13,
+  "fin": 10.685
+ },
+ {
+  "texte": "Ne",
+  "debut": 10.856,
+  "fin": 11.023
+ },
+ {
+  "texte": "dis",
+  "debut": 11.023,
+  "fin": 11.171
+ },
+ {
+  "texte": "pas :",
+  "debut": 11.171,
+  "fin": 11.394
+ },
+ {
+  "texte": "Améliore",
+  "debutCitation": true,
+  "debut": 11.597,
+  "fin": 11.968
+ },
+ {
+  "texte": "ce",
+  "debut": 11.968,
+  "fin": 12.171
+ },
+ {
+  "texte": "texte.",
+  "finCitation": true,
+  "debut": 12.171,
+  "fin": 12.356
+ },
+ {
+  "texte": "Dis",
+  "debut": 12.593,
+  "fin": 12.741
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 12.741,
+  "fin": 13.074
+ },
+ {
+  "texte": "Réécris",
+  "debutCitation": true,
+  "debut": 13.394,
+  "fin": 13.745
+ },
+ {
+  "texte": "ce",
+  "debut": 13.745,
+  "fin": 13.912
+ },
+ {
+  "texte": "texte,",
+  "debut": 13.912,
+  "fin": 14.208
+ },
+ {
+  "texte": "que",
+  "debut": 14.208,
+  "fin": 14.528
+ },
+ {
+  "texte": "tu",
+  "debut": 14.528,
+  "fin": 14.639
+ },
+ {
+  "texte": "colles",
+  "debut": 14.639,
+  "fin": 14.917
+ },
+ {
+  "texte": "ici,",
+  "debut": 14.917,
+  "fin": 15.065
+ },
+ {
+  "texte": "dans",
+  "debut": 15.065,
+  "fin": 15.306
+ },
+ {
+  "texte": "un",
+  "debut": 15.306,
+  "fin": 15.546
+ },
+ {
+  "texte": "style",
+  "debut": 15.546,
+  "fin": 15.731
+ },
+ {
+  "texte": "clair,",
+  "debut": 15.731,
+  "fin": 16.046
+ },
+ {
+  "texte": "humain,",
+  "debut": 16.269,
+  "fin": 16.454
+ },
+ {
+  "texte": "fluide",
+  "debut": 16.565,
+  "fin": 16.75
+ },
+ {
+  "texte": "et",
+  "debut": 16.75,
+  "fin": 16.935
+ },
+ {
+  "texte": "captivant,",
+  "debut": 16.935,
+  "fin": 17.491
+ },
+ {
+  "texte": "du",
+  "debut": 17.491,
+  "fin": 17.769
+ },
+ {
+  "texte": "début",
+  "debut": 17.769,
+  "fin": 17.972
+ },
+ {
+  "texte": "à",
+  "debut": 17.972,
+  "fin": 18.083
+ },
+ {
+  "texte": "la",
+  "debut": 18.083,
+  "fin": 18.157
+ },
+ {
+  "texte": "fin.",
+  "finCitation": true,
+  "debut": 18.157,
+  "fin": 18.361
+ },
+ {
+  "texte": "Numéro",
+  "debut": 18.361,
+  "fin": 18.875
+ },
+ {
+  "texte": "deux :",
+  "debut": 18.875,
+  "fin": 19.116
+ },
+ {
+  "texte": "un",
+  "debut": 19.338,
+  "fin": 19.653
+ },
+ {
+  "texte": "plan",
+  "debut": 19.653,
+  "fin": 19.801
+ },
+ {
+  "texte": "quotidien",
+  "debut": 19.801,
+  "fin": 20.245
+ },
+ {
+  "texte": "personnalisé.",
+  "debut": 20.245,
+  "fin": 20.875
+ },
+ {
+  "texte": "Ne",
+  "debut": 20.875,
+  "fin": 21.25
+ },
+ {
+  "texte": "dis",
+  "debut": 21.25,
+  "fin": 21.417
+ },
+ {
+  "texte": "pas :",
+  "debut": 21.417,
+  "fin": 21.657
+ },
+ {
+  "texte": "Comment",
+  "debutCitation": true,
+  "debut": 21.657,
+  "fin": 22.028
+ },
+ {
+  "texte": "être",
+  "debut": 22.028,
+  "fin": 22.269
+ },
+ {
+  "texte": "plus",
+  "debut": 22.269,
+  "fin": 22.435
+ },
+ {
+  "texte": "productif ?",
+  "finCitation": true,
+  "debut": 22.435,
+  "fin": 23.009
+ },
+ {
+  "texte": "Dis",
+  "debut": 23.009,
+  "fin": 23.218
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 23.218,
+  "fin": 23.588
+ },
+ {
+  "texte": "Crée-moi",
+  "debutCitation": true,
+  "debut": 23.935,
+  "fin": 24.213
+ },
+ {
+  "texte": "un",
+  "debut": 24.213,
+  "fin": 24.472
+ },
+ {
+  "texte": "plan",
+  "debut": 24.472,
+  "fin": 24.62
+ },
+ {
+  "texte": "journalier",
+  "debut": 24.62,
+  "fin": 25.176
+ },
+ {
+  "texte": "basé",
+  "debut": 25.176,
+  "fin": 25.639
+ },
+ {
+  "texte": "sur",
+  "debut": 25.639,
+  "fin": 25.806
+ },
+ {
+  "texte": "ces",
+  "debut": 25.806,
+  "fin": 25.917
+ },
+ {
+  "texte": "objectifs,",
+  "debut": 25.917,
+  "fin": 26.38
+ },
+ {
+  "texte": "que",
+  "debut": 26.38,
+  "fin": 26.588
+ },
+ {
+  "texte": "tu",
+  "debut": 26.588,
+  "fin": 26.718
+ },
+ {
+  "texte": "listes,",
+  "debut": 26.718,
+  "fin": 27.032
+ },
+ {
+  "texte": "cet",
+  "debut": 27.236,
+  "fin": 27.347
+ },
+ {
+  "texte": "emploi",
+  "debut": 27.347,
+  "fin": 27.662
+ },
+ {
+  "texte": "du",
+  "debut": 27.662,
+  "fin": 27.792
+ },
+ {
+  "texte": "temps,",
+  "debut": 27.792,
+  "fin": 27.995
+ },
+ {
+  "texte": "avec",
+  "debut": 27.995,
+  "fin": 28.384
+ },
+ {
+  "texte": "tes",
+  "debut": 28.384,
+  "fin": 28.588
+ },
+ {
+  "texte": "heures,",
+  "debut": 28.588,
+  "fin": 28.921
+ },
+ {
+  "texte": "et",
+  "debut": 28.921,
+  "fin": 29.125
+ },
+ {
+  "texte": "mon",
+  "debut": 29.125,
+  "fin": 29.347
+ },
+ {
+  "texte": "style",
+  "debut": 29.347,
+  "fin": 29.606
+ },
+ {
+  "texte": "de",
+  "debut": 29.606,
+  "fin": 29.755
+ },
+ {
+  "texte": "travail,",
+  "debut": 29.755,
+  "fin": 30.088
+ },
+ {
+  "texte": "que",
+  "debut": 30.088,
+  "fin": 30.255
+ },
+ {
+  "texte": "tu",
+  "debut": 30.255,
+  "fin": 30.347
+ },
+ {
+  "texte": "décris.",
+  "finCitation": true,
+  "debut": 30.347,
+  "fin": 30.681
+ },
+ {
+  "texte": "Numéro",
+  "debut": 30.681,
+  "fin": 31.185
+ },
+ {
+  "texte": "trois :",
+  "debut": 31.185,
+  "fin": 31.463
+ },
+ {
+  "texte": "l'amélioration",
+  "debut": 31.671,
+  "fin": 32.542
+ },
+ {
+  "texte": "de",
+  "debut": 32.542,
+  "fin": 32.653
+ },
+ {
+  "texte": "ton",
+  "debut": 32.653,
+  "fin": 32.801
+ },
+ {
+  "texte": "CV.",
+  "debut": 32.801,
+  "fin": 33.079
+ },
+ {
+  "texte": "Ne",
+  "debut": 33.079,
+  "fin": 33.491
+ },
+ {
+  "texte": "dis",
+  "debut": 33.491,
+  "fin": 33.676
+ },
+ {
+  "texte": "pas :",
+  "debut": 33.676,
+  "fin": 33.935
+ },
+ {
+  "texte": "Améliore",
+  "debutCitation": true,
+  "debut": 34.176,
+  "fin": 34.546
+ },
+ {
+  "texte": "mon",
+  "debut": 34.546,
+  "fin": 34.676
+ },
+ {
+  "texte": "CV.",
+  "finCitation": true,
+  "debut": 34.676,
+  "fin": 34.991
+ },
+ {
+  "texte": "Dis",
+  "debut": 34.991,
+  "fin": 35.356
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 35.356,
+  "fin": 35.727
+ },
+ {
+  "texte": "Réécris",
+  "debutCitation": true,
+  "debut": 36.065,
+  "fin": 36.472
+ },
+ {
+  "texte": "cette",
+  "debut": 36.472,
+  "fin": 36.713
+ },
+ {
+  "texte": "ligne",
+  "debut": 36.713,
+  "fin": 36.935
+ },
+ {
+  "texte": "de",
+  "debut": 36.935,
+  "fin": 37.065
+ },
+ {
+  "texte": "CV,",
+  "debut": 37.065,
+  "fin": 37.361
+ },
+ {
+  "texte": "que",
+  "debut": 37.361,
+  "fin": 37.745
+ },
+ {
+  "texte": "tu",
+  "debut": 37.745,
+  "fin": 37.856
+ },
+ {
+  "texte": "colles",
+  "debut": 37.856,
+  "fin": 38.06
+ },
+ {
+  "texte": "ici,",
+  "debut": 38.06,
+  "fin": 38.338
+ },
+ {
+  "texte": "en",
+  "debut": 38.338,
+  "fin": 38.731
+ },
+ {
+  "texte": "la",
+  "debut": 38.731,
+  "fin": 38.861
+ },
+ {
+  "texte": "rendant",
+  "debut": 38.861,
+  "fin": 39.25
+ },
+ {
+  "texte": "mesurable,",
+  "debut": 39.25,
+  "fin": 39.843
+ },
+ {
+  "texte": "axée",
+  "debut": 40.083,
+  "fin": 40.398
+ },
+ {
+  "texte": "sur",
+  "debut": 40.398,
+  "fin": 40.546
+ },
+ {
+  "texte": "l'impact,",
+  "debut": 40.546,
+  "fin": 40.954
+ },
+ {
+  "texte": "et",
+  "debut": 40.954,
+  "fin": 41.194
+ },
+ {
+  "texte": "adaptée",
+  "debut": 41.194,
+  "fin": 41.731
+ },
+ {
+  "texte": "à",
+  "debut": 41.731,
+  "fin": 41.861
+ },
+ {
+  "texte": "un",
+  "debut": 41.861,
+  "fin": 42.028
+ },
+ {
+  "texte": "poste",
+  "debut": 42.028,
+  "fin": 42.343
+ },
+ {
+  "texte": "de,",
+  "debut": 42.343,
+  "fin": 42.454
+ },
+ {
+  "texte": "le",
+  "debut": 42.454,
+  "fin": 42.903
+ },
+ {
+  "texte": "nom",
+  "debut": 42.903,
+  "fin": 43.181
+ },
+ {
+  "texte": "de",
+  "debut": 43.181,
+  "fin": 43.403
+ },
+ {
+  "texte": "ton",
+  "debut": 43.403,
+  "fin": 43.606
+ },
+ {
+  "texte": "métier.",
+  "finCitation": true,
+  "debut": 43.606,
+  "fin": 44.051
+ },
+ {
+  "texte": "Numéro",
+  "debut": 44.051,
+  "fin": 44.593
+ },
+ {
+  "texte": "quatre :",
+  "debut": 44.593,
+  "fin": 44.907
+ },
+ {
+  "texte": "apprendre",
+  "debut": 45.005,
+  "fin": 45.495
+ },
+ {
+  "texte": "rapidement",
+  "debut": 45.495,
+  "fin": 46.014
+ },
+ {
+  "texte": "un",
+  "debut": 46.014,
+  "fin": 46.255
+ },
+ {
+  "texte": "sujet.",
+  "debut": 46.255,
+  "fin": 46.514
+ },
+ {
+  "texte": "Ne",
+  "debut": 46.514,
+  "fin": 46.926
+ },
+ {
+  "texte": "dis",
+  "debut": 46.926,
+  "fin": 47.093
+ },
+ {
+  "texte": "pas :",
+  "debut": 47.093,
+  "fin": 47.37
+ },
+ {
+  "texte": "Aide-moi",
+  "debutCitation": true,
+  "debut": 47.588,
+  "fin": 48.014
+ },
+ {
+  "texte": "à",
+  "debut": 48.014,
+  "fin": 48.199
+ },
+ {
+  "texte": "apprendre",
+  "debut": 48.199,
+  "fin": 48.458
+ },
+ {
+  "texte": "ça.",
+  "finCitation": true,
+  "debut": 48.458,
+  "fin": 48.718
+ },
+ {
+  "texte": "Dis",
+  "debut": 48.718,
+  "fin": 49.028
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 49.028,
+  "fin": 49.417
+ },
+ {
+  "texte": "Fais-moi",
+  "debutCitation": true,
+  "debut": 49.69,
+  "fin": 50.005
+ },
+ {
+  "texte": "un",
+  "debut": 50.005,
+  "fin": 50.245
+ },
+ {
+  "texte": "plan",
+  "debut": 50.245,
+  "fin": 50.468
+ },
+ {
+  "texte": "d'apprentissage",
+  "debut": 50.468,
+  "fin": 51.301
+ },
+ {
+  "texte": "de",
+  "debut": 51.301,
+  "fin": 51.486
+ },
+ {
+  "texte": "sept",
+  "debut": 51.486,
+  "fin": 51.69
+ },
+ {
+  "texte": "jours",
+  "debut": 51.69,
+  "fin": 51.986
+ },
+ {
+  "texte": "sur",
+  "debut": 51.986,
+  "fin": 52.208
+ },
+ {
+  "texte": "ce",
+  "debut": 52.208,
+  "fin": 52.338
+ },
+ {
+  "texte": "sujet,",
+  "debut": 52.338,
+  "fin": 52.616
+ },
+ {
+  "texte": "avec",
+  "debut": 52.616,
+  "fin": 53.06
+ },
+ {
+  "texte": "des",
+  "debut": 53.06,
+  "fin": 53.227
+ },
+ {
+  "texte": "vidéos",
+  "debut": 53.227,
+  "fin": 53.468
+ },
+ {
+  "texte": "YouTube,",
+  "debut": 53.468,
+  "fin": 53.727
+ },
+ {
+  "texte": "des",
+  "debut": 53.968,
+  "fin": 54.023
+ },
+ {
+  "texte": "résumés,",
+  "debut": 54.023,
+  "fin": 54.505
+ },
+ {
+  "texte": "des",
+  "debut": 54.75,
+  "fin": 54.88
+ },
+ {
+  "texte": "exercices",
+  "debut": 54.88,
+  "fin": 55.231
+ },
+ {
+  "texte": "rapides",
+  "debut": 55.231,
+  "fin": 55.602
+ },
+ {
+  "texte": "et",
+  "debut": 55.602,
+  "fin": 55.806
+ },
+ {
+  "texte": "des",
+  "debut": 55.806,
+  "fin": 55.954
+ },
+ {
+  "texte": "quiz.",
+  "finCitation": true,
+  "debut": 55.954,
+  "fin": 56.157
+ },
+ {
+  "texte": "Numéro",
+  "debut": 56.366,
+  "fin": 56.764
+ },
+ {
+  "texte": "cinq :",
+  "debut": 56.764,
+  "fin": 57.116
+ },
+ {
+  "texte": "un",
+  "debut": 57.315,
+  "fin": 57.537
+ },
+ {
+  "texte": "post",
+  "debut": 57.537,
+  "fin": 57.852
+ },
+ {
+  "texte": "percutant",
+  "debut": 57.852,
+  "fin": 58.222
+ },
+ {
+  "texte": "pour",
+  "debut": 58.222,
+  "fin": 58.37
+ },
+ {
+  "texte": "les",
+  "debut": 58.37,
+  "fin": 58.463
+ },
+ {
+  "texte": "réseaux",
+  "debut": 58.463,
+  "fin": 58.667
+ },
+ {
+  "texte": "sociaux.",
+  "debut": 58.667,
+  "fin": 58.981
+ },
+ {
+  "texte": "Ne",
+  "debut": 58.981,
+  "fin": 59.384
+ },
+ {
+  "texte": "dis",
+  "debut": 59.384,
+  "fin": 59.569
+ },
+ {
+  "texte": "pas :",
+  "debut": 59.569,
+  "fin": 59.81
+ },
+ {
+  "texte": "Fais",
+  "debutCitation": true,
+  "debut": 59.972,
+  "fin": 60.167
+ },
+ {
+  "texte": "un",
+  "debut": 60.167,
+  "fin": 60.389
+ },
+ {
+  "texte": "post.",
+  "finCitation": true,
+  "debut": 60.389,
+  "fin": 60.829
+ },
+ {
+  "texte": "Dis",
+  "debut": 60.829,
+  "fin": 61.014
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 61.014,
+  "fin": 61.366
+ },
+ {
+  "texte": "Transforme",
+  "debutCitation": true,
+  "debut": 61.681,
+  "fin": 62.273
+ },
+ {
+  "texte": "cette",
+  "debut": 62.273,
+  "fin": 62.421
+ },
+ {
+  "texte": "idée,",
+  "debut": 62.421,
+  "fin": 62.699
+ },
+ {
+  "texte": "que",
+  "debut": 62.699,
+  "fin": 62.94
+ },
+ {
+  "texte": "tu",
+  "debut": 62.94,
+  "fin": 63.051
+ },
+ {
+  "texte": "colles",
+  "debut": 63.051,
+  "fin": 63.31
+ },
+ {
+  "texte": "ici,",
+  "debut": 63.31,
+  "fin": 63.514
+ },
+ {
+  "texte": "en",
+  "debut": 63.514,
+  "fin": 63.755
+ },
+ {
+  "texte": "une",
+  "debut": 63.755,
+  "fin": 63.921
+ },
+ {
+  "texte": "légende",
+  "debut": 63.921,
+  "fin": 64.273
+ },
+ {
+  "texte": "courte,",
+  "debut": 64.273,
+  "fin": 64.551
+ },
+ {
+  "texte": "personnelle",
+  "debut": 64.551,
+  "fin": 65.106
+ },
+ {
+  "texte": "et",
+  "debut": 65.106,
+  "fin": 65.403
+ },
+ {
+  "texte": "accrocheuse",
+  "debut": 65.403,
+  "fin": 65.995
+ },
+ {
+  "texte": "dès",
+  "debut": 65.995,
+  "fin": 66.144
+ },
+ {
+  "texte": "les",
+  "debut": 66.144,
+  "fin": 66.292
+ },
+ {
+  "texte": "trois",
+  "debut": 66.292,
+  "fin": 66.699
+ },
+ {
+  "texte": "premières",
+  "debut": 66.699,
+  "fin": 67.106
+ },
+ {
+  "texte": "secondes.",
+  "finCitation": true,
+  "debut": 67.106,
+  "fin": 67.569
+ },
+ {
+  "texte": "Numéro",
+  "debut": 67.569,
+  "fin": 67.954
+ },
+ {
+  "texte": "six :",
+  "debut": 67.954,
+  "fin": 68.25
+ },
+ {
+  "texte": "un",
+  "debut": 68.44,
+  "fin": 68.708
+ },
+ {
+  "texte": "assistant",
+  "debut": 68.708,
+  "fin": 69.079
+ },
+ {
+  "texte": "e-mail.",
+  "debut": 69.079,
+  "fin": 69.449
+ },
+ {
+  "texte": "Ne",
+  "debut": 69.449,
+  "fin": 69.852
+ },
+ {
+  "texte": "dis",
+  "debut": 69.852,
+  "fin": 70.0
+ },
+ {
+  "texte": "pas :",
+  "debut": 70.0,
+  "fin": 70.259
+ },
+ {
+  "texte": "Rédige",
+  "debutCitation": true,
+  "debut": 70.463,
+  "fin": 70.833
+ },
+ {
+  "texte": "une",
+  "debut": 70.833,
+  "fin": 70.944
+ },
+ {
+  "texte": "réponse.",
+  "finCitation": true,
+  "debut": 70.944,
+  "fin": 71.296
+ },
+ {
+  "texte": "Dis",
+  "debut": 71.296,
+  "fin": 71.63
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 71.63,
+  "fin": 71.926
+ },
+ {
+  "texte": "Voici",
+  "debutCitation": true,
+  "debut": 72.162,
+  "fin": 72.588
+ },
+ {
+  "texte": "leur",
+  "debut": 72.588,
+  "fin": 72.792
+ },
+ {
+  "texte": "message,",
+  "debut": 72.792,
+  "fin": 73.181
+ },
+ {
+  "texte": "que",
+  "debut": 73.181,
+  "fin": 73.347
+ },
+ {
+  "texte": "tu",
+  "debut": 73.347,
+  "fin": 73.458
+ },
+ {
+  "texte": "colles",
+  "debut": 73.458,
+  "fin": 73.699
+ },
+ {
+  "texte": "ici.",
+  "debut": 73.699,
+  "fin": 73.903
+ },
+ {
+  "texte": "Rédige",
+  "debut": 73.903,
+  "fin": 74.454
+ },
+ {
+  "texte": "une",
+  "debut": 74.454,
+  "fin": 74.565
+ },
+ {
+  "texte": "réponse",
+  "debut": 74.565,
+  "fin": 74.88
+ },
+ {
+  "texte": "courte,",
+  "debut": 74.88,
+  "fin": 75.194
+ },
+ {
+  "texte": "claire,",
+  "debut": 75.306,
+  "fin": 75.472
+ },
+ {
+  "texte": "confiante,",
+  "debut": 75.583,
+  "fin": 76.028
+ },
+ {
+  "texte": "mais",
+  "debut": 76.028,
+  "fin": 76.495
+ },
+ {
+  "texte": "amicale.",
+  "finCitation": true,
+  "debut": 76.495,
+  "fin": 77.259
+ },
+ {
+  "texte": "Numéro",
+  "debut": 77.259,
+  "fin": 77.593
+ },
+ {
+  "texte": "sept :",
+  "debut": 77.593,
+  "fin": 77.87
+ },
+ {
+  "texte": "la",
+  "debut": 78.116,
+  "fin": 78.458
+ },
+ {
+  "texte": "clarté",
+  "debut": 78.458,
+  "fin": 78.755
+ },
+ {
+  "texte": "mentale.",
+  "debut": 78.755,
+  "fin": 79.218
+ },
+ {
+  "texte": "Ne",
+  "debut": 79.218,
+  "fin": 79.509
+ },
+ {
+  "texte": "dis",
+  "debut": 79.509,
+  "fin": 79.676
+ },
+ {
+  "texte": "pas :",
+  "debut": 79.676,
+  "fin": 79.917
+ },
+ {
+  "texte": "Qu'est-ce",
+  "debutCitation": true,
+  "debut": 80.088,
+  "fin": 80.403
+ },
+ {
+  "texte": "que",
+  "debut": 80.403,
+  "fin": 80.495
+ },
+ {
+  "texte": "je",
+  "debut": 80.495,
+  "fin": 80.625
+ },
+ {
+  "texte": "devrais",
+  "debut": 80.625,
+  "fin": 80.884
+ },
+ {
+  "texte": "faire ?",
+  "finCitation": true,
+  "debut": 80.884,
+  "fin": 81.199
+ },
+ {
+  "texte": "Dis",
+  "debut": 81.199,
+  "fin": 81.509
+ },
+ {
+  "texte": "plutôt :",
+  "debut": 81.509,
+  "fin": 81.843
+ },
+ {
+  "texte": "Aide-moi",
+  "debutCitation": true,
+  "debut": 82.176,
+  "fin": 82.491
+ },
+ {
+  "texte": "à",
+  "debut": 82.491,
+  "fin": 82.694
+ },
+ {
+  "texte": "décortiquer",
+  "debut": 82.694,
+  "fin": 83.213
+ },
+ {
+  "texte": "cette",
+  "debut": 83.213,
+  "fin": 83.38
+ },
+ {
+  "texte": "situation,",
+  "debut": 83.38,
+  "fin": 83.787
+ },
+ {
+  "texte": "que",
+  "debut": 83.787,
+  "fin": 84.264
+ },
+ {
+  "texte": "tu",
+  "debut": 84.264,
+  "fin": 84.375
+ },
+ {
+  "texte": "expliques,",
+  "debut": 84.375,
+  "fin": 84.819
+ },
+ {
+  "texte": "et",
+  "debut": 84.819,
+  "fin": 85.116
+ },
+ {
+  "texte": "propose",
+  "debut": 85.116,
+  "fin": 85.69
+ },
+ {
+  "texte": "quatre",
+  "debut": 85.69,
+  "fin": 86.148
+ },
+ {
+  "texte": "à",
+  "debut": 86.148,
+  "fin": 86.352
+ },
+ {
+  "texte": "cinq",
+  "debut": 86.352,
+  "fin": 86.667
+ },
+ {
+  "texte": "solutions",
+  "debut": 86.667,
+  "fin": 87.074
+ },
+ {
+  "texte": "intelligentes,",
+  "debut": 87.074,
+  "fin": 87.741
+ },
+ {
+  "texte": "avec",
+  "debut": 87.741,
+  "fin": 88.148
+ },
+ {
+  "texte": "leurs",
+  "debut": 88.148,
+  "fin": 88.5
+ },
+ {
+  "texte": "avantages",
+  "debut": 88.5,
+  "fin": 89.111
+ },
+ {
+  "texte": "et",
+  "debut": 89.111,
+  "fin": 89.431
+ },
+ {
+  "texte": "leurs",
+  "debut": 89.431,
+  "fin": 89.764
+ },
+ {
+  "texte": "inconvénients.",
+  "finCitation": true,
+  "debut": 89.764,
+  "fin": 90.431
+ },
+ {
+  "texte": "Tu",
+  "debut": 90.431,
+  "fin": 90.731
+ },
+ {
+  "texte": "as",
+  "debut": 90.731,
+  "fin": 90.843
+ },
+ {
+  "texte": "remarqué ?",
+  "debut": 90.843,
+  "fin": 91.269
+ },
+ {
+  "texte": "Chaque",
+  "debut": 91.269,
+  "fin": 91.792
+ },
+ {
+  "texte": "bonne",
+  "debut": 91.792,
+  "fin": 92.125
+ },
+ {
+  "texte": "demande",
+  "debut": 92.125,
+  "fin": 92.569
+ },
+ {
+  "texte": "donne",
+  "debut": 92.569,
+  "fin": 92.977
+ },
+ {
+  "texte": "le",
+  "debut": 92.977,
+  "fin": 93.162
+ },
+ {
+  "texte": "contexte,",
+  "debut": 93.162,
+  "fin": 93.662
+ },
+ {
+  "texte": "le",
+  "debut": 93.958,
+  "fin": 94.032
+ },
+ {
+  "texte": "résultat",
+  "debut": 94.032,
+  "fin": 94.495
+ },
+ {
+  "texte": "voulu",
+  "debut": 94.495,
+  "fin": 94.773
+ },
+ {
+  "texte": "et",
+  "debut": 94.773,
+  "fin": 94.958
+ },
+ {
+  "texte": "le",
+  "debut": 94.958,
+  "fin": 95.051
+ },
+ {
+  "texte": "style.",
+  "debut": 95.051,
+  "fin": 95.347
+ },
+ {
+  "texte": "L'IA",
+  "debut": 95.347,
+  "fin": 95.926
+ },
+ {
+  "texte": "ne",
+  "debut": 95.926,
+  "fin": 96.037
+ },
+ {
+  "texte": "devine",
+  "debut": 96.037,
+  "fin": 96.389
+ },
+ {
+  "texte": "pas :",
+  "debut": 96.389,
+  "fin": 96.611
+ },
+ {
+  "texte": "elle",
+  "debut": 96.977,
+  "fin": 97.051
+ },
+ {
+  "texte": "exécute",
+  "debut": 97.051,
+  "fin": 97.477
+ },
+ {
+  "texte": "ce",
+  "debut": 97.477,
+  "fin": 97.625
+ },
+ {
+  "texte": "que",
+  "debut": 97.625,
+  "fin": 97.736
+ },
+ {
+  "texte": "tu",
+  "debut": 97.736,
+  "fin": 97.866
+ },
+ {
+  "texte": "lui",
+  "debut": 97.866,
+  "fin": 97.977
+ },
+ {
+  "texte": "demandes.",
+  "debut": 97.977,
+  "fin": 98.472
+ },
+ {
+  "texte": "Et",
+  "debut": 98.472,
+  "fin": 98.685
+ },
+ {
+  "texte": "toi,",
+  "debut": 98.685,
+  "fin": 98.889
+ },
+ {
+  "texte": "quel",
+  "debut": 99.144,
+  "fin": 99.366
+ },
+ {
+  "texte": "est",
+  "debut": 99.366,
+  "fin": 99.44
+ },
+ {
+  "texte": "le",
+  "debut": 99.44,
+  "fin": 99.551
+ },
+ {
+  "texte": "meilleur",
+  "debut": 99.551,
+  "fin": 99.829
+ },
+ {
+  "texte": "prompt",
+  "debut": 99.829,
+  "fin": 100.069
+ },
+ {
+  "texte": "que",
+  "debut": 100.069,
+  "fin": 100.236
+ },
+ {
+  "texte": "tu",
+  "debut": 100.236,
+  "fin": 100.347
+ },
+ {
+  "texte": "as",
+  "debut": 100.347,
+  "fin": 100.495
+ },
+ {
+  "texte": "utilisé",
+  "debut": 100.495,
+  "fin": 100.866
+ },
+ {
+  "texte": "avec",
+  "debut": 100.866,
+  "fin": 101.032
+ },
+ {
+  "texte": "ChatGPT,",
+  "debut": 101.032,
+  "fin": 101.699
+ },
+ {
+  "texte": "et",
+  "debut": 101.699,
+  "fin": 102.083
+ },
+ {
+  "texte": "qui",
+  "debut": 102.083,
+  "fin": 102.213
+ },
+ {
+  "texte": "t'a",
+  "debut": 102.213,
+  "fin": 102.38
+ },
+ {
+  "texte": "donné",
+  "debut": 102.38,
+  "fin": 102.657
+ },
+ {
+  "texte": "un",
+  "debut": 102.657,
+  "fin": 102.935
+ },
+ {
+  "texte": "résultat",
+  "debut": 102.935,
+  "fin": 103.454
+ },
+ {
+  "texte": "surprenant ?",
+  "debut": 103.454,
+  "fin": 104.028
+ },
+ {
+  "texte": "Écris-le",
+  "debut": 104.153,
+  "fin": 104.569
+ },
+ {
+  "texte": "en",
+  "debut": 104.569,
+  "fin": 104.681
+ },
+ {
+  "texte": "commentaire.",
+  "debut": 104.681,
+  "fin": 105.199
+ },
+ {
+  "texte": "Tu",
+  "debut": 105.199,
+  "fin": 105.435
+ },
+ {
+  "texte": "veux",
+  "debut": 105.435,
+  "fin": 105.565
+ },
+ {
+  "texte": "apprendre",
+  "debut": 105.565,
+  "fin": 105.917
+ },
+ {
+  "texte": "à",
+  "debut": 105.917,
+  "fin": 106.12
+ },
+ {
+  "texte": "utiliser",
+  "debut": 106.12,
+  "fin": 106.454
+ },
+ {
+  "texte": "l'IA",
+  "debut": 106.454,
+  "fin": 106.769
+ },
+ {
+  "texte": "comme",
+  "debut": 106.769,
+  "fin": 107.009
+ },
+ {
+  "texte": "un",
+  "debut": 107.009,
+  "fin": 107.157
+ },
+ {
+  "texte": "professionnel ?",
+  "debut": 107.157,
+  "fin": 107.731
+ },
+ {
+  "texte": "Réserve",
+  "debut": 107.856,
+  "fin": 108.255
+ },
+ {
+  "texte": "ta",
+  "debut": 108.255,
+  "fin": 108.366
+ },
+ {
+  "texte": "consultation",
+  "debut": 108.366,
+  "fin": 108.662
+ },
+ {
+  "texte": "gratuite",
+  "debut": 108.662,
+  "fin": 109.106
+ },
+ {
+  "texte": "avec",
+  "debut": 109.106,
+  "fin": 109.329
+ },
+ {
+  "texte": "Lomé",
+  "debut": 109.329,
+  "fin": 109.583
+ },
+ {
+  "texte": "IA",
+  "debut": 109.583,
+  "fin": 109.736
+ },
+ {
+  "texte": "School.",
+  "debut": 109.736,
+  "fin": 110.014
+ },
+ {
+  "texte": "Le",
+  "debut": 110.014,
+  "fin": 110.343
+ },
+ {
+  "texte": "lien",
+  "debut": 110.343,
+  "fin": 110.528
+ },
+ {
+  "texte": "est",
+  "debut": 110.528,
+  "fin": 110.639
+ },
+ {
+  "texte": "dans",
+  "debut": 110.639,
+  "fin": 110.75
+ },
+ {
+  "texte": "la",
+  "debut": 110.75,
+  "fin": 110.861
+ },
+ {
+  "texte": "bio.",
+  "debut": 110.861,
+  "fin": 111.009
+ }
+]
