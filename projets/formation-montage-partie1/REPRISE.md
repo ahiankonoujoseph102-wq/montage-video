@@ -104,3 +104,4 @@ Pièges : Remotion garde en cache les vidéos déjà lues → les extraits ont u
   partie 1 avant de rendre les parties 2 à 9.
 - Formation re-rendue avec les sous-titres remontés : Formation_Partie1_HQ.mp4 748.100000 s 335287738 octets
 - Partie 1 : 106.4 s (accroche 6.2 s, passage 93.9 s, fin 6.4 s), 37.5 Mo, -14.1 LUFS, crête vraie -1.9 dBTP
+- Partie 2 : 92.6 s (accroche 4.8 s, passage 81.4 s, fin 6.4 s), 25.4 Mo, -14.0 LUFS, crête vraie -2.0 dBTP
