@@ -84,14 +84,14 @@ def piece(nom_voix, mode, lead, queue, extra):
     fichier = fichier[0] if fichier else "accroches"
     if fichier not in MOTS:
         MOTS[fichier] = json.loads((ROOT / "projets" / "serie-formation-partie1" / f"{fichier}_mots.json").read_text())
-    mots = [m for m in MOTS[fichier] if a - 0.05 <= m[1] < b]
+    mots = [m for m in MOTS[fichier] if m[2] > a + 0.05 and m[1] < b]  # Whisper place souvent le début en avance
     t0 = lead / FPS
     gestes, expressions = [{"t": -10, "geste": "repos"}], [{"t": -10, "expression": "neutre"},
                                                             {"t": t0 - 0.08, "expression": "parle"},
                                                             {"t": t0 + nv / FPS + 0.1, "expression": "sourire"}]
     for m, g, *reste in cfg["gestes"].get(nom_voix, []):
         w = next((x for x in mots if norm(x[0]) == norm(m)), None) or next(x for x in mots if norm(m) in norm(x[0]))
-        debut = t0 + (w[1] - a) / TEMPO
+        debut = t0 + max(0.0, w[1] - a) / TEMPO
         doigts = next((x for x in reste if isinstance(x, int)), None)
         d = next((x for x in reste if not isinstance(x, int)), "mot")
         fin = t0 + (w[2] - a) / TEMPO + 0.3 if d == "mot" else debut + float(d)

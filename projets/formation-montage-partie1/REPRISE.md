@@ -110,5 +110,5 @@ Pièges : Remotion garde en cache les vidéos déjà lues → les extraits ont u
 - Partie 5 : 115.6 s (accroche 4.7 s, passage 104.5 s, fin 6.4 s), 43.7 Mo, -14.0 LUFS, crête vraie -2.0 dBTP
 - Partie 6 : 47.8 s (accroche 4.2 s, passage 37.2 s, fin 6.4 s), 16.7 Mo, -14.0 LUFS, crête vraie -2.0 dBTP
 - Partie 7 : 98.4 s (accroche 4.9 s, passage 87.1 s, fin 6.4 s), 31.5 Mo, -14.0 LUFS, crête vraie -2.0 dBTP
-- StopIteration
 - Partie 9 : 92.6 s (accroche 7.0 s, passage 76.5 s, fin 9.1 s), 24.3 Mo, -14.0 LUFS, crête vraie -2.0 dBTP
+- Partie 8 : 114.9 s (accroche 5.7 s, passage 102.9 s, fin 6.4 s), 36.2 Mo, -14.0 LUFS, crête vraie -2.0 dBTP
