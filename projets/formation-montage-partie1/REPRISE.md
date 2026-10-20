@@ -88,3 +88,17 @@ npx remotion render <bundle> Formation <image.mp4> --props=$P/formation_props_ra
 Pièges : Remotion garde en cache les vidéos déjà lues → les extraits ont un nom qui change avec leur contenu
 (empreinte) ; supprimer le dossier de bundle avant d'en refaire un. `tsconfig.json` exclut `double-anime/`
 (projet Remotion indépendant, importé directement).
+
+## Série TikTok tirée de la formation (en cours)
+
+- Config : `projets/serie-formation-partie1/serie.json` (voix des accroches, 9 parties, titres, gestes) ;
+  plan : `projets/serie-formation-partie1/plan_decoupage.md`. Voix : Drive `1et5sv57yPd-U16Or6Fz51jkuhFF-gqqW`
+  (copie : `public/serie-formation-partie1/accroches.m4a`, à recopier depuis `projets/serie-formation-partie1/` si
+  besoin) ; mots horodatés : `accroches_mots.json`.
+- Commandes : `RHUBARB=<rhubarb> python3 scripts/serie_voix.py` (voix radio + bouche) ; bundle Remotion ;
+  `python3 scripts/serie.py <bundle> 1 2 …` → `out/serie-formation-partie1/Partie_<n>.mp4` (besoin de
+  `out/formation-partie1/Formation_Partie1_HQ.mp4` et de `public/formation-montage-partie1/formation_mix_radio.wav`).
+- Composition `SeriePiece` (`src/serie/Serie.tsx`) : accroche (studio, titre 3 lignes dans l'écran, badge PARTIE n/N,
+  image 0 complète = couverture), carton « Commentez SUITE » (cœur et abonnement dessinés), carton final WhatsApp.
+- Fait : partie 1 (106 s, 34,8 Mo, −14,1 LUFS, −1,9 dBTP). En attente de l'accord de Joseph sur le plan et la
+  partie 1 avant de rendre les parties 2 à 9.

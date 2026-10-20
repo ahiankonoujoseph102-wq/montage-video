@@ -1,0 +1,33 @@
+{
+ "_aide": "Série TikTok tirée de la formation partie 1 (scripts/serie_voix.py, scripts/serie.py). voix : phrases du fichier Drive 1et5sv57yPd-U16Or6Fz51jkuhFF-gqqW (public/serie-formation-partie1/accroches.m4a), [début, fin] en secondes, sans les mots « Partie n ». parties : [début, fin] en secondes de la vidéo de la formation (out/formation-partie1/Formation_Partie1_HQ.mp4), accroche, titre de 3 lignes (motsCles : mot en noir sur bloc jaune), gestes du double [mot, geste, (doigts), durée].",
+ "source": "drive:1et5sv57yPd-U16Or6Fz51jkuhFF-gqqW",
+ "voix": {
+  "A1": [4.25, 9.95], "A2": [11.6, 15.85], "A3": [17.6, 23.45], "A4": [25.25, 28.55], "A5": [30.3, 34.5],
+  "A6": [36.4, 40.05], "A7": [41.65, 46.05], "A8": [47.8, 52.95], "A1court": [4.25, 9.0],
+  "suite": [53.4, 58.9], "derniere": [59.7, 68.1]
+ },
+ "parties": [
+  {"debut": 8.0, "fin": 101.9, "accroche": "A1", "titre": ["MONTEZ N'IMPORTE", "QUELLE VIDÉO", "AVEC L'IA"], "motsCles": ["L'IA"]},
+  {"debut": 101.9, "fin": 183.3, "accroche": "A2", "titre": ["LE PROMPT QUI ÉCRIT", "VOTRE SCRIPT", "EN SECONDES"], "motsCles": ["SCRIPT"]},
+  {"debut": 183.3, "fin": 288.8, "accroche": "A3", "titre": ["SCÈNES DE", "8 SECONDES", "ET QUI PARLE ?"], "motsCles": ["8"]},
+  {"debut": 288.8, "fin": 336.7, "accroche": "A4", "titre": ["DES PROMPTS QUE", "GOOGLE FLOW", "COMPREND VRAIMENT"], "motsCles": ["GOOGLE", "FLOW"]},
+  {"debut": 336.7, "fin": 441.2, "accroche": "A5", "titre": ["GOOGLE FLOW :", "3 RÉGLAGES", "À VÉRIFIER"], "motsCles": ["3"]},
+  {"debut": 441.2, "fin": 478.4, "accroche": "A6", "titre": ["CLAUDE REFUSE", "VOTRE VIDÉO ?", "LA SOLUTION"], "motsCles": ["SOLUTION"]},
+  {"debut": 478.4, "fin": 565.5, "accroche": "A7", "titre": ["LE PROMPT QUI", "MONTE VOTRE VIDÉO", "AVEC CLAUDE"], "motsCles": ["CLAUDE"]},
+  {"debut": 565.5, "fin": 668.4, "accroche": "A8", "titre": ["CORRIGER,", "AJOUTER SON LOGO,", "TÉLÉCHARGER"], "motsCles": ["LOGO"]},
+  {"debut": 668.4, "fin": 744.9, "accroche": "A1court", "titre": ["LIMITES, RÉCAP", "ET VOTRE", "EXERCICE"], "motsCles": ["RÉCAP"]}
+ ],
+ "gestes": {
+  "A1": [["monter", "explique", "mot"], ["telephone", "designe", 1.2]],
+  "A1court": [["monter", "explique", "mot"], ["telephone", "designe", 1.2]],
+  "A2": [["prompt", "designe", 1.2], ["script", "explique", "mot"]],
+  "A3": [["decoupee", "explique", "mot"], ["parler", "designe", 1.0]],
+  "A4": [["prompts", "designe", 1.2]],
+  "A5": [["3", "compte", 3, 1.2]],
+  "A6": [["refuse", "explique", "mot"], ["solution", "pouce", 1.0]],
+  "A7": [["prompt", "designe", 1.2], ["musique", "explique", "mot"]],
+  "A8": [["Corriger", "compte", 1, 0.8], ["ajouter", "compte", 2, 0.8], ["telecharger", "compte", 3, 1.0]],
+  "suite": [["Commentez", "designe", 1.2], ["likez", "pouce", 1.4]],
+  "derniere": [["likez", "pouce", 1.2], ["whatsapp", "designe", 1.6]]
+ }
+}

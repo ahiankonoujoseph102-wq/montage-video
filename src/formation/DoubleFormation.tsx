@@ -18,7 +18,7 @@ const E = MISE_EN_PAGE.ecran; // écran du décor (x 110, y 240, 860 × 600)
 const SC = 0.882; // la scène, du haut de l'écran (222) au bas du bureau (1728), tient entre 200 et 1530
 const OX = 540 * (1 - SC);
 const OY = 200 - 222 * SC;
-const ECRAN = {x: E.x * SC + OX, y: E.y * SC + OY, l: E.l * SC, h: E.h * SC};
+export const ECRAN = {x: E.x * SC + OX, y: E.y * SC + OY, l: E.l * SC, h: E.h * SC};
 const lisse = Easing.inOut(Easing.cubic);
 
 const presence = (d: PropsDouble | undefined, f: number) => {
