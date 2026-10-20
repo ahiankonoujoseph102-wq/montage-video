@@ -26,7 +26,7 @@ import soundfile as sf
 
 ROOT = Path(__file__).resolve().parent.parent
 cfg = json.loads((ROOT / "projets" / "serie-formation-partie1" / "serie.json").read_text())
-mots_src = json.loads((ROOT / "projets" / "serie-formation-partie1" / "accroches_mots.json").read_text())
+MOTS = {}  # mots horodatés de chaque fichier de voix : projets/serie-formation-partie1/<fichier>_mots.json
 radio = json.loads((ROOT / "projets" / "formation-montage-partie1" / "montage_formation.json").read_text())["radio"]
 PUB = ROOT / "public" / "serie-formation-partie1"
 FORM = ROOT / "public" / "formation-montage-partie1"
@@ -80,8 +80,11 @@ def piece(nom_voix, mode, lead, queue, extra):
     voix = charger(PUB / "voix" / f"{nom_voix}.wav", stereo=False)
     nv = math.ceil(len(voix) / SR * FPS)
     duree = lead + nv + queue
-    a, b = cfg["voix"][nom_voix]
-    mots = [m for m in mots_src if a - 0.05 <= m[1] < b]
+    a, b, *fichier = cfg["voix"][nom_voix]
+    fichier = fichier[0] if fichier else "accroches"
+    if fichier not in MOTS:
+        MOTS[fichier] = json.loads((ROOT / "projets" / "serie-formation-partie1" / f"{fichier}_mots.json").read_text())
+    mots = [m for m in MOTS[fichier] if a - 0.05 <= m[1] < b]
     t0 = lead / FPS
     gestes, expressions = [{"t": -10, "geste": "repos"}], [{"t": -10, "expression": "neutre"},
                                                             {"t": t0 - 0.08, "expression": "parle"},

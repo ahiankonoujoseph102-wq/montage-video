@@ -6,6 +6,7 @@ import {POLICE} from '../charte';
 import {usePolicesChargees} from '../Montage';
 import {NUIT, OR, texteContour} from '../formation/commun';
 import {DoubleFormation, ECRAN, type PropsDouble, StudioDecor} from '../formation/DoubleFormation';
+import {Reduction} from '../formation/Reduction';
 
 // Série TikTok tirée de la formation partie 1 (scripts/serie.py) : début de chaque vidéo (accroche dite par le double,
 // titre géant de 3 lignes, badge « PARTIE n/N ») et carton de fin (« Commentez SUITE » ou, pour la dernière, le numéro
@@ -153,12 +154,14 @@ const Corps: React.FC<PropsPiece> = (p) => {
     bouche: [...lead, ...p.bouche], visemes: 'X'.repeat(p.debutVoix) + p.visemes};
   return (
     <AbsoluteFill style={{background: NUIT}}>
+      <Reduction>
       <StudioDecor d={double} />
       <AbsoluteFill style={{clipPath: `inset(${ECRAN.y}px ${1080 - ECRAN.x - ECRAN.l}px ${1920 - ECRAN.y - ECRAN.h}px ${ECRAN.x}px round 14px)`}}>
         <AbsoluteFill style={{background: `radial-gradient(circle at 50% 35%, #2a1d6e 0%, ${NUIT} 70%)`}} />
         {p.mode === 'accroche' ? <Accroche p={p} f={f} /> : p.mode === 'suite' ? <Suite f={f} /> : <Derniere f={f} />}
       </AbsoluteFill>
       <DoubleFormation d={double} />
+      </Reduction>
     </AbsoluteFill>
   );
 };

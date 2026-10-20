@@ -9,6 +9,7 @@ import {FondNuit, NUIT, OR, pop, prog, VERT} from './commun';
 import {CartonRetenir, type Illustration, Illustrations, type Note, Notes} from './Ajouts';
 import {DoubleFormation, Partage, type PropsDouble, StudioDecor} from './DoubleFormation';
 import {ExtraitEcran} from './ExtraitEcran';
+import {Reduction} from './Reduction';
 import {GeneriqueAdhesion, GeneriqueFin, GeneriqueOuverture, GeneriqueServices, GeneriqueTalkami} from './Generiques';
 import {SceneBarre32, SceneBarriere30, SceneBesoins, SceneEmploye, SceneLimites, ScenePromptVague, SceneRecap,
   SceneReglages, SceneWhatsAppFlou} from './Scenes';
@@ -75,8 +76,9 @@ const Badge: React.FC<{numero: number; titre: string}> = ({numero, titre}) => {
   );
 };
 
-// Sous-titres : bande sombre sous l'image (jamais sur l'écran filmé ni sur les cartes), mots clés en jaune.
-const BANDE = {haut: 1548, hauteur: 250};
+// Sous-titres : bande sous le contenu réduit (Reduction : contenu jusqu'à y 1364), au-dessus des 20 % du bas
+// (y 1536) que la description TikTok recouvre ; jamais sur l'écran filmé, les cartes ni le double. Mots clés en jaune.
+const BANDE = {haut: 1372, hauteur: 160};
 const SousTitres: React.FC<{st: SousTitre[]}> = ({st}) => {
   const f = useCurrentFrame();
   const g = st.find((s) => f >= s.debut && f < s.fin);
@@ -85,8 +87,8 @@ const SousTitres: React.FC<{st: SousTitre[]}> = ({st}) => {
   return (
     <div style={{position: 'absolute', left: 40, right: 40, top: BANDE.haut, height: BANDE.hauteur, display: 'flex',
       alignItems: 'center', justifyContent: 'center'}}>
-      <div style={{maxWidth: 1000, textAlign: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 60, lineHeight: 1.25,
-        color: '#fff', background: 'rgba(5,7,24,0.82)', borderRadius: 26, padding: '14px 30px',
+      <div style={{maxWidth: 1000, textAlign: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 52, lineHeight: 1.2,
+        color: '#fff', background: 'rgba(5,7,24,0.82)', borderRadius: 24, padding: '10px 28px',
         transform: `translateY(${(1 - k) * 12}px)`, opacity: 0.4 + 0.6 * k}}>
         {g.mots.map((m, i) => (
           <span key={i} style={{color: m.cle ? '#FFD400' : '#fff'}}>{m.t}{i < g.mots.length - 1 ? ' ' : ''}</span>
@@ -98,6 +100,7 @@ const SousTitres: React.FC<{st: SousTitre[]}> = ({st}) => {
 
 const Corps: React.FC<FormationProps> = ({ouverture, plans, cartons, retenirs = [], badges, sousTitres, double}) => (
   <AbsoluteFill style={{background: NUIT}}>
+    <Reduction>
     <Sequence durationInFrames={ouverture} name="Générique d'ouverture">
       <GeneriqueOuverture />
     </Sequence>
@@ -125,6 +128,7 @@ const Corps: React.FC<FormationProps> = ({ouverture, plans, cartons, retenirs = 
       ))}
     </Partage>
     <DoubleFormation d={double} />
+    </Reduction>
     {badges.map((b) => (
       <Sequence key={`b${b.numero}`} from={b.debut} durationInFrames={b.fin - b.debut} name={`Badge étape ${b.numero}`}>
         <Badge numero={b.numero} titre={b.titre} />

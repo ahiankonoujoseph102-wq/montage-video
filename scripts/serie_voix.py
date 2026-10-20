@@ -1,8 +1,8 @@
 """Voix de la série TikTok (accroches, phrase de fin) : même traitement que la voix de la formation.
 
 Usage : python3 scripts/serie_voix.py
-Lit public/serie-formation-partie1/accroches.m4a et projets/serie-formation-partie1/serie.json (« voix » : [début, fin]
-de chaque phrase, sans les mots « Partie n »). Nettoyage de scripts/voix_formation.py (coupe-bas, débruitage), puis
+Lit public/serie-formation-partie1/accroches.m4a (ou le fichier donné en 3e élément) et projets/serie-formation-partie1/
+serie.json (« voix » : [début, fin(, fichier)] de chaque phrase, sans les mots « Partie n »). Nettoyage de scripts/voix_formation.py (coupe-bas, débruitage), puis
 chaîne « radio » de scripts/voix_radio.py (débit × 1,05, présence, air, dé-esseur, compression), voix à −17 LUFS
 (niveau de la voix avant mixage dans scripts/formation_montage.py). Écrit public/serie-formation-partie1/voix/<nom>.wav
 (48 kHz mono) et, pour la bouche du double, <nom>_bouche.json (énergie par image) et <nom>_visemes.json (Rhubarb,
@@ -32,15 +32,24 @@ FILTRES = ",".join([
 ])
 
 (PUB / "voix").mkdir(parents=True, exist_ok=True)
-brut = subprocess.run(["ffmpeg", "-v", "error", "-i", str(PUB / "accroches.m4a"), "-af", FILTRES, "-ac", "1", "-ar",
-                       str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
-voix = np.frombuffer(brut, dtype=np.float32).astype(np.float64)
 mesure = pyln.Meter(SR)
-gain = 10 ** ((-17.0 - mesure.integrated_loudness(voix)) / 20)  # niveau commun à toutes les phrases
-voix *= gain
 F = int(0.012 * SR)
 infos = {}
-for nom, (a, b) in cfg["voix"].items():
+traitees = {}
+
+
+def traitee(fichier):
+    """Fichier source traité (nettoyage + radio), voix à −17 LUFS ; un niveau commun par fichier."""
+    if fichier not in traitees:
+        brut = subprocess.run(["ffmpeg", "-v", "error", "-i", str(PUB / f"{fichier}.m4a"), "-af", FILTRES, "-ac", "1",
+                               "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+        v = np.frombuffer(brut, dtype=np.float32).astype(np.float64)
+        traitees[fichier] = v * 10 ** ((-17.0 - mesure.integrated_loudness(v)) / 20)
+    return traitees[fichier]
+
+
+for nom, (a, b, *fichier) in cfg["voix"].items():  # [début, fin] dans accroches.m4a, ou [début, fin, fichier]
+    voix = traitee(fichier[0] if fichier else "accroches")
     x = voix[int(a / TEMPO * SR):int(b / TEMPO * SR)].copy()
     x[:F] *= np.linspace(0, 1, F)
     x[-F:] *= np.linspace(1, 0, F)
