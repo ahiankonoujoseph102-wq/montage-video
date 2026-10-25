@@ -7,3 +7,8 @@ __pycache__/
 public/*.mp4
 projets/*/source_complet.mp4
 projets/*/ancienne.mp4
+projets/*/voix_brute.m4a
+projets/*/paiements*.png
+projets/*/paiement_*.png
+projets/*/voix_nettoyee.*
+projets/*/_voix/

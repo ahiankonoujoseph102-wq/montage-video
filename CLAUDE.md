@@ -250,6 +250,9 @@ partout ; « Lomé IA School » ne change pas.
 - `scripts/sons.py` tire du bruit aléatoire dans l'ordre des sons : ajouter un son change le grain des
   suivants. Les effets versionnés dans `sons/effets/` font foi ; ne régénérer que le son ajouté
   (restaurer les autres avec `git checkout -- sons/effets/<nom>.wav`).
+- Voix off seule (sans vidéo) : `scripts/voix.py <projet>` garde les bonnes prises listées dans
+  `projets/<projet>/prises.json`, raccourcit les silences, débruite et traite la voix (−14 LUFS, crête ≤ −1 dBTP) ;
+  `transcribe.py <projet> <fichier>` transcrit un autre fichier que `source.mp4`.
 - OpenCV : installer `opencv-python-headless<5` (la version 5 n'a plus `CascadeClassifier`).
 - Mesurer les saturations sur les canaux stéréo bruts, pas après conversion en mono (faux dépassements).
 - Réseau : huggingface.co, drive.google.com et drive.usercontent.google.com doivent être autorisés
