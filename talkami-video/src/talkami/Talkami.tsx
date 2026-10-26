@@ -45,9 +45,9 @@ const BOUCHE = bouche as number[];
 const VISEMES = visemes as string;
 const LOGO = {x: 14, y: 198, taille: 74};
 const NUMEROS_A = [FIN_VOIX + 0.6 - DEBUT_CARTE, FIN_VOIX + 1.3 - DEBUT_CARTE];
-// Téléphone animé : 1190 px × 0,82 = 976 px, de y 236 à 1212 ; sous-titres à partir de ≈ 1 290 px.
-const ECHELLE_TELEPHONE = 0.82;
-const BAS_TELEPHONE = 1250;
+// Téléphone animé : 1190 px × 0,78 = 928 px, de y 236 à 1164 ; sous-titres sur trois lignes à partir de ≈ 1 224 px.
+const ECHELLE_TELEPHONE = 0.78;
+const BAS_TELEPHONE = 1185;
 const ETAPES_SEANCE = ['Évaluation', 'Leçon', 'Pratique', 'Conversation', 'Bilan'];
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
@@ -350,7 +350,7 @@ export const Talkami: React.FC = () => {
       {p.type === 'T' ? (
         <AbsoluteFill style={{background: `radial-gradient(circle at 50% 40%, #2d2a8a 0%, ${COULEURS.nuit} 70%)`}}>
           <div style={{position: 'absolute', left: 540 - 900, top: 760 - 900, width: 1800, height: 1800, transform: `rotate(${t * 10}deg)`, opacity: 0.1, background: `conic-gradient(${COULEURS.violet}, transparent 12%, ${COULEURS.or} 25%, transparent 37%, ${COULEURS.violet} 50%, transparent 62%, ${COULEURS.or} 75%, transparent 87%, ${COULEURS.violet})`}} />
-          {/* téléphone réduit (0,82) et arrêté au-dessus des sous-titres : ils ne le touchent jamais,
+          {/* téléphone réduit (0,78) et arrêté au-dessus des sous-titres : ils ne le touchent jamais,
               même pendant l'entrée par le bas */}
           <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: BAS_TELEPHONE, overflow: 'hidden'}}>
             <div style={{position: 'absolute', inset: 0, transform: `scale(${ECHELLE_TELEPHONE})`, transformOrigin: '530px 236px'}}>
