@@ -128,7 +128,7 @@ export const TEMPS: Record<string, number> = {
   agentsIA: t('agents IA'),
   automatisations2: t('automatisations', 2),
   consultation: t('consultation gratuite'),
-  url: t('lomeiaschool.laravel.cloud'),
+  url: t('lomeiaschool .laravel .cloud'),
   whatsapp: t('WhatsApp'),
   numero: t('72 24 02 31'),
   troisMois: t('3 mois'),

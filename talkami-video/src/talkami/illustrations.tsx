@@ -352,9 +352,9 @@ export const Revelation: React.FC<Props> = ({t}) => {
 export const Situations: React.FC<Props> = (p) => {
   const {t} = p;
   const cartes = [
-    {img: 'marche', nom: 'Au marché', a: 0, r: -6, x: 60, y: 300},
-    {img: 'bureau', nom: 'Au travail', a: ici(p, 'travail'), r: 5, x: 330, y: 470},
-    {img: 'voyage', nom: 'En voyage', a: ici(p, 'voyage'), r: -3, x: 560, y: 300},
+    {img: 'marche', nom: 'Au marché', a: 0, r: -5, x: 50, y: 240},
+    {img: 'bureau', nom: 'Au travail', a: ici(p, 'travail'), r: 5, x: 500, y: 300},
+    {img: 'voyage', nom: 'En voyage', a: ici(p, 'voyage'), r: -3, x: 280, y: 650},
   ];
   return (
     <Fond t={t} teinte="#1d3a6e">
@@ -362,8 +362,8 @@ export const Situations: React.FC<Props> = (p) => {
         const s = pop(t, c.a, 0.35);
         if (s <= 0) return null;
         return (
-          <div key={i} style={{position: 'absolute', left: c.x, top: c.y, width: 420, transform: `rotate(${c.r + Math.sin(t * 2 + i) * 1.5}deg) scale(${s})`, padding: 14, background: B, borderRadius: 26, boxShadow: '0 20px 50px #000b'}}>
-            <div style={{width: 392, height: 470, borderRadius: 16, overflow: 'hidden'}}>
+          <div key={i} style={{position: 'absolute', left: c.x, top: c.y, width: 400, transform: `rotate(${c.r + Math.sin(t * 2 + i) * 1.5}deg) scale(${s})`, padding: 14, background: B, borderRadius: 26, boxShadow: '0 20px 50px #000b'}}>
+            <div style={{width: 372, height: 380, borderRadius: 16, overflow: 'hidden'}}>
               <Img src={staticFile(`talkami/images/${c.img}.jpg`)} style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1.05 + 0.05 * (t - c.a)})`}} />
             </div>
             <div style={{fontFamily: POLICE, fontWeight: 800, fontSize: 52, color: N, textAlign: 'center', marginTop: 8}}>{c.nom}</div>
@@ -481,7 +481,7 @@ export const Paiements: React.FC<Props> = (p) => {
   const zooms = [ici(p, 'clients'), ici(p, 'abonnement'), ici(p, 'togo')];
   const retour = ici(p, 'ouest') + 0.1;
   // cadrage : vue d'ensemble (échelle 0,44, toute la capture) puis gros plan sur chaque montant
-  const vue = {s: 0.44, cy: 1200};
+  const vue = {s: 0.62, cy: 1290};
   const plans = [vue, ...ALERTES.map((a) => ({s: 1.05, cy: a.y})), vue];
   const instants = [0, ...zooms, retour];
   let k = 0;
@@ -622,7 +622,7 @@ export const TroisChoses: React.FC<Props> = (p) => {
     <Fond t={t} teinte="#1d3a6e">
       <div style={{position: 'absolute', left: 60, right: 140, top: 300, display: 'flex', flexDirection: 'column', gap: 34}}>
         {items.map((it, i) => (
-          <div key={i} style={{display: 'flex', alignItems: 'center', gap: 26, padding: '22px 30px', borderRadius: 34, background: '#0b1440dd', border: `5px solid ${it.c}`, transform: `translateX(${(1 - prog(t, it.a - 0.05, it.a + 0.25, Easing.out(Easing.back(1.4)))) * 900}px)`}}>
+          <div key={i} style={{display: 'flex', alignItems: 'center', gap: 26, padding: '22px 30px', borderRadius: 34, background: '#0b1440dd', border: `5px solid ${it.c}`, transform: `translateX(${(1 - prog(t, it.a - 0.05, it.a + 0.25, Easing.out(Easing.back(1.4)))) * 1150}px)`}}>
             <div style={{width: 110, height: 110, flex: 'none', borderRadius: '50%', background: it.c, display: 'grid', placeItems: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 70, color: N}}>{i + 1}</div>
             <div style={{flex: 1}}>
               <div style={{fontFamily: POLICE, fontWeight: 800, fontSize: 58, color: B, lineHeight: 1.05}}>{it.titre}</div>
@@ -773,7 +773,7 @@ export const Iceberg: React.FC<Props> = (p) => {
           {/* pointe */}
           <path d="M380 640 L470 470 L520 520 L560 430 L640 560 L700 640 Z" fill="#f4fbff" stroke="#9fd3f5" strokeWidth={6} transform={`translate(0 ${(1 - pop(t, 0, 0.4)) * 200})`} />
           {/* partie immergée */}
-          <path d="M380 640 L700 640 L900 900 L960 1250 L800 1550 L540 1650 L260 1520 L120 1200 L200 860 Z" fill="#cfeeff" opacity={0.92} />
+          <path d="M380 640 L700 640 L900 900 L960 1250 L800 1550 L540 1650 L260 1520 L120 1200 L200 860 Z" fill="#6fb8e8" opacity={0.55} />
           {/* vagues */}
           <path d={`M0 640 ${Array.from({length: 12}, (_, i) => `Q${i * 90 + 45} ${640 + Math.sin(t * 4 + i) * 12} ${(i + 1) * 90} 640`).join(' ')}`} stroke="#ffffff" strokeWidth={8} fill="none" />
         </svg>
@@ -807,7 +807,7 @@ export const Entreprise: React.FC<Props> = (p) => {
         <div style={{position: 'absolute', inset: 0, background: `repeating-linear-gradient(90deg, #8f96b3 0 30px, #5b6185 30px 60px)`, transform: `translateX(${(t * 120) % 60}px)`}} />
       </div>
       {taches.map((nom, i) => {
-        const x = ((t * 190 + i * 190) % 950) - 260;
+        const x = ((t * 190 + i * 260) % 1300) - 260;
         return (
           <div key={nom} style={{position: 'absolute', left: x, top: 590, width: 230, padding: '18px 0', borderRadius: 18, background: B, color: N, textAlign: 'center', fontWeight: 800, fontSize: 38, boxShadow: '0 10px 24px #0008', opacity: x > 520 ? 1 - (x - 520) / 120 : 1}}>{nom}</div>
         );
@@ -829,8 +829,8 @@ export const Entreprise: React.FC<Props> = (p) => {
           <circle r={16} fill={N} />
         </g>
       </svg>
-      <div style={{position: 'absolute', left: 0, right: 90, top: 300, transform: `scale(${pop(t, 0.05, 0.3)})`}}>
-        <Gros taille={64}>Ton <span style={{color: O}}>entreprise</span></Gros>
+      <div style={{position: 'absolute', left: 60, top: 300, transform: `scale(${pop(t, 0.05, 0.3)})`, transformOrigin: 'left'}}>
+        <Gros taille={70} style={{textAlign: 'left'}}>Ton <span style={{color: O}}>entreprise</span></Gros>
       </div>
     </Fond>
   );
@@ -982,7 +982,7 @@ export const Formation: React.FC<Props> = (p) => {
           <Gros taille={74} couleur={O}>intelligence artificielle</Gros>
         </div>
         {lignes.map((l, i) => (
-          <div key={i} style={{display: 'flex', alignItems: 'center', gap: 24, padding: '20px 30px', borderRadius: 30, background: '#0b1440dd', border: `5px solid ${l.c}`, transform: `translateX(${(1 - prog(t, l.a - 0.05, l.a + 0.25, Easing.out(Easing.back(1.4)))) * 900}px)`}}>
+          <div key={i} style={{display: 'flex', alignItems: 'center', gap: 24, padding: '20px 30px', borderRadius: 30, background: '#0b1440dd', border: `5px solid ${l.c}`, transform: `translateX(${(1 - prog(t, l.a - 0.05, l.a + 0.25, Easing.out(Easing.back(1.4)))) * 1150}px)`}}>
             <svg width={96} height={96} style={{flex: 'none'}}><Coche t={t} a={l.a + 0.2} x={48} y={48} r={42} /></svg>
             <div style={{fontFamily: POLICE, fontWeight: 800, fontSize: i === 2 ? 50 : 66, color: B, lineHeight: 1.05}}>{l.texte}</div>
           </div>

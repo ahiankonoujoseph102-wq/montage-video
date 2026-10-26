@@ -93,7 +93,7 @@ const planA = (t: number) => PLANS.find((p) => t >= p.debut && t < p.fin) ?? PLA
 const L = (p: Plan, cle: string) => TEMPS[cle];
 
 const EVENEMENTS: Evt[] = (() => {
-  const e: Evt[] = [{t: 0, son: 'impactFort', volume: 0.55}, {t: TEMPS.apprendre1 + 0.1, son: 'impact', volume: 0.45}];
+  const e: Evt[] = [{t: 0, son: 'impactFort', volume: 0.5}, {t: TEMPS.apprendre1 + 0.1, son: 'impact', volume: 0.45}];
   PLANS.forEach((p, i) => {
     const q = PLANS[i - 1];
     const d = p.fin - p.debut;
@@ -158,6 +158,8 @@ const EVENEMENTS: Evt[] = (() => {
     }
   });
   for (const k of ['etape2', 'etape3', 'etape4', 'etape5']) e.push({t: TEMPS[k], son: 'notif', volume: 0.16});
+  // effets toujours nettement sous la voix (mesuré sur le rendu : −3 dB de plus), sauf l'impact d'ouverture
+  for (const x of e) if (x.t > 0) x.volume *= 0.7;
   // un seul effet à la fois : on garde le plus important dans chaque fenêtre de 0,25 s
   e.sort((a, b) => a.t - b.t);
   const garde: Evt[] = [];

@@ -2390,8 +2390,18 @@
   "fin": 160.52
  },
  {
-  "texte": "lomeiaschool.laravel.cloud,",
+  "texte": "lomeiaschool",
   "debut": 160.52,
+  "fin": 161.36
+ },
+ {
+  "texte": ".laravel",
+  "debut": 161.36,
+  "fin": 162.14
+ },
+ {
+  "texte": ".cloud,",
+  "debut": 162.14,
   "fin": 162.74
  },
  {
