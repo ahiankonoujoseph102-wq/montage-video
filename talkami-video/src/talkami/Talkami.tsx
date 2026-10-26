@@ -45,6 +45,9 @@ const BOUCHE = bouche as number[];
 const VISEMES = visemes as string;
 const LOGO = {x: 14, y: 198, taille: 74};
 const NUMEROS_A = [FIN_VOIX + 0.6 - DEBUT_CARTE, FIN_VOIX + 1.3 - DEBUT_CARTE];
+// Téléphone animé : 1190 px × 0,82 = 976 px, de y 236 à 1212 ; sous-titres à partir de ≈ 1 290 px.
+const ECHELLE_TELEPHONE = 0.82;
+const BAS_TELEPHONE = 1250;
 const ETAPES_SEANCE = ['Évaluation', 'Leçon', 'Pratique', 'Conversation', 'Bilan'];
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
@@ -246,19 +249,39 @@ const CADRES = {
   gros: {s: 2.25, o: '540px 1120px'},
 };
 
-const EcranPerso: React.FC<{p: Plan; t: number}> = ({p, t}) => (
-  <CadreEcran titre="Talkami" droite="Lomé IA School">
-    <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
-      <div style={{position: 'absolute', left: '50%', top: '50%', width: 900, height: 900, marginLeft: -450, marginTop: -450, transform: `rotate(${t * 25}deg)`, opacity: 0.25, background: `conic-gradient(${COULEURS.violet}, transparent 25%, ${COULEURS.or} 50%, transparent 75%, ${COULEURS.violet})`}} />
-      <div style={{position: 'absolute', inset: 0, display: p.texte ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 34}}>
-        <Img src={staticFile('marque/logo.jpg')} style={{width: 280, height: 280, borderRadius: 50, transform: `translateY(${Math.sin(t * 2.4) * 10}px) rotate(${Math.sin(t * 1.6) * 3}deg)`, boxShadow: `0 0 50px ${COULEURS.or}88`}} />
-        <div style={{transform: `rotate(${t * 60}deg)`}}>
-          <Etoile taille={90} couleur={COULEURS.or} />
+// Logo de l'écran du décor : toujours entier à l'image. En plan moyen ou gros, le haut de
+// l'écran sort du cadre ; on calcule pour chaque plan la partie de l'écran qui reste visible
+// au zoom le plus fort du plan (entrée, dérive, zoom sur un mot fort) et on y loge le logo.
+const ECRAN_CONTENU = {haut: 306, bas: 840}; // zone sous la barre de titre (MISE_EN_PAGE.ecran + barre)
+const placeLogo = (p: Plan) => {
+  const c = CADRES[p.cadre ?? 'moyen'];
+  const oy = parseFloat(c.o.split(' ')[1]);
+  const d = p.fin - p.debut;
+  const fort = MOTS_FORTS.some((m) => m > p.debut - 0.7 && m < p.fin);
+  const sMax = c.s * Math.max(1.08, 1 + 0.025 * d) * (fort ? 1.12 : 1);
+  const visibleHaut = Math.max(ECRAN_CONTENU.haut, oy - oy / sMax) + 14;
+  const taille = Math.min(280, ECRAN_CONTENU.bas - 14 - visibleHaut);
+  const centre = Math.min(ECRAN_CONTENU.bas - 14 - taille / 2, Math.max((ECRAN_CONTENU.haut + ECRAN_CONTENU.bas) / 2, visibleHaut + taille / 2));
+  return {taille, haut: centre - taille / 2 - ECRAN_CONTENU.haut};
+};
+
+const EcranPerso: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const {taille, haut} = placeLogo(p);
+  const k = taille / 280; // le logo et l'étoile gardent leurs proportions
+  return (
+    <CadreEcran titre="Talkami" droite="Lomé IA School">
+      <div style={{position: 'absolute', inset: 0, overflow: 'hidden'}}>
+        <div style={{position: 'absolute', left: '50%', top: '50%', width: 900, height: 900, marginLeft: -450, marginTop: -450, transform: `rotate(${t * 25}deg)`, opacity: 0.25, background: `conic-gradient(${COULEURS.violet}, transparent 25%, ${COULEURS.or} 50%, transparent 75%, ${COULEURS.violet})`}} />
+        <div style={{position: 'absolute', left: 0, right: 0, top: haut, height: taille, display: p.texte || taille < 70 ? 'none' : 'flex', alignItems: 'center', justifyContent: 'center', gap: 34 * k}}>
+          <Img src={staticFile('marque/logo.jpg')} style={{width: taille, height: taille, borderRadius: 50 * k, transform: `rotate(${Math.sin(t * 1.6) * 3}deg)`, boxShadow: `0 0 ${50 * k}px ${COULEURS.or}88`}} />
+          <div style={{transform: `rotate(${t * 60}deg)`}}>
+            <Etoile taille={90 * k} couleur={COULEURS.or} />
+          </div>
         </div>
       </div>
-    </div>
-  </CadreEcran>
-);
+    </CadreEcran>
+  );
+};
 
 const Personnage: React.FC<{p: Plan; t: number}> = ({p, t}) => {
   const {fps} = useVideoConfig();
@@ -327,7 +350,13 @@ export const Talkami: React.FC = () => {
       {p.type === 'T' ? (
         <AbsoluteFill style={{background: `radial-gradient(circle at 50% 40%, #2d2a8a 0%, ${COULEURS.nuit} 70%)`}}>
           <div style={{position: 'absolute', left: 540 - 900, top: 760 - 900, width: 1800, height: 1800, transform: `rotate(${t * 10}deg)`, opacity: 0.1, background: `conic-gradient(${COULEURS.violet}, transparent 12%, ${COULEURS.or} 25%, transparent 37%, ${COULEURS.violet} 50%, transparent 62%, ${COULEURS.or} 75%, transparent 87%, ${COULEURS.violet})`}} />
-          <Telephone p={p as PlanTel} t={t} dossier="talkami/plans" />
+          {/* téléphone réduit (0,82) et arrêté au-dessus des sous-titres : ils ne le touchent jamais,
+              même pendant l'entrée par le bas */}
+          <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: BAS_TELEPHONE, overflow: 'hidden'}}>
+            <div style={{position: 'absolute', inset: 0, transform: `scale(${ECHELLE_TELEPHONE})`, transformOrigin: '530px 236px'}}>
+              <Telephone p={p as PlanTel} t={t} dossier="talkami/plans" />
+            </div>
+          </div>
         </AbsoluteFill>
       ) : null}
       {Illus ? <Illus t={t - p.debut} d={p.fin - p.debut} tg={t} temps={TEMPS} n={p.n} texte={p.texte} phase={p.phase} /> : null}
