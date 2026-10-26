@@ -10,6 +10,7 @@ protégé, aucune personne présentée comme cliente ou témoin.
 | Pexels | Pexels License | oui | non requise | pas de personne présentée comme approuvant le produit ; pas de revente telle quelle | https://www.pexels.com/license/ |
 | Pixabay | Pixabay Content License | oui (sauf contenu montrant une marque) | non requise | pas de logo/marque reconnaissable ; pas d'usage trompeur | https://pixabay.com/service/license-summary/ |
 | unDraw | unDraw License | oui | non requise | pas de redistribution en packs ; illustrations à logo exclues | https://undraw.co/license |
+| Fluent Emoji 3D (Microsoft) | MIT License | oui | mention du droit d'auteur dans les crédits | aucune | https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE |
 | Mixkit (effets sonores) | Mixkit Free License | oui | non requise | pas de revente telle quelle | https://mixkit.co/license/ , https://mixkit.co/llm-info/ |
 
 ## Éléments utilisés
@@ -38,6 +39,7 @@ protégé, aucune personne présentée comme cliente ou témoin.
 | « Magic sparkle whoosh » (n° 2350) | ampoule, révélation, logo | Mixkit | Mixkit Free License | https://mixkit.co/free-sound-effects/magic/ |
 | « Positive notification » (n° 951) | étapes de la séance | Mixkit | Mixkit Free License | https://mixkit.co/free-sound-effects/notification/ |
 | « Cinematic trailer riser » (n° 790) | montée avant la carte de fin | Mixkit | Mixkit Free License | https://mixkit.co/free-sound-effects/riser/ |
+| Émojis 3D (visage qui hurle, visage pensif, cotillons, 100, lunettes de soleil, sac d'argent, dormeur, fusée, yeux, tête qui explose, feu, yeux étoilés, toque de diplômé) | réactions de la version 3 | Fluent Emoji, © Microsoft Corporation | MIT License | https://github.com/microsoft/fluentui-emoji |
 | Effets « erreur » | croix rouges | générés dans le dépôt (`outils/audio.py`) | création du dépôt | — |
 
 Aucune personne n'est présentée comme cliente ou témoin ; les photos Pexels illustrent seulement des situations

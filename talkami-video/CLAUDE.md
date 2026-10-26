@@ -320,3 +320,17 @@ Pratique, Conversation, Bilan), sous-titres mot par mot, carte « Consultation g
 - Emojis interdits dans les dessins : le navigateur de rendu n'a pas de police emoji.
 - Rendu : `npx remotion render sorties/bundle Talkami …`, puis `outils/finaliser.py` et
   `outils/encoder_deux_passes.py … 60`.
+
+## Vidéo Talkami, version 3 (composition `Talkami3`, `src/talkami3/`)
+
+La version 2 validée (composition `Talkami`, `src/talkami/`, commit 0d4d190) reste intacte : version de secours.
+La v3 en est une copie avec :
+- voix resserrée par `outils/voix_dynamique.py` (pauses ≤ 0,2 s ; tempo × 1,06, sauf le passage « Ici, les formules
+  … capture d'écran », déjà rapide, laissé à × 1,0), puis présence et chaleur (+1,5 dB à 170 Hz, −1,5 dB à 380 Hz,
+  +2,5 dB à 3 kHz, aigus +1,5 dB, dé-esseur, compression 3:1) et −14 LUFS → `public/talkami3/voix.wav` ; temps des
+  mots recalculés (`src/talkami3/mots.json`), vérifiés par retranscription (écart médian ≤ 0,015 s) ;
+- transition d'entrée sur chaque plan (zoom flouté, glissé entre deux plans du même type, éclair blanc sur les
+  révélations), pulsation des illustrations sur les mots clés, réactions en émojis 3D Fluent (MIT, `REACTIONS` dans
+  `scenario.ts`, `public/talkami3/emoji/`), gros textes en plus sur les plans du personnage, boucle ouverte dans
+  l'accroche (« Reste : je montre mes vrais paiements »), musique coupée 0,5 s avant les deux révélations puis montée
+  et impact pile sur le mot.

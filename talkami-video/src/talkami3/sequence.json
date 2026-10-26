@@ -1,0 +1,1055 @@
+{
+ "fin_voix": 165.772,
+ "plans": [
+  {
+   "debut": 0.0,
+   "fin": 3.401,
+   "type": "I",
+   "illus": "accroche",
+   "nom": "s01"
+  },
+  {
+   "debut": 3.401,
+   "fin": 4.703,
+   "type": "I",
+   "illus": "pasArgent",
+   "nom": "s02"
+  },
+  {
+   "debut": 4.703,
+   "fin": 6.901,
+   "type": "T",
+   "de": 100.0,
+   "a": 102.2,
+   "y0": 120,
+   "zoom": [
+    1.15,
+    1.3
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    520
+   ],
+   "nom": "s03"
+  },
+  {
+   "debut": 6.901,
+   "fin": 8.099,
+   "type": "I",
+   "illus": "telephone",
+   "nom": "s04"
+  },
+  {
+   "debut": 8.099,
+   "fin": 9.269,
+   "type": "I",
+   "illus": "sansOrdinateur",
+   "nom": "s05"
+  },
+  {
+   "debut": 9.269,
+   "fin": 10.326,
+   "type": "I",
+   "illus": "sansCode",
+   "nom": "s06"
+  },
+  {
+   "debut": 10.326,
+   "fin": 13.128,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "explique",
+   "expression": "sourire",
+   "bandeau": true,
+   "nom": "s07"
+  },
+  {
+   "debut": 13.128,
+   "fin": 14.722,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "neutre",
+   "texte": "MON ANGLAIS",
+   "nom": "s08"
+  },
+  {
+   "debut": 14.722,
+   "fin": 17.458,
+   "type": "I",
+   "illus": "carte",
+   "phase": 1,
+   "nom": "s09"
+  },
+  {
+   "debut": 17.458,
+   "fin": 20.269,
+   "type": "I",
+   "illus": "prix",
+   "phase": 2,
+   "nom": "s10"
+  },
+  {
+   "debut": 20.269,
+   "fin": 21.439,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "repos",
+   "expression": "grimace",
+   "nom": "s11"
+  },
+  {
+   "debut": 21.439,
+   "fin": 23.128,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "designe",
+   "expression": "surpris",
+   "texte": "UNE QUESTION",
+   "nom": "s12"
+  },
+  {
+   "debut": 23.128,
+   "fin": 24.278,
+   "type": "I",
+   "illus": "ampoule",
+   "nom": "s13"
+  },
+  {
+   "debut": 24.278,
+   "fin": 25.788,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "neutre",
+   "texte": "POURQUOI PAS ?",
+   "nom": "s14"
+  },
+  {
+   "debut": 25.788,
+   "fin": 27.552,
+   "type": "I",
+   "illus": "construire",
+   "nom": "s15"
+  },
+  {
+   "debut": 27.552,
+   "fin": 28.609,
+   "type": "I",
+   "illus": "revelation",
+   "nom": "s16"
+  },
+  {
+   "debut": 28.609,
+   "fin": 30.118,
+   "type": "T",
+   "de": 0.3,
+   "a": 2.4,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    600
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "Talkami"
+   },
+   "nom": "s17"
+  },
+  {
+   "debut": 30.118,
+   "fin": 32.052,
+   "type": "T",
+   "de": 103.0,
+   "a": 105.8,
+   "y0": 60,
+   "zoom": [
+    1.25,
+    1.45
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    560
+   ],
+   "icone": {
+    "kind": "profil",
+    "label": "Teacher Joe"
+   },
+   "nom": "s18"
+  },
+  {
+   "debut": 32.052,
+   "fin": 33.486,
+   "type": "T",
+   "de": 150.5,
+   "a": 152.3,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    1300
+   ],
+   "nom": "s19"
+  },
+  {
+   "debut": 33.486,
+   "fin": 34.052,
+   "type": "T",
+   "de": 154.0,
+   "a": 155.6,
+   "y0": 0,
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    1300
+   ],
+   "nom": "s20"
+  },
+  {
+   "debut": 34.052,
+   "fin": 34.75,
+   "type": "T",
+   "de": 428.0,
+   "a": 429.6,
+   "y0": 196,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    1040
+   ],
+   "surligne": [
+    80,
+    930,
+    700,
+    220
+   ],
+   "nom": "s21"
+  },
+  {
+   "debut": 34.75,
+   "fin": 36.071,
+   "type": "I",
+   "illus": "etape",
+   "n": 1,
+   "texte": "L'évaluation gratuite",
+   "nom": "s22"
+  },
+  {
+   "debut": 36.071,
+   "fin": 36.939,
+   "type": "T",
+   "de": 140.2,
+   "a": 147.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "tap": 146.0,
+   "nom": "s23"
+  },
+  {
+   "debut": 36.939,
+   "fin": 37.835,
+   "type": "T",
+   "de": 148.0,
+   "a": 149.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.3
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    430,
+    1120
+   ],
+   "surligne": [
+    40,
+    1000,
+    780,
+    250
+   ],
+   "nom": "s24"
+  },
+  {
+   "debut": 37.835,
+   "fin": 39.59,
+   "type": "T",
+   "de": 186.0,
+   "a": 187.2,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.25
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    300
+   ],
+   "surligne": [
+    40,
+    196,
+    790,
+    190
+   ],
+   "icone": {
+    "kind": "diplome",
+    "label": "Ton niveau"
+   },
+   "nom": "s25"
+  },
+  {
+   "debut": 39.59,
+   "fin": 41.439,
+   "type": "T",
+   "de": 292.0,
+   "a": 294.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    500
+   ],
+   "nom": "s26"
+  },
+  {
+   "debut": 41.439,
+   "fin": 42.59,
+   "type": "T",
+   "de": 297.0,
+   "a": 299.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    300
+   ],
+   "icone": {
+    "kind": "ecole",
+    "label": "La leçon"
+   },
+   "nom": "s27"
+  },
+  {
+   "debut": 42.59,
+   "fin": 44.146,
+   "type": "T",
+   "de": 416.5,
+   "a": 418.5,
+   "y0": 120,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    760
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "En français"
+   },
+   "nom": "s28"
+  },
+  {
+   "debut": 44.146,
+   "fin": 44.967,
+   "type": "T",
+   "de": 316.0,
+   "a": 318.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    300
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "La pratique"
+   },
+   "nom": "s29"
+  },
+  {
+   "debut": 44.967,
+   "fin": 46.052,
+   "type": "T",
+   "de": 326.0,
+   "a": 327.6,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    1100
+   ],
+   "nom": "s30"
+  },
+  {
+   "debut": 46.052,
+   "fin": 46.731,
+   "type": "T",
+   "de": 332.0,
+   "a": 334.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    300
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "La conversation"
+   },
+   "nom": "s31"
+  },
+  {
+   "debut": 46.731,
+   "fin": 48.429,
+   "type": "T",
+   "de": 340.0,
+   "a": 341.5,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    600
+   ],
+   "nom": "s32"
+  },
+  {
+   "debut": 48.429,
+   "fin": 50.382,
+   "type": "I",
+   "illus": "situations",
+   "nom": "s33"
+  },
+  {
+   "debut": 50.382,
+   "fin": 51.385,
+   "type": "T",
+   "de": 358.0,
+   "a": 359.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    400
+   ],
+   "icone": {
+    "kind": "diplome",
+    "label": "Le bilan"
+   },
+   "nom": "s34"
+  },
+  {
+   "debut": 51.385,
+   "fin": 53.125,
+   "type": "T",
+   "de": 471.5,
+   "a": 473.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    330,
+    760
+   ],
+   "surligne": [
+    60,
+    700,
+    620,
+    100
+   ],
+   "icone": {
+    "kind": "fcfa",
+    "label": "Prix en FCFA"
+   },
+   "nom": "s35"
+  },
+  {
+   "debut": 53.125,
+   "fin": 54.825,
+   "type": "T",
+   "de": 510.5,
+   "a": 513.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "icone": {
+    "kind": "paiement",
+    "label": "Mobile Money"
+   },
+   "nom": "s36"
+  },
+  {
+   "debut": 54.825,
+   "fin": 56.588,
+   "type": "T",
+   "de": 521.0,
+   "a": 522.8,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.25
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    590
+   ],
+   "surligne": [
+    80,
+    510,
+    700,
+    170
+   ],
+   "tap": 522.0,
+   "nom": "s37"
+  },
+  {
+   "debut": 56.588,
+   "fin": 58.418,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "sourire",
+   "texte": "REGARDE",
+   "nom": "s38"
+  },
+  {
+   "debut": 58.418,
+   "fin": 59.975,
+   "type": "I",
+   "illus": "resultat",
+   "n": 1,
+   "texte": "J'apprends l'anglais",
+   "nom": "s39"
+  },
+  {
+   "debut": 59.975,
+   "fin": 61.494,
+   "type": "T",
+   "de": 445.0,
+   "a": 446.6,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    600
+   ],
+   "icone": {
+    "kind": "diplome",
+    "label": "Niveau validé"
+   },
+   "nom": "s40"
+  },
+  {
+   "debut": 61.494,
+   "fin": 62.777,
+   "type": "I",
+   "illus": "niveaux",
+   "nom": "s41"
+  },
+  {
+   "debut": 62.777,
+   "fin": 64.852,
+   "type": "I",
+   "illus": "resultat",
+   "n": 2,
+   "texte": "Construit moi-même",
+   "nom": "s42"
+  },
+  {
+   "debut": 64.852,
+   "fin": 68.324,
+   "type": "I",
+   "illus": "prix",
+   "phase": 3,
+   "nom": "s43"
+  },
+  {
+   "debut": 68.324,
+   "fin": 69.796,
+   "type": "I",
+   "illus": "resultat",
+   "n": 3,
+   "texte": "Le plus beau",
+   "nom": "s44"
+  },
+  {
+   "debut": 69.796,
+   "fin": 72.239,
+   "type": "I",
+   "illus": "communaute",
+   "nom": "s45"
+  },
+  {
+   "debut": 72.239,
+   "fin": 73.013,
+   "type": "I",
+   "illus": "ilsPaient",
+   "nom": "s46"
+  },
+  {
+   "debut": 73.013,
+   "fin": 78.984,
+   "type": "I",
+   "illus": "paiements",
+   "nom": "s47"
+  },
+  {
+   "debut": 78.984,
+   "fin": 82.05,
+   "type": "I",
+   "illus": "nuit",
+   "nom": "s48"
+  },
+  {
+   "debut": 82.05,
+   "fin": 83.852,
+   "type": "T",
+   "de": 601.5,
+   "a": 603.5,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    640
+   ],
+   "surligne": [
+    40,
+    440,
+    790,
+    400
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "3 vidéos par jour"
+   },
+   "nom": "s49"
+  },
+  {
+   "debut": 83.852,
+   "fin": 85.314,
+   "type": "T",
+   "de": 612.5,
+   "a": 614.5,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "nom": "s50"
+  },
+  {
+   "debut": 85.314,
+   "fin": 87.248,
+   "type": "T",
+   "de": 608.0,
+   "a": 610.5,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    800
+   ],
+   "surligne": [
+    80,
+    650,
+    700,
+    290
+   ],
+   "nom": "s51"
+  },
+  {
+   "debut": 87.248,
+   "fin": 88.475,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "surpris",
+   "texte": "TU VOIS ?",
+   "nom": "s52"
+  },
+  {
+   "debut": 88.475,
+   "fin": 90.814,
+   "type": "I",
+   "illus": "troisChoses",
+   "phase": 1,
+   "nom": "s53"
+  },
+  {
+   "debut": 90.814,
+   "fin": 93.314,
+   "type": "I",
+   "illus": "troisChoses",
+   "phase": 2,
+   "nom": "s54"
+  },
+  {
+   "debut": 93.314,
+   "fin": 98.022,
+   "type": "I",
+   "illus": "troisChoses",
+   "phase": 3,
+   "nom": "s55"
+  },
+  {
+   "debut": 98.022,
+   "fin": 100.55,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "sourire",
+   "texte": "MAÎTRISER L'IA",
+   "nom": "s56"
+  },
+  {
+   "debut": 100.55,
+   "fin": 104.635,
+   "type": "I",
+   "illus": "barrieres",
+   "nom": "s57"
+  },
+  {
+   "debut": 104.635,
+   "fin": 109.163,
+   "type": "I",
+   "illus": "possibles",
+   "nom": "s58"
+  },
+  {
+   "debut": 109.163,
+   "fin": 110.909,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "grimace",
+   "texte": "LE SEUL VRAI MALHEUR",
+   "nom": "s59"
+  },
+  {
+   "debut": 110.909,
+   "fin": 112.475,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "designe",
+   "expression": "neutre",
+   "nom": "s60"
+  },
+  {
+   "debut": 112.475,
+   "fin": 116.267,
+   "type": "I",
+   "illus": "iceberg",
+   "nom": "s61"
+  },
+  {
+   "debut": 116.267,
+   "fin": 118.286,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "surpris",
+   "texte": "QUE LE DÉBUT",
+   "nom": "s62"
+  },
+  {
+   "debut": 118.286,
+   "fin": 119.796,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "explique",
+   "expression": "neutre",
+   "nom": "s63"
+  },
+  {
+   "debut": 119.796,
+   "fin": 125.418,
+   "type": "I",
+   "illus": "entreprise",
+   "nom": "s64"
+  },
+  {
+   "debut": 125.418,
+   "fin": 127.654,
+   "type": "I",
+   "illus": "gains",
+   "nom": "s65"
+  },
+  {
+   "debut": 127.654,
+   "fin": 128.994,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "neutre",
+   "texte": "TU DOUTES ?",
+   "nom": "s66"
+  },
+  {
+   "debut": 128.994,
+   "fin": 130.456,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "explique",
+   "expression": "sourire",
+   "nom": "s67"
+  },
+  {
+   "debut": 130.456,
+   "fin": 131.701,
+   "type": "T",
+   "de": 0.3,
+   "a": 2.0,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    500
+   ],
+   "icone": {
+    "kind": "maison",
+    "label": "talkami.laravel.cloud"
+   },
+   "nom": "s68"
+  },
+  {
+   "debut": 131.701,
+   "fin": 133.418,
+   "type": "T",
+   "de": 5.4,
+   "a": 6.6,
+   "y0": 0,
+   "zoom": [
+    1.0,
+    1.3
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    300,
+    560
+   ],
+   "tap": 6.0,
+   "nom": "s69"
+  },
+  {
+   "debut": 133.418,
+   "fin": 134.258,
+   "type": "T",
+   "de": 107.0,
+   "a": 109.0,
+   "y0": 60,
+   "zoom": [
+    1.2,
+    1.35
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    560
+   ],
+   "nom": "s70"
+  },
+  {
+   "debut": 134.258,
+   "fin": 137.06,
+   "type": "I",
+   "illus": "ecole",
+   "nom": "s71"
+  },
+  {
+   "debut": 137.06,
+   "fin": 143.239,
+   "type": "I",
+   "illus": "offre",
+   "nom": "s72"
+  },
+  {
+   "debut": 143.239,
+   "fin": 146.956,
+   "type": "I",
+   "illus": "consultation",
+   "nom": "s73"
+  },
+  {
+   "debut": 146.956,
+   "fin": 150.767,
+   "type": "I",
+   "illus": "whatsapp",
+   "nom": "s74"
+  },
+  {
+   "debut": 150.767,
+   "fin": 151.937,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "sourire",
+   "texte": "JUSQU'AU BOUT ?",
+   "nom": "s75"
+  },
+  {
+   "debut": 151.937,
+   "fin": 157.494,
+   "type": "I",
+   "illus": "formation",
+   "nom": "s76"
+  },
+  {
+   "debut": 157.494,
+   "fin": 160.871,
+   "type": "I",
+   "illus": "carte",
+   "phase": 2,
+   "nom": "s77"
+  },
+  {
+   "debut": 160.871,
+   "fin": 163.38,
+   "type": "P",
+   "cadre": "large",
+   "geste": "explique",
+   "expression": "sourire",
+   "nom": "s78"
+  },
+  {
+   "debut": 163.38,
+   "fin": 164.371,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "sourire",
+   "texte": "OPPORTUNITÉS",
+   "nom": "s79"
+  },
+  {
+   "debut": 164.371,
+   "fin": 166.022,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "sourire",
+   "nom": "s80"
+  },
+  {
+   "debut": 166.022,
+   "fin": 169.772,
+   "type": "CARTE",
+   "nom": "s81"
+  }
+ ]
+}

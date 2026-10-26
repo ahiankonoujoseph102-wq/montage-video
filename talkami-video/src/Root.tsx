@@ -7,6 +7,7 @@ import {Scene2D} from './v2d/Scene2D';
 import {etatDePose} from './v2d/Double2D';
 import {DUREE_EP02, Episode02} from './episodes/ep02/Episode02';
 import {DUREE_TALKAMI, Talkami} from './talkami/Talkami';
+import {DUREE_TALKAMI3, Talkami3} from './talkami3/Talkami';
 
 type ApercuProps = {pose: Pose; sousTitres: boolean};
 
@@ -45,6 +46,14 @@ export const Root: React.FC = () => (
       id="Talkami"
       component={Talkami}
       durationInFrames={DUREE_TALKAMI}
+      fps={FORMAT.fps}
+      width={FORMAT.largeur}
+      height={FORMAT.hauteur}
+    />
+    <Composition
+      id="Talkami3"
+      component={Talkami3}
+      durationInFrames={DUREE_TALKAMI3}
       fps={FORMAT.fps}
       width={FORMAT.largeur}
       height={FORMAT.hauteur}
