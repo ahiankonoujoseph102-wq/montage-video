@@ -762,7 +762,7 @@ export const Iceberg: React.FC<Props> = (p) => {
   const {t, d} = p;
   const texte = ici(p, 'texte');
   const image = ici(p, 'image');
-  const plonge = prog(t, Math.max(image + 0.9, d - 1.4), d - 0.2, Easing.inOut(Easing.cubic));
+  const plonge = prog(t, Math.min(Math.max(image + 0.6, d - 1.4), d - 0.8), d - 0.2, Easing.inOut(Easing.cubic));
   const dy = -plonge * 520;
   return (
     <div style={{position: 'absolute', inset: 0, overflow: 'hidden', background: '#bfe6ff', fontFamily: POLICE}}>
