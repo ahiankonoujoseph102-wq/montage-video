@@ -352,9 +352,9 @@ export const Revelation: React.FC<Props> = ({t}) => {
 export const Situations: React.FC<Props> = (p) => {
   const {t} = p;
   const cartes = [
-    {img: 'marche', nom: 'Au marché', a: 0, r: -5, x: 50, y: 240},
-    {img: 'bureau', nom: 'Au travail', a: ici(p, 'travail'), r: 5, x: 500, y: 300},
-    {img: 'voyage', nom: 'En voyage', a: ici(p, 'voyage'), r: -3, x: 280, y: 650},
+    {img: 'marche', nom: 'Au marché', a: 0, r: -5, x: 50, y: 330},
+    {img: 'bureau', nom: 'Au travail', a: ici(p, 'travail'), r: 5, x: 500, y: 380},
+    {img: 'voyage', nom: 'En voyage', a: ici(p, 'voyage'), r: -3, x: 280, y: 700},
   ];
   return (
     <Fond t={t} teinte="#1d3a6e">
