@@ -1,0 +1,1124 @@
+{
+ "fin_voix": 137.019,
+ "plans": [
+  {
+   "debut": 0.0,
+   "fin": 1.0,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "sourire",
+   "nom": "s01"
+  },
+  {
+   "debut": 1.0,
+   "fin": 2.36,
+   "type": "I",
+   "illus": "recherche",
+   "nom": "s02"
+  },
+  {
+   "debut": 2.36,
+   "fin": 3.36,
+   "type": "T",
+   "src": "site",
+   "de": 342.0,
+   "a": 343.2,
+   "y0": 180,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    500
+   ],
+   "nom": "s03"
+  },
+  {
+   "debut": 3.36,
+   "fin": 4.633,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "designe",
+   "expression": "sourire",
+   "nom": "s04"
+  },
+  {
+   "debut": 4.633,
+   "fin": 5.735,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "neutre",
+   "nom": "s05"
+  },
+  {
+   "debut": 5.735,
+   "fin": 6.939,
+   "type": "I",
+   "illus": "sansOrdinateur",
+   "nom": "s06"
+  },
+  {
+   "debut": 6.939,
+   "fin": 8.276,
+   "type": "I",
+   "illus": "sansCode",
+   "nom": "s07"
+  },
+  {
+   "debut": 8.276,
+   "fin": 9.614,
+   "type": "P",
+   "cadre": "large",
+   "geste": "explique",
+   "expression": "neutre",
+   "nom": "s08"
+  },
+  {
+   "debut": 9.614,
+   "fin": 10.8,
+   "type": "T",
+   "src": "site",
+   "de": 413.0,
+   "a": 414.4,
+   "y0": 180,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    600
+   ],
+   "icone": {
+    "kind": "maison",
+    "label": "Accueil"
+   },
+   "nom": "s09"
+  },
+  {
+   "debut": 10.8,
+   "fin": 12.841,
+   "type": "T",
+   "src": "site",
+   "de": 416.0,
+   "a": 418.5,
+   "y0": 300,
+   "zoom": [
+    1.12,
+    1.0
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "nom": "s10"
+  },
+  {
+   "debut": 12.841,
+   "fin": 15.216,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "designe",
+   "expression": "neutre",
+   "ecran": "site",
+   "nom": "s11"
+  },
+  {
+   "debut": 15.216,
+   "fin": 16.531,
+   "type": "T",
+   "src": "site",
+   "de": 346.0,
+   "a": 346.6,
+   "y0": 180,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    420
+   ],
+   "icone": {
+    "kind": "diplome",
+    "label": "Formations"
+   },
+   "nom": "s12"
+  },
+  {
+   "debut": 16.531,
+   "fin": 18.249,
+   "type": "T",
+   "src": "site",
+   "de": 350.0,
+   "a": 353.0,
+   "y0": 300,
+   "zoom": [
+    1.05,
+    1.25
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    300,
+    1150
+   ],
+   "icone": {
+    "kind": "fcfa",
+    "label": "Prix en FCFA"
+   },
+   "nom": "s13"
+  },
+  {
+   "debut": 18.249,
+   "fin": 19.665,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "compte",
+   "expression": "neutre",
+   "doigts": 1,
+   "nom": "s14"
+  },
+  {
+   "debut": 19.665,
+   "fin": 21.485,
+   "type": "T",
+   "src": "site",
+   "de": 248.0,
+   "a": 248.0,
+   "y0": 400,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    1100
+   ],
+   "icone": {
+    "kind": "paiement",
+    "label": "Paiement"
+   },
+   "nom": "s15"
+  },
+  {
+   "debut": 21.485,
+   "fin": 22.656,
+   "type": "T",
+   "src": "site",
+   "de": 300.0,
+   "a": 300.0,
+   "y0": 300,
+   "zoom": [
+    1.0,
+    1.18
+   ],
+   "entree": "droite",
+   "flous": [
+    [
+     170,
+     960,
+     460,
+     64
+    ],
+    [
+     0,
+     1360,
+     864,
+     130
+    ]
+   ],
+   "foyer": [
+    432,
+    1140
+   ],
+   "icone": {
+    "kind": "profil",
+    "label": "Mon espace"
+   },
+   "nom": "s16"
+  },
+  {
+   "debut": 22.656,
+   "fin": 24.008,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "neutre",
+   "nom": "s17"
+  },
+  {
+   "debut": 24.008,
+   "fin": 25.401,
+   "type": "T",
+   "src": "site",
+   "de": 446.0,
+   "a": 446.0,
+   "y0": 300,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    650
+   ],
+   "nom": "s18"
+  },
+  {
+   "debut": 25.401,
+   "fin": 27.545,
+   "type": "T",
+   "src": "site",
+   "de": 230.0,
+   "a": 230.0,
+   "y0": 250,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    500
+   ],
+   "icone": {
+    "kind": "calendrier",
+    "label": "Consultation gratuite"
+   },
+   "nom": "s19"
+  },
+  {
+   "debut": 27.545,
+   "fin": 28.878,
+   "type": "T",
+   "src": "site",
+   "de": 368.0,
+   "a": 370.0,
+   "y0": 300,
+   "zoom": [
+    1.05,
+    1.2
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    900
+   ],
+   "nom": "s20"
+  },
+  {
+   "debut": 28.878,
+   "fin": 30.355,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "sourire",
+   "nom": "s21"
+  },
+  {
+   "debut": 30.355,
+   "fin": 32.244,
+   "type": "T",
+   "src": "site",
+   "de": 396.0,
+   "a": 397.2,
+   "y0": 200,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    450
+   ],
+   "icone": {
+    "kind": "immeuble",
+    "label": "Entreprises"
+   },
+   "nom": "s22"
+  },
+  {
+   "debut": 32.244,
+   "fin": 33.503,
+   "type": "T",
+   "src": "site",
+   "de": 382.0,
+   "a": 383.0,
+   "y0": 250,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    600
+   ],
+   "icone": {
+    "kind": "ecole",
+    "label": "À propos"
+   },
+   "nom": "s23"
+  },
+  {
+   "debut": 33.503,
+   "fin": 34.934,
+   "type": "T",
+   "src": "site",
+   "de": 444.0,
+   "a": 444.0,
+   "y0": 250,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    500
+   ],
+   "icone": {
+    "kind": "affiliation",
+    "label": "Affiliation 10 %"
+   },
+   "nom": "s24"
+  },
+  {
+   "debut": 34.934,
+   "fin": 36.58,
+   "type": "I",
+   "illus": "recommande",
+   "nom": "s25"
+  },
+  {
+   "debut": 36.58,
+   "fin": 38.226,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "explique",
+   "expression": "neutre",
+   "nom": "s26"
+  },
+  {
+   "debut": 38.226,
+   "fin": 39.388,
+   "type": "I",
+   "illus": "commission",
+   "nom": "s27"
+  },
+  {
+   "debut": 39.388,
+   "fin": 41.86,
+   "type": "T",
+   "src": "site",
+   "de": 453.0,
+   "a": 455.0,
+   "y0": 300,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "Ama, assistante IA"
+   },
+   "nom": "s28"
+  },
+  {
+   "debut": 41.86,
+   "fin": 43.559,
+   "type": "T",
+   "src": "site",
+   "de": 455.0,
+   "a": 458.0,
+   "y0": 300,
+   "zoom": [
+    1.1,
+    1.2
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    800
+   ],
+   "nom": "s29"
+  },
+  {
+   "debut": 43.559,
+   "fin": 45.721,
+   "type": "T",
+   "src": "site",
+   "de": 460.8,
+   "a": 462.2,
+   "y0": 300,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "icone": {
+    "kind": "ondes",
+    "label": "Elle parle"
+   },
+   "nom": "s30"
+  },
+  {
+   "debut": 45.721,
+   "fin": 47.934,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "surpris",
+   "nom": "s31"
+  },
+  {
+   "debut": 47.934,
+   "fin": 50.309,
+   "type": "I",
+   "illus": "methode",
+   "nom": "s32"
+  },
+  {
+   "debut": 50.309,
+   "fin": 52.073,
+   "type": "I",
+   "illus": "etape",
+   "n": 1,
+   "texte": "Le cahier des charges",
+   "nom": "s33"
+  },
+  {
+   "debut": 52.073,
+   "fin": 53.661,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "compte",
+   "expression": "neutre",
+   "doigts": 1,
+   "nom": "s34"
+  },
+  {
+   "debut": 53.661,
+   "fin": 55.823,
+   "type": "I",
+   "illus": "brouillon",
+   "nom": "s35"
+  },
+  {
+   "debut": 55.823,
+   "fin": 58.11,
+   "type": "T",
+   "src": "bn",
+   "de": 6.0,
+   "a": 6.0,
+   "y0": 150,
+   "zoom": [
+    1.0,
+    1.2
+   ],
+   "entree": "bas",
+   "flous": [],
+   "foyer": [
+    432,
+    410
+   ],
+   "flou_sous": {
+    "t_ref": 8.0,
+    "y_ref": 925
+   },
+   "surligne": [
+    14,
+    348,
+    836,
+    124
+   ],
+   "nom": "s36"
+  },
+  {
+   "debut": 58.11,
+   "fin": 60.151,
+   "type": "I",
+   "illus": "checklist",
+   "nom": "s37"
+  },
+  {
+   "debut": 60.151,
+   "fin": 62.295,
+   "type": "T",
+   "src": "bn",
+   "de": 6.35,
+   "a": 7.6,
+   "y0": 150,
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "flou_sous": {
+    "t_ref": 8.0,
+    "y_ref": 925
+   },
+   "nom": "s38"
+  },
+  {
+   "debut": 62.295,
+   "fin": 63.92,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "compte",
+   "expression": "neutre",
+   "doigts": 4,
+   "nom": "s39"
+  },
+  {
+   "debut": 63.92,
+   "fin": 65.888,
+   "type": "I",
+   "illus": "desordre",
+   "nom": "s40"
+  },
+  {
+   "debut": 65.888,
+   "fin": 67.98,
+   "type": "I",
+   "illus": "organise",
+   "nom": "s41"
+  },
+  {
+   "debut": 67.98,
+   "fin": 69.388,
+   "type": "I",
+   "illus": "bullePrompt",
+   "nom": "s42"
+  },
+  {
+   "debut": 69.388,
+   "fin": 71.3,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "designe",
+   "expression": "neutre",
+   "texte": "Presque tout le monde la saute",
+   "nom": "s43"
+  },
+  {
+   "debut": 71.3,
+   "fin": 73.388,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "neutre",
+   "texte": "LA PLUS IMPORTANTE",
+   "nom": "s44"
+  },
+  {
+   "debut": 73.388,
+   "fin": 75.364,
+   "type": "I",
+   "illus": "robot",
+   "nom": "s45"
+  },
+  {
+   "debut": 75.364,
+   "fin": 76.675,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "neutre",
+   "nom": "s46"
+  },
+  {
+   "debut": 76.675,
+   "fin": 77.934,
+   "type": "I",
+   "illus": "etape",
+   "n": 2,
+   "texte": "Le dépôt GitHub",
+   "nom": "s47"
+  },
+  {
+   "debut": 77.934,
+   "fin": 79.193,
+   "type": "T",
+   "src": "site",
+   "de": 80.0,
+   "a": 84.0,
+   "y0": 100,
+   "zoom": [
+    1.25,
+    1.45
+   ],
+   "entree": "droite",
+   "flous": [
+    [
+     140,
+     362,
+     250,
+     60
+    ]
+   ],
+   "foyer": [
+    430,
+    420
+   ],
+   "nom": "s48"
+  },
+  {
+   "debut": 79.193,
+   "fin": 80.728,
+   "type": "I",
+   "illus": "dossier",
+   "nom": "s49"
+  },
+  {
+   "debut": 80.728,
+   "fin": 82.263,
+   "type": "T",
+   "src": "site",
+   "de": 84.0,
+   "a": 89.0,
+   "y0": 100,
+   "zoom": [
+    1.4,
+    1.6
+   ],
+   "entree": "gauche",
+   "flous": [
+    [
+     140,
+     362,
+     250,
+     60
+    ]
+   ],
+   "foyer": [
+    430,
+    700
+   ],
+   "nom": "s50"
+  },
+  {
+   "debut": 82.263,
+   "fin": 84.36,
+   "type": "I",
+   "illus": "chrono",
+   "nom": "s51"
+  },
+  {
+   "debut": 84.36,
+   "fin": 86.29,
+   "type": "I",
+   "illus": "etape",
+   "n": 3,
+   "texte": "Claude Code",
+   "nom": "s52"
+  },
+  {
+   "debut": 86.29,
+   "fin": 88.332,
+   "type": "T",
+   "src": "site",
+   "de": 160.0,
+   "a": 163.0,
+   "y0": 250,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "nom": "s53"
+  },
+  {
+   "debut": 88.332,
+   "fin": 90.323,
+   "type": "I",
+   "illus": "envoi",
+   "nom": "s54"
+  },
+  {
+   "debut": 90.323,
+   "fin": 91.638,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "explique",
+   "expression": "neutre",
+   "nom": "s55"
+  },
+  {
+   "debut": 91.638,
+   "fin": 92.952,
+   "type": "T",
+   "src": "site",
+   "de": 117.0,
+   "a": 118.0,
+   "y0": 200,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "foyer": [
+    432,
+    500
+   ],
+   "nom": "s56"
+  },
+  {
+   "debut": 92.952,
+   "fin": 94.797,
+   "type": "T",
+   "src": "site",
+   "de": 118.0,
+   "a": 118.0,
+   "y0": 200,
+   "zoom": [
+    1.0,
+    1.7
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    510,
+    690
+   ],
+   "surligne": [
+    200,
+    594,
+    620,
+    176
+   ],
+   "nom": "s57"
+  },
+  {
+   "debut": 94.797,
+   "fin": 96.642,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "neutre",
+   "nom": "s58"
+  },
+  {
+   "debut": 96.642,
+   "fin": 97.978,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "sourire",
+   "nom": "s59"
+  },
+  {
+   "debut": 97.978,
+   "fin": 99.314,
+   "type": "T",
+   "src": "site",
+   "de": 144.0,
+   "a": 147.0,
+   "y0": 250,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    700
+   ],
+   "nom": "s60"
+  },
+  {
+   "debut": 99.314,
+   "fin": 100.606,
+   "type": "I",
+   "illus": "etape",
+   "n": 4,
+   "texte": "Étape par étape",
+   "nom": "s61"
+  },
+  {
+   "debut": 100.606,
+   "fin": 101.897,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "compte",
+   "expression": "neutre",
+   "doigts": 4,
+   "nom": "s62"
+  },
+  {
+   "debut": 101.897,
+   "fin": 103.976,
+   "type": "I",
+   "illus": "chemin",
+   "partie": 1,
+   "nom": "s63"
+  },
+  {
+   "debut": 103.976,
+   "fin": 105.86,
+   "type": "I",
+   "illus": "chemin",
+   "partie": 2,
+   "nom": "s64"
+  },
+  {
+   "debut": 105.86,
+   "fin": 107.29,
+   "type": "I",
+   "illus": "chemin",
+   "partie": 3,
+   "nom": "s65"
+  },
+  {
+   "debut": 107.29,
+   "fin": 108.661,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "designe",
+   "expression": "neutre",
+   "nom": "s66"
+  },
+  {
+   "debut": 108.661,
+   "fin": 110.031,
+   "type": "I",
+   "illus": "oeil",
+   "nom": "s67"
+  },
+  {
+   "debut": 110.031,
+   "fin": 111.276,
+   "type": "T",
+   "src": "site",
+   "de": 172.3,
+   "a": 172.3,
+   "y0": 200,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "entree": "droite",
+   "flous": [],
+   "foyer": [
+    432,
+    600
+   ],
+   "nom": "s68"
+  },
+  {
+   "debut": 111.276,
+   "fin": 112.572,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "grimace",
+   "nom": "s69"
+  },
+  {
+   "debut": 112.572,
+   "fin": 113.869,
+   "type": "I",
+   "illus": "correction",
+   "nom": "s70"
+  },
+  {
+   "debut": 113.869,
+   "fin": 115.327,
+   "type": "I",
+   "illus": "suivante",
+   "nom": "s71"
+  },
+  {
+   "debut": 115.327,
+   "fin": 117.077,
+   "type": "I",
+   "illus": "fusee",
+   "nom": "s72"
+  },
+  {
+   "debut": 117.077,
+   "fin": 118.614,
+   "type": "I",
+   "illus": "enLigne",
+   "nom": "s73"
+  },
+  {
+   "debut": 118.614,
+   "fin": 119.908,
+   "type": "T",
+   "src": "site",
+   "de": 284.0,
+   "a": 285.5,
+   "y0": 180,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "droite",
+   "flous": [
+    [
+     760,
+     90,
+     104,
+     100
+    ]
+   ],
+   "masques": [
+    [
+     0,
+     868,
+     864,
+     1052,
+     [
+      34,
+      35,
+      40
+     ]
+    ]
+   ],
+   "foyer": [
+    432,
+    520
+   ],
+   "nom": "s74"
+  },
+  {
+   "debut": 119.908,
+   "fin": 121.202,
+   "type": "T",
+   "src": "site",
+   "de": 342.0,
+   "a": 343.2,
+   "y0": 180,
+   "zoom": [
+    1.1,
+    1.0
+   ],
+   "entree": "gauche",
+   "flous": [],
+   "nom": "s75"
+  },
+  {
+   "debut": 121.202,
+   "fin": 122.309,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "designe",
+   "expression": "neutre",
+   "texte": "RETIENS BIEN CECI",
+   "nom": "s76"
+  },
+  {
+   "debut": 122.309,
+   "fin": 124.355,
+   "type": "I",
+   "illus": "vision",
+   "phase": 1,
+   "nom": "s77"
+  },
+  {
+   "debut": 124.355,
+   "fin": 125.471,
+   "type": "I",
+   "illus": "vision",
+   "phase": 2,
+   "nom": "s78"
+  },
+  {
+   "debut": 125.471,
+   "fin": 127.401,
+   "type": "P",
+   "cadre": "moyen",
+   "geste": "compte",
+   "expression": "neutre",
+   "doigts": 1,
+   "nom": "s79"
+  },
+  {
+   "debut": 127.401,
+   "fin": 129.351,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "compte",
+   "expression": "sourire",
+   "doigts": 2,
+   "nom": "s80"
+  },
+  {
+   "debut": 129.351,
+   "fin": 131.536,
+   "type": "P",
+   "cadre": "gros",
+   "geste": "explique",
+   "expression": "neutre",
+   "nom": "s81"
+  },
+  {
+   "debut": 131.536,
+   "fin": 132.818,
+   "type": "I",
+   "illus": "telephone",
+   "nom": "s82"
+  },
+  {
+   "debut": 132.818,
+   "fin": 134.191,
+   "type": "I",
+   "illus": "cta",
+   "phase": 1,
+   "nom": "s83"
+  },
+  {
+   "debut": 134.191,
+   "fin": 135.564,
+   "type": "I",
+   "illus": "cta",
+   "phase": 2,
+   "nom": "s84"
+  },
+  {
+   "debut": 135.564,
+   "fin": 141.019,
+   "type": "CARTE",
+   "nom": "s85"
+  }
+ ]
+}

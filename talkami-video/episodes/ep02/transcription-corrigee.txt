@@ -1,0 +1,16 @@
+Tape Lomé IA School sur Google. Tu vois ce site ? C'est moi qui l'ai créé. Depuis mon téléphone, sans ordinateur et sans être développeur. Viens, je te fais visiter.
+Sur la page d'accueil, le visiteur comprend tout de suite qui nous sommes : une école qui forme à l'intelligence artificielle.
+Ici, les formations, chacune avec son prix en francs CFA. Le visiteur choisit, il paie, et il a accès à sa formation.
+Ici, Mon espace : chaque élève a son propre compte, où il retrouve ses formations.
+Ici, la consultation gratuite : en quelques clics, le visiteur réserve un échange avec moi.
+Il y a aussi une page pour les entreprises, une page qui présente l'école, et un programme d'affiliation : quand quelqu'un recommande une formation et qu'une personne l'achète, il gagne une commission.
+Et voici Ama, notre assistante IA. Elle répond aux questions des visiteurs, à l'écrit comme à l'oral, à toute heure.
+Alors, comment j'ai construit tout ça ? Je vais te montrer ma méthode, étape par étape.
+Étape 1 : le cahier des charges. Avant de toucher quoi que ce soit, j'ouvre mon bloc-notes et j'écris un brouillon : ce que fait mon école, à qui s'adresse le site, quelles formations je propose, comment les élèves vont payer, ce qu'ils doivent recevoir après l'achat, comment fonctionne l'affiliation. J'écris tout, même en désordre.
+Ensuite, je reprends ce brouillon, je l'organise, et il devient mon premier prompt. C'est l'étape que presque tout le monde saute, et pourtant c'est la plus importante, parce que l'IA ne peut pas deviner ce que tu as dans la tête.
+Étape 2 : je crée un dépôt sur GitHub. C'est le dossier en ligne où sera rangé tout le code du site. Ça prend deux minutes depuis le téléphone.
+Étape 3 : j'ouvre Claude Code, une intelligence artificielle qui écrit du code. J'y ajoute mon dépôt et j'envoie mon premier prompt. Je lui dis qui je suis, ce que je veux construire, et même que je ne suis pas développeur et que je travaille uniquement depuis mon téléphone. Comme ça, Claude m'explique tout simplement.
+Étape 4 : on avance étape par étape. D'abord le site vitrine, puis les formations, puis l'inscription et l'espace élève, puis l'assistante Ama. À chaque étape, Claude me montre un aperçu. Je vérifie sur mon téléphone. Si quelque chose ne me plaît pas, je demande la correction, et on passe à l'étape suivante.
+Étape 5 : la mise en ligne. Le site est publié, et aujourd'hui, mes futurs élèves le trouvent directement sur Google.
+Retiens bien ceci : l'IA ne remplace pas ta vision. Elle exécute ta vision. Plus ton cahier des charges est clair, plus ton site sera professionnel.
+Tu veux créer ton propre site web avec l'IA, même depuis ton téléphone ? Réserve ta consultation gratuite avec Lomé IA School. Le lien est dans ma bio. Merci.

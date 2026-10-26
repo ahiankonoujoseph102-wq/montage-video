@@ -1,0 +1,24 @@
+{
+ "_note": "Orthographe imposée dans les sous-titres. « termes » sert d'indice à Whisper ; « corrections » remplace les variantes mal reconnues (expressions régulières, insensibles à la casse).",
+ "termes": [
+  "Lomé IA School",
+  "Claude Code",
+  "GitHub",
+  "Ama",
+  "cahier des charges",
+  "francs CFA"
+ ],
+ "corrections": {
+  "\\bAmah\\b|assistante à main": "Ama / assistante Ama",
+  "CloudCode|Cloud Code": "Claude Code",
+  "l'Oméa School|l'Ama IA School|l'OME IASchool": "Lomé IA School",
+  "en franc CFA": "en francs CFA",
+  "cahier de charge\\b": "cahier des charges",
+  "bruyant": "brouillon",
+  "il a assis à": "il a accès à",
+  "J'écris un dépôt": "Je crée un dépôt",
+  "Elle écrit comment l'oral": "à l'écrit comme à l'oral",
+  "même en des autres": "même en désordre",
+  "Tapez": "Tape"
+ }
+}

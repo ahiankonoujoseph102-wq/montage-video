@@ -1,0 +1,527 @@
+1
+00:00:00,300 --> 00:00:02,020
+Tape Lomé IA School
+
+2
+00:00:02,020 --> 00:00:03,020
+sur Google.
+
+3
+00:00:03,020 --> 00:00:04,360
+Tu vois ce site ?
+
+4
+00:00:04,360 --> 00:00:04,880
+C’est moi
+
+5
+00:00:04,880 --> 00:00:05,740
+qui l’ai créé.
+
+6
+00:00:05,740 --> 00:00:07,080
+Depuis mon téléphone,
+
+7
+00:00:07,080 --> 00:00:08,120
+sans ordinateur
+
+8
+00:00:08,120 --> 00:00:09,980
+et sans être développeur.
+
+9
+00:00:09,980 --> 00:00:10,780
+Viens, je te fais
+
+10
+00:00:10,780 --> 00:00:11,700
+visiter.
+
+11
+00:00:11,700 --> 00:00:13,040
+Sur la page d’accueil,
+
+12
+00:00:13,040 --> 00:00:14,460
+le visiteur comprend tout de suite
+
+13
+00:00:14,460 --> 00:00:15,420
+qui nous sommes :
+
+14
+00:00:15,420 --> 00:00:16,540
+une école qui forme
+
+15
+00:00:16,540 --> 00:00:18,560
+à l’intelligence artificielle.
+
+16
+00:00:18,580 --> 00:00:20,340
+Ici, les formations, chacune
+
+17
+00:00:20,340 --> 00:00:20,900
+avec son prix
+
+18
+00:00:20,900 --> 00:00:21,980
+en francs CFA.
+
+19
+00:00:21,980 --> 00:00:23,740
+Le visiteur choisit, il paie,
+
+20
+00:00:23,740 --> 00:00:25,700
+et il a accès à sa formation.
+
+21
+00:00:25,900 --> 00:00:27,240
+Ici, Mon espace :
+
+22
+00:00:27,240 --> 00:00:27,840
+chaque élève
+
+23
+00:00:27,840 --> 00:00:28,700
+a son propre compte,
+
+24
+00:00:28,700 --> 00:00:29,300
+où il retrouve
+
+25
+00:00:29,300 --> 00:00:30,440
+ses formations.
+
+26
+00:00:30,580 --> 00:00:33,100
+Ici, la consultation gratuite :
+
+27
+00:00:33,100 --> 00:00:33,980
+en quelques clics,
+
+28
+00:00:33,980 --> 00:00:34,940
+le visiteur réserve
+
+29
+00:00:34,940 --> 00:00:36,440
+un échange avec moi.
+
+30
+00:00:36,440 --> 00:00:37,580
+Il y a aussi une page
+
+31
+00:00:37,580 --> 00:00:38,560
+pour les entreprises,
+
+32
+00:00:38,560 --> 00:00:39,920
+une page qui présente l’école,
+
+33
+00:00:39,920 --> 00:00:41,720
+et un programme d’affiliation :
+
+34
+00:00:41,760 --> 00:00:43,500
+quand quelqu’un recommande une formation
+
+35
+00:00:43,500 --> 00:00:45,420
+et qu’une personne l’achète,
+
+36
+00:00:45,420 --> 00:00:46,980
+il gagne une commission.
+
+37
+00:00:46,980 --> 00:00:48,360
+Et voici Ama,
+
+38
+00:00:48,360 --> 00:00:49,920
+notre assistante IA.
+
+39
+00:00:49,920 --> 00:00:50,940
+Elle répond aux questions
+
+40
+00:00:50,940 --> 00:00:51,800
+des visiteurs,
+
+41
+00:00:51,800 --> 00:00:53,020
+à l’écrit comme à l’oral,
+
+42
+00:00:53,020 --> 00:00:54,460
+à toute heure.
+
+43
+00:00:54,460 --> 00:00:56,500
+Alors, comment j’ai construit
+
+44
+00:00:56,500 --> 00:00:57,160
+tout ça ?
+
+45
+00:00:57,160 --> 00:00:58,400
+Je vais te montrer ma méthode,
+
+46
+00:00:58,400 --> 00:01:00,100
+étape par étape.
+
+47
+00:01:00,100 --> 00:01:00,960
+Étape 1 :
+
+48
+00:01:00,960 --> 00:01:02,440
+le cahier des charges.
+
+49
+00:01:02,440 --> 00:01:03,160
+Avant de toucher
+
+50
+00:01:03,160 --> 00:01:04,200
+quoi que ce soit,
+
+51
+00:01:04,200 --> 00:01:05,260
+j’ouvre mon bloc-notes
+
+52
+00:01:05,260 --> 00:01:06,640
+et j’écris un brouillon :
+
+53
+00:01:06,640 --> 00:01:07,260
+ce que fait
+
+54
+00:01:07,260 --> 00:01:08,000
+mon école,
+
+55
+00:01:08,000 --> 00:01:09,600
+à qui s’adresse le site,
+
+56
+00:01:09,600 --> 00:01:11,020
+quelles formations je propose,
+
+57
+00:01:11,020 --> 00:01:11,800
+comment les élèves
+
+58
+00:01:11,800 --> 00:01:12,800
+vont payer, ce qu’ils
+
+59
+00:01:12,800 --> 00:01:14,480
+doivent recevoir après l’achat,
+
+60
+00:01:14,480 --> 00:01:16,460
+comment fonctionne l’affiliation.
+
+61
+00:01:16,460 --> 00:01:17,500
+J’écris tout,
+
+62
+00:01:17,500 --> 00:01:19,040
+même en désordre.
+
+63
+00:01:19,120 --> 00:01:20,100
+Ensuite, je reprends
+
+64
+00:01:20,100 --> 00:01:21,380
+ce brouillon, je l’organise,
+
+65
+00:01:21,380 --> 00:01:22,160
+et il devient
+
+66
+00:01:22,160 --> 00:01:22,900
+mon premier prompt.
+
+67
+00:01:22,900 --> 00:01:24,460
+C’est l’étape que presque
+
+68
+00:01:24,460 --> 00:01:25,260
+tout le monde saute,
+
+69
+00:01:25,260 --> 00:01:27,040
+et pourtant c’est
+
+70
+00:01:27,040 --> 00:01:28,040
+la plus importante,
+
+71
+00:01:28,040 --> 00:01:29,380
+parce que l’IA
+
+72
+00:01:29,380 --> 00:01:31,000
+ne peut pas deviner ce que tu as
+
+73
+00:01:31,000 --> 00:01:32,080
+dans la tête.
+
+74
+00:01:32,420 --> 00:01:33,660
+Étape 2 :
+
+75
+00:01:33,660 --> 00:01:33,980
+je crée
+
+76
+00:01:33,980 --> 00:01:35,320
+un dépôt sur GitHub.
+
+77
+00:01:35,320 --> 00:01:36,480
+C’est le dossier en ligne
+
+78
+00:01:36,480 --> 00:01:37,400
+où sera rangé
+
+79
+00:01:37,400 --> 00:01:38,820
+tout le code du site.
+
+80
+00:01:38,820 --> 00:01:39,860
+Ça prend deux minutes
+
+81
+00:01:39,860 --> 00:01:41,320
+depuis le téléphone.
+
+82
+00:01:41,420 --> 00:01:42,420
+Étape 3 :
+
+83
+00:01:42,420 --> 00:01:43,680
+j’ouvre Claude Code,
+
+84
+00:01:43,680 --> 00:01:44,820
+une intelligence artificielle
+
+85
+00:01:44,820 --> 00:01:46,160
+qui écrit du code.
+
+86
+00:01:46,160 --> 00:01:47,980
+J’y ajoute mon dépôt et j’envoie
+
+87
+00:01:47,980 --> 00:01:49,160
+mon premier prompt.
+
+88
+00:01:49,160 --> 00:01:50,200
+Je lui dis qui je suis,
+
+89
+00:01:50,200 --> 00:01:51,620
+ce que je veux construire,
+
+90
+00:01:51,620 --> 00:01:53,520
+et même que je ne suis pas développeur
+
+91
+00:01:53,520 --> 00:01:54,280
+et que je travaille
+
+92
+00:01:54,280 --> 00:01:56,120
+uniquement depuis mon téléphone.
+
+93
+00:01:56,160 --> 00:01:58,020
+Comme ça, Claude m’explique
+
+94
+00:01:58,020 --> 00:01:59,260
+tout simplement.
+
+95
+00:01:59,360 --> 00:02:00,420
+Étape 4 :
+
+96
+00:02:00,420 --> 00:02:01,320
+on avance
+
+97
+00:02:01,320 --> 00:02:02,460
+étape par étape.
+
+98
+00:02:02,460 --> 00:02:03,640
+D’abord le site vitrine,
+
+99
+00:02:03,640 --> 00:02:04,740
+puis les formations,
+
+100
+00:02:04,740 --> 00:02:05,660
+puis l’inscription
+
+101
+00:02:05,660 --> 00:02:06,820
+et l’espace élève,
+
+102
+00:02:06,820 --> 00:02:08,680
+puis l’assistante Ama.
+
+103
+00:02:08,680 --> 00:02:10,480
+À chaque étape, Claude
+
+104
+00:02:10,480 --> 00:02:11,640
+me montre un aperçu.
+
+105
+00:02:11,640 --> 00:02:12,140
+Je vérifie
+
+106
+00:02:12,140 --> 00:02:13,120
+sur mon téléphone.
+
+107
+00:02:13,120 --> 00:02:13,980
+Si quelque chose
+
+108
+00:02:13,980 --> 00:02:14,760
+ne me plaît pas,
+
+109
+00:02:14,760 --> 00:02:16,620
+je demande la correction, et on passe
+
+110
+00:02:16,620 --> 00:02:18,020
+à l’étape suivante.
+
+111
+00:02:18,020 --> 00:02:19,200
+Étape 5 :
+
+112
+00:02:19,200 --> 00:02:20,120
+la mise en ligne.
+
+113
+00:02:20,120 --> 00:02:21,260
+Le site est publié,
+
+114
+00:02:21,260 --> 00:02:21,900
+et aujourd’hui,
+
+115
+00:02:21,900 --> 00:02:23,280
+mes futurs élèves le trouvent
+
+116
+00:02:23,280 --> 00:02:25,020
+directement sur Google.
+
+117
+00:02:25,140 --> 00:02:26,480
+Retiens bien ceci :
+
+118
+00:02:26,480 --> 00:02:27,940
+l’IA ne remplace pas
+
+119
+00:02:27,940 --> 00:02:28,760
+ta vision.
+
+120
+00:02:28,760 --> 00:02:30,040
+Elle exécute ta vision.
+
+121
+00:02:30,040 --> 00:02:31,480
+Plus ton cahier des charges
+
+122
+00:02:31,480 --> 00:02:32,200
+est clair,
+
+123
+00:02:32,200 --> 00:02:33,120
+plus ton site
+
+124
+00:02:33,120 --> 00:02:34,780
+sera professionnel.
+
+125
+00:02:35,100 --> 00:02:35,920
+Tu veux créer
+
+126
+00:02:35,920 --> 00:02:36,820
+ton propre site web
+
+127
+00:02:36,820 --> 00:02:38,160
+avec l’IA, même depuis
+
+128
+00:02:38,160 --> 00:02:39,200
+ton téléphone ?
+
+129
+00:02:39,200 --> 00:02:40,960
+Réserve ta consultation gratuite
+
+130
+00:02:40,960 --> 00:02:42,280
+avec Lomé IA School.
+
+131
+00:02:42,280 --> 00:02:43,540
+Le lien est dans ma bio.
+
+132
+00:02:43,540 --> 00:02:44,660
+Merci.

@@ -1,0 +1,20 @@
+node_modules/
+sorties/
+.remotion/
+# sons générés par outils/audio.py (déterministes, régénérables)
+public/serie/
+public/episodes/*/voix.wav
+# enregistrements d'écran (sources lourdes, voir episodes/epNN/sources.json) et extraits montés
+public/episodes/*/ecran*.mp4
+public/episodes/*/site.mp4
+public/episodes/*/blocnotes.mp4
+public/episodes/*/plans/
+rendus/*-extrait-*.mp4
+public/episodes/*/voix-dynamique.wav
+# vidéo Talkami : voix, extraits, copies (régénérables, voir CLAUDE.md « Vidéo Talkami »)
+public/talkami/voix*.wav
+public/talkami/plans/
+public/talkami/ecrans.mp4
+public/talkami/musique.m4a
+public/talkami/paiements_floutes.png
+public/talkami/sfx/mk*.wav

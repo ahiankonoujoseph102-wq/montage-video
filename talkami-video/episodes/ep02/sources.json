@@ -1,0 +1,21 @@
+{
+  "_note": "Sources de l'épisode 2 sur le Google Drive de Joseph (partagées par lien). Téléchargement : https://drive.usercontent.google.com/download?id=ID&export=download&confirm=t . Le son des deux captures n'est jamais utilisé.",
+  "titre": "J'ai créé ce site depuis mon téléphone",
+  "voix": {
+    "drive": "1gcfclk-lu2QMvr964zoMDK42YNYSz9p5",
+    "fichier": "public/episodes/ep02/voix.m4a",
+    "description": "voix off, 169,2 s, AAC 48 kHz ; utilisée telle quelle à partir de 1,9 s (silence de tête retiré)"
+  },
+  "site": {
+    "drive": "1bqMPdS6hN-sUZd0YFPjqHuKzBJDzvKBq",
+    "fichier": "public/episodes/ep02/site.mp4 (hors dépôt, 405 Mo)",
+    "description": "capture d'écran du site et de la méthode, 864 × 1920, 7 min 51 s"
+  },
+  "bloc_notes": {
+    "drive": "1GHAOAJkw2lX4eFvO4-QSHL9eUoSsKiAn",
+    "fichier": "public/episodes/ep02/blocnotes.mp4 (hors dépôt, 27 Mo)",
+    "description": "capture du bloc-notes (cahier des charges), 1080 × 2400, 14 s ; seule la plage 6,0–9,6 s est utilisée (0–4 s : notes avec des clés ; vers 10 s : nom, téléphone et e-mail ; à partir de 12 s : notifications)"
+  },
+  "logo": "1z-qJRL9aHvRZi3qd4cx3xcwJr3bwAUj5 → public/marque/logo.jpg",
+  "photo": "1t-bmuVlV3Q8srKpWMzJOSELG9vLqmk-r → references/photo.jpg"
+}

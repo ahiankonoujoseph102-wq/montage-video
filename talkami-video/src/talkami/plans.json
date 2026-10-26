@@ -1,0 +1,413 @@
+{
+ "_note": "Généré par episodes/talkami/montage.py — ne pas modifier à la main.",
+ "sources": {
+  "ecrans": "public/talkami/ecrans.mp4"
+ },
+ "plans": [
+  {
+   "nom": "s03",
+   "debut": 5.1,
+   "fin": 7.46,
+   "source": "ecrans",
+   "de": 100.0,
+   "a": 102.2,
+   "cadre": [
+    0,
+    120,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s17",
+   "debut": 31.48,
+   "fin": 33.28,
+   "source": "ecrans",
+   "de": 0.3,
+   "a": 2.4,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s18",
+   "debut": 33.28,
+   "fin": 35.48,
+   "source": "ecrans",
+   "de": 103.0,
+   "a": 105.8,
+   "cadre": [
+    0,
+    60,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s19",
+   "debut": 35.48,
+   "fin": 37.0,
+   "source": "ecrans",
+   "de": 150.5,
+   "a": 152.3,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s20",
+   "debut": 37.0,
+   "fin": 37.6,
+   "source": "ecrans",
+   "de": 154.0,
+   "a": 155.6,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s21",
+   "debut": 37.6,
+   "fin": 38.38,
+   "source": "ecrans",
+   "de": 428.0,
+   "a": 429.6,
+   "cadre": [
+    0,
+    196,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s23",
+   "debut": 39.78,
+   "fin": 40.7,
+   "source": "ecrans",
+   "de": 140.2,
+   "a": 147.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s24",
+   "debut": 40.7,
+   "fin": 41.7,
+   "source": "ecrans",
+   "de": 148.0,
+   "a": 149.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s25",
+   "debut": 41.7,
+   "fin": 43.68,
+   "source": "ecrans",
+   "de": 186.0,
+   "a": 187.2,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s26",
+   "debut": 43.68,
+   "fin": 45.72,
+   "source": "ecrans",
+   "de": 292.0,
+   "a": 294.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s27",
+   "debut": 45.72,
+   "fin": 46.96,
+   "source": "ecrans",
+   "de": 297.0,
+   "a": 299.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s28",
+   "debut": 46.96,
+   "fin": 48.66,
+   "source": "ecrans",
+   "de": 416.5,
+   "a": 418.5,
+   "cadre": [
+    0,
+    120,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s29",
+   "debut": 48.66,
+   "fin": 49.6,
+   "source": "ecrans",
+   "de": 316.0,
+   "a": 318.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s30",
+   "debut": 49.6,
+   "fin": 50.82,
+   "source": "ecrans",
+   "de": 326.0,
+   "a": 327.6,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s31",
+   "debut": 50.82,
+   "fin": 51.54,
+   "source": "ecrans",
+   "de": 332.0,
+   "a": 334.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s32",
+   "debut": 51.54,
+   "fin": 53.4,
+   "source": "ecrans",
+   "de": 340.0,
+   "a": 341.5,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s34",
+   "debut": 55.5,
+   "fin": 56.66,
+   "source": "ecrans",
+   "de": 358.0,
+   "a": 359.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s35",
+   "debut": 56.66,
+   "fin": 58.48,
+   "source": "ecrans",
+   "de": 471.5,
+   "a": 473.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s36",
+   "debut": 58.48,
+   "fin": 60.2,
+   "source": "ecrans",
+   "de": 510.5,
+   "a": 513.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s37",
+   "debut": 60.2,
+   "fin": 62.1,
+   "source": "ecrans",
+   "de": 521.0,
+   "a": 522.8,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s40",
+   "debut": 66.1,
+   "fin": 67.78,
+   "source": "ecrans",
+   "de": 445.0,
+   "a": 446.6,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s49",
+   "debut": 90.86,
+   "fin": 92.8,
+   "source": "ecrans",
+   "de": 601.5,
+   "a": 603.5,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s50",
+   "debut": 92.8,
+   "fin": 94.46,
+   "source": "ecrans",
+   "de": 612.5,
+   "a": 614.5,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s51",
+   "debut": 94.46,
+   "fin": 96.62,
+   "source": "ecrans",
+   "de": 608.0,
+   "a": 610.5,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s68",
+   "debut": 144.46,
+   "fin": 145.9,
+   "source": "ecrans",
+   "de": 0.3,
+   "a": 2.0,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s69",
+   "debut": 145.9,
+   "fin": 147.84,
+   "source": "ecrans",
+   "de": 5.4,
+   "a": 6.6,
+   "cadre": [
+    0,
+    0,
+    864,
+    1340
+   ],
+   "flous": []
+  },
+  {
+   "nom": "s70",
+   "debut": 147.84,
+   "fin": 148.76,
+   "source": "ecrans",
+   "de": 107.0,
+   "a": 109.0,
+   "cadre": [
+    0,
+    60,
+    864,
+    1340
+   ],
+   "flous": []
+  }
+ ]
+}
