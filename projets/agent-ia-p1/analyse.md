@@ -121,7 +121,15 @@ La partie 1 couvre le script **de la partie 1 à la partie 68** et s'arrête qua
 - Musique très discrète (votre musique par défaut, −20 LU sous la voix), voix à −14 LUFS.
 - Version WhatsApp : 1280 × 720, moins de 100 Mo par fichier.
 
-## 6. Ce que j'attends de vous
+## 6. Décisions de Joseph (30 octobre)
+
+- Deux vidéos : **1A « Comprendre »** (chapitres 0 à 5) et **1B « Préparer son projet »** (chapitres 6 à 12).
+- Parties 1 à 39 : sa voix avec des illustrations animées, plus une ouverture face caméra (parties 1 à 3) et une clôture courte.
+- Le numéro WhatsApp de l'école reste visible. Tout le reste est flouté : clés, e-mails, autres numéros.
+- L'offre « 6 000 F pour l'abonnement Claude Code » est coupée.
+- Ce qu'il reste à enregistrer, dans l'ordre : `a_enregistrer.md`.
+
+## 7. Ce que j'attendais de vous (fait)
 
 1. **Valider le plan** (une vidéo de 45 min, ou 1A + 1B).
 2. **Choisir** pour les parties 1–39 : voix + illustrations avec ouverture/clôture face caméra (recommandé), ou tout refilmer.
