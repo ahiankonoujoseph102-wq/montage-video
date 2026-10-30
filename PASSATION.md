@@ -4,13 +4,15 @@
 
 ## Où on en est
 
-- **Version 1** rendue le 30 octobre 2026 (1A 12 min 40, 1B 14 min 15) : **refusée par Joseph** (fade, démos trop
-  rapides et floues, pas de Talkami, pas d'illustrations, trop de coupes, trop de flous).
-- **Version 2 — étape 2 en cours** : plan envoyé ; Joseph a envoyé la voix off des démos et Talkami (accord implicite) ;
-  extrait d'essai envoyé (out/essai-v2.mp4, 1 min 23, non versionné) : en attente de l'accord de Joseph avant le rendu complet. Plan : `projets/agent-ia-p1/plan_v2.md`.
-  Texte des voix off des démos à faire enregistrer : `projets/agent-ia-p1/a_enregistrer_v2.md`.
-- Étape 2 (après accord) : extrait d'essai d'environ 1 min (une vraie démo zoomée + une illustration).
-- Étape 3 (après accord sur l'extrait) : rendu complet de 1A puis 1B.
+- **Version 1** rendue le 30 octobre 2026 : refusée par Joseph (fade, démos trop rapides, pas de Talkami, trop de coupes).
+- **Version 2** : plan `projets/agent-ia-p1/plan_v2.md` ; extrait d'essai `out/essai-v2.mp4` (composition `EssaiV2`)
+  **validé par Joseph : « c'est ce style que je veux »**.
+- **Étape 3 en cours : montage complet de 1A puis de 1B** dans le style de l'extrait (durées acceptées : 1A ≈ 22 min,
+  1B ≈ 26 min). Décisions de Joseph pour l'étape 3 :
+  - inscription GitHub : ne pas lui demander de refilmer ; adapter la voix off ou ajouter un texte à l'écran
+    (« Touchez S'inscrire, ou Se connecter si vous avez déjà un compte ») ;
+  - même méthode : avant chaque envoi, regarder comme un débutant et corriger ;
+  - tout pousser sur GitHub et tenir ce fichier à jour.
 
 ## Demandes de Joseph (message du 30 octobre, version 2) — à respecter
 
