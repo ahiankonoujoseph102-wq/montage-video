@@ -20,7 +20,9 @@ const VERT = '#22C55E';
 const ROUGE = '#EF4444';
 const POLICE = 'Montserrat';
 const CX = 500;
-const BANDE = 1290;
+const BANDE = 1300; // bande des sous-titres : 1 300 → 1 600 px (~16 %), l'image continue dessous
+const BANDE_FIN = 1600;
+const MILIEU_ST = 1430;
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const kit = (f: string) => staticFile(`talkami-pub/kit/${f}`);
 const S = (s: number) => Math.round(s * FPS);
@@ -57,12 +59,12 @@ const Lent: React.FC<React.PropsWithChildren<{duree: number; de?: number; a?: nu
 
 // Téléphone géant : écran à 78 % (842 × 1 498 px) ; « vue » = décalage vertical (début → fin) pour faire glisser
 // la partie utile au-dessus de la bande ; zoom lent vers une cible de l'écran.
-const ECH = 0.78;
+const ECH = 0.8;
 const TL = 1080 * ECH;
 const TH = 1920 * ECH;
 const Telephone: React.FC<{src: string; depuis: number; duree: number; vue?: [number, number]; zoom?: [number, number];
-  cible?: [number, number]; entree?: 'bas' | 'droite' | 'gauche'}> = (
-  {src, depuis, duree, vue = [0, -40], zoom = [1, 1.06], cible = [540, 700], entree = 'bas'}) => {
+  cible?: [number, number]; entree?: 'bas' | 'droite' | 'gauche'; retouche?: Retouche}> = (
+  {src, depuis, duree, vue = [0, -40], zoom = [1, 1.06], cible = [540, 700], entree = 'bas', retouche}) => {
   const f = useCurrentFrame();
   const av = interpolate(f, [0, duree], [0, 1], {...clamp, easing: Easing.inOut(Easing.quad)});
   const e = prog(f, 0, 8, Easing.out(Easing.cubic));
@@ -79,10 +81,34 @@ const Telephone: React.FC<{src: string; depuis: number; duree: number; vue?: [nu
       <div style={{position: 'absolute', left: x0, top: y0, width: TL, height: TH, borderRadius: 76, overflow: 'hidden',
         background: '#fff'}}>
         <OffthreadVideo src={kit(src)} muted startFrom={Math.max(0, S(depuis))} style={{width: TL, height: TH}} />
+        {retouche ? <Retoucher r={retouche} t={depuis + f / FPS} /> : null}
       </div>
       <div style={{position: 'absolute', left: CX - 90, top: y0 + 14, width: 180, height: 40, borderRadius: 20,
         background: '#0B1222'}} />
     </AbsoluteFill>
+  );
+};
+
+// Retouche d'un enregistrement d'écran : pendant [de, a] (temps du clip), la zone `cadre` est remplacée par la même zone
+// de la capture propre du kit (sans le rond du doigt), et un rond de toucher est posé au bord du bouton (`doigt`).
+type Retouche = {capture: string; cadre: [number, number, number, number]; de: number; a: number; doigt: [number, number];
+  toucher: [number, number]};
+const Retoucher: React.FC<{r: Retouche; t: number}> = ({r, t}) => {
+  if (t < r.de || t >= r.a) return null;
+  const [x1, y1, x2, y2] = r.cadre;
+  const u = (t - r.toucher[0]) / (r.toucher[1] - r.toucher[0]);
+  return (
+    <>
+      <div style={{position: 'absolute', left: x1 * ECH, top: y1 * ECH, width: (x2 - x1) * ECH, height: (y2 - y1) * ECH,
+        overflow: 'hidden'}}>
+        <Img src={kit(r.capture)} style={{position: 'absolute', width: TL, height: TH, left: -x1 * ECH, top: -y1 * ECH}} />
+      </div>
+      {u >= 0 && u <= 1 ? (
+        <div style={{position: 'absolute', left: r.doigt[0] * ECH - 34, top: r.doigt[1] * ECH - 34, width: 68, height: 68,
+          borderRadius: 34, background: 'rgba(255,255,255,0.55)', border: '5px solid #0F2D62',
+          boxShadow: `0 0 0 ${10 + 26 * u}px rgba(255,255,255,${0.45 * (1 - u)})`, transform: `scale(${1 - 0.15 * Math.sin(u * Math.PI)})`}} />
+      ) : null}
+    </>
   );
 };
 
@@ -97,9 +123,9 @@ const Prof: React.FC<{src: string; depuis?: number; duree: number; etiquette?: s
   {src, depuis = 0, duree, etiquette, sens = 1}) => {
   const f = useCurrentFrame();
   const [fx, fy, z0] = VISAGES[src];
-  const z = z0 * interpolate(f, [0, duree], sens > 0 ? [1, 1.08] : [1.08, 1], clamp);
+  const z = 1.06 * z0 * interpolate(f, [0, duree], sens > 0 ? [1, 1.08] : [1.08, 1], clamp);
   const tx = 520 - fx * z;
-  const ty = 640 - fy * z;
+  const ty = 660 - fy * z;
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: 1920, transformOrigin: '0 0',
@@ -241,8 +267,8 @@ const Fin: React.FC<{pulse: number}> = ({pulse}) => {
         borderRadius: 5, background: ORANGE}} />
       <div style={{position: 'absolute', top: 1040, left: CX - 430, width: 860, display: 'flex', justifyContent: 'center',
         transform: `scale(${kb * (f > 34 ? 1 + 0.03 * Math.sin((f - 34) / 4) : 1)})`, opacity: kb > 0 ? 1 : 0}}>
-        <div style={{background: ORANGE, borderRadius: 70, padding: '24px 56px', fontFamily: POLICE, fontWeight: 900,
-          fontSize: 66, color: NAVY, boxShadow: '0 18px 40px rgba(0,0,0,0.45)', whiteSpace: 'nowrap'}}>Évaluation orale gratuite</div>
+        <div style={{background: ORANGE, borderRadius: 70, padding: '22px 44px', fontFamily: POLICE, fontWeight: 900,
+          fontSize: 56, color: NAVY, boxShadow: '0 18px 40px rgba(0,0,0,0.45)', whiteSpace: 'nowrap'}}>Évaluation orale gratuite</div>
       </div>
     </AbsoluteFill>
   );
@@ -286,32 +312,49 @@ const Bande: React.FC<{mots: Mot3[]; blocs: Bloc3[]; cache: (t: number) => boole
   const bl = cur >= 0 ? liste[cur] : null;
   const fin = bl ? bl.mots[bl.mots.length - 1].b + 0.6 : 0;
   const montre = bl && !bl.bloc.geant && (t <= fin || (liste[cur + 1] && t >= liste[cur + 1].mots[0].a - 0.04));
-  const texte = bl ? bl.mots.map((m) => m.t).join(' ').toUpperCase() : '';
-  const taille = Math.min(98, fitText({text: texte || 'A', withinWidth: 840, fontFamily: POLICE, fontWeight: '900'}).fontSize);
+  const ligne = (ms: Mot3[]) => ms.map((m) => m.t).join(' ').toUpperCase();
+  const mesure = (txt: string) => fitText({text: txt || 'A', withinWidth: 860, fontFamily: POLICE, fontWeight: '900'}).fontSize;
+  let lignes: Mot3[][] = bl ? [bl.mots] : [];
+  let taille = bl ? Math.min(112, mesure(ligne(bl.mots))) : 100;
+  if (bl && taille < 100 && bl.mots.length > 1) {
+    // Deux lignes : la coupure qui donne la plus grande taille.
+    let mieux = {k: 1, t: 0};
+    for (let k = 1; k < bl.mots.length; k++) {
+      const t2 = Math.min(mesure(ligne(bl.mots.slice(0, k))), mesure(ligne(bl.mots.slice(k))));
+      if (t2 > mieux.t) mieux = {k, t: t2};
+    }
+    lignes = [bl.mots.slice(0, mieux.k), bl.mots.slice(mieux.k)];
+    taille = Math.min(104, mieux.t);
+  }
   const d = bl ? f - S(bl.mots[0].a - 0.04) : 0;
   const k = interpolate(d, [0, 3], [1.12, 1], {...clamp, easing: Easing.out(Easing.quad)});
   const cles = new Set((bl?.bloc.cle ?? []).map((c) => c.toUpperCase()));
+  const hauteur = lignes.length * taille * 1.05;
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
-      <div style={{position: 'absolute', left: 0, right: 0, top: BANDE, bottom: 0,
-        background: `linear-gradient(180deg, ${NAVY} 0%, ${NAVY_FONCE} 100%)`, boxShadow: '0 -18px 40px rgba(0,0,0,0.45)'}} />
+      <div style={{position: 'absolute', left: 0, right: 0, top: BANDE, height: BANDE_FIN - BANDE,
+        background: `linear-gradient(180deg, ${NAVY} 0%, ${NAVY_FONCE} 100%)`, boxShadow: '0 0 40px rgba(0,0,0,0.5)'}} />
       <div style={{position: 'absolute', left: 0, right: 0, top: BANDE - 4, height: 8,
         background: `linear-gradient(90deg, rgba(255,122,26,0), ${ORANGE}, rgba(255,122,26,0))`, boxShadow: `0 0 20px ${ORANGE}`}} />
+      <div style={{position: 'absolute', left: 0, right: 0, top: BANDE_FIN - 3, height: 6,
+        background: `linear-gradient(90deg, rgba(255,122,26,0), ${ORANGE}, rgba(255,122,26,0))`}} />
       {montre && bl ? (
-        <div style={{position: 'absolute', left: CX - 420, width: 840, top: 1392 - (taille * 1.05) / 2, display: 'flex',
-          justifyContent: 'center', transform: `scale(${k})`}}>
-          <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: taille, lineHeight: 1.05, whiteSpace: 'nowrap',
-            filter: 'drop-shadow(0 6px 10px rgba(0,0,0,0.5))'}}>
-            {bl.mots.map((m, j) => {
-              const mot = m.t.toUpperCase();
-              const cle = cles.has(mot.replace(/[,.:?…]/g, '').trim()) || cles.has(mot);
-              const dit = t >= m.a - 0.04;
-              const kc = cle && dit ? pop(f, S(m.a - 0.04), 320) : 1;
-              return <span key={j} style={{display: 'inline-block', color: cle ? ORANGE : '#fff',
-                opacity: dit ? 1 : 0.5, transform: `scale(${cle ? 0.75 + 0.25 * kc : 1})`,
-                marginLeft: j > 0 ? taille * 0.28 : 0}}>{mot}</span>;
-            })}
-          </div>
+        <div style={{position: 'absolute', left: CX - 430, width: 860, top: MILIEU_ST - hauteur / 2, display: 'flex',
+          flexDirection: 'column', alignItems: 'center', transform: `scale(${k})`}}>
+          {lignes.map((lm, li) => (
+            <div key={li} style={{fontFamily: POLICE, fontWeight: 900, fontSize: taille, lineHeight: 1.05, whiteSpace: 'nowrap',
+              filter: 'drop-shadow(0 6px 10px rgba(0,0,0,0.5))'}}>
+              {lm.map((m, j) => {
+                const mot = m.t.toUpperCase();
+                const cle = cles.has(mot.replace(/[,.:?…]/g, '').trim()) || cles.has(mot);
+                const dit = t >= m.a - 0.04;
+                const kc = cle && dit ? pop(f, S(m.a - 0.04), 320) : 1;
+                return <span key={j} style={{display: 'inline-block', color: cle ? ORANGE : '#fff',
+                  opacity: dit ? 1 : 0.5, transform: `scale(${cle ? 0.75 + 0.25 * kc : 1})`,
+                  marginLeft: j > 0 ? taille * 0.28 : 0}}>{mot}</span>;
+              })}
+            </div>
+          ))}
         </div>
       ) : null}
     </AbsoluteFill>
@@ -403,7 +446,9 @@ export const PubTalkami3: React.FC<PubV3Props> = ({mots, blocs, emojis, duree}) 
           <Emoji code="1f4ac" x={860} y={300} taille={170} a={R('francais', A('français')) + 3} /></>, false)}
         {seq('bloquez', undefined, <Prof src="rose-hochement.mp4" depuis={0.3} duree={D('bloquez')} />, false)}
         {seq('eval', 'bas', <><Telephone src="ecran-bouton-evaluation-gratuite.mp4" depuis={depuisEval} duree={D('eval')}
-          vue={[-120, -420]} zoom={[1, 1.12]} cible={[540, 1530]} />
+          vue={[-120, -440]} zoom={[1, 1.12]} cible={[540, 1530]}
+          retouche={{capture: 'bouton-passer-mon-evaluation-gratuite.png', cadre: [40, 1405, 1040, 1635], de: 2.6, a: 3.78,
+            doigt: [985, 1520], toucher: [2.62, 3.45]}} />
           <Badge a={R('eval', A('gratuite.'))} />
           <Emoji code="1f381" x={850} y={1110} taille={190} a={R('eval', A('gratuite.')) + 4} /></>)}
         {seq('duo', undefined, <Duo duree={D('duo')} />, false)}

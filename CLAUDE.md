@@ -93,8 +93,8 @@ y poser le morceau correspondant de `public/<projet>/mix.wav`, puis les enchaîn
 
 ## Publicités (composition `PubTalkami3` = la v1 `PubTalkami` optimisée ; la v2 violette `PubTalkami2` est abandonnée)
 
-Version en cours (v3) : style bleu de la v1, **bande fixe de sous-titres en bas** (1 290 → 1 920 px, sous-titres vers
-1 392 px, jamais sur un écran ni un visage), **téléphones géants** (écran à 78 %, qui glissent et zooment derrière la
+Version finale (v3) : style bleu de la v1, **bande fixe de sous-titres en bas** (1 300 → 1 600 px, deux lignes vers
+1 430 px, jamais sur un écran ni un visage), **téléphones géants** (écran à 80 %, qui glissent et zooment derrière la
 bande), professeurs **cadrés serré** sur le visage (`VISAGES` dans `src/pub/PubTalkami3.tsx`), aucun plan immobile,
 emojis animés Noto (lottie, CC BY 4.0), fin animée de 2,5 s au plus. Voix : `scripts/voix_pub3.py` (naturelle / radio).
 
