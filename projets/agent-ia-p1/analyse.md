@@ -121,17 +121,20 @@ La partie 1 couvre le script **de la partie 1 à la partie 68** et s'arrête qua
 - Musique très discrète (votre musique par défaut, −20 LU sous la voix), voix à −14 LUFS.
 - Version WhatsApp : 1280 × 720, moins de 100 Mo par fichier.
 
-## 6. Décisions de Joseph (30 octobre)
+## 6. Décisions de Joseph (30 octobre, mises à jour)
 
 - Deux vidéos : **1A « Comprendre »** (chapitres 0 à 5) et **1B « Préparer son projet »** (chapitres 6 à 12).
-- Parties 1 à 39 : sa voix avec des illustrations animées, plus une ouverture face caméra (parties 1 à 3) et une clôture courte.
-- Le numéro WhatsApp de l'école reste visible. Tout le reste est flouté : clés, e-mails, autres numéros.
+- **Pas de face caméra filmé.** C'est son **avatar en dessin animé** qui présente, avec sa voix et les lèvres
+  synchronisées : en grand dans les passages « face caméra » (parties 1 à 39, introductions, clôtures), en petit dans un
+  coin pendant les écrans. Il existe une seule source dans le dépôt : `projets/talkami-pub/elements/avatar-joseph.mp4`
+  (branche `claude/great-heisenberg-8p7tj4`), 320 × 320, 6 s, bouche qui bouge sans synchronisation. Il faut donc le
+  **redessiner en vectoriel** (visage fidèle, buste, 8 formes de bouche calées sur la voix, clignements, petits mouvements
+  de tête), ou repartir d'une image d'origine en grand si Joseph l'a.
+- Pédagogie : illustrations, schémas animés, flèches, zooms, emojis, titres de chapitres, avec la source et la licence de
+  chaque élément.
+- Introduction animée « Formation : Comment créer un agent IA, de A à Z — Première partie — Partie 1A / 1B ».
+  À la fin de 1B : récapitulatif, devoir (`devoir.md`, proposé), puis « La suite arrive très bientôt ! ».
+- Le numéro WhatsApp de l'école reste visible. Tout le reste est flouté : clés, mots de passe, e-mails, autres numéros,
+  paiement.
 - L'offre « 6 000 F pour l'abonnement Claude Code » est coupée.
-- Ce qu'il reste à enregistrer, dans l'ordre : `a_enregistrer.md`.
-
-## 7. Ce que j'attendais de vous (fait)
-
-1. **Valider le plan** (une vidéo de 45 min, ou 1A + 1B).
-2. **Choisir** pour les parties 1–39 : voix + illustrations avec ouverture/clôture face caméra (recommandé), ou tout refilmer.
-3. **Enregistrer** : voix off V1–V55 et W1–W30 (`voix_off.md`), écrans R1 et R2, et R3 si retenu ; envoyer les liens Drive.
-4. **Changer la clé SMTP Brevo** visible dans vos vidéos.
+- Ce qu'il reste à enregistrer, dans l'ordre : `a_enregistrer.md` (blocs courts : `voix_off_courtes.md`).
