@@ -91,7 +91,14 @@ y poser le morceau correspondant de `public/<projet>/mix.wav`, puis les enchaîn
 - **Rythme** : jamais plus de 12 s sans événement visuel (scène, transition, doré, autocollant, carton) ; à vérifier
   sur `props.json` après `preparer.py`.
 
-## Publicités (composition `PubTalkami`)
+## Publicités (composition `PubTalkami3`, la v1 `PubTalkami` et la v2 violette `PubTalkami2` sont abandonnées)
+
+Version en cours (v3) : style bleu de la v1, **bande fixe de sous-titres en bas** (1 290 → 1 920 px, sous-titres vers
+1 392 px, jamais sur un écran ni un visage), **téléphones géants** (écran à 78 %, qui glissent et zooment derrière la
+bande), professeurs **cadrés serré** sur le visage (`VISAGES` dans `src/pub/PubTalkami3.tsx`), aucun plan immobile,
+emojis animés Noto (lottie, CC BY 4.0), fin animée de 2,5 s au plus. Voix : `scripts/voix_pub3.py` (naturelle / radio).
+
+Ancienne description (v1) :
 
 Publicité courte (~29 s) montée à partir d'un kit d'images et d'une voix off, sans visage filmé : projet
 `projets/talkami-pub/` (kit copié dans `pub-kit/`, plan de montage dans `plan.json`, sources et licences dans

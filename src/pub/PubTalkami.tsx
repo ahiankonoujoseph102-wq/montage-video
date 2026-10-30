@@ -23,13 +23,13 @@ export type SousTitre = {t: string; a: number; b: number; cle?: string[]; geant?
 export type Plan = {a: number; b: number; type: string; [k: string]: unknown};
 export type PubProps = {duree: number; sousTitres: SousTitre[]; plans: Plan[]};
 
-const pop = (f: number, a = 0, raide = 200) =>
+export const pop = (f: number, a = 0, raide = 200) =>
   f < a ? 0 : spring({frame: f - a, fps: FPS, config: {damping: 11, stiffness: raide, mass: 0.7}});
-const prog = (f: number, a: number, d: number, e = Easing.out(Easing.cubic)) =>
+export const prog = (f: number, a: number, d: number, e = Easing.out(Easing.cubic)) =>
   interpolate(f, [a, a + d], [0, 1], {...clamp, easing: e});
 
 // Fond bleu nuit de la marque, avec deux taches de lumière (orange et bleue) qui bougent et des points qui montent.
-const Fond: React.FC<{f: number}> = ({f}) => (
+export const Fond: React.FC<{f: number}> = ({f}) => (
   <AbsoluteFill style={{background: `linear-gradient(170deg, #13387A 0%, ${NAVY} 50%, ${NAVY_FONCE} 100%)`}}>
     <svg width={1080} height={1920}>
       <defs>
@@ -51,7 +51,7 @@ const Fond: React.FC<{f: number}> = ({f}) => (
 );
 
 // Entrée d'un plan : léger coup de zoom (1,08 → 1 en 6 images) ou glissement depuis la droite / le bas.
-const Entree: React.FC<React.PropsWithChildren<{f: number; mode?: string}>> = ({f, mode, children}) => {
+export const Entree: React.FC<React.PropsWithChildren<{f: number; mode?: string}>> = ({f, mode, children}) => {
   const p = prog(f, 0, 7, Easing.out(Easing.cubic));
   const tr = mode === 'droite' ? `translateX(${(1 - p) * 700}px)` : mode === 'bas' ? `translateY(${(1 - p) * 900}px)`
     : `scale(${1.08 - 0.08 * p})`;
@@ -61,7 +61,7 @@ const Entree: React.FC<React.PropsWithChildren<{f: number; mode?: string}>> = ({
 // --- Plans ---
 
 // Accroche : bulle « Hello… I… » verrouillée par un cadenas ; puis « COMPRENDRE ✓ » et « PARLER ✗ ».
-const Blocage: React.FC<{f: number; etat: number}> = ({f, etat}) => {
+export const Blocage: React.FC<{f: number; etat: number}> = ({f, etat}) => {
   const t = f; // images depuis le début du plan
   const cadenas = etat === 0 ? pop(t, 7, 260) : 1;
   const secoue = (etat === 0 && t >= 7 && t < 19) || (etat === 2 && t >= 4 && t < 16)
@@ -119,7 +119,7 @@ const Puce: React.FC<{y: number; k: number; ok: boolean; texte: string; dx?: num
 );
 
 // Logo Talkami blanc qui éclate devant des rayons orange, rebond sur le mot « Talkami ».
-const Logo: React.FC<{f: number; rebond: number}> = ({f, rebond}) => {
+export const Logo: React.FC<{f: number; rebond: number}> = ({f, rebond}) => {
   const k = pop(f, 3, 180);
   const r = f >= rebond ? 1 + 0.1 * Math.max(0, Math.sin(((f - rebond) / 10) * Math.PI)) * (f - rebond < 10 ? 1 : 0) : 1;
   return (

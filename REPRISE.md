@@ -4,13 +4,15 @@
 ## En cours : publicité Talkami (30 octobre)
 
 - Projet `talkami-pub` : kit et voix off d'origine copiés dans le dépôt (`projets/talkami-pub/pub-kit/`).
-- v1 (composition `PubTalkami`) **refusée** par Joseph : pas assez professionnelle ni captivante.
-- **v2 en aperçu, en attente de son avis** : voix v2 (`scripts/voix_pub.py`, comparaison dans
-  `projets/talkami-pub/voix-v2/comparaison.md`), montage refait dans le style de sa vidéo « histoire de Talkami »
-  (Drive `1qywjWMJD0Vi8mDuwghEjbbK3uETcLO4f`, téléchargée dans `projets/talkami-histoire/`, non versionnée) :
-  composition `PubTalkami2`, `python3 scripts/pub_talkami2.py` (props-v2 + mix-v2), 27 s.
-- Après accord : rendu 1080 × 1920 (`npx remotion render src/index.ts PubTalkami2 … --props=public/talkami-pub/props-v2.json --muted`
-  + `public/talkami-pub/mix-v2.wav`), moins de 30 Mo.
+- Historique : v1 (`PubTalkami`, fond bleu) envoyée, **jamais validée** (le dossier `livrable/` contient ce rendu v1,
+  ce n'est pas une version finale) ; v2 violette (`PubTalkami2`) **abandonnée** par Joseph.
+- **v3 en aperçu, en attente de son avis** : style et déroulé de la v1, optimisés (composition `PubTalkami3`,
+  `python3 scripts/pub_talkami3.py [naturelle|radio]`) : téléphones géants derrière une bande fixe de sous-titres
+  (1 290 px), professeurs cadrés serré, emojis Noto animés, fin animée de 2,5 s, 24 s au total.
+- **Voix v3** (`scripts/voix_pub3.py`, `projets/talkami-pub/voix-v3/`) : deux versions, « naturelle » et « radio » ;
+  Joseph doit en choisir une (fichier `comparaison-voix.m4a`). L'aperçu utilise la radio.
+- Après accord : `python3 scripts/pub_talkami3.py <voix>`, rendu 1080 × 1920 de `PubTalkami3`
+  (`--props=public/talkami-pub/props-v3.json --muted` + `mix-v3.wav`), moins de 30 Mo.
 
 ## État exact
 

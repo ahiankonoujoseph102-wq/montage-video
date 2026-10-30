@@ -4,6 +4,7 @@ import {Composition, staticFile} from 'remotion';
 import {Montage} from './Montage';
 import {PubTalkami, PubProps} from './pub/PubTalkami';
 import {PubTalkami2, PubV2Props} from './pub/PubTalkami2';
+import {PubTalkami3, PubV3Props} from './pub/PubTalkami3';
 import {Transition, TransitionProps} from './Transition';
 import type {MontageProps} from './types';
 
@@ -20,8 +21,20 @@ const pubExemple: PubProps = {duree: 1, sousTitres: [], plans: []};
 
 const pubV2Exemple: PubV2Props = {duree: 1, mots: []};
 
+const pubV3Exemple: PubV3Props = {duree: 1, mots: [], blocs: [], emojis: []};
+
 export const Root: React.FC = () => (
   <>
+  <Composition
+    id="PubTalkami3"
+    component={PubTalkami3}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={30}
+    defaultProps={pubV3Exemple}
+    calculateMetadata={({props}) => ({durationInFrames: Math.max(1, Math.round(props.duree * 30))})}
+  />
   <Composition
     id="PubTalkami2"
     component={PubTalkami2}
