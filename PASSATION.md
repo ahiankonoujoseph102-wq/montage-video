@@ -53,12 +53,28 @@
 - Police Poppins (SIL Open Font License). Emojis : police système (Noto Color Emoji, SIL OFL).
 - Talkami (site de Joseph) : `voix/talkami-catalogue.mp4` (catalogue d'écrans), `voix/talkami-video.mp4` (leçon de
   Teacher Joe), voix off des démos `voix/voix-off-demos.m4a` — identifiants Drive dans `rushes/README.md`.
-- Illustrations libres : *aucune encore* — à noter ici au fur et à mesure (fichier, URL, auteur, licence).
+- Illustrations libres (notées au fur et à mesure) :
+  - `projets/agent-ia-p1/illustrations/code-contribution_8k0x.svg` — unDraw (Katerina Limpitsouni),
+    https://cdn.undraw.co/illustration/code-contribution_8k0x.svg, licence unDraw (usage commercial libre, sans
+    attribution, modification permise : https://undraw.co/license) ; recolorée (peau brune, accent or) :
+    `code-contribution-recolore.svg` → `serie-animee/public/formation/illus/code-contribution.svg`.
+  - `private-files_m2bw.svg`, `secure-usb-drive_7pj5.svg` : unDraw, même licence (téléchargées, pas encore utilisées).
+  - Coffre-fort, frise des versions, carte du dépôt : dessinés dans le code (`Essai.tsx`).
+  - Wikimedia Commons : API bloquée (429) depuis l'environnement ; Pexels/Pixabay : pages bloquées (403).
 
 ## Enregistrements demandés à Joseph (version 2)
 
 Voir la fin de `projets/agent-ia-p1/plan_v2.md` : séance Talkami (60–90 s, avec son), évaluation (45–60 s),
 « Mon espace » (20–30 s), voix off des démos (`a_enregistrer_v2.md`), démo réelle du module E (facultative).
+
+## Extrait d'essai v2 (étape 2)
+
+- Données : `python3 projets/agent-ia-p1/montage/essai.py` (lancer depuis `montage/`, sans `-I`) → `serie-animee/public/formation/essai/`
+  (voix, extraits du rush H par étape, sous-titres). Étapes, cibles (cercles) et zooms : liste `ETAPES` de `essai.py`.
+- Composition `EssaiV2` (`src/formation/Essai.tsx`, copie dans `formation-src/`), déclarée dans `Root.tsx` (voir `Root.tsx.diff`).
+- Rendu : `npx remotion bundle src/index.ts --out-dir $SP/bundle && npx remotion render $SP/bundle EssaiV2 $SP/brut-essai.mp4
+  --concurrency=4 --crf=18 --audio-codec=aac --audio-bitrate=192k && python3 -I outils/finaliser.py $SP/brut-essai.mp4 out/essai-v2.mp4`
+- Démo GitHub (rush H) : vers 187 s Joseph ouvre le menu de Chrome par erreur → l'étape « Privé » s'arrête à 186,6 s.
 
 ## Relancer le rendu (version 1, à adapter en v2)
 
