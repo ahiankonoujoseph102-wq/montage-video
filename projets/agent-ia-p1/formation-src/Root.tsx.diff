@@ -1,0 +1,25 @@
+diff --git a/serie-animee/src/Root.tsx b/serie-animee/src/Root.tsx
+index 5901977..a3c34c6 100644
+--- a/serie-animee/src/Root.tsx
++++ b/serie-animee/src/Root.tsx
+@@ -10,6 +10,9 @@ import {DUREE_EP02, Episode02} from './episodes/ep02/Episode02';
+ import {DUREE_EP03, Episode03} from './episodes/ep03/Episode03';
+ import {DUREE_EP04, Episode04} from './episodes/ep04/Episode04';
+ import {DUREE_PUB2, Pub2} from './pub2/Pub2';
++import {DemoModuleE} from './formation/DemoModuleE';
++import {dureeFormation, Formation} from './formation/Formation';
++import {DUREE_TEST, HAUTEUR, LARGEUR, TestAvatar} from './formation/TestAvatar';
+ import {ApercuPatricia, ComparaisonDoubles, PlanchePatricia} from './apercus/ApercuPatricia';
+ 
+ type ApercuProps = {pose: Pose; sousTitres: boolean};
+@@ -28,6 +31,10 @@ const poseDefaut: Pose = {expression: 'neutre', geste: 'repos', bouche: 0};
+ 
+ export const Root: React.FC = () => (
+   <>
++    <Composition id="Formation1A" component={Formation} durationInFrames={dureeFormation('1A')} fps={30} width={1920} height={1080} defaultProps={{video: '1A' as const}} />
++    <Composition id="Formation1B" component={Formation} durationInFrames={dureeFormation('1B')} fps={30} width={1920} height={1080} defaultProps={{video: '1B' as const}} />
++    <Composition id="DemoModuleE" component={DemoModuleE} durationInFrames={1} fps={30} width={1920} height={1080} defaultProps={{etape: 1 as const}} />
++    <Composition id="FormationTestAvatar" component={TestAvatar} durationInFrames={DUREE_TEST} fps={30} width={LARGEUR} height={HAUTEUR} />
+     <Composition
+       id="Apercu"
+       component={Apercu}
