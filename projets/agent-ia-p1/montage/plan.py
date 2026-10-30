@@ -45,7 +45,13 @@ def chapitre(n, titre, emoji):
 
 
 # Paroles à retirer à la main (source, début, fin) : « Et c'est ça. » avant « Et c'est là sa limite ».
-COUPES = [("rushes/20261027-153738.mp4", 238.0, 239.4)]
+COUPES = [("rushes/20261027-153738.mp4", 238.0, 239.4),
+          ("rushes/20261027-153738.mp4", 642.5, 644.5),   # « I. Tout est rangé. » (début recommencé)
+          ("rushes/20261027-153738.mp4", 692.5, 698.4),   # 2e prise de « Talkami est hébergé sur Laravel Cloud » (la 1re est plus nette)
+          ("voix/audio-2.m4a", 35.7, 38.6),               # « Ma vraie force, le français » commencé puis redit
+          ("voix/audio-2.m4a", 234.6, 240.0),
+          ("rushes/20261027-153738.mp4", 890.7, 894.8),
+          ("voix/recapitulatif.mp4", 152.2, 159.3)]        # « Six : envoyez-moi… de l'information » (redit ensuite correctement)   # 1re prise de « Je vous le dis franchement… »             # 1re prise de « Je copie sa réponse, je l'envoie… »
 
 # Début forcé d'une phrase (mot de trop juste avant) : « Et 4. » avant « Une erreur arrive ».
 DEBUT_FORCE = {"E4.101": 519.80}

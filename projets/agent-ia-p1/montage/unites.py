@@ -120,6 +120,7 @@ def coupe_fin_redite(mots_i: list[dict], suivants: list[list[dict]], k_min: int 
         for m in suivants:
             tj = jetons(m)[:tete + n]
             sm = difflib.SequenceMatcher(None, suffixe, tj, autojunk=False)
-            if sum(bl.size for bl in sm.get_matching_blocks()) >= max(k_min, 0.8 * n):
+            bl = sm.find_longest_match(0, n, 0, len(tj))
+            if bl.a == 0 and bl.size >= k_min and sum(b.size for b in sm.get_matching_blocks()) >= max(k_min, 0.7 * n):
                 return mots_i[toks[debut][1]]["debut"] - 0.05
     return None

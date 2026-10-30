@@ -135,4 +135,12 @@ class Assemblage:
         y = np.concatenate(self.bouts) if self.bouts else np.zeros(1, np.float32)
         y = np.clip(y * 0.9, -1, 1)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-",
-                        "-ac", "2", "-c:a", "pcm_s16le", str(chemin)], input=y.tobytes(), check=True)
+                        "-af", VOIX_RADIO, "-ar", str(SR), "-ac", "2", "-c:a", "pcm_s16le", str(chemin)], input=y.tobytes(), check=True)
+
+
+# Traitement « voix radio » (demande de Joseph : plus d'énergie, de présence et de volume, sans changer la hauteur ni la durée) :
+# coupe-bas, chaleur vers 180 Hz, moins de son « boîte » vers 400 Hz, présence vers 3,2 kHz, brillance au-dessus de 9 kHz,
+# dé-esseur, compression 4:1 (énergie), volume régulier à -15 LUFS, limiteur.
+VOIX_RADIO = ("highpass=f=85,lowpass=f=15000,equalizer=f=180:t=q:w=1.0:g=2.5,equalizer=f=400:t=q:w=1.2:g=-2.5,"
+              "equalizer=f=3200:t=q:w=1.0:g=4,equalizer=f=9500:t=h:w=3000:g=2.5,deesser=i=0.35,"
+              "acompressor=threshold=-22dB:ratio=4:attack=4:release=90:makeup=5dB,loudnorm=I=-15:TP=-2:LRA=6,alimiter=limit=0.89:level=false")

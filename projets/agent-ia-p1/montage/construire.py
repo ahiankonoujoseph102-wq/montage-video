@@ -59,7 +59,13 @@ def couverture(script_j: list[str], dits: list[str]) -> int:
 
 def garder_sans_reprises(s, d0: float, f0: float, script, suite: list[str] | None = None) -> tuple[list, list]:
     """Unités de parole de [d0, f0] sans les reprises ; une suppression qui ferait perdre du texte prévu est annulée."""
-    us = unites(s, d0, f0)
+    us = []
+    for u in unites(s, d0, f0):
+        morceaux = [u]
+        for c in plan.COUPES:
+            if c[0] == s.chemin:
+                morceaux = [x for a, b in morceaux for x in ([(a, c[1]), (c[2], b)] if a < c[2] and c[1] < b else [(a, b)]) if x[1] - x[0] > 0.15]
+        us += morceaux
     gardees, retirees, _ = sans_reprises(s, us)
     script_j = canon([j for t, _ in script for j in normaliser(t)])
     tous = canon([j for u in us for j in jetons(transcrire(s, *u))])
