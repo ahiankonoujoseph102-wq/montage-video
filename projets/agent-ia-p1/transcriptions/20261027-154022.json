@@ -1,0 +1,1152 @@
+[
+ {
+  "debut": 0.21,
+  "fin": 5.05,
+  "texte": "Avant de commencer le travail, je veux que vous voyez toute la méthode d'un seul coup d'œil.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 0.21,
+    "fin": 0.81,
+    "proba": 0.93
+   },
+   {
+    "mot": "de",
+    "debut": 0.81,
+    "fin": 0.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "commencer",
+    "debut": 0.95,
+    "fin": 1.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 1.29,
+    "fin": 1.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "travail,",
+    "debut": 1.45,
+    "fin": 1.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 1.93,
+    "fin": 1.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "veux",
+    "debut": 1.97,
+    "fin": 2.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 2.11,
+    "fin": 2.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 2.25,
+    "fin": 2.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "voyez",
+    "debut": 2.47,
+    "fin": 2.91,
+    "proba": 0.75
+   },
+   {
+    "mot": "toute",
+    "debut": 2.91,
+    "fin": 3.49,
+    "proba": 0.99
+   },
+   {
+    "mot": "la",
+    "debut": 3.49,
+    "fin": 3.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "méthode",
+    "debut": 3.65,
+    "fin": 4.03,
+    "proba": 0.99
+   },
+   {
+    "mot": "d",
+    "debut": 4.03,
+    "fin": 4.19,
+    "proba": 0.99
+   },
+   {
+    "mot": "'un",
+    "debut": 4.19,
+    "fin": 4.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "seul",
+    "debut": 4.27,
+    "fin": 4.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "coup",
+    "debut": 4.45,
+    "fin": 4.65,
+    "proba": 0.99
+   },
+   {
+    "mot": "d",
+    "debut": 4.65,
+    "fin": 4.89,
+    "proba": 0.97
+   },
+   {
+    "mot": "'œil.",
+    "debut": 4.89,
+    "fin": 5.05,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 5.29,
+  "fin": 6.83,
+  "texte": "Elle tient à 4 étapes.",
+  "mots": [
+   {
+    "mot": "Elle",
+    "debut": 5.29,
+    "fin": 5.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "tient",
+    "debut": 5.65,
+    "fin": 5.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 5.93,
+    "fin": 6.11,
+    "proba": 0.98
+   },
+   {
+    "mot": "4",
+    "debut": 6.11,
+    "fin": 6.37,
+    "proba": 0.57
+   },
+   {
+    "mot": "étapes.",
+    "debut": 6.37,
+    "fin": 6.83,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 7.61,
+  "fin": 12.53,
+  "texte": "Étape 1. Vous écrivez votre projet dans le bloc-note de votre téléphone.",
+  "mots": [
+   {
+    "mot": "Étape",
+    "debut": 7.61,
+    "fin": 7.95,
+    "proba": 0.96
+   },
+   {
+    "mot": "1.",
+    "debut": 7.95,
+    "fin": 8.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "Vous",
+    "debut": 9.19,
+    "fin": 9.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "écrivez",
+    "debut": 9.67,
+    "fin": 10.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 10.19,
+    "fin": 10.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 10.53,
+    "fin": 10.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 10.91,
+    "fin": 11.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 11.41,
+    "fin": 11.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 11.51,
+    "fin": 11.69,
+    "proba": 0.96
+   },
+   {
+    "mot": "-note",
+    "debut": 11.69,
+    "fin": 11.85,
+    "proba": 0.45
+   },
+   {
+    "mot": "de",
+    "debut": 11.85,
+    "fin": 12.01,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 12.01,
+    "fin": 12.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "téléphone.",
+    "debut": 12.13,
+    "fin": 12.53,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 13.45,
+  "fin": 17.01,
+  "texte": "Étape 2. Vous donnez ce test à Claude, votre chef de projet.",
+  "mots": [
+   {
+    "mot": "Étape",
+    "debut": 13.45,
+    "fin": 13.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 13.93,
+    "fin": 14.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "Vous",
+    "debut": 14.33,
+    "fin": 14.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "donnez",
+    "debut": 14.47,
+    "fin": 14.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 14.77,
+    "fin": 14.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "test",
+    "debut": 14.89,
+    "fin": 15.15,
+    "proba": 0.98
+   },
+   {
+    "mot": "à",
+    "debut": 15.15,
+    "fin": 15.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude,",
+    "debut": 15.49,
+    "fin": 15.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 16.21,
+    "fin": 16.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 16.43,
+    "fin": 16.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 16.61,
+    "fin": 16.71,
+    "proba": 0.97
+   },
+   {
+    "mot": "projet.",
+    "debut": 16.71,
+    "fin": 17.01,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 17.33,
+  "fin": 19.35,
+  "texte": "Il a enfin un cahier de charge complet.",
+  "mots": [
+   {
+    "mot": "Il",
+    "debut": 17.33,
+    "fin": 17.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 17.79,
+    "fin": 17.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "enfin",
+    "debut": 17.91,
+    "fin": 18.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 18.11,
+    "fin": 18.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "cahier",
+    "debut": 18.31,
+    "fin": 18.49,
+    "proba": 0.91
+   },
+   {
+    "mot": "de",
+    "debut": 18.49,
+    "fin": 18.59,
+    "proba": 0.82
+   },
+   {
+    "mot": "charge",
+    "debut": 18.59,
+    "fin": 18.91,
+    "proba": 0.84
+   },
+   {
+    "mot": "complet.",
+    "debut": 18.91,
+    "fin": 19.35,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 20.07,
+  "fin": 25.77,
+  "texte": "Étape 3. Claude prépare les consignes et Claude Côte, votre développeur, construit l'argent étape à étape.",
+  "mots": [
+   {
+    "mot": "Étape",
+    "debut": 20.07,
+    "fin": 20.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "3.",
+    "debut": 20.53,
+    "fin": 20.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 21.03,
+    "fin": 21.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "prépare",
+    "debut": 21.47,
+    "fin": 21.97,
+    "proba": 0.99
+   },
+   {
+    "mot": "les",
+    "debut": 21.97,
+    "fin": 22.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "consignes",
+    "debut": 22.17,
+    "fin": 22.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 22.63,
+    "fin": 22.95,
+    "proba": 0.76
+   },
+   {
+    "mot": "Claude",
+    "debut": 22.95,
+    "fin": 23.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "Côte,",
+    "debut": 23.19,
+    "fin": 23.45,
+    "proba": 0.49
+   },
+   {
+    "mot": "votre",
+    "debut": 23.51,
+    "fin": 23.67,
+    "proba": 0.99
+   },
+   {
+    "mot": "développeur,",
+    "debut": 23.67,
+    "fin": 24.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "construit",
+    "debut": 24.19,
+    "fin": 24.55,
+    "proba": 0.86
+   },
+   {
+    "mot": "l",
+    "debut": 24.55,
+    "fin": 24.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "'argent",
+    "debut": 24.65,
+    "fin": 24.89,
+    "proba": 0.98
+   },
+   {
+    "mot": "étape",
+    "debut": 24.89,
+    "fin": 25.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 25.33,
+    "fin": 25.43,
+    "proba": 0.67
+   },
+   {
+    "mot": "étape.",
+    "debut": 25.43,
+    "fin": 25.77,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 26.51,
+  "fin": 30.61,
+  "texte": "Étape 4. Vous testez l'argent, vous le mettez en ligne et vous l'améliorez.",
+  "mots": [
+   {
+    "mot": "Étape",
+    "debut": 26.51,
+    "fin": 26.95,
+    "proba": 0.95
+   },
+   {
+    "mot": "4.",
+    "debut": 26.95,
+    "fin": 27.23,
+    "proba": 0.98
+   },
+   {
+    "mot": "Vous",
+    "debut": 27.45,
+    "fin": 27.79,
+    "proba": 0.99
+   },
+   {
+    "mot": "testez",
+    "debut": 27.79,
+    "fin": 28.17,
+    "proba": 0.99
+   },
+   {
+    "mot": "l",
+    "debut": 28.17,
+    "fin": 28.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "'argent,",
+    "debut": 28.27,
+    "fin": 28.49,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous",
+    "debut": 28.65,
+    "fin": 28.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 28.81,
+    "fin": 28.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "mettez",
+    "debut": 28.93,
+    "fin": 29.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 29.25,
+    "fin": 29.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "ligne",
+    "debut": 29.41,
+    "fin": 29.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 29.63,
+    "fin": 29.89,
+    "proba": 0.97
+   },
+   {
+    "mot": "vous",
+    "debut": 29.89,
+    "fin": 30.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 30.01,
+    "fin": 30.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "'améliorez.",
+    "debut": 30.11,
+    "fin": 30.61,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 31.23,
+  "fin": 32.49,
+  "texte": "Retenez le rôle de chacun.",
+  "mots": [
+   {
+    "mot": "Retenez",
+    "debut": 31.23,
+    "fin": 31.67,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 31.67,
+    "fin": 31.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "rôle",
+    "debut": 31.85,
+    "fin": 32.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 32.03,
+    "fin": 32.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "chacun.",
+    "debut": 32.17,
+    "fin": 32.49,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 32.95,
+  "fin": 34.97,
+  "texte": "Vous êtes le patron, vous décidez.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 32.95,
+    "fin": 33.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "êtes",
+    "debut": 33.35,
+    "fin": 33.63,
+    "proba": 0.73
+   },
+   {
+    "mot": "le",
+    "debut": 33.63,
+    "fin": 33.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "patron,",
+    "debut": 33.81,
+    "fin": 34.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 34.37,
+    "fin": 34.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "décidez.",
+    "debut": 34.49,
+    "fin": 34.97,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 35.37,
+  "fin": 37.81,
+  "texte": "Claude est le chef de projet, il organise et vérifie.",
+  "mots": [
+   {
+    "mot": "Claude",
+    "debut": 35.37,
+    "fin": 35.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "est",
+    "debut": 35.63,
+    "fin": 35.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 35.75,
+    "fin": 35.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 35.87,
+    "fin": 35.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 35.99,
+    "fin": 36.11,
+    "proba": 0.81
+   },
+   {
+    "mot": "projet,",
+    "debut": 36.11,
+    "fin": 36.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 36.75,
+    "fin": 36.91,
+    "proba": 0.99
+   },
+   {
+    "mot": "organise",
+    "debut": 36.91,
+    "fin": 37.27,
+    "proba": 0.8
+   },
+   {
+    "mot": "et",
+    "debut": 37.27,
+    "fin": 37.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifie.",
+    "debut": 37.49,
+    "fin": 37.81,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 38.17,
+  "fin": 40.03,
+  "texte": "Claude Côte est le développeur, il construit.",
+  "mots": [
+   {
+    "mot": "Claude",
+    "debut": 38.17,
+    "fin": 38.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "Côte",
+    "debut": 38.39,
+    "fin": 38.65,
+    "proba": 0.7
+   },
+   {
+    "mot": "est",
+    "debut": 38.65,
+    "fin": 38.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 38.79,
+    "fin": 38.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "développeur,",
+    "debut": 38.89,
+    "fin": 39.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 39.49,
+    "fin": 39.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "construit.",
+    "debut": 39.57,
+    "fin": 40.03,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 40.55,
+  "fin": 42.59,
+  "texte": "Et vous, vous faites le lien entre les deux.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 40.55,
+    "fin": 40.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous,",
+    "debut": 40.73,
+    "fin": 40.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 41.07,
+    "fin": 41.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "faites",
+    "debut": 41.25,
+    "fin": 41.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 41.47,
+    "fin": 41.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "lien",
+    "debut": 41.65,
+    "fin": 41.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "entre",
+    "debut": 41.91,
+    "fin": 42.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 42.27,
+    "fin": 42.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "deux.",
+    "debut": 42.45,
+    "fin": 42.59,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 42.95,
+  "fin": 45.35,
+  "texte": "Vous copiez, vous collez, vous testez et vous décidez.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 42.95,
+    "fin": 43.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "copiez,",
+    "debut": 43.13,
+    "fin": 43.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 43.67,
+    "fin": 43.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "collez,",
+    "debut": 43.75,
+    "fin": 44.11,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 44.25,
+    "fin": 44.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "testez",
+    "debut": 44.33,
+    "fin": 44.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 44.77,
+    "fin": 44.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 44.91,
+    "fin": 44.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "décidez.",
+    "debut": 44.99,
+    "fin": 45.35,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 46.25,
+  "fin": 49.45,
+  "texte": "Cette méthode marche parce que chacun fait ce qu'il sait faire.",
+  "mots": [
+   {
+    "mot": "Cette",
+    "debut": 46.25,
+    "fin": 46.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "méthode",
+    "debut": 46.69,
+    "fin": 47.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "marche",
+    "debut": 47.05,
+    "fin": 47.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "parce",
+    "debut": 47.49,
+    "fin": 47.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 47.81,
+    "fin": 47.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "chacun",
+    "debut": 47.97,
+    "fin": 48.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "fait",
+    "debut": 48.35,
+    "fin": 48.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 48.67,
+    "fin": 48.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 48.81,
+    "fin": 48.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 48.91,
+    "fin": 48.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "sait",
+    "debut": 48.99,
+    "fin": 49.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "faire.",
+    "debut": 49.13,
+    "fin": 49.45,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 49.73,
+  "fin": 53.73,
+  "texte": "Vous n'avez pas besoin de tout savoir, vous avez besoin de suivre les étapes d'un autre.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 49.73,
+    "fin": 50.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 50.13,
+    "fin": 50.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "'avez",
+    "debut": 50.27,
+    "fin": 50.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 50.43,
+    "fin": 50.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "besoin",
+    "debut": 50.61,
+    "fin": 50.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 50.93,
+    "fin": 51.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "tout",
+    "debut": 51.07,
+    "fin": 51.19,
+    "proba": 0.99
+   },
+   {
+    "mot": "savoir,",
+    "debut": 51.19,
+    "fin": 51.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 51.77,
+    "fin": 51.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "avez",
+    "debut": 51.87,
+    "fin": 52.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "besoin",
+    "debut": 52.07,
+    "fin": 52.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 52.41,
+    "fin": 52.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "suivre",
+    "debut": 52.53,
+    "fin": 52.77,
+    "proba": 0.99
+   },
+   {
+    "mot": "les",
+    "debut": 52.77,
+    "fin": 52.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "étapes",
+    "debut": 52.97,
+    "fin": 53.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 53.31,
+    "fin": 53.47,
+    "proba": 0.92
+   },
+   {
+    "mot": "'un",
+    "debut": 53.47,
+    "fin": 53.49,
+    "proba": 0.97
+   },
+   {
+    "mot": "autre.",
+    "debut": 53.49,
+    "fin": 53.73,
+    "proba": 0.7
+   }
+  ]
+ },
+ {
+  "debut": 53.73,
+  "fin": 57.47,
+  "texte": "Maintenant, attaquons la première étape, le bloc note.",
+  "mots": [
+   {
+    "mot": "Maintenant,",
+    "debut": 53.73,
+    "fin": 54.71,
+    "proba": 0.98
+   },
+   {
+    "mot": "attaquons",
+    "debut": 55.01,
+    "fin": 55.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "la",
+    "debut": 55.63,
+    "fin": 56.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "première",
+    "debut": 56.01,
+    "fin": 56.31,
+    "proba": 0.99
+   },
+   {
+    "mot": "étape,",
+    "debut": 56.31,
+    "fin": 56.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 56.93,
+    "fin": 57.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 57.03,
+    "fin": 57.27,
+    "proba": 0.97
+   },
+   {
+    "mot": "note.",
+    "debut": 57.27,
+    "fin": 57.47,
+    "proba": 0.19
+   }
+  ]
+ }
+]

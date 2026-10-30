@@ -1,0 +1,1563 @@
+[
+ {
+  "debut": 0.0,
+  "fin": 8.34,
+  "texte": "alors voici comment créer un dépôt github donc vous pouvez dans google taper github voilà bon",
+  "mots": [
+   {
+    "mot": "alors",
+    "debut": 0.0,
+    "fin": 0.44,
+    "proba": 0.56
+   },
+   {
+    "mot": "voici",
+    "debut": 0.44,
+    "fin": 0.94,
+    "proba": 0.98
+   },
+   {
+    "mot": "comment",
+    "debut": 0.94,
+    "fin": 1.2,
+    "proba": 0.94
+   },
+   {
+    "mot": "créer",
+    "debut": 1.2,
+    "fin": 1.54,
+    "proba": 0.96
+   },
+   {
+    "mot": "un",
+    "debut": 1.54,
+    "fin": 1.92,
+    "proba": 0.84
+   },
+   {
+    "mot": "dépôt",
+    "debut": 1.92,
+    "fin": 2.32,
+    "proba": 0.64
+   },
+   {
+    "mot": "github",
+    "debut": 2.32,
+    "fin": 2.8,
+    "proba": 0.81
+   },
+   {
+    "mot": "donc",
+    "debut": 2.8,
+    "fin": 4.04,
+    "proba": 0.42
+   },
+   {
+    "mot": "vous",
+    "debut": 4.04,
+    "fin": 4.3,
+    "proba": 0.54
+   },
+   {
+    "mot": "pouvez",
+    "debut": 4.3,
+    "fin": 4.36,
+    "proba": 0.76
+   },
+   {
+    "mot": "dans",
+    "debut": 4.36,
+    "fin": 4.48,
+    "proba": 0.58
+   },
+   {
+    "mot": "google",
+    "debut": 4.48,
+    "fin": 4.7,
+    "proba": 0.73
+   },
+   {
+    "mot": "taper",
+    "debut": 4.7,
+    "fin": 5.1,
+    "proba": 0.38
+   },
+   {
+    "mot": "github",
+    "debut": 5.1,
+    "fin": 5.74,
+    "proba": 0.95
+   },
+   {
+    "mot": "voilà",
+    "debut": 5.74,
+    "fin": 7.3,
+    "proba": 0.82
+   },
+   {
+    "mot": "bon",
+    "debut": 7.3,
+    "fin": 8.34,
+    "proba": 0.88
+   }
+  ]
+ },
+ {
+  "debut": 10.52,
+  "fin": 15.52,
+  "texte": "là c'est mon compte github ça vous voyez donc j'ai plusieurs projets ici comme ça voilà du coup",
+  "mots": [
+   {
+    "mot": "là",
+    "debut": 10.52,
+    "fin": 10.68,
+    "proba": 0.7
+   },
+   {
+    "mot": "c",
+    "debut": 10.68,
+    "fin": 10.8,
+    "proba": 0.9
+   },
+   {
+    "mot": "'est",
+    "debut": 10.8,
+    "fin": 10.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 10.8,
+    "fin": 10.88,
+    "proba": 0.98
+   },
+   {
+    "mot": "compte",
+    "debut": 10.88,
+    "fin": 11.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "github",
+    "debut": 11.1,
+    "fin": 11.46,
+    "proba": 0.99
+   },
+   {
+    "mot": "ça",
+    "debut": 11.46,
+    "fin": 11.6,
+    "proba": 0.49
+   },
+   {
+    "mot": "vous",
+    "debut": 11.6,
+    "fin": 11.8,
+    "proba": 0.96
+   },
+   {
+    "mot": "voyez",
+    "debut": 11.8,
+    "fin": 11.94,
+    "proba": 0.96
+   },
+   {
+    "mot": "donc",
+    "debut": 11.94,
+    "fin": 12.16,
+    "proba": 0.91
+   },
+   {
+    "mot": "j",
+    "debut": 12.16,
+    "fin": 12.32,
+    "proba": 0.94
+   },
+   {
+    "mot": "'ai",
+    "debut": 12.32,
+    "fin": 12.38,
+    "proba": 0.99
+   },
+   {
+    "mot": "plusieurs",
+    "debut": 12.38,
+    "fin": 12.72,
+    "proba": 0.96
+   },
+   {
+    "mot": "projets",
+    "debut": 12.72,
+    "fin": 13.2,
+    "proba": 0.94
+   },
+   {
+    "mot": "ici",
+    "debut": 13.2,
+    "fin": 13.46,
+    "proba": 0.96
+   },
+   {
+    "mot": "comme",
+    "debut": 13.46,
+    "fin": 13.66,
+    "proba": 0.99
+   },
+   {
+    "mot": "ça",
+    "debut": 13.66,
+    "fin": 13.86,
+    "proba": 0.99
+   },
+   {
+    "mot": "voilà",
+    "debut": 13.86,
+    "fin": 15.08,
+    "proba": 0.94
+   },
+   {
+    "mot": "du",
+    "debut": 15.08,
+    "fin": 15.38,
+    "proba": 0.96
+   },
+   {
+    "mot": "coup",
+    "debut": 15.38,
+    "fin": 15.52,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 15.52,
+  "fin": 28.6,
+  "texte": "bon on va se déconnecter de ça c'est déconnecté je vais créer un compte vous allez voir github",
+  "mots": [
+   {
+    "mot": "bon",
+    "debut": 15.52,
+    "fin": 15.76,
+    "proba": 0.82
+   },
+   {
+    "mot": "on",
+    "debut": 15.76,
+    "fin": 16.36,
+    "proba": 0.93
+   },
+   {
+    "mot": "va",
+    "debut": 16.36,
+    "fin": 16.44,
+    "proba": 0.95
+   },
+   {
+    "mot": "se",
+    "debut": 16.44,
+    "fin": 16.54,
+    "proba": 0.92
+   },
+   {
+    "mot": "déconnecter",
+    "debut": 16.54,
+    "fin": 16.98,
+    "proba": 0.97
+   },
+   {
+    "mot": "de",
+    "debut": 16.98,
+    "fin": 17.08,
+    "proba": 0.86
+   },
+   {
+    "mot": "ça",
+    "debut": 17.08,
+    "fin": 17.32,
+    "proba": 0.95
+   },
+   {
+    "mot": "c",
+    "debut": 17.32,
+    "fin": 17.9,
+    "proba": 0.42
+   },
+   {
+    "mot": "'est",
+    "debut": 17.9,
+    "fin": 17.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "déconnecté",
+    "debut": 17.96,
+    "fin": 18.38,
+    "proba": 0.83
+   },
+   {
+    "mot": "je",
+    "debut": 18.38,
+    "fin": 18.48,
+    "proba": 0.91
+   },
+   {
+    "mot": "vais",
+    "debut": 18.48,
+    "fin": 18.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "créer",
+    "debut": 18.58,
+    "fin": 18.74,
+    "proba": 0.96
+   },
+   {
+    "mot": "un",
+    "debut": 18.74,
+    "fin": 18.88,
+    "proba": 0.98
+   },
+   {
+    "mot": "compte",
+    "debut": 18.88,
+    "fin": 19.02,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 19.02,
+    "fin": 19.2,
+    "proba": 0.11
+   },
+   {
+    "mot": "allez",
+    "debut": 19.2,
+    "fin": 19.46,
+    "proba": 0.92
+   },
+   {
+    "mot": "voir",
+    "debut": 19.46,
+    "fin": 19.8,
+    "proba": 0.9
+   },
+   {
+    "mot": "github",
+    "debut": 27.48,
+    "fin": 28.6,
+    "proba": 0.93
+   }
+  ]
+ },
+ {
+  "debut": 28.6,
+  "fin": 114.3,
+  "texte": "donc on va s'inscrire inscrivez vous bon c'est là c'est parce que j'ai dit à mon compte github",
+  "mots": [
+   {
+    "mot": "donc",
+    "debut": 28.6,
+    "fin": 29.18,
+    "proba": 0.72
+   },
+   {
+    "mot": "on",
+    "debut": 33.21,
+    "fin": 33.33,
+    "proba": 0.97
+   },
+   {
+    "mot": "va",
+    "debut": 33.33,
+    "fin": 33.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "s",
+    "debut": 33.45,
+    "fin": 33.59,
+    "proba": 0.99
+   },
+   {
+    "mot": "'inscrire",
+    "debut": 33.59,
+    "fin": 34.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "inscrivez",
+    "debut": 48.06,
+    "fin": 49.1,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous",
+    "debut": 49.1,
+    "fin": 49.26,
+    "proba": 0.59
+   },
+   {
+    "mot": "bon",
+    "debut": 49.26,
+    "fin": 50.24,
+    "proba": 0.93
+   },
+   {
+    "mot": "c",
+    "debut": 112.44,
+    "fin": 112.7,
+    "proba": 0.27
+   },
+   {
+    "mot": "'est",
+    "debut": 112.7,
+    "fin": 112.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "là",
+    "debut": 112.72,
+    "fin": 112.8,
+    "proba": 0.93
+   },
+   {
+    "mot": "c",
+    "debut": 112.8,
+    "fin": 112.92,
+    "proba": 0.91
+   },
+   {
+    "mot": "'est",
+    "debut": 112.92,
+    "fin": 112.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "parce",
+    "debut": 112.96,
+    "fin": 113.08,
+    "proba": 0.97
+   },
+   {
+    "mot": "que",
+    "debut": 113.08,
+    "fin": 113.24,
+    "proba": 0.94
+   },
+   {
+    "mot": "j",
+    "debut": 113.24,
+    "fin": 113.46,
+    "proba": 0.83
+   },
+   {
+    "mot": "'ai",
+    "debut": 113.46,
+    "fin": 113.52,
+    "proba": 0.99
+   },
+   {
+    "mot": "dit",
+    "debut": 113.52,
+    "fin": 113.6,
+    "proba": 0.81
+   },
+   {
+    "mot": "à",
+    "debut": 113.6,
+    "fin": 113.72,
+    "proba": 0.62
+   },
+   {
+    "mot": "mon",
+    "debut": 113.72,
+    "fin": 113.76,
+    "proba": 0.97
+   },
+   {
+    "mot": "compte",
+    "debut": 113.76,
+    "fin": 114.06,
+    "proba": 0.98
+   },
+   {
+    "mot": "github",
+    "debut": 114.06,
+    "fin": 114.3,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 114.3,
+  "fin": 126.05,
+  "texte": "c'est vrai qu'ils refusent en fait ok donc j'ai mis qu'on était ici voilà continue avec google alors",
+  "mots": [
+   {
+    "mot": "c",
+    "debut": 114.3,
+    "fin": 114.5,
+    "proba": 0.17
+   },
+   {
+    "mot": "'est",
+    "debut": 114.5,
+    "fin": 114.86,
+    "proba": 0.96
+   },
+   {
+    "mot": "vrai",
+    "debut": 114.86,
+    "fin": 115.12,
+    "proba": 0.16
+   },
+   {
+    "mot": "qu",
+    "debut": 115.12,
+    "fin": 115.22,
+    "proba": 0.62
+   },
+   {
+    "mot": "'ils",
+    "debut": 115.22,
+    "fin": 115.3,
+    "proba": 0.67
+   },
+   {
+    "mot": "refusent",
+    "debut": 115.3,
+    "fin": 115.58,
+    "proba": 0.7
+   },
+   {
+    "mot": "en",
+    "debut": 115.58,
+    "fin": 115.76,
+    "proba": 0.92
+   },
+   {
+    "mot": "fait",
+    "debut": 115.76,
+    "fin": 115.92,
+    "proba": 0.9
+   },
+   {
+    "mot": "ok",
+    "debut": 115.92,
+    "fin": 116.94,
+    "proba": 0.4
+   },
+   {
+    "mot": "donc",
+    "debut": 116.94,
+    "fin": 117.28,
+    "proba": 0.54
+   },
+   {
+    "mot": "j",
+    "debut": 117.28,
+    "fin": 117.44,
+    "proba": 0.48
+   },
+   {
+    "mot": "'ai",
+    "debut": 117.44,
+    "fin": 117.5,
+    "proba": 0.7
+   },
+   {
+    "mot": "mis",
+    "debut": 117.5,
+    "fin": 117.56,
+    "proba": 0.19
+   },
+   {
+    "mot": "qu",
+    "debut": 117.56,
+    "fin": 117.7,
+    "proba": 0.46
+   },
+   {
+    "mot": "'on",
+    "debut": 117.7,
+    "fin": 117.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "était",
+    "debut": 117.74,
+    "fin": 117.92,
+    "proba": 0.73
+   },
+   {
+    "mot": "ici",
+    "debut": 119.81,
+    "fin": 121.05,
+    "proba": 0.86
+   },
+   {
+    "mot": "voilà",
+    "debut": 121.05,
+    "fin": 122.31,
+    "proba": 0.95
+   },
+   {
+    "mot": "continue",
+    "debut": 122.31,
+    "fin": 123.35,
+    "proba": 0.28
+   },
+   {
+    "mot": "avec",
+    "debut": 123.35,
+    "fin": 123.65,
+    "proba": 0.37
+   },
+   {
+    "mot": "google",
+    "debut": 123.65,
+    "fin": 123.91,
+    "proba": 0.54
+   },
+   {
+    "mot": "alors",
+    "debut": 123.91,
+    "fin": 126.05,
+    "proba": 0.79
+   }
+  ]
+ },
+ {
+  "debut": 126.05,
+  "fin": 144.76,
+  "texte": "j'ai choisi mon compte maintenant voilà comment créer un dépôt du temps donc vous allez voyer un",
+  "mots": [
+   {
+    "mot": "j",
+    "debut": 126.05,
+    "fin": 126.21,
+    "proba": 0.77
+   },
+   {
+    "mot": "'ai",
+    "debut": 126.21,
+    "fin": 126.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "choisi",
+    "debut": 126.25,
+    "fin": 126.67,
+    "proba": 0.94
+   },
+   {
+    "mot": "mon",
+    "debut": 126.67,
+    "fin": 127.73,
+    "proba": 0.41
+   },
+   {
+    "mot": "compte",
+    "debut": 127.73,
+    "fin": 128.05,
+    "proba": 0.96
+   },
+   {
+    "mot": "maintenant",
+    "debut": 141.46,
+    "fin": 142.58,
+    "proba": 0.99
+   },
+   {
+    "mot": "voilà",
+    "debut": 142.58,
+    "fin": 142.82,
+    "proba": 0.91
+   },
+   {
+    "mot": "comment",
+    "debut": 142.82,
+    "fin": 143.0,
+    "proba": 0.92
+   },
+   {
+    "mot": "créer",
+    "debut": 143.0,
+    "fin": 143.28,
+    "proba": 0.77
+   },
+   {
+    "mot": "un",
+    "debut": 143.28,
+    "fin": 143.4,
+    "proba": 0.71
+   },
+   {
+    "mot": "dépôt",
+    "debut": 143.4,
+    "fin": 143.58,
+    "proba": 0.84
+   },
+   {
+    "mot": "du",
+    "debut": 143.58,
+    "fin": 143.74,
+    "proba": 0.31
+   },
+   {
+    "mot": "temps",
+    "debut": 143.74,
+    "fin": 143.92,
+    "proba": 0.2
+   },
+   {
+    "mot": "donc",
+    "debut": 143.92,
+    "fin": 144.18,
+    "proba": 0.38
+   },
+   {
+    "mot": "vous",
+    "debut": 144.18,
+    "fin": 144.3,
+    "proba": 0.84
+   },
+   {
+    "mot": "allez",
+    "debut": 144.3,
+    "fin": 144.38,
+    "proba": 0.85
+   },
+   {
+    "mot": "voyer",
+    "debut": 144.38,
+    "fin": 144.62,
+    "proba": 0.33
+   },
+   {
+    "mot": "un",
+    "debut": 144.62,
+    "fin": 144.76,
+    "proba": 0.83
+   }
+  ]
+ },
+ {
+  "debut": 144.76,
+  "fin": 153.88,
+  "texte": "plus ici et vous cliquez sur un nouveau dépôt voilà mais non ici ou pas de l'autre pour le dépôt ici",
+  "mots": [
+   {
+    "mot": "plus",
+    "debut": 144.76,
+    "fin": 144.9,
+    "proba": 0.69
+   },
+   {
+    "mot": "ici",
+    "debut": 144.9,
+    "fin": 145.22,
+    "proba": 0.97
+   },
+   {
+    "mot": "et",
+    "debut": 145.22,
+    "fin": 146.02,
+    "proba": 0.65
+   },
+   {
+    "mot": "vous",
+    "debut": 146.02,
+    "fin": 146.18,
+    "proba": 0.44
+   },
+   {
+    "mot": "cliquez",
+    "debut": 146.18,
+    "fin": 146.38,
+    "proba": 0.92
+   },
+   {
+    "mot": "sur",
+    "debut": 146.38,
+    "fin": 146.58,
+    "proba": 0.99
+   },
+   {
+    "mot": "un",
+    "debut": 146.58,
+    "fin": 146.72,
+    "proba": 0.37
+   },
+   {
+    "mot": "nouveau",
+    "debut": 146.72,
+    "fin": 147.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "dépôt",
+    "debut": 147.08,
+    "fin": 147.52,
+    "proba": 0.97
+   },
+   {
+    "mot": "voilà",
+    "debut": 147.52,
+    "fin": 148.64,
+    "proba": 0.98
+   },
+   {
+    "mot": "mais",
+    "debut": 148.64,
+    "fin": 150.72,
+    "proba": 0.49
+   },
+   {
+    "mot": "non",
+    "debut": 150.72,
+    "fin": 150.9,
+    "proba": 0.6
+   },
+   {
+    "mot": "ici",
+    "debut": 150.9,
+    "fin": 151.5,
+    "proba": 0.27
+   },
+   {
+    "mot": "ou",
+    "debut": 151.5,
+    "fin": 151.68,
+    "proba": 0.45
+   },
+   {
+    "mot": "pas",
+    "debut": 151.68,
+    "fin": 151.86,
+    "proba": 0.92
+   },
+   {
+    "mot": "de",
+    "debut": 151.86,
+    "fin": 152.22,
+    "proba": 0.22
+   },
+   {
+    "mot": "l",
+    "debut": 152.22,
+    "fin": 152.36,
+    "proba": 0.16
+   },
+   {
+    "mot": "'autre",
+    "debut": 152.36,
+    "fin": 152.94,
+    "proba": 0.75
+   },
+   {
+    "mot": "pour",
+    "debut": 152.94,
+    "fin": 153.26,
+    "proba": 0.54
+   },
+   {
+    "mot": "le",
+    "debut": 153.26,
+    "fin": 153.44,
+    "proba": 0.36
+   },
+   {
+    "mot": "dépôt",
+    "debut": 153.44,
+    "fin": 153.68,
+    "proba": 0.71
+   },
+   {
+    "mot": "ici",
+    "debut": 153.68,
+    "fin": 153.88,
+    "proba": 0.78
+   }
+  ]
+ },
+ {
+  "debut": 153.88,
+  "fin": 166.94,
+  "texte": "par exemple si j'ai dit pètre voilà vidéo talk amy talk amy talk amy par exemple ici vous voyez non",
+  "mots": [
+   {
+    "mot": "par",
+    "debut": 153.88,
+    "fin": 154.38,
+    "proba": 0.48
+   },
+   {
+    "mot": "exemple",
+    "debut": 154.38,
+    "fin": 154.5,
+    "proba": 0.57
+   },
+   {
+    "mot": "si",
+    "debut": 154.5,
+    "fin": 154.64,
+    "proba": 0.32
+   },
+   {
+    "mot": "j",
+    "debut": 154.64,
+    "fin": 154.78,
+    "proba": 0.31
+   },
+   {
+    "mot": "'ai",
+    "debut": 154.78,
+    "fin": 154.78,
+    "proba": 0.81
+   },
+   {
+    "mot": "dit",
+    "debut": 154.78,
+    "fin": 154.88,
+    "proba": 0.9
+   },
+   {
+    "mot": "pètre",
+    "debut": 154.88,
+    "fin": 155.3,
+    "proba": 0.47
+   },
+   {
+    "mot": "voilà",
+    "debut": 155.3,
+    "fin": 155.64,
+    "proba": 0.23
+   },
+   {
+    "mot": "vidéo",
+    "debut": 155.64,
+    "fin": 156.56,
+    "proba": 0.79
+   },
+   {
+    "mot": "talk",
+    "debut": 156.56,
+    "fin": 158.0,
+    "proba": 0.52
+   },
+   {
+    "mot": "amy",
+    "debut": 158.0,
+    "fin": 160.92,
+    "proba": 0.43
+   },
+   {
+    "mot": "talk",
+    "debut": 160.92,
+    "fin": 161.82,
+    "proba": 0.51
+   },
+   {
+    "mot": "amy",
+    "debut": 161.82,
+    "fin": 163.24,
+    "proba": 0.81
+   },
+   {
+    "mot": "talk",
+    "debut": 163.24,
+    "fin": 164.42,
+    "proba": 0.31
+   },
+   {
+    "mot": "amy",
+    "debut": 164.42,
+    "fin": 164.84,
+    "proba": 0.85
+   },
+   {
+    "mot": "par",
+    "debut": 164.84,
+    "fin": 165.02,
+    "proba": 0.93
+   },
+   {
+    "mot": "exemple",
+    "debut": 165.02,
+    "fin": 165.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "ici",
+    "debut": 165.32,
+    "fin": 165.7,
+    "proba": 0.97
+   },
+   {
+    "mot": "vous",
+    "debut": 165.7,
+    "fin": 166.62,
+    "proba": 0.16
+   },
+   {
+    "mot": "voyez",
+    "debut": 166.62,
+    "fin": 166.8,
+    "proba": 0.24
+   },
+   {
+    "mot": "non",
+    "debut": 166.8,
+    "fin": 166.94,
+    "proba": 0.66
+   }
+  ]
+ },
+ {
+  "debut": 166.94,
+  "fin": 176.82,
+  "texte": "voilà il veut y arriver ici création automatisation des vidéos mais bon cela est automatisation des",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 166.94,
+    "fin": 167.4,
+    "proba": 0.92
+   },
+   {
+    "mot": "il",
+    "debut": 167.4,
+    "fin": 168.34,
+    "proba": 0.52
+   },
+   {
+    "mot": "veut",
+    "debut": 168.34,
+    "fin": 168.48,
+    "proba": 0.36
+   },
+   {
+    "mot": "y",
+    "debut": 168.48,
+    "fin": 168.62,
+    "proba": 0.19
+   },
+   {
+    "mot": "arriver",
+    "debut": 168.62,
+    "fin": 169.04,
+    "proba": 0.34
+   },
+   {
+    "mot": "ici",
+    "debut": 169.04,
+    "fin": 169.5,
+    "proba": 0.83
+   },
+   {
+    "mot": "création",
+    "debut": 169.5,
+    "fin": 171.08,
+    "proba": 0.96
+   },
+   {
+    "mot": "automatisation",
+    "debut": 171.08,
+    "fin": 172.0,
+    "proba": 0.76
+   },
+   {
+    "mot": "des",
+    "debut": 172.0,
+    "fin": 172.2,
+    "proba": 0.67
+   },
+   {
+    "mot": "vidéos",
+    "debut": 172.2,
+    "fin": 172.38,
+    "proba": 0.64
+   },
+   {
+    "mot": "mais",
+    "debut": 172.38,
+    "fin": 172.6,
+    "proba": 0.86
+   },
+   {
+    "mot": "bon",
+    "debut": 172.6,
+    "fin": 172.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "cela",
+    "debut": 172.84,
+    "fin": 173.5,
+    "proba": 0.72
+   },
+   {
+    "mot": "est",
+    "debut": 173.5,
+    "fin": 174.42,
+    "proba": 0.48
+   },
+   {
+    "mot": "automatisation",
+    "debut": 174.42,
+    "fin": 176.66,
+    "proba": 0.83
+   },
+   {
+    "mot": "des",
+    "debut": 176.66,
+    "fin": 176.82,
+    "proba": 0.93
+   }
+  ]
+ },
+ {
+  "debut": 176.82,
+  "fin": 182.72,
+  "texte": "vidéos voilà clôt de clôt de notre chef de projet de ligne de l'industrie jean pour cela ici mais",
+  "mots": [
+   {
+    "mot": "vidéos",
+    "debut": 176.82,
+    "fin": 177.12,
+    "proba": 0.08
+   },
+   {
+    "mot": "voilà",
+    "debut": 177.12,
+    "fin": 178.42,
+    "proba": 0.9
+   },
+   {
+    "mot": "clôt",
+    "debut": 178.42,
+    "fin": 179.9,
+    "proba": 0.29
+   },
+   {
+    "mot": "de",
+    "debut": 179.9,
+    "fin": 180.06,
+    "proba": 0.67
+   },
+   {
+    "mot": "clôt",
+    "debut": 180.06,
+    "fin": 180.34,
+    "proba": 0.68
+   },
+   {
+    "mot": "de",
+    "debut": 180.34,
+    "fin": 180.46,
+    "proba": 0.79
+   },
+   {
+    "mot": "notre",
+    "debut": 180.46,
+    "fin": 180.7,
+    "proba": 0.92
+   },
+   {
+    "mot": "chef",
+    "debut": 180.7,
+    "fin": 180.86,
+    "proba": 0.2
+   },
+   {
+    "mot": "de",
+    "debut": 180.86,
+    "fin": 180.96,
+    "proba": 0.76
+   },
+   {
+    "mot": "projet",
+    "debut": 180.96,
+    "fin": 181.12,
+    "proba": 0.27
+   },
+   {
+    "mot": "de",
+    "debut": 181.12,
+    "fin": 181.34,
+    "proba": 0.14
+   },
+   {
+    "mot": "ligne",
+    "debut": 181.34,
+    "fin": 181.5,
+    "proba": 0.47
+   },
+   {
+    "mot": "de",
+    "debut": 181.5,
+    "fin": 181.6,
+    "proba": 0.23
+   },
+   {
+    "mot": "l",
+    "debut": 181.6,
+    "fin": 181.74,
+    "proba": 0.28
+   },
+   {
+    "mot": "'industrie",
+    "debut": 181.74,
+    "fin": 181.74,
+    "proba": 0.66
+   },
+   {
+    "mot": "jean",
+    "debut": 181.74,
+    "fin": 181.92,
+    "proba": 0.26
+   },
+   {
+    "mot": "pour",
+    "debut": 181.92,
+    "fin": 181.98,
+    "proba": 0.75
+   },
+   {
+    "mot": "cela",
+    "debut": 181.98,
+    "fin": 182.14,
+    "proba": 0.11
+   },
+   {
+    "mot": "ici",
+    "debut": 182.14,
+    "fin": 182.54,
+    "proba": 0.73
+   },
+   {
+    "mot": "mais",
+    "debut": 182.54,
+    "fin": 182.72,
+    "proba": 0.39
+   }
+  ]
+ },
+ {
+  "debut": 182.72,
+  "fin": 187.18,
+  "texte": "il faut mettre ça supprimer voilà il faut mettre ça supprimer voilà vous voyez le cadenas voilà",
+  "mots": [
+   {
+    "mot": "il",
+    "debut": 182.72,
+    "fin": 182.82,
+    "proba": 0.16
+   },
+   {
+    "mot": "faut",
+    "debut": 182.82,
+    "fin": 182.92,
+    "proba": 0.88
+   },
+   {
+    "mot": "mettre",
+    "debut": 182.92,
+    "fin": 183.08,
+    "proba": 0.97
+   },
+   {
+    "mot": "ça",
+    "debut": 183.08,
+    "fin": 183.22,
+    "proba": 0.77
+   },
+   {
+    "mot": "supprimer",
+    "debut": 183.22,
+    "fin": 183.72,
+    "proba": 0.67
+   },
+   {
+    "mot": "voilà",
+    "debut": 183.72,
+    "fin": 184.34,
+    "proba": 0.92
+   },
+   {
+    "mot": "il",
+    "debut": 184.34,
+    "fin": 184.5,
+    "proba": 0.98
+   },
+   {
+    "mot": "faut",
+    "debut": 184.5,
+    "fin": 184.58,
+    "proba": 0.99
+   },
+   {
+    "mot": "mettre",
+    "debut": 184.58,
+    "fin": 184.72,
+    "proba": 0.98
+   },
+   {
+    "mot": "ça",
+    "debut": 184.72,
+    "fin": 184.86,
+    "proba": 0.82
+   },
+   {
+    "mot": "supprimer",
+    "debut": 184.86,
+    "fin": 185.42,
+    "proba": 0.95
+   },
+   {
+    "mot": "voilà",
+    "debut": 185.42,
+    "fin": 185.98,
+    "proba": 0.94
+   },
+   {
+    "mot": "vous",
+    "debut": 185.98,
+    "fin": 186.24,
+    "proba": 0.48
+   },
+   {
+    "mot": "voyez",
+    "debut": 186.24,
+    "fin": 186.36,
+    "proba": 0.77
+   },
+   {
+    "mot": "le",
+    "debut": 186.36,
+    "fin": 186.48,
+    "proba": 0.94
+   },
+   {
+    "mot": "cadenas",
+    "debut": 186.48,
+    "fin": 186.88,
+    "proba": 0.47
+   },
+   {
+    "mot": "voilà",
+    "debut": 186.88,
+    "fin": 187.18,
+    "proba": 0.7
+   }
+  ]
+ },
+ {
+  "debut": 187.18,
+  "fin": 192.72,
+  "texte": "maintenant cadena va s'est pris supprimer actuellement donc maintenant c'est bien on coche ici et",
+  "mots": [
+   {
+    "mot": "maintenant",
+    "debut": 187.18,
+    "fin": 187.4,
+    "proba": 0.59
+   },
+   {
+    "mot": "cadena",
+    "debut": 187.4,
+    "fin": 187.78,
+    "proba": 0.36
+   },
+   {
+    "mot": "va",
+    "debut": 187.78,
+    "fin": 187.88,
+    "proba": 0.48
+   },
+   {
+    "mot": "s",
+    "debut": 187.88,
+    "fin": 188.0,
+    "proba": 0.23
+   },
+   {
+    "mot": "'est",
+    "debut": 188.0,
+    "fin": 188.06,
+    "proba": 0.73
+   },
+   {
+    "mot": "pris",
+    "debut": 188.06,
+    "fin": 188.2,
+    "proba": 0.69
+   },
+   {
+    "mot": "supprimer",
+    "debut": 188.2,
+    "fin": 188.74,
+    "proba": 0.46
+   },
+   {
+    "mot": "actuellement",
+    "debut": 188.74,
+    "fin": 189.22,
+    "proba": 0.75
+   },
+   {
+    "mot": "donc",
+    "debut": 189.22,
+    "fin": 190.02,
+    "proba": 0.91
+   },
+   {
+    "mot": "maintenant",
+    "debut": 190.02,
+    "fin": 190.36,
+    "proba": 0.97
+   },
+   {
+    "mot": "c",
+    "debut": 190.36,
+    "fin": 190.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 190.8,
+    "fin": 190.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "bien",
+    "debut": 190.86,
+    "fin": 191.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 191.06,
+    "fin": 191.6,
+    "proba": 0.44
+   },
+   {
+    "mot": "coche",
+    "debut": 191.6,
+    "fin": 191.96,
+    "proba": 0.76
+   },
+   {
+    "mot": "ici",
+    "debut": 191.96,
+    "fin": 192.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "et",
+    "debut": 192.32,
+    "fin": 192.72,
+    "proba": 0.92
+   }
+  ]
+ },
+ {
+  "debut": 192.72,
+  "fin": 204.75,
+  "texte": "puis voilà on crée le dépôt le valet de vous voyez vous voyez voilà ok",
+  "mots": [
+   {
+    "mot": "puis",
+    "debut": 192.72,
+    "fin": 192.84,
+    "proba": 0.82
+   },
+   {
+    "mot": "voilà",
+    "debut": 192.84,
+    "fin": 193.06,
+    "proba": 0.94
+   },
+   {
+    "mot": "on",
+    "debut": 193.06,
+    "fin": 193.78,
+    "proba": 0.89
+   },
+   {
+    "mot": "crée",
+    "debut": 193.78,
+    "fin": 194.12,
+    "proba": 0.94
+   },
+   {
+    "mot": "le",
+    "debut": 194.12,
+    "fin": 194.24,
+    "proba": 0.86
+   },
+   {
+    "mot": "dépôt",
+    "debut": 194.24,
+    "fin": 195.18,
+    "proba": 0.95
+   },
+   {
+    "mot": "le",
+    "debut": 200.91,
+    "fin": 201.21,
+    "proba": 0.36
+   },
+   {
+    "mot": "valet",
+    "debut": 201.21,
+    "fin": 201.45,
+    "proba": 0.59
+   },
+   {
+    "mot": "de",
+    "debut": 201.45,
+    "fin": 201.57,
+    "proba": 0.37
+   },
+   {
+    "mot": "vous",
+    "debut": 201.57,
+    "fin": 201.69,
+    "proba": 0.11
+   },
+   {
+    "mot": "voyez",
+    "debut": 201.69,
+    "fin": 201.97,
+    "proba": 0.57
+   },
+   {
+    "mot": "vous",
+    "debut": 201.97,
+    "fin": 202.15,
+    "proba": 0.18
+   },
+   {
+    "mot": "voyez",
+    "debut": 202.15,
+    "fin": 202.39,
+    "proba": 0.97
+   },
+   {
+    "mot": "voilà",
+    "debut": 202.39,
+    "fin": 203.33,
+    "proba": 0.92
+   },
+   {
+    "mot": "ok",
+    "debut": 203.33,
+    "fin": 204.75,
+    "proba": 0.97
+   }
+  ]
+ }
+]

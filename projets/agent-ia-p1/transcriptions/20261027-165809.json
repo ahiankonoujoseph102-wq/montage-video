@@ -1,0 +1,7281 @@
+[
+ {
+  "debut": 0.91,
+  "fin": 32.64,
+  "texte": "Donc voilà, donc je donne le nom du dépôt, la description, ici, comme j'ai dit, il faut que ça soit toujours sur privé, privé, voilà, et si on clique sur ordre ici, voilà, et ensuite on va cliquer sur créer le dépôt, on clique sur créer un dépôt, voilà, le dépôt va être créé comme ça, la création du dépôt là se fait comme ça, voilà, le dépôt est créé comme ça, vous voyez non, voilà, c'est créé, bon, imaginez que l'autre côté ne vous donne pas le lien pour venir directement sur GitHub alors, dans ce cas, comme je vous ai dit, vous venez ici sur votre compte GitHub, voilà, vous voyez qu'il y a plus",
+  "mots": [
+   {
+    "mot": "Donc",
+    "debut": 0.91,
+    "fin": 1.41,
+    "proba": 0.32
+   },
+   {
+    "mot": "voilà,",
+    "debut": 1.41,
+    "fin": 1.67,
+    "proba": 0.75
+   },
+   {
+    "mot": "donc",
+    "debut": 1.91,
+    "fin": 1.97,
+    "proba": 0.43
+   },
+   {
+    "mot": "je",
+    "debut": 1.97,
+    "fin": 2.15,
+    "proba": 0.73
+   },
+   {
+    "mot": "donne",
+    "debut": 2.15,
+    "fin": 2.21,
+    "proba": 0.96
+   },
+   {
+    "mot": "le",
+    "debut": 2.21,
+    "fin": 2.57,
+    "proba": 0.99
+   },
+   {
+    "mot": "nom",
+    "debut": 2.57,
+    "fin": 2.67,
+    "proba": 0.98
+   },
+   {
+    "mot": "du",
+    "debut": 2.67,
+    "fin": 2.77,
+    "proba": 0.99
+   },
+   {
+    "mot": "dépôt,",
+    "debut": 2.77,
+    "fin": 3.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 3.63,
+    "fin": 3.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "description,",
+    "debut": 3.67,
+    "fin": 3.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "ici,",
+    "debut": 4.33,
+    "fin": 4.59,
+    "proba": 0.99
+   },
+   {
+    "mot": "comme",
+    "debut": 4.75,
+    "fin": 5.01,
+    "proba": 0.95
+   },
+   {
+    "mot": "j",
+    "debut": 5.01,
+    "fin": 5.13,
+    "proba": 0.68
+   },
+   {
+    "mot": "'ai",
+    "debut": 5.13,
+    "fin": 5.17,
+    "proba": 0.99
+   },
+   {
+    "mot": "dit,",
+    "debut": 5.17,
+    "fin": 5.33,
+    "proba": 0.98
+   },
+   {
+    "mot": "il",
+    "debut": 5.67,
+    "fin": 5.75,
+    "proba": 0.94
+   },
+   {
+    "mot": "faut",
+    "debut": 5.75,
+    "fin": 5.79,
+    "proba": 0.96
+   },
+   {
+    "mot": "que",
+    "debut": 5.79,
+    "fin": 5.89,
+    "proba": 0.91
+   },
+   {
+    "mot": "ça",
+    "debut": 5.89,
+    "fin": 5.89,
+    "proba": 0.51
+   },
+   {
+    "mot": "soit",
+    "debut": 5.89,
+    "fin": 5.97,
+    "proba": 0.84
+   },
+   {
+    "mot": "toujours",
+    "debut": 5.97,
+    "fin": 6.17,
+    "proba": 0.98
+   },
+   {
+    "mot": "sur",
+    "debut": 6.17,
+    "fin": 6.35,
+    "proba": 0.78
+   },
+   {
+    "mot": "privé,",
+    "debut": 6.35,
+    "fin": 6.77,
+    "proba": 0.68
+   },
+   {
+    "mot": "privé,",
+    "debut": 6.91,
+    "fin": 7.31,
+    "proba": 0.98
+   },
+   {
+    "mot": "voilà,",
+    "debut": 7.37,
+    "fin": 7.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 7.77,
+    "fin": 8.15,
+    "proba": 0.71
+   },
+   {
+    "mot": "si",
+    "debut": 8.15,
+    "fin": 8.23,
+    "proba": 0.96
+   },
+   {
+    "mot": "on",
+    "debut": 8.23,
+    "fin": 8.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "clique",
+    "debut": 8.31,
+    "fin": 8.41,
+    "proba": 0.96
+   },
+   {
+    "mot": "sur",
+    "debut": 8.41,
+    "fin": 8.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "ordre",
+    "debut": 8.63,
+    "fin": 8.81,
+    "proba": 0.57
+   },
+   {
+    "mot": "ici,",
+    "debut": 8.81,
+    "fin": 9.09,
+    "proba": 0.94
+   },
+   {
+    "mot": "voilà,",
+    "debut": 9.27,
+    "fin": 9.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 9.69,
+    "fin": 10.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "ensuite",
+    "debut": 10.07,
+    "fin": 10.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 10.49,
+    "fin": 10.61,
+    "proba": 0.92
+   },
+   {
+    "mot": "va",
+    "debut": 10.61,
+    "fin": 10.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "cliquer",
+    "debut": 10.69,
+    "fin": 10.85,
+    "proba": 0.88
+   },
+   {
+    "mot": "sur",
+    "debut": 10.85,
+    "fin": 10.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "créer",
+    "debut": 10.99,
+    "fin": 11.21,
+    "proba": 0.92
+   },
+   {
+    "mot": "le",
+    "debut": 11.21,
+    "fin": 11.31,
+    "proba": 0.99
+   },
+   {
+    "mot": "dépôt,",
+    "debut": 11.31,
+    "fin": 11.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 12.05,
+    "fin": 12.13,
+    "proba": 0.93
+   },
+   {
+    "mot": "clique",
+    "debut": 12.13,
+    "fin": 12.21,
+    "proba": 0.96
+   },
+   {
+    "mot": "sur",
+    "debut": 12.21,
+    "fin": 12.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "créer",
+    "debut": 12.33,
+    "fin": 12.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "un",
+    "debut": 12.63,
+    "fin": 12.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "dépôt,",
+    "debut": 12.85,
+    "fin": 13.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 13.85,
+    "fin": 14.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 14.75,
+    "fin": 14.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "dépôt",
+    "debut": 14.81,
+    "fin": 15.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "va",
+    "debut": 15.23,
+    "fin": 15.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "être",
+    "debut": 15.43,
+    "fin": 15.57,
+    "proba": 0.99
+   },
+   {
+    "mot": "créé",
+    "debut": 15.57,
+    "fin": 15.83,
+    "proba": 0.99
+   },
+   {
+    "mot": "comme",
+    "debut": 15.83,
+    "fin": 15.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "ça,",
+    "debut": 15.99,
+    "fin": 16.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 18.72,
+    "fin": 18.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "création",
+    "debut": 18.9,
+    "fin": 19.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "du",
+    "debut": 19.3,
+    "fin": 19.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "dépôt",
+    "debut": 19.4,
+    "fin": 19.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "là",
+    "debut": 19.62,
+    "fin": 19.68,
+    "proba": 0.67
+   },
+   {
+    "mot": "se",
+    "debut": 19.68,
+    "fin": 19.78,
+    "proba": 0.84
+   },
+   {
+    "mot": "fait",
+    "debut": 19.78,
+    "fin": 19.88,
+    "proba": 0.97
+   },
+   {
+    "mot": "comme",
+    "debut": 19.88,
+    "fin": 20.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "ça,",
+    "debut": 20.04,
+    "fin": 20.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 21.36,
+    "fin": 21.54,
+    "proba": 0.72
+   },
+   {
+    "mot": "le",
+    "debut": 21.7,
+    "fin": 21.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "dépôt",
+    "debut": 21.96,
+    "fin": 22.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "est",
+    "debut": 22.2,
+    "fin": 22.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "créé",
+    "debut": 22.28,
+    "fin": 22.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "comme",
+    "debut": 22.46,
+    "fin": 22.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "ça,",
+    "debut": 22.6,
+    "fin": 22.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 22.86,
+    "fin": 22.94,
+    "proba": 0.99
+   },
+   {
+    "mot": "voyez",
+    "debut": 22.94,
+    "fin": 23.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "non,",
+    "debut": 23.06,
+    "fin": 23.2,
+    "proba": 0.58
+   },
+   {
+    "mot": "voilà,",
+    "debut": 23.32,
+    "fin": 23.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 24.16,
+    "fin": 24.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 24.3,
+    "fin": 24.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "créé,",
+    "debut": 24.34,
+    "fin": 24.66,
+    "proba": 0.98
+   },
+   {
+    "mot": "bon,",
+    "debut": 25.26,
+    "fin": 25.48,
+    "proba": 0.98
+   },
+   {
+    "mot": "imaginez",
+    "debut": 25.54,
+    "fin": 25.92,
+    "proba": 0.98
+   },
+   {
+    "mot": "que",
+    "debut": 25.92,
+    "fin": 26.0,
+    "proba": 0.94
+   },
+   {
+    "mot": "l",
+    "debut": 26.0,
+    "fin": 26.16,
+    "proba": 0.64
+   },
+   {
+    "mot": "'autre",
+    "debut": 26.16,
+    "fin": 26.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "côté",
+    "debut": 26.24,
+    "fin": 26.38,
+    "proba": 0.63
+   },
+   {
+    "mot": "ne",
+    "debut": 26.38,
+    "fin": 26.52,
+    "proba": 0.68
+   },
+   {
+    "mot": "vous",
+    "debut": 26.52,
+    "fin": 26.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "donne",
+    "debut": 26.62,
+    "fin": 26.72,
+    "proba": 0.86
+   },
+   {
+    "mot": "pas",
+    "debut": 26.72,
+    "fin": 26.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 26.86,
+    "fin": 26.98,
+    "proba": 0.98
+   },
+   {
+    "mot": "lien",
+    "debut": 26.98,
+    "fin": 27.1,
+    "proba": 0.86
+   },
+   {
+    "mot": "pour",
+    "debut": 27.1,
+    "fin": 27.28,
+    "proba": 0.57
+   },
+   {
+    "mot": "venir",
+    "debut": 27.28,
+    "fin": 27.46,
+    "proba": 0.98
+   },
+   {
+    "mot": "directement",
+    "debut": 27.46,
+    "fin": 27.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "sur",
+    "debut": 27.74,
+    "fin": 27.9,
+    "proba": 0.99
+   },
+   {
+    "mot": "GitHub",
+    "debut": 27.9,
+    "fin": 28.02,
+    "proba": 0.57
+   },
+   {
+    "mot": "alors,",
+    "debut": 28.02,
+    "fin": 28.38,
+    "proba": 0.47
+   },
+   {
+    "mot": "dans",
+    "debut": 28.7,
+    "fin": 28.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 28.82,
+    "fin": 28.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "cas,",
+    "debut": 28.96,
+    "fin": 29.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "comme",
+    "debut": 29.22,
+    "fin": 29.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 29.32,
+    "fin": 29.42,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous",
+    "debut": 29.42,
+    "fin": 29.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "ai",
+    "debut": 29.52,
+    "fin": 29.58,
+    "proba": 0.82
+   },
+   {
+    "mot": "dit,",
+    "debut": 29.58,
+    "fin": 29.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 30.12,
+    "fin": 30.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "venez",
+    "debut": 30.22,
+    "fin": 30.42,
+    "proba": 0.99
+   },
+   {
+    "mot": "ici",
+    "debut": 30.42,
+    "fin": 30.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "sur",
+    "debut": 30.66,
+    "fin": 30.84,
+    "proba": 0.9
+   },
+   {
+    "mot": "votre",
+    "debut": 30.84,
+    "fin": 30.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "compte",
+    "debut": 30.98,
+    "fin": 31.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "GitHub,",
+    "debut": 31.14,
+    "fin": 31.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "voilà,",
+    "debut": 31.62,
+    "fin": 31.84,
+    "proba": 0.93
+   },
+   {
+    "mot": "vous",
+    "debut": 31.98,
+    "fin": 32.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "voyez",
+    "debut": 32.1,
+    "fin": 32.2,
+    "proba": 0.97
+   },
+   {
+    "mot": "qu",
+    "debut": 32.2,
+    "fin": 32.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "'il",
+    "debut": 32.3,
+    "fin": 32.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "y",
+    "debut": 32.38,
+    "fin": 32.46,
+    "proba": 0.97
+   },
+   {
+    "mot": "a",
+    "debut": 32.46,
+    "fin": 32.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 32.46,
+    "fin": 32.64,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 32.64,
+  "fin": 74.98,
+  "texte": "ici, regardez, il y a plus, vous cliquez sur le plus, et il y a plus, vous cliquez sur le nouveau dépôt, et puis vous allez, vous retrouvez la page, vous le faites, vous voyez non, voilà, ok, donc voilà, j'ai créé maintenant le dépôt, c'est bon, maintenant, il faut commencer à travailler, alors ici, maintenant, bon, là, j'ai demandé à coup d'ici la base de le qu'on va utiliser, voilà, on a discuté de la base de données, donc bon, je vais le dire, bon, c'est ça, le vibe continue en fait, ça, donc c'est la meilleure façon de le faire, on a notre produit qui est notre chef de projet,",
+  "mots": [
+   {
+    "mot": "ici,",
+    "debut": 32.64,
+    "fin": 32.9,
+    "proba": 0.71
+   },
+   {
+    "mot": "regardez,",
+    "debut": 33.52,
+    "fin": 33.62,
+    "proba": 0.85
+   },
+   {
+    "mot": "il",
+    "debut": 33.76,
+    "fin": 33.76,
+    "proba": 0.34
+   },
+   {
+    "mot": "y",
+    "debut": 33.76,
+    "fin": 33.78,
+    "proba": 0.82
+   },
+   {
+    "mot": "a",
+    "debut": 33.78,
+    "fin": 33.78,
+    "proba": 0.99
+   },
+   {
+    "mot": "plus,",
+    "debut": 33.78,
+    "fin": 33.96,
+    "proba": 0.72
+   },
+   {
+    "mot": "vous",
+    "debut": 34.14,
+    "fin": 34.14,
+    "proba": 0.34
+   },
+   {
+    "mot": "cliquez",
+    "debut": 34.14,
+    "fin": 34.26,
+    "proba": 0.98
+   },
+   {
+    "mot": "sur",
+    "debut": 34.26,
+    "fin": 34.38,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 34.38,
+    "fin": 34.44,
+    "proba": 0.84
+   },
+   {
+    "mot": "plus,",
+    "debut": 34.44,
+    "fin": 34.68,
+    "proba": 0.75
+   },
+   {
+    "mot": "et",
+    "debut": 35.56,
+    "fin": 35.56,
+    "proba": 0.86
+   },
+   {
+    "mot": "il",
+    "debut": 35.56,
+    "fin": 35.68,
+    "proba": 0.51
+   },
+   {
+    "mot": "y",
+    "debut": 35.68,
+    "fin": 35.68,
+    "proba": 0.99
+   },
+   {
+    "mot": "a",
+    "debut": 35.68,
+    "fin": 35.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "plus,",
+    "debut": 35.72,
+    "fin": 35.88,
+    "proba": 0.29
+   },
+   {
+    "mot": "vous",
+    "debut": 36.16,
+    "fin": 36.16,
+    "proba": 0.68
+   },
+   {
+    "mot": "cliquez",
+    "debut": 36.16,
+    "fin": 36.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "sur",
+    "debut": 36.24,
+    "fin": 36.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 36.32,
+    "fin": 36.4,
+    "proba": 0.75
+   },
+   {
+    "mot": "nouveau",
+    "debut": 36.4,
+    "fin": 36.54,
+    "proba": 0.96
+   },
+   {
+    "mot": "dépôt,",
+    "debut": 36.54,
+    "fin": 36.88,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 37.32,
+    "fin": 37.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "puis",
+    "debut": 37.74,
+    "fin": 37.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 37.9,
+    "fin": 38.34,
+    "proba": 0.75
+   },
+   {
+    "mot": "allez,",
+    "debut": 38.34,
+    "fin": 38.64,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous",
+    "debut": 38.8,
+    "fin": 38.98,
+    "proba": 0.19
+   },
+   {
+    "mot": "retrouvez",
+    "debut": 38.98,
+    "fin": 39.2,
+    "proba": 0.78
+   },
+   {
+    "mot": "la",
+    "debut": 39.2,
+    "fin": 39.22,
+    "proba": 0.92
+   },
+   {
+    "mot": "page,",
+    "debut": 39.22,
+    "fin": 39.4,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous",
+    "debut": 39.56,
+    "fin": 39.56,
+    "proba": 0.97
+   },
+   {
+    "mot": "le",
+    "debut": 39.56,
+    "fin": 39.62,
+    "proba": 0.93
+   },
+   {
+    "mot": "faites,",
+    "debut": 39.62,
+    "fin": 39.84,
+    "proba": 0.95
+   },
+   {
+    "mot": "vous",
+    "debut": 40.0,
+    "fin": 40.0,
+    "proba": 0.93
+   },
+   {
+    "mot": "voyez",
+    "debut": 40.0,
+    "fin": 40.16,
+    "proba": 0.98
+   },
+   {
+    "mot": "non,",
+    "debut": 40.16,
+    "fin": 40.3,
+    "proba": 0.19
+   },
+   {
+    "mot": "voilà,",
+    "debut": 40.38,
+    "fin": 40.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "ok,",
+    "debut": 41.22,
+    "fin": 41.44,
+    "proba": 0.97
+   },
+   {
+    "mot": "donc",
+    "debut": 41.96,
+    "fin": 42.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 42.52,
+    "fin": 42.76,
+    "proba": 0.98
+   },
+   {
+    "mot": "j",
+    "debut": 42.94,
+    "fin": 43.16,
+    "proba": 0.95
+   },
+   {
+    "mot": "'ai",
+    "debut": 43.16,
+    "fin": 43.24,
+    "proba": 0.87
+   },
+   {
+    "mot": "créé",
+    "debut": 43.24,
+    "fin": 43.4,
+    "proba": 0.87
+   },
+   {
+    "mot": "maintenant",
+    "debut": 43.4,
+    "fin": 43.5,
+    "proba": 0.84
+   },
+   {
+    "mot": "le",
+    "debut": 43.5,
+    "fin": 43.72,
+    "proba": 0.88
+   },
+   {
+    "mot": "dépôt,",
+    "debut": 43.72,
+    "fin": 43.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 44.04,
+    "fin": 44.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 44.04,
+    "fin": 44.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 44.06,
+    "fin": 44.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "maintenant,",
+    "debut": 44.72,
+    "fin": 44.84,
+    "proba": 0.48
+   },
+   {
+    "mot": "il",
+    "debut": 44.9,
+    "fin": 44.9,
+    "proba": 0.98
+   },
+   {
+    "mot": "faut",
+    "debut": 44.9,
+    "fin": 45.02,
+    "proba": 0.99
+   },
+   {
+    "mot": "commencer",
+    "debut": 45.02,
+    "fin": 45.26,
+    "proba": 0.86
+   },
+   {
+    "mot": "à",
+    "debut": 45.26,
+    "fin": 45.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "travailler,",
+    "debut": 45.54,
+    "fin": 45.9,
+    "proba": 0.98
+   },
+   {
+    "mot": "alors",
+    "debut": 46.48,
+    "fin": 46.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "ici,",
+    "debut": 46.8,
+    "fin": 47.22,
+    "proba": 0.98
+   },
+   {
+    "mot": "maintenant,",
+    "debut": 47.44,
+    "fin": 47.78,
+    "proba": 0.99
+   },
+   {
+    "mot": "bon,",
+    "debut": 48.58,
+    "fin": 48.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "là,",
+    "debut": 48.98,
+    "fin": 49.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "j",
+    "debut": 49.28,
+    "fin": 49.34,
+    "proba": 0.77
+   },
+   {
+    "mot": "'ai",
+    "debut": 49.34,
+    "fin": 49.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "demandé",
+    "debut": 49.4,
+    "fin": 49.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 49.62,
+    "fin": 49.88,
+    "proba": 0.9
+   },
+   {
+    "mot": "coup",
+    "debut": 49.88,
+    "fin": 49.98,
+    "proba": 0.38
+   },
+   {
+    "mot": "d",
+    "debut": 49.98,
+    "fin": 50.08,
+    "proba": 0.39
+   },
+   {
+    "mot": "'ici",
+    "debut": 50.08,
+    "fin": 50.18,
+    "proba": 0.95
+   },
+   {
+    "mot": "la",
+    "debut": 50.18,
+    "fin": 50.34,
+    "proba": 0.92
+   },
+   {
+    "mot": "base",
+    "debut": 50.34,
+    "fin": 50.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 50.56,
+    "fin": 50.68,
+    "proba": 0.48
+   },
+   {
+    "mot": "le",
+    "debut": 50.68,
+    "fin": 50.76,
+    "proba": 0.07
+   },
+   {
+    "mot": "qu",
+    "debut": 50.76,
+    "fin": 50.88,
+    "proba": 0.51
+   },
+   {
+    "mot": "'on",
+    "debut": 50.88,
+    "fin": 50.88,
+    "proba": 0.98
+   },
+   {
+    "mot": "va",
+    "debut": 50.88,
+    "fin": 50.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "utiliser,",
+    "debut": 50.96,
+    "fin": 51.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 51.5,
+    "fin": 51.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 51.76,
+    "fin": 51.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 51.9,
+    "fin": 51.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "discuté",
+    "debut": 51.96,
+    "fin": 52.22,
+    "proba": 0.96
+   },
+   {
+    "mot": "de",
+    "debut": 52.22,
+    "fin": 52.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 52.3,
+    "fin": 52.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "base",
+    "debut": 52.38,
+    "fin": 52.56,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 52.56,
+    "fin": 52.66,
+    "proba": 0.6
+   },
+   {
+    "mot": "données,",
+    "debut": 52.66,
+    "fin": 52.8,
+    "proba": 0.87
+   },
+   {
+    "mot": "donc",
+    "debut": 53.3,
+    "fin": 53.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 53.48,
+    "fin": 53.7,
+    "proba": 0.91
+   },
+   {
+    "mot": "je",
+    "debut": 53.8,
+    "fin": 53.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "vais",
+    "debut": 53.86,
+    "fin": 53.94,
+    "proba": 0.96
+   },
+   {
+    "mot": "le",
+    "debut": 53.94,
+    "fin": 54.02,
+    "proba": 0.94
+   },
+   {
+    "mot": "dire,",
+    "debut": 54.02,
+    "fin": 54.16,
+    "proba": 0.9
+   },
+   {
+    "mot": "bon,",
+    "debut": 54.32,
+    "fin": 54.36,
+    "proba": 0.96
+   },
+   {
+    "mot": "c",
+    "debut": 67.62,
+    "fin": 67.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 67.86,
+    "fin": 67.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "ça,",
+    "debut": 67.96,
+    "fin": 68.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 68.32,
+    "fin": 68.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "vibe",
+    "debut": 68.54,
+    "fin": 68.82,
+    "proba": 0.47
+   },
+   {
+    "mot": "continue",
+    "debut": 68.82,
+    "fin": 69.14,
+    "proba": 0.07
+   },
+   {
+    "mot": "en",
+    "debut": 69.14,
+    "fin": 69.36,
+    "proba": 0.7
+   },
+   {
+    "mot": "fait,",
+    "debut": 69.36,
+    "fin": 69.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "ça,",
+    "debut": 70.62,
+    "fin": 70.88,
+    "proba": 0.99
+   },
+   {
+    "mot": "donc",
+    "debut": 71.38,
+    "fin": 71.66,
+    "proba": 0.99
+   },
+   {
+    "mot": "c",
+    "debut": 71.66,
+    "fin": 71.86,
+    "proba": 0.5
+   },
+   {
+    "mot": "'est",
+    "debut": 71.86,
+    "fin": 71.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 71.92,
+    "fin": 72.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "meilleure",
+    "debut": 72.04,
+    "fin": 72.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "façon",
+    "debut": 72.3,
+    "fin": 72.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 72.5,
+    "fin": 72.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 72.6,
+    "fin": 72.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "faire,",
+    "debut": 72.68,
+    "fin": 72.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 73.3,
+    "fin": 73.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 73.44,
+    "fin": 73.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "notre",
+    "debut": 73.56,
+    "fin": 73.8,
+    "proba": 0.98
+   },
+   {
+    "mot": "produit",
+    "debut": 73.8,
+    "fin": 74.22,
+    "proba": 0.27
+   },
+   {
+    "mot": "qui",
+    "debut": 74.22,
+    "fin": 74.4,
+    "proba": 0.41
+   },
+   {
+    "mot": "est",
+    "debut": 74.4,
+    "fin": 74.4,
+    "proba": 0.96
+   },
+   {
+    "mot": "notre",
+    "debut": 74.4,
+    "fin": 74.54,
+    "proba": 0.94
+   },
+   {
+    "mot": "chef",
+    "debut": 74.54,
+    "fin": 74.62,
+    "proba": 0.69
+   },
+   {
+    "mot": "de",
+    "debut": 74.62,
+    "fin": 74.72,
+    "proba": 0.98
+   },
+   {
+    "mot": "projet,",
+    "debut": 74.72,
+    "fin": 74.98,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 74.98,
+  "fin": 120.72,
+  "texte": "qui nous aide, et puis voilà, tout marche bien, donc d'abord, je vais faire la mise à jour de ce cas de charge dans mon bloc-note, donc je vais enlever ceci d'abord, voilà, voilà, je mets ceci, donc voici le titre, voilà, ok, on a dit que c'est bon, et voilà, c'est bon, maintenant ici,",
+  "mots": [
+   {
+    "mot": "qui",
+    "debut": 74.98,
+    "fin": 75.18,
+    "proba": 0.03
+   },
+   {
+    "mot": "nous",
+    "debut": 75.18,
+    "fin": 75.18,
+    "proba": 0.91
+   },
+   {
+    "mot": "aide,",
+    "debut": 75.18,
+    "fin": 75.32,
+    "proba": 0.89
+   },
+   {
+    "mot": "et",
+    "debut": 75.46,
+    "fin": 75.46,
+    "proba": 0.93
+   },
+   {
+    "mot": "puis",
+    "debut": 75.46,
+    "fin": 75.52,
+    "proba": 0.93
+   },
+   {
+    "mot": "voilà,",
+    "debut": 75.52,
+    "fin": 75.76,
+    "proba": 0.93
+   },
+   {
+    "mot": "tout",
+    "debut": 75.96,
+    "fin": 76.06,
+    "proba": 0.63
+   },
+   {
+    "mot": "marche",
+    "debut": 76.06,
+    "fin": 76.26,
+    "proba": 0.98
+   },
+   {
+    "mot": "bien,",
+    "debut": 76.26,
+    "fin": 76.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "donc",
+    "debut": 92.2,
+    "fin": 92.9,
+    "proba": 0.93
+   },
+   {
+    "mot": "d",
+    "debut": 92.9,
+    "fin": 93.04,
+    "proba": 0.96
+   },
+   {
+    "mot": "'abord,",
+    "debut": 93.04,
+    "fin": 93.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "je",
+    "debut": 93.34,
+    "fin": 93.36,
+    "proba": 0.98
+   },
+   {
+    "mot": "vais",
+    "debut": 93.36,
+    "fin": 93.56,
+    "proba": 0.99
+   },
+   {
+    "mot": "faire",
+    "debut": 93.56,
+    "fin": 94.24,
+    "proba": 0.81
+   },
+   {
+    "mot": "la",
+    "debut": 94.24,
+    "fin": 94.38,
+    "proba": 0.97
+   },
+   {
+    "mot": "mise",
+    "debut": 94.38,
+    "fin": 94.58,
+    "proba": 0.97
+   },
+   {
+    "mot": "à",
+    "debut": 94.58,
+    "fin": 94.64,
+    "proba": 0.91
+   },
+   {
+    "mot": "jour",
+    "debut": 94.64,
+    "fin": 94.72,
+    "proba": 0.85
+   },
+   {
+    "mot": "de",
+    "debut": 94.72,
+    "fin": 94.84,
+    "proba": 0.89
+   },
+   {
+    "mot": "ce",
+    "debut": 94.84,
+    "fin": 94.98,
+    "proba": 0.97
+   },
+   {
+    "mot": "cas",
+    "debut": 94.98,
+    "fin": 95.04,
+    "proba": 0.57
+   },
+   {
+    "mot": "de",
+    "debut": 95.04,
+    "fin": 95.14,
+    "proba": 0.86
+   },
+   {
+    "mot": "charge",
+    "debut": 95.14,
+    "fin": 95.44,
+    "proba": 0.96
+   },
+   {
+    "mot": "dans",
+    "debut": 95.44,
+    "fin": 96.22,
+    "proba": 0.73
+   },
+   {
+    "mot": "mon",
+    "debut": 96.22,
+    "fin": 96.38,
+    "proba": 0.9
+   },
+   {
+    "mot": "bloc",
+    "debut": 96.38,
+    "fin": 96.56,
+    "proba": 0.91
+   },
+   {
+    "mot": "-note,",
+    "debut": 96.56,
+    "fin": 96.74,
+    "proba": 0.46
+   },
+   {
+    "mot": "donc",
+    "debut": 97.0,
+    "fin": 97.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "je",
+    "debut": 97.16,
+    "fin": 97.32,
+    "proba": 0.88
+   },
+   {
+    "mot": "vais",
+    "debut": 97.32,
+    "fin": 97.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "enlever",
+    "debut": 97.54,
+    "fin": 98.48,
+    "proba": 0.99
+   },
+   {
+    "mot": "ceci",
+    "debut": 98.48,
+    "fin": 98.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "d",
+    "debut": 98.8,
+    "fin": 98.92,
+    "proba": 0.92
+   },
+   {
+    "mot": "'abord,",
+    "debut": 98.92,
+    "fin": 99.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 100.54,
+    "fin": 100.74,
+    "proba": 0.97
+   },
+   {
+    "mot": "voilà,",
+    "debut": 104.46,
+    "fin": 104.96,
+    "proba": 0.73
+   },
+   {
+    "mot": "je",
+    "debut": 105.24,
+    "fin": 105.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "mets",
+    "debut": 105.32,
+    "fin": 105.46,
+    "proba": 0.93
+   },
+   {
+    "mot": "ceci,",
+    "debut": 105.46,
+    "fin": 105.86,
+    "proba": 0.99
+   },
+   {
+    "mot": "donc",
+    "debut": 106.4,
+    "fin": 106.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "voici",
+    "debut": 106.6,
+    "fin": 106.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 106.84,
+    "fin": 106.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "titre,",
+    "debut": 106.94,
+    "fin": 107.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 110.76,
+    "fin": 110.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "ok,",
+    "debut": 112.56,
+    "fin": 112.7,
+    "proba": 0.83
+   },
+   {
+    "mot": "on",
+    "debut": 114.98,
+    "fin": 115.04,
+    "proba": 0.73
+   },
+   {
+    "mot": "a",
+    "debut": 115.04,
+    "fin": 115.14,
+    "proba": 0.48
+   },
+   {
+    "mot": "dit",
+    "debut": 115.14,
+    "fin": 115.26,
+    "proba": 0.55
+   },
+   {
+    "mot": "que",
+    "debut": 115.26,
+    "fin": 115.42,
+    "proba": 0.2
+   },
+   {
+    "mot": "c",
+    "debut": 115.42,
+    "fin": 115.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 115.58,
+    "fin": 115.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 115.72,
+    "fin": 115.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 118.5,
+    "fin": 118.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 118.7,
+    "fin": 118.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 119.06,
+    "fin": 119.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 119.06,
+    "fin": 119.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 119.12,
+    "fin": 119.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "maintenant",
+    "debut": 120.02,
+    "fin": 120.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "ici,",
+    "debut": 120.36,
+    "fin": 120.72,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 121.48,
+  "fin": 133.8,
+  "texte": "on a dit, voici le cas de charge, ok, c'est bon, voilà, c'est bon, ok, maintenant ici, là, ici, je vais voir, il a joué avec la base de données, c'est bon, il y a deux temps de chaque étape,",
+  "mots": [
+   {
+    "mot": "on",
+    "debut": 121.48,
+    "fin": 121.78,
+    "proba": 0.92
+   },
+   {
+    "mot": "a",
+    "debut": 121.78,
+    "fin": 121.9,
+    "proba": 0.92
+   },
+   {
+    "mot": "dit,",
+    "debut": 121.9,
+    "fin": 122.02,
+    "proba": 0.92
+   },
+   {
+    "mot": "voici",
+    "debut": 122.2,
+    "fin": 122.32,
+    "proba": 0.91
+   },
+   {
+    "mot": "le",
+    "debut": 122.32,
+    "fin": 122.44,
+    "proba": 0.95
+   },
+   {
+    "mot": "cas",
+    "debut": 122.44,
+    "fin": 122.5,
+    "proba": 0.91
+   },
+   {
+    "mot": "de",
+    "debut": 122.5,
+    "fin": 122.62,
+    "proba": 0.33
+   },
+   {
+    "mot": "charge,",
+    "debut": 122.62,
+    "fin": 122.84,
+    "proba": 0.75
+   },
+   {
+    "mot": "ok,",
+    "debut": 123.0,
+    "fin": 123.02,
+    "proba": 0.74
+   },
+   {
+    "mot": "c",
+    "debut": 123.12,
+    "fin": 123.12,
+    "proba": 0.97
+   },
+   {
+    "mot": "'est",
+    "debut": 123.12,
+    "fin": 123.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 123.16,
+    "fin": 123.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 123.52,
+    "fin": 123.64,
+    "proba": 0.47
+   },
+   {
+    "mot": "c",
+    "debut": 123.82,
+    "fin": 123.88,
+    "proba": 0.98
+   },
+   {
+    "mot": "'est",
+    "debut": 123.88,
+    "fin": 123.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 123.92,
+    "fin": 124.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "ok,",
+    "debut": 124.9,
+    "fin": 125.12,
+    "proba": 0.96
+   },
+   {
+    "mot": "maintenant",
+    "debut": 126.04,
+    "fin": 127.06,
+    "proba": 0.88
+   },
+   {
+    "mot": "ici,",
+    "debut": 127.06,
+    "fin": 127.38,
+    "proba": 0.5
+   },
+   {
+    "mot": "là,",
+    "debut": 127.8,
+    "fin": 128.12,
+    "proba": 0.13
+   },
+   {
+    "mot": "ici,",
+    "debut": 128.14,
+    "fin": 128.44,
+    "proba": 0.32
+   },
+   {
+    "mot": "je",
+    "debut": 128.74,
+    "fin": 128.98,
+    "proba": 0.98
+   },
+   {
+    "mot": "vais",
+    "debut": 128.98,
+    "fin": 129.18,
+    "proba": 0.56
+   },
+   {
+    "mot": "voir,",
+    "debut": 129.18,
+    "fin": 129.62,
+    "proba": 0.21
+   },
+   {
+    "mot": "il",
+    "debut": 130.74,
+    "fin": 130.86,
+    "proba": 0.24
+   },
+   {
+    "mot": "a",
+    "debut": 130.86,
+    "fin": 130.96,
+    "proba": 0.42
+   },
+   {
+    "mot": "joué",
+    "debut": 130.96,
+    "fin": 131.18,
+    "proba": 0.93
+   },
+   {
+    "mot": "avec",
+    "debut": 131.18,
+    "fin": 131.34,
+    "proba": 0.96
+   },
+   {
+    "mot": "la",
+    "debut": 131.34,
+    "fin": 131.42,
+    "proba": 0.91
+   },
+   {
+    "mot": "base",
+    "debut": 131.42,
+    "fin": 131.62,
+    "proba": 0.66
+   },
+   {
+    "mot": "de",
+    "debut": 131.62,
+    "fin": 131.7,
+    "proba": 0.69
+   },
+   {
+    "mot": "données,",
+    "debut": 131.7,
+    "fin": 131.84,
+    "proba": 0.68
+   },
+   {
+    "mot": "c",
+    "debut": 131.98,
+    "fin": 132.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 132.02,
+    "fin": 132.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 132.06,
+    "fin": 132.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 132.62,
+    "fin": 132.72,
+    "proba": 0.81
+   },
+   {
+    "mot": "y",
+    "debut": 132.72,
+    "fin": 132.74,
+    "proba": 0.59
+   },
+   {
+    "mot": "a",
+    "debut": 132.74,
+    "fin": 132.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "deux",
+    "debut": 132.74,
+    "fin": 132.88,
+    "proba": 0.66
+   },
+   {
+    "mot": "temps",
+    "debut": 132.88,
+    "fin": 133.06,
+    "proba": 0.8
+   },
+   {
+    "mot": "de",
+    "debut": 133.06,
+    "fin": 133.18,
+    "proba": 0.96
+   },
+   {
+    "mot": "chaque",
+    "debut": 133.18,
+    "fin": 133.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "étape,",
+    "debut": 133.36,
+    "fin": 133.8,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 133.88,
+  "fin": 143.46,
+  "texte": "t'as un, plan court court, l'île a consigné, il présente son plan sans rien, ok, temps de la construction, ok, c'est bon, tant un, la première, mais on fait court court, je choisis le dépôt, et envoie ce message,",
+  "mots": [
+   {
+    "mot": "t",
+    "debut": 133.88,
+    "fin": 133.96,
+    "proba": 0.35
+   },
+   {
+    "mot": "'as",
+    "debut": 133.96,
+    "fin": 134.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "un,",
+    "debut": 134.04,
+    "fin": 134.16,
+    "proba": 0.98
+   },
+   {
+    "mot": "plan",
+    "debut": 134.44,
+    "fin": 134.56,
+    "proba": 0.5
+   },
+   {
+    "mot": "court",
+    "debut": 134.56,
+    "fin": 134.84,
+    "proba": 0.31
+   },
+   {
+    "mot": "court,",
+    "debut": 134.84,
+    "fin": 135.1,
+    "proba": 0.44
+   },
+   {
+    "mot": "l",
+    "debut": 135.54,
+    "fin": 135.64,
+    "proba": 0.37
+   },
+   {
+    "mot": "'île",
+    "debut": 135.64,
+    "fin": 135.7,
+    "proba": 0.88
+   },
+   {
+    "mot": "a",
+    "debut": 135.7,
+    "fin": 135.86,
+    "proba": 0.9
+   },
+   {
+    "mot": "consigné,",
+    "debut": 135.86,
+    "fin": 136.24,
+    "proba": 0.9
+   },
+   {
+    "mot": "il",
+    "debut": 136.34,
+    "fin": 136.38,
+    "proba": 0.86
+   },
+   {
+    "mot": "présente",
+    "debut": 136.38,
+    "fin": 136.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "son",
+    "debut": 136.62,
+    "fin": 136.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 136.74,
+    "fin": 136.96,
+    "proba": 0.97
+   },
+   {
+    "mot": "sans",
+    "debut": 136.96,
+    "fin": 137.14,
+    "proba": 0.87
+   },
+   {
+    "mot": "rien,",
+    "debut": 137.14,
+    "fin": 137.32,
+    "proba": 0.94
+   },
+   {
+    "mot": "ok,",
+    "debut": 137.44,
+    "fin": 137.54,
+    "proba": 0.89
+   },
+   {
+    "mot": "temps",
+    "debut": 137.62,
+    "fin": 137.72,
+    "proba": 0.6
+   },
+   {
+    "mot": "de",
+    "debut": 137.72,
+    "fin": 137.84,
+    "proba": 0.95
+   },
+   {
+    "mot": "la",
+    "debut": 137.84,
+    "fin": 137.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "construction,",
+    "debut": 137.96,
+    "fin": 138.42,
+    "proba": 0.65
+   },
+   {
+    "mot": "ok,",
+    "debut": 138.72,
+    "fin": 138.84,
+    "proba": 0.95
+   },
+   {
+    "mot": "c",
+    "debut": 138.92,
+    "fin": 138.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 138.94,
+    "fin": 139.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 139.0,
+    "fin": 139.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "tant",
+    "debut": 139.26,
+    "fin": 139.38,
+    "proba": 0.47
+   },
+   {
+    "mot": "un,",
+    "debut": 139.38,
+    "fin": 139.58,
+    "proba": 0.95
+   },
+   {
+    "mot": "la",
+    "debut": 140.3,
+    "fin": 140.46,
+    "proba": 0.56
+   },
+   {
+    "mot": "première,",
+    "debut": 140.46,
+    "fin": 140.68,
+    "proba": 0.97
+   },
+   {
+    "mot": "mais",
+    "debut": 140.8,
+    "fin": 140.92,
+    "proba": 0.48
+   },
+   {
+    "mot": "on",
+    "debut": 140.92,
+    "fin": 140.92,
+    "proba": 0.77
+   },
+   {
+    "mot": "fait",
+    "debut": 140.92,
+    "fin": 141.04,
+    "proba": 0.85
+   },
+   {
+    "mot": "court",
+    "debut": 141.04,
+    "fin": 141.24,
+    "proba": 0.77
+   },
+   {
+    "mot": "court,",
+    "debut": 141.24,
+    "fin": 141.46,
+    "proba": 0.99
+   },
+   {
+    "mot": "je",
+    "debut": 141.58,
+    "fin": 141.58,
+    "proba": 0.69
+   },
+   {
+    "mot": "choisis",
+    "debut": 141.58,
+    "fin": 141.76,
+    "proba": 0.82
+   },
+   {
+    "mot": "le",
+    "debut": 141.76,
+    "fin": 141.94,
+    "proba": 0.86
+   },
+   {
+    "mot": "dépôt,",
+    "debut": 141.94,
+    "fin": 142.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 142.42,
+    "fin": 142.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "envoie",
+    "debut": 142.72,
+    "fin": 143.02,
+    "proba": 0.92
+   },
+   {
+    "mot": "ce",
+    "debut": 143.02,
+    "fin": 143.12,
+    "proba": 0.98
+   },
+   {
+    "mot": "message,",
+    "debut": 143.12,
+    "fin": 143.46,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 143.46,
+  "fin": 180.84,
+  "texte": "voilà, vous voyez, donc là, on va, voici le premier point qui nous donne comme ça, donc, on copie ça, donc, comme je vous ai dit, Claude Côte des payants, vous devez avoir assez l'abonnement, Claude Côte Pro, vous devez avoir assez l'abonnement, Claude Côte Pro, vous devez avoir assez l'abonnement, Claude Côte de Côte de Côte pour ne pas travailler, c'est bon, donc, on va aller dans notre Côte de Côte, vous pouvez voir que j'ai, là, j'ai un compte pro, vous voyez non, un compte pro, voilà, donc, lorsque vous allez payer l'abonnement Claude d'alors, et je, si vous savez exactement, bon, en tout cas, c'est facile, quand vous cliquez, vous avez voici ici, je vais voir d'abord, ok, là, on est dans Cla",
+  "mots": [
+   {
+    "mot": "voilà,",
+    "debut": 143.46,
+    "fin": 144.02,
+    "proba": 0.83
+   },
+   {
+    "mot": "vous",
+    "debut": 144.26,
+    "fin": 144.26,
+    "proba": 0.95
+   },
+   {
+    "mot": "voyez,",
+    "debut": 144.26,
+    "fin": 144.44,
+    "proba": 0.99
+   },
+   {
+    "mot": "donc",
+    "debut": 144.96,
+    "fin": 145.06,
+    "proba": 0.98
+   },
+   {
+    "mot": "là,",
+    "debut": 145.06,
+    "fin": 145.26,
+    "proba": 0.85
+   },
+   {
+    "mot": "on",
+    "debut": 145.42,
+    "fin": 145.44,
+    "proba": 0.86
+   },
+   {
+    "mot": "va,",
+    "debut": 145.44,
+    "fin": 145.62,
+    "proba": 0.97
+   },
+   {
+    "mot": "voici",
+    "debut": 145.76,
+    "fin": 146.04,
+    "proba": 0.8
+   },
+   {
+    "mot": "le",
+    "debut": 146.04,
+    "fin": 146.14,
+    "proba": 0.78
+   },
+   {
+    "mot": "premier",
+    "debut": 146.14,
+    "fin": 146.32,
+    "proba": 0.98
+   },
+   {
+    "mot": "point",
+    "debut": 146.32,
+    "fin": 146.48,
+    "proba": 0.88
+   },
+   {
+    "mot": "qui",
+    "debut": 146.48,
+    "fin": 146.6,
+    "proba": 0.57
+   },
+   {
+    "mot": "nous",
+    "debut": 146.6,
+    "fin": 146.7,
+    "proba": 0.89
+   },
+   {
+    "mot": "donne",
+    "debut": 146.7,
+    "fin": 146.8,
+    "proba": 0.98
+   },
+   {
+    "mot": "comme",
+    "debut": 146.8,
+    "fin": 147.0,
+    "proba": 0.97
+   },
+   {
+    "mot": "ça,",
+    "debut": 147.0,
+    "fin": 147.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "donc,",
+    "debut": 147.68,
+    "fin": 147.7,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 147.82,
+    "fin": 147.94,
+    "proba": 0.5
+   },
+   {
+    "mot": "copie",
+    "debut": 147.94,
+    "fin": 148.06,
+    "proba": 0.86
+   },
+   {
+    "mot": "ça,",
+    "debut": 148.06,
+    "fin": 148.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "donc,",
+    "debut": 148.66,
+    "fin": 148.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "comme",
+    "debut": 148.88,
+    "fin": 149.06,
+    "proba": 0.78
+   },
+   {
+    "mot": "je",
+    "debut": 149.06,
+    "fin": 149.26,
+    "proba": 0.95
+   },
+   {
+    "mot": "vous",
+    "debut": 149.26,
+    "fin": 149.38,
+    "proba": 0.97
+   },
+   {
+    "mot": "ai",
+    "debut": 149.38,
+    "fin": 149.44,
+    "proba": 0.93
+   },
+   {
+    "mot": "dit,",
+    "debut": 149.44,
+    "fin": 149.56,
+    "proba": 0.97
+   },
+   {
+    "mot": "Claude",
+    "debut": 149.68,
+    "fin": 149.84,
+    "proba": 0.61
+   },
+   {
+    "mot": "Côte",
+    "debut": 149.84,
+    "fin": 150.04,
+    "proba": 0.58
+   },
+   {
+    "mot": "des",
+    "debut": 150.04,
+    "fin": 150.12,
+    "proba": 0.2
+   },
+   {
+    "mot": "payants,",
+    "debut": 150.12,
+    "fin": 150.46,
+    "proba": 0.73
+   },
+   {
+    "mot": "vous",
+    "debut": 150.58,
+    "fin": 150.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "devez",
+    "debut": 150.66,
+    "fin": 151.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "avoir",
+    "debut": 151.0,
+    "fin": 151.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "assez",
+    "debut": 151.42,
+    "fin": 151.7,
+    "proba": 0.95
+   },
+   {
+    "mot": "l",
+    "debut": 151.7,
+    "fin": 151.8,
+    "proba": 0.24
+   },
+   {
+    "mot": "'abonnement,",
+    "debut": 151.8,
+    "fin": 152.2,
+    "proba": 0.95
+   },
+   {
+    "mot": "Claude",
+    "debut": 152.34,
+    "fin": 152.54,
+    "proba": 0.98
+   },
+   {
+    "mot": "Côte",
+    "debut": 152.54,
+    "fin": 152.78,
+    "proba": 0.97
+   },
+   {
+    "mot": "Pro,",
+    "debut": 152.78,
+    "fin": 152.98,
+    "proba": 0.38
+   },
+   {
+    "mot": "vous",
+    "debut": 153.2,
+    "fin": 153.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "devez",
+    "debut": 153.48,
+    "fin": 153.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "avoir",
+    "debut": 153.64,
+    "fin": 153.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "assez",
+    "debut": 153.82,
+    "fin": 153.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "l",
+    "debut": 153.96,
+    "fin": 154.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abonnement,",
+    "debut": 154.04,
+    "fin": 154.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 154.34,
+    "fin": 154.62,
+    "proba": 0.54
+   },
+   {
+    "mot": "Côte",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "Pro,",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 0.29
+   },
+   {
+    "mot": "vous",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 0.94
+   },
+   {
+    "mot": "devez",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 0.95
+   },
+   {
+    "mot": "avoir",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "assez",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "l",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abonnement,",
+    "debut": 154.62,
+    "fin": 154.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 154.76,
+    "fin": 154.76,
+    "proba": 0.51
+   },
+   {
+    "mot": "Côte",
+    "debut": 154.76,
+    "fin": 154.78,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 154.78,
+    "fin": 154.88,
+    "proba": 0.55
+   },
+   {
+    "mot": "Côte",
+    "debut": 154.88,
+    "fin": 154.88,
+    "proba": 0.69
+   },
+   {
+    "mot": "de",
+    "debut": 154.88,
+    "fin": 155.02,
+    "proba": 0.25
+   },
+   {
+    "mot": "Côte",
+    "debut": 155.02,
+    "fin": 155.06,
+    "proba": 0.77
+   },
+   {
+    "mot": "pour",
+    "debut": 155.06,
+    "fin": 155.12,
+    "proba": 0.33
+   },
+   {
+    "mot": "ne",
+    "debut": 155.12,
+    "fin": 155.3,
+    "proba": 0.22
+   },
+   {
+    "mot": "pas",
+    "debut": 155.3,
+    "fin": 155.4,
+    "proba": 0.58
+   },
+   {
+    "mot": "travailler,",
+    "debut": 155.4,
+    "fin": 155.8,
+    "proba": 0.93
+   },
+   {
+    "mot": "c",
+    "debut": 156.02,
+    "fin": 156.1,
+    "proba": 0.95
+   },
+   {
+    "mot": "'est",
+    "debut": 156.1,
+    "fin": 156.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 156.16,
+    "fin": 156.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "donc,",
+    "debut": 156.6,
+    "fin": 156.78,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 156.86,
+    "fin": 156.86,
+    "proba": 0.67
+   },
+   {
+    "mot": "va",
+    "debut": 156.86,
+    "fin": 156.9,
+    "proba": 0.99
+   },
+   {
+    "mot": "aller",
+    "debut": 156.9,
+    "fin": 156.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "dans",
+    "debut": 156.96,
+    "fin": 157.08,
+    "proba": 0.99
+   },
+   {
+    "mot": "notre",
+    "debut": 157.08,
+    "fin": 157.24,
+    "proba": 0.96
+   },
+   {
+    "mot": "Côte",
+    "debut": 157.24,
+    "fin": 157.42,
+    "proba": 0.88
+   },
+   {
+    "mot": "de",
+    "debut": 157.42,
+    "fin": 157.54,
+    "proba": 0.78
+   },
+   {
+    "mot": "Côte,",
+    "debut": 157.54,
+    "fin": 157.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 157.66,
+    "fin": 157.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "pouvez",
+    "debut": 157.8,
+    "fin": 158.04,
+    "proba": 0.96
+   },
+   {
+    "mot": "voir",
+    "debut": 158.04,
+    "fin": 158.24,
+    "proba": 0.96
+   },
+   {
+    "mot": "que",
+    "debut": 158.24,
+    "fin": 158.34,
+    "proba": 0.98
+   },
+   {
+    "mot": "j",
+    "debut": 158.34,
+    "fin": 158.48,
+    "proba": 0.78
+   },
+   {
+    "mot": "'ai,",
+    "debut": 158.48,
+    "fin": 158.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "là,",
+    "debut": 158.68,
+    "fin": 158.78,
+    "proba": 0.99
+   },
+   {
+    "mot": "j",
+    "debut": 158.96,
+    "fin": 159.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "'ai",
+    "debut": 159.3,
+    "fin": 159.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 159.36,
+    "fin": 159.46,
+    "proba": 0.99
+   },
+   {
+    "mot": "compte",
+    "debut": 159.46,
+    "fin": 159.64,
+    "proba": 0.97
+   },
+   {
+    "mot": "pro,",
+    "debut": 159.64,
+    "fin": 159.88,
+    "proba": 0.78
+   },
+   {
+    "mot": "vous",
+    "debut": 160.12,
+    "fin": 160.18,
+    "proba": 0.3
+   },
+   {
+    "mot": "voyez",
+    "debut": 160.18,
+    "fin": 160.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "non,",
+    "debut": 160.3,
+    "fin": 160.42,
+    "proba": 0.52
+   },
+   {
+    "mot": "un",
+    "debut": 160.48,
+    "fin": 160.6,
+    "proba": 0.99
+   },
+   {
+    "mot": "compte",
+    "debut": 160.6,
+    "fin": 160.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "pro,",
+    "debut": 160.78,
+    "fin": 161.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà,",
+    "debut": 161.48,
+    "fin": 161.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "donc,",
+    "debut": 168.54,
+    "fin": 168.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "lorsque",
+    "debut": 168.84,
+    "fin": 169.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 169.12,
+    "fin": 169.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "allez",
+    "debut": 169.3,
+    "fin": 169.42,
+    "proba": 0.99
+   },
+   {
+    "mot": "payer",
+    "debut": 169.42,
+    "fin": 169.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 169.64,
+    "fin": 169.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "'abonnement",
+    "debut": 169.72,
+    "fin": 170.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 170.0,
+    "fin": 170.22,
+    "proba": 0.74
+   },
+   {
+    "mot": "d",
+    "debut": 170.22,
+    "fin": 170.34,
+    "proba": 0.25
+   },
+   {
+    "mot": "'alors,",
+    "debut": 170.34,
+    "fin": 170.56,
+    "proba": 0.96
+   },
+   {
+    "mot": "et",
+    "debut": 171.04,
+    "fin": 171.12,
+    "proba": 0.98
+   },
+   {
+    "mot": "je,",
+    "debut": 171.12,
+    "fin": 171.36,
+    "proba": 0.83
+   },
+   {
+    "mot": "si",
+    "debut": 171.62,
+    "fin": 171.92,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 171.92,
+    "fin": 172.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "savez",
+    "debut": 172.0,
+    "fin": 172.12,
+    "proba": 0.93
+   },
+   {
+    "mot": "exactement,",
+    "debut": 172.12,
+    "fin": 172.28,
+    "proba": 0.66
+   },
+   {
+    "mot": "bon,",
+    "debut": 172.78,
+    "fin": 173.0,
+    "proba": 0.95
+   },
+   {
+    "mot": "en",
+    "debut": 173.06,
+    "fin": 173.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "tout",
+    "debut": 173.12,
+    "fin": 173.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "cas,",
+    "debut": 173.16,
+    "fin": 173.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 173.24,
+    "fin": 173.38,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 173.38,
+    "fin": 173.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "facile,",
+    "debut": 173.42,
+    "fin": 173.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "quand",
+    "debut": 173.76,
+    "fin": 173.92,
+    "proba": 0.83
+   },
+   {
+    "mot": "vous",
+    "debut": 173.92,
+    "fin": 174.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "cliquez,",
+    "debut": 174.12,
+    "fin": 174.24,
+    "proba": 0.96
+   },
+   {
+    "mot": "vous",
+    "debut": 174.28,
+    "fin": 174.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "avez",
+    "debut": 174.44,
+    "fin": 174.58,
+    "proba": 0.39
+   },
+   {
+    "mot": "voici",
+    "debut": 174.58,
+    "fin": 174.82,
+    "proba": 0.23
+   },
+   {
+    "mot": "ici,",
+    "debut": 174.82,
+    "fin": 175.14,
+    "proba": 0.02
+   },
+   {
+    "mot": "je",
+    "debut": 175.62,
+    "fin": 175.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "vais",
+    "debut": 175.74,
+    "fin": 175.86,
+    "proba": 0.77
+   },
+   {
+    "mot": "voir",
+    "debut": 175.86,
+    "fin": 175.98,
+    "proba": 0.94
+   },
+   {
+    "mot": "d",
+    "debut": 175.98,
+    "fin": 176.1,
+    "proba": 0.97
+   },
+   {
+    "mot": "'abord,",
+    "debut": 176.1,
+    "fin": 176.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "ok,",
+    "debut": 180.1,
+    "fin": 180.26,
+    "proba": 0.93
+   },
+   {
+    "mot": "là,",
+    "debut": 180.3,
+    "fin": 180.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 180.4,
+    "fin": 180.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 180.52,
+    "fin": 180.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 180.54,
+    "fin": 180.7,
+    "proba": 0.91
+   },
+   {
+    "mot": "Cla",
+    "debut": 180.7,
+    "fin": 180.84,
+    "proba": 0.91
+   }
+  ]
+ },
+ {
+  "debut": 180.84,
+  "fin": 210.8,
+  "texte": "Claude Côte de Côte, bon, là, voyez, on est dans Claude Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de",
+  "mots": [
+   {
+    "mot": "Claude",
+    "debut": 180.84,
+    "fin": 181.04,
+    "proba": 0.5
+   },
+   {
+    "mot": "Côte",
+    "debut": 181.04,
+    "fin": 181.4,
+    "proba": 0.33
+   },
+   {
+    "mot": "de",
+    "debut": 181.4,
+    "fin": 181.4,
+    "proba": 0.02
+   },
+   {
+    "mot": "Côte,",
+    "debut": 181.4,
+    "fin": 181.4,
+    "proba": 0.69
+   },
+   {
+    "mot": "bon,",
+    "debut": 181.4,
+    "fin": 181.4,
+    "proba": 0.1
+   },
+   {
+    "mot": "là,",
+    "debut": 181.64,
+    "fin": 181.68,
+    "proba": 0.79
+   },
+   {
+    "mot": "voyez,",
+    "debut": 181.72,
+    "fin": 181.9,
+    "proba": 0.84
+   },
+   {
+    "mot": "on",
+    "debut": 182.0,
+    "fin": 182.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "est",
+    "debut": 182.1,
+    "fin": 182.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "dans",
+    "debut": 182.2,
+    "fin": 182.32,
+    "proba": 0.9
+   },
+   {
+    "mot": "Claude",
+    "debut": 182.32,
+    "fin": 182.56,
+    "proba": 0.95
+   },
+   {
+    "mot": "Côte",
+    "debut": 182.56,
+    "fin": 184.0,
+    "proba": 0.91
+   },
+   {
+    "mot": "de",
+    "debut": 184.0,
+    "fin": 184.08,
+    "proba": 0.36
+   },
+   {
+    "mot": "Côte",
+    "debut": 184.08,
+    "fin": 186.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 186.04,
+    "fin": 186.04,
+    "proba": 0.43
+   },
+   {
+    "mot": "Côte",
+    "debut": 186.04,
+    "fin": 186.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 186.14,
+    "fin": 186.14,
+    "proba": 0.34
+   },
+   {
+    "mot": "Côte",
+    "debut": 186.14,
+    "fin": 188.82,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 188.82,
+    "fin": 188.82,
+    "proba": 0.51
+   },
+   {
+    "mot": "Côte",
+    "debut": 188.82,
+    "fin": 188.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 188.84,
+    "fin": 188.84,
+    "proba": 0.52
+   },
+   {
+    "mot": "Côte",
+    "debut": 188.84,
+    "fin": 188.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 188.84,
+    "fin": 188.84,
+    "proba": 0.57
+   },
+   {
+    "mot": "Côte",
+    "debut": 188.84,
+    "fin": 189.36,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 189.36,
+    "fin": 189.36,
+    "proba": 0.56
+   },
+   {
+    "mot": "Côte",
+    "debut": 189.36,
+    "fin": 189.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 189.4,
+    "fin": 189.4,
+    "proba": 0.66
+   },
+   {
+    "mot": "Côte",
+    "debut": 189.4,
+    "fin": 189.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 189.4,
+    "fin": 189.4,
+    "proba": 0.68
+   },
+   {
+    "mot": "Côte",
+    "debut": 189.4,
+    "fin": 190.26,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 190.26,
+    "fin": 190.28,
+    "proba": 0.75
+   },
+   {
+    "mot": "Côte",
+    "debut": 190.28,
+    "fin": 192.0,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 192.0,
+    "fin": 192.0,
+    "proba": 0.79
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.0,
+    "fin": 192.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.0,
+    "fin": 192.0,
+    "proba": 0.82
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.0,
+    "fin": 192.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.12,
+    "fin": 192.16,
+    "proba": 0.89
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.16,
+    "fin": 192.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.3,
+    "fin": 192.38,
+    "proba": 0.87
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.38,
+    "fin": 192.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.42,
+    "fin": 192.42,
+    "proba": 0.83
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.42,
+    "fin": 192.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.64,
+    "fin": 192.68,
+    "proba": 0.91
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.68,
+    "fin": 192.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.68,
+    "fin": 192.9,
+    "proba": 0.93
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 0.92
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 0.92
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 0.9
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 0.93
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 0.93
+   },
+   {
+    "mot": "Côte",
+    "debut": 192.9,
+    "fin": 192.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 192.9,
+    "fin": 193.3,
+    "proba": 0.81
+   },
+   {
+    "mot": "Côte",
+    "debut": 193.3,
+    "fin": 193.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 193.82,
+    "fin": 195.38,
+    "proba": 0.89
+   },
+   {
+    "mot": "Côte",
+    "debut": 195.38,
+    "fin": 195.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 195.84,
+    "fin": 195.96,
+    "proba": 0.93
+   },
+   {
+    "mot": "Côte",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 0.94
+   },
+   {
+    "mot": "Côte",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 0.94
+   },
+   {
+    "mot": "Côte",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 0.89
+   },
+   {
+    "mot": "Côte",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 195.96,
+    "fin": 195.96,
+    "proba": 0.89
+   },
+   {
+    "mot": "Côte",
+    "debut": 195.96,
+    "fin": 196.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 196.12,
+    "fin": 198.08,
+    "proba": 0.94
+   },
+   {
+    "mot": "Côte",
+    "debut": 198.08,
+    "fin": 198.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 198.6,
+    "fin": 198.6,
+    "proba": 0.84
+   },
+   {
+    "mot": "Côte",
+    "debut": 198.6,
+    "fin": 198.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 198.94,
+    "fin": 198.94,
+    "proba": 0.92
+   },
+   {
+    "mot": "Côte",
+    "debut": 198.94,
+    "fin": 199.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 199.12,
+    "fin": 199.18,
+    "proba": 0.83
+   },
+   {
+    "mot": "Côte",
+    "debut": 199.18,
+    "fin": 199.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 199.54,
+    "fin": 199.54,
+    "proba": 0.91
+   },
+   {
+    "mot": "Côte",
+    "debut": 199.54,
+    "fin": 200.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 200.46,
+    "fin": 200.86,
+    "proba": 0.89
+   },
+   {
+    "mot": "Côte",
+    "debut": 200.86,
+    "fin": 201.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 201.48,
+    "fin": 201.48,
+    "proba": 0.86
+   },
+   {
+    "mot": "Côte",
+    "debut": 201.48,
+    "fin": 201.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 201.66,
+    "fin": 201.72,
+    "proba": 0.94
+   },
+   {
+    "mot": "Côte",
+    "debut": 201.72,
+    "fin": 202.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 202.18,
+    "fin": 203.54,
+    "proba": 0.93
+   },
+   {
+    "mot": "Côte",
+    "debut": 203.54,
+    "fin": 204.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 204.0,
+    "fin": 204.34,
+    "proba": 0.87
+   },
+   {
+    "mot": "Côte",
+    "debut": 204.34,
+    "fin": 204.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 204.34,
+    "fin": 204.38,
+    "proba": 0.75
+   },
+   {
+    "mot": "Côte",
+    "debut": 204.38,
+    "fin": 204.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 204.88,
+    "fin": 204.96,
+    "proba": 0.85
+   },
+   {
+    "mot": "Côte",
+    "debut": 204.96,
+    "fin": 205.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 205.54,
+    "fin": 205.64,
+    "proba": 0.82
+   },
+   {
+    "mot": "Côte",
+    "debut": 205.64,
+    "fin": 205.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 205.64,
+    "fin": 206.44,
+    "proba": 0.81
+   },
+   {
+    "mot": "Côte",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 0.86
+   },
+   {
+    "mot": "Côte",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 0.73
+   },
+   {
+    "mot": "Côte",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 0.69
+   },
+   {
+    "mot": "Côte",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 0.73
+   },
+   {
+    "mot": "Côte",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 0.7
+   },
+   {
+    "mot": "Côte",
+    "debut": 206.44,
+    "fin": 206.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 206.44,
+    "fin": 207.36,
+    "proba": 0.66
+   },
+   {
+    "mot": "Côte",
+    "debut": 207.36,
+    "fin": 210.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 210.26,
+    "fin": 210.8,
+    "proba": 0.76
+   }
+  ]
+ },
+ {
+  "debut": 210.8,
+  "fin": 216.84,
+  "texte": "voilà ici assez de réseaux voilà ici on va dire et on va choisir un assez complet en fait voilà vous voyez non",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 210.8,
+    "fin": 211.28,
+    "proba": 0.72
+   },
+   {
+    "mot": "ici",
+    "debut": 211.28,
+    "fin": 212.12,
+    "proba": 0.93
+   },
+   {
+    "mot": "assez",
+    "debut": 212.12,
+    "fin": 212.54,
+    "proba": 0.73
+   },
+   {
+    "mot": "de",
+    "debut": 212.54,
+    "fin": 212.7,
+    "proba": 0.62
+   },
+   {
+    "mot": "réseaux",
+    "debut": 212.7,
+    "fin": 213.0,
+    "proba": 0.79
+   },
+   {
+    "mot": "voilà",
+    "debut": 213.0,
+    "fin": 213.24,
+    "proba": 0.89
+   },
+   {
+    "mot": "ici",
+    "debut": 213.24,
+    "fin": 213.46,
+    "proba": 0.76
+   },
+   {
+    "mot": "on",
+    "debut": 213.46,
+    "fin": 213.6,
+    "proba": 0.96
+   },
+   {
+    "mot": "va",
+    "debut": 213.6,
+    "fin": 213.7,
+    "proba": 0.7
+   },
+   {
+    "mot": "dire",
+    "debut": 213.7,
+    "fin": 213.88,
+    "proba": 0.48
+   },
+   {
+    "mot": "et",
+    "debut": 213.88,
+    "fin": 214.52,
+    "proba": 0.8
+   },
+   {
+    "mot": "on",
+    "debut": 214.52,
+    "fin": 214.84,
+    "proba": 0.98
+   },
+   {
+    "mot": "va",
+    "debut": 214.84,
+    "fin": 214.94,
+    "proba": 0.98
+   },
+   {
+    "mot": "choisir",
+    "debut": 214.94,
+    "fin": 215.22,
+    "proba": 0.92
+   },
+   {
+    "mot": "un",
+    "debut": 215.22,
+    "fin": 215.36,
+    "proba": 0.35
+   },
+   {
+    "mot": "assez",
+    "debut": 215.36,
+    "fin": 215.54,
+    "proba": 0.26
+   },
+   {
+    "mot": "complet",
+    "debut": 215.54,
+    "fin": 215.88,
+    "proba": 0.86
+   },
+   {
+    "mot": "en",
+    "debut": 215.88,
+    "fin": 216.06,
+    "proba": 0.95
+   },
+   {
+    "mot": "fait",
+    "debut": 216.06,
+    "fin": 216.14,
+    "proba": 0.97
+   },
+   {
+    "mot": "voilà",
+    "debut": 216.14,
+    "fin": 216.38,
+    "proba": 0.94
+   },
+   {
+    "mot": "vous",
+    "debut": 216.38,
+    "fin": 216.54,
+    "proba": 0.43
+   },
+   {
+    "mot": "voyez",
+    "debut": 216.54,
+    "fin": 216.68,
+    "proba": 0.96
+   },
+   {
+    "mot": "non",
+    "debut": 216.68,
+    "fin": 216.84,
+    "proba": 0.72
+   }
+  ]
+ },
+ {
+  "debut": 216.84,
+  "fin": 223.98,
+  "texte": "ici on choisit un assez complet assez internet sans rétrécution un assez complet on choisit ça comme ça vous voyez voilà un assez complet",
+  "mots": [
+   {
+    "mot": "ici",
+    "debut": 216.84,
+    "fin": 217.5,
+    "proba": 0.89
+   },
+   {
+    "mot": "on",
+    "debut": 217.5,
+    "fin": 217.84,
+    "proba": 0.92
+   },
+   {
+    "mot": "choisit",
+    "debut": 217.84,
+    "fin": 218.16,
+    "proba": 0.97
+   },
+   {
+    "mot": "un",
+    "debut": 218.16,
+    "fin": 218.28,
+    "proba": 0.8
+   },
+   {
+    "mot": "assez",
+    "debut": 218.28,
+    "fin": 218.44,
+    "proba": 0.9
+   },
+   {
+    "mot": "complet",
+    "debut": 218.44,
+    "fin": 218.74,
+    "proba": 0.97
+   },
+   {
+    "mot": "assez",
+    "debut": 218.74,
+    "fin": 219.02,
+    "proba": 0.57
+   },
+   {
+    "mot": "internet",
+    "debut": 219.02,
+    "fin": 219.36,
+    "proba": 0.89
+   },
+   {
+    "mot": "sans",
+    "debut": 219.36,
+    "fin": 219.6,
+    "proba": 0.93
+   },
+   {
+    "mot": "rétrécution",
+    "debut": 219.6,
+    "fin": 220.06,
+    "proba": 0.53
+   },
+   {
+    "mot": "un",
+    "debut": 220.06,
+    "fin": 220.46,
+    "proba": 0.41
+   },
+   {
+    "mot": "assez",
+    "debut": 220.46,
+    "fin": 220.64,
+    "proba": 0.96
+   },
+   {
+    "mot": "complet",
+    "debut": 220.64,
+    "fin": 220.94,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 220.94,
+    "fin": 221.34,
+    "proba": 0.89
+   },
+   {
+    "mot": "choisit",
+    "debut": 221.34,
+    "fin": 221.9,
+    "proba": 0.8
+   },
+   {
+    "mot": "ça",
+    "debut": 221.9,
+    "fin": 221.98,
+    "proba": 0.91
+   },
+   {
+    "mot": "comme",
+    "debut": 221.98,
+    "fin": 222.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "ça",
+    "debut": 222.12,
+    "fin": 222.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 222.28,
+    "fin": 222.54,
+    "proba": 0.69
+   },
+   {
+    "mot": "voyez",
+    "debut": 222.54,
+    "fin": 222.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà",
+    "debut": 222.68,
+    "fin": 223.3,
+    "proba": 0.92
+   },
+   {
+    "mot": "un",
+    "debut": 223.3,
+    "fin": 223.5,
+    "proba": 0.84
+   },
+   {
+    "mot": "assez",
+    "debut": 223.5,
+    "fin": 223.66,
+    "proba": 0.99
+   },
+   {
+    "mot": "complet",
+    "debut": 223.66,
+    "fin": 223.98,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 224.78,
+  "fin": 225.76,
+  "texte": "et c'est bien",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 224.78,
+    "fin": 225.14,
+    "proba": 0.88
+   },
+   {
+    "mot": "c",
+    "debut": 225.14,
+    "fin": 225.5,
+    "proba": 0.91
+   },
+   {
+    "mot": "'est",
+    "debut": 225.5,
+    "fin": 225.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "bien",
+    "debut": 225.56,
+    "fin": 225.76,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 226.44,
+  "fin": 229.22,
+  "texte": "ok c'est bon et ensuite on clique sur créer",
+  "mots": [
+   {
+    "mot": "ok",
+    "debut": 226.44,
+    "fin": 226.8,
+    "proba": 0.91
+   },
+   {
+    "mot": "c",
+    "debut": 226.8,
+    "fin": 227.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 227.0,
+    "fin": 227.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon",
+    "debut": 227.02,
+    "fin": 227.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 227.2,
+    "fin": 227.78,
+    "proba": 0.97
+   },
+   {
+    "mot": "ensuite",
+    "debut": 227.78,
+    "fin": 227.98,
+    "proba": 0.97
+   },
+   {
+    "mot": "on",
+    "debut": 227.98,
+    "fin": 228.14,
+    "proba": 0.98
+   },
+   {
+    "mot": "clique",
+    "debut": 228.14,
+    "fin": 228.3,
+    "proba": 0.83
+   },
+   {
+    "mot": "sur",
+    "debut": 228.3,
+    "fin": 228.66,
+    "proba": 0.94
+   },
+   {
+    "mot": "créer",
+    "debut": 228.66,
+    "fin": 229.22,
+    "proba": 0.59
+   }
+  ]
+ },
+ {
+  "debut": 229.66,
+  "fin": 234.84,
+  "texte": "voici la plupart des choses qu'il faut faire maintenant c'est bon on va acheter le dépôt vous voyez que le dépôt que j'ai créé sur mon compte",
+  "mots": [
+   {
+    "mot": "voici",
+    "debut": 229.66,
+    "fin": 230.02,
+    "proba": 0.81
+   },
+   {
+    "mot": "la",
+    "debut": 230.02,
+    "fin": 230.12,
+    "proba": 0.46
+   },
+   {
+    "mot": "plupart",
+    "debut": 230.12,
+    "fin": 230.28,
+    "proba": 0.07
+   },
+   {
+    "mot": "des",
+    "debut": 230.28,
+    "fin": 230.4,
+    "proba": 0.9
+   },
+   {
+    "mot": "choses",
+    "debut": 230.4,
+    "fin": 230.52,
+    "proba": 0.96
+   },
+   {
+    "mot": "qu",
+    "debut": 230.52,
+    "fin": 230.6,
+    "proba": 0.2
+   },
+   {
+    "mot": "'il",
+    "debut": 230.6,
+    "fin": 230.6,
+    "proba": 0.77
+   },
+   {
+    "mot": "faut",
+    "debut": 230.6,
+    "fin": 230.7,
+    "proba": 0.91
+   },
+   {
+    "mot": "faire",
+    "debut": 230.7,
+    "fin": 230.92,
+    "proba": 0.99
+   },
+   {
+    "mot": "maintenant",
+    "debut": 230.92,
+    "fin": 231.28,
+    "proba": 0.46
+   },
+   {
+    "mot": "c",
+    "debut": 231.28,
+    "fin": 231.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 231.4,
+    "fin": 231.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon",
+    "debut": 231.44,
+    "fin": 231.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 231.6,
+    "fin": 232.04,
+    "proba": 0.47
+   },
+   {
+    "mot": "va",
+    "debut": 232.04,
+    "fin": 232.24,
+    "proba": 0.84
+   },
+   {
+    "mot": "acheter",
+    "debut": 232.24,
+    "fin": 232.66,
+    "proba": 0.66
+   },
+   {
+    "mot": "le",
+    "debut": 232.66,
+    "fin": 232.78,
+    "proba": 0.73
+   },
+   {
+    "mot": "dépôt",
+    "debut": 232.78,
+    "fin": 233.1,
+    "proba": 0.97
+   },
+   {
+    "mot": "vous",
+    "debut": 233.1,
+    "fin": 233.58,
+    "proba": 0.77
+   },
+   {
+    "mot": "voyez",
+    "debut": 233.58,
+    "fin": 233.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 233.68,
+    "fin": 233.8,
+    "proba": 0.41
+   },
+   {
+    "mot": "le",
+    "debut": 233.8,
+    "fin": 233.9,
+    "proba": 0.99
+   },
+   {
+    "mot": "dépôt",
+    "debut": 233.9,
+    "fin": 234.14,
+    "proba": 0.98
+   },
+   {
+    "mot": "que",
+    "debut": 234.14,
+    "fin": 234.22,
+    "proba": 0.98
+   },
+   {
+    "mot": "j",
+    "debut": 234.22,
+    "fin": 234.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "'ai",
+    "debut": 234.32,
+    "fin": 234.36,
+    "proba": 0.95
+   },
+   {
+    "mot": "créé",
+    "debut": 234.36,
+    "fin": 234.5,
+    "proba": 0.9
+   },
+   {
+    "mot": "sur",
+    "debut": 234.5,
+    "fin": 234.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "mon",
+    "debut": 234.62,
+    "fin": 234.68,
+    "proba": 0.95
+   },
+   {
+    "mot": "compte",
+    "debut": 234.68,
+    "fin": 234.84,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 234.84,
+  "fin": 238.4,
+  "texte": "qui s'affiche ici n'est ce pas j'écris ça ce qui est lié et voilà c'est fini",
+  "mots": [
+   {
+    "mot": "qui",
+    "debut": 234.84,
+    "fin": 234.94,
+    "proba": 0.77
+   },
+   {
+    "mot": "s",
+    "debut": 234.94,
+    "fin": 235.08,
+    "proba": 0.72
+   },
+   {
+    "mot": "'affiche",
+    "debut": 235.08,
+    "fin": 235.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "ici",
+    "debut": 235.28,
+    "fin": 235.46,
+    "proba": 0.96
+   },
+   {
+    "mot": "n",
+    "debut": 235.46,
+    "fin": 235.58,
+    "proba": 0.98
+   },
+   {
+    "mot": "'est",
+    "debut": 235.58,
+    "fin": 235.64,
+    "proba": 0.99
+   },
+   {
+    "mot": "ce",
+    "debut": 235.64,
+    "fin": 235.7,
+    "proba": 0.65
+   },
+   {
+    "mot": "pas",
+    "debut": 235.7,
+    "fin": 235.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "j",
+    "debut": 235.86,
+    "fin": 236.2,
+    "proba": 0.52
+   },
+   {
+    "mot": "'écris",
+    "debut": 236.2,
+    "fin": 236.36,
+    "proba": 0.75
+   },
+   {
+    "mot": "ça",
+    "debut": 236.36,
+    "fin": 236.54,
+    "proba": 0.53
+   },
+   {
+    "mot": "ce",
+    "debut": 236.54,
+    "fin": 236.66,
+    "proba": 0.5
+   },
+   {
+    "mot": "qui",
+    "debut": 236.66,
+    "fin": 236.74,
+    "proba": 0.84
+   },
+   {
+    "mot": "est",
+    "debut": 236.74,
+    "fin": 236.86,
+    "proba": 0.48
+   },
+   {
+    "mot": "lié",
+    "debut": 236.86,
+    "fin": 237.46,
+    "proba": 0.4
+   },
+   {
+    "mot": "et",
+    "debut": 237.46,
+    "fin": 237.58,
+    "proba": 0.96
+   },
+   {
+    "mot": "voilà",
+    "debut": 237.58,
+    "fin": 237.8,
+    "proba": 0.98
+   },
+   {
+    "mot": "c",
+    "debut": 237.8,
+    "fin": 238.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 238.1,
+    "fin": 238.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "fini",
+    "debut": 238.14,
+    "fin": 238.4,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 239.1,
+  "fin": 243.34,
+  "texte": "c'est fini en fait vous voyez comment c'est simple le reste du travail vous allez voir que ça va aller tranquillement",
+  "mots": [
+   {
+    "mot": "c",
+    "debut": 239.1,
+    "fin": 239.42,
+    "proba": 0.41
+   },
+   {
+    "mot": "'est",
+    "debut": 239.42,
+    "fin": 239.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "fini",
+    "debut": 239.46,
+    "fin": 239.72,
+    "proba": 0.97
+   },
+   {
+    "mot": "en",
+    "debut": 239.72,
+    "fin": 239.88,
+    "proba": 0.67
+   },
+   {
+    "mot": "fait",
+    "debut": 239.88,
+    "fin": 239.92,
+    "proba": 0.93
+   },
+   {
+    "mot": "vous",
+    "debut": 239.92,
+    "fin": 240.06,
+    "proba": 0.34
+   },
+   {
+    "mot": "voyez",
+    "debut": 240.06,
+    "fin": 240.14,
+    "proba": 0.54
+   },
+   {
+    "mot": "comment",
+    "debut": 240.14,
+    "fin": 240.28,
+    "proba": 0.44
+   },
+   {
+    "mot": "c",
+    "debut": 240.28,
+    "fin": 240.44,
+    "proba": 0.93
+   },
+   {
+    "mot": "'est",
+    "debut": 240.44,
+    "fin": 240.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "simple",
+    "debut": 240.48,
+    "fin": 240.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 240.74,
+    "fin": 241.3,
+    "proba": 0.89
+   },
+   {
+    "mot": "reste",
+    "debut": 241.3,
+    "fin": 241.52,
+    "proba": 0.99
+   },
+   {
+    "mot": "du",
+    "debut": 241.52,
+    "fin": 241.62,
+    "proba": 0.97
+   },
+   {
+    "mot": "travail",
+    "debut": 241.62,
+    "fin": 241.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 241.86,
+    "fin": 242.04,
+    "proba": 0.88
+   },
+   {
+    "mot": "allez",
+    "debut": 242.04,
+    "fin": 242.26,
+    "proba": 0.5
+   },
+   {
+    "mot": "voir",
+    "debut": 242.26,
+    "fin": 242.36,
+    "proba": 0.94
+   },
+   {
+    "mot": "que",
+    "debut": 242.36,
+    "fin": 242.44,
+    "proba": 0.7
+   },
+   {
+    "mot": "ça",
+    "debut": 242.44,
+    "fin": 242.54,
+    "proba": 0.84
+   },
+   {
+    "mot": "va",
+    "debut": 242.54,
+    "fin": 242.6,
+    "proba": 0.99
+   },
+   {
+    "mot": "aller",
+    "debut": 242.6,
+    "fin": 242.76,
+    "proba": 0.98
+   },
+   {
+    "mot": "tranquillement",
+    "debut": 242.76,
+    "fin": 243.34,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 243.34,
+  "fin": 249.58,
+  "texte": "maintenant il y a des thèmes techniques et d'autres choses qu'on va apprendre on va corriger au fur et à mesure vous allez voir et voilà j'envoie ça",
+  "mots": [
+   {
+    "mot": "maintenant",
+    "debut": 243.34,
+    "fin": 243.76,
+    "proba": 0.83
+   },
+   {
+    "mot": "il",
+    "debut": 243.76,
+    "fin": 243.84,
+    "proba": 0.7
+   },
+   {
+    "mot": "y",
+    "debut": 243.84,
+    "fin": 243.88,
+    "proba": 0.97
+   },
+   {
+    "mot": "a",
+    "debut": 243.88,
+    "fin": 243.88,
+    "proba": 0.99
+   },
+   {
+    "mot": "des",
+    "debut": 243.88,
+    "fin": 244.0,
+    "proba": 0.77
+   },
+   {
+    "mot": "thèmes",
+    "debut": 244.0,
+    "fin": 244.22,
+    "proba": 0.95
+   },
+   {
+    "mot": "techniques",
+    "debut": 244.22,
+    "fin": 244.56,
+    "proba": 0.96
+   },
+   {
+    "mot": "et",
+    "debut": 244.56,
+    "fin": 244.8,
+    "proba": 0.5
+   },
+   {
+    "mot": "d",
+    "debut": 244.8,
+    "fin": 244.98,
+    "proba": 0.98
+   },
+   {
+    "mot": "'autres",
+    "debut": 244.98,
+    "fin": 245.1,
+    "proba": 0.98
+   },
+   {
+    "mot": "choses",
+    "debut": 245.1,
+    "fin": 245.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 245.28,
+    "fin": 245.42,
+    "proba": 0.88
+   },
+   {
+    "mot": "'on",
+    "debut": 245.42,
+    "fin": 245.82,
+    "proba": 0.99
+   },
+   {
+    "mot": "va",
+    "debut": 245.82,
+    "fin": 245.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "apprendre",
+    "debut": 245.96,
+    "fin": 246.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 246.3,
+    "fin": 246.48,
+    "proba": 0.89
+   },
+   {
+    "mot": "va",
+    "debut": 246.48,
+    "fin": 246.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "corriger",
+    "debut": 246.52,
+    "fin": 246.84,
+    "proba": 0.93
+   },
+   {
+    "mot": "au",
+    "debut": 246.84,
+    "fin": 246.98,
+    "proba": 0.97
+   },
+   {
+    "mot": "fur",
+    "debut": 246.98,
+    "fin": 247.04,
+    "proba": 0.97
+   },
+   {
+    "mot": "et",
+    "debut": 247.04,
+    "fin": 247.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 247.16,
+    "fin": 247.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "mesure",
+    "debut": 247.16,
+    "fin": 247.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 247.3,
+    "fin": 247.6,
+    "proba": 0.72
+   },
+   {
+    "mot": "allez",
+    "debut": 247.6,
+    "fin": 247.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "voir",
+    "debut": 247.74,
+    "fin": 247.98,
+    "proba": 0.99
+   },
+   {
+    "mot": "et",
+    "debut": 247.98,
+    "fin": 248.52,
+    "proba": 0.99
+   },
+   {
+    "mot": "voilà",
+    "debut": 248.52,
+    "fin": 248.76,
+    "proba": 0.99
+   },
+   {
+    "mot": "j",
+    "debut": 248.76,
+    "fin": 249.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "'envoie",
+    "debut": 249.18,
+    "fin": 249.42,
+    "proba": 0.99
+   },
+   {
+    "mot": "ça",
+    "debut": 249.42,
+    "fin": 249.58,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 250.62,
+  "fin": 255.24,
+  "texte": "attention il faut que j'envoie mon cas de charge donc là il faut que j'envoie en même temps je l'arrête je l'arrête",
+  "mots": [
+   {
+    "mot": "attention",
+    "debut": 250.62,
+    "fin": 250.94,
+    "proba": 0.77
+   },
+   {
+    "mot": "il",
+    "debut": 250.94,
+    "fin": 251.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "faut",
+    "debut": 251.18,
+    "fin": 251.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 251.26,
+    "fin": 251.36,
+    "proba": 0.98
+   },
+   {
+    "mot": "j",
+    "debut": 251.36,
+    "fin": 251.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoie",
+    "debut": 251.38,
+    "fin": 251.5,
+    "proba": 0.99
+   },
+   {
+    "mot": "mon",
+    "debut": 251.5,
+    "fin": 251.6,
+    "proba": 0.99
+   },
+   {
+    "mot": "cas",
+    "debut": 251.6,
+    "fin": 251.7,
+    "proba": 0.31
+   },
+   {
+    "mot": "de",
+    "debut": 251.7,
+    "fin": 251.8,
+    "proba": 0.95
+   },
+   {
+    "mot": "charge",
+    "debut": 251.8,
+    "fin": 252.04,
+    "proba": 0.97
+   },
+   {
+    "mot": "donc",
+    "debut": 252.04,
+    "fin": 252.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "là",
+    "debut": 252.28,
+    "fin": 252.5,
+    "proba": 0.99
+   },
+   {
+    "mot": "il",
+    "debut": 252.5,
+    "fin": 253.02,
+    "proba": 0.98
+   },
+   {
+    "mot": "faut",
+    "debut": 253.02,
+    "fin": 253.12,
+    "proba": 0.98
+   },
+   {
+    "mot": "que",
+    "debut": 253.12,
+    "fin": 253.16,
+    "proba": 0.96
+   },
+   {
+    "mot": "j",
+    "debut": 253.16,
+    "fin": 253.22,
+    "proba": 0.36
+   },
+   {
+    "mot": "'envoie",
+    "debut": 253.22,
+    "fin": 253.56,
+    "proba": 0.96
+   },
+   {
+    "mot": "en",
+    "debut": 253.56,
+    "fin": 254.12,
+    "proba": 0.01
+   },
+   {
+    "mot": "même",
+    "debut": 254.12,
+    "fin": 254.22,
+    "proba": 0.94
+   },
+   {
+    "mot": "temps",
+    "debut": 254.22,
+    "fin": 254.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 254.34,
+    "fin": 254.48,
+    "proba": 0.97
+   },
+   {
+    "mot": "l",
+    "debut": 254.48,
+    "fin": 254.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "'arrête",
+    "debut": 254.56,
+    "fin": 254.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 254.76,
+    "fin": 254.9,
+    "proba": 0.86
+   },
+   {
+    "mot": "l",
+    "debut": 254.9,
+    "fin": 254.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "'arrête",
+    "debut": 254.98,
+    "fin": 255.24,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 256.1,
+  "fin": 263.68,
+  "texte": "comment je vais le dire j'ai déjà commencé le travail voilà voilà arrêté voilà donc je vais d'abord coller le cas de charge",
+  "mots": [
+   {
+    "mot": "comment",
+    "debut": 256.1,
+    "fin": 256.42,
+    "proba": 0.88
+   },
+   {
+    "mot": "je",
+    "debut": 256.42,
+    "fin": 256.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "vais",
+    "debut": 256.52,
+    "fin": 256.62,
+    "proba": 0.94
+   },
+   {
+    "mot": "le",
+    "debut": 256.62,
+    "fin": 256.72,
+    "proba": 0.94
+   },
+   {
+    "mot": "dire",
+    "debut": 256.72,
+    "fin": 257.04,
+    "proba": 0.98
+   },
+   {
+    "mot": "j",
+    "debut": 257.04,
+    "fin": 257.86,
+    "proba": 0.36
+   },
+   {
+    "mot": "'ai",
+    "debut": 257.86,
+    "fin": 257.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "déjà",
+    "debut": 257.9,
+    "fin": 258.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "commencé",
+    "debut": 258.04,
+    "fin": 258.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 258.26,
+    "fin": 258.38,
+    "proba": 0.99
+   },
+   {
+    "mot": "travail",
+    "debut": 258.38,
+    "fin": 258.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "voilà",
+    "debut": 258.64,
+    "fin": 259.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "voilà",
+    "debut": 259.54,
+    "fin": 259.84,
+    "proba": 0.75
+   },
+   {
+    "mot": "arrêté",
+    "debut": 259.84,
+    "fin": 260.34,
+    "proba": 0.86
+   },
+   {
+    "mot": "voilà",
+    "debut": 260.34,
+    "fin": 260.9,
+    "proba": 0.98
+   },
+   {
+    "mot": "donc",
+    "debut": 260.9,
+    "fin": 261.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 261.76,
+    "fin": 261.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "vais",
+    "debut": 261.96,
+    "fin": 262.14,
+    "proba": 0.98
+   },
+   {
+    "mot": "d",
+    "debut": 262.14,
+    "fin": 262.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abord",
+    "debut": 262.4,
+    "fin": 262.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "coller",
+    "debut": 262.58,
+    "fin": 263.02,
+    "proba": 0.7
+   },
+   {
+    "mot": "le",
+    "debut": 263.02,
+    "fin": 263.1,
+    "proba": 0.97
+   },
+   {
+    "mot": "cas",
+    "debut": 263.1,
+    "fin": 263.22,
+    "proba": 0.84
+   },
+   {
+    "mot": "de",
+    "debut": 263.22,
+    "fin": 263.36,
+    "proba": 0.99
+   },
+   {
+    "mot": "charge",
+    "debut": 263.36,
+    "fin": 263.68,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 263.68,
+  "fin": 267.74,
+  "texte": "ici je l'ai arrêté il y en a ici répond moi",
+  "mots": [
+   {
+    "mot": "ici",
+    "debut": 263.68,
+    "fin": 264.88,
+    "proba": 0.14
+   },
+   {
+    "mot": "je",
+    "debut": 264.88,
+    "fin": 265.06,
+    "proba": 0.88
+   },
+   {
+    "mot": "l",
+    "debut": 265.06,
+    "fin": 265.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "'ai",
+    "debut": 265.16,
+    "fin": 265.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "arrêté",
+    "debut": 265.2,
+    "fin": 265.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "il",
+    "debut": 265.62,
+    "fin": 266.5,
+    "proba": 0.38
+   },
+   {
+    "mot": "y",
+    "debut": 266.5,
+    "fin": 266.54,
+    "proba": 0.98
+   },
+   {
+    "mot": "en",
+    "debut": 266.54,
+    "fin": 266.54,
+    "proba": 0.9
+   },
+   {
+    "mot": "a",
+    "debut": 266.54,
+    "fin": 266.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "ici",
+    "debut": 266.62,
+    "fin": 266.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "répond",
+    "debut": 266.82,
+    "fin": 267.4,
+    "proba": 0.14
+   },
+   {
+    "mot": "moi",
+    "debut": 267.4,
+    "fin": 267.74,
+    "proba": 0.79
+   }
+  ]
+ },
+ {
+  "debut": 268.52,
+  "fin": 270.18,
+  "texte": "je colle le cas de charge ici",
+  "mots": [
+   {
+    "mot": "je",
+    "debut": 268.52,
+    "fin": 268.82,
+    "proba": 0.94
+   },
+   {
+    "mot": "colle",
+    "debut": 268.82,
+    "fin": 269.06,
+    "proba": 0.68
+   },
+   {
+    "mot": "le",
+    "debut": 269.06,
+    "fin": 269.22,
+    "proba": 0.99
+   },
+   {
+    "mot": "cas",
+    "debut": 269.22,
+    "fin": 269.32,
+    "proba": 0.81
+   },
+   {
+    "mot": "de",
+    "debut": 269.32,
+    "fin": 269.42,
+    "proba": 0.92
+   },
+   {
+    "mot": "charge",
+    "debut": 269.42,
+    "fin": 269.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "ici",
+    "debut": 269.72,
+    "fin": 270.18,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 272.04,
+  "fin": 272.64,
+  "texte": "voilà",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 272.04,
+    "fin": 272.64,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 273.48,
+  "fin": 275.34,
+  "texte": "alors ici je vais revenir",
+  "mots": [
+   {
+    "mot": "alors",
+    "debut": 273.48,
+    "fin": 274.08,
+    "proba": 0.96
+   },
+   {
+    "mot": "ici",
+    "debut": 274.08,
+    "fin": 274.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 274.56,
+    "fin": 274.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "vais",
+    "debut": 274.74,
+    "fin": 274.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "revenir",
+    "debut": 274.9,
+    "fin": 275.34,
+    "proba": 0.93
+   }
+  ]
+ },
+ {
+  "debut": 276.6,
+  "fin": 278.42,
+  "texte": "et puis copier le cas de charge",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 276.6,
+    "fin": 277.2,
+    "proba": 0.63
+   },
+   {
+    "mot": "puis",
+    "debut": 277.2,
+    "fin": 277.32,
+    "proba": 0.58
+   },
+   {
+    "mot": "copier",
+    "debut": 277.32,
+    "fin": 277.7,
+    "proba": 0.98
+   },
+   {
+    "mot": "le",
+    "debut": 277.7,
+    "fin": 277.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "cas",
+    "debut": 277.82,
+    "fin": 277.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 277.96,
+    "fin": 278.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "charge",
+    "debut": 278.06,
+    "fin": 278.42,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 280.14,
+  "fin": 281.32,
+  "texte": "voilà",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 280.14,
+    "fin": 281.32,
+    "proba": 0.96
+   }
+  ]
+ },
+ {
+  "debut": 282.48,
+  "fin": 283.08,
+  "texte": "ici",
+  "mots": [
+   {
+    "mot": "ici",
+    "debut": 282.48,
+    "fin": 283.08,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 284.22,
+  "fin": 286.2,
+  "texte": "et ensuite cahier de charge",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 284.22,
+    "fin": 284.74,
+    "proba": 0.58
+   },
+   {
+    "mot": "ensuite",
+    "debut": 284.74,
+    "fin": 285.18,
+    "proba": 0.97
+   },
+   {
+    "mot": "cahier",
+    "debut": 285.18,
+    "fin": 285.78,
+    "proba": 0.66
+   },
+   {
+    "mot": "de",
+    "debut": 285.78,
+    "fin": 285.88,
+    "proba": 0.8
+   },
+   {
+    "mot": "charge",
+    "debut": 285.88,
+    "fin": 286.2,
+    "proba": 0.84
+   }
+  ]
+ },
+ {
+  "debut": 286.86,
+  "fin": 287.64,
+  "texte": "et voilà",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 286.86,
+    "fin": 287.38,
+    "proba": 0.78
+   },
+   {
+    "mot": "voilà",
+    "debut": 287.38,
+    "fin": 287.64,
+    "proba": 0.77
+   }
+  ]
+ },
+ {
+  "debut": 289.18,
+  "fin": 290.0,
+  "texte": "on lance",
+  "mots": [
+   {
+    "mot": "on",
+    "debut": 289.18,
+    "fin": 289.7,
+    "proba": 0.89
+   },
+   {
+    "mot": "lance",
+    "debut": 289.7,
+    "fin": 290.0,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 290.78,
+  "fin": 292.26,
+  "texte": "et donc voilà cher ami",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 290.78,
+    "fin": 291.3,
+    "proba": 0.88
+   },
+   {
+    "mot": "donc",
+    "debut": 291.3,
+    "fin": 291.48,
+    "proba": 0.97
+   },
+   {
+    "mot": "voilà",
+    "debut": 291.48,
+    "fin": 291.74,
+    "proba": 0.86
+   },
+   {
+    "mot": "cher",
+    "debut": 291.74,
+    "fin": 292.02,
+    "proba": 0.72
+   },
+   {
+    "mot": "ami",
+    "debut": 292.02,
+    "fin": 292.26,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 292.26,
+  "fin": 293.44,
+  "texte": "c'est ça",
+  "mots": [
+   {
+    "mot": "c",
+    "debut": 292.26,
+    "fin": 293.2,
+    "proba": 0.93
+   },
+   {
+    "mot": "'est",
+    "debut": 293.2,
+    "fin": 293.26,
+    "proba": 0.99
+   },
+   {
+    "mot": "ça",
+    "debut": 293.26,
+    "fin": 293.44,
+    "proba": 0.88
+   }
+  ]
+ },
+ {
+  "debut": 293.44,
+  "fin": 300.91,
+  "texte": "donc ClaudeCode va travailler",
+  "mots": [
+   {
+    "mot": "donc",
+    "debut": 293.44,
+    "fin": 294.3,
+    "proba": 0.77
+   },
+   {
+    "mot": "ClaudeCode",
+    "debut": 300.03,
+    "fin": 300.33,
+    "proba": 0.59
+   },
+   {
+    "mot": "va",
+    "debut": 300.33,
+    "fin": 300.47,
+    "proba": 0.94
+   },
+   {
+    "mot": "travailler",
+    "debut": 300.47,
+    "fin": 300.91,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 300.91,
+  "fin": 307.17,
+  "texte": "on peut l'utiliser directement dans le web et voilà",
+  "mots": [
+   {
+    "mot": "on",
+    "debut": 300.91,
+    "fin": 301.81,
+    "proba": 0.74
+   },
+   {
+    "mot": "peut",
+    "debut": 304.79,
+    "fin": 304.93,
+    "proba": 0.97
+   },
+   {
+    "mot": "l",
+    "debut": 304.93,
+    "fin": 305.03,
+    "proba": 0.84
+   },
+   {
+    "mot": "'utiliser",
+    "debut": 305.03,
+    "fin": 305.87,
+    "proba": 0.99
+   },
+   {
+    "mot": "directement",
+    "debut": 305.87,
+    "fin": 306.19,
+    "proba": 0.48
+   },
+   {
+    "mot": "dans",
+    "debut": 306.19,
+    "fin": 306.39,
+    "proba": 0.9
+   },
+   {
+    "mot": "le",
+    "debut": 306.39,
+    "fin": 306.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "web",
+    "debut": 306.45,
+    "fin": 306.67,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 306.67,
+    "fin": 306.85,
+    "proba": 0.16
+   },
+   {
+    "mot": "voilà",
+    "debut": 306.85,
+    "fin": 307.17,
+    "proba": 0.92
+   }
+  ]
+ },
+ {
+  "debut": 307.93,
+  "fin": 311.09,
+  "texte": "ici là si j'utilise autre compte comme Claude ici vous pouvez me déconnecter ici",
+  "mots": [
+   {
+    "mot": "ici",
+    "debut": 307.93,
+    "fin": 308.45,
+    "proba": 0.95
+   },
+   {
+    "mot": "là",
+    "debut": 308.45,
+    "fin": 308.73,
+    "proba": 0.46
+   },
+   {
+    "mot": "si",
+    "debut": 308.73,
+    "fin": 308.97,
+    "proba": 0.71
+   },
+   {
+    "mot": "j",
+    "debut": 308.97,
+    "fin": 309.07,
+    "proba": 0.97
+   },
+   {
+    "mot": "'utilise",
+    "debut": 309.07,
+    "fin": 309.21,
+    "proba": 0.95
+   },
+   {
+    "mot": "autre",
+    "debut": 309.21,
+    "fin": 309.37,
+    "proba": 0.49
+   },
+   {
+    "mot": "compte",
+    "debut": 309.37,
+    "fin": 309.63,
+    "proba": 0.93
+   },
+   {
+    "mot": "comme",
+    "debut": 309.63,
+    "fin": 309.81,
+    "proba": 0.18
+   },
+   {
+    "mot": "Claude",
+    "debut": 309.81,
+    "fin": 309.99,
+    "proba": 0.98
+   },
+   {
+    "mot": "ici",
+    "debut": 309.99,
+    "fin": 310.21,
+    "proba": 0.27
+   },
+   {
+    "mot": "vous",
+    "debut": 310.21,
+    "fin": 310.31,
+    "proba": 0.19
+   },
+   {
+    "mot": "pouvez",
+    "debut": 310.31,
+    "fin": 310.37,
+    "proba": 0.73
+   },
+   {
+    "mot": "me",
+    "debut": 310.37,
+    "fin": 310.41,
+    "proba": 0.83
+   },
+   {
+    "mot": "déconnecter",
+    "debut": 310.41,
+    "fin": 310.79,
+    "proba": 0.94
+   },
+   {
+    "mot": "ici",
+    "debut": 310.79,
+    "fin": 311.09,
+    "proba": 0.95
+   }
+  ]
+ },
+ {
+  "debut": 311.09,
+  "fin": 312.33,
+  "texte": "et puis voilà",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 311.09,
+    "fin": 311.93,
+    "proba": 0.99
+   },
+   {
+    "mot": "puis",
+    "debut": 311.93,
+    "fin": 312.03,
+    "proba": 0.99
+   },
+   {
+    "mot": "voilà",
+    "debut": 312.03,
+    "fin": 312.33,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 313.23,
+  "fin": 314.45,
+  "texte": "on va aller dans le web",
+  "mots": [
+   {
+    "mot": "on",
+    "debut": 313.23,
+    "fin": 313.75,
+    "proba": 0.96
+   },
+   {
+    "mot": "va",
+    "debut": 313.75,
+    "fin": 313.91,
+    "proba": 0.96
+   },
+   {
+    "mot": "aller",
+    "debut": 313.91,
+    "fin": 314.01,
+    "proba": 0.81
+   },
+   {
+    "mot": "dans",
+    "debut": 314.01,
+    "fin": 314.09,
+    "proba": 0.98
+   },
+   {
+    "mot": "le",
+    "debut": 314.09,
+    "fin": 314.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "web",
+    "debut": 314.17,
+    "fin": 314.45,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 316.15,
+  "fin": 316.67,
+  "texte": "ClaudeCode",
+  "mots": [
+   {
+    "mot": "ClaudeCode",
+    "debut": 316.15,
+    "fin": 316.67,
+    "proba": 0.89
+   }
+  ]
+ },
+ {
+  "debut": 317.11,
+  "fin": 320.01,
+  "texte": "ah et encore nous joseph-sandu-arobase-gmail.com",
+  "mots": [
+   {
+    "mot": "ah",
+    "debut": 317.11,
+    "fin": 317.47,
+    "proba": 0.02
+   },
+   {
+    "mot": "et",
+    "debut": 317.47,
+    "fin": 317.69,
+    "proba": 0.47
+   },
+   {
+    "mot": "encore",
+    "debut": 317.69,
+    "fin": 317.91,
+    "proba": 0.62
+   },
+   {
+    "mot": "nous",
+    "debut": 317.91,
+    "fin": 318.11,
+    "proba": 0.83
+   },
+   {
+    "mot": "joseph",
+    "debut": 318.11,
+    "fin": 318.45,
+    "proba": 0.89
+   },
+   {
+    "mot": "-sandu",
+    "debut": 318.45,
+    "fin": 318.87,
+    "proba": 0.42
+   },
+   {
+    "mot": "-arobase",
+    "debut": 318.87,
+    "fin": 319.29,
+    "proba": 0.36
+   },
+   {
+    "mot": "-gmail",
+    "debut": 319.29,
+    "fin": 319.57,
+    "proba": 0.82
+   },
+   {
+    "mot": ".com",
+    "debut": 319.57,
+    "fin": 320.01,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 321.07,
+  "fin": 321.43,
+  "texte": "continue",
+  "mots": [
+   {
+    "mot": "continue",
+    "debut": 321.07,
+    "fin": 321.43,
+    "proba": 0.72
+   }
+  ]
+ },
+ {
+  "debut": 326.25,
+  "fin": 326.61,
+  "texte": "voilà",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 326.25,
+    "fin": 326.61,
+    "proba": 0.72
+   }
+  ]
+ },
+ {
+  "debut": 327.33,
+  "fin": 330.85,
+  "texte": "non c'est bon donc ici dans le web Chrome alors vous allez voir que si on a dans la",
+  "mots": [
+   {
+    "mot": "non",
+    "debut": 327.33,
+    "fin": 327.69,
+    "proba": 0.33
+   },
+   {
+    "mot": "c",
+    "debut": 327.69,
+    "fin": 327.83,
+    "proba": 0.96
+   },
+   {
+    "mot": "'est",
+    "debut": 327.83,
+    "fin": 327.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon",
+    "debut": 327.89,
+    "fin": 328.01,
+    "proba": 0.9
+   },
+   {
+    "mot": "donc",
+    "debut": 328.01,
+    "fin": 328.17,
+    "proba": 0.86
+   },
+   {
+    "mot": "ici",
+    "debut": 328.17,
+    "fin": 328.39,
+    "proba": 0.99
+   },
+   {
+    "mot": "dans",
+    "debut": 328.39,
+    "fin": 328.53,
+    "proba": 0.91
+   },
+   {
+    "mot": "le",
+    "debut": 328.53,
+    "fin": 328.65,
+    "proba": 0.93
+   },
+   {
+    "mot": "web",
+    "debut": 328.65,
+    "fin": 328.81,
+    "proba": 0.95
+   },
+   {
+    "mot": "Chrome",
+    "debut": 328.81,
+    "fin": 329.05,
+    "proba": 0.12
+   },
+   {
+    "mot": "alors",
+    "debut": 329.05,
+    "fin": 329.31,
+    "proba": 0.8
+   },
+   {
+    "mot": "vous",
+    "debut": 329.31,
+    "fin": 329.55,
+    "proba": 0.82
+   },
+   {
+    "mot": "allez",
+    "debut": 329.55,
+    "fin": 329.57,
+    "proba": 0.96
+   },
+   {
+    "mot": "voir",
+    "debut": 329.57,
+    "fin": 329.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 329.71,
+    "fin": 329.81,
+    "proba": 0.83
+   },
+   {
+    "mot": "si",
+    "debut": 329.81,
+    "fin": 329.95,
+    "proba": 0.89
+   },
+   {
+    "mot": "on",
+    "debut": 329.95,
+    "fin": 330.07,
+    "proba": 0.97
+   },
+   {
+    "mot": "a",
+    "debut": 330.07,
+    "fin": 330.19,
+    "proba": 0.81
+   },
+   {
+    "mot": "dans",
+    "debut": 330.19,
+    "fin": 330.29,
+    "proba": 0.56
+   },
+   {
+    "mot": "la",
+    "debut": 330.29,
+    "fin": 330.85,
+    "proba": 0.77
+   }
+  ]
+ },
+ {
+  "debut": 330.85,
+  "fin": 331.61,
+  "texte": "là où il y a ma main",
+  "mots": [
+   {
+    "mot": "là",
+    "debut": 330.85,
+    "fin": 330.85,
+    "proba": 0.02
+   },
+   {
+    "mot": "où",
+    "debut": 330.85,
+    "fin": 331.05,
+    "proba": 0.69
+   },
+   {
+    "mot": "il",
+    "debut": 331.05,
+    "fin": 331.27,
+    "proba": 0.57
+   },
+   {
+    "mot": "y",
+    "debut": 331.27,
+    "fin": 331.39,
+    "proba": 0.97
+   },
+   {
+    "mot": "a",
+    "debut": 331.39,
+    "fin": 331.39,
+    "proba": 0.71
+   },
+   {
+    "mot": "ma",
+    "debut": 331.39,
+    "fin": 331.43,
+    "proba": 0.21
+   },
+   {
+    "mot": "main",
+    "debut": 331.43,
+    "fin": 331.61,
+    "proba": 0.53
+   }
+  ]
+ },
+ {
+  "debut": 331.61,
+  "fin": 332.47,
+  "texte": "c'est discussion ça",
+  "mots": [
+   {
+    "mot": "c",
+    "debut": 331.61,
+    "fin": 331.93,
+    "proba": 0.34
+   },
+   {
+    "mot": "'est",
+    "debut": 331.93,
+    "fin": 331.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "discussion",
+    "debut": 331.97,
+    "fin": 332.23,
+    "proba": 0.67
+   },
+   {
+    "mot": "ça",
+    "debut": 332.23,
+    "fin": 332.47,
+    "proba": 0.88
+   }
+  ]
+ },
+ {
+  "debut": 332.47,
+  "fin": 335.51,
+  "texte": "là où il y a à droite comme ça de la discussion ici on a ClaudeCode",
+  "mots": [
+   {
+    "mot": "là",
+    "debut": 332.47,
+    "fin": 332.97,
+    "proba": 0.6
+   },
+   {
+    "mot": "où",
+    "debut": 332.97,
+    "fin": 333.13,
+    "proba": 0.19
+   },
+   {
+    "mot": "il",
+    "debut": 333.13,
+    "fin": 333.23,
+    "proba": 0.67
+   },
+   {
+    "mot": "y",
+    "debut": 333.23,
+    "fin": 333.49,
+    "proba": 0.91
+   },
+   {
+    "mot": "a",
+    "debut": 333.49,
+    "fin": 333.49,
+    "proba": 0.84
+   },
+   {
+    "mot": "à",
+    "debut": 333.49,
+    "fin": 333.63,
+    "proba": 0.45
+   },
+   {
+    "mot": "droite",
+    "debut": 333.63,
+    "fin": 333.83,
+    "proba": 0.98
+   },
+   {
+    "mot": "comme",
+    "debut": 333.83,
+    "fin": 334.05,
+    "proba": 0.9
+   },
+   {
+    "mot": "ça",
+    "debut": 334.05,
+    "fin": 334.17,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 334.17,
+    "fin": 334.27,
+    "proba": 0.86
+   },
+   {
+    "mot": "la",
+    "debut": 334.27,
+    "fin": 334.33,
+    "proba": 0.98
+   },
+   {
+    "mot": "discussion",
+    "debut": 334.33,
+    "fin": 334.59,
+    "proba": 0.97
+   },
+   {
+    "mot": "ici",
+    "debut": 334.59,
+    "fin": 334.73,
+    "proba": 0.75
+   },
+   {
+    "mot": "on",
+    "debut": 334.73,
+    "fin": 334.87,
+    "proba": 0.91
+   },
+   {
+    "mot": "a",
+    "debut": 334.87,
+    "fin": 335.01,
+    "proba": 0.92
+   },
+   {
+    "mot": "ClaudeCode",
+    "debut": 335.01,
+    "fin": 335.51,
+    "proba": 0.26
+   }
+  ]
+ },
+ {
+  "debut": 335.51,
+  "fin": 336.35,
+  "texte": "vous voyez non voilà",
+  "mots": [
+   {
+    "mot": "vous",
+    "debut": 335.51,
+    "fin": 335.75,
+    "proba": 0.14
+   },
+   {
+    "mot": "voyez",
+    "debut": 335.75,
+    "fin": 335.89,
+    "proba": 0.98
+   },
+   {
+    "mot": "non",
+    "debut": 335.89,
+    "fin": 335.99,
+    "proba": 0.95
+   },
+   {
+    "mot": "voilà",
+    "debut": 335.99,
+    "fin": 336.35,
+    "proba": 0.92
+   }
+  ]
+ },
+ {
+  "debut": 336.35,
+  "fin": 338.23,
+  "texte": "donc vous allez voir que c'est ici",
+  "mots": [
+   {
+    "mot": "donc",
+    "debut": 336.35,
+    "fin": 336.97,
+    "proba": 0.82
+   },
+   {
+    "mot": "vous",
+    "debut": 336.97,
+    "fin": 337.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "allez",
+    "debut": 337.17,
+    "fin": 337.27,
+    "proba": 0.99
+   },
+   {
+    "mot": "voir",
+    "debut": 337.27,
+    "fin": 337.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 337.37,
+    "fin": 337.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "c",
+    "debut": 337.53,
+    "fin": 337.89,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 337.89,
+    "fin": 338.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "ici",
+    "debut": 338.03,
+    "fin": 338.23,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 338.71,
+  "fin": 339.07,
+  "texte": "ici",
+  "mots": [
+   {
+    "mot": "ici",
+    "debut": 338.71,
+    "fin": 339.07,
+    "proba": 0.9
+   }
+  ]
+ },
+ {
+  "debut": 339.63,
+  "fin": 340.61,
+  "texte": "plan de projet web",
+  "mots": [
+   {
+    "mot": "plan",
+    "debut": 339.63,
+    "fin": 339.99,
+    "proba": 0.86
+   },
+   {
+    "mot": "de",
+    "debut": 339.99,
+    "fin": 340.09,
+    "proba": 0.99
+   },
+   {
+    "mot": "projet",
+    "debut": 340.09,
+    "fin": 340.35,
+    "proba": 0.95
+   },
+   {
+    "mot": "web",
+    "debut": 340.35,
+    "fin": 340.61,
+    "proba": 0.96
+   }
+  ]
+ },
+ {
+  "debut": 340.61,
+  "fin": 341.31,
+  "texte": "voilà et ça",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 340.61,
+    "fin": 340.89,
+    "proba": 0.97
+   },
+   {
+    "mot": "et",
+    "debut": 340.89,
+    "fin": 341.17,
+    "proba": 0.93
+   },
+   {
+    "mot": "ça",
+    "debut": 341.17,
+    "fin": 341.31,
+    "proba": 0.95
+   }
+  ]
+ },
+ {
+  "debut": 343.09,
+  "fin": 344.27,
+  "texte": "et donc là il y a un lien de travail",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 343.09,
+    "fin": 343.45,
+    "proba": 0.93
+   },
+   {
+    "mot": "donc",
+    "debut": 343.45,
+    "fin": 343.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "là",
+    "debut": 343.63,
+    "fin": 343.75,
+    "proba": 0.36
+   },
+   {
+    "mot": "il",
+    "debut": 343.75,
+    "fin": 343.81,
+    "proba": 0.56
+   },
+   {
+    "mot": "y",
+    "debut": 343.81,
+    "fin": 343.83,
+    "proba": 0.92
+   },
+   {
+    "mot": "a",
+    "debut": 343.83,
+    "fin": 343.83,
+    "proba": 0.96
+   },
+   {
+    "mot": "un",
+    "debut": 343.83,
+    "fin": 343.89,
+    "proba": 0.54
+   },
+   {
+    "mot": "lien",
+    "debut": 343.89,
+    "fin": 343.89,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 343.89,
+    "fin": 343.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "travail",
+    "debut": 343.99,
+    "fin": 344.27,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 344.27,
+  "fin": 344.73,
+  "texte": "où voyez non",
+  "mots": [
+   {
+    "mot": "où",
+    "debut": 344.27,
+    "fin": 344.49,
+    "proba": 0.43
+   },
+   {
+    "mot": "voyez",
+    "debut": 344.49,
+    "fin": 344.63,
+    "proba": 0.59
+   },
+   {
+    "mot": "non",
+    "debut": 344.63,
+    "fin": 344.73,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 344.73,
+  "fin": 345.91,
+  "texte": "ça on envoie",
+  "mots": [
+   {
+    "mot": "ça",
+    "debut": 344.73,
+    "fin": 345.39,
+    "proba": 0.25
+   },
+   {
+    "mot": "on",
+    "debut": 345.39,
+    "fin": 345.47,
+    "proba": 0.9
+   },
+   {
+    "mot": "envoie",
+    "debut": 345.47,
+    "fin": 345.91,
+    "proba": 0.73
+   }
+  ]
+ },
+ {
+  "debut": 346.75,
+  "fin": 348.05,
+  "texte": "il y a un lien de travail",
+  "mots": [
+   {
+    "mot": "il",
+    "debut": 346.75,
+    "fin": 347.11,
+    "proba": 0.4
+   },
+   {
+    "mot": "y",
+    "debut": 347.11,
+    "fin": 347.23,
+    "proba": 0.66
+   },
+   {
+    "mot": "a",
+    "debut": 347.23,
+    "fin": 347.25,
+    "proba": 0.97
+   },
+   {
+    "mot": "un",
+    "debut": 347.25,
+    "fin": 347.41,
+    "proba": 0.63
+   },
+   {
+    "mot": "lien",
+    "debut": 347.41,
+    "fin": 347.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 347.55,
+    "fin": 347.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "travail",
+    "debut": 347.73,
+    "fin": 348.05,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 348.85,
+  "fin": 351.91,
+  "texte": "je fais maintenant les recherches dans les documents officiels et ordinateurs",
+  "mots": [
+   {
+    "mot": "je",
+    "debut": 348.85,
+    "fin": 349.17,
+    "proba": 0.76
+   },
+   {
+    "mot": "fais",
+    "debut": 349.17,
+    "fin": 349.37,
+    "proba": 0.72
+   },
+   {
+    "mot": "maintenant",
+    "debut": 349.37,
+    "fin": 349.63,
+    "proba": 0.93
+   },
+   {
+    "mot": "les",
+    "debut": 349.63,
+    "fin": 349.83,
+    "proba": 0.77
+   },
+   {
+    "mot": "recherches",
+    "debut": 349.83,
+    "fin": 350.19,
+    "proba": 0.98
+   },
+   {
+    "mot": "dans",
+    "debut": 350.19,
+    "fin": 350.33,
+    "proba": 0.97
+   },
+   {
+    "mot": "les",
+    "debut": 350.33,
+    "fin": 350.45,
+    "proba": 0.96
+   },
+   {
+    "mot": "documents",
+    "debut": 350.45,
+    "fin": 350.71,
+    "proba": 0.98
+   },
+   {
+    "mot": "officiels",
+    "debut": 350.71,
+    "fin": 351.39,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 351.39,
+    "fin": 351.55,
+    "proba": 0.13
+   },
+   {
+    "mot": "ordinateurs",
+    "debut": 351.55,
+    "fin": 351.91,
+    "proba": 0.89
+   }
+  ]
+ },
+ {
+  "debut": 351.91,
+  "fin": 352.41,
+  "texte": "tout tout tout tout",
+  "mots": [
+   {
+    "mot": "tout",
+    "debut": 351.91,
+    "fin": 352.03,
+    "proba": 0.21
+   },
+   {
+    "mot": "tout",
+    "debut": 352.03,
+    "fin": 352.23,
+    "proba": 0.78
+   },
+   {
+    "mot": "tout",
+    "debut": 352.23,
+    "fin": 352.37,
+    "proba": 0.87
+   },
+   {
+    "mot": "tout",
+    "debut": 352.37,
+    "fin": 352.41,
+    "proba": 0.73
+   }
+  ]
+ },
+ {
+  "debut": 352.99,
+  "fin": 353.31,
+  "texte": "voilà",
+  "mots": [
+   {
+    "mot": "voilà",
+    "debut": 352.99,
+    "fin": 353.31,
+    "proba": 0.5
+   }
+  ]
+ },
+ {
+  "debut": 354.73,
+  "fin": 355.55,
+  "texte": "donc il travaille",
+  "mots": [
+   {
+    "mot": "donc",
+    "debut": 354.73,
+    "fin": 355.05,
+    "proba": 0.78
+   },
+   {
+    "mot": "il",
+    "debut": 355.05,
+    "fin": 355.21,
+    "proba": 0.61
+   },
+   {
+    "mot": "travaille",
+    "debut": 355.21,
+    "fin": 355.55,
+    "proba": 0.92
+   }
+  ]
+ },
+ {
+  "debut": 355.55,
+  "fin": 356.51,
+  "texte": "ici l'un de travail",
+  "mots": [
+   {
+    "mot": "ici",
+    "debut": 355.55,
+    "fin": 356.01,
+    "proba": 0.62
+   },
+   {
+    "mot": "l",
+    "debut": 356.01,
+    "fin": 356.15,
+    "proba": 0.16
+   },
+   {
+    "mot": "'un",
+    "debut": 356.15,
+    "fin": 356.15,
+    "proba": 0.73
+   },
+   {
+    "mot": "de",
+    "debut": 356.15,
+    "fin": 356.23,
+    "proba": 0.26
+   },
+   {
+    "mot": "travail",
+    "debut": 356.23,
+    "fin": 356.51,
+    "proba": 0.68
+   }
+  ]
+ },
+ {
+  "debut": 356.51,
+  "fin": 356.95,
+  "texte": "où voyez non",
+  "mots": [
+   {
+    "mot": "où",
+    "debut": 356.51,
+    "fin": 356.71,
+    "proba": 0.02
+   },
+   {
+    "mot": "voyez",
+    "debut": 356.71,
+    "fin": 356.85,
+    "proba": 0.0
+   },
+   {
+    "mot": "non",
+    "debut": 356.85,
+    "fin": 356.95,
+    "proba": 0.69
+   }
+  ]
+ },
+ {
+  "debut": 357.51,
+  "fin": 358.07,
+  "texte": "et voilà",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 357.51,
+    "fin": 357.83,
+    "proba": 0.87
+   },
+   {
+    "mot": "voilà",
+    "debut": 357.83,
+    "fin": 358.07,
+    "proba": 0.95
+   }
+  ]
+ },
+ {
+  "debut": 372.15,
+  "fin": 374.03,
+  "texte": "que le coup de prendre beaucoup de temps pour travailler",
+  "mots": [
+   {
+    "mot": "que",
+    "debut": 372.15,
+    "fin": 372.47,
+    "proba": 0.25
+   },
+   {
+    "mot": "le",
+    "debut": 372.47,
+    "fin": 372.55,
+    "proba": 0.84
+   },
+   {
+    "mot": "coup",
+    "debut": 372.55,
+    "fin": 372.71,
+    "proba": 0.57
+   },
+   {
+    "mot": "de",
+    "debut": 372.71,
+    "fin": 372.81,
+    "proba": 0.95
+   },
+   {
+    "mot": "prendre",
+    "debut": 372.81,
+    "fin": 372.99,
+    "proba": 0.94
+   },
+   {
+    "mot": "beaucoup",
+    "debut": 372.99,
+    "fin": 373.23,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 373.23,
+    "fin": 373.37,
+    "proba": 0.97
+   },
+   {
+    "mot": "temps",
+    "debut": 373.37,
+    "fin": 373.55,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 373.55,
+    "fin": 373.67,
+    "proba": 0.68
+   },
+   {
+    "mot": "travailler",
+    "debut": 373.67,
+    "fin": 374.03,
+    "proba": 0.8
+   }
+  ]
+ },
+ {
+  "debut": 374.03,
+  "fin": 375.53,
+  "texte": "que le coup de prendre beaucoup de temps pour travailler",
+  "mots": [
+   {
+    "mot": "que",
+    "debut": 374.03,
+    "fin": 374.23,
+    "proba": 0.17
+   },
+   {
+    "mot": "le",
+    "debut": 374.23,
+    "fin": 374.39,
+    "proba": 0.96
+   },
+   {
+    "mot": "coup",
+    "debut": 374.39,
+    "fin": 374.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 374.45,
+    "fin": 374.53,
+    "proba": 0.97
+   },
+   {
+    "mot": "prendre",
+    "debut": 374.53,
+    "fin": 374.69,
+    "proba": 0.98
+   },
+   {
+    "mot": "beaucoup",
+    "debut": 374.69,
+    "fin": 374.91,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 374.91,
+    "fin": 375.05,
+    "proba": 0.99
+   },
+   {
+    "mot": "temps",
+    "debut": 375.05,
+    "fin": 375.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 375.17,
+    "fin": 375.31,
+    "proba": 0.93
+   },
+   {
+    "mot": "travailler",
+    "debut": 375.31,
+    "fin": 375.53,
+    "proba": 0.91
+   }
+  ]
+ },
+ {
+  "debut": 375.53,
+  "fin": 376.51,
+  "texte": "beaucoup même de temps pour travailler",
+  "mots": [
+   {
+    "mot": "beaucoup",
+    "debut": 375.53,
+    "fin": 375.79,
+    "proba": 0.81
+   },
+   {
+    "mot": "même",
+    "debut": 375.79,
+    "fin": 375.95,
+    "proba": 0.51
+   },
+   {
+    "mot": "de",
+    "debut": 375.95,
+    "fin": 376.03,
+    "proba": 0.93
+   },
+   {
+    "mot": "temps",
+    "debut": 376.03,
+    "fin": 376.17,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 376.17,
+    "fin": 376.33,
+    "proba": 0.84
+   },
+   {
+    "mot": "travailler",
+    "debut": 376.33,
+    "fin": 376.51,
+    "proba": 0.81
+   }
+  ]
+ },
+ {
+  "debut": 376.51,
+  "fin": 378.35,
+  "texte": "du coup on va lui laisser faire le travail",
+  "mots": [
+   {
+    "mot": "du",
+    "debut": 376.51,
+    "fin": 376.67,
+    "proba": 0.93
+   },
+   {
+    "mot": "coup",
+    "debut": 376.67,
+    "fin": 376.83,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 376.83,
+    "fin": 377.39,
+    "proba": 0.98
+   },
+   {
+    "mot": "va",
+    "debut": 377.39,
+    "fin": 377.53,
+    "proba": 0.98
+   },
+   {
+    "mot": "lui",
+    "debut": 377.53,
+    "fin": 377.63,
+    "proba": 0.5
+   },
+   {
+    "mot": "laisser",
+    "debut": 377.63,
+    "fin": 377.83,
+    "proba": 0.99
+   },
+   {
+    "mot": "faire",
+    "debut": 377.83,
+    "fin": 377.97,
+    "proba": 0.92
+   },
+   {
+    "mot": "le",
+    "debut": 377.97,
+    "fin": 378.07,
+    "proba": 0.96
+   },
+   {
+    "mot": "travail",
+    "debut": 378.07,
+    "fin": 378.35,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 378.35,
+  "fin": 380.03,
+  "texte": "du coup je vais arrêter l'enregistrement",
+  "mots": [
+   {
+    "mot": "du",
+    "debut": 378.35,
+    "fin": 378.53,
+    "proba": 0.97
+   },
+   {
+    "mot": "coup",
+    "debut": 378.53,
+    "fin": 378.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 378.63,
+    "fin": 378.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "vais",
+    "debut": 378.73,
+    "fin": 378.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "arrêter",
+    "debut": 378.87,
+    "fin": 379.25,
+    "proba": 0.98
+   },
+   {
+    "mot": "l",
+    "debut": 379.25,
+    "fin": 379.33,
+    "proba": 0.41
+   },
+   {
+    "mot": "'enregistrement",
+    "debut": 379.33,
+    "fin": 380.03,
+    "proba": 0.96
+   }
+  ]
+ },
+ {
+  "debut": 380.03,
+  "fin": 381.43,
+  "texte": "et sinon il prend le temps",
+  "mots": [
+   {
+    "mot": "et",
+    "debut": 380.03,
+    "fin": 380.65,
+    "proba": 0.8
+   },
+   {
+    "mot": "sinon",
+    "debut": 380.65,
+    "fin": 380.89,
+    "proba": 0.98
+   },
+   {
+    "mot": "il",
+    "debut": 380.89,
+    "fin": 380.99,
+    "proba": 0.97
+   },
+   {
+    "mot": "prend",
+    "debut": 380.99,
+    "fin": 381.09,
+    "proba": 0.87
+   },
+   {
+    "mot": "le",
+    "debut": 381.09,
+    "fin": 381.21,
+    "proba": 0.98
+   },
+   {
+    "mot": "temps",
+    "debut": 381.21,
+    "fin": 381.43,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 381.85,
+  "fin": 384.09,
+  "texte": "des fois il me prend 5 heures en fonction de la tâche",
+  "mots": [
+   {
+    "mot": "des",
+    "debut": 381.85,
+    "fin": 382.17,
+    "proba": 0.62
+   },
+   {
+    "mot": "fois",
+    "debut": 382.17,
+    "fin": 382.27,
+    "proba": 0.99
+   },
+   {
+    "mot": "il",
+    "debut": 382.27,
+    "fin": 382.37,
+    "proba": 0.72
+   },
+   {
+    "mot": "me",
+    "debut": 382.37,
+    "fin": 382.37,
+    "proba": 0.14
+   },
+   {
+    "mot": "prend",
+    "debut": 382.37,
+    "fin": 382.63,
+    "proba": 0.71
+   },
+   {
+    "mot": "5",
+    "debut": 382.63,
+    "fin": 382.91,
+    "proba": 0.58
+   },
+   {
+    "mot": "heures",
+    "debut": 382.91,
+    "fin": 383.15,
+    "proba": 0.84
+   },
+   {
+    "mot": "en",
+    "debut": 383.15,
+    "fin": 383.41,
+    "proba": 0.94
+   },
+   {
+    "mot": "fonction",
+    "debut": 383.41,
+    "fin": 383.57,
+    "proba": 0.46
+   },
+   {
+    "mot": "de",
+    "debut": 383.57,
+    "fin": 383.69,
+    "proba": 0.99
+   },
+   {
+    "mot": "la",
+    "debut": 383.69,
+    "fin": 383.81,
+    "proba": 0.98
+   },
+   {
+    "mot": "tâche",
+    "debut": 383.81,
+    "fin": 384.09,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 384.09,
+  "fin": 385.05,
+  "texte": "la grande lutte de la tâche",
+  "mots": [
+   {
+    "mot": "la",
+    "debut": 384.09,
+    "fin": 384.25,
+    "proba": 0.25
+   },
+   {
+    "mot": "grande",
+    "debut": 384.25,
+    "fin": 384.45,
+    "proba": 0.72
+   },
+   {
+    "mot": "lutte",
+    "debut": 384.45,
+    "fin": 384.57,
+    "proba": 0.55
+   },
+   {
+    "mot": "de",
+    "debut": 384.57,
+    "fin": 384.67,
+    "proba": 0.98
+   },
+   {
+    "mot": "la",
+    "debut": 384.67,
+    "fin": 384.75,
+    "proba": 0.99
+   },
+   {
+    "mot": "tâche",
+    "debut": 384.75,
+    "fin": 385.05,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 385.61,
+  "fin": 385.93,
+  "texte": "donc",
+  "mots": [
+   {
+    "mot": "donc",
+    "debut": 385.61,
+    "fin": 385.93,
+    "proba": 0.88
+   }
+  ]
+ }
+]

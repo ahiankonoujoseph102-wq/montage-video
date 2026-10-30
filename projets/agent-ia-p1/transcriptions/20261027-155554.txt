@@ -1,0 +1,78 @@
+[00:00.00] alors bien donc là je vais faire l'exemple pratique devant vous ici d'accord cher ami
+[00:07.00] comme je vous ai dit je vais faire l'exemple pratique je vais créer un argent de programmation
+[00:11.46] voilà c'est parce que vous voyez moi je perds l'abonnement cloud code chaque fois donc c'est
+[00:15.66] maintenant c'est et c'est c'est c'est trop en fait voilà parce que je perds l'abonnement
+[00:20.00] cloud code donc chacun du mois je perds 13500 x 4 parfois je perds trois comptes d'abonnement
+[00:26.14] pas quatre voilà dépendamment de la tête des projets qui chèrent à exécuter donc alors
+[00:30.14] pour éviter tout ça il faut que j'ai créé un agent de programmation vous voyez donc je vais faire ça
+[00:33.50] devant vous de a à z je vais faire ça de a à z donc déjà la première des choses non on veut créer
+[00:39.74] un agent c'est c'est le bloc note c'est que vous avez une vision de ce que vous voulez faire vous
+[00:45.66] voyez vous avez une vision dont il vous décrit cela manuellement en tout cas vous avez le guide qui
+[00:50.38] va vous aider d'accord de toute façon rendez-vous dans notre bloc note comme je vous ai dit comme
+[00:54.56] ce qui me sont déjà fait donc d'abord bloc note ici je vais bien écrire ici je veux créer un agent un
+[01:04.50] agent et à deux programmations vous voyez par exemple ici là bon moi je vais aller beaucoup plus rapidement
+[01:15.64] d'accord voilà donc je vais pas pouvoir taper tout ça manuellement je vais parler j'ai dit la vision
+[01:20.74] donc je vais parler directement du coup va et je vais venir en charge et petit ici d'abord regardez moi je
+[01:25.66] vais faire un vocal pour pouvoir parler plus rapidement le faire vous voyez non voilà donc
+[01:33.46] bien d'abord je viens ici vous voyez je vais cliquer ici vous voyez je vais cliquer ici là où
+[01:40.42] il y va mais là où et non c'est si je vais cliquer pour refaire vocale et tout ce que j'ai dit c'est
+[01:44.72] qu'il y en a directement on a plus du temps à perdre bon d'abord regardez ici donc d'abord je suis venu ici
+[02:48.35] j'ai parlé à claude claude ici je l'ai dit de me présenter puisque je veux créer un agent il ya de
+[02:52.59] programmation alors je vais d'abord savoir les meilleurs agents il ya d'abord vaille et là il
+[02:56.25] m'a dit c'est que claude coûte environ 8 milliards dollars voilà il a son propre modèle donc on a qui
+[03:02.13] sort qui sort fait chiffre d'affaires voilà ici c'est un modèle loué donc là on a le va bol ok d'accord
+[03:07.27] donc là je vais prendre ceci voilà j'aimais marie ce qui sort voilà qui sort ce que je veux créer un
+[03:18.63] agent très solide donc la voie que là il faut que j'ai décrit ce qu'il veut maintenant comme je joue
+[03:22.57] si je manque de certaines choses alors par exemple si je vais créer un agent l'agent plusieurs personnes
+[03:26.75] déjà créé ça alors je vois les meilleurs et je prends et les fonctions des meilleurs pour faire
+[03:33.21] le mieux aussi également j'écris pour moi aussi également quand je prends par exemple le va bol le va bol
+[03:36.97] vous voyez et aussi utiliser bon en tout cas on va en parler plus tard d'accord le va bol
+[03:41.69] c'est quelqu'un qui a créé ça et aujourd'hui on lui non l'utilisant le paix vous voyez non voilà
+[03:46.27] donc il faut qu'on m'en crie nos agents voilà le va bol ici voilà on a coup d'est mais voilà coup d'est
+[03:57.41] ou de open eye voilà ok donc ici la paix il a dit manus manus ok d'accord autonome voilà en fait
+[04:06.29] ici j'ai décrit mon mon travail ou un an et je l'ai dit j'ai décrit mon travail si bon je vais
+[04:11.27] voir autonome ne veut pas dire qu'est d'accord donc déjà plus messe donc quand vous lui faites
+[04:16.57] des choses aussi et c'est des faits des chaussures ce qu'on voulait faire pour la suite les choses en
+[04:19.85] fait nous et non ici vous créez votre voie qui est impossible la b ok d'accord b fait tourner ok
+[04:26.77] d'accord ici c'est le coup ok donc louer plusieurs modèles comme qu'ils sont manus et coudé recommandé
+[04:35.15] un modèle économique ou les tâches d'accord donc la louer plusieurs modèles comme qu'un modèle
+[04:40.15] que les tâches un modèle puissant pour l'état difficile un ordinateur futur pour chaque utilisateur
+[04:44.45] à partir d'une base voilà et voilà ici votre ok d'accord c'est bon le coup du départ est faisable
+[04:51.83] ok voilà vous voyez par exemple ce que moi je vais créer alors j'ai fait des recherches alors c'est avec
+[04:56.15] claude ici et en fait les meilleurs il m'a proposé ce qui va me coûter trop d'argent et ce qui est
+[05:02.61] beaucoup bien aussi vous voyez non voilà donc par exemple ici il m'a proposé beaucoup de choses
+[05:05.81] vous pouvez voir voyez donc là ici je choisis ceci donc je vais copier ceci là voilà louer plusieurs
+[05:11.87] modèles comme qui sort voilà attention non donc voilà premier des choses quand vous voulez créer
+[05:18.69] un agent et c'était décrit ce que vous voulez faire mais c'est qu'est ce qui passe vous décrivez ici
+[05:31.70] voilà ici bon je vais comme ça louer ici de construire c'est bon là je vais modifier directement ok mon
+[06:47.15] nom est bien écrit ok c'est bon ok ben là voilà je donne mon nom vous voyez il faut que je donne donc
+[06:52.47] quand vous décrivez ce que vous voulez qu'il y en fasse mais là il faut le nom quel nom de l'agent
+[06:55.91] si vous avez un nom de l'agent alors vous donnez vous n'avez pas un nom pour l'agent votre argent alors
+[06:59.81] vous laissez claude claude va vous proposer les différents noms vous voyez non voilà maintenant
+[07:03.41] c'est la suite c'est que j'ai donné mon nom maintenant ici info de compte email email ici je
+[07:42.96] peux mettre ceci par exemple pour le moment je vais mettre ceci non je vais mettre d'abord
+[07:49.64] rien connu joseph pour le moins ça c'est facultatif et on va remplacer ça voilà parce que c'est le
+[07:57.42] vrai et mieux livre que je vérifie là on a rien connu joseph voilà donc c'est ça rien connu joseph
+[08:03.36] ici contact plus 228 112 24 de 31 119 16 23 90 119 114 21 et 16 voilà bureau à 22 gommet et
+[08:37.57] c'est moderne 2 voilà donc comme vous pouvez le constater j'ai copié 5 voilà comme vous pouvez le constater
+[09:05.81] alors j'ai parlé de façon désordonnée voilà j'ai pas une façon désordonnée et voilà vous voyez non
+[09:10.89] j'écoute pas lisse de façon désolé en fait c'est que je vais créer un argent de programmation mais vu
+[09:15.85] que je ne suis pas trop espère en création d'argent de programmation alors eh bien quand
+[09:21.23] même j'ai décrit mon objectif vous voyez puisque en fait mon objectif c'est de pouvoir créer un
+[09:25.01] agent de programmation comme cloud code un agent de programmation comme codesse un agent de
+[09:29.11] programmation comment qui sort comme louva ball vous voyez non voilà vous voyez moi je pense créer
+[09:34.33] ça mais je sais pas comment le fait mais avec le web code jean parce que là on fait le web code
+[09:38.05] jean l'art de décrire la lia ce que nous voulons qu'il nous fasse il va nous le faire là on fait le
+[09:41.87] web code jean mais donc avec le web code jean on va pouvoir créer quoi que ce qu'on nous voulons
+[09:46.37] ce que nous voulons créer en fait il ya plus de barrière avec le web code jean donc là j'ai
+[09:50.95] décrit de façon désordonnée voilà mais vous moi je vous ai donné une fiche que vous allez respecter
+[09:54.71] voilà ok voilà ce que comme je vous ai dit il faut que vous compreniez le principe
+[09:58.25] premièrement décrivez ce que vous voulez faire décrivez par exemple il ya tu moi je connais pas le
+[10:01.69] de mon agent cloud va m'aider pour ça je connais pas le niveau de poser les différents noms proposer
+[10:05.33] les différents noms et je vais choisir vous voyez non voilà maintenant le plan là surtout ça cloud va
+[10:10.17] m'aider pour ça pour commencer d'ailleurs dans la après avoir fait tout vous copiez tout votre
+[10:15.87] bloc note vous copiez tout votre bloc note voilà voilà c'est bien copié non voilà ok là je viens donc
+[10:27.63] là on va nommer claude comme chef de projet comme je vous ai dit après le bloc note on va nommer
+[10:31.83] comme chef de projet pour clarifier tout le monde de projet donc on commence bien je vais donner un
+[10:39.21] prompt et quand vous venez d'encorder le prompt que vous deviez envoyer à cloud code je vous ai
+[10:42.19] donné cela donc vous copiez vous envoyer à cloud code

@@ -1,0 +1,67 @@
+[00:00.91] Donc voilà, donc je donne le nom du dépôt, la description, ici, comme j'ai dit, il faut que ça soit toujours sur privé, privé, voilà, et si on clique sur ordre ici, voilà, et ensuite on va cliquer sur créer le dépôt, on clique sur créer un dépôt, voilà, le dépôt va être créé comme ça, la création du dépôt là se fait comme ça, voilà, le dépôt est créé comme ça, vous voyez non, voilà, c'est créé, bon, imaginez que l'autre côté ne vous donne pas le lien pour venir directement sur GitHub alors, dans ce cas, comme je vous ai dit, vous venez ici sur votre compte GitHub, voilà, vous voyez qu'il y a plus
+[00:32.64] ici, regardez, il y a plus, vous cliquez sur le plus, et il y a plus, vous cliquez sur le nouveau dépôt, et puis vous allez, vous retrouvez la page, vous le faites, vous voyez non, voilà, ok, donc voilà, j'ai créé maintenant le dépôt, c'est bon, maintenant, il faut commencer à travailler, alors ici, maintenant, bon, là, j'ai demandé à coup d'ici la base de le qu'on va utiliser, voilà, on a discuté de la base de données, donc bon, je vais le dire, bon, c'est ça, le vibe continue en fait, ça, donc c'est la meilleure façon de le faire, on a notre produit qui est notre chef de projet,
+[01:14.98] qui nous aide, et puis voilà, tout marche bien, donc d'abord, je vais faire la mise à jour de ce cas de charge dans mon bloc-note, donc je vais enlever ceci d'abord, voilà, voilà, je mets ceci, donc voici le titre, voilà, ok, on a dit que c'est bon, et voilà, c'est bon, maintenant ici,
+[02:01.48] on a dit, voici le cas de charge, ok, c'est bon, voilà, c'est bon, ok, maintenant ici, là, ici, je vais voir, il a joué avec la base de données, c'est bon, il y a deux temps de chaque étape,
+[02:13.88] t'as un, plan court court, l'île a consigné, il présente son plan sans rien, ok, temps de la construction, ok, c'est bon, tant un, la première, mais on fait court court, je choisis le dépôt, et envoie ce message,
+[02:23.46] voilà, vous voyez, donc là, on va, voici le premier point qui nous donne comme ça, donc, on copie ça, donc, comme je vous ai dit, Claude Côte des payants, vous devez avoir assez l'abonnement, Claude Côte Pro, vous devez avoir assez l'abonnement, Claude Côte Pro, vous devez avoir assez l'abonnement, Claude Côte de Côte de Côte pour ne pas travailler, c'est bon, donc, on va aller dans notre Côte de Côte, vous pouvez voir que j'ai, là, j'ai un compte pro, vous voyez non, un compte pro, voilà, donc, lorsque vous allez payer l'abonnement Claude d'alors, et je, si vous savez exactement, bon, en tout cas, c'est facile, quand vous cliquez, vous avez voici ici, je vais voir d'abord, ok, là, on est dans Cla
+[03:00.84] Claude Côte de Côte, bon, là, voyez, on est dans Claude Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de Côte de
+[03:30.80] voilà ici assez de réseaux voilà ici on va dire et on va choisir un assez complet en fait voilà vous voyez non
+[03:36.84] ici on choisit un assez complet assez internet sans rétrécution un assez complet on choisit ça comme ça vous voyez voilà un assez complet
+[03:44.78] et c'est bien
+[03:46.44] ok c'est bon et ensuite on clique sur créer
+[03:49.66] voici la plupart des choses qu'il faut faire maintenant c'est bon on va acheter le dépôt vous voyez que le dépôt que j'ai créé sur mon compte
+[03:54.84] qui s'affiche ici n'est ce pas j'écris ça ce qui est lié et voilà c'est fini
+[03:59.10] c'est fini en fait vous voyez comment c'est simple le reste du travail vous allez voir que ça va aller tranquillement
+[04:03.34] maintenant il y a des thèmes techniques et d'autres choses qu'on va apprendre on va corriger au fur et à mesure vous allez voir et voilà j'envoie ça
+[04:10.62] attention il faut que j'envoie mon cas de charge donc là il faut que j'envoie en même temps je l'arrête je l'arrête
+[04:16.10] comment je vais le dire j'ai déjà commencé le travail voilà voilà arrêté voilà donc je vais d'abord coller le cas de charge
+[04:23.68] ici je l'ai arrêté il y en a ici répond moi
+[04:28.52] je colle le cas de charge ici
+[04:32.04] voilà
+[04:33.48] alors ici je vais revenir
+[04:36.60] et puis copier le cas de charge
+[04:40.14] voilà
+[04:42.48] ici
+[04:44.22] et ensuite cahier de charge
+[04:46.86] et voilà
+[04:49.18] on lance
+[04:50.78] et donc voilà cher ami
+[04:52.26] c'est ça
+[04:53.44] donc ClaudeCode va travailler
+[05:00.91] on peut l'utiliser directement dans le web et voilà
+[05:07.93] ici là si j'utilise autre compte comme Claude ici vous pouvez me déconnecter ici
+[05:11.09] et puis voilà
+[05:13.23] on va aller dans le web
+[05:16.15] ClaudeCode
+[05:17.11] ah et encore nous joseph-sandu-arobase-gmail.com
+[05:21.07] continue
+[05:26.25] voilà
+[05:27.33] non c'est bon donc ici dans le web Chrome alors vous allez voir que si on a dans la
+[05:30.85] là où il y a ma main
+[05:31.61] c'est discussion ça
+[05:32.47] là où il y a à droite comme ça de la discussion ici on a ClaudeCode
+[05:35.51] vous voyez non voilà
+[05:36.35] donc vous allez voir que c'est ici
+[05:38.71] ici
+[05:39.63] plan de projet web
+[05:40.61] voilà et ça
+[05:43.09] et donc là il y a un lien de travail
+[05:44.27] où voyez non
+[05:44.73] ça on envoie
+[05:46.75] il y a un lien de travail
+[05:48.85] je fais maintenant les recherches dans les documents officiels et ordinateurs
+[05:51.91] tout tout tout tout
+[05:52.99] voilà
+[05:54.73] donc il travaille
+[05:55.55] ici l'un de travail
+[05:56.51] où voyez non
+[05:57.51] et voilà
+[06:12.15] que le coup de prendre beaucoup de temps pour travailler
+[06:14.03] que le coup de prendre beaucoup de temps pour travailler
+[06:15.53] beaucoup même de temps pour travailler
+[06:16.51] du coup on va lui laisser faire le travail
+[06:18.35] du coup je vais arrêter l'enregistrement
+[06:20.03] et sinon il prend le temps
+[06:21.85] des fois il me prend 5 heures en fonction de la tâche
+[06:24.09] la grande lutte de la tâche
+[06:25.61] donc

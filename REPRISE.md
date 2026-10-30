@@ -2,6 +2,14 @@
 
 À lire avec `CLAUDE.md` (méthode, style, son, bibliothèque des scènes illustrées), qui fait foi.
 
+## Nouveau projet en cours (30 octobre 2026) : `agent-ia-p1`
+
+Partie 1 de la formation « Comment créer un agent IA, de A à Z » (16:9, 1920 × 1080, + version WhatsApp).
+Rushes téléchargés et transcrits (`projets/agent-ia-p1/rushes/README.md` pour les liens, `transcriptions/`),
+script et guide en `.docx` + `.txt`. **Analyse et plan envoyés à Joseph, en attente de sa validation** :
+`projets/agent-ia-p1/analyse.md` (manques, coupes, flous, plan des chapitres), `voix_off.md` (blocs V1–V55, W1–W30).
+Transcription : PyAV récent refuse `metadata_errors` → passer à Whisper l'audio décodé par ffmpeg (tableau numpy).
+
 ## État exact
 
 - **Vidéo en cours : `ia-competence`** (style dynamique), 3 min 44 s une fois montée (220,8 s + carton de fin 3 s).
