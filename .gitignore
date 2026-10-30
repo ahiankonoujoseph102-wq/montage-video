@@ -14,3 +14,4 @@ projets/*/montage/sorties/ocr/
 projets/*/montage/sorties/unites/
 projets/*/montage/sorties/trans_complet/
 projets/*/montage/__pycache__/
+projets/*/montage/sorties/touchers_log*.txt
