@@ -5,8 +5,8 @@
 
 - Projet `talkami-pub` : kit complet et voix off copiés dans le dépôt (`projets/talkami-pub/pub-kit/`, le dépôt
   Talkami redevient privé début novembre). Plan dans `plan.json`, composition `PubTalkami` (`src/pub/`).
-- **Aperçu envoyé à Joseph** (28,9 s, 720 × 1280, 3,6 Mo) : **en attente de son avis** avant la version finale
-  (1080 × 1920 réduite à moins de 30 Mo, même encodage que d'habitude).
+- Aperçu validé par Joseph. **Version finale livrée** : `projets/talkami-pub/livrable/talkami-pub-finale-1080x1920.mp4`
+  (28,9 s, 1080 × 1920, 30 i/s, 20,3 Mo, −14,0 LUFS, crête −2,4 dB).
 - Commandes : `python3 scripts/pub_talkami.py`, puis le rendu (voir CLAUDE.md, « Publicités »).
 
 
