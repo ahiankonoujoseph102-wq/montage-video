@@ -1,18 +1,16 @@
 # Reprise du projet — état au 30 octobre 2026
 
 À lire avec `CLAUDE.md` (méthode, style, son, bibliothèque des scènes illustrées), qui fait foi.
-## En cours : publicité Talkami (30 octobre)
+## Publicité Talkami (30 octobre)
 
-- Projet `talkami-pub` : kit et voix off d'origine copiés dans le dépôt (`projets/talkami-pub/pub-kit/`).
-- Historique : v1 (`PubTalkami`, fond bleu) envoyée, **jamais validée** (le dossier `livrable/` contient ce rendu v1,
-  ce n'est pas une version finale) ; v2 violette (`PubTalkami2`) **abandonnée** par Joseph.
-- **v3 en aperçu, en attente de son avis** : style et déroulé de la v1, optimisés (composition `PubTalkami3`,
-  `python3 scripts/pub_talkami3.py [naturelle|radio]`) : téléphones géants derrière une bande fixe de sous-titres
-  (1 290 px), professeurs cadrés serré, emojis Noto animés, fin animée de 2,5 s, 24 s au total.
-- **Voix v3** (`scripts/voix_pub3.py`, `projets/talkami-pub/voix-v3/`) : deux versions, « naturelle » et « radio » ;
-  Joseph doit en choisir une (fichier `comparaison-voix.m4a`). L'aperçu utilise la radio.
-- Après accord : `python3 scripts/pub_talkami3.py <voix>`, rendu 1080 × 1920 de `PubTalkami3`
-  (`--props=public/talkami-pub/props-v3.json --muted` + `mix-v3.wav`), moins de 30 Mo.
+- **Version finale v3 livrée** : `projets/talkami-pub/livrable/talkami-pub-v3-finale-1080x1920.mp4` (24,1 s,
+  1080 × 1920, 21 Mo, −14,0 LUFS, voix « radio » choisie par Joseph). Composition `PubTalkami3`,
+  `python3 scripts/pub_talkami3.py radio`, voix `scripts/voix_pub3.py`.
+- Dernières corrections : bande des sous-titres réduite (1 300 → 1 600 px, deux lignes jusqu'à 104 px, l'image continue
+  dessous), visages et téléphones un peu plus grands, rond du doigt déplacé sur le bord droit du bouton « Passer mon
+  évaluation gratuite » (le rond d'origine est masqué par la capture propre du kit), bouton de fin dans la zone sûre.
+- Historique : v1 (`PubTalkami`) et v2 violette (`PubTalkami2`) non retenues ; la v3 reprend le style de la v1.
+- En attente : l'avis de Joseph sur la version finale.
 
 ## État exact
 
