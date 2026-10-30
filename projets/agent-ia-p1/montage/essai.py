@@ -26,14 +26,14 @@ ILLU = (379.6, 401.0)
 # Étapes : (morceaux du rush [début, fin, vitesse], voix off [début, fin], bandeau, cibles [t source, x, y], zoom)
 # zoom = (centre x, centre y, facteur) dans l'image source ; une cible = cercle sur l'endroit touché.
 ETAPES = [
-    ([(64.0, 68.4, 1)], (24.84, 28.95), "Étape 1 : dans Google, tapez « github »",
-     [(66.6, 300, 615)], [(64.0, 540, 470, 1.55)]),
-    ([(70.0, 75.0, 1)], (29.48, 30.95), "Étape 2 : touchez « Inscrivez-vous sur GitHub »",
+    ([(64.5, 67.6, 1)], (24.84, 28.95), "Étape 1 : dans Google, tapez « github »",
+     [(66.4, 300, 615)], [(64.5, 540, 470, 1.55)]),
+    ([(70.0, 72.6, 1)], (29.48, 30.95), "Étape 2 : touchez « Inscrivez-vous sur GitHub »",
      [(70.3, 486, 586)], [(70.0, 540, 470, 1.9)]),
-    ([(121.0, 124.6, 1)], (31.58, 33.15), "Étape 3 : touchez « Continuer avec Google »",
+    ([(121.0, 122.9, 1)], (31.58, 33.15), "Étape 3 : touchez « Continuer avec Google »",
      [(121.3, 637, 923)], [(121.0, 620, 760, 1.9)]),
-    ([(125.0, 129.5, 1)], (33.18, 34.75), "Étape 4 : choisissez votre adresse Gmail",
-     [(125.3, 486, 1507)], [(125.0, 560, 1330, 1.6)]),
+    ([(125.7, 126.85, 1)], (33.18, 34.75), "Étape 4 : choisissez votre adresse Gmail",
+     [(126.0, 450, 612)], [(125.7, 520, 560, 1.6)]),
     ([(140.6, 144.0, 1)], (35.08, 36.95), "Votre compte GitHub est prêt ✅",
      [], [(140.6, 640, 300, 2.3)]),
     ([(144.0, 147.6, 0.75), (147.6, 150.6, 1)], (37.52, 43.0), "Étape 5 : touchez « + » en haut, puis « Nouveau dépôt »",

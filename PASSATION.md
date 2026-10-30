@@ -7,7 +7,7 @@
 - **Version 1** rendue le 30 octobre 2026 (1A 12 min 40, 1B 14 min 15) : **refusée par Joseph** (fade, démos trop
   rapides et floues, pas de Talkami, pas d'illustrations, trop de coupes, trop de flous).
 - **Version 2 — étape 2 en cours** : plan envoyé ; Joseph a envoyé la voix off des démos et Talkami (accord implicite) ;
-  je prépare l'extrait d'essai (démo GitHub zoomée + illustration coffre-fort). Plan : `projets/agent-ia-p1/plan_v2.md`.
+  extrait d'essai envoyé (out/essai-v2.mp4, 1 min 23, non versionné) : en attente de l'accord de Joseph avant le rendu complet. Plan : `projets/agent-ia-p1/plan_v2.md`.
   Texte des voix off des démos à faire enregistrer : `projets/agent-ia-p1/a_enregistrer_v2.md`.
 - Étape 2 (après accord) : extrait d'essai d'environ 1 min (une vraie démo zoomée + une illustration).
 - Étape 3 (après accord sur l'extrait) : rendu complet de 1A puis 1B.

@@ -210,7 +210,9 @@ const Demo: React.FC<{p: Plan; t: number; n: number}> = ({p, t, n}) => {
   const src = staticFile(`formation/essai/${p.fichier}`);
   const cibles = p.cibles ?? [];
   const ic = cibles.reduce((k, c, i) => (t >= c.t - 0.6 ? i : k), -1);
-  const cible = ic >= 0 ? cibles[ic] : null;
+  // le cercle reste jusqu'à la cible suivante ; la dernière reste sur l'image figée, sauf si l'écran change (étape 5)
+  const derniere = ic === cibles.length - 1;
+  const cible = ic >= 0 && (!derniere || p.etape !== 5 || t < cibles[ic].t + 1.0) ? cibles[ic] : null;
   const e = t - p.debut;
   const entree = fondu(e, 0, 0.3);
   const titre = p.bandeau!;
