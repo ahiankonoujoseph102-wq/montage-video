@@ -1,0 +1,38 @@
+[00:01.11] Récapitulons ce que nous avons appris dans cette première partie.
+[00:04.25] Une IA, c'est un cerveau. Un agent IA, c'est un employé formé pour votre activité.
+[00:08.89] Tout commence dans le bloc notes. Vous décrivez votre projet avec vos mots.
+[00:13.67] Claude, votre chef de projet, enfin un cas de charge clair.
+[00:17.09] GitHub est votre corps fort, toujours en privé.
+[00:19.63] Claude Code, votre développeur, présente d'abord son plan.
+[00:22.43] Le chef de projet le vérifie et on valide.
+[00:24.93] Et une règle pour toujours, on ne montre jamais ses clés.
+[00:27.41] Avant la partie 2, voici votre devoir.
+[00:40.45] 6 étapes toutes dans votre guide.
+[00:43.07] 1. Choisissez votre projet, votre activité ou celle d'un proche.
+[00:47.69] Le type d'achat qui l'aiderait le plus.
+[00:50.15] 2. Écrivez votre projet dans votre bloc notes.
+[00:53.11] Description libre ou fiche de base du guide.
+[00:55.61] C'est vous qui choisissez.
+[00:57.31] Notez au moins 10 vraies questions de vos clients avec les bonnes réponses et ce que l'agent ne doit jamais dire.
+[01:04.27] 3. Ajoutez le module de votre type d'agent, du A à F.
+[01:08.81] 4. Créez vos comptes Claude et GitHub et un dépôt privé.
+[01:12.77] Vérifiez le petit cadenas.
+[01:15.39] 5. Donnez votre test à Claude avec le message du guide et obtenez votre carte de charge finale.
+[01:20.61] Vérifiez-le avec la liste avant de passer à la construction à la fin du chapitre 6 du guide et gardez-le précisément.
+[01:50.66] Vérifiez-le avec la liste avant de passer à la construction à la fin du chapitre 6 du guide et gardez-le précisément.
+[02:16.64] 6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.
+[02:36.27] Avant la partie 2. Je le corrigerai.
+[02:40.39] 6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.
+[02:46.51] Avant la partie 2. Je le corrigerai.
+[02:49.91] Avant d'envoyer, vérifiez qu'il n'y a ni clé ni mot de passe.
+[02:56.49] Dans la partie 2. Nous le donnerons à Claude Côte pour construire votre argent.
+[03:06.19] Bravo pour votre travail. La suite arrive très bientôt.
+[03:14.27] 6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.
+[03:17.69] Avant la partie 2. Je le corrigerai.
+[03:20.23] Avant d'envoyer, vérifiez qu'il n'y a...
+[03:24.39] Avant d'envoyer, vérifiez qu'il n'y a pas...
+[03:27.84] 6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.
+[03:32.00] Avant la partie 2. Je le corrigerai.
+[03:34.62] Avant d'envoyer, vérifiez qu'il n'y a ni clé ni mot de passe.
+[03:38.50] Dans la partie 2. Nous le donnerons à Claude Côte pour construire votre argent.
+[03:41.88] Bravo pour votre travail. La suite arrive très bientôt.

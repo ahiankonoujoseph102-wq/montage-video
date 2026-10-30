@@ -1,0 +1,51 @@
+[
+ {
+  "debut": 189.65,
+  "fin": 190.93,
+  "texte": "Donc c'était ici on était arrêté.",
+  "mots": [
+   {
+    "mot": "Donc",
+    "debut": 189.65,
+    "fin": 189.79,
+    "proba": 0.87
+   },
+   {
+    "mot": "c",
+    "debut": 189.79,
+    "fin": 189.91,
+    "proba": 0.77
+   },
+   {
+    "mot": "'était",
+    "debut": 189.91,
+    "fin": 190.03,
+    "proba": 0.99
+   },
+   {
+    "mot": "ici",
+    "debut": 190.03,
+    "fin": 190.29,
+    "proba": 0.27
+   },
+   {
+    "mot": "on",
+    "debut": 190.29,
+    "fin": 190.39,
+    "proba": 0.63
+   },
+   {
+    "mot": "était",
+    "debut": 190.39,
+    "fin": 190.51,
+    "proba": 0.09
+   },
+   {
+    "mot": "arrêté.",
+    "debut": 190.51,
+    "fin": 190.93,
+    "proba": 0.77
+   }
+  ]
+ }
+]

@@ -1,0 +1,75 @@
+[00:02.45] Avant de créer mon projet, j'ai demandé à Claude quels sont les meilleurs agents de programmation aujourd'hui.
+[00:08.41] Il m'a cité Claude Code, QSOR, Manus et Lovable et il m'a expliqué comment il fonctionne.
+[00:14.87] Créer mon propre modèle d'IA culturel des millions.
+[00:17.71] La solution réaliste, louer des modèles qui existent déjà.
+[00:21.25] Voici ce que fait le chef de projet.
+[00:23.43] D'abord, il remet mon idée en autre.
+[00:25.37] Ensuite, il me parle franchement.
+[00:27.69] Faire mieux que Claude Code, QSOR, Manus ou Lovable, ce n'est pas réaliste au départ.
+[00:33.17] Mais il me montre ma vraie force, le français, le téléphone, mobile monnaie et l'accompagnement des débutants.
+[00:46.23] Après les questions, voici ce que nous avons décidé ensemble.
+[00:49.11] Une capacité à la fois.
+[00:50.59] D'abord les sites web, puis les applications, puis le reste.
+[00:53.95] Deux modes.
+[00:55.07] Un mode simple pour les débutants et un mode de développeur.
+[00:57.91] Quelqu'un sera construit avec le Claude Agent SDK pour avoir les mêmes capacités que Claude Code.
+[01:05.31] Pour la sécurité, chaque utilisateur travaille dans un ordinateur virtuel isolé.
+[01:10.59] L'agent ne va que sur des sites autorisés et demande la permission avant toute action risquée.
+[01:17.09] Et les abonnements seront payés par mobile monnaie.
+[01:19.63] Je ne savais pas quel nom donner à mon agent.
+[01:22.63] Alors j'ai demandé au chef de projet de m'en proposer.
+[01:26.27] J'ai hésité entre Afrikot et Kekéli.
+[01:29.93] J'ai choisi Kekéli qui veut dire la lumière en EV.
+[01:41.69] Et le slogan Kekéli, l'agent IA qui coûte pour vous.
+[01:46.23] Avant de garder un nom, on vérifie que le nom de domaine est libre.
+[01:50.29] Je le fais sur cloudflare.
+[01:53.29] Kekéli.com et Kekéli.app sont déjà pris.
+[01:57.57] Kekéli.ai coûte trop cher pour commencer.
+[02:00.95] Le chef de projet recommande Kekéli.dev, l'extension des outils de programmation.
+[02:06.27] Je ne l'achète pas encore.
+[02:07.63] On l'achètera avant la mise en ligne.
+[02:09.15] Ensuite, la base des données.
+[02:11.77] Le chef de projet recommande Proto-Gresql.
+[02:18.35] Sur la ravec l'autre.
+[02:19.95] Là où les autres.
+[02:23.62] Ensuite, la base des données.
+[02:27.28] Ensuite, la base des données.
+[02:29.22] Le chef de projet recommande Proto-Gresql.
+[02:38.18] Ensuite, la base des données.
+[02:39.60] Le chef de projet recommande Proto-Gresql.
+[02:43.54] Sur la ravec l'autre.
+[02:46.02] Là où mes autres projets sont déjà hébergés.
+[02:48.80] Puis, il me demande de créer le coffre du projet.
+[02:51.80] Un dépôt guiteur privé.
+[02:53.52] Appelé Kekéli.
+[02:55.10] Voici le cas de charge final.
+[02:56.84] Je le copie dans mon bloc note.
+[02:58.50] Et je le garde précieusement.
+[03:00.10] C'est le plan de ma maison.
+[03:02.12] Maintenant, le chef de projet me demande la première consigne pour cloudkout.
+[03:06.38] Je la copie avec le cas de charge.
+[03:08.88] Dans cloudkout, je choisis le dépôt Kekéli et j'envoie.
+[03:13.20] Attention.
+[03:14.16] Dans ce temps 1, il ne conçut rien.
+[03:16.62] Il présente seulement son plan.
+[03:18.36] Vous voyez.
+[03:19.16] J'avais oublié de coller le cas de charge.
+[03:21.20] J'arrête.
+[03:21.80] Je le colle.
+[03:23.08] Et je relance.
+[03:24.46] Les erreurs, c'est normal.
+[03:25.96] On les corrige.
+[03:27.22] Cloudkout a présenté son plan.
+[03:28.80] Je le copie et je le donne au chef de projet qui le vérifie.
+[03:32.08] Le plan est bon, mais il demande trois corrections.
+[03:34.80] 1. Au départ, pas d'intermédiaire de paiement.
+[03:38.08] Le mobile money, Miss Bayas ou Flos, est vérifié à la main sur capture d'écran.
+[03:42.60] 2. Pas de deuxième nom de domaine pour les sites des clients.
+[03:45.76] Ils sont publiés gratuitement sur des adresses Cloudflare.
+[03:49.44] 3. Les prix des modèles d'IA ne sont que des estimations.
+[03:52.84] On les mesurera vraiment plus tard.
+[03:54.56] Je copie sa réponse.
+[03:56.52] Je l'envoie à Cloudkout et je la...
+[03:59.76] Je copie sa réponse.
+[04:01.70] Je l'envoie à Cloudkout et la construction commence.
+[04:05.32] C'est ce que nous verrons dans la partie 2.

@@ -1,0 +1,2878 @@
+[
+ {
+  "debut": 1.11,
+  "fin": 3.53,
+  "texte": "Récapitulons ce que nous avons appris dans cette première partie.",
+  "mots": [
+   {
+    "mot": "Récapitulons",
+    "debut": 1.11,
+    "fin": 1.55,
+    "proba": 0.99
+   },
+   {
+    "mot": "ce",
+    "debut": 1.55,
+    "fin": 1.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 1.77,
+    "fin": 1.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "nous",
+    "debut": 1.87,
+    "fin": 1.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "avons",
+    "debut": 1.97,
+    "fin": 2.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "appris",
+    "debut": 2.17,
+    "fin": 2.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 2.55,
+    "fin": 2.71,
+    "proba": 0.99
+   },
+   {
+    "mot": "cette",
+    "debut": 2.71,
+    "fin": 2.87,
+    "proba": 0.37
+   },
+   {
+    "mot": "première",
+    "debut": 2.87,
+    "fin": 3.11,
+    "proba": 0.99
+   },
+   {
+    "mot": "partie.",
+    "debut": 3.11,
+    "fin": 3.53,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 4.25,
+  "fin": 8.39,
+  "texte": "Une IA, c'est un cerveau. Un agent IA, c'est un employé formé pour votre activité.",
+  "mots": [
+   {
+    "mot": "Une",
+    "debut": 4.25,
+    "fin": 4.45,
+    "proba": 0.98
+   },
+   {
+    "mot": "IA,",
+    "debut": 4.45,
+    "fin": 4.79,
+    "proba": 0.98
+   },
+   {
+    "mot": "c",
+    "debut": 4.87,
+    "fin": 5.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 5.09,
+    "fin": 5.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 5.13,
+    "fin": 5.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "cerveau.",
+    "debut": 5.25,
+    "fin": 5.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "Un",
+    "debut": 5.85,
+    "fin": 6.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 6.09,
+    "fin": 6.37,
+    "proba": 0.99
+   },
+   {
+    "mot": "IA,",
+    "debut": 6.37,
+    "fin": 6.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 6.71,
+    "fin": 6.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 6.81,
+    "fin": 6.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 6.87,
+    "fin": 6.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "employé",
+    "debut": 6.99,
+    "fin": 7.35,
+    "proba": 0.99
+   },
+   {
+    "mot": "formé",
+    "debut": 7.35,
+    "fin": 7.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 7.63,
+    "fin": 7.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 7.75,
+    "fin": 7.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "activité.",
+    "debut": 7.95,
+    "fin": 8.39,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 8.89,
+  "fin": 13.15,
+  "texte": "Tout commence dans le bloc notes. Vous décrivez votre projet avec vos mots.",
+  "mots": [
+   {
+    "mot": "Tout",
+    "debut": 8.89,
+    "fin": 9.07,
+    "proba": 0.97
+   },
+   {
+    "mot": "commence",
+    "debut": 9.07,
+    "fin": 9.57,
+    "proba": 0.99
+   },
+   {
+    "mot": "dans",
+    "debut": 9.57,
+    "fin": 9.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 9.97,
+    "fin": 10.07,
+    "proba": 0.99
+   },
+   {
+    "mot": "bloc",
+    "debut": 10.07,
+    "fin": 10.29,
+    "proba": 0.85
+   },
+   {
+    "mot": "notes.",
+    "debut": 10.29,
+    "fin": 10.51,
+    "proba": 0.43
+   },
+   {
+    "mot": "Vous",
+    "debut": 10.69,
+    "fin": 10.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "décrivez",
+    "debut": 10.79,
+    "fin": 11.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 11.33,
+    "fin": 11.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 11.97,
+    "fin": 12.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "avec",
+    "debut": 12.33,
+    "fin": 12.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 12.73,
+    "fin": 12.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "mots.",
+    "debut": 12.99,
+    "fin": 13.15,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 13.67,
+  "fin": 16.67,
+  "texte": "Claude, votre chef de projet, enfin un cas de charge clair.",
+  "mots": [
+   {
+    "mot": "Claude,",
+    "debut": 13.67,
+    "fin": 13.95,
+    "proba": 0.86
+   },
+   {
+    "mot": "votre",
+    "debut": 14.05,
+    "fin": 14.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 14.17,
+    "fin": 14.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 14.37,
+    "fin": 14.47,
+    "proba": 0.94
+   },
+   {
+    "mot": "projet,",
+    "debut": 14.47,
+    "fin": 14.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "enfin",
+    "debut": 15.19,
+    "fin": 15.49,
+    "proba": 0.83
+   },
+   {
+    "mot": "un",
+    "debut": 15.49,
+    "fin": 15.85,
+    "proba": 0.93
+   },
+   {
+    "mot": "cas",
+    "debut": 15.85,
+    "fin": 15.99,
+    "proba": 0.47
+   },
+   {
+    "mot": "de",
+    "debut": 15.99,
+    "fin": 16.09,
+    "proba": 0.94
+   },
+   {
+    "mot": "charge",
+    "debut": 16.09,
+    "fin": 16.35,
+    "proba": 0.87
+   },
+   {
+    "mot": "clair.",
+    "debut": 16.35,
+    "fin": 16.67,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 17.09,
+  "fin": 19.25,
+  "texte": "GitHub est votre corps fort, toujours en privé.",
+  "mots": [
+   {
+    "mot": "GitHub",
+    "debut": 17.09,
+    "fin": 17.43,
+    "proba": 0.94
+   },
+   {
+    "mot": "est",
+    "debut": 17.43,
+    "fin": 17.69,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 17.69,
+    "fin": 17.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "corps",
+    "debut": 17.89,
+    "fin": 18.11,
+    "proba": 0.91
+   },
+   {
+    "mot": "fort,",
+    "debut": 18.11,
+    "fin": 18.39,
+    "proba": 0.98
+   },
+   {
+    "mot": "toujours",
+    "debut": 18.55,
+    "fin": 18.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 18.77,
+    "fin": 18.95,
+    "proba": 0.99
+   },
+   {
+    "mot": "privé.",
+    "debut": 18.95,
+    "fin": 19.25,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 19.63,
+  "fin": 22.17,
+  "texte": "Claude Code, votre développeur, présente d'abord son plan.",
+  "mots": [
+   {
+    "mot": "Claude",
+    "debut": 19.63,
+    "fin": 19.87,
+    "proba": 0.99
+   },
+   {
+    "mot": "Code,",
+    "debut": 19.87,
+    "fin": 20.09,
+    "proba": 0.55
+   },
+   {
+    "mot": "votre",
+    "debut": 20.23,
+    "fin": 20.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "développeur,",
+    "debut": 20.37,
+    "fin": 20.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "présente",
+    "debut": 21.07,
+    "fin": 21.47,
+    "proba": 0.99
+   },
+   {
+    "mot": "d",
+    "debut": 21.47,
+    "fin": 21.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abord",
+    "debut": 21.59,
+    "fin": 21.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 21.75,
+    "fin": 21.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan.",
+    "debut": 21.95,
+    "fin": 22.17,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 22.43,
+  "fin": 24.51,
+  "texte": "Le chef de projet le vérifie et on valide.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 22.43,
+    "fin": 22.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 22.61,
+    "fin": 22.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 22.85,
+    "fin": 22.93,
+    "proba": 0.99
+   },
+   {
+    "mot": "projet",
+    "debut": 22.93,
+    "fin": 23.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 23.25,
+    "fin": 23.45,
+    "proba": 0.97
+   },
+   {
+    "mot": "vérifie",
+    "debut": 23.45,
+    "fin": 23.85,
+    "proba": 0.98
+   },
+   {
+    "mot": "et",
+    "debut": 23.85,
+    "fin": 24.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 24.03,
+    "fin": 24.13,
+    "proba": 0.95
+   },
+   {
+    "mot": "valide.",
+    "debut": 24.13,
+    "fin": 24.51,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 24.93,
+  "fin": 27.41,
+  "texte": "Et une règle pour toujours, on ne montre jamais ses clés.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 24.93,
+    "fin": 25.07,
+    "proba": 0.91
+   },
+   {
+    "mot": "une",
+    "debut": 25.07,
+    "fin": 25.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "règle",
+    "debut": 25.21,
+    "fin": 25.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 25.47,
+    "fin": 25.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "toujours,",
+    "debut": 25.65,
+    "fin": 25.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 26.31,
+    "fin": 26.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 26.49,
+    "fin": 26.59,
+    "proba": 0.99
+   },
+   {
+    "mot": "montre",
+    "debut": 26.59,
+    "fin": 26.75,
+    "proba": 0.79
+   },
+   {
+    "mot": "jamais",
+    "debut": 26.75,
+    "fin": 26.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "ses",
+    "debut": 26.99,
+    "fin": 27.17,
+    "proba": 0.94
+   },
+   {
+    "mot": "clés.",
+    "debut": 27.17,
+    "fin": 27.41,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 27.41,
+  "fin": 30.49,
+  "texte": "Avant la partie 2, voici votre devoir.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 27.41,
+    "fin": 28.25,
+    "proba": 0.88
+   },
+   {
+    "mot": "la",
+    "debut": 28.25,
+    "fin": 28.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 28.39,
+    "fin": 28.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "2,",
+    "debut": 28.69,
+    "fin": 28.97,
+    "proba": 0.98
+   },
+   {
+    "mot": "voici",
+    "debut": 29.15,
+    "fin": 29.79,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 29.79,
+    "fin": 30.11,
+    "proba": 0.89
+   },
+   {
+    "mot": "devoir.",
+    "debut": 30.11,
+    "fin": 30.49,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 40.45,
+  "fin": 42.63,
+  "texte": "6 étapes toutes dans votre guide.",
+  "mots": [
+   {
+    "mot": "6",
+    "debut": 40.45,
+    "fin": 41.05,
+    "proba": 0.85
+   },
+   {
+    "mot": "étapes",
+    "debut": 41.05,
+    "fin": 41.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "toutes",
+    "debut": 41.65,
+    "fin": 41.89,
+    "proba": 0.62
+   },
+   {
+    "mot": "dans",
+    "debut": 41.89,
+    "fin": 42.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 42.15,
+    "fin": 42.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "guide.",
+    "debut": 42.39,
+    "fin": 42.63,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 43.07,
+  "fin": 47.55,
+  "texte": "1. Choisissez votre projet, votre activité ou celle d'un proche.",
+  "mots": [
+   {
+    "mot": "1.",
+    "debut": 43.07,
+    "fin": 43.43,
+    "proba": 0.98
+   },
+   {
+    "mot": "Choisissez",
+    "debut": 43.95,
+    "fin": 44.37,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 44.37,
+    "fin": 44.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet,",
+    "debut": 44.57,
+    "fin": 44.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 45.45,
+    "fin": 46.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "activité",
+    "debut": 46.01,
+    "fin": 46.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "ou",
+    "debut": 46.49,
+    "fin": 46.79,
+    "proba": 0.94
+   },
+   {
+    "mot": "celle",
+    "debut": 46.79,
+    "fin": 47.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 47.01,
+    "fin": 47.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "'un",
+    "debut": 47.15,
+    "fin": 47.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "proche.",
+    "debut": 47.25,
+    "fin": 47.55,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 47.69,
+  "fin": 49.85,
+  "texte": "Le type d'achat qui l'aiderait le plus.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 47.69,
+    "fin": 47.79,
+    "proba": 0.99
+   },
+   {
+    "mot": "type",
+    "debut": 47.79,
+    "fin": 47.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 47.99,
+    "fin": 48.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "'achat",
+    "debut": 48.13,
+    "fin": 48.43,
+    "proba": 0.89
+   },
+   {
+    "mot": "qui",
+    "debut": 48.43,
+    "fin": 48.83,
+    "proba": 0.94
+   },
+   {
+    "mot": "l",
+    "debut": 48.83,
+    "fin": 49.17,
+    "proba": 0.68
+   },
+   {
+    "mot": "'aiderait",
+    "debut": 49.17,
+    "fin": 49.47,
+    "proba": 0.96
+   },
+   {
+    "mot": "le",
+    "debut": 49.47,
+    "fin": 49.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus.",
+    "debut": 49.57,
+    "fin": 49.85,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 50.15,
+  "fin": 52.63,
+  "texte": "2. Écrivez votre projet dans votre bloc notes.",
+  "mots": [
+   {
+    "mot": "2.",
+    "debut": 50.15,
+    "fin": 50.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "Écrivez",
+    "debut": 50.79,
+    "fin": 51.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 51.15,
+    "fin": 51.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 51.35,
+    "fin": 51.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 51.67,
+    "fin": 51.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 51.85,
+    "fin": 52.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 52.11,
+    "fin": 52.33,
+    "proba": 0.92
+   },
+   {
+    "mot": "notes.",
+    "debut": 52.33,
+    "fin": 52.63,
+    "proba": 0.26
+   }
+  ]
+ },
+ {
+  "debut": 53.11,
+  "fin": 55.31,
+  "texte": "Description libre ou fiche de base du guide.",
+  "mots": [
+   {
+    "mot": "Description",
+    "debut": 53.11,
+    "fin": 53.71,
+    "proba": 0.79
+   },
+   {
+    "mot": "libre",
+    "debut": 53.71,
+    "fin": 54.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "ou",
+    "debut": 54.01,
+    "fin": 54.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "fiche",
+    "debut": 54.25,
+    "fin": 54.51,
+    "proba": 0.94
+   },
+   {
+    "mot": "de",
+    "debut": 54.51,
+    "fin": 54.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "base",
+    "debut": 54.65,
+    "fin": 54.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "du",
+    "debut": 54.89,
+    "fin": 55.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "guide.",
+    "debut": 55.05,
+    "fin": 55.31,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 55.61,
+  "fin": 57.31,
+  "texte": "C'est vous qui choisissez.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 55.61,
+    "fin": 56.21,
+    "proba": 0.98
+   },
+   {
+    "mot": "'est",
+    "debut": 56.21,
+    "fin": 56.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 56.35,
+    "fin": 56.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 56.73,
+    "fin": 56.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "choisissez.",
+    "debut": 56.85,
+    "fin": 57.31,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 57.31,
+  "fin": 63.63,
+  "texte": "Notez au moins 10 vraies questions de vos clients avec les bonnes réponses et ce que l'agent ne doit jamais dire.",
+  "mots": [
+   {
+    "mot": "Notez",
+    "debut": 57.31,
+    "fin": 58.21,
+    "proba": 0.95
+   },
+   {
+    "mot": "au",
+    "debut": 58.21,
+    "fin": 58.39,
+    "proba": 0.99
+   },
+   {
+    "mot": "moins",
+    "debut": 58.39,
+    "fin": 58.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "10",
+    "debut": 58.57,
+    "fin": 58.83,
+    "proba": 0.96
+   },
+   {
+    "mot": "vraies",
+    "debut": 58.83,
+    "fin": 59.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "questions",
+    "debut": 59.13,
+    "fin": 59.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 59.45,
+    "fin": 59.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 59.63,
+    "fin": 59.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "clients",
+    "debut": 59.73,
+    "fin": 60.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "avec",
+    "debut": 60.03,
+    "fin": 60.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 60.39,
+    "fin": 60.57,
+    "proba": 0.99
+   },
+   {
+    "mot": "bonnes",
+    "debut": 60.57,
+    "fin": 60.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "réponses",
+    "debut": 60.85,
+    "fin": 61.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 61.33,
+    "fin": 61.91,
+    "proba": 0.84
+   },
+   {
+    "mot": "ce",
+    "debut": 61.91,
+    "fin": 62.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 62.05,
+    "fin": 62.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 62.17,
+    "fin": 62.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 62.31,
+    "fin": 62.59,
+    "proba": 0.99
+   },
+   {
+    "mot": "ne",
+    "debut": 62.59,
+    "fin": 62.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 62.77,
+    "fin": 62.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "jamais",
+    "debut": 62.97,
+    "fin": 63.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "dire.",
+    "debut": 63.29,
+    "fin": 63.63,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 64.27,
+  "fin": 68.29,
+  "texte": "3. Ajoutez le module de votre type d'agent, du A à F.",
+  "mots": [
+   {
+    "mot": "3.",
+    "debut": 64.27,
+    "fin": 64.39,
+    "proba": 0.92
+   },
+   {
+    "mot": "Ajoutez",
+    "debut": 64.75,
+    "fin": 65.25,
+    "proba": 0.98
+   },
+   {
+    "mot": "le",
+    "debut": 65.25,
+    "fin": 65.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "module",
+    "debut": 65.37,
+    "fin": 65.63,
+    "proba": 0.82
+   },
+   {
+    "mot": "de",
+    "debut": 65.63,
+    "fin": 65.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 65.85,
+    "fin": 66.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "type",
+    "debut": 66.07,
+    "fin": 66.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 66.37,
+    "fin": 66.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent,",
+    "debut": 66.53,
+    "fin": 66.81,
+    "proba": 0.99
+   },
+   {
+    "mot": "du",
+    "debut": 66.91,
+    "fin": 67.15,
+    "proba": 0.65
+   },
+   {
+    "mot": "A",
+    "debut": 67.15,
+    "fin": 67.43,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 67.43,
+    "fin": 67.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "F.",
+    "debut": 67.99,
+    "fin": 68.29,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 68.81,
+  "fin": 72.35,
+  "texte": "4. Créez vos comptes Claude et GitHub et un dépôt privé.",
+  "mots": [
+   {
+    "mot": "4.",
+    "debut": 68.81,
+    "fin": 69.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "Créez",
+    "debut": 69.67,
+    "fin": 69.97,
+    "proba": 0.81
+   },
+   {
+    "mot": "vos",
+    "debut": 69.97,
+    "fin": 70.11,
+    "proba": 0.99
+   },
+   {
+    "mot": "comptes",
+    "debut": 70.11,
+    "fin": 70.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 70.45,
+    "fin": 70.83,
+    "proba": 0.64
+   },
+   {
+    "mot": "et",
+    "debut": 70.83,
+    "fin": 71.01,
+    "proba": 0.89
+   },
+   {
+    "mot": "GitHub",
+    "debut": 71.01,
+    "fin": 71.27,
+    "proba": 0.62
+   },
+   {
+    "mot": "et",
+    "debut": 71.27,
+    "fin": 71.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 71.63,
+    "fin": 71.77,
+    "proba": 0.99
+   },
+   {
+    "mot": "dépôt",
+    "debut": 71.77,
+    "fin": 71.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "privé.",
+    "debut": 71.99,
+    "fin": 72.35,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 72.77,
+  "fin": 74.31,
+  "texte": "Vérifiez le petit cadenas.",
+  "mots": [
+   {
+    "mot": "Vérifiez",
+    "debut": 72.77,
+    "fin": 73.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 73.33,
+    "fin": 73.51,
+    "proba": 0.99
+   },
+   {
+    "mot": "petit",
+    "debut": 73.51,
+    "fin": 73.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "cadenas.",
+    "debut": 73.87,
+    "fin": 74.31,
+    "proba": 0.51
+   }
+  ]
+ },
+ {
+  "debut": 75.39,
+  "fin": 80.61,
+  "texte": "5. Donnez votre test à Claude avec le message du guide et obtenez votre carte de charge finale.",
+  "mots": [
+   {
+    "mot": "5.",
+    "debut": 75.39,
+    "fin": 75.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "Donnez",
+    "debut": 76.55,
+    "fin": 76.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 76.83,
+    "fin": 77.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "test",
+    "debut": 77.03,
+    "fin": 77.29,
+    "proba": 0.86
+   },
+   {
+    "mot": "à",
+    "debut": 77.29,
+    "fin": 77.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 77.51,
+    "fin": 77.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "avec",
+    "debut": 77.79,
+    "fin": 78.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 78.07,
+    "fin": 78.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "message",
+    "debut": 78.23,
+    "fin": 78.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "du",
+    "debut": 78.59,
+    "fin": 78.77,
+    "proba": 0.86
+   },
+   {
+    "mot": "guide",
+    "debut": 78.77,
+    "fin": 78.95,
+    "proba": 0.49
+   },
+   {
+    "mot": "et",
+    "debut": 78.95,
+    "fin": 79.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "obtenez",
+    "debut": 79.15,
+    "fin": 79.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 79.53,
+    "fin": 79.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "carte",
+    "debut": 79.71,
+    "fin": 79.87,
+    "proba": 0.35
+   },
+   {
+    "mot": "de",
+    "debut": 79.87,
+    "fin": 79.99,
+    "proba": 0.94
+   },
+   {
+    "mot": "charge",
+    "debut": 79.99,
+    "fin": 80.25,
+    "proba": 0.98
+   },
+   {
+    "mot": "finale.",
+    "debut": 80.25,
+    "fin": 80.61,
+    "proba": 0.76
+   }
+  ]
+ },
+ {
+  "debut": 80.61,
+  "fin": 106.89,
+  "texte": "Vérifiez-le avec la liste avant de passer à la construction à la fin du chapitre 6 du guide et gardez-le précisément.",
+  "mots": [
+   {
+    "mot": "Vérifiez",
+    "debut": 80.61,
+    "fin": 81.57,
+    "proba": 0.96
+   },
+   {
+    "mot": "-le",
+    "debut": 81.57,
+    "fin": 81.79,
+    "proba": 0.99
+   },
+   {
+    "mot": "avec",
+    "debut": 81.79,
+    "fin": 82.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 82.09,
+    "fin": 82.29,
+    "proba": 0.99
+   },
+   {
+    "mot": "liste",
+    "debut": 82.29,
+    "fin": 83.67,
+    "proba": 0.97
+   },
+   {
+    "mot": "avant",
+    "debut": 83.67,
+    "fin": 83.95,
+    "proba": 0.93
+   },
+   {
+    "mot": "de",
+    "debut": 83.95,
+    "fin": 84.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "passer",
+    "debut": 84.13,
+    "fin": 84.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 84.47,
+    "fin": 84.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 84.87,
+    "fin": 85.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "construction",
+    "debut": 87.33,
+    "fin": 91.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 91.89,
+    "fin": 92.83,
+    "proba": 0.5
+   },
+   {
+    "mot": "la",
+    "debut": 92.83,
+    "fin": 92.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "fin",
+    "debut": 92.95,
+    "fin": 93.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "du",
+    "debut": 93.17,
+    "fin": 93.33,
+    "proba": 0.99
+   },
+   {
+    "mot": "chapitre",
+    "debut": 93.33,
+    "fin": 93.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "6",
+    "debut": 93.77,
+    "fin": 94.05,
+    "proba": 0.99
+   },
+   {
+    "mot": "du",
+    "debut": 99.01,
+    "fin": 104.91,
+    "proba": 0.95
+   },
+   {
+    "mot": "guide",
+    "debut": 104.91,
+    "fin": 105.11,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 105.11,
+    "fin": 105.81,
+    "proba": 0.48
+   },
+   {
+    "mot": "gardez",
+    "debut": 105.81,
+    "fin": 106.25,
+    "proba": 0.97
+   },
+   {
+    "mot": "-le",
+    "debut": 106.25,
+    "fin": 106.35,
+    "proba": 0.99
+   },
+   {
+    "mot": "précisément.",
+    "debut": 106.35,
+    "fin": 106.89,
+    "proba": 0.96
+   }
+  ]
+ },
+ {
+  "debut": 110.66,
+  "fin": 123.32,
+  "texte": "Vérifiez-le avec la liste avant de passer à la construction à la fin du chapitre 6 du guide et gardez-le précisément.",
+  "mots": [
+   {
+    "mot": "Vérifiez",
+    "debut": 110.66,
+    "fin": 111.18,
+    "proba": 0.93
+   },
+   {
+    "mot": "-le",
+    "debut": 111.18,
+    "fin": 111.36,
+    "proba": 0.99
+   },
+   {
+    "mot": "avec",
+    "debut": 111.36,
+    "fin": 111.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 111.66,
+    "fin": 111.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "liste",
+    "debut": 111.84,
+    "fin": 112.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "avant",
+    "debut": 112.18,
+    "fin": 112.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 112.44,
+    "fin": 112.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "passer",
+    "debut": 112.58,
+    "fin": 112.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 112.92,
+    "fin": 113.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 113.12,
+    "fin": 113.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "construction",
+    "debut": 113.22,
+    "fin": 113.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 113.68,
+    "fin": 114.08,
+    "proba": 0.98
+   },
+   {
+    "mot": "la",
+    "debut": 114.08,
+    "fin": 114.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "fin",
+    "debut": 114.24,
+    "fin": 114.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "du",
+    "debut": 114.36,
+    "fin": 114.48,
+    "proba": 0.99
+   },
+   {
+    "mot": "chapitre",
+    "debut": 114.48,
+    "fin": 114.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "6",
+    "debut": 114.8,
+    "fin": 115.1,
+    "proba": 0.98
+   },
+   {
+    "mot": "du",
+    "debut": 115.1,
+    "fin": 115.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "guide",
+    "debut": 115.4,
+    "fin": 115.64,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 115.64,
+    "fin": 116.28,
+    "proba": 0.24
+   },
+   {
+    "mot": "gardez",
+    "debut": 116.28,
+    "fin": 116.54,
+    "proba": 0.97
+   },
+   {
+    "mot": "-le",
+    "debut": 116.54,
+    "fin": 116.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "précisément.",
+    "debut": 119.86,
+    "fin": 123.32,
+    "proba": 0.52
+   }
+  ]
+ },
+ {
+  "debut": 136.64,
+  "fin": 156.27,
+  "texte": "6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.",
+  "mots": [
+   {
+    "mot": "6.",
+    "debut": 136.64,
+    "fin": 137.2,
+    "proba": 0.05
+   },
+   {
+    "mot": "Envoyez",
+    "debut": 153.19,
+    "fin": 153.69,
+    "proba": 0.97
+   },
+   {
+    "mot": "-moi",
+    "debut": 153.69,
+    "fin": 153.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 153.73,
+    "fin": 153.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "cahier",
+    "debut": 153.97,
+    "fin": 154.21,
+    "proba": 0.97
+   },
+   {
+    "mot": "de",
+    "debut": 154.21,
+    "fin": 154.31,
+    "proba": 0.73
+   },
+   {
+    "mot": "charge",
+    "debut": 154.31,
+    "fin": 154.71,
+    "proba": 0.74
+   },
+   {
+    "mot": "dans",
+    "debut": 154.71,
+    "fin": 155.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 155.03,
+    "fin": 155.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "groupe",
+    "debut": 155.17,
+    "fin": 155.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "WhatsApp",
+    "debut": 155.35,
+    "fin": 155.67,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 155.67,
+    "fin": 155.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 155.83,
+    "fin": 155.91,
+    "proba": 0.51
+   },
+   {
+    "mot": "formation.",
+    "debut": 155.91,
+    "fin": 156.27,
+    "proba": 0.91
+   }
+  ]
+ },
+ {
+  "debut": 156.27,
+  "fin": 158.97,
+  "texte": "Avant la partie 2. Je le corrigerai.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 156.27,
+    "fin": 157.01,
+    "proba": 0.52
+   },
+   {
+    "mot": "la",
+    "debut": 157.01,
+    "fin": 157.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 157.15,
+    "fin": 157.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 157.43,
+    "fin": 157.65,
+    "proba": 0.98
+   },
+   {
+    "mot": "Je",
+    "debut": 157.93,
+    "fin": 158.15,
+    "proba": 0.96
+   },
+   {
+    "mot": "le",
+    "debut": 158.15,
+    "fin": 158.29,
+    "proba": 0.98
+   },
+   {
+    "mot": "corrigerai.",
+    "debut": 158.29,
+    "fin": 158.97,
+    "proba": 0.95
+   }
+  ]
+ },
+ {
+  "debut": 160.39,
+  "fin": 165.99,
+  "texte": "6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.",
+  "mots": [
+   {
+    "mot": "6.",
+    "debut": 160.39,
+    "fin": 160.95,
+    "proba": 0.43
+   },
+   {
+    "mot": "Envoyez",
+    "debut": 162.93,
+    "fin": 163.49,
+    "proba": 0.98
+   },
+   {
+    "mot": "-moi",
+    "debut": 163.49,
+    "fin": 163.59,
+    "proba": 0.98
+   },
+   {
+    "mot": "votre",
+    "debut": 163.59,
+    "fin": 163.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "cahier",
+    "debut": 163.83,
+    "fin": 163.99,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 163.99,
+    "fin": 164.09,
+    "proba": 0.91
+   },
+   {
+    "mot": "charge",
+    "debut": 164.09,
+    "fin": 164.49,
+    "proba": 0.77
+   },
+   {
+    "mot": "dans",
+    "debut": 164.49,
+    "fin": 164.79,
+    "proba": 0.85
+   },
+   {
+    "mot": "le",
+    "debut": 164.79,
+    "fin": 164.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "groupe",
+    "debut": 164.89,
+    "fin": 165.05,
+    "proba": 0.99
+   },
+   {
+    "mot": "WhatsApp",
+    "debut": 165.05,
+    "fin": 165.37,
+    "proba": 0.87
+   },
+   {
+    "mot": "de",
+    "debut": 165.37,
+    "fin": 165.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "la",
+    "debut": 165.53,
+    "fin": 165.61,
+    "proba": 0.07
+   },
+   {
+    "mot": "formation.",
+    "debut": 165.61,
+    "fin": 165.99,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 166.51,
+  "fin": 169.49,
+  "texte": "Avant la partie 2. Je le corrigerai.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 166.51,
+    "fin": 167.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 167.07,
+    "fin": 167.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 167.21,
+    "fin": 167.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 167.47,
+    "fin": 167.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "Je",
+    "debut": 168.05,
+    "fin": 168.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 168.51,
+    "fin": 168.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "corrigerai.",
+    "debut": 168.65,
+    "fin": 169.49,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 169.91,
+  "fin": 175.75,
+  "texte": "Avant d'envoyer, vérifiez qu'il n'y a ni clé ni mot de passe.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 169.91,
+    "fin": 170.47,
+    "proba": 0.98
+   },
+   {
+    "mot": "d",
+    "debut": 170.47,
+    "fin": 170.65,
+    "proba": 0.99
+   },
+   {
+    "mot": "'envoyer,",
+    "debut": 170.65,
+    "fin": 171.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifiez",
+    "debut": 171.49,
+    "fin": 172.15,
+    "proba": 0.98
+   },
+   {
+    "mot": "qu",
+    "debut": 172.15,
+    "fin": 172.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 172.75,
+    "fin": 172.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 172.87,
+    "fin": 172.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "'y",
+    "debut": 172.95,
+    "fin": 173.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 173.03,
+    "fin": 173.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "ni",
+    "debut": 173.15,
+    "fin": 173.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 173.53,
+    "fin": 174.69,
+    "proba": 0.96
+   },
+   {
+    "mot": "ni",
+    "debut": 174.69,
+    "fin": 175.11,
+    "proba": 0.96
+   },
+   {
+    "mot": "mot",
+    "debut": 175.11,
+    "fin": 175.33,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 175.33,
+    "fin": 175.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "passe.",
+    "debut": 175.47,
+    "fin": 175.75,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 176.49,
+  "fin": 185.75,
+  "texte": "Dans la partie 2. Nous le donnerons à Claude Côte pour construire votre argent.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 176.49,
+    "fin": 176.77,
+    "proba": 0.96
+   },
+   {
+    "mot": "la",
+    "debut": 176.77,
+    "fin": 176.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 176.89,
+    "fin": 177.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 177.15,
+    "fin": 177.43,
+    "proba": 0.98
+   },
+   {
+    "mot": "Nous",
+    "debut": 182.15,
+    "fin": 182.71,
+    "proba": 0.93
+   },
+   {
+    "mot": "le",
+    "debut": 182.71,
+    "fin": 182.93,
+    "proba": 0.59
+   },
+   {
+    "mot": "donnerons",
+    "debut": 182.93,
+    "fin": 183.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 183.51,
+    "fin": 184.07,
+    "proba": 0.65
+   },
+   {
+    "mot": "Claude",
+    "debut": 184.07,
+    "fin": 184.39,
+    "proba": 0.97
+   },
+   {
+    "mot": "Côte",
+    "debut": 184.39,
+    "fin": 184.69,
+    "proba": 0.9
+   },
+   {
+    "mot": "pour",
+    "debut": 184.69,
+    "fin": 184.89,
+    "proba": 0.72
+   },
+   {
+    "mot": "construire",
+    "debut": 184.89,
+    "fin": 185.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 185.29,
+    "fin": 185.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "argent.",
+    "debut": 185.47,
+    "fin": 185.75,
+    "proba": 0.89
+   }
+  ]
+ },
+ {
+  "debut": 186.19,
+  "fin": 188.99,
+  "texte": "Bravo pour votre travail. La suite arrive très bientôt.",
+  "mots": [
+   {
+    "mot": "Bravo",
+    "debut": 186.19,
+    "fin": 186.69,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 186.69,
+    "fin": 186.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 186.87,
+    "fin": 187.03,
+    "proba": 0.99
+   },
+   {
+    "mot": "travail.",
+    "debut": 187.03,
+    "fin": 187.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "La",
+    "debut": 187.83,
+    "fin": 188.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "suite",
+    "debut": 188.01,
+    "fin": 188.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "arrive",
+    "debut": 188.25,
+    "fin": 188.51,
+    "proba": 0.95
+   },
+   {
+    "mot": "très",
+    "debut": 188.51,
+    "fin": 188.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "bientôt.",
+    "debut": 188.71,
+    "fin": 188.99,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 194.27,
+  "fin": 197.43,
+  "texte": "6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.",
+  "mots": [
+   {
+    "mot": "6.",
+    "debut": 194.27,
+    "fin": 194.69,
+    "proba": 0.5
+   },
+   {
+    "mot": "Envoyez",
+    "debut": 194.69,
+    "fin": 195.11,
+    "proba": 0.98
+   },
+   {
+    "mot": "-moi",
+    "debut": 195.11,
+    "fin": 195.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 195.21,
+    "fin": 195.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "cahier",
+    "debut": 195.45,
+    "fin": 195.65,
+    "proba": 0.88
+   },
+   {
+    "mot": "de",
+    "debut": 195.65,
+    "fin": 195.73,
+    "proba": 0.96
+   },
+   {
+    "mot": "charge",
+    "debut": 195.73,
+    "fin": 196.03,
+    "proba": 0.93
+   },
+   {
+    "mot": "dans",
+    "debut": 196.03,
+    "fin": 196.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 196.21,
+    "fin": 196.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "groupe",
+    "debut": 196.31,
+    "fin": 196.49,
+    "proba": 0.99
+   },
+   {
+    "mot": "WhatsApp",
+    "debut": 196.49,
+    "fin": 196.81,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 196.81,
+    "fin": 196.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 196.97,
+    "fin": 197.05,
+    "proba": 0.89
+   },
+   {
+    "mot": "formation.",
+    "debut": 197.05,
+    "fin": 197.43,
+    "proba": 0.82
+   }
+  ]
+ },
+ {
+  "debut": 197.69,
+  "fin": 199.91,
+  "texte": "Avant la partie 2. Je le corrigerai.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 197.69,
+    "fin": 197.99,
+    "proba": 0.98
+   },
+   {
+    "mot": "la",
+    "debut": 197.99,
+    "fin": 198.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 198.17,
+    "fin": 198.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 198.39,
+    "fin": 198.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "Je",
+    "debut": 198.87,
+    "fin": 199.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 199.15,
+    "fin": 199.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "corrigerai.",
+    "debut": 199.27,
+    "fin": 199.91,
+    "proba": 0.89
+   }
+  ]
+ },
+ {
+  "debut": 200.23,
+  "fin": 202.43,
+  "texte": "Avant d'envoyer, vérifiez qu'il n'y a...",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 200.23,
+    "fin": 200.63,
+    "proba": 0.68
+   },
+   {
+    "mot": "d",
+    "debut": 200.63,
+    "fin": 200.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoyer,",
+    "debut": 200.75,
+    "fin": 201.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifiez",
+    "debut": 201.33,
+    "fin": 201.75,
+    "proba": 0.93
+   },
+   {
+    "mot": "qu",
+    "debut": 201.75,
+    "fin": 201.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 201.91,
+    "fin": 202.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 202.01,
+    "fin": 202.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "'y",
+    "debut": 202.09,
+    "fin": 202.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "a...",
+    "debut": 202.13,
+    "fin": 202.43,
+    "proba": 0.64
+   }
+  ]
+ },
+ {
+  "debut": 204.39,
+  "fin": 206.4,
+  "texte": "Avant d'envoyer, vérifiez qu'il n'y a pas...",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 204.39,
+    "fin": 204.81,
+    "proba": 0.63
+   },
+   {
+    "mot": "d",
+    "debut": 204.81,
+    "fin": 204.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoyer,",
+    "debut": 204.99,
+    "fin": 205.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifiez",
+    "debut": 205.45,
+    "fin": 205.79,
+    "proba": 0.99
+   },
+   {
+    "mot": "qu",
+    "debut": 205.79,
+    "fin": 205.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 205.91,
+    "fin": 205.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 205.97,
+    "fin": 206.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "'y",
+    "debut": 206.05,
+    "fin": 206.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 206.13,
+    "fin": 206.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas...",
+    "debut": 206.19,
+    "fin": 206.4,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 207.84,
+  "fin": 211.4,
+  "texte": "6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de la formation.",
+  "mots": [
+   {
+    "mot": "6.",
+    "debut": 207.84,
+    "fin": 208.28,
+    "proba": 0.68
+   },
+   {
+    "mot": "Envoyez",
+    "debut": 208.72,
+    "fin": 209.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "-moi",
+    "debut": 209.16,
+    "fin": 209.2,
+    "proba": 0.98
+   },
+   {
+    "mot": "votre",
+    "debut": 209.2,
+    "fin": 209.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "cahier",
+    "debut": 209.42,
+    "fin": 209.6,
+    "proba": 0.92
+   },
+   {
+    "mot": "de",
+    "debut": 209.6,
+    "fin": 209.68,
+    "proba": 0.85
+   },
+   {
+    "mot": "charge",
+    "debut": 209.68,
+    "fin": 210.08,
+    "proba": 0.87
+   },
+   {
+    "mot": "dans",
+    "debut": 210.08,
+    "fin": 210.26,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 210.26,
+    "fin": 210.36,
+    "proba": 0.99
+   },
+   {
+    "mot": "groupe",
+    "debut": 210.36,
+    "fin": 210.5,
+    "proba": 0.95
+   },
+   {
+    "mot": "WhatsApp",
+    "debut": 210.5,
+    "fin": 210.82,
+    "proba": 0.97
+   },
+   {
+    "mot": "de",
+    "debut": 210.82,
+    "fin": 210.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 210.96,
+    "fin": 211.04,
+    "proba": 0.67
+   },
+   {
+    "mot": "formation.",
+    "debut": 211.04,
+    "fin": 211.4,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 212.0,
+  "fin": 214.28,
+  "texte": "Avant la partie 2. Je le corrigerai.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 212.0,
+    "fin": 212.44,
+    "proba": 0.98
+   },
+   {
+    "mot": "la",
+    "debut": 212.44,
+    "fin": 212.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 212.6,
+    "fin": 212.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 212.82,
+    "fin": 213.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "Je",
+    "debut": 213.24,
+    "fin": 213.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 213.54,
+    "fin": 213.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "corrigerai.",
+    "debut": 213.66,
+    "fin": 214.28,
+    "proba": 0.95
+   }
+  ]
+ },
+ {
+  "debut": 214.62,
+  "fin": 217.94,
+  "texte": "Avant d'envoyer, vérifiez qu'il n'y a ni clé ni mot de passe.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 214.62,
+    "fin": 215.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 215.06,
+    "fin": 215.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoyer,",
+    "debut": 215.2,
+    "fin": 215.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifiez",
+    "debut": 215.68,
+    "fin": 216.02,
+    "proba": 0.98
+   },
+   {
+    "mot": "qu",
+    "debut": 216.02,
+    "fin": 216.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 216.18,
+    "fin": 216.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 216.26,
+    "fin": 216.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "'y",
+    "debut": 216.34,
+    "fin": 216.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 216.42,
+    "fin": 216.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "ni",
+    "debut": 216.52,
+    "fin": 216.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 216.82,
+    "fin": 217.14,
+    "proba": 0.98
+   },
+   {
+    "mot": "ni",
+    "debut": 217.14,
+    "fin": 217.36,
+    "proba": 0.93
+   },
+   {
+    "mot": "mot",
+    "debut": 217.36,
+    "fin": 217.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 217.52,
+    "fin": 217.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "passe.",
+    "debut": 217.64,
+    "fin": 217.94,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 218.5,
+  "fin": 221.88,
+  "texte": "Dans la partie 2. Nous le donnerons à Claude Côte pour construire votre argent.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 218.5,
+    "fin": 218.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 218.82,
+    "fin": 218.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 218.96,
+    "fin": 219.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 219.22,
+    "fin": 219.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "Nous",
+    "debut": 219.66,
+    "fin": 219.72,
+    "proba": 0.96
+   },
+   {
+    "mot": "le",
+    "debut": 219.72,
+    "fin": 219.86,
+    "proba": 0.98
+   },
+   {
+    "mot": "donnerons",
+    "debut": 219.86,
+    "fin": 220.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 220.22,
+    "fin": 220.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 220.42,
+    "fin": 220.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "Côte",
+    "debut": 220.62,
+    "fin": 220.88,
+    "proba": 0.92
+   },
+   {
+    "mot": "pour",
+    "debut": 220.88,
+    "fin": 221.04,
+    "proba": 0.94
+   },
+   {
+    "mot": "construire",
+    "debut": 221.04,
+    "fin": 221.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 221.44,
+    "fin": 221.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "argent.",
+    "debut": 221.6,
+    "fin": 221.88,
+    "proba": 0.92
+   }
+  ]
+ },
+ {
+  "debut": 221.88,
+  "fin": 225.62,
+  "texte": "Bravo pour votre travail. La suite arrive très bientôt.",
+  "mots": [
+   {
+    "mot": "Bravo",
+    "debut": 221.88,
+    "fin": 223.12,
+    "proba": 0.8
+   },
+   {
+    "mot": "pour",
+    "debut": 223.12,
+    "fin": 223.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 223.4,
+    "fin": 223.58,
+    "proba": 0.95
+   },
+   {
+    "mot": "travail.",
+    "debut": 223.58,
+    "fin": 223.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "La",
+    "debut": 224.28,
+    "fin": 224.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "suite",
+    "debut": 224.38,
+    "fin": 224.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "arrive",
+    "debut": 224.74,
+    "fin": 225.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "très",
+    "debut": 225.16,
+    "fin": 225.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "bientôt.",
+    "debut": 225.36,
+    "fin": 225.62,
+    "proba": 1.0
+   }
+  ]
+ }
+]

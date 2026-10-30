@@ -1,0 +1,9500 @@
+[
+ {
+  "debut": 2.06,
+  "fin": 5.6,
+  "texte": "Formation, comment créer un agent IA de A à Z.",
+  "mots": [
+   {
+    "mot": "Formation,",
+    "debut": 2.06,
+    "fin": 2.96,
+    "proba": 0.93
+   },
+   {
+    "mot": "comment",
+    "debut": 3.14,
+    "fin": 3.4,
+    "proba": 0.96
+   },
+   {
+    "mot": "créer",
+    "debut": 3.4,
+    "fin": 3.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 3.8,
+    "fin": 4.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 4.14,
+    "fin": 4.42,
+    "proba": 0.99
+   },
+   {
+    "mot": "IA",
+    "debut": 4.42,
+    "fin": 4.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 4.8,
+    "fin": 5.04,
+    "proba": 0.98
+   },
+   {
+    "mot": "A",
+    "debut": 5.04,
+    "fin": 5.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 5.24,
+    "fin": 5.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "Z.",
+    "debut": 5.4,
+    "fin": 5.6,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 6.34,
+  "fin": 9.68,
+  "texte": "Première partie, partie 1B, préparer son projet.",
+  "mots": [
+   {
+    "mot": "Première",
+    "debut": 6.34,
+    "fin": 6.56,
+    "proba": 0.98
+   },
+   {
+    "mot": "partie,",
+    "debut": 6.56,
+    "fin": 6.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 7.42,
+    "fin": 7.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "1B,",
+    "debut": 7.7,
+    "fin": 8.14,
+    "proba": 0.96
+   },
+   {
+    "mot": "préparer",
+    "debut": 8.74,
+    "fin": 9.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "son",
+    "debut": 9.2,
+    "fin": 9.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet.",
+    "debut": 9.34,
+    "fin": 9.68,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 10.26,
+  "fin": 15.78,
+  "texte": "Dans la partie 1A, vous avez compris ce qu'un agent IA a pris les 10 mots importants.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 10.26,
+    "fin": 10.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 10.6,
+    "fin": 10.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 10.8,
+    "fin": 11.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "1A,",
+    "debut": 11.14,
+    "fin": 11.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 11.7,
+    "fin": 11.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "avez",
+    "debut": 11.9,
+    "fin": 12.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "compris",
+    "debut": 12.1,
+    "fin": 12.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 12.52,
+    "fin": 12.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 12.7,
+    "fin": 12.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "'un",
+    "debut": 12.82,
+    "fin": 12.92,
+    "proba": 0.7
+   },
+   {
+    "mot": "agent",
+    "debut": 12.92,
+    "fin": 13.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "IA",
+    "debut": 13.18,
+    "fin": 13.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 13.52,
+    "fin": 14.08,
+    "proba": 0.51
+   },
+   {
+    "mot": "pris",
+    "debut": 14.08,
+    "fin": 14.44,
+    "proba": 0.56
+   },
+   {
+    "mot": "les",
+    "debut": 14.44,
+    "fin": 14.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "10",
+    "debut": 14.68,
+    "fin": 14.84,
+    "proba": 0.95
+   },
+   {
+    "mot": "mots",
+    "debut": 14.84,
+    "fin": 15.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "importants.",
+    "debut": 15.12,
+    "fin": 15.78,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 16.06,
+  "fin": 19.3,
+  "texte": "Créer vos comptes et découvrir la méthode en 4 étapes.",
+  "mots": [
+   {
+    "mot": "Créer",
+    "debut": 16.06,
+    "fin": 16.28,
+    "proba": 0.86
+   },
+   {
+    "mot": "vos",
+    "debut": 16.28,
+    "fin": 16.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "comptes",
+    "debut": 16.42,
+    "fin": 16.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 16.78,
+    "fin": 16.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "découvrir",
+    "debut": 16.94,
+    "fin": 17.32,
+    "proba": 0.63
+   },
+   {
+    "mot": "la",
+    "debut": 17.32,
+    "fin": 17.7,
+    "proba": 0.99
+   },
+   {
+    "mot": "méthode",
+    "debut": 17.7,
+    "fin": 18.02,
+    "proba": 0.99
+   },
+   {
+    "mot": "en",
+    "debut": 18.02,
+    "fin": 18.2,
+    "proba": 0.95
+   },
+   {
+    "mot": "4",
+    "debut": 18.2,
+    "fin": 18.5,
+    "proba": 0.94
+   },
+   {
+    "mot": "étapes.",
+    "debut": 18.5,
+    "fin": 19.3,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 19.88,
+  "fin": 21.86,
+  "texte": "Maintenant, on passe à la pratique.",
+  "mots": [
+   {
+    "mot": "Maintenant,",
+    "debut": 19.88,
+    "fin": 20.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 20.64,
+    "fin": 20.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "passe",
+    "debut": 20.9,
+    "fin": 21.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 21.22,
+    "fin": 21.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 21.34,
+    "fin": 21.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "pratique.",
+    "debut": 21.44,
+    "fin": 21.86,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 22.58,
+  "fin": 23.84,
+  "texte": "Étape 1, le bloc note.",
+  "mots": [
+   {
+    "mot": "Étape",
+    "debut": 22.58,
+    "fin": 22.92,
+    "proba": 0.96
+   },
+   {
+    "mot": "1,",
+    "debut": 22.92,
+    "fin": 23.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 23.26,
+    "fin": 23.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 23.36,
+    "fin": 23.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "note.",
+    "debut": 23.62,
+    "fin": 23.84,
+    "proba": 0.34
+   }
+  ]
+ },
+ {
+  "debut": 24.34,
+  "fin": 27.64,
+  "texte": "Écoutez-moi bien parce que cette étape décide de tout le reste.",
+  "mots": [
+   {
+    "mot": "Écoutez",
+    "debut": 24.34,
+    "fin": 24.88,
+    "proba": 0.98
+   },
+   {
+    "mot": "-moi",
+    "debut": 24.88,
+    "fin": 25.02,
+    "proba": 0.99
+   },
+   {
+    "mot": "bien",
+    "debut": 25.02,
+    "fin": 25.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "parce",
+    "debut": 25.3,
+    "fin": 25.64,
+    "proba": 0.69
+   },
+   {
+    "mot": "que",
+    "debut": 25.64,
+    "fin": 25.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "cette",
+    "debut": 25.76,
+    "fin": 25.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "étape",
+    "debut": 25.94,
+    "fin": 26.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "décide",
+    "debut": 26.28,
+    "fin": 26.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 26.74,
+    "fin": 27.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "tout",
+    "debut": 27.08,
+    "fin": 27.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 27.24,
+    "fin": 27.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "reste.",
+    "debut": 27.36,
+    "fin": 27.64,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 28.22,
+  "fin": 30.3,
+  "texte": "Un agent bien décrit travaille bien.",
+  "mots": [
+   {
+    "mot": "Un",
+    "debut": 28.22,
+    "fin": 28.5,
+    "proba": 0.99
+   },
+   {
+    "mot": "agent",
+    "debut": 28.5,
+    "fin": 28.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "bien",
+    "debut": 28.86,
+    "fin": 29.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "décrit",
+    "debut": 29.2,
+    "fin": 29.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "travaille",
+    "debut": 29.68,
+    "fin": 30.0,
+    "proba": 0.89
+   },
+   {
+    "mot": "bien.",
+    "debut": 30.0,
+    "fin": 30.3,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 30.3,
+  "fin": 32.94,
+  "texte": "Un agent mal décrit travaille mal.",
+  "mots": [
+   {
+    "mot": "Un",
+    "debut": 30.3,
+    "fin": 31.02,
+    "proba": 0.94
+   },
+   {
+    "mot": "agent",
+    "debut": 31.02,
+    "fin": 31.32,
+    "proba": 0.98
+   },
+   {
+    "mot": "mal",
+    "debut": 31.32,
+    "fin": 31.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "décrit",
+    "debut": 31.7,
+    "fin": 32.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "travaille",
+    "debut": 32.2,
+    "fin": 32.62,
+    "proba": 0.56
+   },
+   {
+    "mot": "mal.",
+    "debut": 32.62,
+    "fin": 32.94,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 33.38,
+  "fin": 36.56,
+  "texte": "Si vos informations sont floues, votre agent sera flou.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 33.38,
+    "fin": 33.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 33.9,
+    "fin": 34.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "informations",
+    "debut": 34.16,
+    "fin": 34.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "sont",
+    "debut": 34.66,
+    "fin": 35.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "floues,",
+    "debut": 35.04,
+    "fin": 35.4,
+    "proba": 0.98
+   },
+   {
+    "mot": "votre",
+    "debut": 35.5,
+    "fin": 35.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 35.64,
+    "fin": 36.0,
+    "proba": 0.98
+   },
+   {
+    "mot": "sera",
+    "debut": 36.0,
+    "fin": 36.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "flou.",
+    "debut": 36.24,
+    "fin": 36.56,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 37.38,
+  "fin": 40.54,
+  "texte": "Pensez à votre agent comme à un nouvel employé.",
+  "mots": [
+   {
+    "mot": "Pensez",
+    "debut": 37.38,
+    "fin": 37.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 37.9,
+    "fin": 38.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 38.12,
+    "fin": 38.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 38.34,
+    "fin": 38.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "comme",
+    "debut": 38.74,
+    "fin": 39.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 39.4,
+    "fin": 39.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 39.64,
+    "fin": 39.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "nouvel",
+    "debut": 39.8,
+    "fin": 40.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "employé.",
+    "debut": 40.02,
+    "fin": 40.54,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 40.94,
+  "fin": 43.34,
+  "texte": "Le premier jour, vous lui expliqueriez tout.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 40.94,
+    "fin": 41.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "premier",
+    "debut": 41.22,
+    "fin": 41.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "jour,",
+    "debut": 41.48,
+    "fin": 41.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 41.94,
+    "fin": 42.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "lui",
+    "debut": 42.2,
+    "fin": 42.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "expliqueriez",
+    "debut": 42.36,
+    "fin": 43.14,
+    "proba": 0.97
+   },
+   {
+    "mot": "tout.",
+    "debut": 43.14,
+    "fin": 43.34,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 43.66,
+  "fin": 48.06,
+  "texte": "Qui vous êtes, ce que vous vendez, comment parler au client et ce qu'il ne doit jamais faire.",
+  "mots": [
+   {
+    "mot": "Qui",
+    "debut": 43.66,
+    "fin": 43.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 43.92,
+    "fin": 44.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "êtes,",
+    "debut": 44.14,
+    "fin": 44.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 44.5,
+    "fin": 44.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 44.64,
+    "fin": 44.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 44.82,
+    "fin": 45.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "vendez,",
+    "debut": 45.0,
+    "fin": 45.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "comment",
+    "debut": 45.52,
+    "fin": 45.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "parler",
+    "debut": 45.74,
+    "fin": 46.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "au",
+    "debut": 46.12,
+    "fin": 46.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "client",
+    "debut": 46.2,
+    "fin": 46.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 46.46,
+    "fin": 46.88,
+    "proba": 0.9
+   },
+   {
+    "mot": "ce",
+    "debut": 46.88,
+    "fin": 47.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 47.02,
+    "fin": 47.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 47.12,
+    "fin": 47.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 47.18,
+    "fin": 47.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 47.3,
+    "fin": 47.44,
+    "proba": 0.98
+   },
+   {
+    "mot": "jamais",
+    "debut": 47.44,
+    "fin": 47.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "faire.",
+    "debut": 47.66,
+    "fin": 48.06,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 48.5,
+  "fin": 53.3,
+  "texte": "Faites exactement la même chose, mais pas écrit dans le bloc note de votre téléphone.",
+  "mots": [
+   {
+    "mot": "Faites",
+    "debut": 48.5,
+    "fin": 49.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "exactement",
+    "debut": 49.02,
+    "fin": 49.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 49.5,
+    "fin": 49.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "même",
+    "debut": 49.66,
+    "fin": 49.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "chose,",
+    "debut": 49.82,
+    "fin": 50.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "mais",
+    "debut": 50.32,
+    "fin": 50.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 50.74,
+    "fin": 51.02,
+    "proba": 0.6
+   },
+   {
+    "mot": "écrit",
+    "debut": 51.02,
+    "fin": 51.28,
+    "proba": 0.46
+   },
+   {
+    "mot": "dans",
+    "debut": 51.28,
+    "fin": 51.66,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 51.66,
+    "fin": 51.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 51.76,
+    "fin": 52.02,
+    "proba": 0.99
+   },
+   {
+    "mot": "note",
+    "debut": 52.02,
+    "fin": 52.24,
+    "proba": 0.36
+   },
+   {
+    "mot": "de",
+    "debut": 52.24,
+    "fin": 52.44,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 52.44,
+    "fin": 52.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "téléphone.",
+    "debut": 52.68,
+    "fin": 53.3,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 53.62,
+  "fin": 57.22,
+  "texte": "Pour écrire votre projet, vous avez deux chemins.",
+  "mots": [
+   {
+    "mot": "Pour",
+    "debut": 53.62,
+    "fin": 54.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "écrire",
+    "debut": 54.14,
+    "fin": 54.48,
+    "proba": 0.96
+   },
+   {
+    "mot": "votre",
+    "debut": 54.48,
+    "fin": 54.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet,",
+    "debut": 54.74,
+    "fin": 55.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 55.5,
+    "fin": 55.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "avez",
+    "debut": 55.58,
+    "fin": 55.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "deux",
+    "debut": 55.94,
+    "fin": 56.86,
+    "proba": 0.96
+   },
+   {
+    "mot": "chemins.",
+    "debut": 56.86,
+    "fin": 57.22,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 57.6,
+  "fin": 58.84,
+  "texte": "Choisissez celui qui vous convient.",
+  "mots": [
+   {
+    "mot": "Choisissez",
+    "debut": 57.6,
+    "fin": 57.96,
+    "proba": 0.94
+   },
+   {
+    "mot": "celui",
+    "debut": 57.96,
+    "fin": 58.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 58.2,
+    "fin": 58.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 58.34,
+    "fin": 58.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "convient.",
+    "debut": 58.46,
+    "fin": 58.84,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 58.84,
+  "fin": 61.9,
+  "texte": "Le premier chemin, c'est la description libre.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 58.84,
+    "fin": 59.36,
+    "proba": 0.97
+   },
+   {
+    "mot": "premier",
+    "debut": 59.36,
+    "fin": 59.6,
+    "proba": 0.98
+   },
+   {
+    "mot": "chemin,",
+    "debut": 59.6,
+    "fin": 59.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 60.16,
+    "fin": 60.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 60.62,
+    "fin": 60.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 60.68,
+    "fin": 60.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "description",
+    "debut": 60.9,
+    "fin": 61.52,
+    "proba": 0.94
+   },
+   {
+    "mot": "libre.",
+    "debut": 61.52,
+    "fin": 61.9,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 62.2,
+  "fin": 67.7,
+  "texte": "Vous écrivez tout ce que vous avez dans la tête, sans autre, avec vos propres mots.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 62.2,
+    "fin": 62.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "écrivez",
+    "debut": 62.52,
+    "fin": 62.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "tout",
+    "debut": 62.82,
+    "fin": 62.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 62.98,
+    "fin": 63.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 63.08,
+    "fin": 63.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 63.28,
+    "fin": 63.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "avez",
+    "debut": 63.56,
+    "fin": 63.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 63.74,
+    "fin": 63.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 63.86,
+    "fin": 63.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "tête,",
+    "debut": 63.98,
+    "fin": 64.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "sans",
+    "debut": 64.4,
+    "fin": 64.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "autre,",
+    "debut": 64.82,
+    "fin": 65.1,
+    "proba": 0.67
+   },
+   {
+    "mot": "avec",
+    "debut": 65.28,
+    "fin": 65.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 65.76,
+    "fin": 67.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "propres",
+    "debut": 67.22,
+    "fin": 67.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "mots.",
+    "debut": 67.54,
+    "fin": 67.7,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 68.18,
+  "fin": 70.08,
+  "texte": "Les fautes n'ont aucune importance.",
+  "mots": [
+   {
+    "mot": "Les",
+    "debut": 68.18,
+    "fin": 68.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "fautes",
+    "debut": 68.38,
+    "fin": 68.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 68.82,
+    "fin": 69.34,
+    "proba": 0.99
+   },
+   {
+    "mot": "'ont",
+    "debut": 69.34,
+    "fin": 69.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "aucune",
+    "debut": 69.4,
+    "fin": 69.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "importance.",
+    "debut": 69.58,
+    "fin": 70.08,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 70.94,
+  "fin": 73.0,
+  "texte": "Essayez simplement de répondre à ces questions.",
+  "mots": [
+   {
+    "mot": "Essayez",
+    "debut": 70.94,
+    "fin": 71.4,
+    "proba": 0.88
+   },
+   {
+    "mot": "simplement",
+    "debut": 71.4,
+    "fin": 71.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 71.84,
+    "fin": 72.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "répondre",
+    "debut": 72.08,
+    "fin": 72.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 72.4,
+    "fin": 72.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "ces",
+    "debut": 72.58,
+    "fin": 72.68,
+    "proba": 0.99
+   },
+   {
+    "mot": "questions.",
+    "debut": 72.68,
+    "fin": 73.0,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 73.28,
+  "fin": 75.42,
+  "texte": "Quel problème mon agent va résoudre ?",
+  "mots": [
+   {
+    "mot": "Quel",
+    "debut": 73.28,
+    "fin": 73.68,
+    "proba": 0.94
+   },
+   {
+    "mot": "problème",
+    "debut": 73.68,
+    "fin": 74.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 74.12,
+    "fin": 74.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 74.3,
+    "fin": 74.56,
+    "proba": 0.86
+   },
+   {
+    "mot": "va",
+    "debut": 74.56,
+    "fin": 74.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "résoudre",
+    "debut": 74.74,
+    "fin": 75.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "?",
+    "debut": 75.18,
+    "fin": 75.42,
+    "proba": 0.69
+   }
+  ]
+ },
+ {
+  "debut": 75.42,
+  "fin": 76.8,
+  "texte": "Pour qui il travaille ?",
+  "mots": [
+   {
+    "mot": "Pour",
+    "debut": 75.42,
+    "fin": 75.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 75.72,
+    "fin": 75.96,
+    "proba": 0.97
+   },
+   {
+    "mot": "il",
+    "debut": 75.96,
+    "fin": 76.08,
+    "proba": 0.98
+   },
+   {
+    "mot": "travaille",
+    "debut": 76.08,
+    "fin": 76.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "?",
+    "debut": 76.48,
+    "fin": 76.8,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 76.8,
+  "fin": 78.82,
+  "texte": "Que doit-il faire chaque jour ?",
+  "mots": [
+   {
+    "mot": "Que",
+    "debut": 76.8,
+    "fin": 77.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 77.12,
+    "fin": 77.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "-il",
+    "debut": 77.44,
+    "fin": 77.66,
+    "proba": 0.99
+   },
+   {
+    "mot": "faire",
+    "debut": 77.66,
+    "fin": 77.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "chaque",
+    "debut": 77.9,
+    "fin": 78.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "jour",
+    "debut": 78.22,
+    "fin": 78.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "?",
+    "debut": 78.54,
+    "fin": 78.82,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 78.82,
+  "fin": 80.42,
+  "texte": "Où va-t-il travailler ?",
+  "mots": [
+   {
+    "mot": "Où",
+    "debut": 78.82,
+    "fin": 79.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "va",
+    "debut": 79.18,
+    "fin": 79.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "-t",
+    "debut": 79.4,
+    "fin": 79.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "-il",
+    "debut": 79.52,
+    "fin": 79.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "travailler",
+    "debut": 79.58,
+    "fin": 80.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "?",
+    "debut": 80.04,
+    "fin": 80.42,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 80.42,
+  "fin": 82.22,
+  "texte": "Et quel est mon budget ?",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 80.42,
+    "fin": 80.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "quel",
+    "debut": 80.78,
+    "fin": 81.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 81.28,
+    "fin": 81.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 81.46,
+    "fin": 81.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "budget",
+    "debut": 81.6,
+    "fin": 81.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "?",
+    "debut": 81.94,
+    "fin": 82.22,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 82.22,
+  "fin": 84.84,
+  "texte": "C'est le chemin le plus simple quand on débute.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 82.22,
+    "fin": 82.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 82.8,
+    "fin": 82.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 82.86,
+    "fin": 82.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "chemin",
+    "debut": 82.96,
+    "fin": 83.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 83.18,
+    "fin": 83.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 83.36,
+    "fin": 83.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "simple",
+    "debut": 83.54,
+    "fin": 83.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "quand",
+    "debut": 83.9,
+    "fin": 84.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 84.22,
+    "fin": 84.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "débute.",
+    "debut": 84.44,
+    "fin": 84.84,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 85.4,
+  "fin": 87.74,
+  "texte": "Votre chef de projet remettra tout en ordre.",
+  "mots": [
+   {
+    "mot": "Votre",
+    "debut": 85.4,
+    "fin": 85.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 85.92,
+    "fin": 86.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 86.16,
+    "fin": 86.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 86.28,
+    "fin": 86.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "remettra",
+    "debut": 86.62,
+    "fin": 87.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "tout",
+    "debut": 87.14,
+    "fin": 87.36,
+    "proba": 0.97
+   },
+   {
+    "mot": "en",
+    "debut": 87.36,
+    "fin": 87.52,
+    "proba": 0.91
+   },
+   {
+    "mot": "ordre.",
+    "debut": 87.52,
+    "fin": 87.74,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 88.26,
+  "fin": 91.4,
+  "texte": "Le deuxième chemin, c'est la fiche guidée de votre guide.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 88.26,
+    "fin": 88.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "deuxième",
+    "debut": 88.4,
+    "fin": 88.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "chemin,",
+    "debut": 88.66,
+    "fin": 89.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 89.18,
+    "fin": 89.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 89.46,
+    "fin": 89.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 89.54,
+    "fin": 89.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "fiche",
+    "debut": 89.76,
+    "fin": 90.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "guidée",
+    "debut": 90.28,
+    "fin": 90.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 90.72,
+    "fin": 90.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 90.96,
+    "fin": 91.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "guide.",
+    "debut": 91.12,
+    "fin": 91.4,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 92.26,
+  "fin": 94.48,
+  "texte": "Vous répondez aux questions une par une.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 92.26,
+    "fin": 92.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "répondez",
+    "debut": 92.78,
+    "fin": 93.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "aux",
+    "debut": 93.3,
+    "fin": 93.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "questions",
+    "debut": 93.38,
+    "fin": 93.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 93.74,
+    "fin": 94.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "par",
+    "debut": 94.06,
+    "fin": 94.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "une.",
+    "debut": 94.24,
+    "fin": 94.48,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 94.86,
+  "fin": 97.26,
+  "texte": "Elles sont rangées en neuf parties.",
+  "mots": [
+   {
+    "mot": "Elles",
+    "debut": 94.86,
+    "fin": 95.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "sont",
+    "debut": 95.3,
+    "fin": 95.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "rangées",
+    "debut": 95.56,
+    "fin": 96.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 96.1,
+    "fin": 96.4,
+    "proba": 0.95
+   },
+   {
+    "mot": "neuf",
+    "debut": 96.4,
+    "fin": 96.84,
+    "proba": 0.77
+   },
+   {
+    "mot": "parties.",
+    "debut": 96.84,
+    "fin": 97.26,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 97.68,
+  "fin": 105.8,
+  "texte": "L'identité de l'agent, votre entreprise, vos clients, ses tâches, ce qu'il doit savoir, sa personnalité, où il vit, le budget et le résultat attendu.",
+  "mots": [
+   {
+    "mot": "L",
+    "debut": 97.68,
+    "fin": 97.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "'identité",
+    "debut": 97.9,
+    "fin": 98.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 98.34,
+    "fin": 98.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 98.46,
+    "fin": 98.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent,",
+    "debut": 98.56,
+    "fin": 98.86,
+    "proba": 0.78
+   },
+   {
+    "mot": "votre",
+    "debut": 99.08,
+    "fin": 99.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "entreprise,",
+    "debut": 99.34,
+    "fin": 99.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 100.08,
+    "fin": 100.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "clients,",
+    "debut": 100.2,
+    "fin": 100.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "ses",
+    "debut": 100.78,
+    "fin": 100.92,
+    "proba": 0.99
+   },
+   {
+    "mot": "tâches,",
+    "debut": 100.92,
+    "fin": 101.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 101.34,
+    "fin": 101.42,
+    "proba": 0.97
+   },
+   {
+    "mot": "qu",
+    "debut": 101.42,
+    "fin": 101.52,
+    "proba": 0.92
+   },
+   {
+    "mot": "'il",
+    "debut": 101.52,
+    "fin": 101.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 101.56,
+    "fin": 101.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "savoir,",
+    "debut": 101.7,
+    "fin": 102.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "sa",
+    "debut": 102.28,
+    "fin": 102.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "personnalité,",
+    "debut": 102.38,
+    "fin": 102.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "où",
+    "debut": 103.32,
+    "fin": 103.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 103.5,
+    "fin": 103.64,
+    "proba": 0.98
+   },
+   {
+    "mot": "vit,",
+    "debut": 103.64,
+    "fin": 103.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 103.98,
+    "fin": 104.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "budget",
+    "debut": 104.14,
+    "fin": 104.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 104.48,
+    "fin": 104.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 104.76,
+    "fin": 104.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "résultat",
+    "debut": 104.84,
+    "fin": 105.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "attendu.",
+    "debut": 105.24,
+    "fin": 105.8,
+    "proba": 0.87
+   }
+  ]
+ },
+ {
+  "debut": 105.8,
+  "fin": 108.9,
+  "texte": "C'est le chemin le plus rapide si votre idée est déjà claire.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 105.8,
+    "fin": 106.3,
+    "proba": 0.98
+   },
+   {
+    "mot": "'est",
+    "debut": 106.3,
+    "fin": 106.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 106.36,
+    "fin": 106.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "chemin",
+    "debut": 106.46,
+    "fin": 106.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 106.66,
+    "fin": 106.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 106.76,
+    "fin": 106.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "rapide",
+    "debut": 106.92,
+    "fin": 107.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "si",
+    "debut": 107.34,
+    "fin": 107.58,
+    "proba": 0.95
+   },
+   {
+    "mot": "votre",
+    "debut": 107.58,
+    "fin": 107.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "idée",
+    "debut": 107.82,
+    "fin": 108.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 108.14,
+    "fin": 108.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "déjà",
+    "debut": 108.34,
+    "fin": 108.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "claire.",
+    "debut": 108.54,
+    "fin": 108.9,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 109.62,
+  "fin": 114.98,
+  "texte": "Quel que soit votre chemin, une partie compte plus que les autres, ce que l'agent doit savoir.",
+  "mots": [
+   {
+    "mot": "Quel",
+    "debut": 109.62,
+    "fin": 110.06,
+    "proba": 0.95
+   },
+   {
+    "mot": "que",
+    "debut": 110.06,
+    "fin": 110.24,
+    "proba": 0.95
+   },
+   {
+    "mot": "soit",
+    "debut": 110.24,
+    "fin": 110.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 110.5,
+    "fin": 110.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "chemin,",
+    "debut": 110.72,
+    "fin": 111.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 111.34,
+    "fin": 111.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 111.44,
+    "fin": 112.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "compte",
+    "debut": 112.2,
+    "fin": 112.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 112.66,
+    "fin": 113.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 113.0,
+    "fin": 113.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 113.16,
+    "fin": 113.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "autres,",
+    "debut": 113.32,
+    "fin": 113.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 113.8,
+    "fin": 113.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 113.98,
+    "fin": 114.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 114.12,
+    "fin": 114.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 114.24,
+    "fin": 114.48,
+    "proba": 0.72
+   },
+   {
+    "mot": "doit",
+    "debut": 114.48,
+    "fin": 114.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "savoir.",
+    "debut": 114.64,
+    "fin": 114.98,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 118.12,
+  "fin": 122.92,
+  "texte": "Quel que soit votre chemin, une partie compte plus que les autres. Ce que l'argent doit savoir.",
+  "mots": [
+   {
+    "mot": "Quel",
+    "debut": 118.12,
+    "fin": 118.56,
+    "proba": 0.45
+   },
+   {
+    "mot": "que",
+    "debut": 118.56,
+    "fin": 118.74,
+    "proba": 0.76
+   },
+   {
+    "mot": "soit",
+    "debut": 118.74,
+    "fin": 118.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 118.98,
+    "fin": 119.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "chemin,",
+    "debut": 119.18,
+    "fin": 119.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 119.84,
+    "fin": 119.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 119.9,
+    "fin": 120.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "compte",
+    "debut": 120.26,
+    "fin": 120.56,
+    "proba": 0.99
+   },
+   {
+    "mot": "plus",
+    "debut": 120.56,
+    "fin": 121.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 121.0,
+    "fin": 121.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 121.14,
+    "fin": 121.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "autres.",
+    "debut": 121.28,
+    "fin": 121.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "Ce",
+    "debut": 121.62,
+    "fin": 121.96,
+    "proba": 0.98
+   },
+   {
+    "mot": "que",
+    "debut": 121.96,
+    "fin": 122.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 122.1,
+    "fin": 122.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "'argent",
+    "debut": 122.22,
+    "fin": 122.44,
+    "proba": 0.93
+   },
+   {
+    "mot": "doit",
+    "debut": 122.44,
+    "fin": 122.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "savoir.",
+    "debut": 122.6,
+    "fin": 122.92,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 151.66,
+  "fin": 167.56,
+  "texte": "Ce que l'argent doit savoir. Écrivez vos vrais prix et les vraies questions que vos clients vous posent avec les bonnes réponses. Notez-en au moins 10. Astuce, réalisez vos discussions WhatsApp de la semaine, les questions y sont.",
+  "mots": [
+   {
+    "mot": "Ce",
+    "debut": 151.66,
+    "fin": 152.28,
+    "proba": 0.32
+   },
+   {
+    "mot": "que",
+    "debut": 152.28,
+    "fin": 152.42,
+    "proba": 0.99
+   },
+   {
+    "mot": "l",
+    "debut": 152.42,
+    "fin": 152.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "'argent",
+    "debut": 152.58,
+    "fin": 152.82,
+    "proba": 0.6
+   },
+   {
+    "mot": "doit",
+    "debut": 152.82,
+    "fin": 153.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "savoir.",
+    "debut": 153.02,
+    "fin": 153.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "Écrivez",
+    "debut": 154.12,
+    "fin": 154.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "vos",
+    "debut": 154.74,
+    "fin": 155.06,
+    "proba": 0.99
+   },
+   {
+    "mot": "vrais",
+    "debut": 155.06,
+    "fin": 155.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "prix",
+    "debut": 155.3,
+    "fin": 155.5,
+    "proba": 0.97
+   },
+   {
+    "mot": "et",
+    "debut": 155.5,
+    "fin": 156.14,
+    "proba": 0.83
+   },
+   {
+    "mot": "les",
+    "debut": 156.14,
+    "fin": 156.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "vraies",
+    "debut": 156.3,
+    "fin": 156.7,
+    "proba": 0.99
+   },
+   {
+    "mot": "questions",
+    "debut": 156.7,
+    "fin": 157.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 157.16,
+    "fin": 157.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 157.44,
+    "fin": 157.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "clients",
+    "debut": 157.58,
+    "fin": 157.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 157.88,
+    "fin": 158.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "posent",
+    "debut": 158.06,
+    "fin": 158.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "avec",
+    "debut": 158.46,
+    "fin": 159.1,
+    "proba": 0.72
+   },
+   {
+    "mot": "les",
+    "debut": 159.1,
+    "fin": 159.34,
+    "proba": 0.99
+   },
+   {
+    "mot": "bonnes",
+    "debut": 159.34,
+    "fin": 159.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "réponses.",
+    "debut": 159.74,
+    "fin": 160.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "Notez",
+    "debut": 161.12,
+    "fin": 161.74,
+    "proba": 0.98
+   },
+   {
+    "mot": "-en",
+    "debut": 161.74,
+    "fin": 161.92,
+    "proba": 0.98
+   },
+   {
+    "mot": "au",
+    "debut": 161.92,
+    "fin": 162.08,
+    "proba": 0.99
+   },
+   {
+    "mot": "moins",
+    "debut": 162.08,
+    "fin": 162.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "10.",
+    "debut": 162.28,
+    "fin": 162.56,
+    "proba": 0.81
+   },
+   {
+    "mot": "Astuce,",
+    "debut": 163.26,
+    "fin": 163.82,
+    "proba": 0.89
+   },
+   {
+    "mot": "réalisez",
+    "debut": 164.0,
+    "fin": 164.56,
+    "proba": 0.99
+   },
+   {
+    "mot": "vos",
+    "debut": 164.56,
+    "fin": 164.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "discussions",
+    "debut": 164.68,
+    "fin": 165.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "WhatsApp",
+    "debut": 165.08,
+    "fin": 165.5,
+    "proba": 0.95
+   },
+   {
+    "mot": "de",
+    "debut": 165.5,
+    "fin": 165.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 165.98,
+    "fin": 166.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "semaine,",
+    "debut": 166.1,
+    "fin": 166.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 166.62,
+    "fin": 166.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "questions",
+    "debut": 166.84,
+    "fin": 167.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "y",
+    "debut": 167.2,
+    "fin": 167.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "sont.",
+    "debut": 167.36,
+    "fin": 167.56,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 168.5,
+  "fin": 180.16,
+  "texte": "Et n'oubliez jamais d'écrire ce que l'argent ne doit jamais dire ni promettre. Les deux chemins arrivent au même endroit. Votre chef de projet qui vérifiera tout et complétera ce qui manque.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 168.5,
+    "fin": 169.1,
+    "proba": 0.97
+   },
+   {
+    "mot": "n",
+    "debut": 169.1,
+    "fin": 169.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "'oubliez",
+    "debut": 169.22,
+    "fin": 169.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "jamais",
+    "debut": 169.56,
+    "fin": 169.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 169.92,
+    "fin": 170.12,
+    "proba": 0.94
+   },
+   {
+    "mot": "'écrire",
+    "debut": 170.12,
+    "fin": 170.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 170.34,
+    "fin": 170.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 170.6,
+    "fin": 170.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 170.72,
+    "fin": 170.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "'argent",
+    "debut": 170.88,
+    "fin": 171.18,
+    "proba": 0.67
+   },
+   {
+    "mot": "ne",
+    "debut": 171.18,
+    "fin": 171.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 171.5,
+    "fin": 171.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "jamais",
+    "debut": 171.74,
+    "fin": 172.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "dire",
+    "debut": 172.1,
+    "fin": 172.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "ni",
+    "debut": 172.5,
+    "fin": 172.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "promettre.",
+    "debut": 172.72,
+    "fin": 173.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "Les",
+    "debut": 173.6,
+    "fin": 174.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "deux",
+    "debut": 174.0,
+    "fin": 174.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "chemins",
+    "debut": 174.18,
+    "fin": 174.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "arrivent",
+    "debut": 174.64,
+    "fin": 175.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "au",
+    "debut": 175.6,
+    "fin": 175.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "même",
+    "debut": 175.78,
+    "fin": 175.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "endroit.",
+    "debut": 175.96,
+    "fin": 176.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "Votre",
+    "debut": 176.54,
+    "fin": 176.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 176.8,
+    "fin": 176.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 176.98,
+    "fin": 177.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 177.08,
+    "fin": 177.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 177.44,
+    "fin": 177.72,
+    "proba": 0.96
+   },
+   {
+    "mot": "vérifiera",
+    "debut": 177.72,
+    "fin": 178.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "tout",
+    "debut": 178.32,
+    "fin": 178.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 178.62,
+    "fin": 179.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "complétera",
+    "debut": 179.0,
+    "fin": 179.46,
+    "proba": 0.93
+   },
+   {
+    "mot": "ce",
+    "debut": 179.46,
+    "fin": 179.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 179.8,
+    "fin": 179.92,
+    "proba": 0.98
+   },
+   {
+    "mot": "manque.",
+    "debut": 179.92,
+    "fin": 180.16,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 180.16,
+  "fin": 191.9,
+  "texte": "Maintenant, je vous montre. J'ouvre mon blog note et j'écris mon projet devant vous. Maintenant, on donne notre test à Claude. Mais pas n'importe comment. D'abord, on lui donne son rôle.",
+  "mots": [
+   {
+    "mot": "Maintenant,",
+    "debut": 180.16,
+    "fin": 181.18,
+    "proba": 0.95
+   },
+   {
+    "mot": "je",
+    "debut": 181.52,
+    "fin": 182.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 182.02,
+    "fin": 182.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "montre.",
+    "debut": 182.16,
+    "fin": 182.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "J",
+    "debut": 182.8,
+    "fin": 182.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "'ouvre",
+    "debut": 182.84,
+    "fin": 183.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 183.02,
+    "fin": 183.16,
+    "proba": 0.99
+   },
+   {
+    "mot": "blog",
+    "debut": 183.16,
+    "fin": 183.36,
+    "proba": 0.58
+   },
+   {
+    "mot": "note",
+    "debut": 183.36,
+    "fin": 183.64,
+    "proba": 0.25
+   },
+   {
+    "mot": "et",
+    "debut": 183.64,
+    "fin": 183.96,
+    "proba": 0.94
+   },
+   {
+    "mot": "j",
+    "debut": 183.96,
+    "fin": 184.08,
+    "proba": 0.99
+   },
+   {
+    "mot": "'écris",
+    "debut": 184.08,
+    "fin": 184.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 184.4,
+    "fin": 184.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "projet",
+    "debut": 184.74,
+    "fin": 185.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "devant",
+    "debut": 185.08,
+    "fin": 185.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous.",
+    "debut": 185.34,
+    "fin": 185.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "Maintenant,",
+    "debut": 186.18,
+    "fin": 186.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 186.94,
+    "fin": 187.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 187.42,
+    "fin": 187.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "notre",
+    "debut": 187.7,
+    "fin": 187.98,
+    "proba": 0.69
+   },
+   {
+    "mot": "test",
+    "debut": 187.98,
+    "fin": 188.26,
+    "proba": 0.67
+   },
+   {
+    "mot": "à",
+    "debut": 188.26,
+    "fin": 188.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude.",
+    "debut": 188.5,
+    "fin": 188.76,
+    "proba": 0.92
+   },
+   {
+    "mot": "Mais",
+    "debut": 189.26,
+    "fin": 189.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 189.58,
+    "fin": 189.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "n",
+    "debut": 189.84,
+    "fin": 190.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "'importe",
+    "debut": 190.02,
+    "fin": 190.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "comment.",
+    "debut": 190.18,
+    "fin": 190.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "D",
+    "debut": 190.68,
+    "fin": 190.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abord,",
+    "debut": 190.82,
+    "fin": 190.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 191.06,
+    "fin": 191.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "lui",
+    "debut": 191.18,
+    "fin": 191.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 191.3,
+    "fin": 191.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 191.48,
+    "fin": 191.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "rôle.",
+    "debut": 191.68,
+    "fin": 191.9,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 191.9,
+  "fin": 203.62,
+  "texte": "On lui dit « Tu es mon chef de projet. Je suis débutant. » Pourquoi ? Parce qu'une IA travaille beaucoup mieux quand elle sait quel rôle elle joue et à qui elle parle.",
+  "mots": [
+   {
+    "mot": "On",
+    "debut": 191.9,
+    "fin": 192.52,
+    "proba": 0.9
+   },
+   {
+    "mot": "lui",
+    "debut": 192.52,
+    "fin": 192.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "dit",
+    "debut": 192.68,
+    "fin": 192.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "«",
+    "debut": 192.86,
+    "fin": 193.12,
+    "proba": 0.37
+   },
+   {
+    "mot": "Tu",
+    "debut": 193.12,
+    "fin": 193.24,
+    "proba": 0.74
+   },
+   {
+    "mot": "es",
+    "debut": 193.24,
+    "fin": 193.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 193.5,
+    "fin": 193.92,
+    "proba": 0.99
+   },
+   {
+    "mot": "chef",
+    "debut": 193.92,
+    "fin": 194.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 194.18,
+    "fin": 194.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet.",
+    "debut": 194.32,
+    "fin": 194.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "Je",
+    "debut": 194.88,
+    "fin": 195.46,
+    "proba": 0.99
+   },
+   {
+    "mot": "suis",
+    "debut": 195.46,
+    "fin": 195.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "débutant.",
+    "debut": 195.64,
+    "fin": 196.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "»",
+    "debut": 196.42,
+    "fin": 197.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "Pourquoi",
+    "debut": 197.04,
+    "fin": 197.24,
+    "proba": 0.98
+   },
+   {
+    "mot": "?",
+    "debut": 197.24,
+    "fin": 197.58,
+    "proba": 0.75
+   },
+   {
+    "mot": "Parce",
+    "debut": 197.58,
+    "fin": 198.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 198.06,
+    "fin": 198.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "'une",
+    "debut": 198.2,
+    "fin": 198.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "IA",
+    "debut": 198.3,
+    "fin": 198.62,
+    "proba": 0.87
+   },
+   {
+    "mot": "travaille",
+    "debut": 198.62,
+    "fin": 199.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "beaucoup",
+    "debut": 199.06,
+    "fin": 199.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "mieux",
+    "debut": 199.42,
+    "fin": 199.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "quand",
+    "debut": 199.72,
+    "fin": 200.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "elle",
+    "debut": 200.08,
+    "fin": 200.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "sait",
+    "debut": 200.38,
+    "fin": 200.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "quel",
+    "debut": 200.7,
+    "fin": 201.14,
+    "proba": 0.98
+   },
+   {
+    "mot": "rôle",
+    "debut": 201.14,
+    "fin": 201.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "elle",
+    "debut": 201.48,
+    "fin": 201.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "joue",
+    "debut": 201.76,
+    "fin": 202.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 202.06,
+    "fin": 202.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 202.4,
+    "fin": 202.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 202.66,
+    "fin": 202.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "elle",
+    "debut": 202.98,
+    "fin": 203.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "parle.",
+    "debut": 203.32,
+    "fin": 203.62,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 204.2,
+  "fin": 215.56,
+  "texte": "Ensuite, on lui explique son travail. Réorganisez votre idée en cahier des charges claires. Repérez ce qui manque et vous posez les questions une par une avec des choix.",
+  "mots": [
+   {
+    "mot": "Ensuite,",
+    "debut": 204.2,
+    "fin": 204.76,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 205.06,
+    "fin": 205.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "lui",
+    "debut": 205.44,
+    "fin": 205.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "explique",
+    "debut": 205.58,
+    "fin": 205.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 205.9,
+    "fin": 206.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "travail.",
+    "debut": 206.02,
+    "fin": 206.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "Réorganisez",
+    "debut": 207.28,
+    "fin": 207.84,
+    "proba": 0.98
+   },
+   {
+    "mot": "votre",
+    "debut": 207.84,
+    "fin": 208.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "idée",
+    "debut": 208.6,
+    "fin": 208.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 208.98,
+    "fin": 209.36,
+    "proba": 0.96
+   },
+   {
+    "mot": "cahier",
+    "debut": 209.36,
+    "fin": 209.66,
+    "proba": 0.94
+   },
+   {
+    "mot": "des",
+    "debut": 209.66,
+    "fin": 209.78,
+    "proba": 0.35
+   },
+   {
+    "mot": "charges",
+    "debut": 209.78,
+    "fin": 210.06,
+    "proba": 0.94
+   },
+   {
+    "mot": "claires.",
+    "debut": 210.06,
+    "fin": 210.4,
+    "proba": 0.78
+   },
+   {
+    "mot": "Repérez",
+    "debut": 210.98,
+    "fin": 211.36,
+    "proba": 0.92
+   },
+   {
+    "mot": "ce",
+    "debut": 211.36,
+    "fin": 211.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 211.5,
+    "fin": 211.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "manque",
+    "debut": 211.62,
+    "fin": 211.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 211.92,
+    "fin": 212.46,
+    "proba": 0.59
+   },
+   {
+    "mot": "vous",
+    "debut": 212.46,
+    "fin": 212.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "posez",
+    "debut": 212.7,
+    "fin": 213.34,
+    "proba": 0.99
+   },
+   {
+    "mot": "les",
+    "debut": 213.34,
+    "fin": 213.46,
+    "proba": 0.98
+   },
+   {
+    "mot": "questions",
+    "debut": 213.46,
+    "fin": 213.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 213.84,
+    "fin": 214.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "par",
+    "debut": 214.14,
+    "fin": 214.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "une",
+    "debut": 214.4,
+    "fin": 214.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "avec",
+    "debut": 214.64,
+    "fin": 215.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 215.02,
+    "fin": 215.34,
+    "proba": 0.95
+   },
+   {
+    "mot": "choix.",
+    "debut": 215.34,
+    "fin": 215.56,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 218.27,
+  "fin": 226.97,
+  "texte": "Quand vous ne savez pas, il doit vous proposer la solution la plus simple et la moins chère. Et s'il trouve une idée trop compliquée ou trop chère, il doit vous le dire franchement.",
+  "mots": [
+   {
+    "mot": "Quand",
+    "debut": 218.27,
+    "fin": 218.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 218.65,
+    "fin": 218.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 218.79,
+    "fin": 218.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "savez",
+    "debut": 218.87,
+    "fin": 219.05,
+    "proba": 0.92
+   },
+   {
+    "mot": "pas,",
+    "debut": 219.05,
+    "fin": 219.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 219.75,
+    "fin": 219.85,
+    "proba": 0.98
+   },
+   {
+    "mot": "doit",
+    "debut": 219.85,
+    "fin": 220.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 220.01,
+    "fin": 220.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "proposer",
+    "debut": 220.17,
+    "fin": 220.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 220.53,
+    "fin": 220.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "solution",
+    "debut": 220.65,
+    "fin": 220.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 220.95,
+    "fin": 221.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 221.17,
+    "fin": 221.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "simple",
+    "debut": 221.33,
+    "fin": 221.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 221.65,
+    "fin": 221.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 221.85,
+    "fin": 221.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "moins",
+    "debut": 221.99,
+    "fin": 222.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "chère.",
+    "debut": 222.21,
+    "fin": 222.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "Et",
+    "debut": 222.69,
+    "fin": 223.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "s",
+    "debut": 223.01,
+    "fin": 223.15,
+    "proba": 0.98
+   },
+   {
+    "mot": "'il",
+    "debut": 223.15,
+    "fin": 223.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "trouve",
+    "debut": 223.21,
+    "fin": 223.37,
+    "proba": 0.99
+   },
+   {
+    "mot": "une",
+    "debut": 223.37,
+    "fin": 223.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "idée",
+    "debut": 223.55,
+    "fin": 223.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "trop",
+    "debut": 223.77,
+    "fin": 223.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "compliquée",
+    "debut": 223.99,
+    "fin": 224.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "ou",
+    "debut": 224.47,
+    "fin": 224.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "trop",
+    "debut": 224.67,
+    "fin": 224.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "chère,",
+    "debut": 224.85,
+    "fin": 225.31,
+    "proba": 0.99
+   },
+   {
+    "mot": "il",
+    "debut": 225.49,
+    "fin": 225.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 225.79,
+    "fin": 226.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 226.03,
+    "fin": 226.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 226.31,
+    "fin": 226.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "dire",
+    "debut": 226.41,
+    "fin": 226.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "franchement.",
+    "debut": 226.53,
+    "fin": 226.97,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 227.65,
+  "fin": 235.35,
+  "texte": "Dernière consigne. Il ne doit jamais vous demander une clé secrète ou un mot de passe. Et vous, vous ne lui donnez jamais.",
+  "mots": [
+   {
+    "mot": "Dernière",
+    "debut": 227.65,
+    "fin": 228.09,
+    "proba": 0.96
+   },
+   {
+    "mot": "consigne.",
+    "debut": 228.09,
+    "fin": 228.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "Il",
+    "debut": 228.73,
+    "fin": 229.13,
+    "proba": 0.99
+   },
+   {
+    "mot": "ne",
+    "debut": 229.13,
+    "fin": 229.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "doit",
+    "debut": 229.27,
+    "fin": 229.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "jamais",
+    "debut": 229.45,
+    "fin": 229.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 229.77,
+    "fin": 229.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "demander",
+    "debut": 229.95,
+    "fin": 230.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 230.35,
+    "fin": 230.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 230.61,
+    "fin": 230.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "secrète",
+    "debut": 230.81,
+    "fin": 231.25,
+    "proba": 0.98
+   },
+   {
+    "mot": "ou",
+    "debut": 231.25,
+    "fin": 231.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "un",
+    "debut": 231.45,
+    "fin": 231.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "mot",
+    "debut": 231.57,
+    "fin": 231.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 231.69,
+    "fin": 231.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "passe.",
+    "debut": 231.79,
+    "fin": 232.07,
+    "proba": 0.99
+   },
+   {
+    "mot": "Et",
+    "debut": 232.35,
+    "fin": 232.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous,",
+    "debut": 232.69,
+    "fin": 232.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 233.05,
+    "fin": 233.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 233.27,
+    "fin": 233.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "lui",
+    "debut": 233.45,
+    "fin": 233.93,
+    "proba": 0.82
+   },
+   {
+    "mot": "donnez",
+    "debut": 233.93,
+    "fin": 235.07,
+    "proba": 0.97
+   },
+   {
+    "mot": "jamais.",
+    "debut": 235.07,
+    "fin": 235.35,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 236.45,
+  "fin": 244.67,
+  "texte": "Ce message complet est dans votre guide. Vous n'avez qu'à le copier. Ensuite, vous discutez. Il vous pose une question. Vous répondez avec vos mots.",
+  "mots": [
+   {
+    "mot": "Ce",
+    "debut": 236.45,
+    "fin": 236.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "message",
+    "debut": 236.89,
+    "fin": 237.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "complet",
+    "debut": 237.27,
+    "fin": 237.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 237.95,
+    "fin": 238.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 238.27,
+    "fin": 238.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 238.41,
+    "fin": 238.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "guide.",
+    "debut": 238.57,
+    "fin": 238.83,
+    "proba": 0.99
+   },
+   {
+    "mot": "Vous",
+    "debut": 239.09,
+    "fin": 239.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 239.43,
+    "fin": 239.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "'avez",
+    "debut": 239.63,
+    "fin": 239.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 239.79,
+    "fin": 239.95,
+    "proba": 0.99
+   },
+   {
+    "mot": "'à",
+    "debut": 239.95,
+    "fin": 239.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 239.99,
+    "fin": 240.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "copier.",
+    "debut": 240.09,
+    "fin": 240.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "Ensuite,",
+    "debut": 241.03,
+    "fin": 241.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 241.51,
+    "fin": 241.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "discutez.",
+    "debut": 241.71,
+    "fin": 242.27,
+    "proba": 0.99
+   },
+   {
+    "mot": "Il",
+    "debut": 242.41,
+    "fin": 242.67,
+    "proba": 0.95
+   },
+   {
+    "mot": "vous",
+    "debut": 242.67,
+    "fin": 242.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "pose",
+    "debut": 242.79,
+    "fin": 242.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 242.97,
+    "fin": 243.07,
+    "proba": 0.94
+   },
+   {
+    "mot": "question.",
+    "debut": 243.07,
+    "fin": 243.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "Vous",
+    "debut": 243.63,
+    "fin": 243.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "répondez",
+    "debut": 243.75,
+    "fin": 244.17,
+    "proba": 0.99
+   },
+   {
+    "mot": "avec",
+    "debut": 244.17,
+    "fin": 244.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "vos",
+    "debut": 244.31,
+    "fin": 244.47,
+    "proba": 0.99
+   },
+   {
+    "mot": "mots.",
+    "debut": 244.47,
+    "fin": 244.67,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 245.21,
+  "fin": 252.85,
+  "texte": "Si vous ne savez pas, dites simplement « Je ne sais pas. » Propose-moi la meilleure option. Et s'il propose quelque chose que vous ne voulez pas, dites-le.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 245.21,
+    "fin": 245.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 245.49,
+    "fin": 245.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 245.69,
+    "fin": 245.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "savez",
+    "debut": 245.85,
+    "fin": 246.07,
+    "proba": 0.99
+   },
+   {
+    "mot": "pas,",
+    "debut": 246.07,
+    "fin": 246.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "dites",
+    "debut": 246.37,
+    "fin": 246.47,
+    "proba": 0.99
+   },
+   {
+    "mot": "simplement",
+    "debut": 246.47,
+    "fin": 246.97,
+    "proba": 0.99
+   },
+   {
+    "mot": "«",
+    "debut": 246.97,
+    "fin": 247.17,
+    "proba": 0.46
+   },
+   {
+    "mot": "Je",
+    "debut": 247.17,
+    "fin": 247.21,
+    "proba": 0.66
+   },
+   {
+    "mot": "ne",
+    "debut": 247.21,
+    "fin": 247.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "sais",
+    "debut": 247.29,
+    "fin": 247.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "pas.",
+    "debut": 247.45,
+    "fin": 247.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "»",
+    "debut": 247.93,
+    "fin": 248.35,
+    "proba": 0.81
+   },
+   {
+    "mot": "Propose",
+    "debut": 248.35,
+    "fin": 248.75,
+    "proba": 0.98
+   },
+   {
+    "mot": "-moi",
+    "debut": 248.75,
+    "fin": 248.93,
+    "proba": 0.97
+   },
+   {
+    "mot": "la",
+    "debut": 248.93,
+    "fin": 249.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "meilleure",
+    "debut": 249.17,
+    "fin": 249.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "option.",
+    "debut": 249.47,
+    "fin": 249.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "Et",
+    "debut": 250.01,
+    "fin": 250.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "s",
+    "debut": 250.25,
+    "fin": 250.35,
+    "proba": 0.92
+   },
+   {
+    "mot": "'il",
+    "debut": 250.35,
+    "fin": 250.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "propose",
+    "debut": 250.39,
+    "fin": 250.69,
+    "proba": 0.97
+   },
+   {
+    "mot": "quelque",
+    "debut": 250.69,
+    "fin": 250.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "chose",
+    "debut": 250.95,
+    "fin": 251.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 251.35,
+    "fin": 251.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 251.79,
+    "fin": 251.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 251.89,
+    "fin": 251.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "voulez",
+    "debut": 251.97,
+    "fin": 252.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas,",
+    "debut": 252.13,
+    "fin": 252.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "dites",
+    "debut": 252.47,
+    "fin": 252.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "-le.",
+    "debut": 252.69,
+    "fin": 252.85,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 254.17,
+  "fin": 265.41,
+  "texte": "C'est votre projet. C'est vous le patron. Quand il n'a plus de questions, demandez-lui « Donne-moi le cas de charge complet et final avec la liste des comptes et outils nécessaires, gratuits et payants. »",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 254.17,
+    "fin": 254.65,
+    "proba": 0.96
+   },
+   {
+    "mot": "'est",
+    "debut": 254.65,
+    "fin": 254.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 254.71,
+    "fin": 254.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet.",
+    "debut": 254.93,
+    "fin": 255.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "C",
+    "debut": 255.61,
+    "fin": 255.89,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 255.89,
+    "fin": 255.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 255.93,
+    "fin": 256.05,
+    "proba": 0.96
+   },
+   {
+    "mot": "le",
+    "debut": 256.05,
+    "fin": 256.15,
+    "proba": 0.97
+   },
+   {
+    "mot": "patron.",
+    "debut": 256.15,
+    "fin": 256.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "Quand",
+    "debut": 257.05,
+    "fin": 257.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 257.49,
+    "fin": 257.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 257.65,
+    "fin": 257.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "'a",
+    "debut": 257.73,
+    "fin": 257.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 257.77,
+    "fin": 257.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 257.89,
+    "fin": 257.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "questions,",
+    "debut": 257.99,
+    "fin": 258.35,
+    "proba": 0.89
+   },
+   {
+    "mot": "demandez",
+    "debut": 258.57,
+    "fin": 258.89,
+    "proba": 0.96
+   },
+   {
+    "mot": "-lui",
+    "debut": 258.89,
+    "fin": 259.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "«",
+    "debut": 259.13,
+    "fin": 259.37,
+    "proba": 0.52
+   },
+   {
+    "mot": "Donne",
+    "debut": 259.37,
+    "fin": 259.57,
+    "proba": 0.93
+   },
+   {
+    "mot": "-moi",
+    "debut": 259.57,
+    "fin": 259.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 259.67,
+    "fin": 259.85,
+    "proba": 0.76
+   },
+   {
+    "mot": "cas",
+    "debut": 259.85,
+    "fin": 259.97,
+    "proba": 0.6
+   },
+   {
+    "mot": "de",
+    "debut": 259.97,
+    "fin": 260.07,
+    "proba": 0.63
+   },
+   {
+    "mot": "charge",
+    "debut": 260.07,
+    "fin": 260.37,
+    "proba": 0.88
+   },
+   {
+    "mot": "complet",
+    "debut": 260.37,
+    "fin": 260.71,
+    "proba": 0.56
+   },
+   {
+    "mot": "et",
+    "debut": 260.71,
+    "fin": 260.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "final",
+    "debut": 260.87,
+    "fin": 261.09,
+    "proba": 0.98
+   },
+   {
+    "mot": "avec",
+    "debut": 261.09,
+    "fin": 261.41,
+    "proba": 0.97
+   },
+   {
+    "mot": "la",
+    "debut": 261.41,
+    "fin": 261.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "liste",
+    "debut": 261.61,
+    "fin": 261.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 261.97,
+    "fin": 262.31,
+    "proba": 0.99
+   },
+   {
+    "mot": "comptes",
+    "debut": 262.31,
+    "fin": 262.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 262.71,
+    "fin": 262.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "outils",
+    "debut": 262.85,
+    "fin": 263.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "nécessaires,",
+    "debut": 263.17,
+    "fin": 263.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "gratuits",
+    "debut": 263.79,
+    "fin": 264.17,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 264.17,
+    "fin": 264.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "payants.",
+    "debut": 264.31,
+    "fin": 264.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "»",
+    "debut": 264.93,
+    "fin": 265.41,
+    "proba": 0.29
+   }
+  ]
+ },
+ {
+  "debut": 265.41,
+  "fin": 270.91,
+  "texte": "Copiez-le dans votre bloc-note et gardez-le précisément. C'est le plan de votre maison. Retenez ceci.",
+  "mots": [
+   {
+    "mot": "Copiez",
+    "debut": 265.41,
+    "fin": 265.57,
+    "proba": 0.97
+   },
+   {
+    "mot": "-le",
+    "debut": 265.57,
+    "fin": 265.71,
+    "proba": 0.95
+   },
+   {
+    "mot": "dans",
+    "debut": 265.71,
+    "fin": 265.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 265.91,
+    "fin": 266.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 266.15,
+    "fin": 266.35,
+    "proba": 0.98
+   },
+   {
+    "mot": "-note",
+    "debut": 266.35,
+    "fin": 266.57,
+    "proba": 0.85
+   },
+   {
+    "mot": "et",
+    "debut": 266.57,
+    "fin": 266.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "gardez",
+    "debut": 266.85,
+    "fin": 267.23,
+    "proba": 0.93
+   },
+   {
+    "mot": "-le",
+    "debut": 267.23,
+    "fin": 267.61,
+    "proba": 0.99
+   },
+   {
+    "mot": "précisément.",
+    "debut": 267.61,
+    "fin": 268.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "C",
+    "debut": 268.45,
+    "fin": 268.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 268.73,
+    "fin": 268.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 268.77,
+    "fin": 268.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 268.87,
+    "fin": 269.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 269.05,
+    "fin": 269.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 269.15,
+    "fin": 269.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "maison.",
+    "debut": 269.31,
+    "fin": 269.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "Retenez",
+    "debut": 270.15,
+    "fin": 270.55,
+    "proba": 0.99
+   },
+   {
+    "mot": "ceci.",
+    "debut": 270.55,
+    "fin": 270.91,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 271.17,
+  "fin": 276.91,
+  "texte": "On ne commence jamais à construire avant que le chef de projet ait bien compris le projet.",
+  "mots": [
+   {
+    "mot": "On",
+    "debut": 271.17,
+    "fin": 271.65,
+    "proba": 0.99
+   },
+   {
+    "mot": "ne",
+    "debut": 271.65,
+    "fin": 271.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "commence",
+    "debut": 271.77,
+    "fin": 272.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "jamais",
+    "debut": 272.09,
+    "fin": 272.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 272.41,
+    "fin": 272.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "construire",
+    "debut": 272.63,
+    "fin": 273.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "avant",
+    "debut": 273.07,
+    "fin": 273.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 273.39,
+    "fin": 273.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 273.57,
+    "fin": 273.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 273.79,
+    "fin": 274.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 274.03,
+    "fin": 274.15,
+    "proba": 0.95
+   },
+   {
+    "mot": "projet",
+    "debut": 274.15,
+    "fin": 274.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "ait",
+    "debut": 274.51,
+    "fin": 274.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "bien",
+    "debut": 274.85,
+    "fin": 275.73,
+    "proba": 0.99
+   },
+   {
+    "mot": "compris",
+    "debut": 275.73,
+    "fin": 276.47,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 276.47,
+    "fin": 276.61,
+    "proba": 0.98
+   },
+   {
+    "mot": "projet.",
+    "debut": 276.61,
+    "fin": 276.91,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 277.69,
+  "fin": 282.73,
+  "texte": "Vous vous souvenez des 6 types d'agents ? Chacun a besoin d'informations particulières.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 277.69,
+    "fin": 278.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 278.17,
+    "fin": 278.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "souvenez",
+    "debut": 278.31,
+    "fin": 278.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 278.83,
+    "fin": 279.37,
+    "proba": 0.83
+   },
+   {
+    "mot": "6",
+    "debut": 279.37,
+    "fin": 279.63,
+    "proba": 0.59
+   },
+   {
+    "mot": "types",
+    "debut": 279.63,
+    "fin": 279.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 279.83,
+    "fin": 279.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agents",
+    "debut": 279.97,
+    "fin": 280.23,
+    "proba": 0.94
+   },
+   {
+    "mot": "?",
+    "debut": 280.23,
+    "fin": 280.41,
+    "proba": 0.79
+   },
+   {
+    "mot": "Chacun",
+    "debut": 280.41,
+    "fin": 281.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 281.21,
+    "fin": 281.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "besoin",
+    "debut": 281.37,
+    "fin": 281.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 281.61,
+    "fin": 281.73,
+    "proba": 0.98
+   },
+   {
+    "mot": "'informations",
+    "debut": 281.73,
+    "fin": 282.07,
+    "proba": 0.98
+   },
+   {
+    "mot": "particulières.",
+    "debut": 282.07,
+    "fin": 282.73,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 282.85,
+  "fin": 287.19,
+  "texte": "C'est pour cela que votre guide contient 6 modules, de A à F.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 282.85,
+    "fin": 283.27,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 283.27,
+    "fin": 283.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 283.33,
+    "fin": 283.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "cela",
+    "debut": 283.43,
+    "fin": 283.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 283.63,
+    "fin": 283.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 283.75,
+    "fin": 283.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "guide",
+    "debut": 283.99,
+    "fin": 284.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "contient",
+    "debut": 284.25,
+    "fin": 284.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "6",
+    "debut": 284.75,
+    "fin": 285.09,
+    "proba": 0.5
+   },
+   {
+    "mot": "modules,",
+    "debut": 285.09,
+    "fin": 285.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 285.67,
+    "fin": 285.97,
+    "proba": 0.72
+   },
+   {
+    "mot": "A",
+    "debut": 285.97,
+    "fin": 286.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 286.31,
+    "fin": 286.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "F.",
+    "debut": 286.89,
+    "fin": 287.19,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 287.57,
+  "fin": 295.27,
+  "texte": "Le module A pour l'agent professeur, les niveaux, le déroulement d'une science, la façon de corriger, les erreurs, le programme et les formules.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 287.57,
+    "fin": 287.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "module",
+    "debut": 287.87,
+    "fin": 288.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "A",
+    "debut": 288.15,
+    "fin": 288.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 288.41,
+    "fin": 288.75,
+    "proba": 0.78
+   },
+   {
+    "mot": "l",
+    "debut": 288.75,
+    "fin": 288.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 288.87,
+    "fin": 289.07,
+    "proba": 0.89
+   },
+   {
+    "mot": "professeur,",
+    "debut": 289.07,
+    "fin": 289.59,
+    "proba": 0.99
+   },
+   {
+    "mot": "les",
+    "debut": 289.73,
+    "fin": 290.01,
+    "proba": 0.99
+   },
+   {
+    "mot": "niveaux,",
+    "debut": 290.01,
+    "fin": 290.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 290.71,
+    "fin": 290.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "déroulement",
+    "debut": 290.79,
+    "fin": 291.29,
+    "proba": 0.99
+   },
+   {
+    "mot": "d",
+    "debut": 291.29,
+    "fin": 291.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "'une",
+    "debut": 291.43,
+    "fin": 291.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "science,",
+    "debut": 291.49,
+    "fin": 291.79,
+    "proba": 0.94
+   },
+   {
+    "mot": "la",
+    "debut": 291.95,
+    "fin": 292.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "façon",
+    "debut": 292.05,
+    "fin": 292.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 292.35,
+    "fin": 292.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "corriger,",
+    "debut": 292.49,
+    "fin": 292.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 293.11,
+    "fin": 293.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "erreurs,",
+    "debut": 293.63,
+    "fin": 294.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 294.23,
+    "fin": 294.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "programme",
+    "debut": 294.31,
+    "fin": 294.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 294.67,
+    "fin": 294.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 294.83,
+    "fin": 294.91,
+    "proba": 0.9
+   },
+   {
+    "mot": "formules.",
+    "debut": 294.91,
+    "fin": 295.27,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 295.61,
+  "fin": 301.31,
+  "texte": "Le module B pour l'agent de vente, le catalogue, la prise de commande, la livraison, le paiement et les relances.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 295.61,
+    "fin": 295.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "module",
+    "debut": 295.93,
+    "fin": 296.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "B",
+    "debut": 296.21,
+    "fin": 296.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 296.43,
+    "fin": 296.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 296.75,
+    "fin": 296.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 296.91,
+    "fin": 297.11,
+    "proba": 0.94
+   },
+   {
+    "mot": "de",
+    "debut": 297.11,
+    "fin": 297.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "vente,",
+    "debut": 297.25,
+    "fin": 297.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 297.67,
+    "fin": 297.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "catalogue,",
+    "debut": 297.81,
+    "fin": 298.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 298.43,
+    "fin": 298.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "prise",
+    "debut": 298.55,
+    "fin": 298.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 298.83,
+    "fin": 298.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "commande,",
+    "debut": 298.99,
+    "fin": 299.31,
+    "proba": 0.8
+   },
+   {
+    "mot": "la",
+    "debut": 299.41,
+    "fin": 299.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "livraison,",
+    "debut": 299.51,
+    "fin": 299.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 300.03,
+    "fin": 300.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "paiement",
+    "debut": 300.11,
+    "fin": 300.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 300.49,
+    "fin": 300.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 300.81,
+    "fin": 300.93,
+    "proba": 0.92
+   },
+   {
+    "mot": "relances.",
+    "debut": 300.93,
+    "fin": 301.31,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 301.55,
+  "fin": 308.25,
+  "texte": "Le module C pour l'agent de contenu, les réseaux visés, les sujets, les heures de publication et l'appel à l'action.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 301.55,
+    "fin": 301.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "module",
+    "debut": 301.89,
+    "fin": 302.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "C",
+    "debut": 302.13,
+    "fin": 302.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 302.39,
+    "fin": 302.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 302.95,
+    "fin": 303.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 303.09,
+    "fin": 303.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 303.29,
+    "fin": 303.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "contenu,",
+    "debut": 303.41,
+    "fin": 303.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 304.11,
+    "fin": 304.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "réseaux",
+    "debut": 304.43,
+    "fin": 304.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "visés,",
+    "debut": 304.87,
+    "fin": 305.33,
+    "proba": 0.97
+   },
+   {
+    "mot": "les",
+    "debut": 305.53,
+    "fin": 305.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "sujets,",
+    "debut": 305.69,
+    "fin": 306.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 306.31,
+    "fin": 306.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "heures",
+    "debut": 306.47,
+    "fin": 306.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 306.69,
+    "fin": 306.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "publication",
+    "debut": 306.79,
+    "fin": 307.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 307.27,
+    "fin": 307.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 307.57,
+    "fin": 307.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "'appel",
+    "debut": 307.71,
+    "fin": 307.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 307.89,
+    "fin": 307.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 307.95,
+    "fin": 308.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "'action.",
+    "debut": 308.03,
+    "fin": 308.25,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 308.25,
+  "fin": 316.83,
+  "texte": "Le module D pour l'agent de rendez-vous, les services et leur durée, les disponibilités, l'agenda et les règles d'annulation.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 308.25,
+    "fin": 308.97,
+    "proba": 0.94
+   },
+   {
+    "mot": "module",
+    "debut": 308.97,
+    "fin": 309.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "D",
+    "debut": 309.21,
+    "fin": 309.47,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 309.47,
+    "fin": 311.77,
+    "proba": 0.18
+   },
+   {
+    "mot": "l",
+    "debut": 311.77,
+    "fin": 311.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 311.97,
+    "fin": 312.23,
+    "proba": 0.76
+   },
+   {
+    "mot": "de",
+    "debut": 312.23,
+    "fin": 312.39,
+    "proba": 0.99
+   },
+   {
+    "mot": "rendez",
+    "debut": 312.39,
+    "fin": 312.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "-vous,",
+    "debut": 312.53,
+    "fin": 312.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 312.95,
+    "fin": 313.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "services",
+    "debut": 313.21,
+    "fin": 313.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 313.61,
+    "fin": 313.75,
+    "proba": 0.99
+   },
+   {
+    "mot": "leur",
+    "debut": 313.75,
+    "fin": 313.87,
+    "proba": 0.84
+   },
+   {
+    "mot": "durée,",
+    "debut": 313.87,
+    "fin": 314.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 314.47,
+    "fin": 314.57,
+    "proba": 0.98
+   },
+   {
+    "mot": "disponibilités,",
+    "debut": 314.57,
+    "fin": 315.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 315.41,
+    "fin": 315.49,
+    "proba": 0.99
+   },
+   {
+    "mot": "'agenda",
+    "debut": 315.49,
+    "fin": 315.77,
+    "proba": 0.95
+   },
+   {
+    "mot": "et",
+    "debut": 315.77,
+    "fin": 316.01,
+    "proba": 0.98
+   },
+   {
+    "mot": "les",
+    "debut": 316.01,
+    "fin": 316.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "règles",
+    "debut": 316.13,
+    "fin": 316.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 316.31,
+    "fin": 316.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "'annulation.",
+    "debut": 316.43,
+    "fin": 316.83,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 317.17,
+  "fin": 324.73,
+  "texte": "Le module E pour l'agent d'automatisation, la tâche à remplacer, ce qui la déclenche et ce que vous recevez à la fin.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 317.17,
+    "fin": 317.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "module",
+    "debut": 317.65,
+    "fin": 317.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "E",
+    "debut": 317.93,
+    "fin": 318.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 318.19,
+    "fin": 318.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 318.61,
+    "fin": 318.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 318.75,
+    "fin": 318.95,
+    "proba": 0.98
+   },
+   {
+    "mot": "d",
+    "debut": 318.95,
+    "fin": 319.07,
+    "proba": 0.94
+   },
+   {
+    "mot": "'automatisation,",
+    "debut": 319.07,
+    "fin": 319.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 320.01,
+    "fin": 320.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "tâche",
+    "debut": 320.17,
+    "fin": 320.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 320.47,
+    "fin": 320.57,
+    "proba": 0.99
+   },
+   {
+    "mot": "remplacer,",
+    "debut": 320.57,
+    "fin": 321.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 321.29,
+    "fin": 321.35,
+    "proba": 0.94
+   },
+   {
+    "mot": "qui",
+    "debut": 321.35,
+    "fin": 321.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 321.57,
+    "fin": 322.03,
+    "proba": 0.99
+   },
+   {
+    "mot": "déclenche",
+    "debut": 322.03,
+    "fin": 322.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 322.63,
+    "fin": 323.37,
+    "proba": 0.86
+   },
+   {
+    "mot": "ce",
+    "debut": 323.37,
+    "fin": 323.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 323.81,
+    "fin": 323.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 323.95,
+    "fin": 324.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "recevez",
+    "debut": 324.09,
+    "fin": 324.39,
+    "proba": 0.81
+   },
+   {
+    "mot": "à",
+    "debut": 324.39,
+    "fin": 324.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 324.53,
+    "fin": 324.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "fin.",
+    "debut": 324.53,
+    "fin": 324.73,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 324.73,
+  "fin": 331.27,
+  "texte": "Le module F pour l'agent vocal, la voix, les langues, la durée et ce qu'il fait si la connexion coupe.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 324.73,
+    "fin": 325.55,
+    "proba": 0.93
+   },
+   {
+    "mot": "module",
+    "debut": 325.55,
+    "fin": 325.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "F",
+    "debut": 325.81,
+    "fin": 326.25,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 326.25,
+    "fin": 326.81,
+    "proba": 0.65
+   },
+   {
+    "mot": "l",
+    "debut": 326.81,
+    "fin": 326.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 326.95,
+    "fin": 327.13,
+    "proba": 0.85
+   },
+   {
+    "mot": "vocal,",
+    "debut": 327.13,
+    "fin": 327.47,
+    "proba": 0.85
+   },
+   {
+    "mot": "la",
+    "debut": 327.75,
+    "fin": 328.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "voix,",
+    "debut": 328.01,
+    "fin": 328.33,
+    "proba": 0.95
+   },
+   {
+    "mot": "les",
+    "debut": 328.59,
+    "fin": 328.75,
+    "proba": 0.98
+   },
+   {
+    "mot": "langues,",
+    "debut": 328.75,
+    "fin": 329.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 329.21,
+    "fin": 329.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "durée",
+    "debut": 329.29,
+    "fin": 329.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 329.69,
+    "fin": 329.89,
+    "proba": 0.99
+   },
+   {
+    "mot": "ce",
+    "debut": 329.89,
+    "fin": 330.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 330.07,
+    "fin": 330.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "'il",
+    "debut": 330.17,
+    "fin": 330.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "fait",
+    "debut": 330.23,
+    "fin": 330.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "si",
+    "debut": 330.41,
+    "fin": 330.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 330.57,
+    "fin": 330.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "connexion",
+    "debut": 330.69,
+    "fin": 331.01,
+    "proba": 0.97
+   },
+   {
+    "mot": "coupe.",
+    "debut": 331.01,
+    "fin": 331.27,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 331.85,
+  "fin": 333.63,
+  "texte": "Pas besoin de tout remplir seul.",
+  "mots": [
+   {
+    "mot": "Pas",
+    "debut": 331.85,
+    "fin": 332.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "besoin",
+    "debut": 332.05,
+    "fin": 332.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 332.47,
+    "fin": 332.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "tout",
+    "debut": 332.65,
+    "fin": 332.87,
+    "proba": 0.99
+   },
+   {
+    "mot": "remplir",
+    "debut": 332.87,
+    "fin": 333.39,
+    "proba": 0.76
+   },
+   {
+    "mot": "seul.",
+    "debut": 333.39,
+    "fin": 333.63,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 333.95,
+  "fin": 335.71,
+  "texte": "Copiez le module de votre type d'agent.",
+  "mots": [
+   {
+    "mot": "Copiez",
+    "debut": 333.95,
+    "fin": 334.47,
+    "proba": 0.98
+   },
+   {
+    "mot": "le",
+    "debut": 334.47,
+    "fin": 334.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "module",
+    "debut": 334.59,
+    "fin": 334.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 334.81,
+    "fin": 334.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 334.97,
+    "fin": 335.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "type",
+    "debut": 335.11,
+    "fin": 335.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 335.31,
+    "fin": 335.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent.",
+    "debut": 335.43,
+    "fin": 335.71,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 336.17,
+  "fin": 339.09,
+  "texte": "Donnez-le à votre chef de projet et dites-lui.",
+  "mots": [
+   {
+    "mot": "Donnez",
+    "debut": 336.17,
+    "fin": 336.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "-le",
+    "debut": 336.69,
+    "fin": 336.85,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 336.85,
+    "fin": 337.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 337.03,
+    "fin": 337.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 337.25,
+    "fin": 337.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 337.49,
+    "fin": 337.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 337.59,
+    "fin": 337.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 337.99,
+    "fin": 338.41,
+    "proba": 0.82
+   },
+   {
+    "mot": "dites",
+    "debut": 338.41,
+    "fin": 338.59,
+    "proba": 0.97
+   },
+   {
+    "mot": "-lui.",
+    "debut": 338.59,
+    "fin": 339.09,
+    "proba": 0.81
+   }
+  ]
+ },
+ {
+  "debut": 339.29,
+  "fin": 341.65,
+  "texte": "Complète mon cahier des charges avec ce module.",
+  "mots": [
+   {
+    "mot": "Complète",
+    "debut": 339.29,
+    "fin": 339.81,
+    "proba": 0.85
+   },
+   {
+    "mot": "mon",
+    "debut": 339.81,
+    "fin": 340.07,
+    "proba": 0.99
+   },
+   {
+    "mot": "cahier",
+    "debut": 340.07,
+    "fin": 340.47,
+    "proba": 0.98
+   },
+   {
+    "mot": "des",
+    "debut": 340.47,
+    "fin": 340.61,
+    "proba": 0.78
+   },
+   {
+    "mot": "charges",
+    "debut": 340.61,
+    "fin": 340.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "avec",
+    "debut": 340.99,
+    "fin": 341.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 341.19,
+    "fin": 341.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "module.",
+    "debut": 341.35,
+    "fin": 341.65,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 342.15,
+  "fin": 344.45,
+  "texte": "Il vous posera les bonnes questions une par une.",
+  "mots": [
+   {
+    "mot": "Il",
+    "debut": 342.15,
+    "fin": 342.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 342.25,
+    "fin": 342.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "posera",
+    "debut": 342.41,
+    "fin": 342.79,
+    "proba": 0.98
+   },
+   {
+    "mot": "les",
+    "debut": 342.79,
+    "fin": 342.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "bonnes",
+    "debut": 342.97,
+    "fin": 343.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "questions",
+    "debut": 343.43,
+    "fin": 343.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 343.81,
+    "fin": 344.05,
+    "proba": 0.98
+   },
+   {
+    "mot": "par",
+    "debut": 344.05,
+    "fin": 344.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "une.",
+    "debut": 344.21,
+    "fin": 344.45,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 345.33,
+  "fin": 347.87,
+  "texte": "Avant de construire, parlons de sécurité.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 345.33,
+    "fin": 345.59,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 345.59,
+    "fin": 345.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "construire,",
+    "debut": 345.73,
+    "fin": 346.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "parlons",
+    "debut": 346.55,
+    "fin": 347.25,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 347.25,
+    "fin": 347.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "sécurité.",
+    "debut": 347.45,
+    "fin": 347.87,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 348.31,
+  "fin": 351.65,
+  "texte": "Vous vous souvenez de la clé API, c'est le cloud.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 348.31,
+    "fin": 348.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 348.73,
+    "fin": 348.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "souvenez",
+    "debut": 348.91,
+    "fin": 349.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 349.39,
+    "fin": 350.07,
+    "proba": 0.99
+   },
+   {
+    "mot": "la",
+    "debut": 350.07,
+    "fin": 350.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 350.31,
+    "fin": 350.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "API,",
+    "debut": 350.57,
+    "fin": 350.85,
+    "proba": 0.97
+   },
+   {
+    "mot": "c",
+    "debut": 351.13,
+    "fin": 351.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 351.19,
+    "fin": 351.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 351.23,
+    "fin": 351.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "cloud.",
+    "debut": 351.35,
+    "fin": 351.65,
+    "proba": 0.8
+   }
+  ]
+ },
+ {
+  "debut": 355.72,
+  "fin": 358.28,
+  "texte": "Avant de construire, parlons de sécurité.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 355.72,
+    "fin": 356.16,
+    "proba": 0.84
+   },
+   {
+    "mot": "de",
+    "debut": 356.16,
+    "fin": 356.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "construire,",
+    "debut": 356.32,
+    "fin": 356.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "parlons",
+    "debut": 357.2,
+    "fin": 357.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 357.72,
+    "fin": 357.84,
+    "proba": 0.99
+   },
+   {
+    "mot": "sécurité.",
+    "debut": 357.84,
+    "fin": 358.28,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 358.86,
+  "fin": 363.46,
+  "texte": "Vous vous souvenez de la clé API, c'est le code secret qu'un service vous donne pour utiliser son API.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 358.86,
+    "fin": 359.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 359.04,
+    "fin": 359.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "souvenez",
+    "debut": 359.2,
+    "fin": 359.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 359.48,
+    "fin": 359.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 359.58,
+    "fin": 359.7,
+    "proba": 0.99
+   },
+   {
+    "mot": "clé",
+    "debut": 359.7,
+    "fin": 359.86,
+    "proba": 0.99
+   },
+   {
+    "mot": "API,",
+    "debut": 359.86,
+    "fin": 360.14,
+    "proba": 0.98
+   },
+   {
+    "mot": "c",
+    "debut": 360.44,
+    "fin": 360.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 360.74,
+    "fin": 360.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 360.78,
+    "fin": 360.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "code",
+    "debut": 360.86,
+    "fin": 361.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "secret",
+    "debut": 361.08,
+    "fin": 361.42,
+    "proba": 0.98
+   },
+   {
+    "mot": "qu",
+    "debut": 361.42,
+    "fin": 361.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "'un",
+    "debut": 361.62,
+    "fin": 361.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "service",
+    "debut": 361.7,
+    "fin": 361.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 361.98,
+    "fin": 362.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 362.2,
+    "fin": 362.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 362.4,
+    "fin": 362.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "utiliser",
+    "debut": 362.58,
+    "fin": 362.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 362.92,
+    "fin": 363.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "API.",
+    "debut": 363.1,
+    "fin": 363.46,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 364.02,
+  "fin": 366.46,
+  "texte": "Avec cette clé, le service sait que c'est vous.",
+  "mots": [
+   {
+    "mot": "Avec",
+    "debut": 364.02,
+    "fin": 364.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "cette",
+    "debut": 364.22,
+    "fin": 364.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "clé,",
+    "debut": 364.4,
+    "fin": 364.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 365.14,
+    "fin": 365.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "service",
+    "debut": 365.22,
+    "fin": 365.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "sait",
+    "debut": 365.56,
+    "fin": 365.84,
+    "proba": 0.97
+   },
+   {
+    "mot": "que",
+    "debut": 365.84,
+    "fin": 365.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 365.96,
+    "fin": 366.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 366.22,
+    "fin": 366.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous.",
+    "debut": 366.26,
+    "fin": 366.46,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 367.0,
+  "fin": 371.52,
+  "texte": "Et c'est vous qui payez ce que votre agent consomme.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 367.0,
+    "fin": 367.44,
+    "proba": 0.99
+   },
+   {
+    "mot": "c",
+    "debut": 367.44,
+    "fin": 367.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 367.78,
+    "fin": 367.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 367.86,
+    "fin": 368.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 368.08,
+    "fin": 368.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "payez",
+    "debut": 368.26,
+    "fin": 368.72,
+    "proba": 0.95
+   },
+   {
+    "mot": "ce",
+    "debut": 368.72,
+    "fin": 368.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 368.94,
+    "fin": 369.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 369.06,
+    "fin": 370.56,
+    "proba": 0.75
+   },
+   {
+    "mot": "agent",
+    "debut": 370.56,
+    "fin": 370.92,
+    "proba": 0.72
+   },
+   {
+    "mot": "consomme.",
+    "debut": 370.92,
+    "fin": 371.52,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 375.28,
+  "fin": 377.4,
+  "texte": "Avec cette clé, le service sait que c'est vous.",
+  "mots": [
+   {
+    "mot": "Avec",
+    "debut": 375.28,
+    "fin": 375.52,
+    "proba": 0.83
+   },
+   {
+    "mot": "cette",
+    "debut": 375.52,
+    "fin": 375.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé,",
+    "debut": 375.76,
+    "fin": 376.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 376.24,
+    "fin": 376.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "service",
+    "debut": 376.3,
+    "fin": 376.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "sait",
+    "debut": 376.62,
+    "fin": 376.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 376.92,
+    "fin": 377.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 377.02,
+    "fin": 377.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 377.16,
+    "fin": 377.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous.",
+    "debut": 377.2,
+    "fin": 377.4,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 377.58,
+  "fin": 380.38,
+  "texte": "Et c'est vous qui payez ce que votre agent consomme.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 377.58,
+    "fin": 378.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 378.02,
+    "fin": 378.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 378.14,
+    "fin": 378.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 378.2,
+    "fin": 378.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 378.32,
+    "fin": 378.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "payez",
+    "debut": 378.46,
+    "fin": 378.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 378.88,
+    "fin": 379.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 379.44,
+    "fin": 379.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 379.54,
+    "fin": 379.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 379.72,
+    "fin": 379.98,
+    "proba": 0.98
+   },
+   {
+    "mot": "consomme.",
+    "debut": 379.98,
+    "fin": 380.38,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 381.1,
+  "fin": 383.66,
+  "texte": "Voici la règle la plus importante de toute cette formation.",
+  "mots": [
+   {
+    "mot": "Voici",
+    "debut": 381.1,
+    "fin": 381.54,
+    "proba": 0.94
+   },
+   {
+    "mot": "la",
+    "debut": 381.54,
+    "fin": 381.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "règle",
+    "debut": 381.74,
+    "fin": 382.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 382.0,
+    "fin": 382.12,
+    "proba": 0.97
+   },
+   {
+    "mot": "plus",
+    "debut": 382.12,
+    "fin": 382.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "importante",
+    "debut": 382.26,
+    "fin": 382.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 382.74,
+    "fin": 382.94,
+    "proba": 0.99
+   },
+   {
+    "mot": "toute",
+    "debut": 382.94,
+    "fin": 383.08,
+    "proba": 0.9
+   },
+   {
+    "mot": "cette",
+    "debut": 383.08,
+    "fin": 383.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "formation.",
+    "debut": 383.3,
+    "fin": 383.66,
+    "proba": 0.67
+   }
+  ]
+ },
+ {
+  "debut": 384.14,
+  "fin": 385.26,
+  "texte": "Ne montrez jamais votre clé.",
+  "mots": [
+   {
+    "mot": "Ne",
+    "debut": 384.14,
+    "fin": 384.22,
+    "proba": 0.99
+   },
+   {
+    "mot": "montrez",
+    "debut": 384.22,
+    "fin": 384.58,
+    "proba": 0.95
+   },
+   {
+    "mot": "jamais",
+    "debut": 384.58,
+    "fin": 384.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 384.8,
+    "fin": 385.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé.",
+    "debut": 385.0,
+    "fin": 385.26,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 385.52,
+  "fin": 389.8,
+  "texte": "Ni dans une capture d'écran, ni dans une vidéo, ni dans un groupe WhatsApp.",
+  "mots": [
+   {
+    "mot": "Ni",
+    "debut": 385.52,
+    "fin": 385.94,
+    "proba": 0.99
+   },
+   {
+    "mot": "dans",
+    "debut": 385.94,
+    "fin": 386.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 386.12,
+    "fin": 386.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "capture",
+    "debut": 386.32,
+    "fin": 386.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "d",
+    "debut": 386.62,
+    "fin": 386.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "'écran,",
+    "debut": 386.9,
+    "fin": 387.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "ni",
+    "debut": 387.34,
+    "fin": 387.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 387.74,
+    "fin": 387.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 387.98,
+    "fin": 388.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "vidéo,",
+    "debut": 388.18,
+    "fin": 388.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "ni",
+    "debut": 388.72,
+    "fin": 388.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 388.94,
+    "fin": 389.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 389.12,
+    "fin": 389.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "groupe",
+    "debut": 389.28,
+    "fin": 389.42,
+    "proba": 0.97
+   },
+   {
+    "mot": "WhatsApp.",
+    "debut": 389.42,
+    "fin": 389.8,
+    "proba": 0.9
+   }
+  ]
+ },
+ {
+  "debut": 390.02,
+  "fin": 391.48,
+  "texte": "Et même pas à cloud dans la discussion.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 390.02,
+    "fin": 390.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "même",
+    "debut": 390.1,
+    "fin": 390.3,
+    "proba": 0.99
+   },
+   {
+    "mot": "pas",
+    "debut": 390.3,
+    "fin": 390.54,
+    "proba": 0.98
+   },
+   {
+    "mot": "à",
+    "debut": 390.54,
+    "fin": 390.68,
+    "proba": 0.73
+   },
+   {
+    "mot": "cloud",
+    "debut": 390.68,
+    "fin": 390.88,
+    "proba": 0.24
+   },
+   {
+    "mot": "dans",
+    "debut": 390.88,
+    "fin": 391.08,
+    "proba": 0.89
+   },
+   {
+    "mot": "la",
+    "debut": 391.08,
+    "fin": 391.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "discussion.",
+    "debut": 391.18,
+    "fin": 391.48,
+    "proba": 0.79
+   }
+  ]
+ },
+ {
+  "debut": 392.16,
+  "fin": 399.75,
+  "texte": "Quelqu'un qui a votre clé peut l'utiliser comme si c'était vous.",
+  "mots": [
+   {
+    "mot": "Quelqu",
+    "debut": 392.16,
+    "fin": 392.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "'un",
+    "debut": 392.52,
+    "fin": 392.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 392.68,
+    "fin": 393.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "a",
+    "debut": 393.04,
+    "fin": 393.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 393.2,
+    "fin": 393.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 393.44,
+    "fin": 393.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "peut",
+    "debut": 396.13,
+    "fin": 398.25,
+    "proba": 0.99
+   },
+   {
+    "mot": "l",
+    "debut": 398.25,
+    "fin": 398.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "'utiliser",
+    "debut": 398.39,
+    "fin": 398.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "comme",
+    "debut": 398.79,
+    "fin": 399.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "si",
+    "debut": 399.09,
+    "fin": 399.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 399.29,
+    "fin": 399.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "'était",
+    "debut": 399.43,
+    "fin": 399.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous.",
+    "debut": 399.55,
+    "fin": 399.75,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 400.17,
+  "fin": 402.73,
+  "texte": "Et c'est votre argent qu'il dépense.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 400.17,
+    "fin": 400.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 400.57,
+    "fin": 400.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 400.87,
+    "fin": 401.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 401.01,
+    "fin": 401.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "argent",
+    "debut": 401.35,
+    "fin": 401.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 401.91,
+    "fin": 402.19,
+    "proba": 0.93
+   },
+   {
+    "mot": "'il",
+    "debut": 402.19,
+    "fin": 402.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "dépense.",
+    "debut": 402.29,
+    "fin": 402.73,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 402.73,
+  "fin": 408.47,
+  "texte": "C'est exactement comme donner le code secret de votre mobile money à un inconnu.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 402.73,
+    "fin": 403.15,
+    "proba": 0.85
+   },
+   {
+    "mot": "'est",
+    "debut": 403.15,
+    "fin": 403.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "exactement",
+    "debut": 403.23,
+    "fin": 403.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "comme",
+    "debut": 403.63,
+    "fin": 405.45,
+    "proba": 0.98
+   },
+   {
+    "mot": "donner",
+    "debut": 405.45,
+    "fin": 405.91,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 405.91,
+    "fin": 406.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "code",
+    "debut": 406.21,
+    "fin": 406.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "secret",
+    "debut": 406.45,
+    "fin": 406.73,
+    "proba": 0.45
+   },
+   {
+    "mot": "de",
+    "debut": 406.73,
+    "fin": 406.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 406.99,
+    "fin": 407.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "mobile",
+    "debut": 407.15,
+    "fin": 407.43,
+    "proba": 0.94
+   },
+   {
+    "mot": "money",
+    "debut": 407.43,
+    "fin": 407.75,
+    "proba": 0.66
+   },
+   {
+    "mot": "à",
+    "debut": 407.75,
+    "fin": 407.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "un",
+    "debut": 407.99,
+    "fin": 408.07,
+    "proba": 0.6
+   },
+   {
+    "mot": "inconnu.",
+    "debut": 408.07,
+    "fin": 408.47,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 408.89,
+  "fin": 410.95,
+  "texte": "Alors, où mettre cette clé ?",
+  "mots": [
+   {
+    "mot": "Alors,",
+    "debut": 408.89,
+    "fin": 409.43,
+    "proba": 0.99
+   },
+   {
+    "mot": "où",
+    "debut": 409.67,
+    "fin": 409.95,
+    "proba": 0.94
+   },
+   {
+    "mot": "mettre",
+    "debut": 409.95,
+    "fin": 410.19,
+    "proba": 0.99
+   },
+   {
+    "mot": "cette",
+    "debut": 410.19,
+    "fin": 410.39,
+    "proba": 0.28
+   },
+   {
+    "mot": "clé",
+    "debut": 410.39,
+    "fin": 410.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "?",
+    "debut": 410.63,
+    "fin": 410.95,
+    "proba": 0.76
+   }
+  ]
+ },
+ {
+  "debut": 410.95,
+  "fin": 412.89,
+  "texte": "Dans les réglages secrets de votre hébergement.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 410.95,
+    "fin": 411.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 411.27,
+    "fin": 411.41,
+    "proba": 0.92
+   },
+   {
+    "mot": "réglages",
+    "debut": 411.41,
+    "fin": 411.81,
+    "proba": 1.0
+   },
+   {
+    "mot": "secrets",
+    "debut": 411.81,
+    "fin": 412.07,
+    "proba": 0.84
+   },
+   {
+    "mot": "de",
+    "debut": 412.07,
+    "fin": 412.23,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 412.23,
+    "fin": 412.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "hébergement.",
+    "debut": 412.41,
+    "fin": 412.89,
+    "proba": 0.94
+   }
+  ]
+ },
+ {
+  "debut": 413.09,
+  "fin": 415.31,
+  "texte": "Que votre chef de projet vous montrera.",
+  "mots": [
+   {
+    "mot": "Que",
+    "debut": 413.09,
+    "fin": 413.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 413.45,
+    "fin": 413.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 413.73,
+    "fin": 413.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 413.97,
+    "fin": 414.11,
+    "proba": 0.99
+   },
+   {
+    "mot": "projet",
+    "debut": 414.11,
+    "fin": 414.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 414.45,
+    "fin": 414.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "montrera.",
+    "debut": 414.73,
+    "fin": 415.31,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 415.61,
+  "fin": 417.99,
+  "texte": "Jamais dans un message, jamais dans le code.",
+  "mots": [
+   {
+    "mot": "Jamais",
+    "debut": 415.61,
+    "fin": 416.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 416.05,
+    "fin": 416.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 416.17,
+    "fin": 416.33,
+    "proba": 0.98
+   },
+   {
+    "mot": "message,",
+    "debut": 416.33,
+    "fin": 416.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "jamais",
+    "debut": 416.97,
+    "fin": 417.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 417.31,
+    "fin": 417.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 417.55,
+    "fin": 417.73,
+    "proba": 0.89
+   },
+   {
+    "mot": "code.",
+    "debut": 417.73,
+    "fin": 417.99,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 418.47,
+  "fin": 421.89,
+  "texte": "Si vous savez montrer une clé par erreur, pas de manique.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 418.47,
+    "fin": 418.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 418.91,
+    "fin": 419.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "savez",
+    "debut": 419.09,
+    "fin": 419.41,
+    "proba": 0.8
+   },
+   {
+    "mot": "montrer",
+    "debut": 419.41,
+    "fin": 419.79,
+    "proba": 0.99
+   },
+   {
+    "mot": "une",
+    "debut": 419.79,
+    "fin": 419.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 419.97,
+    "fin": 420.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "par",
+    "debut": 420.25,
+    "fin": 420.41,
+    "proba": 0.99
+   },
+   {
+    "mot": "erreur,",
+    "debut": 420.41,
+    "fin": 420.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 421.09,
+    "fin": 421.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 421.41,
+    "fin": 421.55,
+    "proba": 0.94
+   },
+   {
+    "mot": "manique.",
+    "debut": 421.55,
+    "fin": 421.89,
+    "proba": 0.68
+   }
+  ]
+ },
+ {
+  "debut": 424.24,
+  "fin": 427.38,
+  "texte": "Si vous avez montré une clé par erreur, pas de panique.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 424.24,
+    "fin": 424.68,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous",
+    "debut": 424.68,
+    "fin": 424.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "avez",
+    "debut": 424.86,
+    "fin": 425.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "montré",
+    "debut": 425.1,
+    "fin": 425.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 425.48,
+    "fin": 425.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 425.62,
+    "fin": 425.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "par",
+    "debut": 425.84,
+    "fin": 426.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "erreur,",
+    "debut": 426.08,
+    "fin": 426.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 426.78,
+    "fin": 426.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 426.9,
+    "fin": 427.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "panique.",
+    "debut": 427.04,
+    "fin": 427.38,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 427.54,
+  "fin": 428.7,
+  "texte": "Mais agissez tout de suite.",
+  "mots": [
+   {
+    "mot": "Mais",
+    "debut": 427.54,
+    "fin": 427.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "agissez",
+    "debut": 427.74,
+    "fin": 428.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "tout",
+    "debut": 428.2,
+    "fin": 428.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 428.36,
+    "fin": 428.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "suite.",
+    "debut": 428.48,
+    "fin": 428.7,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 428.92,
+  "fin": 432.72,
+  "texte": "Allez dans le service concerné, supprimez cette clé et créez-en une nouvelle.",
+  "mots": [
+   {
+    "mot": "Allez",
+    "debut": 428.92,
+    "fin": 429.3,
+    "proba": 0.91
+   },
+   {
+    "mot": "dans",
+    "debut": 429.3,
+    "fin": 429.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 429.44,
+    "fin": 429.56,
+    "proba": 0.98
+   },
+   {
+    "mot": "service",
+    "debut": 429.56,
+    "fin": 429.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "concerné,",
+    "debut": 429.88,
+    "fin": 430.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "supprimez",
+    "debut": 430.52,
+    "fin": 430.8,
+    "proba": 0.97
+   },
+   {
+    "mot": "cette",
+    "debut": 430.8,
+    "fin": 430.92,
+    "proba": 0.97
+   },
+   {
+    "mot": "clé",
+    "debut": 430.92,
+    "fin": 431.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 431.18,
+    "fin": 431.44,
+    "proba": 0.97
+   },
+   {
+    "mot": "créez",
+    "debut": 431.44,
+    "fin": 431.84,
+    "proba": 0.95
+   },
+   {
+    "mot": "-en",
+    "debut": 431.84,
+    "fin": 432.0,
+    "proba": 0.98
+   },
+   {
+    "mot": "une",
+    "debut": 432.0,
+    "fin": 432.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "nouvelle.",
+    "debut": 432.42,
+    "fin": 432.72,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 432.72,
+  "fin": 435.44,
+  "texte": "Et prenez une habitude dès aujourd'hui.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 432.72,
+    "fin": 433.46,
+    "proba": 0.75
+   },
+   {
+    "mot": "prenez",
+    "debut": 433.46,
+    "fin": 433.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 433.9,
+    "fin": 434.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "habitude",
+    "debut": 434.28,
+    "fin": 434.7,
+    "proba": 0.98
+   },
+   {
+    "mot": "dès",
+    "debut": 434.7,
+    "fin": 434.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "aujourd",
+    "debut": 434.96,
+    "fin": 435.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "'hui.",
+    "debut": 435.24,
+    "fin": 435.44,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 435.62,
+  "fin": 438.48,
+  "texte": "Avant chaque capture d'écran, vérifiez qu'aucune clé n'est visible.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 435.62,
+    "fin": 436.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "chaque",
+    "debut": 436.02,
+    "fin": 436.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "capture",
+    "debut": 436.3,
+    "fin": 436.6,
+    "proba": 0.0
+   },
+   {
+    "mot": "d",
+    "debut": 436.6,
+    "fin": 436.74,
+    "proba": 0.99
+   },
+   {
+    "mot": "'écran,",
+    "debut": 436.74,
+    "fin": 436.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifiez",
+    "debut": 437.06,
+    "fin": 437.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 437.38,
+    "fin": 437.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "'aucune",
+    "debut": 437.56,
+    "fin": 437.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "clé",
+    "debut": 437.82,
+    "fin": 438.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "n",
+    "debut": 438.04,
+    "fin": 438.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 438.14,
+    "fin": 438.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "visible.",
+    "debut": 438.16,
+    "fin": 438.48,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 439.1,
+  "fin": 440.56,
+  "texte": "Voici le cœur de la méthode.",
+  "mots": [
+   {
+    "mot": "Voici",
+    "debut": 439.1,
+    "fin": 439.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 439.54,
+    "fin": 439.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "cœur",
+    "debut": 439.74,
+    "fin": 439.96,
+    "proba": 0.9
+   },
+   {
+    "mot": "de",
+    "debut": 439.96,
+    "fin": 440.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 440.1,
+    "fin": 440.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "méthode.",
+    "debut": 440.18,
+    "fin": 440.56,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 441.44,
+  "fin": 442.82,
+  "texte": "La boucle de travail.",
+  "mots": [
+   {
+    "mot": "La",
+    "debut": 441.44,
+    "fin": 441.88,
+    "proba": 0.97
+   },
+   {
+    "mot": "boucle",
+    "debut": 441.88,
+    "fin": 442.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 442.32,
+    "fin": 442.48,
+    "proba": 0.98
+   },
+   {
+    "mot": "travail.",
+    "debut": 442.48,
+    "fin": 442.82,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 443.7,
+  "fin": 446.36,
+  "texte": "Votre chef de projet prépare une consigne complète.",
+  "mots": [
+   {
+    "mot": "Votre",
+    "debut": 443.7,
+    "fin": 444.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 444.14,
+    "fin": 444.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 444.32,
+    "fin": 444.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 444.44,
+    "fin": 444.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "prépare",
+    "debut": 444.76,
+    "fin": 445.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 445.32,
+    "fin": 445.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "consigne",
+    "debut": 445.54,
+    "fin": 445.9,
+    "proba": 0.99
+   },
+   {
+    "mot": "complète.",
+    "debut": 445.9,
+    "fin": 446.36,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 446.5,
+  "fin": 447.52,
+  "texte": "Qu'on appelle un prompt.",
+  "mots": [
+   {
+    "mot": "Qu",
+    "debut": 446.5,
+    "fin": 446.78,
+    "proba": 0.82
+   },
+   {
+    "mot": "'on",
+    "debut": 446.78,
+    "fin": 446.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "appelle",
+    "debut": 446.82,
+    "fin": 447.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 447.12,
+    "fin": 447.32,
+    "proba": 0.98
+   },
+   {
+    "mot": "prompt.",
+    "debut": 447.32,
+    "fin": 447.52,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 447.88,
+  "fin": 451.2,
+  "texte": "Vous la copiez et vous l'envoyez à CloudCode, votre développeur.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 447.88,
+    "fin": 448.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 448.16,
+    "fin": 448.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "copiez",
+    "debut": 448.32,
+    "fin": 448.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 448.78,
+    "fin": 449.26,
+    "proba": 0.95
+   },
+   {
+    "mot": "vous",
+    "debut": 449.26,
+    "fin": 449.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 449.38,
+    "fin": 449.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoyez",
+    "debut": 449.5,
+    "fin": 449.78,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 449.78,
+    "fin": 449.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "CloudCode,",
+    "debut": 449.96,
+    "fin": 450.44,
+    "proba": 0.8
+   },
+   {
+    "mot": "votre",
+    "debut": 450.58,
+    "fin": 450.72,
+    "proba": 0.99
+   },
+   {
+    "mot": "développeur.",
+    "debut": 450.72,
+    "fin": 451.2,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 451.62,
+  "fin": 453.58,
+  "texte": "Chaque consigne se fait en deux temps.",
+  "mots": [
+   {
+    "mot": "Chaque",
+    "debut": 451.62,
+    "fin": 452.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "consigne",
+    "debut": 452.06,
+    "fin": 452.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "se",
+    "debut": 452.48,
+    "fin": 452.7,
+    "proba": 0.98
+   },
+   {
+    "mot": "fait",
+    "debut": 452.7,
+    "fin": 452.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 452.9,
+    "fin": 453.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "deux",
+    "debut": 453.04,
+    "fin": 453.26,
+    "proba": 0.99
+   },
+   {
+    "mot": "temps.",
+    "debut": 453.26,
+    "fin": 453.58,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 454.18,
+  "fin": 456.44,
+  "texte": "Dans le temps 1, CloudCode ne construit rien.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 454.18,
+    "fin": 454.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 454.4,
+    "fin": 454.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "temps",
+    "debut": 454.54,
+    "fin": 454.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "1,",
+    "debut": 454.74,
+    "fin": 454.96,
+    "proba": 0.95
+   },
+   {
+    "mot": "CloudCode",
+    "debut": 455.14,
+    "fin": 455.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "ne",
+    "debut": 455.62,
+    "fin": 455.8,
+    "proba": 0.98
+   },
+   {
+    "mot": "construit",
+    "debut": 455.8,
+    "fin": 456.18,
+    "proba": 0.91
+   },
+   {
+    "mot": "rien.",
+    "debut": 456.18,
+    "fin": 456.44,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 456.6,
+  "fin": 458.62,
+  "texte": "Il lit la consigne puis il présente son plan.",
+  "mots": [
+   {
+    "mot": "Il",
+    "debut": 456.6,
+    "fin": 456.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "lit",
+    "debut": 456.74,
+    "fin": 456.96,
+    "proba": 0.97
+   },
+   {
+    "mot": "la",
+    "debut": 456.96,
+    "fin": 457.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "consigne",
+    "debut": 457.16,
+    "fin": 457.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "puis",
+    "debut": 457.54,
+    "fin": 457.78,
+    "proba": 0.91
+   },
+   {
+    "mot": "il",
+    "debut": 457.78,
+    "fin": 457.96,
+    "proba": 0.93
+   },
+   {
+    "mot": "présente",
+    "debut": 457.96,
+    "fin": 458.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 458.26,
+    "fin": 458.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan.",
+    "debut": 458.42,
+    "fin": 458.62,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 458.98,
+  "fin": 461.62,
+  "texte": "Vous copiez ce plan et vous le donnez à votre chef de projet.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 458.98,
+    "fin": 459.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "copiez",
+    "debut": 459.38,
+    "fin": 459.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 459.72,
+    "fin": 459.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 459.88,
+    "fin": 460.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 460.06,
+    "fin": 460.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 460.26,
+    "fin": 460.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 460.42,
+    "fin": 460.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "donnez",
+    "debut": 460.54,
+    "fin": 460.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 460.8,
+    "fin": 460.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 460.86,
+    "fin": 461.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 461.0,
+    "fin": 461.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 461.18,
+    "fin": 461.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet.",
+    "debut": 461.28,
+    "fin": 461.62,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 461.8,
+  "fin": 462.64,
+  "texte": "Qui le vérifie.",
+  "mots": [
+   {
+    "mot": "Qui",
+    "debut": 461.8,
+    "fin": 462.16,
+    "proba": 0.97
+   },
+   {
+    "mot": "le",
+    "debut": 462.16,
+    "fin": 462.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifie.",
+    "debut": 462.3,
+    "fin": 462.64,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 462.72,
+  "fin": 466.34,
+  "texte": "C'est comme l'architecte qui vérifie le plan avant que le maçon commence.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 462.72,
+    "fin": 463.1,
+    "proba": 0.98
+   },
+   {
+    "mot": "'est",
+    "debut": 463.1,
+    "fin": 463.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "comme",
+    "debut": 463.18,
+    "fin": 463.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 463.38,
+    "fin": 463.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "'architecte",
+    "debut": 463.56,
+    "fin": 464.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 464.02,
+    "fin": 464.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "vérifie",
+    "debut": 464.2,
+    "fin": 464.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 464.58,
+    "fin": 464.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 464.8,
+    "fin": 465.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "avant",
+    "debut": 465.02,
+    "fin": 465.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 465.34,
+    "fin": 465.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 465.52,
+    "fin": 465.68,
+    "proba": 0.99
+   },
+   {
+    "mot": "maçon",
+    "debut": 465.68,
+    "fin": 465.96,
+    "proba": 0.87
+   },
+   {
+    "mot": "commence.",
+    "debut": 465.96,
+    "fin": 466.34,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 466.72,
+  "fin": 468.98,
+  "texte": "Si le plan est bon, vous répondez à CloudCode.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 466.72,
+    "fin": 467.04,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 467.04,
+    "fin": 467.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 467.18,
+    "fin": 467.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 467.36,
+    "fin": 467.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 467.5,
+    "fin": 467.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 467.9,
+    "fin": 468.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "répondez",
+    "debut": 468.1,
+    "fin": 468.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 468.46,
+    "fin": 468.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "CloudCode.",
+    "debut": 468.56,
+    "fin": 468.98,
+    "proba": 0.42
+   }
+  ]
+ },
+ {
+  "debut": 469.48,
+  "fin": 470.02,
+  "texte": "Validez.",
+  "mots": [
+   {
+    "mot": "Validez.",
+    "debut": 469.48,
+    "fin": 470.02,
+    "proba": 0.64
+   }
+  ]
+ },
+ {
+  "debut": 471.97,
+  "fin": 473.19,
+  "texte": "Si le plan est blanc.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 471.97,
+    "fin": 472.51,
+    "proba": 0.2
+   },
+   {
+    "mot": "le",
+    "debut": 472.51,
+    "fin": 472.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 472.67,
+    "fin": 472.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 472.87,
+    "fin": 472.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "blanc.",
+    "debut": 472.99,
+    "fin": 473.19,
+    "proba": 0.08
+   }
+  ]
+ },
+ {
+  "debut": 475.64,
+  "fin": 478.6,
+  "texte": "Si le plan est bon, vous répondez à CloudCode.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 475.64,
+    "fin": 476.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 476.18,
+    "fin": 476.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 476.38,
+    "fin": 476.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 476.66,
+    "fin": 476.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 476.82,
+    "fin": 477.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 477.34,
+    "fin": 477.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "répondez",
+    "debut": 477.46,
+    "fin": 477.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 477.96,
+    "fin": 478.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "CloudCode.",
+    "debut": 478.1,
+    "fin": 478.6,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 478.82,
+  "fin": 479.22,
+  "texte": "Validez.",
+  "mots": [
+   {
+    "mot": "Validez.",
+    "debut": 478.82,
+    "fin": 479.22,
+    "proba": 0.93
+   }
+  ]
+ },
+ {
+  "debut": 479.4,
+  "fin": 479.64,
+  "texte": "Lance.",
+  "mots": [
+   {
+    "mot": "Lance.",
+    "debut": 479.4,
+    "fin": 479.64,
+    "proba": 0.34
+   }
+  ]
+ },
+ {
+  "debut": 480.16,
+  "fin": 481.54,
+  "texte": "Dans le 2 temps.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 480.16,
+    "fin": 480.48,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 480.48,
+    "fin": 480.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "2",
+    "debut": 480.68,
+    "fin": 480.88,
+    "proba": 0.03
+   },
+   {
+    "mot": "temps.",
+    "debut": 480.88,
+    "fin": 481.54,
+    "proba": 0.7
+   }
+  ]
+ },
+ {
+  "debut": 484.8,
+  "fin": 487.76,
+  "texte": "Si le plan est bon, vous répondez à CloudCode.",
+  "mots": [
+   {
+    "mot": "Si",
+    "debut": 484.8,
+    "fin": 485.34,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 485.34,
+    "fin": 485.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 485.6,
+    "fin": 485.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 485.88,
+    "fin": 486.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 486.06,
+    "fin": 486.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 486.46,
+    "fin": 486.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "répondez",
+    "debut": 486.54,
+    "fin": 487.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 487.08,
+    "fin": 487.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "CloudCode.",
+    "debut": 487.26,
+    "fin": 487.76,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 488.24,
+  "fin": 488.78,
+  "texte": "Validez.",
+  "mots": [
+   {
+    "mot": "Validez.",
+    "debut": 488.24,
+    "fin": 488.78,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 488.9,
+  "fin": 489.16,
+  "texte": "Lance.",
+  "mots": [
+   {
+    "mot": "Lance.",
+    "debut": 488.9,
+    "fin": 489.16,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 489.64,
+  "fin": 495.38,
+  "texte": "Dans le temps 2, il construit, vérifie son travail et vous donne un compte rendu.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 489.64,
+    "fin": 490.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 490.06,
+    "fin": 490.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "temps",
+    "debut": 490.52,
+    "fin": 490.9,
+    "proba": 0.8
+   },
+   {
+    "mot": "2,",
+    "debut": 490.9,
+    "fin": 491.18,
+    "proba": 0.99
+   },
+   {
+    "mot": "il",
+    "debut": 491.56,
+    "fin": 491.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "construit,",
+    "debut": 491.88,
+    "fin": 492.48,
+    "proba": 0.99
+   },
+   {
+    "mot": "vérifie",
+    "debut": 492.98,
+    "fin": 493.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 493.3,
+    "fin": 493.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "travail",
+    "debut": 493.46,
+    "fin": 493.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 493.82,
+    "fin": 494.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "vous",
+    "debut": 494.1,
+    "fin": 494.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 494.3,
+    "fin": 494.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 494.6,
+    "fin": 494.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "compte",
+    "debut": 494.82,
+    "fin": 495.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "rendu.",
+    "debut": 495.02,
+    "fin": 495.38,
+    "proba": 0.85
+   }
+  ]
+ },
+ {
+  "debut": 495.38,
+  "fin": 497.84,
+  "texte": "Vous collez ce compte rendu à votre chef de projet.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 495.38,
+    "fin": 495.84,
+    "proba": 0.84
+   },
+   {
+    "mot": "collez",
+    "debut": 495.84,
+    "fin": 496.2,
+    "proba": 0.98
+   },
+   {
+    "mot": "ce",
+    "debut": 496.2,
+    "fin": 496.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "compte",
+    "debut": 496.36,
+    "fin": 496.7,
+    "proba": 0.97
+   },
+   {
+    "mot": "rendu",
+    "debut": 496.7,
+    "fin": 496.98,
+    "proba": 0.98
+   },
+   {
+    "mot": "à",
+    "debut": 496.98,
+    "fin": 497.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 497.06,
+    "fin": 497.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 497.22,
+    "fin": 497.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 497.38,
+    "fin": 497.48,
+    "proba": 0.97
+   },
+   {
+    "mot": "projet.",
+    "debut": 497.48,
+    "fin": 497.84,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 497.96,
+  "fin": 500.08,
+  "texte": "S'il est bon, il vous donne l'étape suivante.",
+  "mots": [
+   {
+    "mot": "S",
+    "debut": 497.96,
+    "fin": 498.24,
+    "proba": 0.84
+   },
+   {
+    "mot": "'il",
+    "debut": 498.24,
+    "fin": 498.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 498.34,
+    "fin": 498.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 498.44,
+    "fin": 498.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 498.74,
+    "fin": 499.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 499.04,
+    "fin": 499.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 499.16,
+    "fin": 499.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 499.36,
+    "fin": 499.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "'étape",
+    "debut": 499.46,
+    "fin": 499.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "suivante.",
+    "debut": 499.68,
+    "fin": 500.08,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 500.38,
+  "fin": 502.48,
+  "texte": "Sinon, il vous donne une correction.",
+  "mots": [
+   {
+    "mot": "Sinon,",
+    "debut": 500.38,
+    "fin": 500.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 500.9,
+    "fin": 500.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "vous",
+    "debut": 500.98,
+    "fin": 501.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 501.12,
+    "fin": 501.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 501.86,
+    "fin": 502.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "correction.",
+    "debut": 502.1,
+    "fin": 502.48,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 502.8,
+  "fin": 506.14,
+  "texte": "Et on recommence étape par étape juste à ce que l'argent soit terminé.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 502.8,
+    "fin": 503.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "on",
+    "debut": 503.14,
+    "fin": 503.38,
+    "proba": 0.99
+   },
+   {
+    "mot": "recommence",
+    "debut": 503.38,
+    "fin": 503.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "étape",
+    "debut": 503.86,
+    "fin": 504.32,
+    "proba": 0.99
+   },
+   {
+    "mot": "par",
+    "debut": 504.32,
+    "fin": 504.44,
+    "proba": 0.53
+   },
+   {
+    "mot": "étape",
+    "debut": 504.44,
+    "fin": 504.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "juste",
+    "debut": 504.72,
+    "fin": 504.86,
+    "proba": 0.7
+   },
+   {
+    "mot": "à",
+    "debut": 504.86,
+    "fin": 504.98,
+    "proba": 0.91
+   },
+   {
+    "mot": "ce",
+    "debut": 504.98,
+    "fin": 505.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 505.02,
+    "fin": 505.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 505.12,
+    "fin": 505.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "'argent",
+    "debut": 505.22,
+    "fin": 505.42,
+    "proba": 0.97
+   },
+   {
+    "mot": "soit",
+    "debut": 505.42,
+    "fin": 505.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "terminé.",
+    "debut": 505.66,
+    "fin": 506.14,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 506.82,
+  "fin": 507.74,
+  "texte": "3 règles d'or.",
+  "mots": [
+   {
+    "mot": "3",
+    "debut": 506.82,
+    "fin": 507.1,
+    "proba": 0.65
+   },
+   {
+    "mot": "règles",
+    "debut": 507.1,
+    "fin": 507.48,
+    "proba": 0.97
+   },
+   {
+    "mot": "d",
+    "debut": 507.48,
+    "fin": 507.62,
+    "proba": 0.96
+   },
+   {
+    "mot": "'or.",
+    "debut": 507.62,
+    "fin": 507.74,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 508.3,
+  "fin": 508.58,
+  "texte": "1.",
+  "mots": [
+   {
+    "mot": "1.",
+    "debut": 508.3,
+    "fin": 508.58,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 508.86,
+  "fin": 510.36,
+  "texte": "Une seule étape à la fois.",
+  "mots": [
+   {
+    "mot": "Une",
+    "debut": 508.86,
+    "fin": 509.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "seule",
+    "debut": 509.28,
+    "fin": 509.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "étape",
+    "debut": 509.56,
+    "fin": 509.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 509.94,
+    "fin": 510.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 510.04,
+    "fin": 510.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "fois.",
+    "debut": 510.14,
+    "fin": 510.36,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 510.74,
+  "fin": 511.1,
+  "texte": "2.",
+  "mots": [
+   {
+    "mot": "2.",
+    "debut": 510.74,
+    "fin": 511.1,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 511.38,
+  "fin": 513.2,
+  "texte": "Ne lancez jamais deux chantiers en même temps.",
+  "mots": [
+   {
+    "mot": "Ne",
+    "debut": 511.38,
+    "fin": 511.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "lancez",
+    "debut": 511.54,
+    "fin": 511.86,
+    "proba": 0.81
+   },
+   {
+    "mot": "jamais",
+    "debut": 511.86,
+    "fin": 512.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "deux",
+    "debut": 512.04,
+    "fin": 512.32,
+    "proba": 0.94
+   },
+   {
+    "mot": "chantiers",
+    "debut": 512.32,
+    "fin": 512.74,
+    "proba": 0.98
+   },
+   {
+    "mot": "en",
+    "debut": 512.74,
+    "fin": 512.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "même",
+    "debut": 512.86,
+    "fin": 513.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "temps.",
+    "debut": 513.02,
+    "fin": 513.2,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 513.38,
+  "fin": 515.58,
+  "texte": "Sinon, le travail de l'un peut casser celui de l'autre.",
+  "mots": [
+   {
+    "mot": "Sinon,",
+    "debut": 513.38,
+    "fin": 513.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 513.76,
+    "fin": 513.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "travail",
+    "debut": 513.84,
+    "fin": 514.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 514.12,
+    "fin": 514.3,
+    "proba": 0.97
+   },
+   {
+    "mot": "l",
+    "debut": 514.3,
+    "fin": 514.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "'un",
+    "debut": 514.4,
+    "fin": 514.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "peut",
+    "debut": 514.48,
+    "fin": 514.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "casser",
+    "debut": 514.62,
+    "fin": 515.0,
+    "proba": 0.99
+   },
+   {
+    "mot": "celui",
+    "debut": 515.0,
+    "fin": 515.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 515.24,
+    "fin": 515.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 515.36,
+    "fin": 515.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "'autre.",
+    "debut": 515.44,
+    "fin": 515.58,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 515.9,
+  "fin": 516.24,
+  "texte": "3.",
+  "mots": [
+   {
+    "mot": "3.",
+    "debut": 515.9,
+    "fin": 516.24,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 516.64,
+  "fin": 518.52,
+  "texte": "Tessez sur votre téléphone après chaque étape.",
+  "mots": [
+   {
+    "mot": "Tessez",
+    "debut": 516.64,
+    "fin": 517.0,
+    "proba": 0.78
+   },
+   {
+    "mot": "sur",
+    "debut": 517.0,
+    "fin": 517.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "votre",
+    "debut": 517.1,
+    "fin": 517.22,
+    "proba": 0.88
+   },
+   {
+    "mot": "téléphone",
+    "debut": 517.22,
+    "fin": 517.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "après",
+    "debut": 517.6,
+    "fin": 517.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "chaque",
+    "debut": 517.9,
+    "fin": 518.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "étape.",
+    "debut": 518.1,
+    "fin": 518.52,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 519.06,
+  "fin": 519.68,
+  "texte": "Et 4.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 519.06,
+    "fin": 519.26,
+    "proba": 0.73
+   },
+   {
+    "mot": "4.",
+    "debut": 519.26,
+    "fin": 519.68,
+    "proba": 0.88
+   }
+  ]
+ },
+ {
+  "debut": 519.84,
+  "fin": 520.66,
+  "texte": "Une erreur arrive.",
+  "mots": [
+   {
+    "mot": "Une",
+    "debut": 519.84,
+    "fin": 519.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "erreur",
+    "debut": 519.96,
+    "fin": 520.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "arrive.",
+    "debut": 520.32,
+    "fin": 520.66,
+    "proba": 0.97
+   }
+  ]
+ },
+ {
+  "debut": 520.8,
+  "fin": 521.28,
+  "texte": "Pas de panique.",
+  "mots": [
+   {
+    "mot": "Pas",
+    "debut": 520.8,
+    "fin": 520.86,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 520.86,
+    "fin": 521.0,
+    "proba": 0.99
+   },
+   {
+    "mot": "panique.",
+    "debut": 521.0,
+    "fin": 521.28,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 521.4,
+  "fin": 521.78,
+  "texte": "C'est normal.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 521.4,
+    "fin": 521.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 521.42,
+    "fin": 521.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "normal.",
+    "debut": 521.48,
+    "fin": 521.78,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 522.0,
+  "fin": 523.1,
+  "texte": "Même chez les professionnels.",
+  "mots": [
+   {
+    "mot": "Même",
+    "debut": 522.0,
+    "fin": 522.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "chez",
+    "debut": 522.3,
+    "fin": 522.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 522.44,
+    "fin": 522.56,
+    "proba": 0.99
+   },
+   {
+    "mot": "professionnels.",
+    "debut": 522.56,
+    "fin": 523.1,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 523.28,
+  "fin": 526.28,
+  "texte": "Vous la montrez à votre chef de projet et il vous donne la correction.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 523.28,
+    "fin": 523.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 523.62,
+    "fin": 523.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "montrez",
+    "debut": 523.76,
+    "fin": 524.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 524.12,
+    "fin": 524.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 524.28,
+    "fin": 524.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 524.44,
+    "fin": 524.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 524.62,
+    "fin": 524.7,
+    "proba": 0.98
+   },
+   {
+    "mot": "projet",
+    "debut": 524.7,
+    "fin": 525.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 525.04,
+    "fin": 525.46,
+    "proba": 0.83
+   },
+   {
+    "mot": "il",
+    "debut": 525.46,
+    "fin": 525.56,
+    "proba": 0.95
+   },
+   {
+    "mot": "vous",
+    "debut": 525.56,
+    "fin": 525.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 525.66,
+    "fin": 525.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 525.84,
+    "fin": 525.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "correction.",
+    "debut": 525.98,
+    "fin": 526.28,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 526.64,
+  "fin": 531.5,
+  "texte": "C'est cette discipline qui fait la différence entre un projet qui marche et un projet qui s'écroule.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 526.64,
+    "fin": 526.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 526.92,
+    "fin": 526.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "cette",
+    "debut": 526.98,
+    "fin": 527.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "discipline",
+    "debut": 527.14,
+    "fin": 527.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 527.54,
+    "fin": 527.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "fait",
+    "debut": 527.74,
+    "fin": 527.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 527.92,
+    "fin": 528.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "différence",
+    "debut": 528.04,
+    "fin": 528.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "entre",
+    "debut": 528.4,
+    "fin": 528.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 528.68,
+    "fin": 528.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 528.92,
+    "fin": 529.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 529.26,
+    "fin": 529.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "marche",
+    "debut": 529.42,
+    "fin": 529.76,
+    "proba": 0.99
+   },
+   {
+    "mot": "et",
+    "debut": 529.76,
+    "fin": 529.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 529.96,
+    "fin": 530.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 530.08,
+    "fin": 530.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 530.28,
+    "fin": 530.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "s",
+    "debut": 530.44,
+    "fin": 531.22,
+    "proba": 0.99
+   },
+   {
+    "mot": "'écroule.",
+    "debut": 531.22,
+    "fin": 531.5,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 531.5,
+  "fin": 531.96,
+  "texte": "Sous-titrage ST' 501",
+  "mots": [
+   {
+    "mot": "Sous",
+    "debut": 531.5,
+    "fin": 531.5,
+    "proba": 0.56
+   },
+   {
+    "mot": "-titrage",
+    "debut": 531.5,
+    "fin": 531.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "ST'",
+    "debut": 531.64,
+    "fin": 531.76,
+    "proba": 0.41
+   },
+   {
+    "mot": "501",
+    "debut": 531.92,
+    "fin": 531.96,
+    "proba": 1.0
+   }
+  ]
+ }
+]

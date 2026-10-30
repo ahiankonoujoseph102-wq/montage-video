@@ -1,0 +1,126 @@
+[00:02.06] Formation, comment créer un agent IA de A à Z.
+[00:06.34] Première partie, partie 1B, préparer son projet.
+[00:10.26] Dans la partie 1A, vous avez compris ce qu'un agent IA a pris les 10 mots importants.
+[00:16.06] Créer vos comptes et découvrir la méthode en 4 étapes.
+[00:19.88] Maintenant, on passe à la pratique.
+[00:22.58] Étape 1, le bloc note.
+[00:24.34] Écoutez-moi bien parce que cette étape décide de tout le reste.
+[00:28.22] Un agent bien décrit travaille bien.
+[00:30.30] Un agent mal décrit travaille mal.
+[00:33.38] Si vos informations sont floues, votre agent sera flou.
+[00:37.38] Pensez à votre agent comme à un nouvel employé.
+[00:40.94] Le premier jour, vous lui expliqueriez tout.
+[00:43.66] Qui vous êtes, ce que vous vendez, comment parler au client et ce qu'il ne doit jamais faire.
+[00:48.50] Faites exactement la même chose, mais pas écrit dans le bloc note de votre téléphone.
+[00:53.62] Pour écrire votre projet, vous avez deux chemins.
+[00:57.60] Choisissez celui qui vous convient.
+[00:58.84] Le premier chemin, c'est la description libre.
+[01:02.20] Vous écrivez tout ce que vous avez dans la tête, sans autre, avec vos propres mots.
+[01:08.18] Les fautes n'ont aucune importance.
+[01:10.94] Essayez simplement de répondre à ces questions.
+[01:13.28] Quel problème mon agent va résoudre ?
+[01:15.42] Pour qui il travaille ?
+[01:16.80] Que doit-il faire chaque jour ?
+[01:18.82] Où va-t-il travailler ?
+[01:20.42] Et quel est mon budget ?
+[01:22.22] C'est le chemin le plus simple quand on débute.
+[01:25.40] Votre chef de projet remettra tout en ordre.
+[01:28.26] Le deuxième chemin, c'est la fiche guidée de votre guide.
+[01:32.26] Vous répondez aux questions une par une.
+[01:34.86] Elles sont rangées en neuf parties.
+[01:37.68] L'identité de l'agent, votre entreprise, vos clients, ses tâches, ce qu'il doit savoir, sa personnalité, où il vit, le budget et le résultat attendu.
+[01:45.80] C'est le chemin le plus rapide si votre idée est déjà claire.
+[01:49.62] Quel que soit votre chemin, une partie compte plus que les autres, ce que l'agent doit savoir.
+[01:58.12] Quel que soit votre chemin, une partie compte plus que les autres. Ce que l'argent doit savoir.
+[02:31.66] Ce que l'argent doit savoir. Écrivez vos vrais prix et les vraies questions que vos clients vous posent avec les bonnes réponses. Notez-en au moins 10. Astuce, réalisez vos discussions WhatsApp de la semaine, les questions y sont.
+[02:48.50] Et n'oubliez jamais d'écrire ce que l'argent ne doit jamais dire ni promettre. Les deux chemins arrivent au même endroit. Votre chef de projet qui vérifiera tout et complétera ce qui manque.
+[03:00.16] Maintenant, je vous montre. J'ouvre mon blog note et j'écris mon projet devant vous. Maintenant, on donne notre test à Claude. Mais pas n'importe comment. D'abord, on lui donne son rôle.
+[03:11.90] On lui dit « Tu es mon chef de projet. Je suis débutant. » Pourquoi ? Parce qu'une IA travaille beaucoup mieux quand elle sait quel rôle elle joue et à qui elle parle.
+[03:24.20] Ensuite, on lui explique son travail. Réorganisez votre idée en cahier des charges claires. Repérez ce qui manque et vous posez les questions une par une avec des choix.
+[03:38.27] Quand vous ne savez pas, il doit vous proposer la solution la plus simple et la moins chère. Et s'il trouve une idée trop compliquée ou trop chère, il doit vous le dire franchement.
+[03:47.65] Dernière consigne. Il ne doit jamais vous demander une clé secrète ou un mot de passe. Et vous, vous ne lui donnez jamais.
+[03:56.45] Ce message complet est dans votre guide. Vous n'avez qu'à le copier. Ensuite, vous discutez. Il vous pose une question. Vous répondez avec vos mots.
+[04:05.21] Si vous ne savez pas, dites simplement « Je ne sais pas. » Propose-moi la meilleure option. Et s'il propose quelque chose que vous ne voulez pas, dites-le.
+[04:14.17] C'est votre projet. C'est vous le patron. Quand il n'a plus de questions, demandez-lui « Donne-moi le cas de charge complet et final avec la liste des comptes et outils nécessaires, gratuits et payants. »
+[04:25.41] Copiez-le dans votre bloc-note et gardez-le précisément. C'est le plan de votre maison. Retenez ceci.
+[04:31.17] On ne commence jamais à construire avant que le chef de projet ait bien compris le projet.
+[04:37.69] Vous vous souvenez des 6 types d'agents ? Chacun a besoin d'informations particulières.
+[04:42.85] C'est pour cela que votre guide contient 6 modules, de A à F.
+[04:47.57] Le module A pour l'agent professeur, les niveaux, le déroulement d'une science, la façon de corriger, les erreurs, le programme et les formules.
+[04:55.61] Le module B pour l'agent de vente, le catalogue, la prise de commande, la livraison, le paiement et les relances.
+[05:01.55] Le module C pour l'agent de contenu, les réseaux visés, les sujets, les heures de publication et l'appel à l'action.
+[05:08.25] Le module D pour l'agent de rendez-vous, les services et leur durée, les disponibilités, l'agenda et les règles d'annulation.
+[05:17.17] Le module E pour l'agent d'automatisation, la tâche à remplacer, ce qui la déclenche et ce que vous recevez à la fin.
+[05:24.73] Le module F pour l'agent vocal, la voix, les langues, la durée et ce qu'il fait si la connexion coupe.
+[05:31.85] Pas besoin de tout remplir seul.
+[05:33.95] Copiez le module de votre type d'agent.
+[05:36.17] Donnez-le à votre chef de projet et dites-lui.
+[05:39.29] Complète mon cahier des charges avec ce module.
+[05:42.15] Il vous posera les bonnes questions une par une.
+[05:45.33] Avant de construire, parlons de sécurité.
+[05:48.31] Vous vous souvenez de la clé API, c'est le cloud.
+[05:55.72] Avant de construire, parlons de sécurité.
+[05:58.86] Vous vous souvenez de la clé API, c'est le code secret qu'un service vous donne pour utiliser son API.
+[06:04.02] Avec cette clé, le service sait que c'est vous.
+[06:07.00] Et c'est vous qui payez ce que votre agent consomme.
+[06:15.28] Avec cette clé, le service sait que c'est vous.
+[06:17.58] Et c'est vous qui payez ce que votre agent consomme.
+[06:21.10] Voici la règle la plus importante de toute cette formation.
+[06:24.14] Ne montrez jamais votre clé.
+[06:25.52] Ni dans une capture d'écran, ni dans une vidéo, ni dans un groupe WhatsApp.
+[06:30.02] Et même pas à cloud dans la discussion.
+[06:32.16] Quelqu'un qui a votre clé peut l'utiliser comme si c'était vous.
+[06:40.17] Et c'est votre argent qu'il dépense.
+[06:42.73] C'est exactement comme donner le code secret de votre mobile money à un inconnu.
+[06:48.89] Alors, où mettre cette clé ?
+[06:50.95] Dans les réglages secrets de votre hébergement.
+[06:53.09] Que votre chef de projet vous montrera.
+[06:55.61] Jamais dans un message, jamais dans le code.
+[06:58.47] Si vous savez montrer une clé par erreur, pas de manique.
+[07:04.24] Si vous avez montré une clé par erreur, pas de panique.
+[07:07.54] Mais agissez tout de suite.
+[07:08.92] Allez dans le service concerné, supprimez cette clé et créez-en une nouvelle.
+[07:12.72] Et prenez une habitude dès aujourd'hui.
+[07:15.62] Avant chaque capture d'écran, vérifiez qu'aucune clé n'est visible.
+[07:19.10] Voici le cœur de la méthode.
+[07:21.44] La boucle de travail.
+[07:23.70] Votre chef de projet prépare une consigne complète.
+[07:26.50] Qu'on appelle un prompt.
+[07:27.88] Vous la copiez et vous l'envoyez à CloudCode, votre développeur.
+[07:31.62] Chaque consigne se fait en deux temps.
+[07:34.18] Dans le temps 1, CloudCode ne construit rien.
+[07:36.60] Il lit la consigne puis il présente son plan.
+[07:38.98] Vous copiez ce plan et vous le donnez à votre chef de projet.
+[07:41.80] Qui le vérifie.
+[07:42.72] C'est comme l'architecte qui vérifie le plan avant que le maçon commence.
+[07:46.72] Si le plan est bon, vous répondez à CloudCode.
+[07:49.48] Validez.
+[07:51.97] Si le plan est blanc.
+[07:55.64] Si le plan est bon, vous répondez à CloudCode.
+[07:58.82] Validez.
+[07:59.40] Lance.
+[08:00.16] Dans le 2 temps.
+[08:04.80] Si le plan est bon, vous répondez à CloudCode.
+[08:08.24] Validez.
+[08:08.90] Lance.
+[08:09.64] Dans le temps 2, il construit, vérifie son travail et vous donne un compte rendu.
+[08:15.38] Vous collez ce compte rendu à votre chef de projet.
+[08:17.96] S'il est bon, il vous donne l'étape suivante.
+[08:20.38] Sinon, il vous donne une correction.
+[08:22.80] Et on recommence étape par étape juste à ce que l'argent soit terminé.
+[08:26.82] 3 règles d'or.
+[08:28.30] 1.
+[08:28.86] Une seule étape à la fois.
+[08:30.74] 2.
+[08:31.38] Ne lancez jamais deux chantiers en même temps.
+[08:33.38] Sinon, le travail de l'un peut casser celui de l'autre.
+[08:35.90] 3.
+[08:36.64] Tessez sur votre téléphone après chaque étape.
+[08:39.06] Et 4.
+[08:39.84] Une erreur arrive.
+[08:40.80] Pas de panique.
+[08:41.40] C'est normal.
+[08:42.00] Même chez les professionnels.
+[08:43.28] Vous la montrez à votre chef de projet et il vous donne la correction.
+[08:46.64] C'est cette discipline qui fait la différence entre un projet qui marche et un projet qui s'écroule.
+[08:51.50] Sous-titrage ST' 501

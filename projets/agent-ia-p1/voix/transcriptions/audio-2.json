@@ -1,0 +1,4211 @@
+[
+ {
+  "debut": 2.45,
+  "fin": 8.19,
+  "texte": "Avant de créer mon projet, j'ai demandé à Claude quels sont les meilleurs agents de programmation aujourd'hui.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 2.45,
+    "fin": 3.05,
+    "proba": 0.93
+   },
+   {
+    "mot": "de",
+    "debut": 3.05,
+    "fin": 3.21,
+    "proba": 0.94
+   },
+   {
+    "mot": "créer",
+    "debut": 3.21,
+    "fin": 3.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "mon",
+    "debut": 3.45,
+    "fin": 3.61,
+    "proba": 0.99
+   },
+   {
+    "mot": "projet,",
+    "debut": 3.61,
+    "fin": 3.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "j",
+    "debut": 4.27,
+    "fin": 4.35,
+    "proba": 0.99
+   },
+   {
+    "mot": "'ai",
+    "debut": 4.35,
+    "fin": 4.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "demandé",
+    "debut": 4.43,
+    "fin": 4.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 4.79,
+    "fin": 5.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 5.13,
+    "fin": 5.43,
+    "proba": 0.99
+   },
+   {
+    "mot": "quels",
+    "debut": 5.43,
+    "fin": 5.83,
+    "proba": 0.86
+   },
+   {
+    "mot": "sont",
+    "debut": 5.83,
+    "fin": 5.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 5.99,
+    "fin": 6.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "meilleurs",
+    "debut": 6.15,
+    "fin": 6.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "agents",
+    "debut": 6.43,
+    "fin": 6.89,
+    "proba": 0.96
+   },
+   {
+    "mot": "de",
+    "debut": 6.89,
+    "fin": 7.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "programmation",
+    "debut": 7.07,
+    "fin": 7.65,
+    "proba": 0.95
+   },
+   {
+    "mot": "aujourd",
+    "debut": 7.65,
+    "fin": 7.95,
+    "proba": 0.98
+   },
+   {
+    "mot": "'hui.",
+    "debut": 7.95,
+    "fin": 8.19,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 8.41,
+  "fin": 13.51,
+  "texte": "Il m'a cité Claude Code, QSOR, Manus et Lovable et il m'a expliqué comment il fonctionne.",
+  "mots": [
+   {
+    "mot": "Il",
+    "debut": 8.41,
+    "fin": 8.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "m",
+    "debut": 8.75,
+    "fin": 8.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "'a",
+    "debut": 8.79,
+    "fin": 8.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "cité",
+    "debut": 8.87,
+    "fin": 9.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "Claude",
+    "debut": 9.11,
+    "fin": 9.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "Code,",
+    "debut": 9.39,
+    "fin": 9.67,
+    "proba": 0.47
+   },
+   {
+    "mot": "QSOR,",
+    "debut": 10.03,
+    "fin": 10.45,
+    "proba": 0.7
+   },
+   {
+    "mot": "Manus",
+    "debut": 10.65,
+    "fin": 11.15,
+    "proba": 0.89
+   },
+   {
+    "mot": "et",
+    "debut": 11.15,
+    "fin": 11.31,
+    "proba": 0.85
+   },
+   {
+    "mot": "Lovable",
+    "debut": 11.31,
+    "fin": 11.71,
+    "proba": 0.69
+   },
+   {
+    "mot": "et",
+    "debut": 11.71,
+    "fin": 11.95,
+    "proba": 0.84
+   },
+   {
+    "mot": "il",
+    "debut": 11.95,
+    "fin": 12.09,
+    "proba": 0.99
+   },
+   {
+    "mot": "m",
+    "debut": 12.09,
+    "fin": 12.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "'a",
+    "debut": 12.17,
+    "fin": 12.21,
+    "proba": 1.0
+   },
+   {
+    "mot": "expliqué",
+    "debut": 12.21,
+    "fin": 12.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "comment",
+    "debut": 12.59,
+    "fin": 12.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 12.93,
+    "fin": 13.13,
+    "proba": 0.37
+   },
+   {
+    "mot": "fonctionne.",
+    "debut": 13.13,
+    "fin": 13.51,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 14.87,
+  "fin": 17.37,
+  "texte": "Créer mon propre modèle d'IA culturel des millions.",
+  "mots": [
+   {
+    "mot": "Créer",
+    "debut": 14.87,
+    "fin": 15.29,
+    "proba": 0.99
+   },
+   {
+    "mot": "mon",
+    "debut": 15.29,
+    "fin": 15.47,
+    "proba": 1.0
+   },
+   {
+    "mot": "propre",
+    "debut": 15.47,
+    "fin": 15.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "modèle",
+    "debut": 15.67,
+    "fin": 16.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 16.05,
+    "fin": 16.27,
+    "proba": 0.94
+   },
+   {
+    "mot": "'IA",
+    "debut": 16.27,
+    "fin": 16.41,
+    "proba": 0.99
+   },
+   {
+    "mot": "culturel",
+    "debut": 16.41,
+    "fin": 16.95,
+    "proba": 0.48
+   },
+   {
+    "mot": "des",
+    "debut": 16.95,
+    "fin": 17.07,
+    "proba": 0.81
+   },
+   {
+    "mot": "millions.",
+    "debut": 17.07,
+    "fin": 17.37,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 17.71,
+  "fin": 20.73,
+  "texte": "La solution réaliste, louer des modèles qui existent déjà.",
+  "mots": [
+   {
+    "mot": "La",
+    "debut": 17.71,
+    "fin": 17.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "solution",
+    "debut": 17.77,
+    "fin": 18.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "réaliste,",
+    "debut": 18.15,
+    "fin": 19.11,
+    "proba": 0.83
+   },
+   {
+    "mot": "louer",
+    "debut": 19.33,
+    "fin": 19.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "des",
+    "debut": 19.53,
+    "fin": 19.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "modèles",
+    "debut": 19.67,
+    "fin": 20.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 20.01,
+    "fin": 20.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "existent",
+    "debut": 20.17,
+    "fin": 20.49,
+    "proba": 0.99
+   },
+   {
+    "mot": "déjà.",
+    "debut": 20.49,
+    "fin": 20.73,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 21.25,
+  "fin": 23.03,
+  "texte": "Voici ce que fait le chef de projet.",
+  "mots": [
+   {
+    "mot": "Voici",
+    "debut": 21.25,
+    "fin": 21.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 21.73,
+    "fin": 21.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 21.89,
+    "fin": 22.01,
+    "proba": 0.99
+   },
+   {
+    "mot": "fait",
+    "debut": 22.01,
+    "fin": 22.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 22.35,
+    "fin": 22.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 22.49,
+    "fin": 22.63,
+    "proba": 0.98
+   },
+   {
+    "mot": "de",
+    "debut": 22.63,
+    "fin": 22.75,
+    "proba": 0.88
+   },
+   {
+    "mot": "projet.",
+    "debut": 22.75,
+    "fin": 23.03,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 23.43,
+  "fin": 25.03,
+  "texte": "D'abord, il remet mon idée en autre.",
+  "mots": [
+   {
+    "mot": "D",
+    "debut": 23.43,
+    "fin": 23.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abord,",
+    "debut": 23.55,
+    "fin": 23.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 23.89,
+    "fin": 23.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "remet",
+    "debut": 23.97,
+    "fin": 24.19,
+    "proba": 0.99
+   },
+   {
+    "mot": "mon",
+    "debut": 24.19,
+    "fin": 24.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "idée",
+    "debut": 24.35,
+    "fin": 24.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 24.59,
+    "fin": 24.81,
+    "proba": 0.7
+   },
+   {
+    "mot": "autre.",
+    "debut": 24.81,
+    "fin": 25.03,
+    "proba": 0.73
+   }
+  ]
+ },
+ {
+  "debut": 25.37,
+  "fin": 27.69,
+  "texte": "Ensuite, il me parle franchement.",
+  "mots": [
+   {
+    "mot": "Ensuite,",
+    "debut": 25.37,
+    "fin": 25.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 26.35,
+    "fin": 26.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "me",
+    "debut": 26.69,
+    "fin": 26.89,
+    "proba": 0.99
+   },
+   {
+    "mot": "parle",
+    "debut": 26.89,
+    "fin": 27.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "franchement.",
+    "debut": 27.17,
+    "fin": 27.69,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 27.69,
+  "fin": 32.57,
+  "texte": "Faire mieux que Claude Code, QSOR, Manus ou Lovable, ce n'est pas réaliste au départ.",
+  "mots": [
+   {
+    "mot": "Faire",
+    "debut": 27.69,
+    "fin": 28.23,
+    "proba": 0.7
+   },
+   {
+    "mot": "mieux",
+    "debut": 28.23,
+    "fin": 28.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 28.53,
+    "fin": 28.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "Claude",
+    "debut": 28.99,
+    "fin": 29.25,
+    "proba": 0.63
+   },
+   {
+    "mot": "Code,",
+    "debut": 29.25,
+    "fin": 29.53,
+    "proba": 0.05
+   },
+   {
+    "mot": "QSOR,",
+    "debut": 29.69,
+    "fin": 30.03,
+    "proba": 0.01
+   },
+   {
+    "mot": "Manus",
+    "debut": 30.05,
+    "fin": 30.35,
+    "proba": 0.79
+   },
+   {
+    "mot": "ou",
+    "debut": 30.35,
+    "fin": 30.49,
+    "proba": 0.88
+   },
+   {
+    "mot": "Lovable,",
+    "debut": 30.49,
+    "fin": 30.85,
+    "proba": 0.33
+   },
+   {
+    "mot": "ce",
+    "debut": 31.07,
+    "fin": 31.35,
+    "proba": 0.94
+   },
+   {
+    "mot": "n",
+    "debut": 31.35,
+    "fin": 31.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 31.45,
+    "fin": 31.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 31.49,
+    "fin": 31.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "réaliste",
+    "debut": 31.73,
+    "fin": 32.19,
+    "proba": 0.99
+   },
+   {
+    "mot": "au",
+    "debut": 32.19,
+    "fin": 32.33,
+    "proba": 1.0
+   },
+   {
+    "mot": "départ.",
+    "debut": 32.33,
+    "fin": 32.57,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 33.17,
+  "fin": 45.73,
+  "texte": "Mais il me montre ma vraie force, le français, le téléphone, mobile monnaie et l'accompagnement des débutants.",
+  "mots": [
+   {
+    "mot": "Mais",
+    "debut": 33.17,
+    "fin": 33.31,
+    "proba": 0.99
+   },
+   {
+    "mot": "il",
+    "debut": 33.31,
+    "fin": 33.55,
+    "proba": 0.9
+   },
+   {
+    "mot": "me",
+    "debut": 33.55,
+    "fin": 33.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "montre",
+    "debut": 33.71,
+    "fin": 34.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "ma",
+    "debut": 34.11,
+    "fin": 36.11,
+    "proba": 0.93
+   },
+   {
+    "mot": "vraie",
+    "debut": 36.11,
+    "fin": 36.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "force,",
+    "debut": 36.37,
+    "fin": 36.61,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 37.37,
+    "fin": 37.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "français,",
+    "debut": 37.55,
+    "fin": 38.15,
+    "proba": 0.94
+   },
+   {
+    "mot": "le",
+    "debut": 39.87,
+    "fin": 42.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "téléphone,",
+    "debut": 42.21,
+    "fin": 43.25,
+    "proba": 0.97
+   },
+   {
+    "mot": "mobile",
+    "debut": 43.67,
+    "fin": 43.93,
+    "proba": 0.86
+   },
+   {
+    "mot": "monnaie",
+    "debut": 43.93,
+    "fin": 44.29,
+    "proba": 0.84
+   },
+   {
+    "mot": "et",
+    "debut": 44.29,
+    "fin": 44.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 44.43,
+    "fin": 44.53,
+    "proba": 1.0
+   },
+   {
+    "mot": "'accompagnement",
+    "debut": 44.53,
+    "fin": 45.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 45.09,
+    "fin": 45.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "débutants.",
+    "debut": 45.31,
+    "fin": 45.73,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 46.23,
+  "fin": 48.79,
+  "texte": "Après les questions, voici ce que nous avons décidé ensemble.",
+  "mots": [
+   {
+    "mot": "Après",
+    "debut": 46.23,
+    "fin": 46.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 46.71,
+    "fin": 46.83,
+    "proba": 0.94
+   },
+   {
+    "mot": "questions,",
+    "debut": 46.83,
+    "fin": 47.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "voici",
+    "debut": 47.33,
+    "fin": 47.57,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 47.57,
+    "fin": 47.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 47.67,
+    "fin": 47.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "nous",
+    "debut": 47.75,
+    "fin": 47.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "avons",
+    "debut": 47.85,
+    "fin": 48.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "décidé",
+    "debut": 48.03,
+    "fin": 48.35,
+    "proba": 0.99
+   },
+   {
+    "mot": "ensemble.",
+    "debut": 48.35,
+    "fin": 48.79,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 49.11,
+  "fin": 50.27,
+  "texte": "Une capacité à la fois.",
+  "mots": [
+   {
+    "mot": "Une",
+    "debut": 49.11,
+    "fin": 49.45,
+    "proba": 0.99
+   },
+   {
+    "mot": "capacité",
+    "debut": 49.45,
+    "fin": 49.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 49.91,
+    "fin": 50.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 50.03,
+    "fin": 50.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "fois.",
+    "debut": 50.07,
+    "fin": 50.27,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 50.59,
+  "fin": 53.23,
+  "texte": "D'abord les sites web, puis les applications, puis le reste.",
+  "mots": [
+   {
+    "mot": "D",
+    "debut": 50.59,
+    "fin": 50.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "'abord",
+    "debut": 50.79,
+    "fin": 50.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 50.95,
+    "fin": 51.09,
+    "proba": 0.93
+   },
+   {
+    "mot": "sites",
+    "debut": 51.09,
+    "fin": 51.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "web,",
+    "debut": 51.31,
+    "fin": 51.53,
+    "proba": 0.98
+   },
+   {
+    "mot": "puis",
+    "debut": 51.75,
+    "fin": 51.89,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 51.89,
+    "fin": 52.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "applications,",
+    "debut": 52.05,
+    "fin": 52.55,
+    "proba": 1.0
+   },
+   {
+    "mot": "puis",
+    "debut": 52.81,
+    "fin": 52.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 52.91,
+    "fin": 52.99,
+    "proba": 0.99
+   },
+   {
+    "mot": "reste.",
+    "debut": 52.99,
+    "fin": 53.23,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 53.95,
+  "fin": 54.55,
+  "texte": "Deux modes.",
+  "mots": [
+   {
+    "mot": "Deux",
+    "debut": 53.95,
+    "fin": 54.33,
+    "proba": 0.97
+   },
+   {
+    "mot": "modes.",
+    "debut": 54.33,
+    "fin": 54.55,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 55.07,
+  "fin": 57.91,
+  "texte": "Un mode simple pour les débutants et un mode de développeur.",
+  "mots": [
+   {
+    "mot": "Un",
+    "debut": 55.07,
+    "fin": 55.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "mode",
+    "debut": 55.39,
+    "fin": 55.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "simple",
+    "debut": 55.61,
+    "fin": 55.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 55.93,
+    "fin": 56.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 56.11,
+    "fin": 56.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "débutants",
+    "debut": 56.19,
+    "fin": 56.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 56.63,
+    "fin": 56.81,
+    "proba": 0.99
+   },
+   {
+    "mot": "un",
+    "debut": 56.81,
+    "fin": 56.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "mode",
+    "debut": 56.97,
+    "fin": 57.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 57.19,
+    "fin": 57.35,
+    "proba": 0.73
+   },
+   {
+    "mot": "développeur.",
+    "debut": 57.35,
+    "fin": 57.91,
+    "proba": 0.89
+   }
+  ]
+ },
+ {
+  "debut": 57.91,
+  "fin": 65.01,
+  "texte": "Quelqu'un sera construit avec le Claude Agent SDK pour avoir les mêmes capacités que Claude Code.",
+  "mots": [
+   {
+    "mot": "Quelqu",
+    "debut": 57.91,
+    "fin": 58.75,
+    "proba": 0.43
+   },
+   {
+    "mot": "'un",
+    "debut": 58.75,
+    "fin": 58.83,
+    "proba": 0.92
+   },
+   {
+    "mot": "sera",
+    "debut": 58.83,
+    "fin": 59.11,
+    "proba": 0.93
+   },
+   {
+    "mot": "construit",
+    "debut": 59.11,
+    "fin": 59.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "avec",
+    "debut": 59.63,
+    "fin": 59.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 59.83,
+    "fin": 60.11,
+    "proba": 0.97
+   },
+   {
+    "mot": "Claude",
+    "debut": 60.11,
+    "fin": 60.39,
+    "proba": 0.51
+   },
+   {
+    "mot": "Agent",
+    "debut": 60.39,
+    "fin": 60.87,
+    "proba": 0.71
+   },
+   {
+    "mot": "SDK",
+    "debut": 60.87,
+    "fin": 62.23,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 62.23,
+    "fin": 62.87,
+    "proba": 0.9
+   },
+   {
+    "mot": "avoir",
+    "debut": 62.87,
+    "fin": 63.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 63.31,
+    "fin": 63.55,
+    "proba": 0.92
+   },
+   {
+    "mot": "mêmes",
+    "debut": 63.55,
+    "fin": 63.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "capacités",
+    "debut": 63.79,
+    "fin": 64.29,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 64.29,
+    "fin": 64.49,
+    "proba": 0.99
+   },
+   {
+    "mot": "Claude",
+    "debut": 64.49,
+    "fin": 64.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "Code.",
+    "debut": 64.79,
+    "fin": 65.01,
+    "proba": 0.0
+   }
+  ]
+ },
+ {
+  "debut": 65.31,
+  "fin": 70.21,
+  "texte": "Pour la sécurité, chaque utilisateur travaille dans un ordinateur virtuel isolé.",
+  "mots": [
+   {
+    "mot": "Pour",
+    "debut": 65.31,
+    "fin": 65.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 65.91,
+    "fin": 66.05,
+    "proba": 1.0
+   },
+   {
+    "mot": "sécurité,",
+    "debut": 66.05,
+    "fin": 66.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "chaque",
+    "debut": 67.07,
+    "fin": 67.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "utilisateur",
+    "debut": 67.25,
+    "fin": 67.91,
+    "proba": 1.0
+   },
+   {
+    "mot": "travaille",
+    "debut": 67.91,
+    "fin": 68.45,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 68.45,
+    "fin": 68.69,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 68.69,
+    "fin": 68.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "ordinateur",
+    "debut": 68.95,
+    "fin": 69.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "virtuel",
+    "debut": 69.39,
+    "fin": 69.75,
+    "proba": 0.98
+   },
+   {
+    "mot": "isolé.",
+    "debut": 69.75,
+    "fin": 70.21,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 70.59,
+  "fin": 76.79,
+  "texte": "L'agent ne va que sur des sites autorisés et demande la permission avant toute action risquée.",
+  "mots": [
+   {
+    "mot": "L",
+    "debut": 70.59,
+    "fin": 70.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent",
+    "debut": 70.71,
+    "fin": 70.93,
+    "proba": 0.98
+   },
+   {
+    "mot": "ne",
+    "debut": 70.93,
+    "fin": 71.07,
+    "proba": 0.98
+   },
+   {
+    "mot": "va",
+    "debut": 71.07,
+    "fin": 71.31,
+    "proba": 0.49
+   },
+   {
+    "mot": "que",
+    "debut": 71.31,
+    "fin": 72.17,
+    "proba": 0.91
+   },
+   {
+    "mot": "sur",
+    "debut": 72.17,
+    "fin": 72.41,
+    "proba": 0.79
+   },
+   {
+    "mot": "des",
+    "debut": 72.41,
+    "fin": 72.61,
+    "proba": 0.97
+   },
+   {
+    "mot": "sites",
+    "debut": 72.61,
+    "fin": 72.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "autorisés",
+    "debut": 72.87,
+    "fin": 73.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 73.49,
+    "fin": 74.03,
+    "proba": 0.97
+   },
+   {
+    "mot": "demande",
+    "debut": 74.03,
+    "fin": 74.45,
+    "proba": 0.73
+   },
+   {
+    "mot": "la",
+    "debut": 74.45,
+    "fin": 74.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "permission",
+    "debut": 74.65,
+    "fin": 75.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "avant",
+    "debut": 75.09,
+    "fin": 75.43,
+    "proba": 0.99
+   },
+   {
+    "mot": "toute",
+    "debut": 75.43,
+    "fin": 75.93,
+    "proba": 0.99
+   },
+   {
+    "mot": "action",
+    "debut": 75.93,
+    "fin": 76.35,
+    "proba": 0.99
+   },
+   {
+    "mot": "risquée.",
+    "debut": 76.35,
+    "fin": 76.79,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 77.09,
+  "fin": 79.37,
+  "texte": "Et les abonnements seront payés par mobile monnaie.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 77.09,
+    "fin": 77.45,
+    "proba": 0.92
+   },
+   {
+    "mot": "les",
+    "debut": 77.45,
+    "fin": 77.59,
+    "proba": 1.0
+   },
+   {
+    "mot": "abonnements",
+    "debut": 77.59,
+    "fin": 78.01,
+    "proba": 1.0
+   },
+   {
+    "mot": "seront",
+    "debut": 78.01,
+    "fin": 78.27,
+    "proba": 0.99
+   },
+   {
+    "mot": "payés",
+    "debut": 78.27,
+    "fin": 78.63,
+    "proba": 0.99
+   },
+   {
+    "mot": "par",
+    "debut": 78.63,
+    "fin": 78.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "mobile",
+    "debut": 78.77,
+    "fin": 79.07,
+    "proba": 0.47
+   },
+   {
+    "mot": "monnaie.",
+    "debut": 79.07,
+    "fin": 79.37,
+    "proba": 0.68
+   }
+  ]
+ },
+ {
+  "debut": 79.63,
+  "fin": 82.47,
+  "texte": "Je ne savais pas quel nom donner à mon agent.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 79.63,
+    "fin": 80.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 80.09,
+    "fin": 80.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "savais",
+    "debut": 80.19,
+    "fin": 80.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 80.43,
+    "fin": 80.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "quel",
+    "debut": 80.61,
+    "fin": 81.19,
+    "proba": 0.88
+   },
+   {
+    "mot": "nom",
+    "debut": 81.19,
+    "fin": 81.51,
+    "proba": 1.0
+   },
+   {
+    "mot": "donner",
+    "debut": 81.51,
+    "fin": 81.83,
+    "proba": 0.99
+   },
+   {
+    "mot": "à",
+    "debut": 81.83,
+    "fin": 82.07,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 82.07,
+    "fin": 82.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent.",
+    "debut": 82.19,
+    "fin": 82.47,
+    "proba": 0.92
+   }
+  ]
+ },
+ {
+  "debut": 82.63,
+  "fin": 86.27,
+  "texte": "Alors j'ai demandé au chef de projet de m'en proposer.",
+  "mots": [
+   {
+    "mot": "Alors",
+    "debut": 82.63,
+    "fin": 82.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "j",
+    "debut": 82.97,
+    "fin": 83.27,
+    "proba": 0.66
+   },
+   {
+    "mot": "'ai",
+    "debut": 83.27,
+    "fin": 83.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "demandé",
+    "debut": 83.49,
+    "fin": 84.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "au",
+    "debut": 84.49,
+    "fin": 84.75,
+    "proba": 0.99
+   },
+   {
+    "mot": "chef",
+    "debut": 84.75,
+    "fin": 84.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 84.95,
+    "fin": 85.05,
+    "proba": 0.93
+   },
+   {
+    "mot": "projet",
+    "debut": 85.05,
+    "fin": 85.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 85.41,
+    "fin": 85.65,
+    "proba": 0.99
+   },
+   {
+    "mot": "m",
+    "debut": 85.65,
+    "fin": 85.79,
+    "proba": 0.88
+   },
+   {
+    "mot": "'en",
+    "debut": 85.79,
+    "fin": 85.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "proposer.",
+    "debut": 85.83,
+    "fin": 86.27,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 86.27,
+  "fin": 89.75,
+  "texte": "J'ai hésité entre Afrikot et Kekéli.",
+  "mots": [
+   {
+    "mot": "J",
+    "debut": 86.27,
+    "fin": 86.97,
+    "proba": 0.83
+   },
+   {
+    "mot": "'ai",
+    "debut": 86.97,
+    "fin": 87.09,
+    "proba": 1.0
+   },
+   {
+    "mot": "hésité",
+    "debut": 87.09,
+    "fin": 87.39,
+    "proba": 1.0
+   },
+   {
+    "mot": "entre",
+    "debut": 87.39,
+    "fin": 87.77,
+    "proba": 0.97
+   },
+   {
+    "mot": "Afrikot",
+    "debut": 87.77,
+    "fin": 89.21,
+    "proba": 0.49
+   },
+   {
+    "mot": "et",
+    "debut": 89.21,
+    "fin": 89.39,
+    "proba": 0.97
+   },
+   {
+    "mot": "Kekéli.",
+    "debut": 89.39,
+    "fin": 89.75,
+    "proba": 0.75
+   }
+  ]
+ },
+ {
+  "debut": 89.93,
+  "fin": 93.31,
+  "texte": "J'ai choisi Kekéli qui veut dire la lumière en EV.",
+  "mots": [
+   {
+    "mot": "J",
+    "debut": 89.93,
+    "fin": 90.31,
+    "proba": 1.0
+   },
+   {
+    "mot": "'ai",
+    "debut": 90.31,
+    "fin": 90.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "choisi",
+    "debut": 90.37,
+    "fin": 90.67,
+    "proba": 1.0
+   },
+   {
+    "mot": "Kekéli",
+    "debut": 90.67,
+    "fin": 91.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 91.15,
+    "fin": 91.51,
+    "proba": 0.7
+   },
+   {
+    "mot": "veut",
+    "debut": 91.51,
+    "fin": 91.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "dire",
+    "debut": 91.71,
+    "fin": 91.97,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 91.97,
+    "fin": 92.27,
+    "proba": 0.91
+   },
+   {
+    "mot": "lumière",
+    "debut": 92.27,
+    "fin": 92.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 92.71,
+    "fin": 93.13,
+    "proba": 0.98
+   },
+   {
+    "mot": "EV.",
+    "debut": 93.13,
+    "fin": 93.31,
+    "proba": 0.39
+   }
+  ]
+ },
+ {
+  "debut": 101.69,
+  "fin": 106.23,
+  "texte": "Et le slogan Kekéli, l'agent IA qui coûte pour vous.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 101.69,
+    "fin": 102.25,
+    "proba": 0.01
+   },
+   {
+    "mot": "le",
+    "debut": 102.25,
+    "fin": 102.81,
+    "proba": 0.88
+   },
+   {
+    "mot": "slogan",
+    "debut": 102.81,
+    "fin": 103.25,
+    "proba": 0.97
+   },
+   {
+    "mot": "Kekéli,",
+    "debut": 103.25,
+    "fin": 104.41,
+    "proba": 0.41
+   },
+   {
+    "mot": "l",
+    "debut": 104.61,
+    "fin": 104.89,
+    "proba": 0.93
+   },
+   {
+    "mot": "'agent",
+    "debut": 104.89,
+    "fin": 105.11,
+    "proba": 0.94
+   },
+   {
+    "mot": "IA",
+    "debut": 105.11,
+    "fin": 105.43,
+    "proba": 0.87
+   },
+   {
+    "mot": "qui",
+    "debut": 105.43,
+    "fin": 105.59,
+    "proba": 0.97
+   },
+   {
+    "mot": "coûte",
+    "debut": 105.59,
+    "fin": 105.85,
+    "proba": 0.94
+   },
+   {
+    "mot": "pour",
+    "debut": 105.85,
+    "fin": 105.99,
+    "proba": 0.98
+   },
+   {
+    "mot": "vous.",
+    "debut": 105.99,
+    "fin": 106.23,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 106.23,
+  "fin": 110.03,
+  "texte": "Avant de garder un nom, on vérifie que le nom de domaine est libre.",
+  "mots": [
+   {
+    "mot": "Avant",
+    "debut": 106.23,
+    "fin": 107.09,
+    "proba": 0.94
+   },
+   {
+    "mot": "de",
+    "debut": 107.09,
+    "fin": 107.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "garder",
+    "debut": 107.27,
+    "fin": 107.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 107.63,
+    "fin": 107.83,
+    "proba": 0.99
+   },
+   {
+    "mot": "nom,",
+    "debut": 107.83,
+    "fin": 107.95,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 108.05,
+    "fin": 108.17,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifie",
+    "debut": 108.17,
+    "fin": 108.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 108.61,
+    "fin": 108.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 108.79,
+    "fin": 108.93,
+    "proba": 1.0
+   },
+   {
+    "mot": "nom",
+    "debut": 108.93,
+    "fin": 109.17,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 109.17,
+    "fin": 109.31,
+    "proba": 0.76
+   },
+   {
+    "mot": "domaine",
+    "debut": 109.31,
+    "fin": 109.61,
+    "proba": 0.99
+   },
+   {
+    "mot": "est",
+    "debut": 109.61,
+    "fin": 109.79,
+    "proba": 1.0
+   },
+   {
+    "mot": "libre.",
+    "debut": 109.79,
+    "fin": 110.03,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 110.29,
+  "fin": 112.95,
+  "texte": "Je le fais sur cloudflare.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 110.29,
+    "fin": 110.65,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 110.65,
+    "fin": 110.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "fais",
+    "debut": 110.77,
+    "fin": 110.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "sur",
+    "debut": 110.99,
+    "fin": 111.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "cloudflare.",
+    "debut": 111.35,
+    "fin": 112.95,
+    "proba": 0.72
+   }
+  ]
+ },
+ {
+  "debut": 113.29,
+  "fin": 116.57,
+  "texte": "Kekéli.com et Kekéli.app sont déjà pris.",
+  "mots": [
+   {
+    "mot": "Kekéli",
+    "debut": 113.29,
+    "fin": 113.83,
+    "proba": 0.52
+   },
+   {
+    "mot": ".com",
+    "debut": 113.83,
+    "fin": 114.43,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 114.43,
+    "fin": 114.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "Kekéli",
+    "debut": 114.73,
+    "fin": 115.15,
+    "proba": 0.87
+   },
+   {
+    "mot": ".app",
+    "debut": 115.15,
+    "fin": 115.85,
+    "proba": 1.0
+   },
+   {
+    "mot": "sont",
+    "debut": 115.85,
+    "fin": 116.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "déjà",
+    "debut": 116.11,
+    "fin": 116.35,
+    "proba": 1.0
+   },
+   {
+    "mot": "pris.",
+    "debut": 116.35,
+    "fin": 116.57,
+    "proba": 0.8
+   }
+  ]
+ },
+ {
+  "debut": 117.57,
+  "fin": 120.25,
+  "texte": "Kekéli.ai coûte trop cher pour commencer.",
+  "mots": [
+   {
+    "mot": "Kekéli",
+    "debut": 117.57,
+    "fin": 118.11,
+    "proba": 1.0
+   },
+   {
+    "mot": ".ai",
+    "debut": 118.11,
+    "fin": 118.65,
+    "proba": 0.98
+   },
+   {
+    "mot": "coûte",
+    "debut": 118.65,
+    "fin": 119.05,
+    "proba": 0.98
+   },
+   {
+    "mot": "trop",
+    "debut": 119.05,
+    "fin": 119.19,
+    "proba": 1.0
+   },
+   {
+    "mot": "cher",
+    "debut": 119.19,
+    "fin": 119.41,
+    "proba": 1.0
+   },
+   {
+    "mot": "pour",
+    "debut": 119.41,
+    "fin": 119.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "commencer.",
+    "debut": 119.87,
+    "fin": 120.25,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 120.95,
+  "fin": 125.89,
+  "texte": "Le chef de projet recommande Kekéli.dev, l'extension des outils de programmation.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 120.95,
+    "fin": 121.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 121.13,
+    "fin": 121.31,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 121.31,
+    "fin": 121.45,
+    "proba": 0.97
+   },
+   {
+    "mot": "projet",
+    "debut": 121.45,
+    "fin": 121.75,
+    "proba": 1.0
+   },
+   {
+    "mot": "recommande",
+    "debut": 121.75,
+    "fin": 122.29,
+    "proba": 0.93
+   },
+   {
+    "mot": "Kekéli",
+    "debut": 122.29,
+    "fin": 122.69,
+    "proba": 0.97
+   },
+   {
+    "mot": ".dev,",
+    "debut": 122.69,
+    "fin": 123.21,
+    "proba": 0.99
+   },
+   {
+    "mot": "l",
+    "debut": 123.37,
+    "fin": 124.03,
+    "proba": 1.0
+   },
+   {
+    "mot": "'extension",
+    "debut": 124.03,
+    "fin": 124.53,
+    "proba": 0.99
+   },
+   {
+    "mot": "des",
+    "debut": 124.53,
+    "fin": 124.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "outils",
+    "debut": 124.87,
+    "fin": 125.15,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 125.15,
+    "fin": 125.27,
+    "proba": 1.0
+   },
+   {
+    "mot": "programmation.",
+    "debut": 125.27,
+    "fin": 125.89,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 126.27,
+  "fin": 127.53,
+  "texte": "Je ne l'achète pas encore.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 126.27,
+    "fin": 126.61,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 126.61,
+    "fin": 126.73,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 126.73,
+    "fin": 126.87,
+    "proba": 1.0
+   },
+   {
+    "mot": "'achète",
+    "debut": 126.87,
+    "fin": 127.11,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 127.11,
+    "fin": 127.25,
+    "proba": 1.0
+   },
+   {
+    "mot": "encore.",
+    "debut": 127.25,
+    "fin": 127.53,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 127.63,
+  "fin": 129.15,
+  "texte": "On l'achètera avant la mise en ligne.",
+  "mots": [
+   {
+    "mot": "On",
+    "debut": 127.63,
+    "fin": 127.71,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 127.71,
+    "fin": 127.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "'achètera",
+    "debut": 127.83,
+    "fin": 128.17,
+    "proba": 0.87
+   },
+   {
+    "mot": "avant",
+    "debut": 128.17,
+    "fin": 128.49,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 128.49,
+    "fin": 128.63,
+    "proba": 1.0
+   },
+   {
+    "mot": "mise",
+    "debut": 128.63,
+    "fin": 128.83,
+    "proba": 1.0
+   },
+   {
+    "mot": "en",
+    "debut": 128.83,
+    "fin": 128.99,
+    "proba": 1.0
+   },
+   {
+    "mot": "ligne.",
+    "debut": 128.99,
+    "fin": 129.15,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 129.15,
+  "fin": 131.55,
+  "texte": "Ensuite, la base des données.",
+  "mots": [
+   {
+    "mot": "Ensuite,",
+    "debut": 129.15,
+    "fin": 130.13,
+    "proba": 0.97
+   },
+   {
+    "mot": "la",
+    "debut": 130.37,
+    "fin": 130.61,
+    "proba": 0.99
+   },
+   {
+    "mot": "base",
+    "debut": 130.61,
+    "fin": 131.13,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 131.13,
+    "fin": 131.29,
+    "proba": 0.83
+   },
+   {
+    "mot": "données.",
+    "debut": 131.29,
+    "fin": 131.55,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 131.77,
+  "fin": 138.21,
+  "texte": "Le chef de projet recommande Proto-Gresql.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 131.77,
+    "fin": 132.19,
+    "proba": 0.89
+   },
+   {
+    "mot": "chef",
+    "debut": 132.19,
+    "fin": 132.37,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 132.37,
+    "fin": 132.47,
+    "proba": 0.94
+   },
+   {
+    "mot": "projet",
+    "debut": 132.47,
+    "fin": 132.77,
+    "proba": 1.0
+   },
+   {
+    "mot": "recommande",
+    "debut": 132.77,
+    "fin": 133.37,
+    "proba": 0.82
+   },
+   {
+    "mot": "Proto",
+    "debut": 133.37,
+    "fin": 135.47,
+    "proba": 0.72
+   },
+   {
+    "mot": "-Gresql.",
+    "debut": 135.47,
+    "fin": 138.21,
+    "proba": 0.49
+   }
+  ]
+ },
+ {
+  "debut": 138.35,
+  "fin": 139.55,
+  "texte": "Sur la ravec l'autre.",
+  "mots": [
+   {
+    "mot": "Sur",
+    "debut": 138.35,
+    "fin": 138.83,
+    "proba": 0.14
+   },
+   {
+    "mot": "la",
+    "debut": 138.83,
+    "fin": 139.03,
+    "proba": 0.67
+   },
+   {
+    "mot": "ravec",
+    "debut": 139.03,
+    "fin": 139.35,
+    "proba": 0.51
+   },
+   {
+    "mot": "l",
+    "debut": 139.35,
+    "fin": 139.45,
+    "proba": 0.2
+   },
+   {
+    "mot": "'autre.",
+    "debut": 139.45,
+    "fin": 139.55,
+    "proba": 0.89
+   }
+  ]
+ },
+ {
+  "debut": 139.95,
+  "fin": 140.85,
+  "texte": "Là où les autres.",
+  "mots": [
+   {
+    "mot": "Là",
+    "debut": 139.95,
+    "fin": 140.09,
+    "proba": 0.04
+   },
+   {
+    "mot": "où",
+    "debut": 140.09,
+    "fin": 140.29,
+    "proba": 0.99
+   },
+   {
+    "mot": "les",
+    "debut": 140.29,
+    "fin": 140.55,
+    "proba": 0.99
+   },
+   {
+    "mot": "autres.",
+    "debut": 140.55,
+    "fin": 140.85,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 143.62,
+  "fin": 145.06,
+  "texte": "Ensuite, la base des données.",
+  "mots": [
+   {
+    "mot": "Ensuite,",
+    "debut": 143.62,
+    "fin": 144.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 144.3,
+    "fin": 144.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "base",
+    "debut": 144.38,
+    "fin": 144.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 144.72,
+    "fin": 144.88,
+    "proba": 0.96
+   },
+   {
+    "mot": "données.",
+    "debut": 144.88,
+    "fin": 145.06,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 147.28,
+  "fin": 148.84,
+  "texte": "Ensuite, la base des données.",
+  "mots": [
+   {
+    "mot": "Ensuite,",
+    "debut": 147.28,
+    "fin": 147.8,
+    "proba": 0.68
+   },
+   {
+    "mot": "la",
+    "debut": 148.04,
+    "fin": 148.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "base",
+    "debut": 148.18,
+    "fin": 148.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 148.5,
+    "fin": 148.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "données.",
+    "debut": 148.66,
+    "fin": 148.84,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 149.22,
+  "fin": 152.56,
+  "texte": "Le chef de projet recommande Proto-Gresql.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 149.22,
+    "fin": 149.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "chef",
+    "debut": 149.64,
+    "fin": 149.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 149.88,
+    "fin": 150.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 150.0,
+    "fin": 150.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "recommande",
+    "debut": 150.28,
+    "fin": 150.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "Proto",
+    "debut": 150.86,
+    "fin": 152.1,
+    "proba": 0.97
+   },
+   {
+    "mot": "-Gresql.",
+    "debut": 152.1,
+    "fin": 152.56,
+    "proba": 0.93
+   }
+  ]
+ },
+ {
+  "debut": 158.18,
+  "fin": 159.6,
+  "texte": "Ensuite, la base des données.",
+  "mots": [
+   {
+    "mot": "Ensuite,",
+    "debut": 158.18,
+    "fin": 158.7,
+    "proba": 0.99
+   },
+   {
+    "mot": "la",
+    "debut": 158.86,
+    "fin": 158.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "base",
+    "debut": 158.96,
+    "fin": 159.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 159.28,
+    "fin": 159.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "données.",
+    "debut": 159.44,
+    "fin": 159.6,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 159.6,
+  "fin": 163.42,
+  "texte": "Le chef de projet recommande Proto-Gresql.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 159.6,
+    "fin": 160.26,
+    "proba": 0.61
+   },
+   {
+    "mot": "chef",
+    "debut": 160.26,
+    "fin": 160.5,
+    "proba": 0.92
+   },
+   {
+    "mot": "de",
+    "debut": 160.5,
+    "fin": 160.62,
+    "proba": 0.93
+   },
+   {
+    "mot": "projet",
+    "debut": 160.62,
+    "fin": 160.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "recommande",
+    "debut": 160.96,
+    "fin": 161.62,
+    "proba": 0.81
+   },
+   {
+    "mot": "Proto",
+    "debut": 161.62,
+    "fin": 162.46,
+    "proba": 0.0
+   },
+   {
+    "mot": "-Gresql.",
+    "debut": 162.46,
+    "fin": 163.42,
+    "proba": 0.27
+   }
+  ]
+ },
+ {
+  "debut": 163.54,
+  "fin": 164.8,
+  "texte": "Sur la ravec l'autre.",
+  "mots": [
+   {
+    "mot": "Sur",
+    "debut": 163.54,
+    "fin": 164.04,
+    "proba": 0.19
+   },
+   {
+    "mot": "la",
+    "debut": 164.04,
+    "fin": 164.24,
+    "proba": 0.39
+   },
+   {
+    "mot": "ravec",
+    "debut": 164.24,
+    "fin": 164.54,
+    "proba": 0.44
+   },
+   {
+    "mot": "l",
+    "debut": 164.54,
+    "fin": 164.66,
+    "proba": 0.1
+   },
+   {
+    "mot": "'autre.",
+    "debut": 164.66,
+    "fin": 164.8,
+    "proba": 0.57
+   }
+  ]
+ },
+ {
+  "debut": 166.02,
+  "fin": 168.3,
+  "texte": "Là où mes autres projets sont déjà hébergés.",
+  "mots": [
+   {
+    "mot": "Là",
+    "debut": 166.02,
+    "fin": 166.18,
+    "proba": 0.92
+   },
+   {
+    "mot": "où",
+    "debut": 166.18,
+    "fin": 166.4,
+    "proba": 0.93
+   },
+   {
+    "mot": "mes",
+    "debut": 166.4,
+    "fin": 166.7,
+    "proba": 0.97
+   },
+   {
+    "mot": "autres",
+    "debut": 166.7,
+    "fin": 166.88,
+    "proba": 0.99
+   },
+   {
+    "mot": "projets",
+    "debut": 166.88,
+    "fin": 167.24,
+    "proba": 0.99
+   },
+   {
+    "mot": "sont",
+    "debut": 167.24,
+    "fin": 167.58,
+    "proba": 0.99
+   },
+   {
+    "mot": "déjà",
+    "debut": 167.58,
+    "fin": 167.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "hébergés.",
+    "debut": 167.8,
+    "fin": 168.3,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 168.8,
+  "fin": 171.6,
+  "texte": "Puis, il me demande de créer le coffre du projet.",
+  "mots": [
+   {
+    "mot": "Puis,",
+    "debut": 168.8,
+    "fin": 169.2,
+    "proba": 0.99
+   },
+   {
+    "mot": "il",
+    "debut": 169.34,
+    "fin": 169.44,
+    "proba": 0.95
+   },
+   {
+    "mot": "me",
+    "debut": 169.44,
+    "fin": 169.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "demande",
+    "debut": 169.54,
+    "fin": 169.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 169.86,
+    "fin": 170.06,
+    "proba": 0.99
+   },
+   {
+    "mot": "créer",
+    "debut": 170.06,
+    "fin": 170.24,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 170.24,
+    "fin": 170.44,
+    "proba": 0.99
+   },
+   {
+    "mot": "coffre",
+    "debut": 170.44,
+    "fin": 170.68,
+    "proba": 0.76
+   },
+   {
+    "mot": "du",
+    "debut": 170.68,
+    "fin": 171.24,
+    "proba": 0.46
+   },
+   {
+    "mot": "projet.",
+    "debut": 171.24,
+    "fin": 171.6,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 171.8,
+  "fin": 173.38,
+  "texte": "Un dépôt guiteur privé.",
+  "mots": [
+   {
+    "mot": "Un",
+    "debut": 171.8,
+    "fin": 172.22,
+    "proba": 0.99
+   },
+   {
+    "mot": "dépôt",
+    "debut": 172.22,
+    "fin": 172.56,
+    "proba": 0.96
+   },
+   {
+    "mot": "guiteur",
+    "debut": 172.56,
+    "fin": 172.98,
+    "proba": 0.57
+   },
+   {
+    "mot": "privé.",
+    "debut": 172.98,
+    "fin": 173.38,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 173.52,
+  "fin": 174.62,
+  "texte": "Appelé Kekéli.",
+  "mots": [
+   {
+    "mot": "Appelé",
+    "debut": 173.52,
+    "fin": 174.04,
+    "proba": 0.97
+   },
+   {
+    "mot": "Kekéli.",
+    "debut": 174.04,
+    "fin": 174.62,
+    "proba": 0.48
+   }
+  ]
+ },
+ {
+  "debut": 175.1,
+  "fin": 176.52,
+  "texte": "Voici le cas de charge final.",
+  "mots": [
+   {
+    "mot": "Voici",
+    "debut": 175.1,
+    "fin": 175.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 175.58,
+    "fin": 175.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "cas",
+    "debut": 175.76,
+    "fin": 175.86,
+    "proba": 0.26
+   },
+   {
+    "mot": "de",
+    "debut": 175.86,
+    "fin": 175.96,
+    "proba": 0.81
+   },
+   {
+    "mot": "charge",
+    "debut": 175.96,
+    "fin": 176.24,
+    "proba": 0.82
+   },
+   {
+    "mot": "final.",
+    "debut": 176.24,
+    "fin": 176.52,
+    "proba": 0.96
+   }
+  ]
+ },
+ {
+  "debut": 176.84,
+  "fin": 178.3,
+  "texte": "Je le copie dans mon bloc note.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 176.84,
+    "fin": 177.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 177.14,
+    "fin": 177.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "copie",
+    "debut": 177.24,
+    "fin": 177.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 177.58,
+    "fin": 177.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "mon",
+    "debut": 177.68,
+    "fin": 177.82,
+    "proba": 0.98
+   },
+   {
+    "mot": "bloc",
+    "debut": 177.82,
+    "fin": 178.04,
+    "proba": 0.89
+   },
+   {
+    "mot": "note.",
+    "debut": 178.04,
+    "fin": 178.3,
+    "proba": 0.48
+   }
+  ]
+ },
+ {
+  "debut": 178.5,
+  "fin": 179.8,
+  "texte": "Et je le garde précieusement.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 178.5,
+    "fin": 178.78,
+    "proba": 0.98
+   },
+   {
+    "mot": "je",
+    "debut": 178.78,
+    "fin": 178.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 178.9,
+    "fin": 179.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "garde",
+    "debut": 179.0,
+    "fin": 179.24,
+    "proba": 0.99
+   },
+   {
+    "mot": "précieusement.",
+    "debut": 179.24,
+    "fin": 179.8,
+    "proba": 0.93
+   }
+  ]
+ },
+ {
+  "debut": 180.1,
+  "fin": 181.4,
+  "texte": "C'est le plan de ma maison.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 180.1,
+    "fin": 180.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 180.36,
+    "fin": 180.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 180.42,
+    "fin": 180.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 180.54,
+    "fin": 180.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 180.82,
+    "fin": 180.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "ma",
+    "debut": 180.98,
+    "fin": 181.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "maison.",
+    "debut": 181.08,
+    "fin": 181.4,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 182.12,
+  "fin": 186.0,
+  "texte": "Maintenant, le chef de projet me demande la première consigne pour cloudkout.",
+  "mots": [
+   {
+    "mot": "Maintenant,",
+    "debut": 182.12,
+    "fin": 182.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 182.82,
+    "fin": 183.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "chef",
+    "debut": 183.14,
+    "fin": 183.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 183.34,
+    "fin": 183.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 183.46,
+    "fin": 183.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "me",
+    "debut": 183.76,
+    "fin": 183.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "demande",
+    "debut": 183.92,
+    "fin": 184.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 184.26,
+    "fin": 184.54,
+    "proba": 0.98
+   },
+   {
+    "mot": "première",
+    "debut": 184.54,
+    "fin": 184.84,
+    "proba": 0.98
+   },
+   {
+    "mot": "consigne",
+    "debut": 184.84,
+    "fin": 185.22,
+    "proba": 0.28
+   },
+   {
+    "mot": "pour",
+    "debut": 185.22,
+    "fin": 185.4,
+    "proba": 0.94
+   },
+   {
+    "mot": "cloudkout.",
+    "debut": 185.4,
+    "fin": 186.0,
+    "proba": 0.23
+   }
+  ]
+ },
+ {
+  "debut": 186.38,
+  "fin": 188.88,
+  "texte": "Je la copie avec le cas de charge.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 186.38,
+    "fin": 186.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 186.64,
+    "fin": 186.92,
+    "proba": 0.99
+   },
+   {
+    "mot": "copie",
+    "debut": 186.92,
+    "fin": 187.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "avec",
+    "debut": 187.42,
+    "fin": 188.06,
+    "proba": 0.98
+   },
+   {
+    "mot": "le",
+    "debut": 188.06,
+    "fin": 188.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "cas",
+    "debut": 188.28,
+    "fin": 188.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 188.4,
+    "fin": 188.5,
+    "proba": 1.0
+   },
+   {
+    "mot": "charge.",
+    "debut": 188.5,
+    "fin": 188.88,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 188.88,
+  "fin": 192.6,
+  "texte": "Dans cloudkout, je choisis le dépôt Kekéli et j'envoie.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 188.88,
+    "fin": 189.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "cloudkout,",
+    "debut": 189.62,
+    "fin": 190.2,
+    "proba": 0.02
+   },
+   {
+    "mot": "je",
+    "debut": 190.44,
+    "fin": 190.58,
+    "proba": 0.99
+   },
+   {
+    "mot": "choisis",
+    "debut": 190.58,
+    "fin": 190.96,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 190.96,
+    "fin": 191.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "dépôt",
+    "debut": 191.1,
+    "fin": 191.46,
+    "proba": 0.99
+   },
+   {
+    "mot": "Kekéli",
+    "debut": 191.46,
+    "fin": 191.9,
+    "proba": 0.49
+   },
+   {
+    "mot": "et",
+    "debut": 191.9,
+    "fin": 192.12,
+    "proba": 0.99
+   },
+   {
+    "mot": "j",
+    "debut": 192.12,
+    "fin": 192.26,
+    "proba": 0.98
+   },
+   {
+    "mot": "'envoie.",
+    "debut": 192.26,
+    "fin": 192.6,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 193.2,
+  "fin": 193.68,
+  "texte": "Attention.",
+  "mots": [
+   {
+    "mot": "Attention.",
+    "debut": 193.2,
+    "fin": 193.68,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 194.16,
+  "fin": 196.4,
+  "texte": "Dans ce temps 1, il ne conçut rien.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 194.16,
+    "fin": 194.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 194.64,
+    "fin": 194.9,
+    "proba": 0.98
+   },
+   {
+    "mot": "temps",
+    "debut": 194.9,
+    "fin": 195.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "1,",
+    "debut": 195.06,
+    "fin": 195.32,
+    "proba": 0.87
+   },
+   {
+    "mot": "il",
+    "debut": 195.52,
+    "fin": 195.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "ne",
+    "debut": 195.64,
+    "fin": 195.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "conçut",
+    "debut": 195.8,
+    "fin": 196.12,
+    "proba": 0.62
+   },
+   {
+    "mot": "rien.",
+    "debut": 196.12,
+    "fin": 196.4,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 196.62,
+  "fin": 198.0,
+  "texte": "Il présente seulement son plan.",
+  "mots": [
+   {
+    "mot": "Il",
+    "debut": 196.62,
+    "fin": 196.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "présente",
+    "debut": 196.92,
+    "fin": 197.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "seulement",
+    "debut": 197.24,
+    "fin": 197.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 197.58,
+    "fin": 197.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan.",
+    "debut": 197.82,
+    "fin": 198.0,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 198.36,
+  "fin": 198.92,
+  "texte": "Vous voyez.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 198.36,
+    "fin": 198.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "voyez.",
+    "debut": 198.64,
+    "fin": 198.92,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 199.16,
+  "fin": 200.98,
+  "texte": "J'avais oublié de coller le cas de charge.",
+  "mots": [
+   {
+    "mot": "J",
+    "debut": 199.16,
+    "fin": 199.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "'avais",
+    "debut": 199.48,
+    "fin": 199.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "oublié",
+    "debut": 199.62,
+    "fin": 199.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 199.92,
+    "fin": 200.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "coller",
+    "debut": 200.02,
+    "fin": 200.26,
+    "proba": 0.99
+   },
+   {
+    "mot": "le",
+    "debut": 200.26,
+    "fin": 200.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "cas",
+    "debut": 200.42,
+    "fin": 200.56,
+    "proba": 0.36
+   },
+   {
+    "mot": "de",
+    "debut": 200.56,
+    "fin": 200.64,
+    "proba": 0.56
+   },
+   {
+    "mot": "charge.",
+    "debut": 200.64,
+    "fin": 200.98,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 201.2,
+  "fin": 201.64,
+  "texte": "J'arrête.",
+  "mots": [
+   {
+    "mot": "J",
+    "debut": 201.2,
+    "fin": 201.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "'arrête.",
+    "debut": 201.36,
+    "fin": 201.64,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 201.8,
+  "fin": 202.5,
+  "texte": "Je le colle.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 201.8,
+    "fin": 202.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 202.12,
+    "fin": 202.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "colle.",
+    "debut": 202.26,
+    "fin": 202.5,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 203.08,
+  "fin": 204.12,
+  "texte": "Et je relance.",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 203.08,
+    "fin": 203.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "je",
+    "debut": 203.56,
+    "fin": 203.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "relance.",
+    "debut": 203.7,
+    "fin": 204.12,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 204.46,
+  "fin": 205.68,
+  "texte": "Les erreurs, c'est normal.",
+  "mots": [
+   {
+    "mot": "Les",
+    "debut": 204.46,
+    "fin": 204.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "erreurs,",
+    "debut": 204.8,
+    "fin": 205.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 205.3,
+    "fin": 205.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 205.38,
+    "fin": 205.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "normal.",
+    "debut": 205.44,
+    "fin": 205.68,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 205.96,
+  "fin": 206.66,
+  "texte": "On les corrige.",
+  "mots": [
+   {
+    "mot": "On",
+    "debut": 205.96,
+    "fin": 206.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 206.16,
+    "fin": 206.28,
+    "proba": 0.99
+   },
+   {
+    "mot": "corrige.",
+    "debut": 206.28,
+    "fin": 206.66,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 207.22,
+  "fin": 208.66,
+  "texte": "Cloudkout a présenté son plan.",
+  "mots": [
+   {
+    "mot": "Cloudkout",
+    "debut": 207.22,
+    "fin": 207.7,
+    "proba": 0.98
+   },
+   {
+    "mot": "a",
+    "debut": 207.7,
+    "fin": 207.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "présenté",
+    "debut": 207.92,
+    "fin": 208.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "son",
+    "debut": 208.34,
+    "fin": 208.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan.",
+    "debut": 208.46,
+    "fin": 208.66,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 208.8,
+  "fin": 211.86,
+  "texte": "Je le copie et je le donne au chef de projet qui le vérifie.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 208.8,
+    "fin": 208.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 208.88,
+    "fin": 208.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "copie",
+    "debut": 208.98,
+    "fin": 209.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 209.36,
+    "fin": 209.58,
+    "proba": 0.96
+   },
+   {
+    "mot": "je",
+    "debut": 209.58,
+    "fin": 209.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 209.72,
+    "fin": 209.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "donne",
+    "debut": 209.86,
+    "fin": 210.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "au",
+    "debut": 210.08,
+    "fin": 210.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "chef",
+    "debut": 210.4,
+    "fin": 210.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 210.64,
+    "fin": 210.74,
+    "proba": 0.9
+   },
+   {
+    "mot": "projet",
+    "debut": 210.74,
+    "fin": 211.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 211.06,
+    "fin": 211.4,
+    "proba": 0.97
+   },
+   {
+    "mot": "le",
+    "debut": 211.4,
+    "fin": 211.52,
+    "proba": 0.98
+   },
+   {
+    "mot": "vérifie.",
+    "debut": 211.52,
+    "fin": 211.86,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 212.08,
+  "fin": 214.5,
+  "texte": "Le plan est bon, mais il demande trois corrections.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 212.08,
+    "fin": 212.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 212.36,
+    "fin": 212.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 212.56,
+    "fin": 212.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "bon,",
+    "debut": 212.7,
+    "fin": 212.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "mais",
+    "debut": 213.04,
+    "fin": 213.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "il",
+    "debut": 213.4,
+    "fin": 213.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "demande",
+    "debut": 213.62,
+    "fin": 213.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "trois",
+    "debut": 213.9,
+    "fin": 214.12,
+    "proba": 0.46
+   },
+   {
+    "mot": "corrections.",
+    "debut": 214.12,
+    "fin": 214.5,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 214.8,
+  "fin": 218.08,
+  "texte": "1. Au départ, pas d'intermédiaire de paiement.",
+  "mots": [
+   {
+    "mot": "1.",
+    "debut": 214.8,
+    "fin": 215.04,
+    "proba": 0.73
+   },
+   {
+    "mot": "Au",
+    "debut": 215.42,
+    "fin": 215.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "départ,",
+    "debut": 215.52,
+    "fin": 215.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 216.16,
+    "fin": 216.58,
+    "proba": 0.98
+   },
+   {
+    "mot": "d",
+    "debut": 216.58,
+    "fin": 217.14,
+    "proba": 0.99
+   },
+   {
+    "mot": "'intermédiaire",
+    "debut": 217.14,
+    "fin": 217.64,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 217.64,
+    "fin": 217.74,
+    "proba": 0.62
+   },
+   {
+    "mot": "paiement.",
+    "debut": 217.74,
+    "fin": 218.08,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 218.08,
+  "fin": 222.02,
+  "texte": "Le mobile money, Miss Bayas ou Flos, est vérifié à la main sur capture d'écran.",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 218.08,
+    "fin": 218.24,
+    "proba": 0.84
+   },
+   {
+    "mot": "mobile",
+    "debut": 218.24,
+    "fin": 218.5,
+    "proba": 0.82
+   },
+   {
+    "mot": "money,",
+    "debut": 218.5,
+    "fin": 218.84,
+    "proba": 0.66
+   },
+   {
+    "mot": "Miss",
+    "debut": 218.92,
+    "fin": 219.26,
+    "proba": 0.67
+   },
+   {
+    "mot": "Bayas",
+    "debut": 219.26,
+    "fin": 219.64,
+    "proba": 0.38
+   },
+   {
+    "mot": "ou",
+    "debut": 219.64,
+    "fin": 219.82,
+    "proba": 0.9
+   },
+   {
+    "mot": "Flos,",
+    "debut": 219.82,
+    "fin": 220.06,
+    "proba": 0.61
+   },
+   {
+    "mot": "est",
+    "debut": 220.14,
+    "fin": 220.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "vérifié",
+    "debut": 220.28,
+    "fin": 220.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 220.7,
+    "fin": 220.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 220.82,
+    "fin": 220.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "main",
+    "debut": 220.9,
+    "fin": 221.1,
+    "proba": 0.99
+   },
+   {
+    "mot": "sur",
+    "debut": 221.1,
+    "fin": 221.44,
+    "proba": 0.96
+   },
+   {
+    "mot": "capture",
+    "debut": 221.44,
+    "fin": 221.68,
+    "proba": 0.41
+   },
+   {
+    "mot": "d",
+    "debut": 221.68,
+    "fin": 221.82,
+    "proba": 0.99
+   },
+   {
+    "mot": "'écran.",
+    "debut": 221.82,
+    "fin": 222.02,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 222.6,
+  "fin": 225.56,
+  "texte": "2. Pas de deuxième nom de domaine pour les sites des clients.",
+  "mots": [
+   {
+    "mot": "2.",
+    "debut": 222.6,
+    "fin": 222.7,
+    "proba": 0.88
+   },
+   {
+    "mot": "Pas",
+    "debut": 222.86,
+    "fin": 223.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 223.0,
+    "fin": 223.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "deuxième",
+    "debut": 223.16,
+    "fin": 223.52,
+    "proba": 0.98
+   },
+   {
+    "mot": "nom",
+    "debut": 223.52,
+    "fin": 224.1,
+    "proba": 0.95
+   },
+   {
+    "mot": "de",
+    "debut": 224.1,
+    "fin": 224.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "domaine",
+    "debut": 224.2,
+    "fin": 224.5,
+    "proba": 0.99
+   },
+   {
+    "mot": "pour",
+    "debut": 224.5,
+    "fin": 224.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 224.68,
+    "fin": 224.84,
+    "proba": 0.98
+   },
+   {
+    "mot": "sites",
+    "debut": 224.84,
+    "fin": 225.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 225.1,
+    "fin": 225.26,
+    "proba": 0.87
+   },
+   {
+    "mot": "clients.",
+    "debut": 225.26,
+    "fin": 225.56,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 225.76,
+  "fin": 229.02,
+  "texte": "Ils sont publiés gratuitement sur des adresses Cloudflare.",
+  "mots": [
+   {
+    "mot": "Ils",
+    "debut": 225.76,
+    "fin": 226.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "sont",
+    "debut": 226.16,
+    "fin": 226.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "publiés",
+    "debut": 226.46,
+    "fin": 226.92,
+    "proba": 0.81
+   },
+   {
+    "mot": "gratuitement",
+    "debut": 226.92,
+    "fin": 227.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "sur",
+    "debut": 227.4,
+    "fin": 227.54,
+    "proba": 0.99
+   },
+   {
+    "mot": "des",
+    "debut": 227.54,
+    "fin": 227.66,
+    "proba": 0.95
+   },
+   {
+    "mot": "adresses",
+    "debut": 227.66,
+    "fin": 228.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "Cloudflare.",
+    "debut": 228.04,
+    "fin": 229.02,
+    "proba": 0.73
+   }
+  ]
+ },
+ {
+  "debut": 229.44,
+  "fin": 232.68,
+  "texte": "3. Les prix des modèles d'IA ne sont que des estimations.",
+  "mots": [
+   {
+    "mot": "3.",
+    "debut": 229.44,
+    "fin": 229.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "Les",
+    "debut": 230.12,
+    "fin": 230.4,
+    "proba": 0.99
+   },
+   {
+    "mot": "prix",
+    "debut": 230.4,
+    "fin": 230.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 230.56,
+    "fin": 230.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "modèles",
+    "debut": 230.68,
+    "fin": 231.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 231.04,
+    "fin": 231.22,
+    "proba": 0.96
+   },
+   {
+    "mot": "'IA",
+    "debut": 231.22,
+    "fin": 231.36,
+    "proba": 0.79
+   },
+   {
+    "mot": "ne",
+    "debut": 231.36,
+    "fin": 231.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "sont",
+    "debut": 231.54,
+    "fin": 231.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 231.76,
+    "fin": 231.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 231.92,
+    "fin": 232.08,
+    "proba": 0.99
+   },
+   {
+    "mot": "estimations.",
+    "debut": 232.08,
+    "fin": 232.68,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 232.84,
+  "fin": 234.56,
+  "texte": "On les mesurera vraiment plus tard.",
+  "mots": [
+   {
+    "mot": "On",
+    "debut": 232.84,
+    "fin": 232.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "les",
+    "debut": 232.94,
+    "fin": 233.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "mesurera",
+    "debut": 233.06,
+    "fin": 233.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "vraiment",
+    "debut": 233.62,
+    "fin": 234.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "plus",
+    "debut": 234.1,
+    "fin": 234.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "tard.",
+    "debut": 234.34,
+    "fin": 234.56,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 234.56,
+  "fin": 236.28,
+  "texte": "Je copie sa réponse.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 234.56,
+    "fin": 235.34,
+    "proba": 0.88
+   },
+   {
+    "mot": "copie",
+    "debut": 235.34,
+    "fin": 235.74,
+    "proba": 0.98
+   },
+   {
+    "mot": "sa",
+    "debut": 235.74,
+    "fin": 235.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "réponse.",
+    "debut": 235.88,
+    "fin": 236.28,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 236.52,
+  "fin": 238.96,
+  "texte": "Je l'envoie à Cloudkout et je la...",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 236.52,
+    "fin": 236.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 236.84,
+    "fin": 236.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoie",
+    "debut": 236.96,
+    "fin": 237.22,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 237.22,
+    "fin": 237.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "Cloudkout",
+    "debut": 237.4,
+    "fin": 237.86,
+    "proba": 0.01
+   },
+   {
+    "mot": "et",
+    "debut": 237.86,
+    "fin": 238.26,
+    "proba": 0.6
+   },
+   {
+    "mot": "je",
+    "debut": 238.26,
+    "fin": 238.42,
+    "proba": 0.47
+   },
+   {
+    "mot": "la...",
+    "debut": 238.42,
+    "fin": 238.96,
+    "proba": 0.82
+   }
+  ]
+ },
+ {
+  "debut": 239.76,
+  "fin": 241.12,
+  "texte": "Je copie sa réponse.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 239.76,
+    "fin": 240.32,
+    "proba": 0.98
+   },
+   {
+    "mot": "copie",
+    "debut": 240.32,
+    "fin": 240.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "sa",
+    "debut": 240.6,
+    "fin": 240.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "réponse.",
+    "debut": 240.72,
+    "fin": 241.12,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 241.7,
+  "fin": 245.04,
+  "texte": "Je l'envoie à Cloudkout et la construction commence.",
+  "mots": [
+   {
+    "mot": "Je",
+    "debut": 241.7,
+    "fin": 242.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 242.26,
+    "fin": 242.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "'envoie",
+    "debut": 242.38,
+    "fin": 242.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 242.64,
+    "fin": 242.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "Cloudkout",
+    "debut": 242.8,
+    "fin": 243.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 243.3,
+    "fin": 243.96,
+    "proba": 0.96
+   },
+   {
+    "mot": "la",
+    "debut": 243.96,
+    "fin": 244.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "construction",
+    "debut": 244.18,
+    "fin": 244.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "commence.",
+    "debut": 244.58,
+    "fin": 245.04,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 245.32,
+  "fin": 247.72,
+  "texte": "C'est ce que nous verrons dans la partie 2.",
+  "mots": [
+   {
+    "mot": "C",
+    "debut": 245.32,
+    "fin": 245.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 245.74,
+    "fin": 245.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "ce",
+    "debut": 245.82,
+    "fin": 245.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 245.94,
+    "fin": 246.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "nous",
+    "debut": 246.1,
+    "fin": 246.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "verrons",
+    "debut": 246.4,
+    "fin": 246.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 246.82,
+    "fin": 246.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 246.96,
+    "fin": 247.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 247.14,
+    "fin": 247.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "2.",
+    "debut": 247.48,
+    "fin": 247.72,
+    "proba": 0.99
+   }
+  ]
+ }
+]
