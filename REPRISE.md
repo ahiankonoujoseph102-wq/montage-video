@@ -1,6 +1,14 @@
-# Reprise du projet — état au 7 octobre 2026
+# Reprise du projet — état au 30 octobre 2026
 
 À lire avec `CLAUDE.md` (méthode, style, son, bibliothèque des scènes illustrées), qui fait foi.
+## En cours : publicité Talkami (30 octobre)
+
+- Projet `talkami-pub` : kit complet et voix off copiés dans le dépôt (`projets/talkami-pub/pub-kit/`, le dépôt
+  Talkami redevient privé début novembre). Plan dans `plan.json`, composition `PubTalkami` (`src/pub/`).
+- **Aperçu envoyé à Joseph** (28,9 s, 720 × 1280, 3,6 Mo) : **en attente de son avis** avant la version finale
+  (1080 × 1920 réduite à moins de 30 Mo, même encodage que d'habitude).
+- Commandes : `python3 scripts/pub_talkami.py`, puis le rendu (voir CLAUDE.md, « Publicités »).
+
 
 ## État exact
 

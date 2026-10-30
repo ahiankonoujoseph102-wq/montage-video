@@ -2,6 +2,7 @@ import React from 'react';
 import {loadFont} from '@remotion/fonts';
 import {Composition, staticFile} from 'remotion';
 import {Montage} from './Montage';
+import {PubTalkami, PubProps} from './pub/PubTalkami';
 import {Transition, TransitionProps} from './Transition';
 import type {MontageProps} from './types';
 
@@ -14,8 +15,20 @@ const exemple: MontageProps = {video: '', dureeImages: 30, mots: [], groupes: []
 const transitionExemple: TransitionProps = {avant: '', apres: '', surtitre: 'ET MAINTENANT…',
   titre: 'REGARDEZ\nLA VIDÉO', bloc: "MONTÉE À 100 % PAR L'IA"};
 
+const pubExemple: PubProps = {duree: 1, sousTitres: [], plans: []};
+
 export const Root: React.FC = () => (
   <>
+  <Composition
+    id="PubTalkami"
+    component={PubTalkami}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={30}
+    defaultProps={pubExemple}
+    calculateMetadata={({props}) => ({durationInFrames: Math.max(1, Math.round(props.duree * 30))})}
+  />
   <Composition
     id="Transition"
     component={Transition}

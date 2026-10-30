@@ -1,0 +1,390 @@
+{
+ "_note": "Publicité Talkami (~29 s). Temps en secondes dans la vidéo finale = temps de la voix off - decalageVoix. Sous-titres : texte exact de Joseph, calés sur les mots (faster-whisper large-v3-turbo + repères du kit pour la dernière phrase). 'cle' = mot en orange.",
+ "decalageVoix": 1.65,
+ "duree": 28.9,
+ "sousTitres": [
+  {
+   "t": "L'anglais vous bloque ?",
+   "a": 0.0,
+   "b": 1.5,
+   "geant": true
+  },
+  {
+   "t": "Vous le comprenez…",
+   "a": 1.55,
+   "b": 2.82,
+   "cle": [
+    "comprenez…"
+   ]
+  },
+  {
+   "t": "mais vous n'osez pas",
+   "a": 2.87,
+   "b": 3.45
+  },
+  {
+   "t": "le parler ?",
+   "a": 3.45,
+   "b": 4.4,
+   "cle": [
+    "parler ?"
+   ]
+  },
+  {
+   "t": "Avec Talkami,",
+   "a": 4.98,
+   "b": 5.88,
+   "cle": [
+    "Talkami,"
+   ]
+  },
+  {
+   "t": "vous parlez anglais",
+   "a": 5.93,
+   "b": 6.83
+  },
+  {
+   "t": "avec Teacher Joe",
+   "a": 6.83,
+   "b": 7.61,
+   "cle": [
+    "Teacher",
+    "Joe"
+   ]
+  },
+  {
+   "t": "ou Teacher Rose,",
+   "a": 7.61,
+   "b": 8.45,
+   "cle": [
+    "Teacher",
+    "Rose,"
+   ]
+  },
+  {
+   "t": "directement depuis",
+   "a": 8.45,
+   "b": 9.85
+  },
+  {
+   "t": "votre téléphone.",
+   "a": 9.85,
+   "b": 10.85,
+   "cle": [
+    "téléphone."
+   ]
+  },
+  {
+   "t": "Même si vous partez",
+   "a": 10.91,
+   "b": 12.01
+  },
+  {
+   "t": "de zéro.",
+   "a": 12.01,
+   "b": 12.76,
+   "cle": [
+    "zéro."
+   ]
+  },
+  {
+   "t": "Ils vous écoutent,",
+   "a": 12.81,
+   "b": 13.76,
+   "cle": [
+    "écoutent,"
+   ]
+  },
+  {
+   "t": "corrigent vos erreurs",
+   "a": 13.81,
+   "b": 14.61
+  },
+  {
+   "t": "avec douceur,",
+   "a": 14.61,
+   "b": 15.37,
+   "cle": [
+    "douceur,"
+   ]
+  },
+  {
+   "t": "et vous expliquent",
+   "a": 15.37,
+   "b": 16.29
+  },
+  {
+   "t": "en français",
+   "a": 16.29,
+   "b": 16.87,
+   "cle": [
+    "français"
+   ]
+  },
+  {
+   "t": "quand vous bloquez.",
+   "a": 16.87,
+   "b": 18.2
+  },
+  {
+   "t": "Commencez par",
+   "a": 18.35,
+   "b": 19.05
+  },
+  {
+   "t": "une évaluation orale",
+   "a": 19.05,
+   "b": 20.19
+  },
+  {
+   "t": "gratuite.",
+   "a": 20.19,
+   "b": 21.0,
+   "cle": [
+    "gratuite."
+   ]
+  },
+  {
+   "t": "Talkami :",
+   "a": 21.13,
+   "b": 21.92,
+   "cle": [
+    "Talkami"
+   ]
+  },
+  {
+   "t": "l'anglais, enfin,",
+   "a": 21.97,
+   "b": 23.28
+  },
+  {
+   "t": "vous allez oser",
+   "a": 23.33,
+   "b": 24.21,
+   "cle": [
+    "oser"
+   ]
+  },
+  {
+   "t": "le parler.",
+   "a": 24.21,
+   "b": 25.1
+  },
+  {
+   "t": "Rendez-vous sur",
+   "a": 25.15,
+   "b": 25.77,
+   "fin": true
+  },
+  {
+   "t": "talkami.net",
+   "a": 25.77,
+   "b": 28.9,
+   "fin": true,
+   "cle": [
+    "talkami.net"
+   ]
+  }
+ ],
+ "plans": [
+  {
+   "a": 0.0,
+   "b": 1.55,
+   "type": "blocage",
+   "etat": 0
+  },
+  {
+   "a": 1.55,
+   "b": 2.87,
+   "type": "blocage",
+   "etat": 1
+  },
+  {
+   "a": 2.87,
+   "b": 4.15,
+   "type": "blocage",
+   "etat": 2
+  },
+  {
+   "a": 4.15,
+   "b": 5.88,
+   "type": "logo",
+   "rebond": 4.98
+  },
+  {
+   "a": 5.88,
+   "b": 6.83,
+   "type": "telephone",
+   "src": "ecran-accueil-pastille-rose.mp4",
+   "depuis": 0.4,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "entree": "droite"
+  },
+  {
+   "a": 6.83,
+   "b": 7.61,
+   "type": "prof",
+   "src": "joe-salut.mp4",
+   "depuis": 0.3,
+   "zoom": [
+    1.12,
+    1.2
+   ],
+   "etiquette": "TEACHER JOE"
+  },
+  {
+   "a": 7.61,
+   "b": 8.45,
+   "type": "prof",
+   "src": "rose-salut.mp4",
+   "depuis": 0.3,
+   "zoom": [
+    1.2,
+    1.12
+   ],
+   "etiquette": "TEACHER ROSE"
+  },
+  {
+   "a": 8.45,
+   "b": 10.63,
+   "type": "telephone",
+   "src": "ecran-choix-du-professeur.mp4",
+   "depuis": 2.65,
+   "zoom": [
+    1.0,
+    1.18
+   ],
+   "entree": "bas"
+  },
+  {
+   "a": 10.63,
+   "b": 12.65,
+   "type": "prof",
+   "src": "joe-sourire.mp4",
+   "depuis": 0.2,
+   "zoom": [
+    1.05,
+    1.22
+   ]
+  },
+  {
+   "a": 12.65,
+   "b": 13.81,
+   "type": "duo",
+   "haut": "joe-ecoute.mp4",
+   "bas": "rose-ecoute.mp4",
+   "depuis": 0.8
+  },
+  {
+   "a": 13.81,
+   "b": 15.37,
+   "type": "dialogue",
+   "src": "seance-correction-douce.png",
+   "fond": "ecran-seance-correction-douce.mp4",
+   "cadre": [
+    100,
+    780,
+    960,
+    1250
+   ],
+   "puce": {
+    "a": 14.61,
+    "faux": "I go",
+    "juste": "I went"
+   }
+  },
+  {
+   "a": 15.37,
+   "b": 16.87,
+   "type": "dialogue",
+   "src": "seance-explication-en-francais.png",
+   "fond": "ecran-seance-explication-francais.mp4",
+   "cadre": [
+    70,
+    780,
+    1010,
+    1210
+   ],
+   "puce": {
+    "a": 16.29,
+    "texte": "EN FRANÇAIS"
+   }
+  },
+  {
+   "a": 16.87,
+   "b": 18.35,
+   "type": "prof",
+   "src": "rose-hochement.mp4",
+   "depuis": 0.3,
+   "zoom": [
+    1.18,
+    1.08
+   ]
+  },
+  {
+   "a": 18.35,
+   "b": 21.08,
+   "type": "telephone",
+   "src": "ecran-bouton-evaluation-gratuite.mp4",
+   "depuis": 1.35,
+   "zoom": [
+    1.0,
+    1.25
+   ],
+   "cible": [
+    540,
+    1530
+   ],
+   "badge": {
+    "a": 19.05,
+    "lignes": [
+     "ÉVALUATION ORALE",
+     "GRATUITE"
+    ]
+   }
+  },
+  {
+   "a": 21.08,
+   "b": 23.33,
+   "type": "duoLogo",
+   "src": "joe-et-rose-cote-a-cote.mp4",
+   "depuis": 0.0,
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "rebond": 21.13
+  },
+  {
+   "a": 23.33,
+   "b": 24.21,
+   "type": "prof",
+   "src": "rose-sourire.mp4",
+   "depuis": 0.4,
+   "zoom": [
+    1.1,
+    1.2
+   ]
+  },
+  {
+   "a": 24.21,
+   "b": 25.15,
+   "type": "prof",
+   "src": "joe-sourire.mp4",
+   "depuis": 1.4,
+   "zoom": [
+    1.2,
+    1.1
+   ]
+  },
+  {
+   "a": 25.15,
+   "b": 28.9,
+   "type": "fin",
+   "pulse": 25.77
+  }
+ ]
+}

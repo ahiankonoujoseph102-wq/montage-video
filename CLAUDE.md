@@ -91,6 +91,18 @@ y poser le morceau correspondant de `public/<projet>/mix.wav`, puis les enchaîn
 - **Rythme** : jamais plus de 12 s sans événement visuel (scène, transition, doré, autocollant, carton) ; à vérifier
   sur `props.json` après `preparer.py`.
 
+## Publicités (composition `PubTalkami`)
+
+Publicité courte (~29 s) montée à partir d'un kit d'images et d'une voix off, sans visage filmé : projet
+`projets/talkami-pub/` (kit copié dans `pub-kit/`, plan de montage dans `plan.json`, sources et licences dans
+`SOURCES_ET_LICENCES.md`). `python3 scripts/pub_talkami.py` copie le kit dans `public/talkami-pub/`, écrit les props,
+traite la voix (débruitage doux, chaleur 180 Hz, clarté 3,3 kHz, désesseur, compression 3:1), compose la musique
+(synthèse, Sol mineur, 116 BPM, entrée du groupe sur le logo), place les effets et mixe à −14 LUFS (musique 16 LU sous
+la voix, +6 dB dans les respirations). Rendu : `npx remotion render src/index.ts PubTalkami … --muted`, puis ajouter
+`public/talkami-pub/mix.wav`. Zone sûre commune Facebook / Instagram / TikTok : rien au-dessus de 270 px, sous
+1 270 px ni à droite de 950 px ; sous-titres au **texte exact** de Joseph (pas la transcription), centrés sur x 500
+vers 1 165 px, mots clés en orange. Jamais « intelligence artificielle », ni fausse promesse, ni faux témoignage.
+
 ## Méthode pour chaque vidéo (à suivre dans l'ordre)
 
 1. **Il envoie un lien Google Drive** et, s'il l'a, son script.
