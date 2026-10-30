@@ -53,6 +53,9 @@ COUPES = [("rushes/20261027-153738.mp4", 238.0, 239.4),
           ("rushes/20261027-153738.mp4", 890.7, 894.8),
           ("voix/recapitulatif.mp4", 152.2, 159.3)]        # « Six : envoyez-moi… de l'information » (redit ensuite correctement)   # 1re prise de « Je vous le dis franchement… »             # 1re prise de « Je copie sa réponse, je l'envoie… »
 
+# Mot dit autrement que dans le script (les sous-titres suivent ce qui est dit).
+DIT = {"P1.1": ("Bonjour", "Salut")}
+
 # Début forcé d'une phrase (mot de trop juste avant) : « Et 4. » avant « Une erreur arrive ».
 DEBUT_FORCE = {"E4.101": 519.80}
 
@@ -151,7 +154,7 @@ VIDEO_1B = [
     ("phrases", "E4.101", "E4.104", carte("Les erreurs sont normales", "🙂", [("Pas de panique", "panique"), ("Montrez-la au chef de projet", "montrez"), ("La discipline fait la différence", "discipline")])),
     ("phrases", "E5.31", "E5.35", ecran(E, 125, 250, "Temps 1 : la consigne envoyée à Claude Code")),
     ("phrases", "E5.36", "E5.38", ecran(E, 250, 293, "Une erreur : le cahier des charges oublié")),
-    ("phrases", "E5.39", "E5.49", ecran(F, 9, 95, "Le plan validé, avec 3 corrections")),
+    ("phrases", "E5.39", "E5.49", ecran(F, 9, 81, "Le plan validé, avec 3 corrections")),
     chapitre(12, "Récapitulatif et devoir", "🎯"),
     ("phrases", "E6.1", "E6.9", carte("Ce que nous avons appris", "✅", [("Une IA = un cerveau", "cerveau"), ("Un agent IA = un employé formé", "employe"), ("Tout commence dans le bloc-notes", "bloc"), ("Claude : le cahier des charges", "claude"), ("GitHub : le coffre-fort, en privé", "github"), ("Claude Code : d'abord le plan", "plan"), ("On ne montre jamais ses clés", "cles")])),
     ("phrases", "E6.10", "E6.27", carte("Votre devoir avant la partie 2", "📝", [("1. Choisir son projet", "choisissez"), ("2. L'écrire dans le bloc-notes", "ecrivez"), ("3. Ajouter le module A à F", "ajoutez"), ("4. Créer ses comptes et un dépôt privé", "creez"), ("5. Obtenir le cahier des charges final", "donnez"), ("6. L'envoyer dans le groupe WhatsApp", "envoyez")])),

@@ -9,7 +9,7 @@ SUITES = [
     ("espère", "expert"), ("du soir mais sa subversion", "de choisir la version"), ("sa subversion", "la version"),
     ("subversion", "version"), ("aurez assez", "aurez accès"), ("avoir assez", "avoir accès"), ("voir assez", "avoir accès"),
     ("crochez", "cochez"), ("le contenu avec google", "« Continuer avec Google »"), ("continuer avec google", "« Continuer avec Google »"),
-    ("compriez", "compreniez"), ("j ai créé un", "je crée un"), ("tête des projets", "taille des projets"),
+    ("compriez", "compreniez"), ("adresse simile", "adresse e-mail"), ("une adresse similaire", "une adresse e-mail"), ("j ai créé un", "je crée un"), ("tête des projets", "taille des projets"),
     ("un chat commercial", "un chat commercial"), ("cliquez sur on ici", "cochez ici"),
 ]
 

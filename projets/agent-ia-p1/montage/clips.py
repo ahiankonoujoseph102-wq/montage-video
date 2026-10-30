@@ -89,8 +89,9 @@ def traiter(cle):
         for l in ocr(png):
             centres.append((l["y0"] + l["y1"]) / 2)
             if SENSIBLE.search(l["texte"]):
-                flous.append({"t0": max(0, t - 0.6), "t1": t + 0.6, "x": max(0, l["x0"] - 14), "y": max(0, l["y0"] - 10),
-                              "l": min(1080, l["x1"] + 14) - max(0, l["x0"] - 14), "h": l["y1"] - l["y0"] + 20, "texte": l["texte"]})
+                x0, y0 = max(0, l["x0"] - 24), max(0, l["y0"] - 58)  # la ligne au-dessus aussi (ex. suggestions du clavier sur deux lignes)
+                flous.append({"t0": max(0, t - 0.7), "t1": t + 0.7, "x": x0, "y": y0,
+                              "l": min(1080, l["x1"] + 24) - x0, "h": l["y1"] + 22 - y0, "texte": l["texte"]})
     # zone à agrandir : bande de ZONE px qui contient le plus de lignes de texte
     meilleur, zone = -1, (H - ZONE) // 2
     for y in range(0, H - ZONE + 1, 20):
@@ -100,10 +101,37 @@ def traiter(cle):
     return n, {"debut": round(debut, 3), "rush": rush, "zone": zone, "flous": flous}
 
 
+def retimer(base: str, a: float, b: float, duree: float) -> str:
+    """Version de l'extrait [a, b] (temps de la source) étirée ou accélérée à la durée exacte du plan."""
+    n = f"{base}_d{duree:.2f}"
+    sortie = OUT / f"{n}.mp4"
+    if not sortie.exists():
+        debut = max(0, a - 0.3)
+        k = duree / (b - a)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(a - debut), "-t", str(b - a), "-i", str(OUT / f"{base}.mp4"),
+                        "-vf", f"setpts=(PTS-STARTPTS)*{k:.6f},fps=30", "-an", "-c:v", "libx264", "-crf", "21", "-preset", "veryfast",
+                        "-pix_fmt", "yuv420p", str(sortie)], check=True)
+    return n
+
+
+def retimes():
+    for v in ("1A", "1B"):
+        m = json.loads((SERIE / "public" / "formation" / v / "montage.json").read_text())
+        for p in m["plans"]:
+            vis = p["visuel"]
+            if vis["mode"] == "ecran":
+                retimer(nom(vis["rush"], vis["vs"], vis["ve"]), vis["vs"], vis["ve"], round(p["fin"] - p["debut"], 2))
+            elif vis["mode"] == "muet":
+                pas = round((p["fin"] - p["debut"]) / len(vis["morceaux"]), 2)
+                for a, b, _ in vis["morceaux"]:
+                    retimer(nom(vis["rush"], a, b), a, b, pas)
+
+
 if __name__ == "__main__":
     cles = list(besoins())
     with ThreadPoolExecutor(4) as ex:
         res = dict(ex.map(traiter, cles))
     (OUT / "clips.json").write_text(json.dumps(res, ensure_ascii=False, indent=1))
+    retimes()
     for n, r in res.items():
         print(n, "zone", r["zone"], "flous", len(r["flous"]), sorted({f["texte"][:40] for f in r["flous"]})[:6])

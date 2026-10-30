@@ -164,7 +164,8 @@ const ECH = TEL.h / H_CLIP;
 const PANNEAU = {x: 900, y: 240, l: 960};
 const ZONE = 760;
 
-type Video = {clip: string; sequences: {de: number; a: number; source: number; vitesse: number}[]};
+// clip : extrait de base (flous, zone) ; fichier : vidéo jouée (extrait pré-calculé à la durée du plan, ou l'extrait de base)
+type Video = {clip: string; fichier: string; sequences: {de: number; a: number; source: number; vitesse: number; depart: number}[]};
 
 const Flous: React.FC<{clip: Clip; tc: number; ech: number; decalY?: number}> = ({clip, tc, ech, decalY = 0}) => (
   <>
@@ -187,7 +188,7 @@ const VideoClip: React.FC<{video: Video; largeur: number; decalY: number}> = ({v
     <div style={{position: 'absolute', left: 0, top: -decalY * ech, width: largeur, height: H_CLIP * ech}}>
       {video.sequences.map((s, i) => (
         <Sequence key={i} from={Math.round(s.de * FPS)} durationInFrames={Math.max(1, Math.round((s.a - s.de) * FPS))} layout="none">
-          <OffthreadVideo src={staticFile(`formation/clips/${video.clip}.mp4`)} muted startFrom={Math.round((s.source - clip.debut) * FPS)} playbackRate={s.vitesse}
+          <OffthreadVideo src={staticFile(`formation/clips/${video.fichier}.mp4`)} muted startFrom={Math.round(s.depart * FPS)}
             style={{width: largeur, height: H_CLIP * ech, position: 'absolute'}} />
         </Sequence>
       ))}
@@ -297,11 +298,13 @@ const videoDe = (p: Plan): Video | null => {
   const v = p.visuel;
   if (v.mode === 'ecran') {
     const clip = nomClip(v.rush!, v.vs!, v.ve!);
-    return {clip, sequences: [{de: p.debut, a: p.fin, source: v.vs!, vitesse: Math.max(0.1, (v.ve! - v.vs!) / Math.max(0.5, p.fin - p.debut))}]};
+    const duree = p.fin - p.debut;
+    return {clip, fichier: `${clip}_d${(Math.round(duree * 100) / 100).toFixed(2)}`, sequences: [{de: p.debut, a: p.fin, source: v.vs!, vitesse: (v.ve! - v.vs!) / duree, depart: 0}]};
   }
   if (v.mode === 'live' && p.morceaux) {
     const clip = nomClip(p.rush!, p.plage![0], p.plage![1]);
-    return {clip, sequences: p.morceaux.map((m) => ({de: m.o0, a: m.o0 + (m.s1 - m.s0), source: m.s0, vitesse: 1}))};
+    const debut = CLIPS[clip].debut;
+    return {clip, fichier: clip, sequences: p.morceaux.map((m) => ({de: m.o0, a: m.o0 + (m.s1 - m.s0), source: m.s0, vitesse: 1, depart: m.s0 - debut}))};
   }
   return null;
 };
@@ -348,7 +351,9 @@ export const Formation: React.FC<{video: '1A' | '1B'}> = ({video}) => {
     const pas = (p.fin - p.debut) / morc.length;
     const k = Math.min(morc.length - 1, Math.floor((t - p.debut) / pas));
     const [a, b, etiquette] = morc[k];
-    const v: Video = {clip: nomClip(p.visuel.rush!, a, b), sequences: [{de: p.debut + k * pas, a: p.debut + (k + 1) * pas, source: a, vitesse: (b - a) / pas}]};
+    const base = nomClip(p.visuel.rush!, a, b);
+    const pasArrondi = (Math.round(((p.fin - p.debut) / morc.length) * 100) / 100).toFixed(2);
+    const v: Video = {clip: base, fichier: `${base}_d${pasArrondi}`, sequences: [{de: p.debut + k * pas, a: p.debut + (k + 1) * pas, source: a, vitesse: (b - a) / pas, depart: 0}]};
     contenu = <Ecran key={k} p={{...p, debut: p.debut + k * pas}} t={t} video={v} titre={p.visuel.titre ?? ''} etat={etat} etape={etiquette} />;
   } else if (m === 'demo') {
     const n = Math.max(1, (p.instants ?? []).filter((x) => t >= x).length);

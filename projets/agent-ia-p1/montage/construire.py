@@ -176,7 +176,8 @@ def construire(nom: str, elements: list) -> dict:
             f0 = min(dernier["fin"] + 0.24, (min(apres) - 0.02) if apres else dernier["fin"] + 0.5)
             if liste[0] in plan.DEBUT_FORCE:
                 d0 = plan.DEBUT_FORCE[liste[0]]
-            script = [(w["texte"], ident) for ident in liste for w in PHRASES[ident]["mots"]]
+            script = [(plan.DIT[ident][1] if ident in plan.DIT and w["texte"] == plan.DIT[ident][0] else w["texte"], ident)
+                      for ident in liste for w in PHRASES[ident]["mots"]]
             suite = [j for o in ORDRE[pos1 + 1:pos1 + 13] if PHRASES[o]["source"] == s.chemin for j in normaliser(PHRASES[o]["texte"])]
             gardees, mots_u = garder_sans_reprises(s, d0, f0, script, suite)
             mots_el += placer(asm, s, gardees, mots_u, script)
