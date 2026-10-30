@@ -24,3 +24,11 @@ Retélécharger : `curl -sSL -o <fichier> "https://drive.usercontent.google.com/
 | `chef-de-projet.mp4` (3 min 13, non versionné) | 1n4jJSssZ0saegmNyRZc3zk5WMIUlS0GW | Écran R1 : défilement de la conversation du chef de projet (e-mail et numéros à flouter ; dernière phrase dite à couper) |
 
 Manquent : enregistrements 1 (introduction de 1A) et 2 (fin de 1A). À couper au montage : « Et 4. » avant « Une erreur arrive » (audio-1346, 8 min 39), reprises de l'enregistrement 6.
+
+## Reçus le 30 octobre (version 2)
+
+| Fichier (`projets/agent-ia-p1/voix/`) | Id Google Drive | Contenu |
+|---|---|---|
+| `voix-off-demos.m4a` (3 min 47, versionné) | 1RO9wL9qjwLNxzSyOsZ0x17-UokhopXI- | Voix off des démos (`a_enregistrer_v2.md`), titres de section lus aussi (à couper) |
+| `talkami-catalogue.mp4` (12 min, 1080 × 1920, non versionné) | 1muAqbeZhqYQHqbCZjIgkxDy1gD4GHBDr | Catalogue des écrans de Talkami (accueil, évaluation, séance, niveau, Mon espace, formules, attestation) |
+| `talkami-video.mp4` (1 min 58, 528 × 944, non versionné) | 1VJPGHeuMyc3RMlXxVwXPzxh7F3d-_SYu | Leçon de Teacher Joe avec le tableau (« At the Market »), avec le son |
