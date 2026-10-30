@@ -11,7 +11,7 @@ synchronisées. Il apparaît en grand dans les passages « face caméra », et e
 | 3 | Voix off W1 à W30 (explications du cas pratique) | 1B | ~3 min |
 | 4 | Écran R1 : les questions du chef de projet | 1B | 1 à 2 min |
 | 5 | Écran R2 : le module E (**après R1**, car il ajoute des messages dans la conversation filmée par R1) | 1B | ~2 min |
-| 6 | Voix de l'avatar : clôture 1B, avec le récapitulatif et le devoir (**quand tu as validé le devoir**) | 1B | ~2 min |
+| 6 | Voix de l'avatar : clôture 1B, avec le récapitulatif et le devoir | 1B | ~2 min |
 
 Les parties 1 à 39 sont déjà enregistrées : c'est ta lecture du 27 octobre, que l'avatar dira avec ta voix.
 L'ouverture de 1A (« Bonjour à tous… », parties 1 à 3) en fait partie, il n'y a donc rien à refaire.
@@ -277,7 +277,7 @@ Avant de commencer : active « Ne pas déranger » et ferme Google Keep, pour qu
 
 ## Étape 6 — Voix de l'avatar : clôture de 1B (récapitulatif, devoir, fin)
 
-À enregistrer **après avoir validé le devoir** (voir `devoir.md`). À l'écran, chaque point s'affiche avec une icône
+Le devoir est validé (voir `devoir.md`) : tu peux l'enregistrer. À l'écran, chaque point s'affiche avec une icône
 et se coche pendant que l'avatar le dit.
 
 ### Récapitulatif
@@ -290,7 +290,7 @@ et se coche pendant que l'avatar le dit.
 - **C7** — Et une règle pour toujours : on ne montre jamais ses clés.
 
 ### Le devoir
-- **C8** — Avant la partie 2, voici votre devoir. Cinq étapes, toutes dans votre guide.
+- **C8** — Avant la partie 2, voici votre devoir. Six étapes, toutes dans votre guide.
 - **C9** — Un : choisissez votre projet. Votre activité, ou celle d'un proche, et le type d'agent qui l'aiderait le plus.
 - **C10** — Deux : écrivez votre projet dans votre bloc-notes. Description libre, ou fiche de base du guide : c'est vous qui choisissez.
 - **C11** — Notez au moins dix vraies questions de vos clients, avec les bonnes réponses. Et ce que l'agent ne doit jamais dire.
@@ -299,6 +299,8 @@ et se coche pendant que l'avatar le dit.
 - **C14** — Cinq : donnez votre texte à Claude, avec le message du guide, et obtenez votre cahier des charges final.
 - **C15** — Vérifiez-le avec la liste « Avant de passer à la construction », à la fin du chapitre 6 du guide. Et gardez-le précieusement.
 - **C16** — Dans la partie 2, nous le donnerons à Claude Code pour construire votre agent.
+- **C16b** — Six : envoyez-moi votre cahier des charges dans le groupe WhatsApp de la formation, avant la partie 2. Je le corrigerai.
+- **C16c** — Avant d'envoyer, vérifiez qu'il n'y a ni clé, ni mot de passe.
 
 ### Fin
 - **C17** — Bravo pour votre travail. La suite arrive très bientôt !

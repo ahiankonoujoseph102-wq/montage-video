@@ -124,12 +124,21 @@ La partie 1 couvre le script **de la partie 1 à la partie 68** et s'arrête qua
 ## 6. Décisions de Joseph (30 octobre, mises à jour)
 
 - Deux vidéos : **1A « Comprendre »** (chapitres 0 à 5) et **1B « Préparer son projet »** (chapitres 6 à 12).
-- **Pas de face caméra filmé.** C'est son **avatar en dessin animé** qui présente, avec sa voix et les lèvres
-  synchronisées : en grand dans les passages « face caméra » (parties 1 à 39, introductions, clôtures), en petit dans un
-  coin pendant les écrans. Il existe une seule source dans le dépôt : `projets/talkami-pub/elements/avatar-joseph.mp4`
-  (branche `claude/great-heisenberg-8p7tj4`), 320 × 320, 6 s, bouche qui bouge sans synchronisation. Il faut donc le
-  **redessiner en vectoriel** (visage fidèle, buste, 8 formes de bouche calées sur la voix, clignements, petits mouvements
-  de tête), ou repartir d'une image d'origine en grand si Joseph l'a.
+- **Pas de face caméra filmé.** C'est **Coach Joseph** qui présente, avec la voix de Joseph et les lèvres
+  synchronisées : en grand dans les passages « face caméra » (parties 1 à 39, introductions, clôtures), en médaillon
+  doré dans un coin pendant les écrans.
+- **Où se trouve Coach Joseph** : dépôt `montage-videos`, dossier `serie-animee/` (dernière branche :
+  `claude/pub-formation-v2`). C'est le « double » 2D de la série animée Lomé IA School (`src/v2d/Double2D.tsx`,
+  animation `src/commun/animationDouble.ts`, décor `src/v2d/Decor2D.tsx`, médaillon doré `src/episodes/ep02/elements.tsx`,
+  mode d'emploi `serie-animee/CLAUDE.md`). L'avatar rond des vidéos Talkami
+  (`projets/talkami-pub/elements/avatar-joseph.mp4`) est un gros plan de ce même personnage.
+- **Méthode reprise** : 9 formes de bouche (X, A…H), une image d'avance, bouche au repos dans les silences, gestes et
+  expressions calés sur les mots, clignements, respiration, mouvements de tête, son final à −14 LUFS (`outils/finaliser.py`).
+  La série calcule les formes de bouche avec Rhubarb Lip Sync : son téléchargement a été **bloqué** sur cette machine.
+  Le test utilise donc `test-avatar/visemes_fr.py` (sons du français tirés des mots horodatés, calés sur l'énergie
+  de la voix).
+- **Test validé à faire voir** : `livrable/test-coach-joseph.mp4` (11,4 s, 1920 × 1080), composition
+  `FormationTestAvatar` (`test-avatar/TestAvatar.tsx`).
 - Pédagogie : illustrations, schémas animés, flèches, zooms, emojis, titres de chapitres, avec la source et la licence de
   chaque élément.
 - Introduction animée « Formation : Comment créer un agent IA, de A à Z — Première partie — Partie 1A / 1B ».

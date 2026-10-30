@@ -37,10 +37,11 @@ Tout s'appuie sur le guide « Préparer son agent IA ». Durée estimée pour l'
   - on sait à quoi on verra qu'il marche.
 - Le copier dans son bloc-notes et le garder : c'est lui qu'on donnera à Claude Code dans la partie 2.
 
+## 📤 Étape 6 — M'envoyer son cahier des charges
+- Envoyer son cahier des charges final **dans le groupe WhatsApp de la formation**, avant la partie 2, pour que Joseph le corrige.
+- Avant d'envoyer : vérifier qu'il n'y a ni clé, ni mot de passe, ni code reçu par SMS.
+
 ## ✅ Fin de la vidéo
 « Bravo pour votre travail. La suite arrive très bientôt ! »
 
----
-
-**Une question pour toi :** veux-tu que les élèves t'envoient leur cahier des charges (par exemple sur le WhatsApp de
-l'école) pour que tu le corriges ? Si oui, j'ajoute une phrase à la fin. Sinon, le devoir reste personnel.
+**Validé par Joseph le 30 octobre.**
