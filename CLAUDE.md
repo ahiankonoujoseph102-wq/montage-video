@@ -91,7 +91,7 @@ y poser le morceau correspondant de `public/<projet>/mix.wav`, puis les enchaîn
 - **Rythme** : jamais plus de 12 s sans événement visuel (scène, transition, doré, autocollant, carton) ; à vérifier
   sur `props.json` après `preparer.py`.
 
-## Publicités (composition `PubTalkami3`, la v1 `PubTalkami` et la v2 violette `PubTalkami2` sont abandonnées)
+## Publicités (composition `PubTalkami3` = la v1 `PubTalkami` optimisée ; la v2 violette `PubTalkami2` est abandonnée)
 
 Version en cours (v3) : style bleu de la v1, **bande fixe de sous-titres en bas** (1 290 → 1 920 px, sous-titres vers
 1 392 px, jamais sur un écran ni un visage), **téléphones géants** (écran à 78 %, qui glissent et zooment derrière la
