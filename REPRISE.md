@@ -8,6 +8,11 @@ Partie 1 de la formation « Comment créer un agent IA, de A à Z » (16:9, 1920
 Rushes téléchargés et transcrits (`projets/agent-ia-p1/rushes/README.md` pour les liens, `transcriptions/`),
 script et guide en `.docx` + `.txt`. **Analyse et plan envoyés à Joseph, en attente de sa validation** :
 `projets/agent-ia-p1/analyse.md` (manques, coupes, flous, plan des chapitres), `voix_off.md` (blocs V1–V55, W1–W30).
+**Mise à jour (30 octobre, fin de journée)** : présentation par **Coach Joseph** (double 2D de la série animée,
+dépôt `montage-videos`, `serie-animee/`, branche `claude/pub-formation-v2`) ; test de 11 s validé
+(`livrable/test-coach-joseph.mp4`, code dans `projets/agent-ia-p1/test-avatar/`), bouche par `visemes_fr.py` (validée,
+Rhubarb non utilisé). Devoir validé (`devoir.md`). **En attente : les voix off de Joseph** (`a_enregistrer.md`, étapes 1 à 6),
+puis montage 1A et 1B.
 Transcription : PyAV récent refuse `metadata_errors` → passer à Whisper l'audio décodé par ffmpeg (tableau numpy).
 
 ## État exact

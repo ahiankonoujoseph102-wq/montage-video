@@ -137,7 +137,8 @@ La partie 1 couvre le script **de la partie 1 à la partie 68** et s'arrête qua
   La série calcule les formes de bouche avec Rhubarb Lip Sync : son téléchargement a été **bloqué** sur cette machine.
   Le test utilise donc `test-avatar/visemes_fr.py` (sons du français tirés des mots horodatés, calés sur l'énergie
   de la voix).
-- **Test validé à faire voir** : `livrable/test-coach-joseph.mp4` (11,4 s, 1920 × 1080), composition
+- **Validé par Joseph le 30 octobre** : Coach Joseph en grand et en médaillon, et la bouche calculée par `visemes_fr.py` (garder cette méthode, sans Rhubarb).
+- **Test** : `livrable/test-coach-joseph.mp4` (11,4 s, 1920 × 1080), composition
   `FormationTestAvatar` (`test-avatar/TestAvatar.tsx`).
 - Pédagogie : illustrations, schémas animés, flèches, zooms, emojis, titres de chapitres, avec la source et la licence de
   chaque élément.
