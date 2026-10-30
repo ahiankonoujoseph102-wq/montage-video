@@ -1,0 +1,387 @@
+[
+ {
+  "debut": 2.7,
+  "fin": 6.5,
+  "texte": "Formation. Comment créer un agent IA de A à Z.",
+  "mots": [
+   {
+    "mot": "Formation.",
+    "debut": 2.7,
+    "fin": 3.64,
+    "proba": 0.97
+   },
+   {
+    "mot": "Comment",
+    "debut": 3.92,
+    "fin": 4.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "créer",
+    "debut": 4.32,
+    "fin": 4.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 4.68,
+    "fin": 4.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "agent",
+    "debut": 4.98,
+    "fin": 5.22,
+    "proba": 0.99
+   },
+   {
+    "mot": "IA",
+    "debut": 5.22,
+    "fin": 5.62,
+    "proba": 0.99
+   },
+   {
+    "mot": "de",
+    "debut": 5.62,
+    "fin": 5.88,
+    "proba": 0.99
+   },
+   {
+    "mot": "A",
+    "debut": 5.88,
+    "fin": 6.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 6.1,
+    "fin": 6.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "Z.",
+    "debut": 6.28,
+    "fin": 6.5,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 6.98,
+  "fin": 9.26,
+  "texte": "Première partie. Partie 1A.",
+  "mots": [
+   {
+    "mot": "Première",
+    "debut": 6.98,
+    "fin": 7.52,
+    "proba": 0.99
+   },
+   {
+    "mot": "partie.",
+    "debut": 7.52,
+    "fin": 7.92,
+    "proba": 1.0
+   },
+   {
+    "mot": "Partie",
+    "debut": 8.24,
+    "fin": 8.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "1A.",
+    "debut": 8.82,
+    "fin": 9.26,
+    "proba": 0.99
+   }
+  ]
+ },
+ {
+  "debut": 10.22,
+  "fin": 16.26,
+  "texte": "Comprendre. C'est la fin de la partie 1A.",
+  "mots": [
+   {
+    "mot": "Comprendre.",
+    "debut": 10.22,
+    "fin": 10.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "C",
+    "debut": 13.2,
+    "fin": 13.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 13.86,
+    "fin": 13.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 13.94,
+    "fin": 14.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "fin",
+    "debut": 14.08,
+    "fin": 14.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 14.36,
+    "fin": 14.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 14.64,
+    "fin": 14.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 14.98,
+    "fin": 15.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "1A.",
+    "debut": 15.78,
+    "fin": 16.26,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 16.56,
+  "fin": 19.52,
+  "texte": "Dans la partie 1B, on passe à la pratique.",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 16.56,
+    "fin": 17.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 17.02,
+    "fin": 17.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "partie",
+    "debut": 17.16,
+    "fin": 17.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "1B,",
+    "debut": 17.52,
+    "fin": 17.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 18.18,
+    "fin": 18.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "passe",
+    "debut": 18.4,
+    "fin": 18.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 18.84,
+    "fin": 19.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 19.0,
+    "fin": 19.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "pratique.",
+    "debut": 19.14,
+    "fin": 19.52,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 19.84,
+  "fin": 23.04,
+  "texte": "Vous allez me voir préparer un vrai projet d'agent.",
+  "mots": [
+   {
+    "mot": "Vous",
+    "debut": 19.84,
+    "fin": 20.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "allez",
+    "debut": 20.2,
+    "fin": 20.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "me",
+    "debut": 20.46,
+    "fin": 20.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "voir",
+    "debut": 20.84,
+    "fin": 21.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "préparer",
+    "debut": 21.16,
+    "fin": 21.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "un",
+    "debut": 21.78,
+    "fin": 22.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "vrai",
+    "debut": 22.0,
+    "fin": 22.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "projet",
+    "debut": 22.2,
+    "fin": 22.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "d",
+    "debut": 22.56,
+    "fin": 22.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "'agent.",
+    "debut": 22.7,
+    "fin": 23.04,
+    "proba": 0.98
+   }
+  ]
+ },
+ {
+  "debut": 23.2,
+  "fin": 26.04,
+  "texte": "Du bloc-notes jusqu'au plan de construction.",
+  "mots": [
+   {
+    "mot": "Du",
+    "debut": 23.2,
+    "fin": 23.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "bloc",
+    "debut": 23.66,
+    "fin": 24.0,
+    "proba": 0.97
+   },
+   {
+    "mot": "-notes",
+    "debut": 24.0,
+    "fin": 24.36,
+    "proba": 0.75
+   },
+   {
+    "mot": "jusqu",
+    "debut": 24.36,
+    "fin": 24.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "'au",
+    "debut": 24.52,
+    "fin": 24.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "plan",
+    "debut": 24.98,
+    "fin": 25.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 25.34,
+    "fin": 25.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "construction.",
+    "debut": 25.52,
+    "fin": 26.04,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 26.64,
+  "fin": 28.42,
+  "texte": "Prenez votre guide et on continue.",
+  "mots": [
+   {
+    "mot": "Prenez",
+    "debut": 26.64,
+    "fin": 27.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "votre",
+    "debut": 27.04,
+    "fin": 27.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "guide",
+    "debut": 27.24,
+    "fin": 27.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 27.52,
+    "fin": 27.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 27.88,
+    "fin": 28.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "continue.",
+    "debut": 28.04,
+    "fin": 28.42,
+    "proba": 1.0
+   }
+  ]
+ }
+]

@@ -1,0 +1,7 @@
+[00:02.70] Formation. Comment créer un agent IA de A à Z.
+[00:06.98] Première partie. Partie 1A.
+[00:10.22] Comprendre. C'est la fin de la partie 1A.
+[00:16.56] Dans la partie 1B, on passe à la pratique.
+[00:19.84] Vous allez me voir préparer un vrai projet d'agent.
+[00:23.20] Du bloc-notes jusqu'au plan de construction.
+[00:26.64] Prenez votre guide et on continue.

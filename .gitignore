@@ -9,3 +9,8 @@ projets/*/source_complet.mp4
 projets/*/ancienne.mp4
 projets/*/rushes/*.mp4
 projets/*/voix/*.mp4
+projets/*/montage/sorties/voix/
+projets/*/montage/sorties/ocr/
+projets/*/montage/sorties/unites/
+projets/*/montage/sorties/trans_complet/
+projets/*/montage/__pycache__/
