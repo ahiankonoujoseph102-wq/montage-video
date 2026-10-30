@@ -61,6 +61,9 @@
     attribution, modification permise : https://undraw.co/license) ; recolorée (peau brune, accent or) :
     `code-contribution-recolore.svg` → `serie-animee/public/formation/illus/code-contribution.svg`.
   - `private-files_m2bw.svg`, `secure-usb-drive_7pj5.svg` : unDraw, même licence (téléchargées, pas encore utilisées).
+  - unDraw, même licence : chat-with-ai, idea-to-plan, project-flow, ai-code-generation, deploy-globally, database-tables,
+    ai-agent, plug-in, authentication, ai-answers, books, agentic-network, starting-work, road-to-knowledge, lecture
+    (`https://cdn.undraw.co/illustration/<nom>.svg`).
   - Coffre-fort, frise des versions, carte du dépôt : dessinés dans le code (`Essai.tsx`).
   - Wikimedia Commons : API bloquée (429) depuis l'environnement ; Pexels/Pixabay : pages bloquées (403).
 
@@ -77,6 +80,24 @@ Voir la fin de `projets/agent-ia-p1/plan_v2.md` : séance Talkami (60–90 s, av
 - Rendu : `npx remotion bundle src/index.ts --out-dir $SP/bundle && npx remotion render $SP/bundle EssaiV2 $SP/brut-essai.mp4
   --concurrency=4 --crf=18 --audio-codec=aac --audio-bitrate=192k && python3 -I outils/finaliser.py $SP/brut-essai.mp4 out/essai-v2.mp4`
 - Démo GitHub (rush H) : vers 187 s Joseph ouvre le menu de Chrome par erreur → l'étape « Privé » s'arrête à 186,6 s.
+
+
+## Version 2 complète : comment c'est construit (étape 3)
+
+- Plan : `projets/agent-ia-p1/montage/plan2.py` (`VIDEO_1A`, `VIDEO_1B`). Éléments : `("phrases", id0, id1, visuel)` (voix du
+  script, cartes avec Coach Joseph ; `illus(...)` = carte avec illustration), `chapitre(...)`, `("demo", rush, [et(...)], {"titre"})` :
+  démonstration pas à pas sans avatar. `et(m, v, b, …)` : morceaux du rush (vitesse 1 ou ralentis, jamais accélérés), voix
+  (`vo(a, b)` = voix off des démos, `ph(id0, id1)` = phrases du script, `LIVE` = parole en direct, `SON` = son de la vidéo),
+  bandeau `b`, cercles `c`, zooms `z`, `note`, `flou` (mots de passe, clés, codes SMS seulement), `rush=` pour changer de vidéo.
+- Touchers repérés automatiquement (rond gris « Afficher les appuis ») : `montage/touchers.py <rush>` → `sorties/touchers/` ;
+  les appuis sur le clavier (y > 1650) sont ignorés.
+- Construction : `cd projets/agent-ia-p1/montage && PLAN=plan2 python3 construire.py 2A` (puis `2B`) → `serie-animee/public/formation/2A/` ;
+  extraits des étapes : `python3 clips2.py 2A` → `public/formation/etapes/` ; bouche : `python3 bouche.py 2A`.
+- Composition Remotion `Formation2A` / `Formation2B` (`src/formation/Formation2.tsx`, copie dans `formation-src/`).
+- Contrôle : `node outils/stills_formation.mjs <bundle> Formation2A <dossier> <t1,t2,…>` (images à mi-résolution) ;
+  planche d'un rush : `python3 montage/planche.py <video> <debut> <fin> <pas> <sortie.jpg>`.
+- Illustrations des 10 mots : unDraw (licence libre, voir plus haut), recolorées (`illustrations/`, copie dans
+  `serie-animee/public/formation/illus/`) ; `laravel-cloud.jpg` = image du rush I (188 s).
 
 ## Relancer le rendu (version 1, à adapter en v2)
 

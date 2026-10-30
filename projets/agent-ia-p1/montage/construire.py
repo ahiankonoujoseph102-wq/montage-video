@@ -9,7 +9,9 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import plan  # noqa: E402
+import importlib  # noqa: E402
+import os  # noqa: E402
+plan = importlib.import_module(os.environ.get('PLAN', 'plan2'))  # noqa: E402
 import difflib  # noqa: E402
 
 from aligner import canon  # noqa: E402
@@ -154,6 +156,147 @@ def placer(asm, s, gardees, mots_u, script) -> list[dict]:
     return out
 
 
+def voix_phrases(asm, src, id0: str, id1: str) -> list[dict]:
+    """Phrases du script id0 → id1 (meilleure prise, reprises retirées) ; renvoie les mots placés."""
+    liste = ids(id0, id1)
+    s = src(PHRASES[liste[0]]["source"])
+    premier, dernier = PHRASES[liste[0]], PHRASES[liste[-1]]
+    pos0, pos1 = ORDRE.index(liste[0]), ORDRE.index(liste[-1])
+    avant = [PHRASES[o]["fin"] for o in ORDRE[max(0, pos0 - 3):pos0] if PHRASES[o]["source"] == s.chemin and PHRASES[o]["fin"] <= premier["debut"]]
+    apres = [PHRASES[o]["debut"] for o in ORDRE[pos1 + 1:pos1 + 4] if PHRASES[o]["source"] == s.chemin and PHRASES[o]["debut"] >= dernier["fin"]]
+    d0 = max(premier["debut"] - 0.14, (max(avant) + 0.02) if avant else 0)
+    f0 = min(dernier["fin"] + 0.24, (min(apres) - 0.02) if apres else dernier["fin"] + 0.5)
+    if liste[0] in plan.DEBUT_FORCE:
+        d0 = plan.DEBUT_FORCE[liste[0]]
+    script = [(plan.DIT[ident][1] if ident in plan.DIT and w["texte"] == plan.DIT[ident][0] else w["texte"], ident)
+              for ident in liste for w in PHRASES[ident]["mots"]]
+    suite = [j for o in ORDRE[pos1 + 1:pos1 + 13] if PHRASES[o]["source"] == s.chemin for j in normaliser(PHRASES[o]["texte"])]
+    gardees, mots_u = garder_sans_reprises(s, d0, f0, script, suite)
+    return placer(asm, s, gardees, mots_u, script)
+
+
+# ---------------------------------------------------------------- démonstrations pas à pas (version 2)
+VO = "voix/voix-off-demos.m4a"
+MOTS_VO = [w for seg in json.loads((PROJET / "voix" / "transcriptions" / "voix-off-demos.json").read_text()) for w in seg["mots"]]
+CORRIGE_VO = [(r"^cloud$", "Claude"), (r"^cloud\.$", "Claude."), (r"^[Cc]loud ?code([.,]?)$", r"Claude Code\1"), (r"^K[ée]k[ée]li([.,]?)$", r"Kekeli\1"),
+              (r"^Titiadio\.$", "Teacher Joe."), (r"^d'argent\.?$", "d'agent."), (r"^d'argent$", "d'agent"), (r"^confort$", "coffre-fort"),
+              (r"^continue$", "Continuer"), (r"^Validez\.$", "« Validé,"), (r"^Lance\.$", "lance. »"), (r"^ces$", "ses"), (r"^un\.$", "an."),
+              (r"^cloud\.ai\.$", "claude.ai.")]
+RUSH_CADRE = {"talkami-catalogue": (0, 1920, 1080), "talkami-video": (0, 944, 528)}  # haut, hauteur, largeur ; sinon téléphone
+
+
+def cadre(rush: str):
+    haut, h, w = RUSH_CADRE.get(Path(rush).stem, (140, 2160, 1080))
+    return haut, h, w
+
+
+def mots_vo(v0: float, v1: float, decalage: float, ident: str) -> list[dict]:
+    out = []
+    for w in MOTS_VO:
+        if v0 - 0.05 <= w["d"] < v1:
+            txt = w["m"].strip()
+            if out and txt[:1] in "'." and txt not in (".",):
+                out[-1]["texte"] += txt
+                out[-1]["fin"] = round(w["f"] + decalage, 3)
+                continue
+            out.append({"texte": txt, "debut": round(w["d"] + decalage, 3), "fin": round(w["f"] + decalage, 3), "phrase": ident})
+    for m in out:
+        m["texte"] = m["texte"].replace("cloud code", "Claude Code").replace("Cloudcode", "Claude Code")
+        for motif, rempl in CORRIGE_VO:
+            m["texte"] = re.sub(motif, rempl, m["texte"])
+    # « cloud code » en deux mots
+    for i in range(len(out) - 1):
+        if out[i]["texte"] in ("Claude", "cloud") and out[i + 1]["texte"].lower().startswith("code"):
+            out[i]["texte"] = "Claude"
+            out[i + 1]["texte"] = "Code" + out[i + 1]["texte"][4:]
+    return out
+
+
+def touchers_auto(rush: str) -> list:
+    f = Path(__file__).resolve().parent / "sorties" / "touchers" / f"{Path(rush).stem}.json"
+    return json.loads(f.read_text()) if f.exists() else []
+
+
+def vers_clip(morceaux, ts):
+    o = 0.0
+    for a, b, v in morceaux:
+        if a - 1e-3 <= ts <= b + 1e-3:
+            return o + (ts - a) / v
+        o += (b - a) / v
+    return None
+
+
+N_DEMO = [0]
+
+
+def demo(asm, src, el):
+    """("demo", rush, [étapes], visuel) : chaque étape = morceaux du rush (vitesse 1 ou ralentis, jamais accélérés),
+    voix (voix off des démos, phrases du script, parole en direct ou son de la vidéo), bandeau, cercles et zooms."""
+    _, rush0, etapes, visuel = el
+    plans, mots = [], []
+    n_num = sum(1 for e in etapes if e.get("b", "").startswith("Étape"))
+    for k, e in enumerate(etapes):
+        rush = e.get("rush", rush0)
+        haut, hclip, wclip = cadre(rush)
+        taps = touchers_auto(rush)
+        m = e["m"]
+        morceaux = [m] if isinstance(m[0], (int, float)) else list(m)
+        morceaux = [(x[0], x[1], x[2] if len(x) > 2 else 1) for x in morceaux]
+        long_video = sum((b - a) / v for a, b, v in morceaux)
+        t0 = asm.t
+        voix = e.get("v")
+        voix = [voix] if voix and isinstance(voix[0], str) else (voix or [])
+        ident = f"demo{N_DEMO[0]}_{k}"
+        direct = any(x[0] in ("live", "son") for x in voix)
+        for x in voix:
+            if x[0] == "vo":
+                asm.silence(0.35)
+                d = asm.t
+                asm.ajouter(src(VO), x[1] - 0.08, x[2] + 0.12)
+                mots += mots_vo(x[1], x[2], d - (x[1] - 0.08), ident)
+            elif x[0] == "phrases":
+                asm.silence(0.25)
+                mots += voix_phrases(asm, src, x[1], x[2])
+            elif x[0] in ("live", "son"):
+                s = src(rush)
+                for a, b, v in morceaux:
+                    o = asm.t
+                    asm.ajouter(s, a, b)
+                    if x[0] == "live":
+                        for w in corriger_mots(transcrire(s, a, b)):
+                            if a <= w["debut"] < b:
+                                mots.append({"texte": corriger(w["mot"]), "debut": round(o + w["debut"] - a, 3),
+                                             "fin": round(o + max(w["fin"], w["debut"] + 0.08) - a, 3), "phrase": ident})
+        duree_voix = asm.t - t0
+        duree = long_video if direct else max(long_video, duree_voix + e.get("apres", 0.6), e.get("min", 0))
+        asm.silence(max(0.0, duree - (asm.t - t0)))
+        duree = asm.t - t0
+        cibles = [(ts, x, y) for ts, x, y in e.get("c", [])]
+        if e.get("auto", True):
+            for ts, x, y in taps:  # les appuis sur le clavier (bas de l'écran) ne sont pas montrés
+                if y < e.get("clavier", 1650) and vers_clip(morceaux, ts) is not None and all(abs(ts - c[0]) > 0.6 for c in cibles):
+                    cibles.append((ts, x, y))
+        cibles.sort()
+        cib = [{"t": round(t0 + vers_clip(morceaux, ts), 3), "x": x, "y": y - haut} for ts, x, y in cibles]
+        zooms = [{"t": round(t0 + (vers_clip(morceaux, ts) or 0), 3), "x": x, "y": y - haut, "f": f} for ts, x, y, f in e.get("z", [])]
+        if not zooms:
+            if cib:
+                zooms = [{"t": round(c["t"] - 0.9, 3), "x": c["x"], "y": c["y"], "f": e.get("f", 1.6)} for c in cib]
+                zooms[0]["t"] = round(t0, 3)
+            else:
+                zooms = [{"t": round(t0, 3), "x": wclip / 2, "y": e.get("y", hclip * 0.42), "f": e.get("f", 1.2)}]
+        plans.append({"debut": round(t0, 3), "fin": round(asm.t, 3), "type": "etape",
+                      "visuel": {"mode": "etape", "titre": visuel.get("titre", ""), "bandeau": e.get("b", ""), "rush": rush,
+                                 "morceaux": morceaux, "duree": round(duree, 3), "cibles": cib, "zooms": zooms,
+                                 "haut": haut, "hclip": hclip, "wclip": wclip, "n": n_num, "son": direct, "note": e.get("note"),
+                                 "flous": [{"t0": round(t0 + (vers_clip(morceaux, a) if vers_clip(morceaux, a) is not None else 0), 3),
+                                            "t1": round(t0 + (vers_clip(morceaux, b) if vers_clip(morceaux, b) is not None else duree), 3),
+                                            "x": x, "y": y - haut, "l": l, "h": h} for a, b, x, y, l, h in e.get("flou", [])],
+                                 "fichier": f"{Path(rush).stem}_{'_'.join(f'{a:.2f}-{b:.2f}x{v}' for a, b, v in morceaux)}_d{duree:.2f}"}})
+    N_DEMO[0] += 1
+    return plans, mots
+
+
 def construire(nom: str, elements: list) -> dict:
     sources: dict[str, Source] = {}
     src = lambda c: sources.setdefault(c, Source(c))  # noqa: E731
@@ -166,6 +309,14 @@ def construire(nom: str, elements: list) -> dict:
         morceaux_video = []
         mots_el = []
         if el[0] == "phrases":
+            mots_el += voix_phrases(asm, src, el[1], el[2])
+        elif el[0] == "demo":
+            p_demo, m_demo = demo(asm, src, el)
+            plans += p_demo
+            mots += m_demo
+            asm.silence(0.3)
+            continue
+        elif el[0] == "PHRASES_ANCIEN":
             liste = ids(el[1], el[2])
             s = src(PHRASES[liste[0]]["source"])
             premier, dernier = PHRASES[liste[0]], PHRASES[liste[-1]]
@@ -244,7 +395,7 @@ def construire(nom: str, elements: list) -> dict:
 
 if __name__ == "__main__":
     nom = sys.argv[1]
-    data = construire(nom, plan.VIDEO_1A if nom == "1A" else plan.VIDEO_1B)
+    data = construire(nom, plan.VIDEO_1A if nom.endswith("A") else plan.VIDEO_1B)
     sortie = SERIE / "public" / "formation" / nom / "montage.json"
     sortie.write_text(json.dumps({k: v for k, v in data.items() if k != "carte_voix"}, ensure_ascii=False))
     (Path(__file__).resolve().parent / "sorties" / f"reprises_{nom}.txt").write_text("\n".join(JOURNAL))
