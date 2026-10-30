@@ -3,12 +3,14 @@
 À lire avec `CLAUDE.md` (méthode, style, son, bibliothèque des scènes illustrées), qui fait foi.
 ## En cours : publicité Talkami (30 octobre)
 
-- Projet `talkami-pub` : kit complet et voix off copiés dans le dépôt (`projets/talkami-pub/pub-kit/`, le dépôt
-  Talkami redevient privé début novembre). Plan dans `plan.json`, composition `PubTalkami` (`src/pub/`).
-- Aperçu validé par Joseph. **Version finale livrée** : `projets/talkami-pub/livrable/talkami-pub-finale-1080x1920.mp4`
-  (28,9 s, 1080 × 1920, 30 i/s, 20,3 Mo, −14,0 LUFS, crête −2,4 dB).
-- Commandes : `python3 scripts/pub_talkami.py`, puis le rendu (voir CLAUDE.md, « Publicités »).
-
+- Projet `talkami-pub` : kit et voix off d'origine copiés dans le dépôt (`projets/talkami-pub/pub-kit/`).
+- v1 (composition `PubTalkami`) **refusée** par Joseph : pas assez professionnelle ni captivante.
+- **v2 en aperçu, en attente de son avis** : voix v2 (`scripts/voix_pub.py`, comparaison dans
+  `projets/talkami-pub/voix-v2/comparaison.md`), montage refait dans le style de sa vidéo « histoire de Talkami »
+  (Drive `1qywjWMJD0Vi8mDuwghEjbbK3uETcLO4f`, téléchargée dans `projets/talkami-histoire/`, non versionnée) :
+  composition `PubTalkami2`, `python3 scripts/pub_talkami2.py` (props-v2 + mix-v2), 27 s.
+- Après accord : rendu 1080 × 1920 (`npx remotion render src/index.ts PubTalkami2 … --props=public/talkami-pub/props-v2.json --muted`
+  + `public/talkami-pub/mix-v2.wav`), moins de 30 Mo.
 
 ## État exact
 

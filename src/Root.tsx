@@ -3,6 +3,7 @@ import {loadFont} from '@remotion/fonts';
 import {Composition, staticFile} from 'remotion';
 import {Montage} from './Montage';
 import {PubTalkami, PubProps} from './pub/PubTalkami';
+import {PubTalkami2, PubV2Props} from './pub/PubTalkami2';
 import {Transition, TransitionProps} from './Transition';
 import type {MontageProps} from './types';
 
@@ -17,8 +18,20 @@ const transitionExemple: TransitionProps = {avant: '', apres: '', surtitre: 'ET 
 
 const pubExemple: PubProps = {duree: 1, sousTitres: [], plans: []};
 
+const pubV2Exemple: PubV2Props = {duree: 1, mots: []};
+
 export const Root: React.FC = () => (
   <>
+  <Composition
+    id="PubTalkami2"
+    component={PubTalkami2}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={30}
+    defaultProps={pubV2Exemple}
+    calculateMetadata={({props}) => ({durationInFrames: Math.max(1, Math.round(props.duree * 30))})}
+  />
   <Composition
     id="PubTalkami"
     component={PubTalkami}

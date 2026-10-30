@@ -1,0 +1,342 @@
+[
+{
+"mot": "L",
+"debut": 0.0,
+"fin": 0.42
+},
+{
+"mot": "'anglais",
+"debut": 0.42,
+"fin": 0.7
+},
+{
+"mot": "vous",
+"debut": 0.7,
+"fin": 0.86
+},
+{
+"mot": "bloque",
+"debut": 0.86,
+"fin": 1.16
+},
+{
+"mot": "?",
+"debut": 1.16,
+"fin": 1.48
+},
+{
+"mot": "Vous",
+"debut": 1.48,
+"fin": 2.08
+},
+{
+"mot": "le",
+"debut": 2.08,
+"fin": 2.2
+},
+{
+"mot": "comprenez,",
+"debut": 2.2,
+"fin": 2.64
+},
+{
+"mot": "mais",
+"debut": 2.78,
+"fin": 2.86
+},
+{
+"mot": "vous",
+"debut": 2.86,
+"fin": 2.98
+},
+{
+"mot": "n",
+"debut": 2.98,
+"fin": 3.1
+},
+{
+"mot": "'osez",
+"debut": 3.1,
+"fin": 3.32
+},
+{
+"mot": "pas",
+"debut": 3.32,
+"fin": 3.42
+},
+{
+"mot": "le",
+"debut": 3.42,
+"fin": 3.54
+},
+{
+"mot": "parler",
+"debut": 3.54,
+"fin": 3.88
+},
+{
+"mot": "?",
+"debut": 3.88,
+"fin": 4.16
+},
+{
+"mot": "Avec",
+"debut": 4.16,
+"fin": 4.58
+},
+{
+"mot": "Talkami,",
+"debut": 4.58,
+"fin": 5.14
+},
+{
+"mot": "vous",
+"debut": 5.24,
+"fin": 5.36
+},
+{
+"mot": "parlez",
+"debut": 5.36,
+"fin": 5.72
+},
+{
+"mot": "anglais",
+"debut": 5.72,
+"fin": 6.1
+},
+{
+"mot": "avec",
+"debut": 6.1,
+"fin": 6.32
+},
+{
+"mot": "Tita",
+"debut": 6.32,
+"fin": 6.6
+},
+{
+"mot": "Joe",
+"debut": 6.6,
+"fin": 6.86
+},
+{
+"mot": "ou",
+"debut": 6.86,
+"fin": 7.1
+},
+{
+"mot": "Tita",
+"debut": 7.1,
+"fin": 7.36
+},
+{
+"mot": "Rose",
+"debut": 7.36,
+"fin": 7.66
+},
+{
+"mot": "directement",
+"debut": 7.66,
+"fin": 8.44
+},
+{
+"mot": "depuis",
+"debut": 8.44,
+"fin": 8.98
+},
+{
+"mot": "votre",
+"debut": 8.98,
+"fin": 9.28
+},
+{
+"mot": "téléphone,",
+"debut": 9.28,
+"fin": 9.72
+},
+{
+"mot": "même",
+"debut": 10.0,
+"fin": 10.4
+},
+{
+"mot": "si",
+"debut": 10.4,
+"fin": 10.56
+},
+{
+"mot": "vous",
+"debut": 10.56,
+"fin": 10.68
+},
+{
+"mot": "partez",
+"debut": 10.68,
+"fin": 11.04
+},
+{
+"mot": "de",
+"debut": 11.04,
+"fin": 11.16
+},
+{
+"mot": "zéro.",
+"debut": 11.16,
+"fin": 11.46
+},
+{
+"mot": "Ils",
+"debut": 11.76,
+"fin": 12.08
+},
+{
+"mot": "vous",
+"debut": 12.08,
+"fin": 12.26
+},
+{
+"mot": "écoutent,",
+"debut": 12.26,
+"fin": 12.64
+},
+{
+"mot": "corrigent",
+"debut": 12.78,
+"fin": 13.02
+},
+{
+"mot": "vos",
+"debut": 13.02,
+"fin": 13.18
+},
+{
+"mot": "erreurs",
+"debut": 13.18,
+"fin": 13.52
+},
+{
+"mot": "avec",
+"debut": 13.52,
+"fin": 13.74
+},
+{
+"mot": "douceur",
+"debut": 13.74,
+"fin": 14.24
+},
+{
+"mot": "et",
+"debut": 14.24,
+"fin": 14.62
+},
+{
+"mot": "vous",
+"debut": 14.62,
+"fin": 14.76
+},
+{
+"mot": "expliquent",
+"debut": 14.76,
+"fin": 15.16
+},
+{
+"mot": "en",
+"debut": 15.16,
+"fin": 15.26
+},
+{
+"mot": "français",
+"debut": 15.26,
+"fin": 15.68
+},
+{
+"mot": "quand",
+"debut": 15.68,
+"fin": 16.12
+},
+{
+"mot": "vous",
+"debut": 16.12,
+"fin": 16.26
+},
+{
+"mot": "bloquez.",
+"debut": 16.26,
+"fin": 16.6
+},
+{
+"mot": "Commencez",
+"debut": 16.88,
+"fin": 17.42
+},
+{
+"mot": "par",
+"debut": 17.42,
+"fin": 17.54
+},
+{
+"mot": "une",
+"debut": 17.54,
+"fin": 17.76
+},
+{
+"mot": "évaluation",
+"debut": 17.76,
+"fin": 18.18
+},
+{
+"mot": "orale",
+"debut": 18.18,
+"fin": 18.64
+},
+{
+"mot": "gratuite.",
+"debut": 18.64,
+"fin": 19.12
+},
+{
+"mot": "Talkami,",
+"debut": 19.46,
+"fin": 20.02
+},
+{
+"mot": "l",
+"debut": 20.26,
+"fin": 20.5
+},
+{
+"mot": "'anglais,",
+"debut": 20.5,
+"fin": 20.8
+},
+{
+"mot": "enfin,",
+"debut": 20.98,
+"fin": 21.3
+},
+{
+"mot": "vous",
+"debut": 21.48,
+"fin": 21.68
+},
+{
+"mot": "allez",
+"debut": 21.68,
+"fin": 21.96
+},
+{
+"mot": "oser",
+"debut": 21.96,
+"fin": 22.38
+},
+{
+"mot": "le",
+"debut": 22.38,
+"fin": 22.5
+},
+{
+"mot": "parler.",
+"debut": 22.5,
+"fin": 22.82
+}
+]
