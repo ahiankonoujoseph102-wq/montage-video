@@ -217,8 +217,8 @@ Ces textes remplacent tes explications en direct, trop rapides ou coupées, sur 
 
 ### W — Le nom de domaine
 - **W16** — Avant de garder un nom, on vérifie que le nom de domaine est libre. Je le fais sur Cloudflare.
-- **W17** — kekeli point com et kekeli point app sont déjà pris. kekeli point ai coûte trop cher pour commencer.
-- **W18a** — Le chef de projet recommande kekeli point dev, l'extension des outils de programmation.
+- **W17** — Kekeli point com et Kekeli point app sont déjà pris. Kekeli point ai coûte trop cher pour commencer.
+- **W18a** — Le chef de projet recommande Kekeli point dev, l'extension des outils de programmation.
 - **W18b** — Je ne l'achète pas encore : on l'achètera avant la mise en ligne.
 
 ### W — La base de données et le dépôt
@@ -233,7 +233,7 @@ Ces textes remplacent tes explications en direct, trop rapides ou coupées, sur 
 ### W — Temps un : le plan de Claude Code
 - **W22a** — Maintenant, le chef de projet me donne la première consigne pour Claude Code.
 - **W22b** — Je la copie, avec le cahier des charges.
-- **W23a** — Dans Claude Code, je choisis le dépôt kekeli et j'envoie. Attention : dans ce temps un, il ne construit rien.
+- **W23a** — Dans Claude Code, je choisis le dépôt Kekeli et j'envoie. Attention : dans ce temps un, il ne construit rien.
 - **W23b** — Il présente seulement son plan.
 - **W24a** — Vous voyez : j'avais oublié de coller le cahier des charges. J'arrête, je le colle, et je relance.
 - **W24b** — Les erreurs, c'est normal : on les corrige.
@@ -298,9 +298,9 @@ et se coche pendant que l'avatar le dit.
 - **C13** — Quatre : créez vos comptes Claude et GitHub, et un dépôt privé. Vérifiez le petit cadenas.
 - **C14** — Cinq : donnez votre texte à Claude, avec le message du guide, et obtenez votre cahier des charges final.
 - **C15** — Vérifiez-le avec la liste « Avant de passer à la construction », à la fin du chapitre 6 du guide. Et gardez-le précieusement.
-- **C16** — Dans la partie 2, nous le donnerons à Claude Code pour construire votre agent.
 - **C16b** — Six : envoyez-moi votre cahier des charges dans le groupe WhatsApp de la formation, avant la partie 2. Je le corrigerai.
 - **C16c** — Avant d'envoyer, vérifiez qu'il n'y a ni clé, ni mot de passe.
+- **C16** — Dans la partie 2, nous le donnerons à Claude Code pour construire votre agent.
 
 ### Fin
 - **C17** — Bravo pour votre travail. La suite arrive très bientôt !
