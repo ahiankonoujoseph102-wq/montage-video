@@ -7,7 +7,7 @@
 - **Version 1** rendue le 30 octobre 2026 : refusée par Joseph (fade, démos trop rapides, pas de Talkami, trop de coupes).
 - **Version 2** : plan `projets/agent-ia-p1/plan_v2.md` ; extrait d'essai `out/essai-v2.mp4` (composition `EssaiV2`)
   **validé par Joseph : « c'est ce style que je veux »**.
-- **Étape 3 : rendu final lancé le 31 octobre** (1A ≈ 14 min 40, 1B ≈ 18 min 10) après contrôle image par image et
+- **Étape 3 : vidéos finales v2 envoyées à Joseph le 31 octobre (en attente de son avis)** (1A ≈ 14 min 40, 1B ≈ 18 min 10) après contrôle image par image et
   corrections. Vidéos : `out/formation-1A-v2.mp4` et `out/formation-1B-v2.mp4` (non versionnées, > 80 Mo ; envoyées à
   Joseph dans la conversation ; le conteneur est effacé à la fin de la session : pour les retrouver, relancer la
   construction et le rendu, commandes ci-dessous). Aucune Release GitHub possible depuis cette session (outil absent).
