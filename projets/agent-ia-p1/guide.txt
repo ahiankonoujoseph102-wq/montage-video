@@ -1,478 +1,1087 @@
 LOMÉ IA SCHOOL
+
 Préparer son agent IA
+
 Le guide complet du cahier des charges, avec Claude comme chef de projet
+
 Pour les débutants : aucune connaissance technique n'est nécessaire.
+
 Joseph Ahiankonou · lomeiaschool.laravel.cloud · +228 72 24 02 31
-## Ce que contient ce guide
-- Pourquoi bien préparer son projet change tout.
-- Les mots techniques expliqués simplement.
-- Chemin 1 : décrire librement son idée, puis laisser Claude organiser.
-- Chemin 2 : remplir la fiche de base, champ par champ.
-- Les modules détaillés pour chaque type d'agent.
-- Donner son cahier des charges à Claude et le faire valider.
-- Les erreurs à éviter.
-- Un exemple complet rempli.
-- Les fiches vierges à copier dans le bloc-notes.
-## 1. Pourquoi bien préparer son projet change tout
+
+Ce que contient ce guide
+
+1.  Pourquoi bien préparer son projet change tout.
+
+2.  Les mots techniques expliqués simplement.
+
+3.  Chemin 1 : décrire librement son idée, puis laisser Claude organiser.
+
+4.  Chemin 2 : remplir la fiche de base, champ par champ.
+
+5.  Les modules détaillés pour chaque type d'agent.
+
+6.  Donner son cahier des charges à Claude et le faire valider.
+
+7.  Les erreurs à éviter.
+
+8.  Un exemple complet rempli.
+
+9.  Créer vos trois comptes, pas à pas.
+
+10. La sécurité de vos clés.
+
+11. Travailler avec Claude Code après le cahier des charges.
+
+12. Votre devoir avant la partie 2.
+
+13. Les fiches vierges à copier dans le bloc-notes.
+
+1. Pourquoi bien préparer son projet change tout
+
 Un agent IA, c'est comme un nouvel employé. Le premier jour, vous ne lui dites pas seulement « travaille ». Vous lui expliquez qui vous êtes, ce que vous vendez, comment parler aux clients, et ce qu'il ne doit jamais faire.
+
 C'est exactement le rôle du cahier des charges : le document qui décrit tout ce que votre agent doit savoir et faire.
+
 La règle d'or : un agent bien décrit travaille bien. Un agent mal décrit travaille mal. Si vos informations sont floues, votre agent sera flou.
-## Le travail se fait en trois temps
-- Vous écrivez votre idée dans le bloc-notes de votre téléphone.
-- Vous donnez ce texte à Claude, votre chef de projet. Il l'organise, vous pose des questions et complète ce qui manque.
-- Vous obtenez ensemble un cahier des charges clair et complet. C'est lui qui servira ensuite à construire l'agent avec Claude Code.
-## Deux chemins pour y arriver
-- Chemin 1 : la description libre. vous écrivez librement ce que vous avez dans la tête, sans ordre. Claude remet tout en ordre et vous pose les questions. C'est le plus simple si vous débutez.
-- Chemin 2 : la fiche guidée. vous suivez les questions de ce guide, une par une. C'est le plus rapide si votre idée est déjà claire.
+
+Le travail se fait en trois temps
+
+1.  Vous écrivez votre idée dans le bloc-notes de votre téléphone.
+
+2.  Vous donnez ce texte à Claude, votre chef de projet. Il l'organise, vous pose des questions et complète ce qui manque.
+
+3.  Vous obtenez ensemble un cahier des charges clair et complet. C'est lui qui servira ensuite à construire l'agent avec Claude Code.
+
+Deux chemins pour y arriver
+
+-   Chemin 1 : la description libre. vous écrivez librement ce que vous avez dans la tête, sans ordre. Claude remet tout en ordre et vous pose les questions. C'est le plus simple si vous débutez.
+
+-   Chemin 2 : la fiche guidée. vous suivez les questions de ce guide, une par une. C'est le plus rapide si votre idée est déjà claire.
+
 Conseil : Les deux chemins se rejoignent : dans les deux cas, vous terminez avec Claude, qui vérifie et complète tout. Vous ne pouvez donc pas vous tromper de chemin.
-## 2. Les mots techniques expliqués simplement
+
+2. Les mots techniques expliqués simplement
+
 Vous allez rencontrer ces mots. Pas besoin de les maîtriser : il suffit de comprendre l'idée.
-- Agent IA : une intelligence artificielle à qui on a donné un rôle, des informations et des outils, et qui agit pour vous (répondre, publier, enseigner, réserver).
-- Claude : l'IA avec laquelle vous discutez. Dans notre méthode, c'est votre chef de projet : il organise, conseille et vous guide.
-- Claude Code : l'outil qui écrit le code de votre agent, à partir des instructions préparées par votre chef de projet. Il demande un abonnement payant.
-- Cahier des charges : le document qui décrit précisément ce que l'agent doit savoir et faire.
-- Prompt : le message (l'instruction) que vous donnez à une IA.
-- GitHub : le coffre-fort où est rangé le code de votre agent. Gardez toujours votre dépôt en « privé ».
-- Hébergement : l'ordinateur sur Internet où votre agent fonctionne jour et nuit (par exemple Laravel Cloud).
-- Base de données : le grand cahier où l'agent note les informations : clients, commandes, rendez-vous, progrès des élèves.
-- Modèle d'IA : le « cerveau » de votre agent (Gemini, Claude, OpenAI…). Certains ont un palier gratuit, d'autres sont payants à l'usage.
-- API : la « prise » qui relie votre agent à un autre service : une IA, WhatsApp, un paiement, un e-mail.
-- Clé API : le mot de passe secret d'une API. Ne la montrez jamais : ni capture, ni vidéo, ni groupe WhatsApp. Quelqu'un qui l'a peut dépenser votre argent.
-- WhatsApp officiel (API) : l'accès officiel de Meta pour brancher un agent sur WhatsApp. Il demande un compte d'entreprise vérifié et chaque message envoyé est payant.
-## 3. Chemin 1 : décrire librement son idée
+
+-   Agent IA : une intelligence artificielle à qui on a donné un rôle, des informations et des outils, et qui agit pour vous (répondre, publier, enseigner, réserver).
+
+-   Claude : l'IA avec laquelle vous discutez. Dans notre méthode, c'est votre chef de projet : il organise, conseille et vous guide.
+
+-   Claude Code : l'outil qui écrit le code de votre agent, à partir des instructions préparées par votre chef de projet. Il demande un abonnement payant.
+
+-   Cahier des charges : le document qui décrit précisément ce que l'agent doit savoir et faire.
+
+-   Prompt : le message (l'instruction) que vous donnez à une IA.
+
+-   GitHub : le coffre-fort où est rangé le code de votre agent. Gardez toujours votre dépôt en « privé ».
+
+-   Hébergement : l'ordinateur sur Internet où votre agent fonctionne jour et nuit (par exemple Laravel Cloud).
+
+-   Base de données : le grand cahier où l'agent note les informations : clients, commandes, rendez-vous, progrès des élèves.
+
+-   Modèle d'IA : le « cerveau » de votre agent (Gemini, Claude, OpenAI…). Certains ont un palier gratuit, d'autres sont payants à l'usage.
+
+-   API : la « prise » qui relie votre agent à un autre service : une IA, WhatsApp, un paiement, un e-mail.
+
+-   Clé API : le mot de passe secret d'une API. Ne la montrez jamais : ni capture, ni vidéo, ni groupe WhatsApp. Quelqu'un qui l'a peut dépenser votre argent.
+
+-   WhatsApp officiel (API) : l'accès officiel de Meta pour brancher un agent sur WhatsApp. Il demande un compte d'entreprise vérifié et chaque message envoyé est payant.
+
+3. Chemin 1 : décrire librement son idée
+
 C'est le chemin le plus naturel. Vous écrivez comme vous parlez, et Claude fait le travail d'organisation.
-## Étape 1 : écrire dans le bloc-notes
+
+Étape 1 : écrire dans le bloc-notes
+
 Ouvrez le bloc-notes de votre téléphone et écrivez tout ce que vous avez en tête. Ne vous souciez ni de l'ordre, ni des fautes. Essayez au moins de répondre à ces questions :
-- Quel problème mon agent va-t-il résoudre ?
-- Pour qui travaille-t-il, et qui va lui parler ?
-- Que doit-il faire, concrètement, chaque jour ?
-- Où va-t-il travailler : site web, WhatsApp, TikTok, e-mail ?
-- Qu'est-ce que je veux obtenir grâce à lui ?
-- Combien je peux dépenser par mois ?
+
+-   Quel problème mon agent va-t-il résoudre ?
+
+-   Pour qui travaille-t-il, et qui va lui parler ?
+
+-   Que doit-il faire, concrètement, chaque jour ?
+
+-   Où va-t-il travailler : site web, WhatsApp, TikTok, e-mail ?
+
+-   Qu'est-ce que je veux obtenir grâce à lui ?
+
+-   Combien je peux dépenser par mois ?
+
 Exemple de description libre (une gérante de salon de beauté)
+
 Je veux un agent pour mon salon Belle Afi à Adidogomé.
+
 Les clientes m'écrivent sur WhatsApp toute la journée pour les prix
+
 et les rendez-vous, et je n'ai pas le temps de répondre pendant que
+
 je coiffe. Je veux qu'il réponde aux prix, propose des heures libres,
+
 note le rendez-vous et rappelle la cliente la veille. On fait tresses,
+
 perruques, manucure. Ouvert du lundi au samedi de 8 h à 19 h.
+
 Je veux qu'il soit poli et chaleureux. Pas de remise sans mon accord.
+
 Budget : pas plus de 10 000 FCFA par mois au début.
+
 Conseil : Vous pouvez aussi dicter votre texte avec le micro du clavier. Claude comprendra, même si c'est désordonné.
-## Étape 2 : donner le texte à Claude
+
+Étape 2 : donner le texte à Claude
+
 Ouvrez Claude, collez ce premier message, puis collez votre description juste en dessous :
+
 Message à copier dans Claude
+
 Tu es mon chef de projet. Je veux créer un agent IA, mais je suis
+
 débutant et je ne connais pas la technique.
+
 Voici ma description, écrite en désordre.
+
 Ton travail :
+
 1. Réorganise mon idée en un cahier des charges clair, avec des
+
 parties (identité, clients, tâches, informations, personnalité,
+
 plateforme, budget, résultat attendu).
+
 2. Repère les informations qui manquent et pose-moi les questions,
+
 une seule à la fois, avec des choix quand c'est possible.
+
 3. Quand je ne sais pas répondre, propose-moi la solution la plus
+
 simple et la moins chère pour mon projet, et explique pourquoi.
+
 4. Dis-moi franchement si une idée est trop compliquée ou trop chère.
+
 5. Réponds-moi en français simple, sans mots techniques inexpliqués.
+
 6. Ne me demande jamais de te donner une clé secrète ou un mot de passe.
+
 Voici ma description :
+
 [collez votre texte ici]
-## Étape 3 : discuter avec Claude
-- Répondez à ses questions une par une, avec vos mots.
-- Si vous ne savez pas, dites simplement « je ne sais pas, propose-moi la meilleure option ».
-- S'il propose quelque chose que vous ne voulez pas, dites-le : c'est votre projet.
-- Demandez-lui d'expliquer chaque mot technique que vous ne comprenez pas.
-## Étape 4 : obtenir le cahier des charges final
+
+Étape 3 : discuter avec Claude
+
+-   Répondez à ses questions une par une, avec vos mots.
+
+-   Si vous ne savez pas, dites simplement « je ne sais pas, propose-moi la meilleure option ».
+
+-   S'il propose quelque chose que vous ne voulez pas, dites-le : c'est votre projet.
+
+-   Demandez-lui d'expliquer chaque mot technique que vous ne comprenez pas.
+
+Étape 4 : obtenir le cahier des charges final
+
 Quand Claude n'a plus de questions, demandez-lui :
+
 Message à copier dans Claude
+
 Donne-moi maintenant le cahier des charges complet et final,
+
 bien organisé, prêt à être utilisé pour construire l'agent.
+
 Ajoute à la fin la liste des comptes et outils dont j'aurai besoin,
+
 avec ce qui est gratuit et ce qui est payant.
+
 Copiez ce cahier des charges dans votre bloc-notes et gardez-le précieusement : c'est la base de tout le projet.
-## 4. Chemin 2 : la fiche de base, champ par champ
+
+4. Chemin 2 : la fiche de base, champ par champ
+
 Cette fiche sert à TOUS les agents. Pour chaque ligne, vous trouverez pourquoi elle compte, un exemple, et quoi faire si vous ne savez pas. Ensuite, vous ajouterez le module de votre type d'agent (partie 5).
-## Partie 1 : l'identité de l'agent
+
+Partie 1 : l'identité de l'agent
+
 Nom de l'agent
-Pourquoi : un nom donne une personnalité et rend l'agent plus humain et plus facile à retenir.
-Exemple : Teacher Joe, Ama, Afi l'assistante.
-Si vous ne savez pas : écrivez « à proposer » : Claude vous proposera plusieurs noms.
+
+  Pourquoi : un nom donne une personnalité et rend l'agent plus humain et plus facile à retenir.
+
+  Exemple : Teacher Joe, Ama, Afi l'assistante.
+
+  Si vous ne savez pas : écrivez « à proposer » : Claude vous proposera plusieurs noms.
+
 Pour qui il travaille
-Pourquoi : l'agent doit savoir quelle entreprise il représente, pour en parler correctement.
-Exemple : Il travaille pour le salon Belle Afi.
+
+  Pourquoi : l'agent doit savoir quelle entreprise il représente, pour en parler correctement.
+
+  Exemple : Il travaille pour le salon Belle Afi.
+
 Son rôle en une phrase
-Pourquoi : c'est la boussole de l'agent : tout ce qu'il fait doit servir cette phrase.
-Exemple : Il répond aux clientes sur WhatsApp et prend leurs rendez-vous.
-Si vous ne savez pas : commencez par « Il aide mes clients à… ».
-## Partie 2 : votre entreprise ou votre projet
+
+  Pourquoi : c'est la boussole de l'agent : tout ce qu'il fait doit servir cette phrase.
+
+  Exemple : Il répond aux clientes sur WhatsApp et prend leurs rendez-vous.
+
+  Si vous ne savez pas : commencez par « Il aide mes clients à… ».
+
+Partie 2 : votre entreprise ou votre projet
+
 Nom, responsable, activité
-Pourquoi : l'agent doit pouvoir présenter l'entreprise et dire qui est le responsable.
-Exemple : Salon Belle Afi, gérante Afi Mensah, coiffure et beauté.
+
+  Pourquoi : l'agent doit pouvoir présenter l'entreprise et dire qui est le responsable.
+
+  Exemple : Salon Belle Afi, gérante Afi Mensah, coiffure et beauté.
+
 Adresse et horaires
-Pourquoi : les clients demandent souvent « où êtes-vous ? » et « êtes-vous ouverts ? ».
-Exemple : Adidogomé, à côté du Lycée moderne 2. Du lundi au samedi, de 8 h à 19 h.
+
+  Pourquoi : les clients demandent souvent « où êtes-vous ? » et « êtes-vous ouverts ? ».
+
+  Exemple : Adidogomé, à côté du Lycée moderne 2. Du lundi au samedi, de 8 h à 19 h.
+
 Contacts et pages
-Pourquoi : l'agent doit pouvoir donner le bon numéro, l'e-mail, le site et les réseaux.
-Exemple : WhatsApp +228 XX XX XX XX, page Facebook « Belle Afi ».
-## Partie 3 : les clients de l'agent
+
+  Pourquoi : l'agent doit pouvoir donner le bon numéro, l'e-mail, le site et les réseaux.
+
+  Exemple : WhatsApp +228 XX XX XX XX, page Facebook « Belle Afi ».
+
+Partie 3 : les clients de l'agent
+
 Qui va lui parler
-Pourquoi : on ne parle pas de la même façon à un étudiant, à une maman ou à un chef d'entreprise.
-Exemple : Des femmes de 18 à 45 ans, à Lomé, souvent pressées.
+
+  Pourquoi : on ne parle pas de la même façon à un étudiant, à une maman ou à un chef d'entreprise.
+
+  Exemple : Des femmes de 18 à 45 ans, à Lomé, souvent pressées.
+
 Dans quelle langue
-Pourquoi : l'agent doit répondre dans la langue du client.
-Exemple : Français, et quelques mots d'éwé pour saluer.
+
+  Pourquoi : l'agent doit répondre dans la langue du client.
+
+  Exemple : Français, et quelques mots d'éwé pour saluer.
+
 Leur problème et ce qu'ils veulent
-Pourquoi : un bon agent part du besoin du client, pas de ce que vous voulez vendre.
-Exemple : Elles veulent connaître les prix et réserver vite, sans attendre une réponse des heures.
-## Partie 4 : ce que l'agent doit faire
+
+  Pourquoi : un bon agent part du besoin du client, pas de ce que vous voulez vendre.
+
+  Exemple : Elles veulent connaître les prix et réserver vite, sans attendre une réponse des heures.
+
+Partie 4 : ce que l'agent doit faire
+
 Les tâches principales (3 au plus au début)
-Pourquoi : un agent qui fait trois choses bien vaut mieux qu'un agent qui en fait dix mal.
-Exemple : 1. Donner les prix. 2. Prendre un rendez-vous. 3. Rappeler la cliente la veille.
-Si vous ne savez pas : gardez seulement ce qui vous fait perdre le plus de temps aujourd'hui.
+
+  Pourquoi : un agent qui fait trois choses bien vaut mieux qu'un agent qui en fait dix mal.
+
+  Exemple : 1. Donner les prix. 2. Prendre un rendez-vous. 3. Rappeler la cliente la veille.
+
+  Si vous ne savez pas : gardez seulement ce qui vous fait perdre le plus de temps aujourd'hui.
+
 Ce qui doit se faire tout seul, et quand
-Pourquoi : c'est ce qui fait la différence entre un simple outil et un vrai agent.
-Exemple : Le rappel part automatiquement la veille à 18 h.
-## Partie 5 : ce que l'agent doit savoir (la plus importante)
+
+  Pourquoi : c'est ce qui fait la différence entre un simple outil et un vrai agent.
+
+  Exemple : Le rappel part automatiquement la veille à 18 h.
+
+Partie 5 : ce que l'agent doit savoir (la plus importante)
+
 Services ou produits, avec leurs prix
-Pourquoi : sans prix exacts, l'agent inventera ou dira « je ne sais pas ».
-Exemple : Tresses simples : 5 000 FCFA. Perruque : 15 000 FCFA. Manucure : 3 000 FCFA.
+
+  Pourquoi : sans prix exacts, l'agent inventera ou dira « je ne sais pas ».
+
+  Exemple : Tresses simples : 5 000 FCFA. Perruque : 15 000 FCFA. Manucure : 3 000 FCFA.
+
 Les questions fréquentes et leurs vraies réponses
-Pourquoi : c'est ce qui rend l'agent vraiment utile. Notez au moins 10 questions que vos clients posent tout le temps.
-Exemple : Question : « Faut-il apporter les mèches ? » Réponse : « Non, nous les fournissons, elles sont comprises dans le prix. »
-Si vous ne savez pas : relisez vos discussions WhatsApp de la semaine : les questions y sont.
+
+  Pourquoi : c'est ce qui rend l'agent vraiment utile. Notez au moins 10 questions que vos clients posent tout le temps.
+
+  Exemple : Question : « Faut-il apporter les mèches ? » Réponse : « Non, nous les fournissons, elles sont comprises dans le prix. »
+
+  Si vous ne savez pas : relisez vos discussions WhatsApp de la semaine : les questions y sont.
+
 Paiement et délais
-Pourquoi : le client veut savoir comment payer et quand il sera servi.
-Exemple : Mixx by Yas et Flooz. Acompte de 2 000 FCFA pour réserver.
-## Partie 6 : la personnalité de l'agent
+
+  Pourquoi : le client veut savoir comment payer et quand il sera servi.
+
+  Exemple : Mixx by Yas et Flooz. Acompte de 2 000 FCFA pour réserver.
+
+Partie 6 : la personnalité de l'agent
+
 Ton, tutoiement ou vouvoiement
-Pourquoi : le ton doit ressembler à votre entreprise.
-Exemple : Chaleureux et poli, toujours le vouvoiement.
+
+  Pourquoi : le ton doit ressembler à votre entreprise.
+
+  Exemple : Chaleureux et poli, toujours le vouvoiement.
+
 Ce qu'il ne doit JAMAIS dire ni promettre
-Pourquoi : c'est votre protection : pas de fausse promesse, pas de remise non autorisée, pas de conseil médical.
-Exemple : Ne jamais promettre une remise. Ne jamais donner l'adresse personnelle de la gérante.
+
+  Pourquoi : c'est votre protection : pas de fausse promesse, pas de remise non autorisée, pas de conseil médical.
+
+  Exemple : Ne jamais promettre une remise. Ne jamais donner l'adresse personnelle de la gérante.
+
 Quand il doit vous passer la main
-Pourquoi : certaines situations demandent un humain : plainte, gros client, question inconnue.
-Exemple : Si une cliente se plaint, il dit qu'Afi la rappelle, et il me prévient.
-## Partie 7 : où vit l'agent
+
+  Pourquoi : certaines situations demandent un humain : plainte, gros client, question inconnue.
+
+  Exemple : Si une cliente se plaint, il dit qu'Afi la rappelle, et il me prévient.
+
+Partie 7 : où vit l'agent
+
 La plateforme
-Pourquoi : le choix change beaucoup le travail et le coût.
-Exemple : WhatsApp. (Un site web est plus simple et moins cher pour commencer ; WhatsApp officiel demande un compte vérifié et des messages payants.)
-Si vous ne savez pas : demandez à Claude : « Quelle plateforme est la plus simple et la moins chère pour mon projet ? ».
+
+  Pourquoi : le choix change beaucoup le travail et le coût.
+
+  Exemple : WhatsApp. (Un site web est plus simple et moins cher pour commencer ; WhatsApp officiel demande un compte vérifié et des messages payants.)
+
+  Si vous ne savez pas : demandez à Claude : « Quelle plateforme est la plus simple et la moins chère pour mon projet ? ».
+
 Écrit, voix ou vidéo
-Pourquoi : la voix et la vidéo sont plus impressionnantes, mais plus chères et plus longues à construire.
-Exemple : Écrit seulement, au début.
+
+  Pourquoi : la voix et la vidéo sont plus impressionnantes, mais plus chères et plus longues à construire.
+
+  Exemple : Écrit seulement, au début.
+
 Comment vous êtes prévenu
-Pourquoi : vous devez savoir quand l'agent a besoin de vous ou a fait quelque chose d'important.
-Exemple : Un e-mail à chaque nouveau rendez-vous.
-## Partie 8 : budget et outils
+
+  Pourquoi : vous devez savoir quand l'agent a besoin de vous ou a fait quelque chose d'important.
+
+  Exemple : Un e-mail à chaque nouveau rendez-vous.
+
+Partie 8 : budget et outils
+
 Budget par mois
-Pourquoi : l'agent consomme : hébergement, modèle d'IA, messages. Un budget clair évite les mauvaises surprises.
-Exemple : 10 000 FCFA par mois au plus au début.
-Si vous ne savez pas : écrivez votre maximum : Claude adaptera les choix.
+
+  Pourquoi : l'agent consomme : hébergement, modèle d'IA, messages. Un budget clair évite les mauvaises surprises.
+
+  Exemple : 10 000 FCFA par mois au plus au début.
+
+  Si vous ne savez pas : écrivez votre maximum : Claude adaptera les choix.
+
 Outils que vous avez déjà
-Pourquoi : inutile de payer deux fois.
-Exemple : Compte Claude, compte GitHub, pas encore d'hébergement.
-## Partie 9 : le résultat attendu
+
+  Pourquoi : inutile de payer deux fois.
+
+  Exemple : Compte Claude, compte GitHub, pas encore d'hébergement.
+
+Partie 9 : le résultat attendu
+
 À quoi vous verrez que ça marche
-Pourquoi : un objectif mesurable permet de savoir si l'agent est vraiment utile.
-Exemple : Répondre en moins d'une minute, 30 rendez-vous par mois pris par l'agent.
+
+  Pourquoi : un objectif mesurable permet de savoir si l'agent est vraiment utile.
+
+  Exemple : Répondre en moins d'une minute, 30 rendez-vous par mois pris par l'agent.
+
 Date souhaitée
-Pourquoi : cela aide le chef de projet à découper le travail.
-Exemple : Dans un mois.
-## 5. Les modules détaillés par type d'agent
+
+  Pourquoi : cela aide le chef de projet à découper le travail.
+
+  Exemple : Dans un mois.
+
+5. Les modules détaillés par type d'agent
+
 Après la fiche de base, remplissez le module qui correspond à votre agent. Un agent peut combiner plusieurs modules : par exemple, Talkami utilise le module A (professeur) et le module F (vocal).
-## Module A : agent professeur (comme Talkami)
+
+Module A : agent professeur (comme Talkami)
+
 Pour un agent qui enseigne : une langue, des cours, une matière scolaire, un métier.
+
 Matière et public
-Pourquoi : on n'enseigne pas l'anglais à un enfant comme à un adulte qui prépare un entretien.
-Exemple : Anglais oral pour francophones, étudiants et jeunes professionnels.
+
+  Pourquoi : on n'enseigne pas l'anglais à un enfant comme à un adulte qui prépare un entretien.
+
+  Exemple : Anglais oral pour francophones, étudiants et jeunes professionnels.
+
 Niveaux
-Pourquoi : l'agent doit adapter son vocabulaire, sa vitesse et ses exercices au niveau.
-Exemple : Du débutant (A1) à l'avancé (C2).
+
+  Pourquoi : l'agent doit adapter son vocabulaire, sa vitesse et ses exercices au niveau.
+
+  Exemple : Du débutant (A1) à l'avancé (C2).
+
 Évaluation du niveau de départ
-Pourquoi : commencer au bon niveau évite que l'élève s'ennuie ou se décourage.
-Exemple : Une conversation gratuite de 5 minutes qui donne le niveau.
+
+  Pourquoi : commencer au bon niveau évite que l'élève s'ennuie ou se décourage.
+
+  Exemple : Une conversation gratuite de 5 minutes qui donne le niveau.
+
 Durée et nombre de séances
-Pourquoi : des séances courtes et régulières marchent mieux que de longues séances rares.
-Exemple : 15 minutes par jour.
+
+  Pourquoi : des séances courtes et régulières marchent mieux que de longues séances rares.
+
+  Exemple : 15 minutes par jour.
+
 Déroulement d'une séance
-Pourquoi : un vrai professeur suit toujours un plan.
-Exemple : Leçon, puis pratique, puis conversation, puis bilan.
+
+  Pourquoi : un vrai professeur suit toujours un plan.
+
+  Exemple : Leçon, puis pratique, puis conversation, puis bilan.
+
 Correction des erreurs
-Pourquoi : mal corriger décourage ; bien corriger fait progresser.
-Exemple : Un indice d'abord, puis la bonne phrase : « Ne dites pas… / Dites… ».
+
+  Pourquoi : mal corriger décourage ; bien corriger fait progresser.
+
+  Exemple : Un indice d'abord, puis la bonne phrase : « Ne dites pas… / Dites… ».
+
 Langue d'explication
-Pourquoi : le débutant a besoin d'explications dans sa langue.
-Exemple : Anglais d'abord, français seulement si l'élève est perdu.
+
+  Pourquoi : le débutant a besoin d'explications dans sa langue.
+
+  Exemple : Anglais d'abord, français seulement si l'élève est perdu.
+
 Programme
-Pourquoi : l'ordre des leçons donne une progression logique.
-Exemple : Se présenter, parler de sa journée, au travail, en voyage, en entretien…
-Si vous ne savez pas : demandez à Claude de proposer un programme par niveau.
+
+  Pourquoi : l'ordre des leçons donne une progression logique.
+
+  Exemple : Se présenter, parler de sa journée, au travail, en voyage, en entretien…
+
+  Si vous ne savez pas : demandez à Claude de proposer un programme par niveau.
+
 Supports
-Pourquoi : l'élève retient mieux ce qu'il voit et ce qu'il pratique.
-Exemple : Tableau à l'écran, exercice, devoir, document de révision.
+
+  Pourquoi : l'élève retient mieux ce qu'il voit et ce qu'il pratique.
+
+  Exemple : Tableau à l'écran, exercice, devoir, document de révision.
+
 Suivi des progrès
-Pourquoi : l'élève et vous devez voir qu'il avance.
-Exemple : Erreurs fréquentes notées, bilan de niveau toutes les 4 semaines.
+
+  Pourquoi : l'élève et vous devez voir qu'il avance.
+
+  Exemple : Erreurs fréquentes notées, bilan de niveau toutes les 4 semaines.
+
 Formules et prix
-Pourquoi : l'élève doit savoir clairement ce qu'il paie.
-Exemple : 2 000 FCFA la semaine, 7 500 FCFA le mois.
+
+  Pourquoi : l'élève doit savoir clairement ce qu'il paie.
+
+  Exemple : 2 000 FCFA la semaine, 7 500 FCFA le mois.
+
 Apparence et voix du professeur
-Pourquoi : un personnage crée un lien avec l'élève.
-Exemple : Personnage 3D souriant, voix calme et lente.
-## Module B : agent service client et vente
+
+  Pourquoi : un personnage crée un lien avec l'élève.
+
+  Exemple : Personnage 3D souriant, voix calme et lente.
+
+Module B : agent service client et vente
+
 Pour une boutique, un restaurant, un vendeur en ligne.
+
 Catalogue
-Pourquoi : l'agent ne peut vendre que ce qu'il connaît.
-Exemple : Liste des produits avec photo, prix, tailles et couleurs disponibles.
+
+  Pourquoi : l'agent ne peut vendre que ce qu'il connaît.
+
+  Exemple : Liste des produits avec photo, prix, tailles et couleurs disponibles.
+
 Prise de commande, étape par étape
-Pourquoi : une commande mal prise, c'est un client perdu.
-Exemple : Produit, taille, quantité, quartier, puis récapitulatif et confirmation.
+
+  Pourquoi : une commande mal prise, c'est un client perdu.
+
+  Exemple : Produit, taille, quantité, quartier, puis récapitulatif et confirmation.
+
 Livraison
-Pourquoi : c'est souvent la première question.
-Exemple : Lomé centre : 1 000 FCFA, sous 24 heures.
+
+  Pourquoi : c'est souvent la première question.
+
+  Exemple : Lomé centre : 1 000 FCFA, sous 24 heures.
+
 Paiement
-Pourquoi : il faut dire clairement comment payer.
-Exemple : Mixx by Yas, Flooz ou paiement à la livraison.
+
+  Pourquoi : il faut dire clairement comment payer.
+
+  Exemple : Mixx by Yas, Flooz ou paiement à la livraison.
+
 Relances
-Pourquoi : beaucoup de clients oublient de finaliser.
-Exemple : Relance polie après 24 heures, une seule fois.
+
+  Pourquoi : beaucoup de clients oublient de finaliser.
+
+  Exemple : Relance polie après 24 heures, une seule fois.
+
 Réclamations et retours
-Pourquoi : l'agent doit rester calme et suivre vos règles.
-Exemple : Échange possible sous 3 jours, sur photo du produit.
-## Module C : agent de contenu (vidéos et publications)
+
+  Pourquoi : l'agent doit rester calme et suivre vos règles.
+
+  Exemple : Échange possible sous 3 jours, sur photo du produit.
+
+Module C : agent de contenu (vidéos et publications)
+
 Pour un agent qui crée et publie des contenus sur les réseaux sociaux.
+
 Réseaux visés
-Pourquoi : chaque réseau a ses formats et ses habitudes.
-Exemple : TikTok et Facebook.
+
+  Pourquoi : chaque réseau a ses formats et ses habitudes.
+
+  Exemple : TikTok et Facebook.
+
 Sujets et formats
-Pourquoi : des formats qui reviennent créent une habitude chez votre public.
-Exemple : Astuce du jour, « Ne dites pas / Dites », quiz en commentaire.
+
+  Pourquoi : des formats qui reviennent créent une habitude chez votre public.
+
+  Exemple : Astuce du jour, « Ne dites pas / Dites », quiz en commentaire.
+
 Fréquence et heures
-Pourquoi : publier régulièrement compte plus que publier beaucoup.
-Exemple : 3 vidéos par jour : 6 h, 11 h 30, 17 h 30.
+
+  Pourquoi : publier régulièrement compte plus que publier beaucoup.
+
+  Exemple : 3 vidéos par jour : 6 h, 11 h 30, 17 h 30.
+
 Durée et présentation
-Pourquoi : la vidéo doit être lisible sur téléphone.
-Exemple : 30 à 60 secondes, format vertical, sous-titres, logo.
+
+  Pourquoi : la vidéo doit être lisible sur téléphone.
+
+  Exemple : 30 à 60 secondes, format vertical, sous-titres, logo.
+
 Personnage ou voix
-Pourquoi : il incarne votre marque.
-Exemple : Le professeur 3D de la marque.
+
+  Pourquoi : il incarne votre marque.
+
+  Exemple : Le professeur 3D de la marque.
+
 Appel à l'action
-Pourquoi : chaque contenu doit dire au public quoi faire ensuite.
-Exemple : « Faites votre évaluation gratuite sur notre site. »
+
+  Pourquoi : chaque contenu doit dire au public quoi faire ensuite.
+
+  Exemple : « Faites votre évaluation gratuite sur notre site. »
+
 Publication
-Pourquoi : publier automatiquement demande souvent une autorisation de la plateforme.
-Exemple : L'agent m'envoie la vidéo par e-mail, je la publie moi-même.
+
+  Pourquoi : publier automatiquement demande souvent une autorisation de la plateforme.
+
+  Exemple : L'agent m'envoie la vidéo par e-mail, je la publie moi-même.
+
 Ce qui est interdit
-Pourquoi : votre réputation est en jeu.
-Exemple : Aucune promesse de gain, aucun faux témoignage. Indiquer que le contenu est généré par l'IA quand la plateforme le demande.
-## Module D : agent de rendez-vous et d'accueil
+
+  Pourquoi : votre réputation est en jeu.
+
+  Exemple : Aucune promesse de gain, aucun faux témoignage. Indiquer que le contenu est généré par l'IA quand la plateforme le demande.
+
+Module D : agent de rendez-vous et d'accueil
+
 Pour un salon, une clinique, un cabinet, un centre de formation.
+
 Services et durée
-Pourquoi : l'agent doit savoir combien de temps bloquer.
-Exemple : Tresses : 3 heures. Manucure : 45 minutes.
+
+  Pourquoi : l'agent doit savoir combien de temps bloquer.
+
+  Exemple : Tresses : 3 heures. Manucure : 45 minutes.
+
 Disponibilités
-Pourquoi : il ne doit jamais proposer un créneau impossible.
-Exemple : Lundi au samedi, 8 h à 19 h, pause de 13 h à 14 h.
+
+  Pourquoi : il ne doit jamais proposer un créneau impossible.
+
+  Exemple : Lundi au samedi, 8 h à 19 h, pause de 13 h à 14 h.
+
 Agenda
-Pourquoi : les rendez-vous doivent être notés à un endroit que vous consultez.
-Exemple : Google Agenda ou une feuille partagée.
+
+  Pourquoi : les rendez-vous doivent être notés à un endroit que vous consultez.
+
+  Exemple : Google Agenda ou une feuille partagée.
+
 Acompte
-Pourquoi : il réduit les rendez-vous oubliés.
-Exemple : 2 000 FCFA par Mixx by Yas ou Flooz.
+
+  Pourquoi : il réduit les rendez-vous oubliés.
+
+  Exemple : 2 000 FCFA par Mixx by Yas ou Flooz.
+
 Rappel, annulation et report
-Pourquoi : les règles claires évitent les disputes.
-Exemple : Rappel la veille à 18 h ; annulation gratuite jusqu'à 12 heures avant.
+
+  Pourquoi : les règles claires évitent les disputes.
+
+  Exemple : Rappel la veille à 18 h ; annulation gratuite jusqu'à 12 heures avant.
+
 Conseil : Pour la santé, l'agent ne doit jamais donner de conseil médical : il prend les rendez-vous et oriente vers le personnel soignant.
-## Module E : agent d'automatisation (tâches internes)
+
+Module E : agent d'automatisation (tâches internes)
+
 Pour remplacer une tâche répétitive que vous faites vous-même.
+
 La tâche à remplacer
-Pourquoi : commencez par celle qui vous prend le plus de temps.
-Exemple : Faire chaque soir le point des ventes de la journée.
+
+  Pourquoi : commencez par celle qui vous prend le plus de temps.
+
+  Exemple : Faire chaque soir le point des ventes de la journée.
+
 Ce qui la déclenche
-Pourquoi : un agent d'automatisation démarre sur un signal.
-Exemple : Tous les jours à 20 h.
+
+  Pourquoi : un agent d'automatisation démarre sur un signal.
+
+  Exemple : Tous les jours à 20 h.
+
 Les étapes, dans l'ordre
-Pourquoi : c'est la recette que l'agent suivra.
-Exemple : Lire les commandes, additionner, comparer à la veille, écrire un résumé.
+
+  Pourquoi : c'est la recette que l'agent suivra.
+
+  Exemple : Lire les commandes, additionner, comparer à la veille, écrire un résumé.
+
 Les outils à relier
-Pourquoi : l'agent doit avoir accès aux bonnes informations.
-Exemple : Le fichier des commandes, mon e-mail.
+
+  Pourquoi : l'agent doit avoir accès aux bonnes informations.
+
+  Exemple : Le fichier des commandes, mon e-mail.
+
 Ce que vous recevez
-Pourquoi : le résultat doit être facile à lire sur téléphone.
-Exemple : Un e-mail court avec le total et les 3 meilleurs produits.
+
+  Pourquoi : le résultat doit être facile à lire sur téléphone.
+
+  Exemple : Un e-mail court avec le total et les 3 meilleurs produits.
+
 En cas d'erreur
-Pourquoi : l'agent doit vous prévenir au lieu de rester silencieux.
-Exemple : Un e-mail d'alerte qui explique le problème.
-## Module F : agent vocal ou conversationnel
+
+  Pourquoi : l'agent doit vous prévenir au lieu de rester silencieux.
+
+  Exemple : Un e-mail d'alerte qui explique le problème.
+
+Module F : agent vocal ou conversationnel
+
 Pour un agent qui parle et écoute, comme au téléphone.
+
 Parle, écoute, ou les deux
-Pourquoi : la conversation à deux voix est la plus naturelle, mais la plus technique.
-Exemple : Il écoute l'élève et lui répond à voix haute.
+
+  Pourquoi : la conversation à deux voix est la plus naturelle, mais la plus technique.
+
+  Exemple : Il écoute l'élève et lui répond à voix haute.
+
 Voix
-Pourquoi : la voix est la première impression.
-Exemple : Voix d'homme, calme, claire et lente pour les débutants.
+
+  Pourquoi : la voix est la première impression.
+
+  Exemple : Voix d'homme, calme, claire et lente pour les débutants.
+
 Langues
-Pourquoi : la reconnaissance et la voix dépendent de la langue.
-Exemple : Anglais et français.
+
+  Pourquoi : la reconnaissance et la voix dépendent de la langue.
+
+  Exemple : Anglais et français.
+
 Durée maximale
-Pourquoi : la voix coûte à la minute ou à l'usage.
-Exemple : 15 minutes par séance.
+
+  Pourquoi : la voix coûte à la minute ou à l'usage.
+
+  Exemple : 15 minutes par séance.
+
 Silence ou hors sujet
-Pourquoi : l'agent doit savoir relancer gentiment.
-Exemple : Il repose la question plus simplement, puis recadre poliment.
+
+  Pourquoi : l'agent doit savoir relancer gentiment.
+
+  Exemple : Il repose la question plus simplement, puis recadre poliment.
+
 Coupure de connexion
-Pourquoi : les coupures sont fréquentes : il faut une règle claire.
-Exemple : Le temps est mis en pause et l'élève peut reprendre.
-## 6. Donner son cahier des charges à Claude et le faire valider
+
+  Pourquoi : les coupures sont fréquentes : il faut une règle claire.
+
+  Exemple : Le temps est mis en pause et l'élève peut reprendre.
+
+6. Donner son cahier des charges à Claude et le faire valider
+
 Si vous avez suivi le chemin 2 (la fiche), il reste une étape : faire vérifier votre fiche par votre chef de projet.
+
 Message à copier dans Claude
+
 Tu es mon chef de projet. Je suis débutant.
+
 Voici la fiche de mon projet d'agent IA, remplie avec ce que je sais.
+
 Certaines lignes sont vides ou incomplètes.
+
 Ton travail :
+
 1. Vérifie ma fiche et repère ce qui manque ou ce qui n'est pas clair.
+
 2. Pose-moi les questions une par une, avec des choix.
+
 3. Si je ne sais pas, propose la solution la plus simple et la moins chère.
+
 4. Dis-moi franchement ce qui est trop compliqué ou trop cher.
+
 5. À la fin, donne-moi le cahier des charges complet et final,
+
 avec la liste des comptes et outils nécessaires (gratuits et payants)
+
 et les grandes étapes de construction.
+
 6. Ne me demande jamais de clé secrète ni de mot de passe.
+
 Voici ma fiche :
+
 [collez votre fiche ici]
-## Avant de passer à la construction, vérifiez
-- Le rôle de l'agent tient en une phrase claire.
-- Les prix et les questions fréquentes sont exacts et complets.
-- Ce que l'agent ne doit jamais dire est écrit noir sur blanc.
-- Vous savez où il va travailler et combien il coûtera par mois.
-- Vous savez à quoi vous verrez qu'il marche.
+
+Avant de passer à la construction, vérifiez
+
+-   Le rôle de l'agent tient en une phrase claire.
+
+-   Les prix et les questions fréquentes sont exacts et complets.
+
+-   Ce que l'agent ne doit jamais dire est écrit noir sur blanc.
+
+-   Vous savez où il va travailler et combien il coûtera par mois.
+
+-   Vous savez à quoi vous verrez qu'il marche.
+
 Ensuite, Claude vous guidera étape par étape pour construire l'agent avec Claude Code : c'est la suite de la formation.
-## 7. Les erreurs à éviter
-- Vouloir tout faire d'un coup : commencez par 3 tâches. Vous ajouterez le reste quand l'agent marchera bien.
-- Rester vague : « nos prix sont abordables » ne sert à rien. Écrivez les vrais prix.
-- Oublier ce que l'agent ne doit jamais dire : sans cette liste, l'agent peut promettre n'importe quoi.
-- Montrer ses clés secrètes : ne montrez jamais une clé API, un mot de passe ou un code reçu par SMS, même à Claude.
-- Lancer sans tester : testez votre agent comme un vrai client avant de le donner au public.
-- Ne plus jamais l'améliorer : un agent n'est jamais fini : relisez ses conversations et améliorez-le chaque semaine.
-- Croire aux promesses de gains : aucun agent ne garantit des revenus. Méfiez-vous de ceux qui promettent de l'argent rapide.
-## 8. Exemple complet : l'agent du salon Belle Afi
+
+7. Les erreurs à éviter
+
+-   Vouloir tout faire d'un coup : commencez par 3 tâches. Vous ajouterez le reste quand l'agent marchera bien.
+
+-   Rester vague : « nos prix sont abordables » ne sert à rien. Écrivez les vrais prix.
+
+-   Oublier ce que l'agent ne doit jamais dire : sans cette liste, l'agent peut promettre n'importe quoi.
+
+-   Montrer ses clés secrètes : ne montrez jamais une clé API, un mot de passe ou un code reçu par SMS, même à Claude.
+
+-   Lancer sans tester : testez votre agent comme un vrai client avant de le donner au public.
+
+-   Ne plus jamais l'améliorer : un agent n'est jamais fini : relisez ses conversations et améliorez-le chaque semaine.
+
+-   Croire aux promesses de gains : aucun agent ne garantit des revenus. Méfiez-vous de ceux qui promettent de l'argent rapide.
+
+8. Exemple complet : l'agent du salon Belle Afi
+
 Voici le cahier des charges final qu'on peut obtenir avec Claude à partir de la description libre de la partie 3. Il s'agit d'un exemple imaginaire.
+
 Cahier des charges — Afi, l'assistante du salon Belle Afi
+
 IDENTITÉ : Afi, assistante WhatsApp du salon Belle Afi.
+
 RÔLE : répondre aux clientes et prendre leurs rendez-vous.
+
 ENTREPRISE : salon de coiffure et beauté, Adidogomé, Lomé.
+
 Du lundi au samedi, 8 h à 19 h (pause 13 h à 14 h).
+
 CLIENTES : femmes de 18 à 45 ans, pressées, en français.
+
 TÂCHES : 1. donner les prix ; 2. proposer un créneau libre et
+
 noter le rendez-vous ; 3. rappeler la cliente la veille à 18 h.
+
 SAVOIR : tresses 5 000 FCFA (3 h), perruque 15 000 FCFA (2 h),
+
 manucure 3 000 FCFA (45 min). Mèches fournies.
+
 Acompte 2 000 FCFA par Mixx by Yas ou Flooz.
+
 PERSONNALITÉ : chaleureuse, polie, vouvoiement.
+
 Jamais de remise ; plainte = elle prévient la gérante.
+
 PLATEFORME : WhatsApp officiel (compte vérifié, messages payants).
+
 PRÉVENIR : e-mail à la gérante à chaque rendez-vous.
+
 BUDGET : 10 000 FCFA par mois au plus.
+
 RÉSULTAT : réponse en moins d'une minute ; 30 rendez-vous par mois.
-## 9. Les fiches vierges à copier dans le bloc-notes
+
+9. Créer vos trois comptes, pas à pas
+
+Ce chapitre reprend les démonstrations de la vidéo 1A. Suivez-les dans l'ordre, sur votre téléphone. Deux comptes sont gratuits ; le troisième outil demande un abonnement payant.
+
+Compte 1 : Claude, votre chef de projet (gratuit)
+
+1.  Installez l'application Claude (Play Store ou App Store), ou ouvrez claude.ai dans votre navigateur.
+
+2.  Touchez « Continuer avec Google ».
+
+3.  Choisissez votre adresse Gmail. Si c'est votre première fois, Claude vous demande votre nom et votre prénom.
+
+4.  Votre compte Claude est créé. La version gratuite suffit pour discuter et préparer votre projet.
+
+Compte 2 : GitHub, le coffre-fort de votre code (gratuit)
+
+1.  Dans Google, tapez « github », puis ouvrez github.com.
+
+2.  Touchez « Inscrivez-vous sur GitHub » (en anglais : « Sign up »). Vous avez déjà un compte ? Touchez « Se connecter » (« Sign in »).
+
+3.  Touchez « Continuer avec Google » et choisissez votre adresse. Votre compte GitHub est prêt.
+
+4.  Pour créer un dépôt : touchez le petit « + » en haut, puis « Nouveau dépôt ».
+
+5.  Donnez un nom au dépôt, sans espace (par exemple : mon-agent), puis ajoutez une courte description.
+
+6.  Dans « Choisir la visibilité », choisissez « Privé » : un petit cadenas apparaît.
+
+7.  Touchez « Créer un dépôt ». Votre coffre-fort est prêt.
+
+Conseil : vérifiez toujours le petit cadenas. Un dépôt « Public » peut être vu par tout le monde ; votre dépôt doit toujours être « Privé ».
+
+Outil 3 : Claude Code, votre développeur (payant)
+
+On accède à Claude Code avec son compte Claude, mais il demande un abonnement payant. Il n'est pas obligatoire avant la partie 2 ; prenez-le si vous voulez construire en même temps que la vidéo.
+
+1.  Ouvrez Claude Code dans votre navigateur (claude.ai/code), avec votre compte Claude. La version web est plus simple que l'application.
+
+2.  Touchez « Connecter GitHub », puis « Continuer avec GitHub », et autorisez l'accès.
+
+3.  Créez un environnement et donnez-lui un nom.
+
+4.  Dans « Accès réseau », choisissez l'accès à Internet, puis validez. Votre développeur est prêt à travailler.
+
+10. Sécurité : vos clés
+
+Une clé API est le code secret d'un service. Avec elle, le service sait que c'est vous, et c'est vous qui payez ce que votre agent consomme.
+
+-   La règle absolue : ne montrez jamais votre clé : ni capture d'écran, ni vidéo, ni groupe WhatsApp, même pas à Claude.
+
+-   Pourquoi c'est grave : quelqu'un qui a votre clé peut l'utiliser comme si c'était vous, et c'est votre argent qu'il dépense. C'est comme donner votre code Mobile Money.
+
+-   Où la mettre : dans les réglages secrets de votre hébergement. Jamais dans un message, jamais dans le code.
+
+-   Clé montrée par erreur : supprimez-la tout de suite et créez-en une nouvelle. Vérifiez chaque capture d'écran avant de l'envoyer.
+
+Attention : la même règle vaut pour vos mots de passe et pour les codes reçus par SMS.
+
+11. Après le cahier des charges : travailler avec Claude Code
+
+La méthode en 4 étapes
+
+1.  Le bloc-notes : vous écrivez votre projet.
+
+2.  Claude, votre chef de projet, en fait un cahier des charges.
+
+3.  Claude Code construit l'agent, étape par étape.
+
+4.  Vous testez, vous mettez en ligne, vous améliorez.
+
+Le rôle de chacun
+
+-   Vous : le patron. C'est vous qui décidez.
+
+-   Claude : le chef de projet. Il organise, vérifie et vous guide.
+
+-   Claude Code : le développeur. Il écrit le code.
+
+-   Le lien : c'est vous qui faites le lien entre les deux : vous copiez, vous collez, vous testez.
+
+La boucle de travail
+
+1.  Le chef de projet vous donne la consigne de l'étape. Copiez-la, avec votre cahier des charges.
+
+2.  Dans Claude Code, choisissez votre dépôt et votre environnement, collez la consigne et envoyez.
+
+3.  Temps 1 : Claude Code ne construit rien. Il présente seulement son plan.
+
+4.  Copiez ce plan et donnez-le au chef de projet. Il le vérifie et vous dit quoi corriger.
+
+5.  Quand le plan est bon, répondez à Claude Code : « Validé, lance. »
+
+6.  Temps 2 : Claude Code construit, puis vous fait un compte rendu. On passe à l'étape suivante, jusqu'à la fin.
+
+Les 3 règles d'or
+
+-   Une seule étape à la fois.
+
+-   Jamais deux chantiers en même temps.
+
+-   Testez sur votre téléphone après chaque étape.
+
+Conseil : les erreurs sont normales. Pas de panique : montrez l'erreur à votre chef de projet. Dans la vidéo 1B, j'avais oublié de coller le cahier des charges : j'ai arrêté, je l'ai collé, et j'ai relancé.
+
+Nous ferons cette construction ensemble dans la partie 2 de la formation.
+
+12. Votre devoir avant la partie 2
+
+Prévoyez 2 à 3 heures, en plusieurs fois. Tout s'appuie sur ce guide.
+
+1.  Choisissez votre projet : une activité (la vôtre ou celle d'un proche) et un type d'agent parmi les six. Écrivez en une phrase le rôle de l'agent. Commencez par 3 tâches, pas plus.
+
+2.  Écrivez-le dans votre bloc-notes, avec le chemin 1 (description libre, chapitre 3) ou le chemin 2 (fiche de base, chapitre 13). Mettez vos vrais prix, au moins 10 vraies questions de clients avec leurs réponses, et ce que l'agent ne doit jamais dire ni promettre.
+
+3.  Ajoutez le module de votre type d'agent (A à F, chapitre 13) et remplissez-le.
+
+4.  Créez vos comptes : Claude et GitHub (gratuits), avec un dépôt privé pour votre projet : vérifiez le cadenas (chapitre 9).
+
+5.  Obtenez votre cahier des charges final : donnez votre texte à Claude avec le message du guide (chapitre 3 ou 6), répondez à ses questions, puis demandez le cahier des charges complet et final. Vérifiez-le avec la liste « Avant de passer à la construction » (fin du chapitre 6) et gardez-le précieusement.
+
+6.  Envoyez-le dans le groupe WhatsApp de la formation, avant la partie 2, pour que je le corrige. Avant d'envoyer, vérifiez qu'il n'y a ni clé, ni mot de passe, ni code reçu par SMS.
+
+Et pour vous inspirer : allez sur talkami.net et essayez vous-même : faites l'évaluation gratuite et parlez avec Teacher Joe. C'est exactement ce genre d'agent que vous apprenez à préparer.
+
+13. Les fiches vierges à copier dans le bloc-notes
+
 Copiez la fiche de base, puis le ou les modules qui correspondent à votre agent. Remplissez chaque ligne après les deux-points.
+
 FICHE DE BASE
+
 1. IDENTITÉ
+
 Nom de l'agent :
+
 Il travaille pour :
+
 Son rôle en une phrase :
+
 2. ENTREPRISE OU PROJET
+
 Nom :
+
 Responsable :
+
 Activité :
+
 Adresse :
+
 Horaires :
+
 Téléphone et WhatsApp :
+
 E-mail :
+
 Site et réseaux :
+
 3. CLIENTS
+
 Qui va parler à l'agent :
+
 Langue :
+
 Leur problème :
+
 Ce qu'ils veulent :
+
 4. CE QUE L'AGENT DOIT FAIRE
+
 Tâche 1 :
+
 Tâche 2 :
+
 Tâche 3 :
+
 Ce qui se fait tout seul, et quand :
+
 5. CE QUE L'AGENT DOIT SAVOIR
+
 Services ou produits et prix :
+
 Question fréquente 1 et réponse :
+
 Question fréquente 2 et réponse :
+
 Question fréquente 3 et réponse :
+
 (ajoutez-en au moins 10)
+
 Paiement :
+
 Délais :
+
 6. PERSONNALITÉ
+
 Ton :
+
 Tutoiement ou vouvoiement :
+
 Ce qu'il ne doit jamais dire ni promettre :
+
 Quand il me passe la main :
+
 7. OÙ VIT L'AGENT
+
 Plateforme :
+
 Écrit, voix ou vidéo :
+
 Comment je suis prévenu :
+
 8. BUDGET ET OUTILS
+
 Budget par mois :
+
 Outils que j'ai déjà :
+
 9. RÉSULTAT ATTENDU
+
 Comment je saurai que ça marche :
+
 Date souhaitée :
+
 10. MES IDÉES EN PLUS
+
 MODULE A : PROFESSEUR
+
 Matière et public :
+
 Niveaux :
+
 Évaluation du niveau de départ :
+
 Durée et nombre de séances :
+
 Déroulement d'une séance :
+
 Correction des erreurs :
+
 Langue d'explication :
+
 Programme :
+
 Supports :
+
 Suivi des progrès :
+
 Formules et prix :
+
 Apparence et voix du professeur :
+
 MODULE B : SERVICE CLIENT ET VENTE
+
 Catalogue :
+
 Prise de commande, étapes :
+
 Livraison :
+
 Paiement :
+
 Relances :
+
 Réclamations et retours :
+
 MODULE C : CONTENU
+
 Réseaux :
+
 Sujets et formats :
+
 Fréquence et heures :
+
 Durée et présentation :
+
 Personnage ou voix :
+
 Appel à l'action :
+
 Publication automatique ou envoi pour validation :
+
 Ce qui est interdit :
+
 MODULE D : RENDEZ-VOUS ET ACCUEIL
+
 Services et durée :
+
 Disponibilités :
+
 Agenda :
+
 Acompte :
+
 Rappel :
+
 Annulation et report :
+
 MODULE E : AUTOMATISATION
+
 Tâche à remplacer :
+
 Ce qui la déclenche :
+
 Étapes dans l'ordre :
+
 Outils à relier :
+
 Ce que je reçois :
+
 En cas d'erreur :
+
 MODULE F : VOCAL
+
 Parle, écoute, ou les deux :
+
 Voix :
+
 Langues :
+
 Durée maximale :
+
 Silence ou hors sujet :
+
 Coupure de connexion :
