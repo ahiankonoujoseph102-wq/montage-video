@@ -234,7 +234,8 @@ def demo(asm, src, el):
     voix (voix off des démos, phrases du script, parole en direct ou son de la vidéo), bandeau, cercles et zooms."""
     _, rush0, etapes, visuel = el
     plans, mots = [], []
-    n_num = sum(1 for e in etapes if e.get("b", "").startswith("Étape"))
+    nums = [int(re.match(r"Étape (\d+)", e.get("b", "")).group(1)) for e in etapes if re.match(r"Étape \d+", e.get("b", ""))]
+    n_num = visuel.get("n", max(nums) if nums else 0)
     for k, e in enumerate(etapes):
         rush = e.get("rush", rush0)
         haut, hclip, wclip = cadre(rush)
