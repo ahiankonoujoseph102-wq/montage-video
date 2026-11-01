@@ -3,19 +3,25 @@
 
 Bonjour à tous 👋 J'espère que vous allez bien.
 
-Voici la *deuxième partie* de la formation, en 4 vidéos :
-▶️ *2A – La boucle de travail* : Claude Code construit, le chef de projet vérifie.
-▶️ *2B – Le moteur et le cerveau de votre agent*, en dépensant le moins possible.
-▶️ *2C – Créer vos clés API* et les ranger en sécurité.
-▶️ *2D – Suivre la construction jusqu'au bout*.
+Voici la *deuxième partie* de la formation : 4 vidéos et 1 guide. Chaque fichier a son propre lien 👇
 
-📘 Avec le *guide de la partie 2* (un seul document) : toutes les étapes expliquées, les différences entre les outils, un test après chaque vidéo et les réponses à la fin.
+▶️ *Vidéo 2A – La boucle de travail*
+[LIEN 2A]
 
-👉 *Cliquez ici pour accéder aux vidéos et au guide :*
-[LIEN DRIVE]
+▶️ *Vidéo 2B – Le moteur et le cerveau de votre agent*
+[LIEN 2B]
+
+▶️ *Vidéo 2C – Créer vos clés API et les ranger en sécurité*
+[LIEN 2C]
+
+▶️ *Vidéo 2D – Suivre la construction jusqu'au bout*
+[LIEN 2D]
+
+📘 *Le guide de la partie 2* (toutes les étapes, les différences entre les outils, un test par vidéo et les réponses)
+[LIEN GUIDE]
 
 *Pour avoir accès :*
-1️⃣ Ouvrez le lien et touchez *« Demander l'accès »*.
+1️⃣ Ouvrez *chaque lien, un par un*, et touchez *« Demander l'accès »* sur chacun (les 4 vidéos et le guide).
 2️⃣ Écrivez ensuite *votre adresse e-mail ici, dans le groupe*, pour que je valide votre accès.
 
 *Comment travailler* 👇
