@@ -57,6 +57,36 @@
   dit doit être démontré**. Ordre de priorité : (1) ses enregistrements d'écran ; (2) sinon photos ou vidéos **libres de
   droits** trouvées sur Internet (noter source et licence ici) ; (3) en dernier recours, illustration ou animation créée.
   Tout doit être très clair. Ensuite : monter et lui envoyer tout (2A → 2D).
+- **Montage complet 2A (1er novembre)** : `projets/agent-ia-p2/montage/p2lib.py` (moteur commun : voix nettoyée avec coupes
+  des reprises, sous-titres alignés sur le texte prévu, extraits des rushes par recherche précise `-ss`, vidéos libres,
+  `montage.json`) et `p2a.py` (scènes de la 2A, coupes vo1 198,95–207,15 et 281,7–288,75). Composition Remotion
+  `FormationP2A` (`src/formation/p2/P2.tsx` générique + `P2A.tsx`, copies dans `formation-src/`). Commandes :
+  `cd projets/agent-ia-p2/montage && python3 p2a.py && python3 ../../agent-ia-p1/montage/bouche.py p2a`, puis bundle,
+  `npx remotion render … FormationP2A`, `outils/finaliser.py` → `out/formation-2A.mp4`. Repérage des coordonnées :
+  `montage/reperes.py <rush> <sortie.jpg> t1,t2…` (image recadrée 1080 × 2160 graduée). Recherche de vidéos libres :
+  `montage/chercher_mixkit.py '{"cle":"mot anglais"}'` (Openverse en panne le 1er novembre ; Pexels, Pixabay, Unsplash,
+  Wikimedia bloqués depuis l'environnement).
+- **Vidéos libres utilisées (Mixkit, licence « Mixkit Stock Video Free License » : usage commercial gratuit, sans
+  attribution obligatoire ; mention « Vidéo libre de droits · Mixkit » ajoutée à l'image)** — fichiers dans
+  `serie-animee/public/formation/p2/libre/` (non versionnés), liste dans `formation-src/sources_libres.json` :
+  - `mk9686.mp4` : https://mixkit.co/free-stock-video/building-construction-time-lapse-9686/
+  - `mk20874.mp4` : https://mixkit.co/free-stock-video/building-a-brick-wall-20874/
+  - `mk99890.mp4` : https://mixkit.co/free-stock-video/close-up-a-hand-writing-notes-on-a-notebook-with-99890/
+  - `mk99909.mp4` : https://mixkit.co/free-stock-video/close-up-of-a-hand-writing-to-do-list-on-99909/
+  - `mk4401.mp4` : https://mixkit.co/free-stock-video/crowds-of-people-cross-a-street-junction-4401/
+  - `mk17183.mp4` : https://mixkit.co/free-stock-video/archery-targets-in-a-line-17183/
+  - `mk22756.mp4` : https://mixkit.co/free-stock-video/throwing-darts-at-a-target-22756/
+  - `mk41640.mp4` : https://mixkit.co/free-stock-video/hands-of-a-programmer-working-on-his-computer-41640/
+  - `mk9757.mp4` : https://mixkit.co/free-stock-video/computer-code-in-the-screen-9757/
+  - `mk28901.mp4` : https://mixkit.co/free-stock-video/sand-falling-from-an-hourglass-on-a-black-background-28901/
+  - `mk39822.mp4` : https://mixkit.co/free-stock-video/pocket-watch-moving-fast-on-snow-39822/
+  - `mk236.mp4` : https://mixkit.co/free-stock-video/filling-a-white-cup-of-coffee-236/
+  - `mk43935.mp4` : https://mixkit.co/free-stock-video/demonstration-video-of-a-steaming-cup-of-coffee-43935/
+  - `mk46977.mp4` : https://mixkit.co/free-stock-video/documents-with-magnifying-glass-on-a-desk-46977/
+  - `mk34125.mp4` : https://mixkit.co/free-stock-video/person-doing-calculations-with-a-calculator-34125/
+  - `mk25411.mp4` : https://mixkit.co/free-stock-video/opening-a-safe-with-the-code-25411/
+  - `mk24604.mp4` : https://mixkit.co/free-stock-video/putting-a-safe-back-in-a-wall-24604/
+  - `mk47413.mp4` : https://mixkit.co/free-stock-video/man-sitting-at-his-laptop-making-an-online-payment-47413/
 - Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
   (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
