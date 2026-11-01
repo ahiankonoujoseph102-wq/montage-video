@@ -34,7 +34,8 @@
     sur les projets qui rapportent de l'argent (c'est sa décision) → VO-55 n'est plus nécessaire ;
   - conseils acceptés : Kekeli = ses choix (VO-21), pull request illustrée, boucle racontée une seule fois, micro du clavier.
 - **Étape actuelle : attente des enregistrements** : R1 (variables d'environnement, fausses clés), puis voix off vidéo par
-  vidéo, en commençant par la 2A (VO-1 à VO-14), envoyées par Drive. Dès réception des voix de la 2A : extrait d'essai
+  vidéo, en commençant par la 2A, envoyées par Drive. **Texte à lire : `projets/agent-ia-p2/voix_off_p2_complete.md`** (version
+  complète demandée par Joseph le 1er novembre, 109 morceaux A-01…D-16, remplace `voix_off_p2.md` trop court). Dès réception des voix de la 2A : extrait d'essai
   d'environ 1 minute, puis montage vidéo par vidéo.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
   `projets/agent-ia-p2/voix_off_p2.md`.
