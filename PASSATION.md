@@ -100,6 +100,15 @@
   505 s) ; sous-titres du passage écrits à la main dans `p2b.py` (`DIRECT`, « je comprends que ce soit courant… ma
   position ne change pas » lu sur l'écran). Composition `FormationP2B`. Moteur : `inserts` dans `p2lib.Montage`
   (temps virtuel 10000 + temps du rush).
+- **2B envoyée** (`out/formation-2B.mp4`, 4 min 36 ; WhatsApp 19 Mo). **2C envoyée** (`out/formation-2C.mp4`, 3 min 36 ;
+  `montage/p2c.py`, coupes vo3 134,0–140,2 / 149,05–156,55 / 161,6–162,8 / 180,6–200,6 ; **floutage** par mosaïque :
+  paramètre `flous` de `demo` — clé Gemini v4 260 s, code e-mail v4 379–382 s, clé E2B v5 121 s, variables et
+  presse-papiers v5 290 s). **2D en rendu** (`montage/p2d.py`, coupes vo4 61,15–66,0 / 74,9–93,9 / 111,05–112,05 ;
+  **passage en direct de la vidéo 7 inséré, 345,75–439,0 s, gardé en entier à la demande de Joseph** : conclusion,
+  abonnement 13 500 F par mois, offre d'aide, phrase sur les projets ; transcription `transcriptions/v7_340.json`).
+- Pièges du moteur : rushes à cadence variable → `_image_reelle` prend la dernière image réelle si la fenêtre est vide
+  (sinon écran noir) ; 2C et 2D : morceaux réduits à 0,3 s autour de l'image vérifiée (l'écran change juste après) ;
+  le cache des extraits (`.cle`) n'est écrit qu'après un extrait réussi.
 - Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
   (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off

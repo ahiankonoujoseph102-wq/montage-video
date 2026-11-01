@@ -126,7 +126,7 @@ const AnimRappel: React.FC<{p: Plan; t: number}> = ({p, t}) => {
   const ts = [Math.min(R(p, 'bloc'), p.debut + 0.3), R(p, 'claude'), R(p, 'cahier')];
   return (
     <>
-      <Titre t={t} t0={p.debut} texte="Dans la première partie" emoji="⏪" />
+      <Titre t={t} t0={p.debut} texte={String(p.titreAnim ?? 'Dans la première partie')} emoji={p.titreAnim ? '🧭' : '⏪'} />
       {imgs.map((src, i) => (
         <React.Fragment key={i}>
           <Telephone src={src} x={190 + i * 560} y={190} l={300} rot={[-3, 0, 3][i]} t={t} t0={ts[i]} />
@@ -138,6 +138,7 @@ const AnimRappel: React.FC<{p: Plan; t: number}> = ({p, t}) => {
         <Fleche id="ra1" d="M 520 500 C 580 440, 650 440, 720 500" t={t} t0={ts[1] - 0.3} />
         <Fleche id="ra2" d="M 1080 500 C 1140 440, 1210 440, 1280 500" t={t} t0={ts[2] - 0.3} />
       </svg>
+      {p.legendeFin && t >= R(p, 'patron') - 0.2 ? <Legende t={t} t0={R(p, 'patron') - 0.2} texte={String(p.legendeFin)} y={160} taille={42} /> : null}
     </>
   );
 };
@@ -513,7 +514,7 @@ const AnimBoucle: React.FC<{p: Plan; t: number}> = ({p, t}) => {
 const AnimFin: React.FC<{p: Plan; t: number}> = ({p, t}) => (
   <>
     <div style={{position: 'absolute', left: 0, right: 0, top: 190, textAlign: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 60, color: OR, letterSpacing: 6,
-      transform: `scale(${pop(t, p.debut)})`}}>DANS LA PROCHAINE VIDÉO</div>
+      transform: `scale(${pop(t, p.debut)})`}}>{String(p.entete ?? 'DANS LA PROCHAINE VIDÉO')}</div>
     <div style={{position: 'absolute', left: 0, right: 0, top: 320, display: 'flex', justifyContent: 'center'}}>
       <div style={{background: OR, color: NUIT, fontFamily: POLICE, fontWeight: 800, fontSize: 56, borderRadius: 24, padding: '10px 36px', transform: `scale(${pop(t, p.debut + 0.3)})`}}>{String(p.code)}</div>
     </div>
@@ -627,6 +628,129 @@ const AnimVoiture: React.FC<{p: Plan; t: number}> = ({p, t}) => {
         backgroundPosition: `${-roule}px 0`, opacity: 0.6}} />
       {un && t >= tc - 0.2 ? <Legende t={t} t0={tc - 0.2} texte="Une seule marque de carburant… la plus chère" couleur={ROUGE} y={840} taille={40} /> : null}
       {!un && t >= tc - 0.4 ? <Legende t={t} t0={tc - 0.4} texte="… sans reconstruire la voiture ✅" couleur={VERT} y={840} taille={40} /> : null}
+    </>
+  );
+};
+
+
+const AnimCleApi: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const tv = Math.min(R(p, 'vous'), p.debut + 0.3);
+  const tp = R(p, 'payez');
+  const tj = R(p, 'jamais');
+  const k = doux(t, tv, tv + 1);
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="Une clé API, c'est…" emoji="🔑" />
+      <div style={{position: 'absolute', left: 160, top: 300, fontSize: 150, transform: `scale(${pop(t, p.debut + 0.1)})`}}>🙋🏾</div>
+      <div style={{position: 'absolute', left: interpolate(k, [0, 1], [330, 830]), top: 330, fontSize: 120, transform: `rotate(${k * 360}deg)`}}>🔑</div>
+      <div style={{position: 'absolute', left: 1180, top: 250, width: 520, height: 380, borderRadius: 34, background: '#0d1440', boxShadow: `0 0 0 5px ${t >= tv + 1 ? VERT : VIOLET}`,
+        display: 'grid', placeItems: 'center', fontFamily: POLICE, transform: `scale(${pop(t, p.debut + 0.2)})`}}>
+        <div style={{textAlign: 'center'}}>
+          <div style={{fontSize: 110}}>🏦</div>
+          <div style={{fontSize: 40, fontWeight: 800, color: BLANC}}>Le service</div>
+          {t >= tv + 1 ? <div style={{fontSize: 40, fontWeight: 800, color: VERT, transform: `scale(${pop(t, tv + 1)})`}}>« C'est vous ! » ✅</div> : null}
+        </div>
+      </div>
+      {t >= tp - 0.2 ? <Legende t={t} t0={tp - 0.2} texte="… et c'est vous qui payez 💳" couleur={OR} y={700} taille={46} /> : null}
+      {t >= tj - 0.2 ? <Legende t={t} t0={tj - 0.2} texte="🔒 Ne la montrez jamais à personne" couleur={ROUGE} y={820} taille={46} /> : null}
+    </>
+  );
+};
+
+const AnimRangement: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const tb = Math.min(R(p, 'bloc'), p.debut + 0.5);
+  const tc = R(p, 'claude');
+  const items: {e: string; txt: string; t0: number; ok: boolean}[] = [
+    {e: '📝', txt: 'Le bloc-notes', t0: tb, ok: false},
+    {e: '💬', txt: 'WhatsApp', t0: R(p, 'whatsapp'), ok: false},
+    {e: '📸', txt: "Une capture d'écran", t0: R(p, 'capture'), ok: false},
+    {e: '🤖', txt: 'Directement dans Claude Code', t0: tc, ok: true},
+    {e: '🔐', txt: 'Un gestionnaire de mots de passe', t0: R(p, 'gestion'), ok: true},
+  ];
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="Où ranger vos clés ?" emoji="🗝️" />
+      <div style={{position: 'absolute', left: 140, top: 190, width: 760, fontFamily: POLICE, fontSize: 48, fontWeight: 800, color: ROUGE, opacity: fondu(t, tb, tb + 0.3)}}>✗ Jamais ici</div>
+      <div style={{position: 'absolute', left: 1020, top: 190, width: 760, fontFamily: POLICE, fontSize: 48, fontWeight: 800, color: VERT, opacity: fondu(t, tc - 0.2, tc + 0.1)}}>✓ Ici</div>
+      {items.map((it, i) => {
+        const col = it.ok ? 1020 : 140;
+        const row = it.ok ? i - 3 : i;
+        const v = t >= it.t0 - 0.2;
+        const barre = !it.ok && i === 0 ? doux(t, R(p, 'coffre') - 0.3, R(p, 'coffre') + 0.2) : !it.ok ? doux(t, it.t0 + 0.2, it.t0 + 0.6) : 0;
+        return v ? (
+          <div key={i} style={{position: 'absolute', left: col, top: 280 + row * 170, width: 760, height: 140, borderRadius: 28, background: '#0d1440',
+            boxShadow: `0 0 0 4px ${it.ok ? VERT : ROUGE}`, display: 'flex', alignItems: 'center', gap: 26, padding: '0 30px', boxSizing: 'border-box', fontFamily: POLICE,
+            transform: `scale(${pop(t, it.t0 - 0.2)})`}}>
+            <span style={{fontSize: 80}}>{it.e}</span>
+            <span style={{fontSize: 42, fontWeight: 800, color: BLANC, position: 'relative'}}>{it.txt}
+              {!it.ok ? <span style={{position: 'absolute', left: -10, right: -10, top: '50%', height: 8, background: ROUGE, borderRadius: 4, transform: `scaleX(${barre})`, transformOrigin: 'left'}} /> : null}
+            </span>
+          </div>
+        ) : null;
+      })}
+      {t >= R(p, 'coffre') - 0.2 && t < tc - 0.3 ? <Legende t={t} t0={R(p, 'coffre') - 0.2} texte="Un bloc-notes n'est pas un coffre-fort !" couleur={ROUGE} y={820} taille={42} /> : null}
+    </>
+  );
+};
+
+const AnimMaison: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const tm = Math.min(R(p, 'maison'), p.debut + 0.4);
+  const tp = R(p, 'piece');
+  const ta = R(p, 'avant');
+  const pieces = [
+    {x: 560, txt: 'Session ouverte AVANT', ok: false},
+    {x: 980, txt: 'Nouvelle session', ok: true},
+  ];
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="La maison et ses pièces" emoji="🏠" />
+      <svg style={{position: 'absolute', left: 0, top: 0}} width={1920} height={1080}>
+        <g style={{transform: `scale(${pop(t, tm, 0.5)})`, transformOrigin: '960px 560px'}}>
+          <polygon points="420,420 960,170 1500,420" fill="#2c3462" stroke={OR} strokeWidth={8} />
+          <rect x={460} y={420} width={1000} height={420} fill="#121a4a" stroke={OR} strokeWidth={8} />
+        </g>
+      </svg>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 300, textAlign: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 44, color: OR, opacity: fondu(t, tm + 0.3, tm + 0.6)}}>
+        L'environnement « Kekeli »</div>
+      <div style={{position: 'absolute', left: 1330, top: 350, fontSize: 70, transform: `scale(${pop(t, tm + 0.8)}) rotate(${Math.sin(t * 3) * 8}deg)`}}>🔑🔑</div>
+      {pieces.map((q, i) => {
+        const t0 = i === 0 ? tp : ta + 1.2;
+        const voit = q.ok;
+        return t >= t0 - 0.2 ? (
+          <div key={i} style={{position: 'absolute', left: q.x, top: 470, width: 380, height: 320, borderRadius: 20, background: '#0d1440',
+            boxShadow: `0 0 0 5px ${t >= ta ? (voit ? VERT : ROUGE) : VIOLET}`, fontFamily: POLICE, textAlign: 'center', paddingTop: 30, boxSizing: 'border-box',
+            transform: `scale(${pop(t, t0 - 0.2)})`}}>
+            <div style={{fontSize: 90}}>{t >= ta ? (voit ? '😀' : '🙈') : '🚪'}</div>
+            <div style={{fontSize: 34, fontWeight: 800, color: BLANC, marginTop: 10}}>{i === 0 ? 'Une pièce = une session' : q.txt}</div>
+            {t >= ta ? <div style={{fontSize: 32, fontWeight: 800, color: voit ? VERT : ROUGE, marginTop: 10}}>{voit ? 'voit les clés ✅' : 'ne voit pas les clés ❌'}</div> : null}
+          </div>
+        ) : null;
+      })}
+      {t >= ta - 0.1 ? <Legende t={t} t0={ta - 0.1} texte="Ouverte avant d'avoir rangé les clés = ne les verra jamais" couleur={ROUGE} y={850} taille={38} /> : null}
+    </>
+  );
+};
+
+
+const AnimAttente: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const ta = Math.min(R(p, 'attendre'), p.debut + 0.3);
+  const tp = R(p, 'panique');
+  const tv = R(p, 'verifier');
+  const tr = R(p, 'reprenez');
+  const plein = doux(t, p.debut, ta + 0.6);
+  const vide = doux(t, tr - 0.3, tr + 0.6);
+  const niveau = plein * (1 - vide);
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="La limite est atteinte ?" emoji="⏳" />
+      <div style={{position: 'absolute', left: 220, top: 260, width: 220, height: 520, borderRadius: 40, background: '#0d1440', boxShadow: `0 0 0 6px ${OR}`, overflow: 'hidden'}}>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: `${niveau * 100}%`, background: niveau > 0.85 ? ROUGE : OR}} />
+      </div>
+      <div style={{position: 'absolute', left: 520, top: 300, fontSize: 170, transform: `rotate(${(t - ta) * 90}deg)`, opacity: fondu(t, ta, ta + 0.3)}}>🕰️</div>
+      <div style={{position: 'absolute', left: 500, top: 530, width: 400, textAlign: 'center', fontFamily: POLICE, fontSize: 44, fontWeight: 800, color: BLANC, opacity: fondu(t, ta, ta + 0.3)}}>Quelques heures</div>
+      {t >= tp - 0.2 ? <Carton x={1000} y={240} l={760} h={170} couleur={VERT} t={t} t0={tp - 0.2}><div style={{fontSize: 50, fontWeight: 800}}>😌 Pas de panique</div></Carton> : null}
+      {t >= tv - 0.2 ? <Carton x={1000} y={440} l={760} h={170} couleur={OR} t={t} t0={tv - 0.2}><div style={{fontSize: 46, fontWeight: 800}}>🔍 Vérifiez le travail</div></Carton> : null}
+      {t >= tr - 0.2 ? <Carton x={1000} y={640} l={760} h={170} couleur={VIOLET} t={t} t0={tr - 0.2}><div style={{fontSize: 46, fontWeight: 800}}>▶️ Reprenez où vous étiez</div></Carton> : null}
     </>
   );
 };
@@ -803,6 +927,7 @@ const ANIMS: Record<string, React.FC<{p: Plan; t: number}>> = {
   titre: AnimTitre, rappel: AnimRappel, conseil: AnimConseil, flou: AnimFlou, aide: AnimAide, ajuste: AnimAjuste, questions: AnimQuestions,
   noms: AnimNoms, regledor: AnimRegleDor, corrections: AnimCorrections, pullrequest: AnimPullRequest, regle: AnimRegle, appli: AnimAppli,
   boucle: AnimBoucle, fin: AnimFin, comptes: AnimComptes, jauge: AnimJauge, deuxparties: AnimDeuxParties, voiture: AnimVoiture,
+  cleapi: AnimCleApi, rangement: AnimRangement, maison: AnimMaison, attente: AnimAttente,
 };
 
 export const VideoP2: React.FC<{D: Donnees; bouche: number[]; visemes: string; dossier: string}> = ({D, bouche, visemes, dossier}) => {

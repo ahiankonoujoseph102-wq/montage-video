@@ -169,7 +169,8 @@ class Montage:
         b = self.m(avant) if avant else 1e9
         w = next((w for w in self.mots_ if a - 0.05 <= w["debut"] < b and norm(w["texte"]).startswith(norm(mot))), None)
         if not w:
-            raise ValueError(f"mot introuvable : {mot} après {apres}")
+            print(f"  ATTENTION mot introuvable : {mot} entre {apres} et {avant} → début du plan")
+            return round(a + 0.3, 3)
         return w["debut"]
 
     # ------------------------------------------------------------------ extraits
@@ -177,25 +178,54 @@ class Montage:
         """Vrai si le fichier existe déjà avec les mêmes paramètres (évite de refaire les extraits)."""
         h = hashlib.sha1(repr(cle).encode()).hexdigest()[:12]
         marque = sortie.with_suffix(".cle")
-        if sortie.exists() and marque.exists() and marque.read_text() == h:
+        if sortie.exists() and marque.exists() and marque.read_text() == h and sortie.stat().st_size > 10000:
             return True
-        marque.write_text(h)
+        marque.unlink(missing_ok=True)
+        sortie.unlink(missing_ok=True)
+        self._a_marquer = (marque, h)  # écrit seulement après un extrait réussi
         return False
 
-    def extrait(self, nom, rush, morceaux, duree):
-        """Morceaux du rush (recherche précise -ss par morceau : mêmes instants que les images de repérage), vitesse
-        normale, puis dernière image figée jusqu'à la fin du plan."""
+    def _marquer(self):
+        marque, h = self._a_marquer
+        marque.write_text(h)
+
+    @staticmethod
+    def _image_reelle(rush, a, b):
+        """Rushes à cadence variable : si aucune image n'existe entre a et b (écran immobile), on part de la dernière
+        image réelle avant a (sinon l'extrait serait noir)."""
+        out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "frame=pts_time", "-of", "csv=p=0",
+                              "-read_intervals", f"{max(0, a - 8)}%{b}", str(RUSHES[rush])], capture_output=True, text=True).stdout
+        ts = [float(x) for x in out.split() if x.strip()]
+        if any(a <= t < b for t in ts):
+            return a
+        avant = [t for t in ts if t < a]
+        return round(avant[-1] - 0.005, 3) if avant else a
+
+    def extrait(self, nom, rush, morceaux, duree, flous=()):
+        """Morceaux du rush (recherche précise -ss), vitesse normale, dernière image figée jusqu'à la fin du plan.
+        flous : rectangles (x0, y0, x1, y1) en coordonnées 1080 × 2160 floutés fortement sur tout l'extrait
+        (clés, codes, presse-papiers)."""
         sortie = self.out / f"{nom}.mp4"
-        if self._deja(sortie, "ss", rush, morceaux, round(duree, 2)):
+        if self._deja(sortie, "ss3", rush, morceaux, round(duree, 2), list(flous)):
             return
         entrees, filtres, parts = [], [], []
         for k, (a, b) in enumerate(morceaux):
+            a = self._image_reelle(rush, a, b)
             entrees += ["-ss", str(a), "-t", str(round(b - a, 3)), "-i", str(RUSHES[rush])]
             filtres.append(f"[{k}:v]setpts=PTS-STARTPTS,fps={FPS},crop=1080:2160:0:140,setsar=1[p{k}]")
             parts.append(f"[p{k}]")
-        filtres.append(f"{''.join(parts)}concat=n={len(parts)}:v=1:a=0,tpad=stop_mode=clone:stop_duration={duree + 1},trim=0:{duree + 0.2},setpts=PTS-STARTPTS[v]")
+        filtres.append(f"{''.join(parts)}concat=n={len(parts)}:v=1:a=0,tpad=stop_mode=clone:stop_duration={duree + 1},trim=0:{duree + 0.2},setpts=PTS-STARTPTS[c0]")
+        cur = "c0"
+        for i, (x0, y0, x1, y1) in enumerate(flous):
+            w, h = (x1 - x0) // 2 * 2, (y1 - y0) // 2 * 2
+            pw, ph = max(2, w // 28 // 2 * 2), max(2, h // 28 // 2 * 2)  # mosaïque très grossière, illisible
+            filtres.append(f"[{cur}]split[b{i}][f{i}];[f{i}]crop={w}:{h}:{x0}:{y0},scale={pw}:{ph},scale={w}:{h}:flags=bilinear[z{i}];"
+                           f"[b{i}][z{i}]overlay={x0}:{y0}[c{i + 1}]")
+            cur = f"c{i + 1}"
+        filtres[-1] = filtres[-1].rsplit("[", 1)[0] + "[v]"
         subprocess.run(["ffmpeg", "-v", "error", "-y", *entrees, "-filter_complex", ";".join(filtres), "-map", "[v]",
                         "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p", str(sortie)], check=True)
+        self._marquer()
 
     def libre(self, nom, fichier, debut, duree):
         """Vidéo libre (Mixkit) : morceau à vitesse normale, en boucle si trop court, 1920 × 1080 (ou vertical tel quel)."""
@@ -204,6 +234,7 @@ class Montage:
             return
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-stream_loop", "3", "-ss", str(debut), "-i", str(LIBRE / fichier), "-t", str(duree + 0.3),
                         "-an", "-vf", f"fps={FPS},scale=-2:1080", "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-pix_fmt", "yuv420p", str(sortie)], check=True)
+        self._marquer()
 
     def image(self, nom, rush, t, crop=None):
         sortie = self.out / f"{nom}.png"
@@ -211,11 +242,11 @@ class Montage:
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(t), "-i", str(RUSHES[rush]), "-frames:v", "1", "-vf", vf, str(sortie)], check=True)
 
     # ------------------------------------------------------------------ scènes
-    def demo(self, de, a, rush, morceaux, bandeau, zooms, surlignes=(), legendes=()):
+    def demo(self, de, a, rush, morceaux, bandeau, zooms, surlignes=(), legendes=(), flous=()):
         k = len(self.plans)
         d, f = self.m(de), self.m(a)
         nom = f"e{k}"
-        self.extrait(nom, rush, morceaux, f - d)
+        self.extrait(nom, rush, morceaux, f - d, flous)
         def tv(ts):  # repère en temps du rush (dans un des morceaux) ou en temps de voix off (chaîne 'v123.4')
             if isinstance(ts, str):
                 return self.m(float(ts[1:]))
