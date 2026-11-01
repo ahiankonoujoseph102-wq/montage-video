@@ -1,0 +1,54 @@
+[00:02.94] Formation. Comment créer un agent IA de A à Z. Deuxième partie. Partie 2A. La boucle de travail.
+[00:11.78] Bonjour à tous et bienvenue dans la deuxième partie. J'espère que chacun de vous sait déjà
+[00:17.66] quel agent il veut créer et qu'il a son cahier de charge. Dans la première partie, vous avez
+[00:22.86] écrit votre projet dans le bloc note. Vous l'avez donné à Claude, votre chef de projet et vous avez
+[00:28.14] obtenu votre cahier de charge. Maintenant, on construit. Avant de continuer, un conseil
+[00:34.04] très important. Prenez le temps de bien décrire votre projet. Si vous n'avez pas une idée claire
+[00:40.60] de ce que vous voulez, vous créerez quelque chose de médiocre. Claude, votre chef de projet,
+[00:45.64] peut vous aider à améliorer votre cahier de charge. Mais cela ne veut pas dire tout lui
+[00:50.74] laisser. Si vous laissez Claude prendre toutes les décisions à votre place, vous obtiendrez
+[00:56.24] un agent ordinaire comme tout le monde. Si vous avez un objectif clair, une vision précise
+[01:02.48] dans votre tête, décrivez-la. Claude vous aidera seulement à ajuster ce qui manque sur
+[01:07.76] le plan technique pour atteindre votre objectif. Si écrire vous fatigue, parler. Dans votre
+[01:13.68] bloc note, touchez le micro de votre clavier et dictez votre idée comme à un ami. Vous pouvez
+[01:20.16] aussi utiliser le mot de votre cahier de charge et péter, vous parler puis vous copier le test. Si
+[01:25.92] quelque chose n'est pas clair, Claude vous posera des questions et vous répondrez. Une fois que le
+[01:31.88] cahier de charge est clair et que le chef de projet a bien compris, on commence le travail.
+[01:38.30] Rappelez-vous, la première chose que le chef de projet nous a fait faire, créer le dépôt sur
+[01:43.98] GitHub. Le nom de l'agent, une description et toujours en privé. Si vous n'avez pas de nom,
+[01:49.98] Claude vous en propose plusieurs. Une règle d'or, ne faites jamais rien dans Claude
+[01:56.38] code sans passer par votre chef de projet. C'est lui qui doit avoir toutes les informations. Ainsi,
+[02:03.02] s'il y a un problème, il comprendra tout de suite et vous débloquera. La dernière fois,
+[02:08.32] le chef de projet a validé le plan de Claude code avec 3 corrections. Je copie son message. Valider,
+[02:15.30] lance l'étape 1. Les 3 corrections. Au départ, les paiements mobilement ne sont vérifiés à la main
+[02:21.82] sur capture d'écran. Pas de deuxième nom de domaine pour les sites des clients. Et les prix des
+[02:27.54] modèles d'IA ne sont que des estimations. J'ouvre Claude code dans la même conversation. Je colle le
+[02:33.94] message et les touches envoyées. Claude code commence à construire. Claude code travaille tout
+[02:39.64] seul. Cela peut prendre plusieurs minutes, parfois beaucoup plus. Laissez-le bien travailler. Vous
+[02:45.64] pouvez faire autre chose pendant ce temps. Claude code a fini. Il écrit un compte rendu de ce qu'il a
+[02:52.42] fait. Je copie son compte rendu en entier. Je l'envoie à mon chef de projet tel quel. Pas besoin
+[02:57.60] d'expliquer. Il comprend tout seul. Le chef de projet lit le compte rendu et me résume un mot simple.
+[03:04.74] L'étape 1 est solide. Le site est entièrement en français. La page mes projets fonctionne. On peut
+[03:11.52] créer, renommer, supprimer un projet. Chaque utilisateur ne voit que ses propres projets. Le site a été
+[03:17.16] vérifié sur un écran de téléphone. Il ajoute ses remarques. Par exemple, le mot de passe oublié n'est pas
+[03:22.98] encore en place. C'est normal. Ce sera... Il ajoute ses remarques. Par exemple, le mot de passe oublié n'est pas
+[03:31.10] encore en place. C'est normal. Ce sera fait plus tard. Si vous n'êtes pas d'accord avec une remarque,
+[03:37.50] dites-le lui. Ensuite, il me demande de fusionner la poule riqueur sur GitHub. Une poule riqueur, c'est simple.
+[03:44.26] Claude code travaille sur une copie de votre projet. Quand le travail est vérifié, on fusionne cette copie
+[03:49.54] dans le dépôt. Votre corps fort. Fusionner, c'est ranger le travail terminé à sa place. Vous pouvez
+[03:55.80] fusionner vous-même sur GitHub. Vous ouvrez la poule riqueur, vous descendez en bas, vous touchez
+[04:01.34] Merge pour riqueur puis confirme Merge. Moi, je préfère que Claude code le fasse. Je lui ai donné cette
+[04:07.92] règle. Voilà pour toutes les étapes. Si les vérifications automatiques de GitHub sont vertes, fusionne
+[04:13.08] toi-même. Si elles sont rouges, corrige, renvoie et attend qu'elles passent au vert. Claude code a
+[04:17.96] appliqué la règle. Il l'a fusionné et il m'a même envoyé des captures de l'application. Voici le
+[04:23.94] résultat de l'étape 1. La première version de l'application avec la page Mes projets. Et si votre
+[04:30.42] chef de projet vous demande de créer un compte et que vous ne savez pas comment faire, dites-le lui
+[04:35.74] simplement. Envoyez-lui une capture d'écran et demandez-lui de vous guider étape à étape. Il le fera.
+[04:41.36] Et quand une personne du chef de projet vous... Et quand une réponse du chef de projet vous semble
+[04:51.50] bizarre ou que vous ne le comprenez pas, discutez avec lui. Posez vos questions. Et si vous restez
+[04:57.16] bloqué, je suis là. Vous avez un formateur qui a déjà fait plusieurs projets. Retenez la boucle.
+[05:03.10] 1. Le chef de projet donne la consigne. 2. Claude code construit. 3. Vous copiez son compte rendu au
+[05:09.98] chef de projet. 4. Le chef vérifie et vous dit quoi faire. 5. On valide et on passe à l'étape
+[05:16.20] suivante. C'est comme ça, étape à étape, jusqu'à la fin du projet. Dans la prochaine vidéo,
+[05:21.68] on choisit le moteur et le cerveau de votre agent en dépassant le moins possible.
+[05:26.28] Sous-titrage FR ?

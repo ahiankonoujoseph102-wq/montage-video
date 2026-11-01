@@ -45,7 +45,17 @@
   excellent** ; **voix radio forte, énergique, bon ton, à haute voix** ; puiser sur Internet toutes les ressources utiles ;
   pédagogie excellente ; **ne pas se presser, avancer étape par étape**, n'assembler qu'à la fin ; **prendre tout l'écran
   pour expliquer** ; l'avatar seulement à certains endroits.
-- Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
+- **Extrait d'essai (1er novembre) : `out/essai-p2.mp4`** (1 min 04, A-22 → A-28, la pull request ; −14 LUFS), envoyé à
+  Joseph, **attente de son accord** avant le montage complet de la 2A. Données : `projets/agent-ia-p2/montage/essai2.py`
+  (voix vo1 218,55–281,40 s, traitement `VOIX_FORTE`, corrections des sous-titres, scènes). Composition Remotion
+  `EssaiP2` : copie dans `projets/agent-ia-p2/formation-src/EssaiP2.tsx` (à remettre dans
+  `serie-animee/src/formation/p2/`, déclaration dans `Root.tsx`), captures de l'appli dans `formation-src/illus/`
+  (issues de v2 à 384, 402, 437 s). Rendu : bundle puis `npx remotion render … EssaiP2` puis `outils/finaliser.py`.
+  Reprises de vo1 à retirer au montage complet : « Il ajoute ses remarques… » (1re prise ≈ 3:17–3:24),
+  « Et quand une personne du chef de projet vous… » (≈ 4:41–4:48).
+- Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
+  (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
+- Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
   `projets/agent-ia-p2/voix_off_p2.md`.
 
 ---

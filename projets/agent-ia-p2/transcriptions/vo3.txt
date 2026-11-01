@@ -1,0 +1,37 @@
+[00:05.42] partie 2 c créez vos clés api et les ranger en sécurité rappelez-vous une clé api c'est
+[00:11.92] un code secret avec elle un service c'est que c'est vous et c'est vous qui payez vous ne
+[00:17.52] la montrez jamais à personne le chef de projet me donne les étapes une par une je vais les faire
+[00:23.40] devant vous imaginez que je ne vous ai rien montré que faites vous vous suivez exactement ce que
+[00:29.62] dit votre chef de projet si vous n'y arrivez pas faites une capture et envoyez-la lui il vous
+[00:35.74] guidera étape à étape chaque projet aura ses propres étapes première clé gemini dans google tapez
+[00:43.90] ai studio google.com et connectez-vous avec votre compte google la première fois google pose quelques
+[00:51.00] questions lisez cochez puis touchez continue ouvrez clé api touchez créer une clé donnez un nom à la
+[00:58.10] clé par exemple le nom de votre projet c'est facultatif choisissez créer un projet puis valider votre clé
+[01:04.32] s'affiche touchez copier sur l'écran je l'ai flouté vous vous ne la montrez jamais deuxième clé
+[01:11.38] edb c'est ma première fois sur ce site je découvre avec vous ouvrez edb dev et touchez commencez à
+[01:18.24] construire inscrivez-vous avec votre compte geek top puis autorisez l'accès edb vous envoie un
+[01:24.52] code de vérification par email ouvrez votre messagerie copier le code puis coller lui ce
+[01:29.94] code aussi est secret vous êtes dans le tableau de bord ouvrez apiq touchez créer une clé donnez lui
+[01:37.60] un nom puis valider copier la clé là encore je l'ai flouté dans la vidéo j'ai collé mes clés dans mon
+[01:45.30] bloc note pour ne pas les oublier ne faites pas comme moi un bloc note n'est pas encore fort collez
+[01:51.08] vos clés directement dans cloud code ou gardez l'aide dans un gestionnaire de mot de passe jamais
+[01:56.82] dans whatsapp jamais sur une capture d'écran le chef de projet m'explique où placer les deux clés
+[02:01.96] dans l'arbre dans l'environnement de cloud code ouvrez cloud code toucher le menu des
+[02:07.28] environnements choisissez l'environnement de votre projet puis toucher modifier descendez jusqu'en
+[02:12.62] bas variable d'environnement écrivez une ligne par
+[02:20.28] écrivez une ligne par clé le nom de la clé le signe égal puis la clé sans espace le chef de
+[02:26.22] projet vous donne les noms exacts pour moi j'ai mené apiq et edb pour moi j'ai mené apiq et edb apiq touchez enregistrer les modifications
+[02:44.62] je demande à cloud code de vérifier il me répond je ne vois pas les clés pourquoi le chef de projet m'explique
+[02:51.34] l'environnement c'est comme une maison on y range les clés la session c'est une pièce de la maison une
+[02:57.46] session ouverte avant d'avoir rangé les clés ne les verra jamais et j'avais une deuxième erreur
+[03:05.02] j'avais mis les clés dans l'environnement des fautes pendant celui de mon projet ce n'est pas grave
+[03:10.60] avec des captures le chef de projet m'a guidé papa
+[03:20.94] et j'avais une deuxième erreur j'avais mis les clés dans l'environnement des fautes pas dans celui de
+[03:27.02] mon projet ce n'est pas grave avec des captures le chef de projet m'a guidé papa la solution toucher
+[03:33.82] nouvelle section choisissez votre dépôt et l'environnement où vous avez rangé les clés
+[03:38.50] demandez à cloud code de vérifier qu'ils voient les clés sans jamais les afficher cloud code
+[03:43.62] répond les deux clés obligatoires sont présentes il a fait un petit essai avec gemini et edb les deux
+[03:51.48] services répondent ils lancent l'étape 2 si cloud code ne voit pas vos clés vérifier trois choses
+[03:58.10] vous avez touché enregistrer vous avez ouvert une nouvelle session et vous avez choisi le bon
+[04:03.34] environnement si vous êtes bloqué envoie une capture à votre chef de projet sans clé visible dans la
+[04:09.88] prochaine vidéo on suit la construction jusqu'au bout

@@ -1,0 +1,42 @@
+[00:09.70] partie 2b le moteur le cerveau de votre agent l'étape 1 est validé le chef de projet m'explique ce
+[00:17.52] qui change à l'étape 2 l'agent va commencer à travers pour de vrai pour cela il me demande
+[00:22.96] deux comptes anthropique le cerveau de l'agent c'est payant à l'utilisation et edb les ordinateurs
+[00:31.78] virtuels de l'agent il ya un crédit gratuit au départ et c'est moi qui placerai les clés dans
+[00:37.16] les réglages je ne suis pas d'accord sur un point anthropique coûte cher alors je lui écris et si
+[00:44.60] j'utilisais j'ai mené comme cerveau de l'agent puisqu'il a une offre gratuite vous voyez c'est
+[00:50.40] vous le patron quand une proposition ne vous convient pas dites le et discuter avec votre
+[00:54.80] chef de projet il me répond c'est une bonne idée pour la phase de construction mais il ya deux
+[00:59.82] limites à connaître première limite le moteur prévu au départ le cloud agent sdk ne marche
+[01:06.46] qu'avec cloud pour utiliser gemini il faut changer de moteur deuxième limite avec de vrais clients
+[01:13.46] l'offre gratuite de gemini ne suffira pas je n'ai pas bien compris sa recommandation alors je lui
+[01:19.34] demande de me l'expliquer plus simplement n'est jamais honte de demander il m'explique un agent de
+[01:25.66] programmation à deux parties le moteur c'est le programme qui fait agir l'agent lire écrire
+[01:30.86] travail sur les fichiers le cerveau c'est le modèle d'hier qui le fait réfléchir le moteur prévu au
+[01:37.00] départ n'acceptait qu'un seul cerveau cloud qui est payant c'est comme une voiture qui ne roule
+[01:42.86] qu'avec une seule marque de carburant la plus chère sa recommandation changer de moteur et prendre un
+[01:49.44] moteur multimodèle c'est une voiture qui accepte plusieurs carburants on peut changer de carburant
+[01:55.46] à tout moment sans reconstruire la voiture concrètement pendant la construction on branche
+[02:01.36] gémini gratuit au lancement avec de vrais clients on choisira le cerveau qui donne le mieux au lancement
+[02:11.06] avec de vrais clients on choisira le cerveau qui donne au lancement avec du vrai client on choisira
+[02:24.20] le cerveau qui donne la meilleure qualité. C'est clair, je valide et il me donne le prompt. Je le
+[02:37.62] copie et je l'envoie à CloudCode. CloudCode commence par faire des recherches pour trouver
+[02:43.24] le meilleur moteur multimodèle. Je copie son code radio et je l'envoie au chef de projet. Le
+[02:49.92] chef de projet me conseille OpenCode, un moteur vraiment multimodèle, libre et utilisable
+[02:55.02] pour un projet commercial. Je lui demande la différence entre OpenCode et Gemini. Ce
+[03:00.88] sont deux choses différentes. OpenCode, c'est le moteur, le programme qui fait agir l'agent.
+[03:05.32] Gemini, c'est le cerveau qu'on branche dessus. Et plus tard, on pourra brancher un autre
+[03:09.66] cerveau. Il me dit franchement, avec plusieurs clients, l'offre gratuite ne tiendra pas.
+[03:24.88] Vous avez vu, le chef de projet donne son avis franchement. Même quand ce n'est pas
+[03:29.52] ce qu'on veut attendre. Et à la fin, c'est vous qui décidez. Je valide. Il me donne
+[03:34.48] le prompt et je l'envoie à CloudCode. Pendant que CloudCode travaille, je continue de discuter
+[03:40.28] avec mon chef de projet et je lis toujours le prompt avant de l'envoyer. C'est très
+[03:44.16] important. En lisant, je vois une phrase. Quand les limites gratuites seront épuisées,
+[03:48.36] les utilisateurs le verront. Je lui demande, qu'est-ce qu'ils verront exactement?
+[03:52.32] Bonne question, me répond-il. Il y a deux limites différentes. La limite de chaque
+[03:56.98] utilisateur et la limite de l'offre gratuite. Ensemble, on choisit un message clair, comme
+[04:01.72] le fait CloudCode. Votre énergie du jour est épuisée. Elle sera de nouveau près
+[04:06.26] demain. CloudCode a fini. J'envoie son compte rendu au chef de projet. Très beau travail,
+[04:12.46] me dit-il. Prochaine étape, créer les clés API. Attention, Gemini, EDB et OpenCode
+[04:18.14] sont les choix de mon projet. Pour votre agent, votre chef de projet choisira peut-être
+[04:23.06] d'autres outils. La méthode, elle reste la même. Dans la prochaine vidéo, on crée
+[04:28.98] les clés API et on les range en sécurité.

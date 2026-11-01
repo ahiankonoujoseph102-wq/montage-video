@@ -1,0 +1,23 @@
+[00:05.04] Partie 2D. Suivre la construction jusqu'au bout.
+[00:08.64] Cloud Code travaille toujours. Regardez cette barre. C'est votre limite d'utilisation. Quand
+[00:13.44] elle devient toute rouge, Cloud Code s'arrête. Alors, il faut attendre quelques heures puis
+[00:18.58] recommencer. Pas de panique. Profitez-en pour vérifier le travail puis reprenez là où vous
+[00:23.44] êtes arrêté. Cloud Code a fini l'étape 2. Il me demande si je valide pour commencer l'étape 3.
+[00:29.04] Je ne réponds pas tout de suite. Je copie son compte rendu. Je l'envoie à mon chef de
+[00:32.48] projet. Il vérifie. L'agent fonctionne pour de vrai. Il a créé un fichier, lancé une commande et répondu
+[00:37.94] en français. Cloud Code a fusionné lui-même. Le chef de projet me demande de regarder les
+[00:42.30] captures. Cloud Code en a fait 13. Je les ouvre et je regarde toutes. Si une capture ne me plaît pas,
+[00:49.82] je peux l'envoyer au chef de projet pour avoir son avis. Tout est bon, je valide. Et Cloud Code
+[00:54.66] lance l'étape 3. C'est comme ça qu'on avance étape à étape en vérifiant chaque fois jusqu'à la fin du
+[01:00.64] projet. Et voilà, ma limite est atteinte. Il faudra attendre quelques heures. C'est normal. Cela vous
+[01:13.04] arrivera aussi. Récapitulons. 1. Le bloc notes où vous décrivez votre projet en détail. 2. Cloud Code,
+[01:21.46] votre chef de projet qui en fait un cahier de charge. 3. Récapitulons. 1. Le bloc notes où vous
+[01:36.90] décrivez votre projet en détail. 2. Cloud, votre chef de projet qui en fait un cahier de charge. 3.
+[01:44.46] Cloud Code, votre développeur qui construit étape à étape. Et vous, le patron, faites le lien entre les deux.
+[01:51.00] 2. Votre devoir avant la partie 3. Lancer la première étape de votre propre agent. Faites au
+[01:58.50] moins un tour complet de la boucle. Consigne, construction, compte rendu, vérification. Puis
+[02:03.72] envoyez dans le groupe WhatsApp une capture de votre premier résultat, sans aucune clé visible.
+[02:10.14] Bravo pour votre travail. La suite arrive très bientôt.
+[02:13.14] et pour votre choix.
+[02:15.02] Sous-titrage Société Radio-Canada
+[02:18.36] Sous-titrage ST' 501
