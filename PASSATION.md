@@ -109,6 +109,11 @@
 - Pièges du moteur : rushes à cadence variable → `_image_reelle` prend la dernière image réelle si la fenêtre est vide
   (sinon écran noir) ; 2C et 2D : morceaux réduits à 0,3 s autour de l'image vérifiée (l'écran change juste après) ;
   le cache des extraits (`.cle`) n'est écrit qu'après un extrait réussi.
+- **Documents de la partie 2 (1er novembre)** : générés par `projets/agent-ia-p2/docs/generer.py` (contenu dans `contenu.py`,
+  mise en page clonée du guide de la partie 1 par `docgen.py`, PDF par LibreOffice) → `projets/agent-ia-p2/livrable/` :
+  guide « Construire son agent avec Claude Code », guide général mis à jour (chapitres 13 « Partie 2 » et 14 « devoir
+  avant la partie 3 », fiches devenues chapitre 15, puce « variables d'environnement » au chapitre 10), « Test vidéo
+  2A » à « 2D » et « Tests partie 2 - réponses », en .docx et .pdf ; message WhatsApp `message_whatsapp_partie2.md`.
 - Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
   (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
