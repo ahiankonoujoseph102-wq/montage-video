@@ -1,13 +1,42 @@
-# PASSATION — Formation « Comment créer un agent IA, de A à Z », partie 1 (vidéos 1A et 1B)
+# PASSATION — Formation « Comment créer un agent IA, de A à Z »
 
-À lire en premier par toute nouvelle conversation. Mis à jour à chaque étape. Branche : `ccr-ac0b494d-7l5eng`.
+À lire en premier par toute nouvelle conversation. Branche : `ccr-ac0b494d-7l5eng`.
 
+## ▶ EN COURS : la SUITE de la formation (projet `projets/agent-ia-p2/`, demande de Joseph du 1er novembre 2026)
+
+- La partie 1 (vidéos 1A et 1B) est **validée et envoyée aux élèves**, avec le guide et les tests (détails plus bas).
+- Joseph a enregistré la suite : **7 vidéos** (identifiants Google Drive dans `projets/agent-ia-p2/rushes/README.md`),
+  à monter **dans le même style que la partie 1 validée** (voir « Version 2 complète : comment c'est construit »).
+- Ses demandes, dans l'ordre :
+  0. Ne rien perdre : push après chaque étape, ce fichier à jour (où on en est, fichiers, licences, commandes, demandes).
+  1. Analyse : télécharger et regarder les 7 vidéos en entier (transcription + images) ; comprendre comment il continue
+     la formation ; signaler erreurs, étapes oubliées, explications confuses, et proposer mieux.
+  2. Même style que la partie 1 : démos en grand, zoom, cercle doré, bandeau « Étape X / Y » ; vitesse normale ou
+     ralentie, jamais accélérée, chargements coupés ; avatar absent des démos, présent pour intro, explications,
+     transitions, fin ; illustrations libres de droits (sources et licences ici) ; voix radio −14 LUFS ; flou seulement
+     mots de passe, clés secrètes, codes SMS ; ne rien couper d'utile (sinon démo claire ou enregistrement demandé) ;
+     intro « Deuxième partie » (ou le bon numéro) et « La suite arrive très bientôt » si la formation continue ;
+     public de débutants complets.
+  3. **D'abord, sans rien monter** : a) découpage (nombre de vidéos finales, titres, durées) ; b) plan scène par scène ;
+     c) ce qui manque : voix off à réenregistrer (texte complet collé dans la réponse, petits morceaux numérotés avec la
+     démo associée) et enregistrements d'écran manquants (quoi, quelle page, combien de secondes) ; d) conseils qualité.
+  4. Après son accord : extrait d'essai d'environ 1 min ; puis montage complet vidéo par vidéo (chacune envoyée dès
+     qu'elle est prête et contrôlée comme un débutant) ; une version légère WhatsApp de chaque vidéo.
+  5. Documents élèves : un test par vidéo (réponses à part pour Joseph) ; le guide de la partie (étapes numérotées dans
+     l'ordre des démos, mots simples, liens utiles, devoir) ; mise à jour du document « Guide de formation pour la
+     préparation d'agents » (= le guide « Préparer son agent IA », `projets/agent-ia-p1/guide.docx`) ; en .docx ET en PDF ;
+     le message WhatsApp pour les élèves.
+- **Étape actuelle : 1 (analyse)**.
+
+---
+
+# Partie 1 (vidéos 1A et 1B) — terminée et validée
 ## Où on en est
 
 - **Version 1** rendue le 30 octobre 2026 : refusée par Joseph (fade, démos trop rapides, pas de Talkami, trop de coupes).
 - **Version 2** : plan `projets/agent-ia-p1/plan_v2.md` ; extrait d'essai `out/essai-v2.mp4` (composition `EssaiV2`)
   **validé par Joseph : « c'est ce style que je veux »**.
-- **Étape 3 : vidéos finales v2 envoyées à Joseph le 31 octobre (en attente de son avis)** (1A ≈ 14 min 40, 1B ≈ 18 min 10) après contrôle image par image et
+- **Vidéos finales v2 validées par Joseph et envoyées aux élèves (1er novembre)** (1A ≈ 14 min 40, 1B ≈ 18 min 10) après contrôle image par image et
   corrections. Vidéos : `out/formation-1A-v2.mp4` et `out/formation-1B-v2.mp4` (non versionnées, > 80 Mo ; envoyées à
   Joseph dans la conversation ; le conteneur est effacé à la fin de la session : pour les retrouver, relancer la
   construction et le rendu, commandes ci-dessous). Aucune Release GitHub possible depuis cette session (outil absent).
