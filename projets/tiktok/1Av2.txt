@@ -1,0 +1,280 @@
+[00:00.00] Formation, comment créer un agent IA de A à Z.
+[00:04.14] Première partie, partie 1A, comprendre.
+[00:09.76] Salut à tous et bienvenue dans cette formation complète,
+[00:13.60] comment créer un agent IA de A à Z.
+[00:16.72] Je suis Joseph Aghiankounou, fondateur de l'Omeya School.
+[00:20.26] Je forme l'intelligence artificielle depuis 2023
+[00:23.06] et j'ai déjà accompagné plus de 1000 personnes.
+[00:26.02] Aujourd'hui, tout le monde parle d'intelligence artificielle,
+[00:28.82] mais très peu de gens savent créer un outil qui travaille vraiment pour eux.
+[00:32.92] C'est exactement ce que vous allez apprendre.
+[00:34.98] Créer votre propre agent IA, un assistant qui travaille pour vous,
+[00:38.38] même quand vous dormez.
+[00:40.08] Tout ce que je vais vous montrer, je l'utilise moi-même.
+[00:42.48] J'ai créé Tolkami, une plateforme où un professeur IA,
+[00:45.82] Tita Joe, enseigne l'anglais à l'oral.
+[00:48.06] Et je l'ai construit uniquement depuis mon téléphone
+[00:50.74] avec la méthode de cette formation.
+[00:56.58] Hello Aghiri, welcome to your English lesson today.
+[01:00.14] It will last 15 minutes.
+[01:02.56] Comme d'habitude, posez vos questions.
+[01:04.84] Maintenant à vous.
+[01:06.40] Allez sur Tolkami.net et essayez vous-même.
+[01:15.80] Faites l'évaluation gratuite et parlez avec Tita Joe.
+[01:23.68] C'est exactement ce genre d'agent que vous allez apprendre à...
+[01:31.66] Peut-être que vous dites, moi je ne connais rien à la technique.
+[01:35.32] C'est normal et ce n'est pas un problème.
+[01:37.34] Cette formation est faite pour les débutants.
+[01:39.54] Chaque mot technique sera expliqué simplement
+[01:41.66] avec des exemples de la vie de tous les jours.
+[01:43.96] Ce dont vous avez besoin, ce n'est pas de savoir programmer,
+[01:46.42] c'est d'avoir une méthode.
+[01:49.00] Voici le chemin, étape à étape.
+[01:51.22] D'abord, nous allons comprendre ce qu'est une IA,
+[01:53.66] puis ce qu'est un agent IA.
+[01:55.46] Ensuite, nous en prendrons les mots importants,
+[01:58.40] puis nous créerons les comptes nécessaires.
+[02:00.78] Après, nous verrons la méthode complète.
+[02:03.12] Préparer son projet, le confier à un chef de projet,
+[02:06.30] le faire construire, puis le tester.
+[02:08.34] Et nous finirons par les erreurs à éviter.
+[02:11.04] Et vous n'aurez pas seulement de la théorie.
+[02:13.58] Tout au long de cette formation,
+[02:14.68] je vais construire devant vous un vrai agent du A à Z.
+[02:18.80] C'est un agent de programmation.
+[02:20.48] Comme Claude Cote, vous lui décrivez en français ce que vous voulez
+[02:23.80] et il écrit lui-même le code.
+[02:26.08] Crée les fichiers et construire le site ou l'application.
+[02:28.86] Et il sera pensé pour nous, en français.
+[02:31.26] Utilisable depuis un téléphone et payable par mobile money.
+[02:35.46] Je vous le dis franchement, c'est un projet avancé.
+[02:37.76] Je l'ai choisi exprès pour vous montrer
+[02:39.98] que la méthode marche même sur un gros projet.
+[02:42.42] Vous verrez chaque étape et même les erreurs et comment on les corrige.
+[02:46.60] Mais pour votre premier agent, vous commencez par quelque chose de plus simple.
+[02:50.52] Vous recevez aussi un guide écrit.
+[02:52.80] Préparer son agent IA, il contient tous les fiches et tous les messages que je vais utiliser.
+[02:57.24] Gardez-lui à côté de vous.
+[02:58.74] Préparer de quoi noter.
+[02:59.78] Restez jusqu'au bout et on commence.
+[03:04.46] Commençons par le début.
+[03:05.94] L'intelligence artificielle ou IA, c'est un programme informatique
+[03:09.30] capable de comprendre ce que vous lui écrivez ou le dites
+[03:11.98] et de vous répondre de façon intelligente.
+[03:14.54] Elle a appris en lisant une énorme quantité de tests.
+[03:17.78] C'est pour cela qu'elle sait écrire, expliquer, traduire, résumer ou donner des idées.
+[03:22.94] J'ai une personne qui a lu presque toutes les bibliothèques du monde.
+[03:26.32] Elle connaît énormément de choses et elle répond très vite.
+[03:30.20] Mais elle ne vous connaît pas.
+[03:31.78] Elle ne connaît ni votre entreprise, ni vos clients, ni vos prix.
+[03:34.82] Retenez bien cela, c'est très important pour la suite.
+[03:37.62] Vous avez sûrement entendu parler de charge GPT, de clôtres ou de chimene.
+[03:41.56] Ce sont des IA.
+[03:42.64] Vous leur posez une question, elles répondent.
+[03:47.90] Vous leur demandez un test, elles l'écrivent.
+[03:56.90] Puis elles attendent votre prochaine demande.
+[04:04.40] Et c'est là sa limite.
+[04:06.04] Une IA simple attend toujours que vous lui parliez.
+[04:08.54] Elle ne fait rien toute seule.
+[04:10.62] Elle ne répond pas à vos clients pendant que vous dormez.
+[04:13.42] Un agent IA, c'est une IA à qui on a donné trois choses.
+[04:17.02] Un rôle, des informations et des outils.
+[04:19.44] Le rôle, c'est son métier.
+[04:20.96] Par exemple, répondre aux clients.
+[04:22.56] Retenez cette image.
+[04:24.02] L'agent IA, c'est un employé.
+[04:26.58] Prénom, Tita Joe.
+[04:28.24] Surtur Kami.
+[04:29.22] Son rôle, enseigner l'anglais à l'oral.
+[04:31.36] Ces informations, les niveaux de l'élève, son programme, ses erreurs passées.
+[04:34.90] Ces outils, la voix, le tableau à l'écran, les documents de révision.
+[04:38.78] L'élève se connaît et Tita Joe fait la séance tout seul, sans que j'intervienne.
+[04:46.80] Sorry, I didn't hear you well.
+[04:48.98] Can you say it again?
+[04:50.26] Je n'ai pas bien entendu.
+[04:51.56] Pouvez-vous répéter?
+[04:54.28] Tout agent suit le même cycle, en quatre étapes.
+[04:57.32] Un, il reçoit un message ou un signal.
+[05:00.28] Il existe ces grands types d'agents.
+[05:02.28] Vous les retrouverez dans votre guide.
+[05:04.68] Un, l'agent professeur qui enseigne comme Tita Joe.
+[05:07.44] Deux, l'agent de service client et de vente qui répond au client et prend les commentaires.
+[05:11.54] Trois, l'agent de contenu qui crée des vidéos et des publications.
+[05:14.78] Quatre, l'agent de rendez-vous qui gère un agenda, par exemple pour un salon ou une clinique.
+[05:19.40] Cinq, l'agent d'automatisation qui fait à votre place une tâche répétitive, comme faire chaque soir le point de vente.
+[05:26.40] Six, l'agent vocal qui parle et écoute, comme au téléphone.
+[05:31.54] Bonsoir, je suis Ama, l'assistante de Lomé IS School. Je vous écoute.
+[05:37.92] Un même agent peut combiner plusieurs types.
+[05:40.78] Tita Joe, par exemple, est à la fois professeur et agent vocal.
+[05:44.18] Et l'agent de programmation que nous allons construire ensemble est un agent d'automatisation très avancé.
+[05:49.50] Sa tâche, c'est d'écrire du code à votre place.
+[05:52.52] Savoir quel type d'agent vous voulez créer, c'est la première décision.
+[05:56.60] Elle va guider tout le reste de votre projet.
+[05:58.54] Pendant cette formation, gardez une question en tête.
+[06:01.52] Quel agent pourrait m'aider dans mon activité?
+[06:06.92] Avant d'aller plus loin, nous allons apprendre les mots que vous allez entendre tout au long de cette formation.
+[06:12.22] Pour chaque mot, je vais vous dire ce que c'est.
+[06:14.64] Vous donnez une image de la vie courante.
+[06:16.58] Un exemple et pourquoi c'est important pour vous.
+[06:18.64] Prenez votre temps.
+[06:19.76] Si vous comprenez ces mots, tout le reste deviendra facile.
+[06:22.98] Le premier mot, c'est le prompt.
+[06:24.66] Un prompteur, c'est simplement le message que vous écrivez à une IA pour lui demander quelque chose.
+[06:29.74] C'est comme une consigne que vous donnez à un employé.
+[06:32.36] Plus la consigne est claire, mieux le travail est fait.
+[06:35.32] Par exemple, écris-moi un message pour lui, pour rappeler un rendez-vous à une cliente.
+[06:40.26] Ça, c'est un prompt.
+[06:41.52] C'est important parce que toute notre méthode repose sur de bons prompts.
+[06:47.72] Le deuxième mot, c'est le cahier des charges.
+[06:49.80] C'est le document qui décrit tout ce que votre agent doit savoir et faire.
+[06:53.26] C'est comme le plan d'une maison.
+[06:54.96] Avant de construire, l'architecte dessine le plan.
+[06:57.58] Sans plan, le maçon construit n'importe comment.
+[06:59.60] Par exemple, le cahier des charges d'un agent de salon dira les prix, les horaires, comment prendre un rendez-vous et ce qu'il ne doit jamais promettre.
+[07:08.18] C'est le document le plus important de votre projet.
+[07:10.76] Le troisième mot, c'est le chef de projet.
+[07:12.98] C'est la personne qui organise le travail.
+[07:15.04] Vérifie que tout est bien fait et dit quoi faire à chaque étape.
+[07:19.14] Sur un chantier, le chef de chantier ne pose pas les briques lui-même.
+[07:23.82] Il organise, il vérifie et il donne les consignes aux ouvriers.
+[07:27.20] Dans notre méthode, le chef de projet, c'est Claude.
+[07:30.42] Vous discutez avec lui et il vous guide du début à la fin.
+[07:34.54] Le quatrième mot, c'est le développeur.
+[07:36.62] C'est celui qui écrit le code, c'est-à-dire les instructions que l'ordinateur suit pour faire fonctionner votre agent.
+[07:42.20] Si le chef de projet est le chef de chantier, le développeur est l'ouvrier qui construit vraiment la maison.
+[07:47.44] Dans notre méthode, le développeur, c'est Claude Coat, un outil qui écrit le code tout seul à partir des consignes du chef de projet.
+[07:54.82] C'est important parce que c'est lui qui transforme votre idée en un vrai agent qui fonctionne.
+[07:59.44] Le cinquième mot, c'est GitHub.
+[08:01.02] C'est un site où l'on range le code de son projet.
+[08:04.00] L'espace de votre projet sur GitHub s'appelle un dépôt.
+[08:06.96] C'est comme un coffre fort pour votre travail.
+[08:08.86] Tout est rangé, sauvegardé et vous pouvez revenir en arrière si quelque chose se passe mal.
+[08:13.48] Par exemple, le code de Tolkami est rangé dans un dépôt GitHub.
+[08:18.22] Chaque modification est enregistrée.
+[08:20.58] Le sixième mot, c'est l'hébergement.
+[08:22.58] C'est un ordinateur, quelque part sur Internet, allumé jour et nuit, sur lequel votre agent fonctionne.
+[08:28.30] C'est comme louer une boutique.
+[08:29.84] Votre produit existe, mais il faut un local pour que les clients puissent venir à toute heure.
+[08:34.52] Par exemple, Tolkami est hébergé sur Laravel Cloud.
+[08:38.28] C'est pour cela que les élèves peuvent s'y connecter à minuit comme à midi.
+[08:41.92] C'est important parce que, sans hébergement, votre agent ne fonctionne que sur votre téléphone et personne d'autre ne peut l'utiliser.
+[08:48.42] Le septième mot, c'est la base des données.
+[08:50.86] C'est l'endroit où votre agent note et retrouve toutes les informations.
+[08:54.14] C'est comme le grand cahier d'une boutique où l'on note les clients, les commandes et les paiements.
+[08:59.50] Sauf qu'il est rangé, rapide et ne se paie pas.
+[09:02.54] Par exemple, Tolkami note dans sa base des données le niveau de chaque élève, ses sciences et ses erreurs.
+[09:08.30] C'est important parce que c'est la mémoire de votre agent.
+[09:10.88] Le huitième mot, le modèle d'IA, c'est son cerveau.
+[09:14.40] Et vous pouvez choisir quel cerveau lui donner.
+[09:16.92] Par exemple, Gemini de Google qui a un palier gratuit.
+[09:20.26] Cloud ou les modèles de Punaï, la société de charge.
+[09:23.34] Le neuvième mot, c'est l'API.
+[09:25.44] Une API, c'est un moyen de brancher votre agent sur un autre service pour qu'ils travaillent ensemble.
+[09:30.88] C'est comme une prise électrique.
+[09:32.46] Votre agent a besoin d'énergie.
+[09:34.02] Il se branche sur la prise du modèle d'IA, sur la prise de WhatsApp ou sur celle d'un service d'email.
+[09:40.36] Par exemple, quantité de parle, Tolkami se branche par une API sur un service de voix.
+[09:46.12] C'est important parce que presque tout ce que fait un agent passe par des API.
+[09:50.98] Le dixième mot, c'est la clé API.
+[09:53.36] C'est un long code secret qu'un service vous donne pour utiliser son API.
+[09:57.70] C'est comme la clé de votre maison ou le code secret de votre mobile monnaie.
+[10:02.22] Celui qui l'a peut entrer et dépenser.
+[10:05.12] Par exemple, pour utiliser Gemini, Google vous donne une clé.
+[10:08.60] Avec cette clé, Google sait que c'est vous.
+[10:11.40] Et c'est vous qui payez ce que l'agent consomme.
+[10:14.28] C'est très important.
+[10:15.52] Ne montrez jamais votre clé.
+[10:17.70] Voilà les dix mots les plus importants.
+[10:19.82] Vous les retrouverez dans votre guide, à la page, les mots techniques.
+[10:22.90] Si un jour vous oubliez un mot, demandez simplement à votre chef de projet.
+[10:26.16] Mais explique-moi ce mot simplement.
+[10:27.84] Il le fera toujours.
+[10:32.18] Maintenant que vous connaissez les mots, créons ensemble les comptes dont vous aurez besoin.
+[10:36.26] Il y en a trois.
+[10:37.28] Le premier compte, c'est Claude.
+[10:39.06] C'est votre chef de projet.
+[10:40.34] C'est avec lui que vous discutez de votre idée.
+[10:42.54] Et c'est lui qui vous guidera à chaque étape.
+[10:45.60] Pour commencer, la version gratuite suffit pour discuter et préparer votre projet.
+[10:50.00] Ok, là on va installer Claude.
+[10:51.84] Donc vous l'installez, vous voyez.
+[10:54.26] Il y a un peu créé votre compte.
+[10:56.16] Ok, on va l'ouvrir.
+[10:57.36] Donc maintenant, ici, vous cliquez sur Continuer avec Google.
+[10:59.70] Vous voyez.
+[11:00.76] Et on choisit une adresse simile.
+[11:02.82] Et puis, si c'est votre première fois de créer le compte, alors il va vous demander votre nom, prénom.
+[11:07.36] Et voilà, votre compte Claude est créé.
+[11:10.56] C'est gratuit.
+[11:11.68] Le deuxième compte, c'est GitHub.
+[11:13.36] Le coffre-fort de votre compte.
+[11:14.70] La création est gratuite et retirez bien.
+[11:16.64] Quand vous créerez votre dépôt, choisissez toujours « Privé ».
+[11:21.38] Dans Google, tapez « GitHub » puis ouvrez « GitHub ».
+[11:27.20] Touchez « S'inscrire ».
+[11:29.60] Touchez « Continuez avec Google » et choisissez votre adresse.
+[11:35.04] Votre compte GitHub est prêt.
+[11:38.58] Pour créer un dépôt, touchez le petit « Plus » en haut, puis « Nouveau dépôt ».
+[11:45.60] Donnez un nom à votre dépôt, sans espace.
+[11:55.58] Ajoutez une courte description.
+[12:03.08] Maintenant, le plus important, choisissez « Privé ».
+[12:07.02] Vous voyez le cadenas ?
+[12:08.86] Personne d'autre ne verra votre compte.
+[12:12.08] Touchez « Créer le dépôt ».
+[12:17.22] C'est fait.
+[12:18.80] Votre confort est prêt.
+[12:21.90] Le troisième outil, c'est Claude Côte, votre développeur.
+[12:24.96] On y a assez avec son compte Claude.
+[12:26.60] Attention, Claude Côte demande un abonnement payant.
+[12:29.54] Je vous le dis franchement, si vous êtes souri avec votre projet,
+[12:32.38] c'est un investissement qui vous fait gagner énormément de temps.
+[12:36.10] Ouvrez Claude Côte dans votre navigateur avec votre compte Claude.
+[12:39.92] Je vous conseille la version web.
+[12:42.38] C'est plus simple que l'application.
+[12:44.58] Touchez « Nouvelle session ».
+[12:46.32] Claude Côte vous demande de relier votre compte GitHub.
+[12:49.78] Touchez « Autoriser l'accès » puis revenez dans Claude.
+[12:55.22] « Créer maintenant un an. »
+[12:58.92] « Donnez-lui un an. »
+[13:17.54] « Donnez-lui un an. »
+[13:24.72] « Récapitulons. »
+[13:25.90] Claude, le chef de projet.
+[13:26.88] « Gratuit pour commencer. »
+[13:28.20] « GitHub, le confort. »
+[13:29.38] « Gratuit. »
+[13:30.38] « Claude, le développeur payant. »
+[13:31.96] « Plus tard, selon votre agent, il faudra peut-être un hébergement et un modèle d'hier. »
+[13:38.06] « Avant de commencer le travail, je veux que vous voyez toute la méthode d'un seul coup d'œil. »
+[13:43.14] « Elle tient à quatre étapes. »
+[13:44.58] « Étape 1. »
+[13:45.32] « Vous écrivez votre projet dans le bloc-note de votre téléphone. »
+[13:48.54] « Étape 2. »
+[13:49.20] « Vous donnez ce test à Claude, votre chef de projet. »
+[13:52.12] « Il a enfin un cahier de charge complet. »
+[13:54.04] « Étape 3. »
+[13:55.02] « Claude prépare les consignes. »
+[13:56.66] « Et Claude Côte, votre développeur, construit l'argent étape à étape. »
+[13:59.84] « Étape 4. »
+[14:00.74] « Vous testez l'argent. »
+[14:01.72] « Vous le mettez en ligne. »
+[14:02.86] « Et vous l'améliorez. »
+[14:04.22] « Retenez le rôle de chacun. »
+[14:05.90] « Vous êtes le patron. »
+[14:07.02] « Vous décidez. »
+[14:07.92] « Claude est le chef de projet. »
+[14:09.42] « Il organise et vérifie. »
+[14:10.72] « Claude Côte est le développeur. »
+[14:12.06] « Il construit. »
+[14:12.90] « Et vous, vous faites le lien entre les deux. »
+[14:15.28] « Vous copiez, vous collez, vous testez et vous décidez. »
+[14:18.14] « Cette méthode marche parce que chacun fait ce qu'il sait faire. »
+[14:21.58] « Vous n'avez pas besoin de tout savoir. »
+[14:23.32] « Vous avez besoin de suivre les étapes dans l'autre. »
+[14:25.70] « Maintenant, attaquons la première étape, le bloc-note. »
+[14:29.32] « C'est la fin de la partie 1A. »
+[14:32.08] « Dans la partie 1B, on passe à la pratique. »
+[14:35.10] « Vous allez me voir préparer un vrai projet d'argent. »
+[14:38.42] « Du bloc-note jusqu'au plan de construction. »
+[14:41.30] « Prenez votre guide et on continue. »
+[14:43.92] « Au revoir. »
+[14:44.22] « Au revoir. »
