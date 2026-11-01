@@ -1,0 +1,96 @@
+[00:00.00] ok depuis là vous allez voir que claude co travaille toujours depuis là donc ma limite de
+[00:05.06] session de session est bientôt atteindre regardez ici quand vous travaillez vous voyez donc c'est
+[00:09.70] ici qui définit donc là quand c'est atteint c'est fait rouge totalement alors là on va vous faire
+[00:16.10] attendre pour quelques heures et puis vous recommencez vous voyez donc voilà donc claude
+[00:20.80] il travaille toujours le travail
+[00:58.04] Merci.
+[01:30.36] Demain, on va capturer l'écran de ce qu'il a fait.
+[01:34.36] Ok.
+[01:36.02] Il a dit ici, écrivez-moi si vous allez l'étape 2, je commence l'étape 3.
+[01:41.18] Ok, donc là, c'est bon, je vais faire capturer.
+[01:54.88] Je copie, et je vais l'envoyer mon chef de projet.
+[02:12.50] Devant le moment, on va travailler ainsi de suite, voyez-vous, donc c'est une belle étape, qu'il fonctionne pour de vrai, et non, c'est bien que l'agent,
+[02:18.84] voilà, 94% est atteint, donc quand ça va être atteint totalement, c'est parti pour 5,30.
+[02:28.42] Ok.
+[02:30.60] Ici, l'agent a créé un fichier l'enseigne de commande et répondu en français avec ses actions.
+[02:35.84] Ok, d'accord, c'est bien là-bas.
+[02:38.56] Parce que l'outil, m'a dit test avec moi, avec un refus de Google, qu'il y a 1000 modèles de cotisque à l'heure, exacte de recharge et à continuer avec une autre.
+[02:46.80] Quand tu t'es plus obligatoire, tu vois seulement, ok, d'accord.
+[02:49.98] Ok, c'est bon.
+[02:52.04] C'est bien.
+[02:53.92] On va dire que le coup de cotisque a fusionné lui-même, ok, d'accord.
+[02:56.94] Et on va ensuite regarder les captures.
+[02:59.68] Ok, j'ai regardé les captures, là, ici, pour regarder les captures, il veut que je clique ici, et puis je viens pour voir les captures, voilà.
+[03:09.68] Bon, j'ai déjà vu, c'est d'un flou de poudin, vous voyez, ici, voilà.
+[03:18.72] Bon, de toute façon, on continue.
+[03:23.46] Normalement, quand je clique ici, je trouve un flou de poudin, là, j'ai fait des filets de capture, il veut que quand je clique dans ma salle, j'ai déjà vu, directe de moi, entrer.
+[03:39.80] Bon.
+[03:58.84] Ici, si ça vous convient, si elle vous convient, envoie ceci.
+[04:03.82] Ok, sinon, les captures, Claude Codade, je vais envoyer ici, quand même.
+[04:07.66] Bon, je n'ai, mon cri aussi, elle finit comme ça, sinon, je lui ai demandé de m'indiquer, vous voyez, non, ce sont les captures, ça.
+[04:15.52] Ce sont les captures, ça, c'est la capture, c'est l'administration, ça, vous voyez, non.
+[04:21.46] Voilà.
+[04:23.94] Ce sont les captures.
+[04:28.96] Ok.
+[04:30.10] Donc, là.
+[04:34.30] Les trois obligations, vous voyez, ok, d'accord.
+[04:37.34] Ici.
+[04:39.78] Il va lancer l'étape 3, mais là, l'étape 3, vous verrez que tout de suite, ça va s'arrêter, voilà.
+[04:44.90] Étape de valider, lance l'étape 3 du plan, là, perçu en direct, même, mais tout est, ok, d'accord, et faisons, tu en veux, quand tu te veux.
+[04:54.08] Regardez les captures, puis écrivez, validez, il a dit de regarder les captures, et de validez ici, voilà, voilà, les 13 captures.
+[05:00.46] Je clique ici pour voir ça.
+[05:03.58] Voilà, vous voyez, vous voyez, c'est 13 captures, que je vois, donc là, si je veux, même, je peux faire capture pour envoyer à Cloudwood, pour voir son avis, ici.
+[05:28.24] Ok, c'est bon, c'est bon.
+[05:34.72] Donc là, je lance la suite, et ma limite va être atteinte, comme ça, vous allez voir.
+[05:45.86] Donc, voilà, cher ami, c'est simple, donc, pour créer un agent, pour n'importe quel type d'agent que vous voulez créer, premièrement, c'est le bloc note, vous décrivez correctement, et ensuite, vous venez dans votre chef de projet.
+[05:54.76] Le prompt que j'ai donné dans le guide, vous donnez un rôle à votre chef de projet, pour qu'il sache qu'il est le chef de projet, et puis ensuite, vous aidez à refaire le cadre de charge, et vous avez Cloudwood, vous voyez, voilà.
+[06:04.32] Maintenant, pour le cas du, pour le bloc note, premièrement, si vous ne voulez pas décrire correctement, et décrire comme j'ai demandé, décrire à la main, votre objectif que vous avez dans la tête, pas de souci, vous pouvez également faire,
+[06:18.76] et j'ai donné des promptes modèles dans le guide, que vous devez prendre et remplir manuellement les choses, vous voyez.
+[06:24.74] Donc, si vous voulez qu'un agent soit bien, vous devez donner tous les détails, vous devez suivre le projet de prêt, et faire en sorte que la chose puisse correspondre à vos attentes.
+[06:31.94] Sinon, si vous laissez ça à l'IA de devenir les choses pour vous, vous n'aurez pas de bonnes choses, en fait, vous voyez.
+[06:36.22] Et Cloudwood permet mieux de faire des choses, en fait, du coup, je vous recommande toujours Cloudwood, en fait, bon, les autres modèles sont bien, mais bon, si vous voulez, vous pouvez les utiliser.
+[06:43.46] Cloudwood, je la trouve, je le trouve beaucoup plus meilleur, voyez-vous.
+[06:47.02] Maintenant, Cloudwood est payant, l'abonnement Cloudwood est payant, c'est à 13500 francs, c'est pas le moins, 13500 francs, c'est pas le moins.
+[06:53.64] Donc, il vous prend cet abonnement, ok.
+[06:55.54] Voilà, maintenant, au cas où vous n'avez pas d'argent, peut-être bon, là, vous pouvez m'écrire, je vous trouverai une solution, vous allez payer, un montant, je vous donnerai assez, ok.
+[07:06.38] Cloudwood, quand vous prenez l'abonnement, Cloudwood vous créez vraiment de vrais projets, vous verrez que l'argent ne va pas manquer.
+[07:10.98] Ok, parce que jusqu'à ce que le moment de finisse, vous aurez créé des projets qui vont vous rapporter de l'argent, et vous prendrez l'argent pour souscrire l'abonnement, là, de nouveau.
+[07:18.82] Ok, donc là, c'est ça, j'ai lancé le quatrième projet, ici, je retiens, ok, d'accord.
+[07:24.86] Maintenant, je branche le serveur de l'accueillation des ordinateurs, et j'envole l'adresse, je l'aperçois au site, ok.
+[07:33.88] Vous verrez que tout de suite, la limite va être atteinte.
+[07:39.60] Et on va attendre 5 heures, il y a 4 heures, 13, ok.
+[07:47.02] Et on va attendre 5 heures, 13, ok.
+[08:41.42] Et on va attendre 5 heures, 13, ok.
+[08:46.12] Merci.
+[08:56.68] Merci.
+[08:56.72] Merci.
+[08:57.70] Merci.
+[09:01.82] Merci.
+[09:11.02] Merci.
+[09:14.74] Merci.
+[09:23.44] Merci.
+[09:36.82] Merci.
+[09:49.38] Merci.
+[09:49.70] Merci.
+[09:51.14] Merci.
+[09:52.02] Merci.
+[09:53.16] Merci.
+[09:54.38] Merci.
+[09:59.20] Merci.
+[10:06.60] Merci.
+[10:10.04] Merci.
+[10:16.28] Merci.
+[10:24.38] Merci.
+[10:28.98] Merci.
+[10:29.10] Merci.
+[10:42.38] Merci.
+[10:58.18] Merci.
+[11:04.00] Merci.
+[11:04.02] Merci.
+[11:05.02] Merci.
+[11:06.02] Merci.
+[11:19.28] Merci.
+[11:20.28] Merci.
+[11:21.28] Merci.
+[11:22.78] Merci.
+[11:23.84] Merci.

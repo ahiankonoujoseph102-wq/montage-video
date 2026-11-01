@@ -1,0 +1,52 @@
+[00:04.40] alors bonjour à tous nous continuons la suite de la formation donc j'espère que chacun de vous
+[00:10.36] sait le type d'argent qu'il veut créer et a déjà fait le cahier de charge et avant qu'on
+[00:16.04] continue j'aimerais vous dire de prendre le temps pour bien faire la destruction de votre
+[00:20.58] argent il faut que vous ayez une idée claire de ce que vous voulez créer si vous voulez créer
+[00:25.38] vous n'avez pas une idée clé là dessus vous allez créer quelque chose de médiocre oui voilà j'ai dit
+[00:30.60] claude chef de votre projet peut vous aider à améliorer votre cahier de charge mais ça veut pas
+[00:34.84] dire de laisser tout complètement à claude là dans ce cas si vous voulez que claude prenne les
+[00:39.92] décisions de a à z pour vous c'est quelque chose de générique vous voyez alors que si vous avez une
+[00:45.54] idée un objectif clair une vision précise dans votre tête alors vous pouvez décrire ça mais
+[00:51.20] pour des manquements techniques claude code pourra juste vous aider à ajuster ces choses pour pouvoir
+[00:56.92] atteindre l'objectif que vous voulez atteindre mais lorsque vous laissez tout là c'est grave vous voyez
+[01:01.16] donc prenez le temps d'aller dans votre bloc note et de décrire tout décrivez tout sur le projet en
+[01:07.00] fait voilà et vous n'avez pas besoin d'étape et manuellement par exemple arrivé dans votre bloc
+[01:11.18] note pour venir d'abord d'achat gpd comme ça vous activez la version vocale comme ça vous voyez et
+[01:17.28] plus attention non c'est pas ça alors j'ai hâte que nous commençons à travailler ensemble
+[01:27.56] vous activez cette version cette version vous voyez là où il m'a mis là vous activez
+[01:52.14] quand j'ai cliqué comme ça voilà c'est transcrit tout ce que je disais je suis sur le dit tout de
+[01:57.56] suite en fait vous voyez non voilà la cloude code va vous aider à bien le transcrire tant maintenant
+[02:03.02] ou les c'est un chose claude n'a pas compris c'était un point il va vous poser des questions vous
+[02:08.14] allez répondre et tout tout tout tout vous voyez donc voilà vais le faire pour créer un agent professionnel
+[02:14.28] c'est très important parce que c'est ça la première étape mais le premier travail une fois que le cas
+[02:19.12] de charge est clair et votre chef de projet a discuté avec vous c'est bien compris tout est bien alors ok
+[02:25.48] il vous donne il vous a d'abord créé un dépôt voilà et le dépôt je vous ai déjà montré ça donc vous
+[02:31.24] d'abord avoir le nom de l'argent ok le nom du et de l'argent après ça si vous n'avez pas le nom de
+[02:36.94] l'argent mais vraiment claude va vous proposer ça les différents noms en fonction du type de projet
+[02:41.14] que vous validez le nom vous voyez maintenant pour commencer il faut d'abord aller sur gator créer le
+[02:45.44] dépôt description du dépôt et puis ensuite merci privé et puis voilà créer le dépôt vous voyez non et
+[02:52.52] voilà vous allez aussi crocher redmi voilà vous voyez bon claude vous indique tout ça comme je
+[02:57.66] vous ai dit quand quelque chose ne va pas venir claude code vous dit quelque chose vous ne comprenne pas
+[03:02.10] quelque chose si vous dites juste le dit à votre chef de projet il va directement vous expliquer et ne faites
+[03:06.64] pas quelque chose dans claude code ici dans votre code ici sans toujours passer par votre chef de
+[03:11.04] projet claude parce que c'est lui votre chef de projet il doit avoir toutes les informations ce qui
+[03:15.00] ferait que quand il y aurait un problème de mail pourra facilement comprendre et vous débloquer donc
+[03:19.04] c'est très important alors l'autre fois quand on avait envoyé ce prompt on avait envoyé l'autre fois
+[03:27.32] ce prompt à claude voilà pour vous voyez non on a envoyé le prompt et puis il nous a répondu et donc il nous a
+[03:37.86] répondu on a copié ensuite et ça ne repose pas envoyé à notre chef de projet il nous a dit valider
+[03:44.44] lance l'étape 1 donc avec ces trois conditions à appliquer donc là on lance on continue la suite
+[03:51.34] donc devant vous je vais bon je vais copier et relancer ça devant vous ce projet d'argent de
+[03:58.18] promotion sera construit du a à z
+[04:24.12] donc là il y a un théâtre de travail
+[04:39.08] il finit de travailler alors on copie sa réponse d'envoi ça claude par notre chef de projet claude il
+[04:44.24] va le lit si tu t'es clair s'il n'y a rien à fournir si tu t'es clair dans le con suivant on
+[04:48.56] l'envoie ainsi de suite et ainsi de suite s'il ya quelque chose qu'on doit créer notre chef de
+[04:52.70] projet nous recommande d'abord et on va aller le faire si on le fait ce qu'on doit faire la suite
+[04:56.70] il nous dit ainsi de suite ouais si votre chef de projet vous dit allez créer un compte ici et bon
+[05:02.22] vous ne savez pas comment le faire vous savez comment procéder vous le dites directement il vous
+[05:06.34] guide vous allez vous le faites vous voyez donc c'est tout c'est simple en fait imagine que bon
+[05:11.34] même vous allez vous guide vous ne vous retrouvez pas alors il va vous dire simplement mais faites
+[05:15.22] capture l'écran pour l'envoyer et dites le guide étape à étape et il vous guide étape à étape
+[05:19.04] ainsi vous parviendrez à réaliser ce que vous souhaitez réaliser bon je vais mettre je vais
+[05:29.90] couper ceci pour qu'il prône du coup de prendre le temps de bien travailler et puis lorsqu'il va
+[05:34.84] finit travailler à l'autre côté en la suite

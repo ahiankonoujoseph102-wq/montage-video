@@ -26,7 +26,15 @@
      l'ordre des démos, mots simples, liens utiles, devoir) ; mise à jour du document « Guide de formation pour la
      préparation d'agents » (= le guide « Préparer son agent IA », `projets/agent-ia-p1/guide.docx`) ; en .docx ET en PDF ;
      le message WhatsApp pour les élèves.
-- **Étape actuelle : 1 (analyse)**.
+- **Étape actuelle : 3 terminée — plan envoyé à Joseph, en attente de son accord** (1er novembre).
+  - Transcriptions : `projets/agent-ia-p2/transcriptions/v1…v7` (`montage/transcrire.py`).
+  - Analyse, découpage (4 vidéos 2A à 2D), plan scène par scène, manques, conseils : `projets/agent-ia-p2/plan_p2.md`.
+  - Voix off à enregistrer (58 morceaux) : `projets/agent-ia-p2/voix_off_p2.md`.
+  - Points sensibles : clés Gemini et E2B visibles (v4, v5, v6) → à flouter, et Joseph doit les révoquer ; code reçu
+    par e-mail (v4) à flouter ; couper la demande « plusieurs comptes Google » (v3 8:40–9:30) et l'offre « 13 500 F /
+    je vous donne accès » + promesse de revenus (v7 6:47–7:18).
+  - Enregistrements demandés : R1 (variables d'environnement avec de fausses clés, ~90 s), R2 facultatif (fusion
+    manuelle d'une pull request, ~45 s).
 
 ---
 

@@ -1,0 +1,50 @@
+[00:00.00] ensuite c'est de créer la clé api donc il m'a dit étape 1 donc un ouvrez
+[00:08.38] icd google.com vous voyez donc voilà on va le payer bon je compte pas le créer maintenant
+[00:13.80] mais bon ça là je vais faire ça devant vous d'accord je vais faire ça devant vous et mais
+[00:19.48] je compte pas le faire maintenant vous imaginez que je vous ai pas enseigné ça alors dans ce cas
+[00:25.50] qu'est ce que vous faites vous suivez ce que votre chef de projet vous dit vous suivez exactement
+[00:29.28] ça vous allez vous le faites là si vous arrivez vous n'arrivez pas vous vous trouvez alors faites
+[00:33.26] captif ou l'envoi et moi je me retrouve pas et ensuite le bof quitté étape à étape et vous
+[00:37.48] subissez cette étape en fait vous voyez donc voilà comment ça marche donc en fonction de
+[00:42.46] chaque projet vous allez parcours des choses en fonction de chaque projet dans chaque projet
+[00:47.24] aura son plan aura sa manière de procéder donc votre chef de projet la pauvreté et c'est
+[00:51.94] fini et c'est comme ça on va faire ça sur le projet de finissent en fait bon je vais le dire
+[01:22.80] pas tout à fait il faut distinguer deux choses les belgements cela peut atteindre la fin comme vous
+[01:27.48] l'avez décidé la clé j'ai une cfd l'étape du code code l'étude dans son propre environnement travail
+[01:32.74] ok d'accord ok ok c'est bon là je vais
+[01:40.84] donc là j'ai choisi de la
+[01:47.22] ok d'accord on va aller dans google à un studio donc vous allez penser les temps ici on va obtenir la
+[01:53.36] clé api de gemini vous voyez donc là du coup vous venez dans google et si vous tapez ça vous voyez
+[01:58.72] google à un studio.com donc cela vous tous qui peu importe la naine vous allez utiliser vous allez
+[02:04.42] toujours utiliser gemini parce qu'il lui offre une version gratuite alors que ce compte là j'ai déjà
+[02:09.86] utilisé la clé api de ce compte là je vais pas créer la clé api ici ici je vais créer ça sur
+[02:14.30] autre compte pour que je puisse pouvoir voilà donc là ça c'est votre compteur à issu ça vous voyez bon
+[02:24.44] voilà c'est bien ici je confirme et voilà donc quand vous allez vous allez faire exactement donc
+[02:33.40] ici il a dit quoi pourquoi souhaitez-vous utiliser ici développer la pg mini web codi ok continue et voilà
+[02:47.26] donc quand vous arrivez ici alors vous allez voir qu'il y a créé une clé api ici vous voyez ma mère vous
+[02:51.42] créez ça vous crée directement ceux qui n'ont pas la voie qui n'ont pas ici créé une clé api vous
+[02:56.92] cliquer sur les trois points vous allez voir qu'il y a la clé ici vous allez cliquer sur
+[02:59.90] créer lorsque vous arrivez ici vous ne savez pas comment procéder vous dites à votre chef de projet
+[03:04.70] imaginez que vous n'enseignez pas vous faites quelques fois votre chef de projet et l'objet étape
+[03:08.66] étape vous voyez lorsqu'on ne comprenne pas l'importance mais le pourquoi des choses dites-lui et votre
+[03:13.72] chef de projet vous explique et correctement vous voyez donc voilà dans ici quête clé api donc
+[03:18.98] va cliquer ici et maintenant ici arriver ici alors on peut bon je peux le dire quelle note donnée pour
+[03:25.34] la clé api c'est bon ça c'est facultatif si je vais je ne donnerai pas grave ici et à piquer la
+[03:30.82] clé péché c'est écrit api et copier voilà la clé api et puis voilà donc ici je vais je peux
+[03:38.00] dit bon moi je vais nommer ça je sais je vais garder le nom là comme ça surtout je nomme ça clé api du
+[03:46.48] voilà et puis ici crée le projet donc je vais créer un projet voilà maintenant c'est bon voilà maintenant
+[04:09.34] qu'on va cliquer ici on a créé une clé et voilà la clé api vous voyez donc voilà ce que nous
+[04:21.80] on va copier la clé api vous venez ici je vais mettre je mets ça dans mon bloc note pour ne pas
+[04:28.40] oublier je viens ici clé api du clé et je colle ça voilà alors c'est bien ok 2 je vais s'écrier copier
+[04:42.52] ok vous venez au montage m'envoyer pas ok c'est bon j'ai dit fait fait voilà dans la clé api je n'ai
+[04:54.52] venez d'être pris étape du clé et de couvrir ok seulement tout dit ça par exemple cela je n'ai
+[05:05.00] le mépris je suis jamais allé sur ce site où en fait vous voyez c'est ma première fois donc vous
+[05:09.32] allez voir je lance ok alors les charles ici ok chaque agent obtient les machines voilà ok ici toucher
+[05:22.24] apple get puis inscrivez-vous ok avec mon compte github d'accord donc là je vais m'inscrire avec mon
+[05:30.60] compte de commencer à construire l'accepter tout commencer à construire donc vous voyez c'est la
+[05:36.66] première fois de venir ici ok j'ai dit à créer plusieurs agents en fonction de votre projet vous
+[05:40.84] allez être confrontés aux choses que vous allez faire vous voyez continue avec github pour ça c'est
+[05:45.68] qu'il faut que je puisse d'abord connaître mon compte github voilà mon compte github ici voilà
+[05:59.46] autorisation ouais maintenant c'est comme ça vous allez faire étape à étape comme je vous ai dit
+[06:04.12] quand une étape n'est pas compris ici voilà vérifier votre adresse email ok je vais aller voir mon
+[06:10.16] autre signe ici on dit ok voici le coach je vais copier ça et le même continue continue
