@@ -114,6 +114,10 @@
   guide « Construire son agent avec Claude Code », guide général mis à jour (chapitres 13 « Partie 2 » et 14 « devoir
   avant la partie 3 », fiches devenues chapitre 15, puce « variables d'environnement » au chapitre 10), « Test vidéo
   2A » à « 2D » et « Tests partie 2 - réponses », en .docx et .pdf ; message WhatsApp `message_whatsapp_partie2.md`.
+- **Document unique demandé par Joseph (1er novembre)** : `docs/unique.py` → `livrable/Partie 2 - Construire son agent IA avec
+  Claude Code.docx/.pdf` (15 pages : formateur et contacts, vidéos 2A à 2D, différences entre outils, erreurs, devoir,
+  tests intégrés, réponses en annexe). C'est CE document qu'il envoie (les autres documents restent mais ne servent plus).
+  Message WhatsApp mis à jour (lien Drive à coller, « Demander l'accès » puis e-mail dans le groupe, devoir).
 - Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
   (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
