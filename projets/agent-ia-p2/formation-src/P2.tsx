@@ -113,7 +113,7 @@ const AnimTitre: React.FC<{p: Plan; t: number}> = ({p, t}) => {
       </div>
       <div style={{position: 'absolute', left: 0, right: 0, top: 650, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 26, fontFamily: POLICE,
         opacity: fondu(t, R(p, 'boucle') - 0.1, R(p, 'boucle') + 0.2), transform: `translateY(${(1 - doux(t, R(p, 'boucle') - 0.1, R(p, 'boucle') + 0.4)) * 60}px)`}}>
-        <span style={{fontSize: 96, display: 'inline-block', transform: `rotate(${tourne}deg)`}}>🔁</span>
+        <span style={{fontSize: 96, display: 'inline-block', transform: `rotate(${p.icone ? Math.sin(tourne / 40) * 15 : tourne}deg)`}}>{String(p.icone ?? '🔁')}</span>
         <span style={{fontSize: 92, fontWeight: 800, color: OR}}>{String(p.titre)}</span>
       </div>
     </>
@@ -518,13 +518,118 @@ const AnimFin: React.FC<{p: Plan; t: number}> = ({p, t}) => (
       <div style={{background: OR, color: NUIT, fontFamily: POLICE, fontWeight: 800, fontSize: 56, borderRadius: 24, padding: '10px 36px', transform: `scale(${pop(t, p.debut + 0.3)})`}}>{String(p.code)}</div>
     </div>
     <div style={{position: 'absolute', left: 0, right: 0, top: 460, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 30, fontFamily: POLICE}}>
-      <span style={{fontSize: 96, transform: `scale(${pop(t, R(p, 'moteur') - 0.2)}) rotate(${Math.sin(t * 3) * 8}deg)`}}>⚙️</span>
+      <span style={{fontSize: 96, transform: `scale(${pop(t, R(p, 'moteur') - 0.2)}) rotate(${Math.sin(t * 3) * 8}deg)`}}>{(p.icones as string[] | undefined)?.[0] ?? '⚙️'}</span>
       <span style={{fontSize: 64, fontWeight: 800, color: BLANC, opacity: fondu(t, R(p, 'moteur') - 0.2, R(p, 'moteur') + 0.1)}}>{String(p.titre)}</span>
-      <span style={{fontSize: 96, transform: `scale(${pop(t, R(p, 'moteur') + 0.6)})`}}>🧠</span>
+      <span style={{fontSize: 96, transform: `scale(${pop(t, R(p, 'moteur') + 0.6)})`}}>{(p.icones as string[] | undefined)?.[1] ?? '🧠'}</span>
     </div>
-    {t >= R(p, 'moins') - 0.3 ? <Legende t={t} t0={R(p, 'moins') - 0.3} texte={`💸 ${String(p.sous)}`} y={660} taille={52} /> : null}
+    {t >= R(p, 'moins') - 0.3 ? <Legende t={t} t0={R(p, 'moins') - 0.3} texte={String(p.sous)} y={660} taille={52} /> : null}
   </>
 );
+
+
+const AnimComptes: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const ta = Math.min(R(p, 'anthropic'), p.debut + 0.3);
+  const te = R(p, 'e2b');
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="Il me demande deux comptes" emoji="🗂️" />
+      <Carton x={170} y={220} l={740} h={600} couleur={VIOLET} t={t} t0={ta} actif={t < te - 0.2 ? 1 : 0.6}>
+        <div style={{display: 'flex', alignItems: 'center', gap: 24}}>
+          <div style={{fontSize: 120, transform: `scale(${1 + 0.05 * Math.sin(t * 4)})`}}>🧠</div>
+          <div><div style={{fontSize: 60, fontWeight: 800, color: VIOLET}}>Anthropic</div><div style={{fontSize: 36, fontWeight: 700}}>Le cerveau de l'agent</div></div>
+        </div>
+        <div style={{marginTop: 60, display: 'flex', alignItems: 'center', gap: 20, fontSize: 46, fontWeight: 800, color: ROUGE, opacity: fondu(t, ta + 1.2, ta + 1.6)}}>
+          <span style={{fontSize: 80, transform: `rotate(${Math.sin(t * 6) * 10}deg)`}}>💸</span> Payant à l'utilisation
+        </div>
+      </Carton>
+      <Carton x={1010} y={220} l={740} h={600} couleur={OR} t={t} t0={te - 0.2} actif={t >= te - 0.2 ? 1 : 0.6}>
+        <div style={{display: 'flex', alignItems: 'center', gap: 24}}>
+          <div style={{fontSize: 120}}>🖥️</div>
+          <div><div style={{fontSize: 60, fontWeight: 800, color: OR}}>E2B</div><div style={{fontSize: 36, fontWeight: 700}}>Ses ordinateurs virtuels</div></div>
+        </div>
+        <div style={{marginTop: 60, display: 'flex', alignItems: 'center', gap: 20, fontSize: 46, fontWeight: 800, color: VERT, opacity: fondu(t, te + 1.6, te + 2)}}>
+          <span style={{fontSize: 80, transform: `scale(${pop(t, te + 1.6)})`}}>🎁</span> Crédit gratuit au départ
+        </div>
+      </Carton>
+    </>
+  );
+};
+
+const AnimJauge: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const tv = R(p, 'vide');
+  const ts = R(p, 'suffit');
+  const niveau = 1 - doux(t, tv, ts + 0.6);
+  const clients = 12;
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="2e limite : de vrais clients" emoji="👥" />
+      <div style={{position: 'absolute', left: 250, top: 230, width: 260, height: 560, borderRadius: 40, background: '#0d1440', boxShadow: `0 0 0 6px ${OR}`, overflow: 'hidden'}}>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: `${niveau * 100}%`, background: niveau > 0.3 ? `linear-gradient(0deg, ${VERT}, #7af0b0)` : ROUGE}} />
+        <div style={{position: 'absolute', left: 0, right: 0, top: 230, textAlign: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 64, color: BLANC}}>{Math.round(niveau * 100)} %</div>
+      </div>
+      <div style={{position: 'absolute', left: 190, width: 380, top: 820, textAlign: 'center', fontFamily: POLICE, fontWeight: 800, fontSize: 38, color: OR}}>Offre gratuite</div>
+      <div style={{position: 'absolute', left: 700, top: 260, width: 1050, display: 'flex', flexWrap: 'wrap', gap: 30}}>
+        {Array.from({length: clients}, (_, i) => (
+          <div key={i} style={{fontSize: 92, transform: `scale(${pop(t, tv + 0.3 + i * 0.25)})`}}>{['🧑🏾', '👩🏾', '👨🏿', '👩🏿'][i % 4]}</div>
+        ))}
+      </div>
+      {t >= ts - 0.1 ? <Legende t={t} t0={ts - 0.1} texte="Avec de vrais clients, l'offre gratuite ne suffira pas" couleur={ROUGE} y={800} x={600} l={1250} taille={40} /> : null}
+    </>
+  );
+};
+
+const AnimDeuxParties: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const tm = R(p, 'moteur');
+  const tc = R(p, 'cerveau');
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte="Un agent a deux parties" emoji="🤖" />
+      <Carton x={170} y={220} l={740} h={600} couleur={OR} t={t} t0={Math.min(tm, p.debut + 0.4) - 0.2} actif={t < tc - 0.2 ? 1 : 0.6}>
+        <div style={{fontSize: 130, textAlign: 'center', transform: `rotate(${t * 60}deg)`}}>⚙️</div>
+        <div style={{fontSize: 62, fontWeight: 800, color: OR, textAlign: 'center'}}>Le moteur</div>
+        <div style={{fontSize: 40, fontWeight: 700, textAlign: 'center', marginTop: 16, lineHeight: 1.25}}>Le programme qui fait <b>agir</b> l'agent :<br />lire, écrire, travailler<br />sur les fichiers</div>
+      </Carton>
+      <Carton x={1010} y={220} l={740} h={600} couleur={VIOLET} t={t} t0={tc - 0.2} actif={t >= tc - 0.2 ? 1 : 0.6}>
+        <div style={{fontSize: 130, textAlign: 'center', transform: `scale(${1 + 0.07 * Math.sin(t * 5)})`}}>🧠</div>
+        <div style={{fontSize: 62, fontWeight: 800, color: VIOLET, textAlign: 'center'}}>Le cerveau</div>
+        <div style={{fontSize: 40, fontWeight: 700, textAlign: 'center', marginTop: 16, lineHeight: 1.25}}>Le modèle d'IA<br />qui le fait <b>réfléchir</b></div>
+      </Carton>
+    </>
+  );
+};
+
+const Pompe: React.FC<{x: number; nom: string; couleur: string; t: number; t0: number; prix?: string; actif?: boolean}> = ({x, nom, couleur, t, t0, prix, actif}) => (
+  <div style={{position: 'absolute', left: x, top: 260, width: 220, textAlign: 'center', fontFamily: POLICE, transform: `scale(${pop(t, t0)}) translateY(${actif ? -10 * Math.abs(Math.sin(t * 4)) : 0}px)`}}>
+    <div style={{height: 300, borderRadius: 26, background: couleur, boxShadow: actif ? `0 0 40px ${couleur}` : '0 20px 40px #0008', display: 'grid', placeItems: 'center', fontSize: 110}}>⛽</div>
+    <div style={{marginTop: 14, fontSize: 40, fontWeight: 800, color: BLANC}}>{nom}</div>
+    {prix ? <div style={{fontSize: 34, fontWeight: 800, color: OR}}>{prix}</div> : null}
+  </div>
+);
+
+const AnimVoiture: React.FC<{p: Plan; t: number}> = ({p, t}) => {
+  const un = p.mode === 'un';
+  const tv = Math.min(R(p, 'voiture'), p.debut + 0.3);
+  const tc = R(p, 'chere');
+  const choix = un ? 0 : Math.floor(((t - p.debut) / 1.1) % 3);
+  const roule = (t * 220) % 1920;
+  return (
+    <>
+      <Titre t={t} t0={p.debut} texte={un ? 'Le moteur prévu : un seul carburant' : 'On change de carburant à tout moment'} emoji={un ? '🚗' : '🔄'} />
+      {un ? (
+        <Pompe x={1250} nom="Claude" couleur={ROUGE} t={t} t0={tv + 0.5} prix={t >= tc - 0.2 ? '💰💰💰 la plus chère' : undefined} actif />
+      ) : (
+        ['Gemini', 'Claude', 'Autre'].map((n, i) => (
+          <Pompe key={n} x={1000 + i * 270} nom={n} couleur={[VERT, VIOLET, '#3d6bd8'][i]} t={t} t0={p.debut + 0.1 + i * 0.15} prix={i === 0 ? 'gratuit' : undefined} actif={choix === i} />
+        ))
+      )}
+      <div style={{position: 'absolute', left: un ? 300 : 220, top: 420, fontSize: 300, transform: `scaleX(-1) translateY(${Math.sin(t * 12) * 4}px) scale(${pop(t, tv, 0.5)})`}}>🚗</div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 790, height: 10, background: `repeating-linear-gradient(90deg, ${OR} 0 80px, transparent 80px 160px)`,
+        backgroundPosition: `${-roule}px 0`, opacity: 0.6}} />
+      {un && t >= tc - 0.2 ? <Legende t={t} t0={tc - 0.2} texte="Une seule marque de carburant… la plus chère" couleur={ROUGE} y={840} taille={40} /> : null}
+      {!un && t >= tc - 0.4 ? <Legende t={t} t0={tc - 0.4} texte="… sans reconstruire la voiture ✅" couleur={VERT} y={840} taille={40} /> : null}
+    </>
+  );
+};
 
 // ---------------------------------------------------------------- vidéo libre de droits (plein écran)
 const Libre: React.FC<{p: Plan; t: number; dossier: string}> = ({p, t, dossier}) => {
@@ -697,7 +802,7 @@ const SousTitres: React.FC<{liste: Bloc[]; t: number; gauche: number}> = ({liste
 const ANIMS: Record<string, React.FC<{p: Plan; t: number}>> = {
   titre: AnimTitre, rappel: AnimRappel, conseil: AnimConseil, flou: AnimFlou, aide: AnimAide, ajuste: AnimAjuste, questions: AnimQuestions,
   noms: AnimNoms, regledor: AnimRegleDor, corrections: AnimCorrections, pullrequest: AnimPullRequest, regle: AnimRegle, appli: AnimAppli,
-  boucle: AnimBoucle, fin: AnimFin,
+  boucle: AnimBoucle, fin: AnimFin, comptes: AnimComptes, jauge: AnimJauge, deuxparties: AnimDeuxParties, voiture: AnimVoiture,
 };
 
 export const VideoP2: React.FC<{D: Donnees; bouche: number[]; visemes: string; dossier: string}> = ({D, bouche, visemes, dossier}) => {

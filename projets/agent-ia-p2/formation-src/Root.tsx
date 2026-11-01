@@ -17,6 +17,7 @@ import {dureeEssai, Essai} from './formation/Essai';
 import {dureeFormation2, Formation2} from './formation/Formation2';
 import {dureeEssaiP2, EssaiP2} from './formation/p2/EssaiP2';
 import {dureeP2A, FormationP2A} from './formation/p2/P2A';
+import {dureeP2B, FormationP2B} from './formation/p2/P2B';
 import {ApercuPatricia, ComparaisonDoubles, PlanchePatricia} from './apercus/ApercuPatricia';
 
 type ApercuProps = {pose: Pose; sousTitres: boolean};
@@ -38,6 +39,7 @@ export const Root: React.FC = () => (
     <Composition id="EssaiV2" component={Essai} durationInFrames={dureeEssai} fps={30} width={1920} height={1080} />
     <Composition id="EssaiP2" component={EssaiP2} durationInFrames={dureeEssaiP2} fps={30} width={1920} height={1080} />
     <Composition id="FormationP2A" component={FormationP2A} durationInFrames={dureeP2A} fps={30} width={1920} height={1080} />
+    <Composition id="FormationP2B" component={FormationP2B} durationInFrames={dureeP2B} fps={30} width={1920} height={1080} />
     <Composition id="Formation2A" component={Formation2} durationInFrames={dureeFormation2('2A')} fps={30} width={1920} height={1080} defaultProps={{video: '2A' as const}} />
     <Composition id="Formation2B" component={Formation2} durationInFrames={dureeFormation2('2B')} fps={30} width={1920} height={1080} defaultProps={{video: '2B' as const}} />
     <Composition id="Formation1A" component={Formation} durationInFrames={dureeFormation('1A')} fps={30} width={1920} height={1080} defaultProps={{video: '1A' as const}} />

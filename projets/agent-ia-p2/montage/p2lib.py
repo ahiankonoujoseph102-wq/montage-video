@@ -23,6 +23,7 @@ SERIE = Path("/home/user/montage-videos/serie-animee")
 LIBRE = SERIE / "public" / "formation" / "p2" / "libre"
 SR, FPS = 48000, 30
 DEBUT_VOIX = 0.4
+INSERT = 10000.0
 
 VOIX_FORTE = ("highpass=f=90,lowpass=f=15500,equalizer=f=140:t=q:w=1.0:g=3,equalizer=f=380:t=q:w=1.2:g=-3,"
               "equalizer=f=2800:t=q:w=1.0:g=5,equalizer=f=9500:t=h:w=3000:g=3,deesser=i=0.4,"
@@ -43,62 +44,93 @@ def norm(m):
 
 
 class Montage:
-    def __init__(self, nom, vo, a0, a1, coupes, texte_prevu):
+    """Voix = voix off `vo` de a0 à a1, moins les `coupes`, plus des `inserts` (passages d'un rush, voix en direct de
+    Joseph) placés à un instant de la voix off. Temps virtuel des scènes : temps de la voix off ; pour un passage inséré,
+    INSERT + temps du rush (ex. 10520.5 = 520,5 s du rush)."""
+
+    def __init__(self, nom, vo, a0, a1, coupes, texte_prevu, inserts=()):
         self.nom, self.vo, self.a0, self.a1 = nom, vo, a0, a1
         self.coupes = sorted(coupes)
         self.texte = texte_prevu
+        self.inserts = sorted(inserts)  # (t_vo, fichier, a, b, transcription json, décalage des temps du json)
         self.out = SERIE / "public" / "formation" / nom
         self.out.mkdir(parents=True, exist_ok=True)
         self.plans = []
+        # morceaux dans l'ordre : (source, a, b, base virtuelle)
+        vo_parts, t = [], a0
+        for c, d in self.coupes + [(a1, a1)]:
+            vo_parts.append((vo, t, c, 0.0))
+            t = d
+        parts = []
+        for pv in vo_parts:
+            parts.append(pv)
+            for ins in self.inserts:
+                if pv[1] <= ins[0] <= pv[2] + 0.5 and abs(ins[0] - pv[2]) < 0.6:
+                    parts.append((ins[1], ins[2], ins[3], INSERT))
+        self.parts, cum = [], DEBUT_VOIX
+        for src, x, y, base in parts:
+            self.parts.append((src, x, y, base, cum))
+            cum += y - x
 
-    # temps de la voix off d'origine -> temps de la vidéo
+    # temps virtuel -> temps de la vidéo
     def m(self, t):
-        d = 0.0
-        for a, b in self.coupes:
-            if t >= b:
-                d += b - a
-            elif t > a:
-                return round(a - d - self.a0 + DEBUT_VOIX, 3)
-        return round(t - d - self.a0 + DEBUT_VOIX, 3)
+        for src, x, y, base, cum in self.parts:
+            if base == INSERT and t >= INSERT and x - 0.01 <= t - INSERT <= y + 0.01:
+                return round(cum + t - INSERT - x, 3)
+        if t >= INSERT:
+            raise ValueError(f"temps inséré hors des passages : {t}")
+        prec_fin = None
+        for src, x, y, base, cum in self.parts:
+            if base == INSERT:
+                continue
+            if x <= t <= y:
+                return round(cum + t - x, 3)
+            if t < x:  # dans une coupe : fin du morceau précédent
+                return round(prec_fin if prec_fin is not None else cum, 3)
+            prec_fin = cum + y - x
+        return round(prec_fin, 3)
 
     def voix(self):
-        pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(P2 / self.vo), "-af", "highpass=f=80,afftdn=nr=14:nf=-44," + VOIX_FORTE,
-                              "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
-        x = np.frombuffer(pcm, np.float32)
-        garde, t = [], self.a0
-        for a, b in self.coupes + [(self.a1, self.a1)]:
-            garde.append((t, a))
-            t = b
+        cache = {}
         f = int(0.012 * SR)
         rampe = np.linspace(0, 1, f, dtype=np.float32)
-        parts = []
-        for a, b in garde:
-            s = x[int(a * SR):int(b * SR)].copy()
-            s[:f] *= rampe
-            s[-f:] *= rampe[::-1]
-            parts.append(s)
-        y = np.concatenate([np.zeros(int(DEBUT_VOIX * SR), np.float32)] + parts + [np.zeros(int(2.0 * SR), np.float32)])
+        out = [np.zeros(int(DEBUT_VOIX * SR), np.float32)]
+        for src, x, y, base, cum in self.parts:
+            if src not in cache:
+                pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(P2 / src), "-vn", "-af", "highpass=f=80,afftdn=nr=14:nf=-44," + VOIX_FORTE,
+                                      "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+                cache[src] = np.frombuffer(pcm, np.float32)
+            sg = cache[src][int(x * SR):int(y * SR)].copy()
+            sg[:f] *= rampe
+            sg[-f:] *= rampe[::-1]
+            out.append(sg)
+        out.append(np.zeros(int(2.0 * SR), np.float32))
+        y = np.concatenate(out)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-ac", "2", "-c:a", "pcm_s16le",
                         str(self.out / "voix.wav")], input=y.tobytes(), check=True)
         self.duree = round(len(y) / SR, 3)
 
-    def mots(self, json_transcription):
+    def _mots_bruts(self, json_transcription, base, decal, garde):
         ws = [w for s in json.loads((P2 / json_transcription).read_text()) for w in s["mots"]]
         brut = []
         for w in ws:
-            d, f, txt = w["d"], w["f"], w["m"].strip()
-            if d < self.a0 - 0.1 or d >= self.a1:
+            d, f, txt = w["d"] + decal, w["f"] + decal, w["m"].strip()
+            ok = [(x, y) for x, y in garde if x - 0.1 <= d < y or (d < x and f > x + 0.12)]
+            if not ok:
                 continue
-            dans = next(((a, b) for a, b in self.coupes if a - 0.05 <= d < b), None)
-            if dans:
-                if f < dans[1] + 0.12:
-                    continue
-                d = dans[1]
+            d = max(d, ok[0][0])
             if txt[:1] in "'-" and brut:
                 brut[-1]["texte"] += txt
-                brut[-1]["fin"] = self.m(f)
+                brut[-1]["fin"] = self.m(base + f)
                 continue
-            brut.append({"texte": txt, "debut": self.m(d), "fin": self.m(f)})
+            brut.append({"texte": txt, "debut": self.m(base + d), "fin": self.m(base + min(f, ok[0][1]))})
+        return brut
+
+    def mots(self, json_transcription):
+        brut = self._mots_bruts(json_transcription, 0.0, 0.0, [(x, y) for src, x, y, base, cum in self.parts if base == 0.0])
+        for t_vo, fichier, x, y, js, decal in self.inserts:
+            brut += self._mots_bruts(js, INSERT, decal, [(x, y)])
+        brut.sort(key=lambda w: w["debut"])
         # alignement sur le texte prévu (orthographe juste), temps de la voix
         txt = re.sub(r"\s+([:;!?»])", "\u00a0\\1", self.texte)
         txt = re.sub(r"«\s+", "«\u00a0", txt)

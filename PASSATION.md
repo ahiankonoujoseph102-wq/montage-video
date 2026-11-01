@@ -87,6 +87,19 @@
   - `mk25411.mp4` : https://mixkit.co/free-stock-video/opening-a-safe-with-the-code-25411/
   - `mk24604.mp4` : https://mixkit.co/free-stock-video/putting-a-safe-back-in-a-wall-24604/
   - `mk47413.mp4` : https://mixkit.co/free-stock-video/man-sitting-at-his-laptop-making-an-online-payment-47413/
+  - `mk18296.mp4` : https://mixkit.co/free-stock-video/man-counting-a-wad-of-bills-seen-very-closely-18296/
+  - `mk31961.mp4` : https://mixkit.co/free-stock-video/mans-hand-taking-the-fuel-nozzle-at-the-gas-station-31961/
+  - `mk65.mp4` : https://mixkit.co/free-stock-video/closeup-of-sports-car-engine-65/
+  - `mk23992.mp4` : https://mixkit.co/free-stock-video/mechanic-checking-a-car-motor-with-computer-23992/
+  - `mk13807.mp4` : https://mixkit.co/free-stock-video/hand-of-a-person-using-a-magnifying-glass-to-read-13807/
+  - `mk21812.mp4` : https://mixkit.co/free-stock-video/opening-a-door-with-a-hanging-key-21812/
+- **2A envoyée le 1er novembre** : `out/formation-2A.mp4` (5 min 12, 83 Mo) et `out/formation-2A-whatsapp.mp4` (720p, 19 Mo).
+- **2B (en cours de rendu)** : `montage/p2b.py` ; voix vo2 avec coupes (122,75–141,75 reprises « au lancement… » ;
+  149,9–154,1 et 194,3–204,75 silences) et **passage en direct de la vidéo 3 inséré (521,6–566,2 s, comptes Google +
+  réponse du chef, gardé à la demande de Joseph)** ; transcription du passage : `transcriptions/v3_505.json` (décalage
+  505 s) ; sous-titres du passage écrits à la main dans `p2b.py` (`DIRECT`, « je comprends que ce soit courant… ma
+  position ne change pas » lu sur l'écran). Composition `FormationP2B`. Moteur : `inserts` dans `p2lib.Montage`
+  (temps virtuel 10000 + temps du rush).
 - Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
   (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off

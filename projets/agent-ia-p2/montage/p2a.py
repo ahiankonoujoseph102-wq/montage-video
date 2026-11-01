@@ -108,5 +108,5 @@ M.carte(288.75, 301.8, "Une réponse bizarre ? Discutez avec lui", "💬",
 M.anim(301.8, 320.5, "boucle", {"b1": ("chef", 303.0), "b2": ("construit", 305.5), "b3": ("copiez", 307.5), "b4": ("vérifie", 310.5),
                                 "b5": ("valide", 314.0), "fin": ("jusqu", 316.0)})
 M.anim(320.5, 327.0, "fin", {"moteur": ("moteur", 320.5), "moins": ("moins", 320.5)},
-       code="Partie 2B", titre="Le moteur et le cerveau de votre agent", sous="en dépensant le moins possible")
+       code="Partie 2B", titre="Le moteur et le cerveau de votre agent", sous="💸 en dépensant le moins possible")
 M.ecrire()
