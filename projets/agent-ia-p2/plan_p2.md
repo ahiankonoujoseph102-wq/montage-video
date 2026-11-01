@@ -1,4 +1,11 @@
-# Deuxième partie — analyse, découpage et plan (à valider par Joseph)
+# Deuxième partie — analyse, découpage et plan (ACCEPTÉ par Joseph le 1er novembre)
+
+> **Décisions de Joseph** : ne couper aucun passage. Garder en v3 sa demande sur plusieurs comptes Google et la réponse
+> du chef de projet (nouvelle scène 2B-8b, sa voix en direct, v3 8:04–9:33) ; garder en v7 son passage sur les abonnements
+> qu'il peut offrir et sa phrase sur les projets qui rapportent de l'argent (scène 2D-6 = sa voix en direct, v7 6:47–7:18,
+> à la place de VO-55). Les clés : décision de Joseph, ne plus en parler (on floute toujours les clés à l'image).
+> Conseils acceptés : Kekeli = ses choix, pull request illustrée, boucle racontée une seule fois, micro du clavier.
+> Les points 3 et 4 de la partie 2 ci-dessous ne s'appliquent donc plus.
 
 Sources : 7 vidéos reçues le 1er novembre (v1 à v7, 76 min au total, dont environ 25 min d'attente silencieuse
 pendant que Claude Code travaille). Transcriptions : `transcriptions/v1.txt` à `v7.txt`.

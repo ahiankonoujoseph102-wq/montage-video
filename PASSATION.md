@@ -26,15 +26,18 @@
      l'ordre des démos, mots simples, liens utiles, devoir) ; mise à jour du document « Guide de formation pour la
      préparation d'agents » (= le guide « Préparer son agent IA », `projets/agent-ia-p1/guide.docx`) ; en .docx ET en PDF ;
      le message WhatsApp pour les élèves.
-- **Étape actuelle : 3 terminée — plan envoyé à Joseph, en attente de son accord** (1er novembre).
-  - Transcriptions : `projets/agent-ia-p2/transcriptions/v1…v7` (`montage/transcrire.py`).
-  - Analyse, découpage (4 vidéos 2A à 2D), plan scène par scène, manques, conseils : `projets/agent-ia-p2/plan_p2.md`.
-  - Voix off à enregistrer (58 morceaux) : `projets/agent-ia-p2/voix_off_p2.md`.
-  - Points sensibles : clés Gemini et E2B visibles (v4, v5, v6) → à flouter, et Joseph doit les révoquer ; code reçu
-    par e-mail (v4) à flouter ; couper la demande « plusieurs comptes Google » (v3 8:40–9:30) et l'offre « 13 500 F /
-    je vous donne accès » + promesse de revenus (v7 6:47–7:18).
-  - Enregistrements demandés : R1 (variables d'environnement avec de fausses clés, ~90 s), R2 facultatif (fusion
-    manuelle d'une pull request, ~45 s).
+- **Plan de la deuxième partie ACCEPTÉ par Joseph** (4 vidéos 2A, 2B, 2C, 2D). Ses décisions (1er novembre) :
+  - les clés : « ne t'en occupe pas, c'est ma décision, je ne les change pas » → ne plus lui en parler ; on floute
+    quand même les clés et codes à l'image (règle générale : mots de passe, clés secrètes, codes SMS) ;
+  - **NE COUPER AUCUN PASSAGE** : v3, garder sa demande sur plusieurs comptes Google ET la réponse du chef de projet
+    (montre comment on discute avec le chef) ; v7, garder son passage sur les abonnements qu'il peut offrir et sa phrase
+    sur les projets qui rapportent de l'argent (c'est sa décision) → VO-55 n'est plus nécessaire ;
+  - conseils acceptés : Kekeli = ses choix (VO-21), pull request illustrée, boucle racontée une seule fois, micro du clavier.
+- **Étape actuelle : attente des enregistrements** : R1 (variables d'environnement, fausses clés), puis voix off vidéo par
+  vidéo, en commençant par la 2A (VO-1 à VO-14), envoyées par Drive. Dès réception des voix de la 2A : extrait d'essai
+  d'environ 1 minute, puis montage vidéo par vidéo.
+- Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
+  `projets/agent-ia-p2/voix_off_p2.md`.
 
 ---
 
