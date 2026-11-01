@@ -37,6 +37,14 @@
   vidéo, en commençant par la 2A, envoyées par Drive. **Texte à lire : `projets/agent-ia-p2/voix_off_p2_complete.md`** (version
   complète demandée par Joseph le 1er novembre, 109 morceaux A-01…D-16, remplace `voix_off_p2.md` trop court). Dès réception des voix de la 2A : extrait d'essai
   d'environ 1 minute, puis montage vidéo par vidéo.
+- **Voix off reçues le 1er novembre** : 4 fichiers (`projets/agent-ia-p2/voix/vo1…vo4.m4a`, 5 min 32, 4 min 35, 4 min 16,
+  2 min 19 ; ids Drive 17NFwrafHW8xoUEnBOVpogHu1oNmKgBPF, 1YzgzLCi3cTWvb-IgCZjy57TG4t9rY_3z, 1QcX1QTxHuvnC01SxSikbalr9MT5sZ0tp,
+  1Y-78jbMRGc5SxpA38AFsT6gS73XBENxu). Joseph signale des erreurs et des répétitions : **retirer toutes les reprises**.
+- **Exigences de qualité de Joseph (1er novembre, pour toute la partie 2)** : public de débutants → tout très expliqué,
+  **beaucoup d'illustrations, d'animations, d'images libres de droits explicatives** ; montage **très animé, mouvementé,
+  excellent** ; **voix radio forte, énergique, bon ton, à haute voix** ; puiser sur Internet toutes les ressources utiles ;
+  pédagogie excellente ; **ne pas se presser, avancer étape par étape**, n'assembler qu'à la fin ; **prendre tout l'écran
+  pour expliquer** ; l'avatar seulement à certains endroits.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
   `projets/agent-ia-p2/voix_off_p2.md`.
 

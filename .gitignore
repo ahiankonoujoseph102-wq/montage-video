@@ -15,3 +15,5 @@ projets/*/montage/sorties/unites/
 projets/*/montage/sorties/trans_complet/
 projets/*/montage/__pycache__/
 projets/*/montage/sorties/touchers_log*.txt
+projets/agent-ia-p2/voix/*.m4a
+projets/agent-ia-p2/rushes/*.mp4
