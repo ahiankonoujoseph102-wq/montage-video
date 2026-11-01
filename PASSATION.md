@@ -53,6 +53,10 @@
   (issues de v2 à 384, 402, 437 s). Rendu : bundle puis `npx remotion render … EssaiP2` puis `outils/finaliser.py`.
   Reprises de vo1 à retirer au montage complet : « Il ajoute ses remarques… » (1re prise ≈ 3:17–3:24),
   « Et quand une personne du chef de projet vous… » (≈ 4:41–4:48).
+- **Extrait d'essai jugé « pas mal » par Joseph (1er novembre), avec cette règle pour tout le montage** : **chaque mot
+  dit doit être démontré**. Ordre de priorité : (1) ses enregistrements d'écran ; (2) sinon photos ou vidéos **libres de
+  droits** trouvées sur Internet (noter source et licence ici) ; (3) en dernier recours, illustration ou animation créée.
+  Tout doit être très clair. Ensuite : monter et lui envoyer tout (2A → 2D).
 - Illustrations : uniquement des dessins faits dans le code (aucune image extérieure pour l'instant) ; unDraw
   (licence unDraw : libre, usage commercial, sans attribution) pour la partie 1.
 - Fichiers : transcriptions `projets/agent-ia-p2/transcriptions/v1…v7` et `vo1…vo4` ; plan `projets/agent-ia-p2/plan_p2.md` ; voix off
