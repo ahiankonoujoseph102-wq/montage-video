@@ -22,6 +22,9 @@ EXTRAITS = [  # temps vérifiés sur la transcription de la vidéo finale (1Av2.
     ("06-les-mots-2", "formation-1A-v2.mp4", 479.1, 617.3, "GitHub, API, clé API…\nexpliqués simplement", "Épisode 6"),
     ("07-claude-et-github", "formation-1A-v2.mp4", 617.4, 741.0, "Créer vos comptes\nClaude et GitHub", "Épisode 7"),
     ("08-la-methode", "formation-1A-v2.mp4", 741.5, 883.2, "La méthode complète\nen 4 étapes", "Épisode 8"),
+    # vidéo 1B (temps de 1Bv2.json)
+    ("09-le-bloc-notes", "formation-1B-v2.mp4", 0.0, 131.3, "Étape 1 : décrire son\nprojet dans le bloc-notes", "Épisode 9"),
+    ("10-mon-projet", "formation-1B-v2.mp4", 131.2, 284.8, "Je dicte mon projet\nd'agent IA en direct", "Épisode 10"),
 ]
 
 

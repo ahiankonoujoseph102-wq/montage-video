@@ -1,0 +1,279 @@
+[00:00.00] Formation, comment créer un agent IA de A à Z.
+[00:03.78] Première partie, partie 1B, préparer son projet.
+[00:07.64] La partie 1A, vous avez compris ce qu'un agent IA a pris les 10 mots importants.
+[00:12.88] Créer vos comptes et découvrir la méthode en 4 étapes.
+[00:16.42] Maintenant, on passe à la pratique.
+[00:18.76] Étape 1, le bloc neutre.
+[00:23.20] Outez-moi bien, parce que cette étape décide de tout le reste.
+[00:26.42] Un agent bien décrit travaille bien.
+[00:28.52] Un agent mal décrit travaille mal.
+[00:31.10] Si vos informations sont floues, votre agent sera flou.
+[00:34.62] Pensez à votre agent comme à un nouvel employé.
+[00:37.94] Le premier jour, vous lui expliqueriez tout, qui vous êtes, ce que vous vendez, comment parler au client et ce qu'il ne doit jamais faire.
+[00:45.06] Faites exactement la même chose, mais par écrit dans le bloc neutre de votre téléphone.
+[00:50.28] Pour écrire votre projet, vous avez deux chemins.
+[00:54.08] Choisissez celui qui vous convient.
+[00:55.58] Le premier chemin, c'est la description libre.
+[00:58.52] Vous écrivez tout ce que vous avez dans la tête, sans autre, avec vos propres mots.
+[01:03.64] Les fautes n'ont aucune importance.
+[01:05.92] Essayez simplement de répondre à ces questions.
+[01:08.28] Quel problème mon agent va résoudre ?
+[01:10.22] Pour qui il travaille ?
+[01:11.54] Que doit-il faire chaque jour ?
+[01:13.48] Où va-t-il travailler ?
+[01:14.90] Et quel est mon budget ?
+[01:16.64] C'est le chemin le plus simple quand on débute.
+[01:19.16] Votre chef de projet remettra tout en ordre.
+[01:22.02] Le deuxième chemin, c'est la fiche guidée de votre guide.
+[01:25.32] Vous répondez aux questions une par une.
+[01:27.72] Elles sont rangées en neuf parties.
+[01:30.10] L'identité de l'argent, votre entreprise, vos clients, ses tâches, ce qu'il doit savoir, sa personnalité, où il vit, le budget et le résultat attendu.
+[01:38.50] C'est le chemin le plus rapide si votre idée est déjà claire.
+[01:42.20] Quel que soit votre chemin, une partie compte plus que les autres.
+[01:45.58] Ce que l'argent doit savoir.
+[01:47.50] Écrivez vos vrais prix et les vraies questions que vos clients vous posent avec les bonnes réponses.
+[01:53.84] Notez-en au moins 10.
+[01:55.56] Astuce.
+[01:56.30] Réalisez vos discussions WhatsApp de la semaine.
+[01:58.98] Les questions y sont.
+[01:59.94] Et n'oubliez jamais d'écrire ce que l'argent ne doit jamais dire ni promettre.
+[02:04.24] Les deux chemins arrivent au même endroit.
+[02:07.54] Votre chef de projet qui vérifiera tout et complétera ce qui manque.
+[02:11.44] Maintenant, je vous montre.
+[02:13.16] J'ouvre mon bloc notes et j'écris mon projet devant vous.
+[02:16.70] Comme je vous ai dit, je vais faire un exemple pratique.
+[02:18.70] Je vais créer un argent de programmation.
+[02:21.60] Voilà.
+[02:22.36] Parce que vous voyez, moi, je perds l'abonnement à Claude Coutte chaque fois.
+[02:24.98] Donc, c'est maintenant.
+[02:26.32] C'est trop, en fait.
+[02:27.94] Voilà.
+[02:28.18] Parce que je perds l'abonnement à Claude Coutte.
+[02:30.44] Donc, chacun du moins, je perds 3500 fois 4.
+[02:33.84] Parfois, je perds 3 comptes d'abonnement, parfois 4.
+[02:36.40] Voilà.
+[02:36.58] Dépendamment de la tête des projets que j'ai à exécuter.
+[02:39.48] Donc, alors, pour éviter tout ça, il faut que j'écris un agent de programmation.
+[02:42.30] Vous voyez.
+[02:42.60] Donc, je vais faire ça.
+[02:43.46] Avant de créer mon projet, j'ai demandé à Claude.
+[02:46.36] Quels sont les meilleurs agents de programmation aujourd'hui?
+[02:49.20] Il m'a cité Claude Coutte, QSOR, Manus et Levable.
+[02:52.68] Et il m'a expliqué comment ils fonctionnent.
+[02:59.60] Créer mon propre modèle d'IA culturel des millions.
+[03:02.00] La solution réaliste.
+[03:04.02] Louer des modèles qui existent déjà.
+[03:19.98] J'ouvre Google Keep, mon bloc-notes.
+[03:23.78] Je touche le plus pour créer une nouvelle nouvelle.
+[03:27.22] Je touche le micro et je dicte mon projet comme si je parlais à un ami.
+[03:32.18] Les fautes n'ont aucune importance.
+[03:42.28] Je relis rapidement et j'ajoute ce qui manque.
+[03:45.42] Mon nom, mon activité, mon objectif.
+[04:01.82] Quand même, j'ai décrit mon objectif.
+[04:03.46] Vous voyez.
+[04:03.84] Puisque, en fait, mon objectif, c'est de pouvoir créer un agent de programmation comme Claude Coutte.
+[04:07.74] Un agent de programmation comme Coudesse.
+[04:09.38] Un agent de programmation qui sort comme le babole.
+[04:12.24] Vous voyez, non ?
+[04:12.78] Voilà.
+[04:13.66] Vous voyez.
+[04:14.48] Moi, je suis le point de créer ça.
+[04:15.62] Mais je ne sais pas comment on le fait.
+[04:16.80] Mais avec le vibe coding.
+[04:17.96] Parce que là, on fait le vibe coding.
+[04:19.44] Là, arrête de décrire l'Alias, ce que nous voulons qu'il nous fasse.
+[04:21.72] Il va nous le faire.
+[04:22.44] Là, on fait le vibe coding.
+[04:23.68] Mais donc, avec le vibe coding, on va pouvoir créer quoi que ce que nous voulons.
+[04:27.40] Ce que nous voulons créer, en fait.
+[04:29.36] Il n'y a plus de barrière avec le vibe coding.
+[04:31.32] Donc, là, j'ai décrit de façon désordinaire.
+[04:33.18] Voilà.
+[04:33.68] Mais vous, je vous ai donné une fiche que vous allez respecter.
+[04:36.14] Le plan là, c'est que ça, Claude va m'aider pour ça.
+[04:38.40] Bon, commençons d'ailleurs.
+[04:40.30] Donc là, après avoir, faites-vous, vous copiez tout votre bloc noteur.
+[04:47.46] Maintenant, on donne nos tests à Claude.
+[04:49.76] Mais pas n'importe comment.
+[04:51.14] D'abord, on lui donne son rôle.
+[04:52.56] On lui dit, tu es mon chef de projet.
+[04:55.12] Je suis débutant.
+[04:56.10] Pourquoi ?
+[04:56.84] Parce qu'une IA travaille beaucoup mieux quand elle sait quel rôle elle joue et à qui elle parle.
+[05:03.22] Ensuite, on lui explique son travail.
+[05:05.90] Réorganisez votre idée en cahier de charge clair.
+[05:09.10] Repérez ce qui manque.
+[05:10.24] Et vous posez les questions une par une avec des choix.
+[05:13.76] Quand vous ne savez pas, il doit vous proposer la solution la plus simple et la moins chère.
+[05:17.98] Et s'il trouve une idée trop compliquée ou trop chère, il doit vous le dire franchement.
+[05:22.20] Première consigne, il ne doit jamais vous demander une clé secrète ou un mot de passe.
+[05:27.02] Et vous, vous ne lui donnez jamais.
+[05:29.76] Ce message complet est dans votre guide.
+[05:32.16] Vous n'avez qu'à le copier.
+[05:34.74] J'ouvre Claude et je demande une nouvelle conversation.
+[05:38.24] Je colle le message du guide.
+[05:40.54] Tu es mon chef de projet.
+[05:49.74] Puis je colle ma description en dessous.
+[05:54.10] Je touche à
+[06:04.78] Claude me répond et me pose ces questions une par une.
+[06:16.78] Voici ce que fait le chef de projet.
+[06:18.82] D'abord, il remet mon idée en autre.
+[06:20.72] Ensuite, il me parle franchement.
+[06:23.18] Faire mieux que Claude Côte qui soit manus ou le babolo, ce n'est pas réaliste au départ.
+[06:28.00] Mais il me montre ma vraie force.
+[06:29.58] Le français, le téléphone, mon bémon et l'accompagnement des débutants.
+[06:34.34] Ensuite, vous discutez et vous posez une question, vous répondez avec vos mots.
+[06:38.32] Si vous ne savez pas, dites simplement, je ne sais pas.
+[06:40.96] Propose-moi la meilleure option.
+[06:42.62] Et s'il propose quelque chose que vous ne voulez pas, dites-le.
+[06:45.70] C'est votre projet.
+[06:46.98] C'est vous le patron.
+[07:10.28] Quand il n'a plus de questions, demandez-lui.
+[07:12.18] Donne-moi le cas de charge complet et final avec la liste des comptes et outils nécessaires gratuits et payants.
+[07:17.92] Copiez-le dans votre bloc-note et gardez-le précisément.
+[07:21.00] C'est le plan de votre maison.
+[07:22.46] Retenez ceci.
+[07:23.38] On ne commence jamais à construire avant que le chef de projet ait bien compris le projet.
+[07:29.34] Après les questions, voici ce que nous avons décidé ensemble.
+[07:32.10] Une capacité à la fois.
+[07:33.38] D'abord les sites web, puis les applications, puis le reste.
+[07:36.52] Deux modes.
+[07:37.46] Un mode simple pour les débutants et un mode de développeur.
+[07:40.20] Quelqu'un sera construit avec le cloud agent SDK pour avoir les mêmes capacités que Cloud Coach.
+[07:46.90] Pour la sécurité, chaque utilisateur travaille dans un ordinateur virtuel isolé.
+[07:51.70] L'agent ne va que sur des sites autorisés.
+[07:54.64] Et il demande la permission avant toute action risquée.
+[07:57.86] Et les abonnements seront payés par mobile money.
+[08:03.48] Je ne savais pas quel nom donner à mon agent.
+[08:06.58] Alors j'ai demandé au chef de projet de m'en proposer.
+[08:10.20] J'ai hésité entre Africa et Kékéli.
+[08:13.02] J'ai choisi Kékéli, qui veut dire la lumière en EV.
+[08:16.46] Et le slogan Kékéli, l'agent IA qui coûte pour vous.
+[08:23.98] Avant de garder un nom, on vérifie que le nom de domaine est libre.
+[08:27.74] Je le fais sur Cloudflare.
+[08:31.90] Je tape le nom que je veux.
+[08:34.46] Ici, Kékéli me dit s'il est libre et combien il coûte par an.
+[08:42.14] Kékéli.com et Kékéli.app sont déjà pris.
+[08:46.02] Kékéli.ai coûte trop cher pour commencer.
+[08:49.10] Le chef de projet vous recommande Kékéli.dev, l'extension des outils de programmation.
+[08:53.82] Je ne l'achète pas encore.
+[08:55.08] On l'achètera avant la mise en ligne.
+[08:57.42] Je choisis celui que le chef de projet m'a compris.
+[09:01.90] Ensuite, la base des données.
+[09:03.54] Le chef de projet vous recommande ForceGraySQL sur la rave cloud,
+[09:08.04] là où mes autres projets sont déjà hébergés.
+[09:33.86] Puis, il me demande de créer le coffre du projet.
+[09:50.42] Sur GitHub, je crée le dépôt de mon projet.
+[09:53.52] Je l'appelle Kékéli.
+[09:55.16] J'ajoute une description.
+[09:56.94] Je choisis privé et je crée le dépôt.
+[10:20.98] Eli, voici le cahier de charge final.
+[10:23.38] Je le copie dans mon bloc note et je le garde précieusement.
+[10:26.54] C'est le plein de ma maison.
+[10:45.78] Vous vous souvenez des six types d'agents ?
+[10:48.52] Chacun a besoin d'informations particulières.
+[10:50.82] C'est pour cela que votre guide contient six modules, du A à F.
+[10:54.78] Le module A pour l'agent professeur, les niveaux, le déroulement d'une science,
+[10:59.32] la façon de corriger les erreurs, le programme et les formules.
+[11:02.66] Le module B pour l'agent de vente, le catalogue, la prise de commande, la livraison, le paiement et les relances.
+[11:08.56] Le module C pour l'agent de contenu, les réseaux visés, les sujets, les heures de publication et l'appel à l'action.
+[11:15.34] Le module D pour l'agent de rendez-vous, les services et leurs durées, les disponibilités, l'agenda et les règles d'annulation.
+[11:22.50] Le module E pour l'agent d'automatisation, la tâche à remplacer, ce qui la déclenche et ce que vous recevez à la fin.
+[11:30.10] Le module F pour l'agent vocal, la voix, les langues, la durée et ce qu'il fait si la connexion coupe.
+[11:36.46] Pas besoin de tout remplir seul.
+[11:38.64] Copiez le module de votre type d'agent, donnez-le à votre chef de projet et dites-lui complètement cahier des charges avec ce module.
+[11:46.14] Il vous posera les bonnes questions une par une.
+[11:56.16] Avant de construire, parlons de sécurité.
+[11:58.88] Vous vous souvenez de la clé API ?
+[12:00.50] C'est le code secret qu'un service vous donne pour utiliser son API.
+[12:03.82] Avec cette clé, le service sait que c'est vous et c'est vous qui payez ce que votre agent consomme.
+[12:09.08] Voici la règle la plus importante de toute cette information.
+[12:11.48] Ne montrez jamais votre clé, ni dans une capture d'écran, ni dans une vidéo, ni dans un groupe WhatsApp et même pas à clouder dans la discussion.
+[12:19.60] Quelqu'un qui a votre clé peut l'utiliser comme si c'était vous et c'est votre argent qu'il dépense.
+[12:25.46] C'est exactement comme donner le code secret de votre mobile money à une.
+[12:29.78] Alors, où mettre cette clé ? Dans les réglages secrets de votre hébergement.
+[12:33.58] Que votre chef de projet vous montrera.
+[12:35.94] Jamais dans un message, jamais dans le code.
+[12:38.28] Si vous avez montré une clé par erreur, pas de panique, mais agissez tout de suite.
+[12:43.26] Allez dans le service concerné, supprimez cette clé et créez-en une nouvelle.
+[12:47.16] Et prenez une habitude dès aujourd'hui.
+[12:49.72] Avant chaque capture d'écran, vérifiez qu'aucune clé n'est visible.
+[12:55.78] Voici le cœur de la méthode, la boucle de travail.
+[12:59.06] Votre chef de projet prépare une consigne complète, qu'on appelle un prompt.
+[13:03.04] Vous la copiez et vous l'envoyez à Claude Cote, votre développeur.
+[13:06.28] Chaque consigne se fait en deux temps.
+[13:08.62] Dans le temps 1, Claude Cote ne construit rien.
+[13:11.12] Il lit la consigne, puis il présente son plan.
+[13:13.30] Vous copiez ce plan et vous le donnez à votre chef de projet, qui le vérifie.
+[13:17.04] C'est comme l'architecte qui vérifie le plan avant que le maçon commence.
+[13:20.70] Si le plan est bon, vous répondez à Claude Cote.
+[13:23.70] Validez, lance.
+[13:25.02] Dans le temps 2, il construit, vérifie son travail et vous donne un compte rendu.
+[13:30.28] Vous collez ce compte rendu à votre chef de projet, s'il est bon, il vous donne l'étape suivante.
+[13:35.32] Sinon, il vous donne une correction.
+[13:37.52] Et on recommence étape à étape juste à ce que l'argent soit terminé.
+[13:41.44] Trois règles d'or.
+[13:42.62] 1. Une seule étape à la fois.
+[13:44.70] 2. Ne lancez jamais deux chantiers en même temps, sinon le travail de l'un peut casser celui de l'autre.
+[13:49.70] 3. Tessez sur votre téléphone après chaque étape.
+[13:52.72] Une erreur arrive, pas de panique, c'est normal.
+[13:55.04] Même chez les professionnels.
+[13:56.14] Vous la montrez à votre chef de projet et il vous donne la correction.
+[13:59.88] C'est cette discipline qui fait la différence entre un projet qui marche et un projet qui s'écroule.
+[14:05.22] Le chef de projet me demande la première consigne pour Claude Cote.
+[14:08.80] Je la paupille avec le cahier des charges.
+[14:30.48] J'ouvre Claude Cote.
+[14:32.00] Je choisis mon dépôt que Kelly est mon ami.
+[14:49.32] Je colle la consigne préparée par le chef de projet, puis je touche.
+[15:00.28] Claude Cote ne contrôle rien tout de suite.
+[15:02.66] Il me présente d'abord son plan.
+[15:11.86] Vous voyez, j'avais oublié de coller le cahier des charges.
+[15:14.88] J'arrête, je le colle et je relance.
+[15:17.10] Les erreurs, c'est normal, on les corrige.
+[15:36.26] Claude a présenté son plan.
+[15:46.70] Je copie ce plan et je le donne à mon chef de projet.
+[15:50.36] Il le vérifie et me dit quoi.
+[15:57.22] Je le copie et je le donne au chef de projet qui le vérifie.
+[16:00.96] Le plan est bon, mais il demande trois corrections.
+[16:03.32] 1. Au départ, pas d'intermédiaire de paiement.
+[16:06.86] Le mobile money, Miss Bias ou Flux, est vérifié à la main sur capture d'écran.
+[16:10.94] 2. Pas de deuxième nom de domaine pour les sites des clients.
+[16:14.20] Ils sont publiés gratuitement sur des adresses Cloudflare.
+[16:17.54] 3. Les prix des modèles d'IA ne sont que des estimations.
+[16:20.78] On les mesurera vraiment plus tard.
+[16:23.56] Quand le plan est bon, je réponds à Claude Cote.
+[16:26.94] Validez.
+[16:27.74] Je copie sa réponse.
+[16:29.22] Je l'envoie à Claude Cote.
+[16:30.62] Et la construction commence.
+[16:32.00] C'est ce que nous verrons dans la partie 2.
+[16:46.32] Capitulons ce que nous avons appris dans six et premières parties.
+[16:49.20] Une AIR, c'est un employé formé pour votre activité.
+[16:51.66] Tout commence dans le bloc notes.
+[16:53.48] Vous décrivez votre projet avec vos mots.
+[16:56.26] Claude, votre chef de projet.
+[16:57.84] Enfin, un cas de charge clair.
+[16:59.58] GitHub est votre corps fort, toujours en privé.
+[17:01.76] Claude Cote, votre développeur présente d'abord son plan.
+[17:04.80] Le chef de projet le vérifie et on valide.
+[17:07.10] Et une règle pour toujours.
+[17:08.56] On ne montre jamais ses clés.
+[17:09.88] Avant la partie 2, voici votre devoir.
+[17:12.70] Six étapes toutes dans votre guide.
+[17:14.60] 1. Choisissez votre projet.
+[17:16.34] Votre activité ou celle d'un proche.
+[17:18.30] Le type d'achat qui l'aiderait le plus.
+[17:20.78] 2. Écrivez votre projet dans votre bloc notes.
+[17:23.56] Description libre ou fiche de base du guide.
+[17:25.90] C'est vous qui choisissez.
+[17:27.22] Notez au moins 10 vraies questions de vos clients avec les bonnes réponses et ce que l'agent ne doit jamais dire.
+[17:33.58] 3. Ajoutez le module de votre type d'agent, du A à F.
+[17:37.84] 4. Créez vos comptes Claude et GitHub et un dépôt privé.
+[17:41.28] Vérifiez le petit cardenal.
+[17:43.22] 5. Donnez votre test à Claude avec le message du guide et obtenez votre cahier de charge final.
+[17:49.44] Vérifiez-le avec la liste avant de passer à la construction à la fin du chapitre 6 du guide et gardez-le précieusement.
+[17:56.68] 6. Envoyez-moi votre cahier de charge dans le groupe WhatsApp de l'information.
+[18:00.34] Avant la partie 2, je le corrigerai.
+[18:02.74] Avant d'envoyer, vérifiez qu'il n'y a ni clé ni mot de passe.
+[18:06.30] Dans la partie 2, nous le donnerons à Claude Claude pour construire votre âge.
+[18:09.42] Bravo pour votre travail. La suite arrive très bientôt.
