@@ -2,6 +2,7 @@
 vidéo 16:9 au centre, titre en haut et repère « Partie n · épisode » en dessous (zone sûre TikTok).
 Usage : python3 decouper.py  (liste EXTRAITS ci-dessous) → out/tiktok/"""
 import subprocess
+import sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
@@ -18,6 +19,9 @@ EXTRAITS = [  # temps vérifiés sur la transcription de la vidéo finale (1Av2.
     ("03-ia-ou-agent-ia", "formation-1A-v2.mp4", 184.1, 292.9, "IA ou agent IA :\nquelle différence ?", "Épisode 3"),
     ("04-les-6-types", "formation-1A-v2.mp4", 293.9, 364.4, "Les 6 types\nd'agents IA", "Épisode 4"),
     ("05-les-mots-1", "formation-1A-v2.mp4", 366.6, 479.1, "4 mots à connaître\navant de créer un agent", "Épisode 5"),
+    ("06-les-mots-2", "formation-1A-v2.mp4", 479.1, 617.3, "GitHub, API, clé API…\nexpliqués simplement", "Épisode 6"),
+    ("07-claude-et-github", "formation-1A-v2.mp4", 617.4, 741.0, "Créer vos comptes\nClaude et GitHub", "Épisode 7"),
+    ("08-la-methode", "formation-1A-v2.mp4", 741.5, 883.2, "La méthode complète\nen 4 étapes", "Épisode 8"),
 ]
 
 
@@ -51,6 +55,8 @@ def calque(titre, episode, chemin):
 
 
 for nom, src, a, b, titre, ep in EXTRAITS:
+    if len(sys.argv) > 1 and not any(nom.startswith(x) for x in sys.argv[1:]):
+        continue
     png = OUT / f"{nom}.png"
     calque(titre, ep, png)
     duree = b - a
