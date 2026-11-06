@@ -36,33 +36,21 @@ def message(avec_piece):
     piece = (f"La vidéo est aussi en pièce jointe ({taille / 1e6:.1f} Mo, pleine qualité)." if avec_piece else
              f"Vidéo trop lourde pour être jointe ({taille / 1e6:.0f} Mo) : télécharge-la avec le lien ci-dessus "
              "(pleine qualité, connecté à GitHub).")
-    corps = f"""Ta vidéo du jour est prête.
+    titre = script["titre"]
+    desc = f"{script.get('description', '').strip()} {script.get('hashtags', '').strip()}".strip()
+    corps = f"""TITRE :
+{titre}
 
-▶ TÉLÉCHARGER LA VIDÉO (.mp4, pleine qualité) :
+DESCRIPTION + HASHTAGS :
+{desc}
+
+VIDÉO (pleine qualité) :
 {lien}
-
 {piece}
 
-━━━━━━━━ TITRE TIKTOK ━━━━━━━━
-{script['titre']}
-
-━━━━━━━━ DESCRIPTION ━━━━━━━━
-{script.get('description', '')}
-
-━━━━━━━━ HASHTAGS ━━━━━━━━
-{script.get('hashtags', '')}
-
-━━━━━━━━ DESCRIPTION + HASHTAGS (à coller d'un coup) ━━━━━━━━
-{script.get('description_tiktok', '')}
-
-━━━━━━━━ PROMPT (à envoyer en privé à ceux qui commentent PROMPT) ━━━━━━━━
+—
+Prompt à envoyer en privé à ceux qui commentent PROMPT :
 {script.get('prompt', '')}
-
-━━━━━━━━ SOURCES DES IMAGES ━━━━━━━━
-{sources}
-
-Rubrique : {script.get('rubrique', '?')}
-— Montage automatique Lomé IA School
 """
     m = EmailMessage()
     m["Subject"] = f"🎬 Vidéo TikTok : {script['titre']}"

@@ -30,7 +30,7 @@ const S = (s: number) => Math.round(s * FPS);
 export type Scene = {type: string; texte?: string; kicker?: string; sous?: string; emoji?: string; n?: number;
   gauche?: {texte: string; ok: boolean}; droite?: {texte: string; ok: boolean}; a?: string | string[];
   titre?: string; items?: {texte: string; a: string}[]; lignes?: string[]; geste?: string; doigts?: number;
-  expression?: string; outil?: string; outils?: OutilScene[]; fichier?: string; credit?: string; recherche?: string};
+  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; nom?: string; fichier?: string; credit?: string; recherche?: string};
 export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
@@ -302,6 +302,43 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
               k={pop(f, 6 + i * 5)} />
           )).map((g, i) => <div key={i} style={{position: 'absolute', left: (i - (n - 1) / 2) * ecart, top: 0, width: 1080, height: HAUT}}>{g}</div>)}
         </>
+      );
+    }
+    case 'demo': {
+      // Démonstration : le prompt est tapé dans l'outil, puis la réponse (écrite par l'IA) s'affiche ligne par ligne.
+      const prompt = s.prompt ?? '';
+      const lignes = (s.reponse ?? '').split('\n').filter((l) => l.trim());
+      const finFrappe = Math.max(18, Math.round(duree * 0.38));
+      const nTape = Math.floor(interpolate(f, [6, finFrappe], [0, prompt.length], clamp));
+      const kc = pop(f, 0, 200, 12);
+      return (
+        <div style={{position: 'absolute', left: 70, top: 200, width: 940, height: 670, borderRadius: 34, background: '#F7F7FA',
+          overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.5)', transform: `scale(${0.7 + 0.3 * kc})`, opacity: kc > 0 ? 1 : 0}}>
+          <div style={{height: 96, background: '#fff', display: 'flex', alignItems: 'center', gap: 20, padding: '0 30px',
+            borderBottom: '2px solid #E5E7EF'}}>
+            {s.logo ? <Img src={staticFile(`test-auto/logos/${s.outil}.svg`)} style={{width: 58, height: 58}} />
+              : <div style={{width: 58, height: 58, borderRadius: 29, background: '#6D4BFF', color: '#fff', display: 'flex',
+                alignItems: 'center', justifyContent: 'center', fontSize: 34, fontWeight: 900, fontFamily: POLICE}}>✦</div>}
+            <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 42, color: '#1B1B2F'}}>{s.nom ?? 'Assistant IA'}</div>
+          </div>
+          <div style={{padding: '26px 30px', display: 'flex', flexDirection: 'column', gap: 22}}>
+            <div style={{alignSelf: 'flex-end', maxWidth: 760, background: '#2B59FF', color: '#fff', borderRadius: '30px 30px 6px 30px',
+              padding: '20px 26px', fontFamily: POLICE, fontWeight: 700, fontSize: 34, lineHeight: 1.25}}>
+              {prompt.slice(0, nTape)}{nTape < prompt.length ? <span style={{opacity: f % 16 < 8 ? 1 : 0}}>|</span> : null}
+            </div>
+            {f > finFrappe + 4 ? (
+              <div style={{alignSelf: 'flex-start', maxWidth: 840, background: '#fff', border: '2px solid #E5E7EF',
+                borderRadius: '30px 30px 30px 6px', padding: '20px 26px', fontFamily: POLICE, fontWeight: 600, fontSize: 31,
+                color: '#1B1B2F', lineHeight: 1.3}}>
+                {lignes.map((l, i) => {
+                  const a = finFrappe + 6 + i * Math.max(6, Math.round((duree - finFrappe - 12) / Math.max(1, lignes.length)));
+                  const kl = interpolate(f, [a, a + 6], [0, 1], clamp);
+                  return <div key={i} style={{opacity: kl, transform: `translateY(${(1 - kl) * 14}px)`}}>{l}</div>;
+                })}
+              </div>
+            ) : f > finFrappe - 2 ? <div style={{fontFamily: POLICE, fontSize: 40, color: '#888'}}>• • •</div> : null}
+          </div>
+        </div>
       );
     }
     case 'photo': {

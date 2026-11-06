@@ -210,6 +210,16 @@ def main(dossier):
                         "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), "
                                    "aucune affiliation" + (" ; capture de la page publique" if k in deja_capture else "")})
     cites = utilises
+    # Démonstrations : logo et nom de l'outil dans l'en-tête de la fenêtre de discussion.
+    for s in plan["scenes"]:
+        if s.get("type") == "demo":
+            k = str(s.get("outil", "")).lower().replace(" ", "")
+            s["outil"], s["nom"], s["logo"] = k, noms.get(k, "Assistant IA"), a_logo(k)
+            if a_logo(k):
+                shutil.copy2(ROOT / "projets" / "logos" / f"{k}.svg", PUBLIC / "logos" / f"{k}.svg")
+                utilises.add(k)
+            if not s.get("prompt"):
+                repli(s, s.get("reponse", ""))
     # 2. Photos et vidéos libres de droits.
     (PUBLIC / "photos").mkdir(parents=True, exist_ok=True)
     n_photos, n_videos = 0, 0

@@ -36,7 +36,7 @@ MEMOIRE = ROOT / "projets" / "test-auto" / "gemini_modele.txt"  # dernier modèl
 DELAIS = [150, 240]  # s d'attente d'une réponse (script long, réflexion « low ») : 1er tour, 2e tour
 EMOJIS = {p.stem for p in (ROOT / "projets" / "test-auto" / "emojis").glob("*.json")}
 TYPES = {"reponseIA", "question", "alerte", "carte", "numero", "prompt", "deux", "liste", "telephone", "final",
-         "outil", "photo"}
+         "outil", "photo", "demo"}
 FONDS = {"bleu", "violet", "orange", "nuit", "vert", "rose"}
 GESTES = {"repos", "explique", "designe", "compte", "bras-croises", "pouce"}
 EXPRESSIONS = {"neutre", "parle", "grimace", "sourire", "surpris"}
@@ -110,6 +110,9 @@ CONTENU OBLIGATOIRE :
 - Une erreur fréquente à éviter et une astuce de pro.
 - Un récapitulatif rapide des étapes, puis le message clé (avec tes mots) : « L'IA change déjà le travail ; ceux qui
   l'apprennent prennent de l'avance. »
+- NIVEAU EXPERT : partage des méthodes de professionnel, du niveau de ce que des agences et des formateurs vendent très
+  cher : la démarche complète, les bons réglages, les vrais prompts, l'ordre des étapes, comment obtenir un résultat
+  propre et utilisable tout de suite. MONTRE ce que l'IA crée (scènes "demo" avec le prompt et la réponse).
 - EXACTITUDE : ne dis que des choses vraies et vérifiables sur les outils tels qu'ils existent aujourd'hui. Si tu n'es pas
   certain qu'une fonction, un bouton ou une offre gratuite existe, n'en parle pas. Pas de nom de menu inventé.
 
@@ -143,6 +146,9 @@ PLAN VISUEL : pour CHAQUE phrase, une scène (même ordre, même nombre). Types 
 - "liste" {titre, items [{texte (court), a (mot de la phrase)}] (2 à 4 items)} ;
 - "outil" {outil: "chatgpt" | "claude" | "gemini" | "perplexity"} : vraie capture de la page publique de l'outil, pour la
   phrase qui présente ou recommande cet outil (2 au plus par vidéo) ;
+- "demo" {outil: "chatgpt" | "claude" | "gemini" | "perplexity", prompt (le prompt exact, 140 caractères au plus),
+  reponse (un extrait RÉALISTE de la réponse que l'outil donne, 3 à 6 lignes courtes séparées par \\n, 260 caractères au
+  plus)} : démonstration à l'écran ; au moins 2 par vidéo, sur les phrases qui expliquent quoi écrire et ce qu'on obtient ;
 - "photo" {recherche (3 à 5 mots EN ANGLAIS pour une banque d'images ; ajoute "african" quand on voit des personnes,
   ex. "african woman shop smartphone"), texte (2 à 4 mots en majuscules)} : vraie photo ou vidéo libre de droits de la
   situation concrète dont parle la phrase ; 6 à 10 par vidéo, jamais de célébrité, de marque ni de logo.

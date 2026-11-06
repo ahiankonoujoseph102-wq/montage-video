@@ -27,11 +27,11 @@ PAUSE_PHRASE = 0.32  # s entre deux phrases d'une même partie
 PAUSE_PARTIE = 0.6   # s entre deux parties (accroche, réflexe 1…)
 FIN = 2.2            # s gardées après la dernière phrase
 # Chaîne « radio » choisie par Joseph pour la pub Talkami (scripts/voix_pub3.py), sans accélération.
+# Voix naturelle (demande de Joseph) : plus de chaîne « radio » (égaliseur, double compression, désesseur) ; seulement
+# un filtre des graves inutiles et une compression très douce pour garder un niveau régulier.
 RADIO = ",".join([
-    "highpass=f=75:poles=2", "lowshelf=f=120:g=3", "equalizer=f=400:t=q:w=1.2:g=-2.5",
-    "equalizer=f=2200:t=q:w=1.0:g=1.5", "equalizer=f=4000:t=q:w=1.1:g=3", "highshelf=f=9000:g=2.5",
-    "acompressor=threshold=-28dB:ratio=4:attack=4:release=90:makeup=6dB:knee=6",
-    "acompressor=threshold=-14dB:ratio=2.5:attack=8:release=150:makeup=1dB:knee=4", "deesser=i=0.5:f=0.55",
+    "highpass=f=60:poles=2",
+    "acompressor=threshold=-22dB:ratio=1.6:attack=15:release=200:makeup=1dB:knee=8",
 ])
 
 
