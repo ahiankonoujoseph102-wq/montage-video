@@ -1,11 +1,16 @@
-# Vidéo de test automatique (étape 1) : script Gemini (clé gratuite, secret GEMINI_API_KEY), voix clonée de Joseph
-# (Chatterbox, gratuit, licence MIT), double animé et style dynamique (Remotion). La vidéo en pleine qualité est publiée
-# dans une Release GitHub du dépôt (gratuit), puis un e-mail (Gmail, secret GMAIL_APP_PASSWORD) donne le lien direct,
-# le titre, la description, les hashtags et le prompt ; le script et les mesures sont rangés dans le dépôt.
-# Lancement à la main (bouton « Run workflow »). Rien de payant : machine GitHub gratuite, aucun service payant.
-name: Vidéo de test (voix clonée + double animé)
+# Vidéo quotidienne Lomé IA School : script Gemini (clé gratuite, secret GEMINI_API_KEY), voix clonée de Joseph
+# (Chatterbox, licence MIT), double animé et style dynamique (Remotion). La vidéo en pleine qualité est publiée dans une
+# Release GitHub du dépôt, puis un e-mail (Gmail, secret GMAIL_APP_PASSWORD) donne le lien direct, le titre, la
+# description, les hashtags et le prompt. Le script et les mesures sont rangés dans le dépôt.
+# Programmation (heure de Lomé = GMT = UTC) : départs à 04 h 07 et 16 h 07 pour une vidéo dans la boîte avant 6 h et
+# 18 h (lancement d'environ 35 à 40 min, plus le retard possible de GitHub sur les programmations).
+# En cas d'échec : e-mail d'alerte et nouvelle tentative automatique (fichier alerte-echec.yml).
+name: Vidéo quotidienne Lomé IA School
 
 on:
+  schedule:
+    - cron: "7 4 * * *"
+    - cron: "7 16 * * *"
   workflow_dispatch:
     inputs:
       sujet:
@@ -16,9 +21,9 @@ on:
 permissions:
   contents: write
 
-concurrency: video-test
-
-# Actions en Node.js 24 (Node.js 20 est abandonné sur les machines GitHub).
+concurrency:
+  group: video-auto
+  cancel-in-progress: false
 
 env:
   BRANCHE: claude/great-heisenberg-8p7tj4
@@ -26,7 +31,7 @@ env:
 jobs:
   video:
     runs-on: ubuntu-24.04
-    timeout-minutes: 150
+    timeout-minutes: 120
     steps:
       - name: Récupérer le code de montage
         uses: actions/checkout@v5
@@ -37,33 +42,55 @@ jobs:
         run: echo "T0=$(date +%s)" >> "$GITHUB_ENV"
 
       - uses: actions/setup-python@v6
+        id: py
         with:
           python-version: "3.11"
 
       - uses: actions/setup-node@v5
         with:
           node-version: "22"
-          cache: npm
 
+      # Caches gardés entre les lancements (gratuits, 10 Go par dépôt) : modèles, paquets Python, paquets Node
+      # (avec le navigateur de rendu de Remotion).
       - name: Cache des modèles (voix, transcription)
         uses: actions/cache@v5
         with:
           path: ~/.cache/huggingface
-          key: modeles-hf-v1
+          key: modeles-hf-v2
 
-      - name: Cache des paquets Python (installation plus rapide)
+      - name: Cache des paquets Python (environnement complet)
+        id: venv
         uses: actions/cache@v5
         with:
-          path: ~/.cache/pip
-          key: pip-v1
+          path: ~/venv-auto
+          key: venv-${{ runner.os }}-py${{ steps.py.outputs.python-version }}-v1
 
-      - name: Installer ffmpeg et les outils Python
+      - name: Cache des paquets Node et du navigateur de rendu
+        id: node
+        uses: actions/cache@v5
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('package-lock.json') }}-v1
+
+      - name: Installer ce qui manque
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
-          pip install -q chatterbox-tts "setuptools<81" faster-whisper "av<16" pyloudnorm scipy
-          npm ci --no-audit --no-fund
+          command -v ffmpeg > /dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null; }
+          if [ "${{ steps.venv.outputs.cache-hit }}" != "true" ]; then
+            python -m venv ~/venv-auto
+            ~/venv-auto/bin/pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+            ~/venv-auto/bin/pip install -q chatterbox-tts "setuptools<81" faster-whisper "av<16" pyloudnorm scipy
+          fi
+          echo "$HOME/venv-auto/bin" >> "$GITHUB_PATH"
+          if [ "${{ steps.node.outputs.cache-hit }}" != "true" ]; then npm ci --no-audit --no-fund; fi
           echo "T_INSTALL=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Supprimer les vidéos des Releases de plus de 30 jours
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release list --limit 300 --json tagName,createdAt \
+            -q '.[] | select(.tagName | startswith("video-")) | select((.createdAt | fromdateiso8601) < (now - 30*86400)) | .tagName' |
+          while read -r t; do gh release delete "$t" --yes --cleanup-tag && echo "Supprimée : $t"; done
 
       - name: Écrire le script avec Gemini
         env:
@@ -96,6 +123,24 @@ jobs:
           ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,bit_rate -of compact out/video.mp4
           echo "T_RENDU=$(date +%s)" >> "$GITHUB_ENV"
 
+      - name: Minutes GitHub du mois (alerte sous 300 minutes gratuites)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          M=$(python scripts/minutes_github.py $(( ($(date +%s) - T0) / 60 + 3 )) || echo '{}')
+          echo "$M" | tee projets/test-auto/run/minutes.json
+          RESTE=$(echo "$M" | python -c "import json,sys;print(json.load(sys.stdin).get('restantes',9999))")
+          MOIS=$(date -u +%Y-%m)
+          if [ "$RESTE" -lt 300 ] && ! grep -qx "$MOIS" projets/test-auto/alerte_minutes.txt 2>/dev/null; then
+            echo "$M" | python -c "import json,sys;d=json.load(sys.stdin);print(f'''Il reste environ {d['restantes']} minutes gratuites GitHub Actions ce mois-ci ({d['utilisees']} utilisées sur {d['incluses']}, estimation pour le dépôt montage-video).
+          Rythme : {d['par_jour']} min par jour, soit environ {d['prevision_mois']} min sur le mois.
+
+          Au-delà des minutes gratuites : sans moyen de paiement enregistré, GitHub arrête les lancements jusqu'au 1er du mois suivant (aucun frais). Avec un moyen de paiement et un budget, chaque minute de plus est facturée.''')" |
+              python scripts/alerte_email.py "⚠️ Minutes GitHub : moins de 300 minutes gratuites restantes"
+            echo "$MOIS" >> projets/test-auto/alerte_minutes.txt
+          fi
+
       - name: Ranger le script et les mesures dans le dépôt (dossier projets/test-auto/runs, sans la vidéo)
         run: |
           D="projets/test-auto/runs/$(date -u +%Y-%m-%d_%Hh%M)"
@@ -112,9 +157,10 @@ jobs:
           EOF
           git config user.name "Montage automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add "$D" projets/test-auto/historique.json projets/test-auto/gemini_modele.txt
-          git commit -q -m "Vidéo de test automatique du $(date -u +%d/%m/%Y) (dossier $D)"
-          git push -q origin "HEAD:${BRANCHE}"
+          touch projets/test-auto/alerte_minutes.txt
+          git add "$D" projets/test-auto/historique.json projets/test-auto/gemini_modele.txt projets/test-auto/alerte_minutes.txt
+          git commit -q -m "Vidéo automatique du $(date -u +%d/%m/%Y) (dossier $D)"
+          for i in 1 2 3; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:${BRANCHE}" && break; sleep 5; done
           echo "DOSSIER=$D" >> "$GITHUB_ENV"
 
       - name: Publier la vidéo en pleine qualité (Release GitHub) et vérifier le téléchargement
@@ -126,7 +172,7 @@ jobs:
           cp out/video.mp4 "out/$NOM"
           TITRE=$(python -c "import json;print(json.load(open('projets/test-auto/run/script.json'))['titre'])")
           gh release create "$TAG" "out/$NOM" --target "$BRANCHE" --title "$TITRE" \
-            --notes "Vidéo TikTok du $(date -u +%d/%m/%Y), pleine qualité (1080 × 1920)."
+            --notes "Vidéo TikTok du $(date -u +%d/%m/%Y), pleine qualité (1080 × 1920). Supprimée automatiquement après 30 jours."
           # Vérification : le fichier publié est bien un .mp4 identique, téléchargeable.
           gh release download "$TAG" -p "$NOM" -D "$RUNNER_TEMP/verif"
           cmp "out/$NOM" "$RUNNER_TEMP/verif/$NOM" && echo "Fichier publié identique ($(stat -c %s "out/$NOM") octets)"
@@ -148,7 +194,7 @@ jobs:
         run: |
           m() { if [ -n "$2" ] && [ -n "$1" ]; then echo "$(( ($2 - $1) / 60 )) min $(( ($2 - $1) % 60 )) s"; else echo "—"; fi; }
           {
-            echo "## Vidéo de test"
+            echo "## Vidéo quotidienne"
             echo ""
             echo "| Étape | Temps |"
             echo "|---|---|"
@@ -163,21 +209,10 @@ jobs:
             if [ -f out/video.mp4 ]; then echo "Vidéo : $(( $(stat -c %s out/video.mp4) / 1000000 )) Mo, pleine qualité"; fi
             if [ -n "$LIEN" ]; then echo ""; echo "**Télécharger :** $LIEN"; fi
             if [ -f projets/test-auto/run/gemini.json ]; then
-              python -c "import json;d=json.load(open('projets/test-auto/run/gemini.json'));j=d['journal'] if isinstance(d,dict) else d;print('\n**Gemini :** '+'; '.join(str(x.get('modele'))+' '+str(x.get('secondes'))+' s'+(' ('+x['erreur'][:80]+')' if 'erreur' in x else '') for x in j))"
+              python -c "import json;d=json.load(open('projets/test-auto/run/gemini.json'));j=d['journal'] if isinstance(d,dict) else d;print('\n**Gemini :** '+'; '.join(str(x.get('modele'))+' '+str(x.get('secondes'))+' s'+(' ('+x['erreur'][:80]+')' if 'erreur' in x else '') for x in j))" || true
             fi
             if [ -f projets/test-auto/run/script.json ]; then
-              python -c "import json;d=json.load(open('projets/test-auto/run/script.json'));print('\n**Titre :** '+d['titre']+'\n\n**Description TikTok :** '+d['description_tiktok'])"
+              python -c "import json;d=json.load(open('projets/test-auto/run/script.json'));print('\n**Titre :** '+d['titre']+'\n\n**Description TikTok :** '+d['description_tiktok'])" || true
             fi
-            if [ -f projets/test-auto/run/gemini.json ] && [ ! -f projets/test-auto/run/script.json ]; then
-              echo ""; echo "**Erreur Gemini :**"; echo '```'; head -c 1500 projets/test-auto/run/gemini.json; echo '```'
-            fi
+            if [ -f projets/test-auto/run/minutes.json ]; then echo ""; echo "**Minutes du mois :** $(cat projets/test-auto/run/minutes.json)"; fi
           } >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Vidéo en pièce jointe du lancement (gardée 7 jours)
-        if: always()
-        uses: actions/upload-artifact@v5
-        with:
-          name: video-test
-          path: out/video.mp4
-          retention-days: 7
-          if-no-files-found: ignore

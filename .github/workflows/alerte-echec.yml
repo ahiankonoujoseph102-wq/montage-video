@@ -1,0 +1,43 @@
+# Si la vidéo quotidienne échoue : e-mail d'alerte avec la raison (étape en échec et fin du journal), puis une seule
+# nouvelle tentative automatique (pas de troisième essai).
+name: Alerte en cas d'échec de la vidéo quotidienne
+
+on:
+  workflow_run:
+    workflows: ["Vidéo quotidienne Lomé IA School"]
+    types: [completed]
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  alerte:
+    if: ${{ contains(fromJSON('["failure","timed_out","startup_failure"]'), github.event.workflow_run.conclusion) }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: claude/great-heisenberg-8p7tj4
+          sparse-checkout: scripts
+
+      - name: Raison de l'échec, e-mail, nouvelle tentative
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          ESSAI: ${{ github.event.workflow_run.run_attempt }}
+          LIEN_RUN: ${{ github.event.workflow_run.html_url }}
+          CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          JOB=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID/jobs" -q '.jobs[0].id' || true)
+          ETAPE=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID/jobs" \
+            -q '[.jobs[0].steps[] | select(.conclusion == "failure") | .name][0] // "inconnue"' || echo inconnue)
+          JOURNAL=$(gh api "repos/$GITHUB_REPOSITORY/actions/jobs/$JOB/logs" 2>/dev/null \
+            | sed -E 's/^[0-9T:.-]+Z //' | grep -v '^##\[group\]\|^##\[endgroup\]' | grep -iE 'error|erreur|échec|refus|exit|Traceback|Aucun|manquant|HTTP' | tail -25 || true)
+          if [ "$ESSAI" = "1" ]; then SUITE="Une nouvelle tentative est lancée automatiquement maintenant."; else SUITE="C'était déjà la nouvelle tentative : pas d'autre essai automatique aujourd'hui pour ce créneau."; fi
+          printf "La vidéo automatique a échoué (%s, essai %s).\n\nÉtape en échec : %s\n\n%s\n\nFin du journal :\n%s\n\nDétails : %s\n" \
+            "$CONCLUSION" "$ESSAI" "$ETAPE" "$SUITE" "${JOURNAL:-(journal indisponible)}" "$LIEN_RUN" |
+            python3 scripts/alerte_email.py "⚠️ Vidéo automatique : échec (étape « $ETAPE »)"
+          if [ "$ESSAI" = "1" ]; then gh run rerun "$RUN_ID" --repo "$GITHUB_REPOSITORY"; fi
