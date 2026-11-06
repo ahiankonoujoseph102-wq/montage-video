@@ -90,5 +90,10 @@
  "python": {
   "nom": "Python",
   "couleur": "#3776AB"
+ },
+ "chatgpt": {
+  "nom": "ChatGPT",
+  "couleur": "#10A37F",
+  "source": "Wikimedia Commons, ChatGPT_logo.svg"
  }
 }
