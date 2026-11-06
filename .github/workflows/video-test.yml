@@ -76,8 +76,15 @@ jobs:
           key: node-${{ hashFiles('package-lock.json') }}-v1
 
       - name: Installer ce qui manque
+        timeout-minutes: 15
         run: |
-          command -v ffmpeg > /dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null; }
+          # ffmpeg : apt avec délais courts et nouvelles tentatives (un miroir lent a bloqué un lancement).
+          for i in 1 2 3; do
+            command -v ffmpeg > /dev/null && break
+            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 update -qq || true
+            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 install -y -qq --no-install-recommends ffmpeg > /dev/null || true
+          done
+          command -v ffmpeg
           if [ "${{ steps.venv.outputs.cache-hit }}" != "true" ]; then
             python -m venv ~/venv-auto
             ~/venv-auto/bin/pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
