@@ -5,6 +5,7 @@ import {Montage} from './Montage';
 import {PubTalkami, PubProps} from './pub/PubTalkami';
 import {PubTalkami2, PubV2Props} from './pub/PubTalkami2';
 import {PubTalkami3, PubV3Props} from './pub/PubTalkami3';
+import {VideoAuto, AutoProps} from './auto/VideoAuto';
 import {Transition, TransitionProps} from './Transition';
 import type {MontageProps} from './types';
 
@@ -23,8 +24,21 @@ const pubV2Exemple: PubV2Props = {duree: 1, mots: []};
 
 const pubV3Exemple: PubV3Props = {duree: 1, mots: [], blocs: [], emojis: []};
 
+const autoExemple: AutoProps = {duree: 1, phrases: [], mots: [], motsFrames: [], masques: [], visemes: '', bouche: [],
+  scenes: [], fonds: [], emojis: [], decalageDouble: 0};
+
 export const Root: React.FC = () => (
   <>
+  <Composition
+    id="VideoAuto"
+    component={VideoAuto}
+    width={1080}
+    height={1920}
+    fps={30}
+    durationInFrames={30}
+    defaultProps={autoExemple}
+    calculateMetadata={({props}) => ({durationInFrames: Math.max(1, Math.round(props.duree * 30))})}
+  />
   <Composition
     id="PubTalkami3"
     component={PubTalkami3}
