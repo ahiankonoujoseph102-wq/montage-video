@@ -21,7 +21,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://generativelanguage.googleapis.com/v1beta"
-PREFERES = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.0-flash"]
+PRIORITAIRE = "gemini-3.5-flash-lite"  # utilisé avec succès sur le site Lomé IA School
+DELAI = 240        # s d'attente d'une réponse (au moins 180 s demandés)
+TENTATIVES = 2     # essais par modèle en cas de délai dépassé ou de surcharge (429, 500, 503)
 EMOJIS = {p.stem for p in (ROOT / "projets" / "test-auto" / "emojis").glob("*.json")}
 TYPES = {"reponseIA", "question", "alerte", "carte", "numero", "prompt", "deux", "liste", "telephone", "final"}
 FONDS = {"bleu", "violet", "orange", "nuit", "vert", "rose"}
@@ -91,23 +93,63 @@ def modeles_disponibles(cle):
     except urllib.error.HTTPError as e:
         sys.exit("Gemini refuse la liste des modèles : " + erreur_http(e))
     noms = [m["name"].split("/")[-1] for m in liste if "generateContent" in m.get("supportedGenerationMethods", [])]
-    exclus = ("lite", "image", "tts", "live", "audio", "embedding", "exp", "preview", "thinking", "learnlm", "gemma")
+    exclus = ("image", "tts", "live", "audio", "embedding", "learnlm", "gemma", "robotics", "computer-use")
     flash = [n for n in noms if "flash" in n and not any(x in n for x in exclus)]
-    rang = lambda n: (PREFERES.index(n) if n in PREFERES else len(PREFERES), [-int(x) for x in re.findall(r"\d+", n)])
-    choix = sorted(flash, key=rang) or [n for n in noms if "gemini" in n and "pro" not in n][:3]
-    print("Modèles Gemini utilisables avec cette clé :", ", ".join(choix[:5]) or "aucun", flush=True)
-    return choix[:3]
+    version = lambda n: [-int(x) for x in re.findall(r"\d+", n)] or [0]
+    # Le modèle prioritaire s'il est dans la liste, puis les autres « flash » du plus récent au plus ancien,
+    # les versions stables avant les préversions et les alias (« latest »).
+    rang = lambda n: (n != PRIORITAIRE, "preview" in n or "exp" in n, "latest" in n, version(n), n)
+    choix = sorted(flash, key=rang)
+    print("Modèles Gemini utilisables avec cette clé :", ", ".join(choix[:6]) or "aucun", flush=True)
+    return choix[:4]
+
+
+def reflexion(modele):
+    """Réflexion réduite au minimum : niveau « minimal » (Gemini 3 et plus), budget 0 (Gemini 2.5), rien sinon."""
+    v = re.search(r"gemini-(\d+)", modele)
+    if v and int(v.group(1)) >= 3:
+        return [{"thinkingLevel": "minimal"}, {"thinkingLevel": "low"}, None]
+    if "2.5" in modele:
+        return [{"thinkingBudget": 0}, None]
+    return [None]
 
 
 def appeler(modele, cle, texte):
+    """Un appel à Gemini ; essaie les réglages de réflexion du plus léger au plus sûr, et recommence une fois
+    après un délai dépassé ou une surcharge."""
     url = f"{BASE}/models/{modele}:generateContent"
-    corps = {"contents": [{"role": "user", "parts": [{"text": texte}]}],
-             "generationConfig": {"responseMimeType": "application/json", "temperature": 0.9}}
-    req = urllib.request.Request(url, data=json.dumps(corps).encode(), method="POST",
-                                 headers={"Content-Type": "application/json", "x-goog-api-key": cle})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        rep = json.load(r)
-    return rep["candidates"][0]["content"]["parts"][0]["text"]
+    reglages = reflexion(modele)
+    i, essais = 0, 0  # réglage de réflexion en cours ; tentatives déjà faites (délai dépassé, surcharge)
+    while True:
+        config = {"responseMimeType": "application/json", "temperature": 0.9}
+        if reglages[i]:
+            config["thinkingConfig"] = reglages[i]
+        corps = {"contents": [{"role": "user", "parts": [{"text": texte}]}], "generationConfig": config}
+        req = urllib.request.Request(url, data=json.dumps(corps).encode(), method="POST",
+                                     headers={"Content-Type": "application/json", "x-goog-api-key": cle})
+        try:
+            with urllib.request.urlopen(req, timeout=DELAI) as r:
+                rep = json.load(r)
+            parts = rep["candidates"][0]["content"]["parts"]
+            return "".join(p.get("text", "") for p in parts if not p.get("thought"))
+        except urllib.error.HTTPError as e:
+            msg = erreur_http(e)
+            if e.code == 400 and "think" in msg.lower() and i + 1 < len(reglages):
+                print(f"{modele} : réglage de réflexion {reglages[i]} refusé, essai suivant", flush=True)
+                i += 1
+                continue
+            essais += 1
+            if e.code in (429, 500, 503) and essais < TENTATIVES:
+                print(f"{modele} : {msg} — nouvelle tentative dans 20 s", flush=True)
+                time.sleep(20)
+                continue
+            raise
+        except (TimeoutError, urllib.error.URLError) as e:
+            essais += 1
+            if essais < TENTATIVES:
+                print(f"{modele} : {e!r} — nouvelle tentative", flush=True)
+                continue
+            raise
 
 
 def corriger(d):
