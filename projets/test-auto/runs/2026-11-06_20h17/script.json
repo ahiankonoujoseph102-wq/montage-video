@@ -1,0 +1,119 @@
+{
+ "titre": "Gagne du temps chaque jour avec l'IA !",
+ "description": "Découvre comment organiser ta semaine et rédiger tes e-mails rapidement grâce à l'intelligence artificielle.",
+ "hashtags": "#LomeIASchool #Productivite #IntelligenceArtificielle #Togo #Astuce",
+ "prompt": "Bonjour ! Voici ton prompt complet pour organiser ta semaine et gagner du temps avec ChatGPT ou Claude : Rédige-moi un planning de semaine équilibré avec des temps de pause, et prépare un modèle d'e-mail professionnel pour répondre rapidement à mes messages.",
+ "description_tiktok": "Découvre comment organiser ta semaine et rédiger tes e-mails rapidement grâce à l'intelligence artificielle. #LomeIASchool #Productivite #IntelligenceArtificielle #Togo #Astuce",
+ "rubrique": "productivite",
+ "date": "2026-11-06",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu passes des heures chaque semaine à trier tes e-mails et organiser ton planning ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Heureusement, il existe des méthodes simples pour gagner un temps précieux au quotidien."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School, situé à Adidogomé, au Lycée Moderne 2.",
+   "dit": "Je suis Joseph, de Lomé i-a School, situé à Adidogomé, au Lycée Moderne 2."
+  },
+  {
+   "partie": "r1",
+   "texte": "Première astuce essentielle, tu peux automatiser la rédaction de tes e-mails professionnels."
+  },
+  {
+   "partie": "r1",
+   "texte": "Utilise ChatGPT ou Claude pour transformer quelques mots brouillons en un message poli."
+  },
+  {
+   "partie": "r1",
+   "texte": "Voici un exemple concret de demande simple que tu peux taper directement dans ton application."
+  },
+  {
+   "partie": "r1",
+   "texte": "Rédige un e-mail professionnel pour reporter notre réunion de demain à jeudi prochain."
+  },
+  {
+   "partie": "r2",
+   "texte": "Deuxième astuce pratique, confie la synthèse de tes longs documents à l'intelligence artificielle."
+  },
+  {
+   "partie": "r2",
+   "texte": "Il suffit de copier ton long texte dans Gemini pour obtenir les points clés rapidement."
+  },
+  {
+   "partie": "r2",
+   "texte": "Par exemple, demande à l'outil de te résumer ce rapport en trois puces principales."
+  },
+  {
+   "partie": "r3",
+   "texte": "Troisième astuce utile, planifie toute ton organisation hebdomadaire avec l'aide de Perplexity."
+  },
+  {
+   "partie": "r3",
+   "texte": "Donne tes objectifs de la semaine et laisse l'outil te proposer un calendrier structuré."
+  },
+  {
+   "partie": "r3",
+   "texte": "Tu évites ainsi le stress et tu gardes une vision claire de tes priorités."
+  },
+  {
+   "partie": "r4",
+   "texte": "Quatrième astuce pour tes révisions, transforme tes cours complexes en questions et réponses."
+  },
+  {
+   "partie": "r4",
+   "texte": "Demande à l'IA de te interroger sur le sujet pour tester tes connaissances efficacement.",
+   "dit": "Demande à l'i-a de te interroger sur le sujet pour tester tes connaissances efficacement."
+  },
+  {
+   "partie": "r4",
+   "texte": "Cette méthode interactive aide ton cerveau à retenir les informations beaucoup plus vite."
+  },
+  {
+   "partie": "r5",
+   "texte": "Cinquième astuce pour la gestion, prépare tes listes de tâches selon l'urgence du moment."
+  },
+  {
+   "partie": "r5",
+   "texte": "L'assistant classe tes priorités pour que tu saches exactement quoi faire en premier."
+  },
+  {
+   "partie": "r5",
+   "texte": "Tu termines ainsi tes journées avec le sentiment d'avoir accompli l'essentiel calmement."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'intelligence artificielle change déjà la manière de travailler de milliers de personnes."
+  },
+  {
+   "partie": "morale",
+   "texte": "Ceux qui l'apprennent aujourd'hui prennent une grande avance pour tous leurs projets."
+  },
+  {
+   "partie": "morale",
+   "texte": "Maîtrisez l'IA et transformez vos compétences en opportunités dès maintenant avec notre aide.",
+   "dit": "Maîtrisez l'i-a et transformez vos compétences en opportunités dès maintenant avec notre aide."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ]
+}

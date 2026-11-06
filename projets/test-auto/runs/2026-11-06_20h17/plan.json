@@ -1,0 +1,252 @@
+{
+ "scenes": [
+  {
+   "type": "question",
+   "texte": "TRIES TES\nEMAILS?",
+   "sous": "Gagne du temps",
+   "emoji": "1f914",
+   "expression": "surpris",
+   "geste": "explique"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE",
+   "texte": "METHODES\nSIMPLES\nCHAQUE JOUR",
+   "sous": "Organisation",
+   "emoji": "1f4a1",
+   "expression": "sourire",
+   "geste": "pouce"
+  },
+  {
+   "type": "carte",
+   "kicker": "LOME IA SCHOOL",
+   "texte": "ADIDOGOME\nLYCEE MODERNE\nDEUX",
+   "sous": "Togo",
+   "emoji": "1f389",
+   "expression": "sourire",
+   "geste": "explique"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "AUTOMATISE\nTES EMAILS",
+   "emoji": "1f4ac",
+   "expression": "parle",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "ChatGPT",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Claude",
+    "ok": true
+   },
+   "a": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "expression": "neutre",
+   "geste": "explique"
+  },
+  {
+   "type": "prompt",
+   "texte": "Rédige un e-mail professionnel pour reporter notre réunion de demain.",
+   "emoji": "1f44d",
+   "expression": "sourire",
+   "geste": "designe"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Bonjour, je vous écris afin de reporter notre rendez-vous...",
+   "emoji": "2705",
+   "expression": "sourire",
+   "geste": "repos"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "SYNTHESE\nDE DOCUMENTS",
+   "emoji": "1f50e",
+   "expression": "parle",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "carte",
+   "kicker": "OUTIL",
+   "texte": "UTILISE\nGEMINI\nRAPIDEMENT",
+   "sous": "Résume",
+   "expression": "neutre",
+   "geste": "explique"
+  },
+  {
+   "type": "prompt",
+   "texte": "Résume ce rapport en trois puces principales.",
+   "expression": "sourire",
+   "geste": "designe"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "PLANIFIE\nTA SEMAINE",
+   "expression": "parle",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "carte",
+   "kicker": "PERPLEXITY",
+   "texte": "OBJECTIFS\nET PLANNING\nSTRUCTURE",
+   "sous": "Agenda",
+   "emoji": "1f680",
+   "expression": "sourire",
+   "geste": "pouce"
+  },
+  {
+   "type": "carte",
+   "kicker": "RESULTAT",
+   "texte": "EVITE\nLE STRESS\nquotidien",
+   "sous": "Sérénité",
+   "emoji": "1f60a",
+   "expression": "sourire",
+   "geste": "repos"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "REVISIONS\nEFFICACES",
+   "expression": "parle",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "prompt",
+   "texte": "Interroge-moi sur ce cours pour tester mes connaissances.",
+   "emoji": "1f9e0",
+   "expression": "sourire",
+   "geste": "designe"
+  },
+  {
+   "type": "carte",
+   "kicker": "MEMOIRE",
+   "texte": "RETIENS\nLES COURS\nPLUS VITE",
+   "sous": "Apprentissage",
+   "emoji": "2728",
+   "expression": "sourire",
+   "geste": "pouce"
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "GESTION\nDES TACHES",
+   "expression": "parle",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Voici tes trois priorités absolues pour aujourd'hui...",
+   "emoji": "2705",
+   "expression": "sourire",
+   "geste": "explique"
+  },
+  {
+   "type": "carte",
+   "kicker": "BILAN",
+   "texte": "TERMINE\nCALMEMENT\nta journée",
+   "sous": "Productivité",
+   "emoji": "1f389",
+   "expression": "sourire",
+   "geste": "pouce"
+  },
+  {
+   "type": "alerte",
+   "texte": "L'IA CHANGE\nDEJA LE TRAVAIL",
+   "emoji": "1f6a8",
+   "expression": "neutre",
+   "geste": "explique"
+  },
+  {
+   "type": "carte",
+   "kicker": "FUTUR",
+   "texte": "PRENDS\nUNE AVANCE\nMAJEURE",
+   "sous": "Succès",
+   "emoji": "1f680",
+   "expression": "sourire",
+   "geste": "pouce"
+  },
+  {
+   "type": "carte",
+   "kicker": "SLOGAN",
+   "texte": "MAITRISE\nL'IA ET\nTRANSFORME",
+   "sous": "Lomé IA School",
+   "emoji": "1f3af",
+   "expression": "sourire",
+   "geste": "pouce"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}
