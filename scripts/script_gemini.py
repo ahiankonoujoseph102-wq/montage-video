@@ -97,6 +97,10 @@ couturière, salon de coiffure, vente sur WhatsApp et Facebook, école, cabinet,
 Tutoiement, phrases claires et naturelles à l'oral, ton direct, chaleureux et motivant.
 
 RUBRIQUE DE CETTE VIDÉO : RUBRIQUE
+
+MÉTHODES VÉRIFIÉES POUR CETTE RUBRIQUE (appuie-toi sur elles ; n'invente aucun menu, bouton, offre ou prix ; tout ce
+que tu dis sur un outil doit venir d'ici ou être une généralité certaine) :
+METHODES
 Choisis dans cette rubrique UN sujet PRÉCIS et PRATIQUE (exemple de bon titre : « Crée le site de ta boutique avec Claude,
 étape par étape » ; mauvais titre, trop vague : « Gagne du temps avec l'IA »). Jamais de cours générique ni de conseils
 vagues (« sois productif », « organise-toi ») : le spectateur doit pouvoir REFAIRE exactement ce que tu montres.
@@ -189,18 +193,23 @@ def modeles_disponibles(cle):
         sys.exit("Gemini refuse la liste des modèles : " + erreur_http(e))
     noms = [m["name"].split("/")[-1] for m in liste if "generateContent" in m.get("supportedGenerationMethods", [])]
     exclus = ("image", "tts", "live", "audio", "embedding", "learnlm", "gemma", "robotics", "computer-use")
-    flash = [n for n in noms if "flash" in n and not any(x in n for x in exclus)]
+    flash = [n for n in noms if ("flash" in n or "pro" in n) and not any(x in n for x in exclus)]
     dernier = MEMOIRE.read_text().strip() if MEMOIRE.exists() else ""
     version = lambda n: [-int(x) for x in re.findall(r"\d+", n)] or [0]
-    rang = lambda n: (n != dernier, n != PRIORITAIRE, "preview" in n or "exp" in n, "latest" in n, version(n), n)
+    # « pro » d'abord (meilleur contenu, quota gratuit plus petit), puis le dernier qui a réussi, puis les « flash ».
+    rang = lambda n: ("pro" not in n, n != dernier, n != PRIORITAIRE, "preview" in n or "exp" in n, "latest" in n,
+                      version(n), n)
     choix = sorted(flash, key=rang)
     print("Modèles Gemini utilisables avec cette clé :", ", ".join(choix[:6]) or "aucun", flush=True)
-    return choix[:6]
+    pros = [n for n in choix if "pro" in n][:2]
+    return pros + [n for n in choix if "pro" not in n][:5]
 
 
 def reflexion(modele):
     """Réflexion réduite au minimum : niveau « minimal » (Gemini 3 et plus), budget 0 (Gemini 2.5), rien sinon."""
     v = re.search(r"gemini-(\d+)", modele)
+    if "pro" in modele:
+        return [{"thinkingLevel": "low"}, None] if v and int(v.group(1)) >= 3 else [None]
     if v and int(v.group(1)) >= 3:
         return [{"thinkingLevel": "low"}, {"thinkingLevel": "minimal"}, None]
     if "2.5" in modele:
@@ -257,7 +266,7 @@ def generer(modeles, cle, tours, journal):
             t0 = time.time()
             try:
                 reglages = [{"thinkingLevel": "low"}, None] if modele in LENTS else None
-                return modele, appeler(modele, cle, tours, delai, reglages), time.time() - t0
+                return modele, appeler(modele, cle, tours, 300 if "pro" in modele else delai, reglages), time.time() - t0
             except Echec as e:
                 journal.append({"modele": modele, "erreur": str(e), "secondes": round(time.time() - t0, 1)})
                 print(f"{modele} : {e} — modèle suivant", flush=True)
@@ -312,6 +321,13 @@ def verifier(d, deja):
             err.append(f"Le champ « {k} » est vide.")
     if not isinstance(d.get("hashtags"), list) or not 3 <= len(d["hashtags"]) <= 8:
         err.append("Il faut 4 à 7 hashtags dans « hashtags ».")
+    types = [s.get("type") for s in sc[:len(sc) - len(FIN)]]
+    if types.count("photo") < 5:
+        err.append(f"[visuel] Seulement {types.count('photo')} scènes « photo » : il en faut 6 à 10 (vraies photos des situations).")
+    if types.count("demo") < 2:
+        err.append("[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil).")
+    if types and types.count("carte") > 0.35 * len(types):
+        err.append(f"[visuel] Trop de cartes de texte ({types.count('carte')}) : remplace-les par des photos, démonstrations, listes ou outils.")
     if not any(s.get("type") == "prompt" for s in sc):
         err.append("Il faut au moins une scène « prompt » qui montre la demande exacte à écrire à l'IA.")
     textes = [(f"Phrase {i}", p["texte"]) for i, p in enumerate(ph)]
@@ -388,7 +404,14 @@ def relecture(modeles, cle, tours, brut, deja, journal):
     err = verifier(d2, deja)
     journal.append({"relecture": modele, "secondes": round(time.time() - t0, 1), "erreurs": err})
     print(json.dumps(journal[-1], ensure_ascii=False), flush=True)
-    return None if err else d2
+    return None if [e for e in err if not e.startswith("[visuel]")] else d2
+
+
+def methodes(rid):
+    """Fiche de méthodes vérifiées de la rubrique (projets/fiches_methodes.md, section « ## <id> »)."""
+    texte = (ROOT / "projets" / "fiches_methodes.md").read_text()
+    m = re.search(rf"^## {re.escape(rid)}\n(.*?)(?=^## |\Z)", texte, re.M | re.S)
+    return m.group(1).strip() if m else "(aucune fiche : reste sur des généralités certaines)"
 
 
 def rubrique_suivante(historique):
@@ -415,7 +438,7 @@ def main():
     deja = [h["titre"] if isinstance(h, dict) else h for h in historique]
     rub = rubrique_suivante(historique)
     demande = (CONSIGNE.replace("EMOJIS", ", ".join(sorted(EMOJIS))).replace("FAITS", faits_texte())
-               .replace("RUBRIQUE", f"{rub['nom']} ({rub['idees']})")
+               .replace("RUBRIQUE", f"{rub['nom']} ({rub['idees']})").replace("METHODES", methodes(rub["id"]))
                .replace("MOTS_GEMINI", f"{MOTS_MIN - MOTS_FIN} à {MOTS_MAX - MOTS_FIN}"))
     demande += "\n\nSujets déjà traités (à NE PAS reprendre) : " + "; ".join(deja or ["aucun"])
     if sujet:
@@ -441,7 +464,8 @@ def main():
         err = verifier(d, deja)
         journal.append({"essai": essai + 1, "modele": modele, "secondes": round(duree, 1), "erreurs": err})
         print(json.dumps(journal[-1], ensure_ascii=False), flush=True)
-        if not err:
+        if not err or (essai == 2 and all(e.startswith("[visuel]") for e in err)):
+            err = []
             break
         tours += [("model", brut), ("user", "Ta réponse ne respecte pas ces règles. Renvoie le JSON complet corrigé :\n- "
                                        + "\n- ".join(err[:12]))]
