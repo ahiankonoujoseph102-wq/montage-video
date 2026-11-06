@@ -1,0 +1,49 @@
+{
+  "_regle": "Le script d'une vidéo ne cite AUCUN chiffre, prix, date ou fait absent de ce fichier. Seuls les éléments « verifie: true » peuvent être cités ; les éléments « verifie: false » attendent la confirmation de Joseph et ne sont jamais cités. Mettre à jour ce fichier quand un prix ou une offre change.",
+  "_sources": "DOSSIER_COMPLET.md (5 novembre 2026), vidéo « histoire de Talkami » de Joseph (octobre 2026), kit de la publicité Talkami. Le site Lomé IA School (lomeiaschool.laravel.cloud) et talkami.net n'ont pas pu être lus depuis l'environnement de montage le 6 novembre 2026 (nom de domaine introuvable).",
+  "ecole": {
+    "nom": "Lomé IA School",
+    "slogan": "Maîtrisez l'IA et transformez vos compétences en opportunités.",
+    "fondateur": "Joseph Ahiankonou",
+    "ville": "Lomé, Togo",
+    "adresse": "Adidogomé, Lycée Moderne 2",
+    "whatsapp": "+228 72 24 02 31",
+    "lien": "Lien dans la bio",
+    "verifie": true
+  },
+  "consultation": {
+    "texte": "Consultation gratuite : réserve-la avec le lien dans la bio ou sur WhatsApp au +228 72 24 02 31.",
+    "verifie": true
+  },
+  "services_entreprises": {
+    "texte": "Lomé IA School forme pour que chacun crée ses propres solutions, ou les crée pour lui : sites web, agents IA, automatisations des tâches répétitives.",
+    "verifie": true
+  },
+  "formations": [
+    {
+      "nom": "Formation complète en intelligence artificielle",
+      "duree": "3 mois",
+      "prix": "200 000 F CFA",
+      "attestation": "attestation de participation",
+      "source": "vidéo « histoire de Talkami » (octobre 2026)",
+      "verifie": false,
+      "_a_confirmer": "prix et durée actuels sur le site"
+    }
+  ],
+  "a_confirmer": [
+    {"fait": "Second numéro +228 79 16 23 90", "verifie": false},
+    {"fait": "Adresse actuelle de la plateforme d'inscription (lomeiaschool.laravel.cloud ?)", "verifie": false},
+    {"fait": "Prochaine session de formation gratuite (celle du 10 octobre 2026 est passée)", "verifie": false}
+  ],
+  "realisations": [
+    {
+      "nom": "Talkami",
+      "site": "talkami.net",
+      "texte": "Talkami est une application pour parler anglais à l'oral avec Teacher Joe ou Teacher Rose, directement depuis son téléphone. Joseph l'a construite lui-même, avec son téléphone, sans ordinateur et sans savoir coder.",
+      "usage": "Dans une vidéo Lomé IA School, Talkami peut être montré comme une réalisation de Joseph (exemple de projet construit avec l'IA). Dans une publicité Talkami, on ne parle JAMAIS d'IA.",
+      "verifie": true
+    }
+  ],
+  "chiffres_autorises": ["+228 72 24 02 31"],
+  "noms": ["Lomé IA School", "Adidogomé", "Lycée Moderne 2", "Talkami", "Teacher Joe", "Teacher Rose", "ChatGPT", "Claude", "Gemini", "Perplexity", "Joseph"]
+}

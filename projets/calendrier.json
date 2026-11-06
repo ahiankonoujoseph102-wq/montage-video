@@ -1,0 +1,14 @@
+{
+  "_note": "Rubriques des vidéos Lomé IA School, en rotation : chaque nouvelle vidéo prend la rubrique suivante (après la dernière de projets/test-auto/historique.json). Jamais deux fois le même sujet. Durée : 2 à 3 minutes.",
+  "rubriques": [
+    {"id": "initiation", "nom": "Initiation", "idees": "c'est quoi l'IA, comment elle fonctionne simplement, pourquoi l'apprendre maintenant, premiers pas sans peur"},
+    {"id": "astuce", "nom": "Astuce gratuite", "idees": "une astuce concrète avec UN prompt à recopier, montré à l'écran, et le résultat obtenu"},
+    {"id": "productivite", "nom": "Productivité au quotidien", "idees": "gagner du temps : e-mails, résumés, planning, révisions, organisation de la semaine"},
+    {"id": "activite", "nom": "L'IA dans son activité ou son entreprise", "idees": "commerce, service client, devis, communication, idées de contenu pour une petite entreprise"},
+    {"id": "sites", "nom": "Sites web avec l'IA", "idees": "créer une page ou un site simple en décrivant ce qu'on veut, étapes, erreurs à éviter"},
+    {"id": "agents", "nom": "Agents IA", "idees": "ce qu'est un agent IA, exemples simples (répondre aux clients, prendre des rendez-vous), limites"},
+    {"id": "automatisation", "nom": "Automatisation", "idees": "automatiser une tâche répétitive : relances, tableaux, publications, rappels"},
+    {"id": "apprendre", "nom": "Apprendre avec l'IA", "idees": "réviser, apprendre une langue, se faire expliquer un sujet, se faire interroger"},
+    {"id": "creer", "nom": "Créer avec l'IA", "idees": "vidéos publicitaires, vidéos type film, vidéos d'histoire, contenu pour réseaux sociaux, e-commerce de produits digitaux, écrire un ebook ou un livre"}
+  ]
+}

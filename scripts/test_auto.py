@@ -134,8 +134,11 @@ def main():
     # 2. Temps des mots : transcription de la voix clonée, alignée sur le texte exact (affiché) phrase par phrase.
     from faster_whisper import WhisperModel
     t_w = time.time()
-    modele = WhisperModel("large-v3-turbo", device="cpu", compute_type="int8", cpu_threads=4)
-    segs, _ = modele.transcribe(str(PUBLIC / "voix.wav"), language="fr", word_timestamps=True, beam_size=5,
+    # Le texte est connu : il ne s'agit que de caler les mots. « small » suffit (écart médian 20 ms avec large-v3-turbo)
+    # et va 5 à 7 fois plus vite.
+    import os
+    modele = WhisperModel("small", device="cpu", compute_type="int8", cpu_threads=os.cpu_count() or 2)
+    segs, _ = modele.transcribe(str(PUBLIC / "voix.wav"), language="fr", word_timestamps=True, beam_size=1,
                                 vad_filter=False, condition_on_previous_text=False)
     reconnus = [{"mot": w.word.strip(), "debut": w.start, "fin": w.end} for s in segs for w in s.words]
     t_w = time.time() - t_w

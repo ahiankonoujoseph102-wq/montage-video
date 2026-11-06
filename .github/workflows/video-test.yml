@@ -1,5 +1,6 @@
 # Vidéo de test automatique (étape 1) : script Gemini (clé gratuite, secret GEMINI_API_KEY), voix clonée de Joseph
-# (Chatterbox, gratuit, licence MIT), double animé et style dynamique (Remotion), puis la vidéo est rangée dans le dépôt.
+# (Chatterbox, gratuit, licence MIT), double animé et style dynamique (Remotion), puis la vidéo part par e-mail (Gmail,
+# secret GMAIL_MOT_DE_PASSE_APP) ; le script et les mesures sont rangés dans le dépôt.
 # Lancement à la main (bouton « Run workflow »). Rien de payant : machine GitHub gratuite, aucun service payant.
 name: Vidéo de test (voix clonée + double animé)
 
@@ -49,6 +50,12 @@ jobs:
           path: ~/.cache/huggingface
           key: modeles-hf-v1
 
+      - name: Cache des paquets Python (installation plus rapide)
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/pip
+          key: pip-v1
+
       - name: Installer ffmpeg et les outils Python
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
@@ -80,31 +87,39 @@ jobs:
 
       - name: Rendu de la vidéo
         run: |
-          npx remotion render src/index.ts VideoAuto out/image.mp4 --props=public/test-auto/props.json --crf=18 --muted
-          ffmpeg -loglevel error -y -i out/image.mp4 -i public/test-auto/mix.wav -map 0:v -map 1:a -c:v libx264 \
-            -preset slow -crf 23 -pix_fmt yuv420p -c:a aac -b:a 160k -shortest -movflags +faststart out/video.mp4
+          npx remotion render src/index.ts VideoAuto out/image.mp4 --props=public/test-auto/props.json --crf=18 --muted \
+            --concurrency=2
+          bash scripts/encoder_email.sh out/image.mp4 public/test-auto/mix.wav out/video.mp4
           echo "T_RENDU=$(date +%s)" >> "$GITHUB_ENV"
 
-      - name: Ranger la vidéo dans le dépôt (dossier projets/test-auto/runs)
+      - name: Ranger le script et les mesures dans le dépôt (dossier projets/test-auto/runs, sans la vidéo)
         run: |
           D="projets/test-auto/runs/$(date -u +%Y-%m-%d_%Hh%M)"
           mkdir -p "$D"
-          cp out/video.mp4 "$D/video.mp4"
           cp projets/test-auto/run/*.json "$D/"
           python - <<'EOF'
           import json
           from pathlib import Path
           h = Path("projets/test-auto/historique.json")
           liste = json.loads(h.read_text()) if h.exists() else []
-          liste.append(json.loads(Path("projets/test-auto/run/script.json").read_text())["titre"])
+          s = json.loads(Path("projets/test-auto/run/script.json").read_text())
+          liste.append({"titre": s["titre"], "rubrique": s.get("rubrique"), "date": s.get("date")})
           h.write_text(json.dumps(liste, ensure_ascii=False, indent=1))
           EOF
           git config user.name "Montage automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add "$D" projets/test-auto/historique.json
+          git add "$D" projets/test-auto/historique.json projets/test-auto/gemini_modele.txt
           git commit -q -m "Vidéo de test automatique du $(date -u +%d/%m/%Y) (dossier $D)"
           git push -q origin "HEAD:${BRANCHE}"
           echo "DOSSIER=$D" >> "$GITHUB_ENV"
+
+      - name: Envoyer la vidéo par e-mail
+        env:
+          GMAIL_ADRESSE: academyjoseph71@gmail.com
+          GMAIL_MOT_DE_PASSE_APP: ${{ secrets.GMAIL_MOT_DE_PASSE_APP }}
+        run: |
+          python scripts/envoyer_email.py out/video.mp4 projets/test-auto/run/script.json
+          echo "T_EMAIL=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: Résumé (temps mesurés)
         if: always()
@@ -120,9 +135,13 @@ jobs:
             echo "| Voix clonée | $(m "$T_SCRIPT" "$T_VOIX") |"
             echo "| Temps des mots, bouche, son | $(m "$T_VOIX" "$T_PREP") |"
             echo "| Rendu et encodage | $(m "$T_PREP" "$T_RENDU") |"
+            echo "| E-mail | $(m "$T_RENDU" "$T_EMAIL") |"
             echo "| **Total** | $(m "$T0" "$(date +%s)") |"
             echo ""
-            if [ -n "$DOSSIER" ]; then echo "Vidéo : \`$DOSSIER/video.mp4\` (branche ${BRANCHE})"; fi
+            if [ -f out/video.mp4 ]; then echo "Vidéo : $(( $(stat -c %s out/video.mp4) / 1000000 )) Mo (pièce jointe ci-dessous et e-mail)"; fi
+            if [ -f projets/test-auto/run/gemini.json ]; then
+              python -c "import json;d=json.load(open('projets/test-auto/run/gemini.json'));j=d['journal'] if isinstance(d,dict) else d;print('\n**Gemini :** '+'; '.join(str(x.get('modele'))+' '+str(x.get('secondes'))+' s'+(' ('+x['erreur'][:80]+')' if 'erreur' in x else '') for x in j))"
+            fi
             if [ -f projets/test-auto/run/script.json ]; then
               python -c "import json;d=json.load(open('projets/test-auto/run/script.json'));print('\n**Titre :** '+d['titre']+'\n\n**Description TikTok :** '+d['description_tiktok'])"
             fi
@@ -131,10 +150,10 @@ jobs:
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Vidéo en pièce jointe du lancement (gardée 3 jours)
+      - name: Vidéo en pièce jointe du lancement (gardée 7 jours)
         if: success()
         uses: actions/upload-artifact@v5
         with:
           name: video-test
           path: out/video.mp4
-          retention-days: 3
+          retention-days: 7
