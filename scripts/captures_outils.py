@@ -22,7 +22,10 @@ BLOQUE = re.compile(r"verify you are human|just a moment|checking your browser|u
 (DOSSIER / "candidats").mkdir(parents=True, exist_ok=True)
 lignes, jour = [], datetime.date.today().isoformat()
 with sync_playwright() as p:
-    nav = p.chromium.launch()
+    try:
+        nav = p.chromium.launch(channel="chrome")  # Chrome déjà installé sur les machines GitHub
+    except Exception:
+        nav = p.chromium.launch()
     for k, url in PAGES.items():
         ctx = nav.new_context(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5, locale="fr-FR",
                               user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like "
