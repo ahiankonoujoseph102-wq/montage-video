@@ -8,9 +8,10 @@
 name: Vidéo quotidienne Lomé IA School
 
 on:
-  schedule:
-    - cron: "7 4 * * *"
-    - cron: "7 16 * * *"
+  # Programmation en pause : reprise après validation par Joseph de la nouvelle vidéo de test.
+  # schedule:
+  #   - cron: "7 4 * * *"
+  #   - cron: "7 16 * * *"
   workflow_dispatch:
     inputs:
       sujet:
