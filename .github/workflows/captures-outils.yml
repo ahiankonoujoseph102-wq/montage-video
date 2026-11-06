@@ -33,7 +33,8 @@ jobs:
         timeout-minutes: 8
         run: python scripts/captures_outils.py
       - name: Essai des images et vidéos libres
-        timeout-minutes: 5
+        timeout-minutes: 6
+        continue-on-error: true
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: |

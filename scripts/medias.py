@@ -18,6 +18,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -39,7 +40,7 @@ def get_json(url, entetes=None):
 
 def telecharger(url, dest, max_octets=60_000_000):
     req = urllib.request.Request(url, headers={"User-Agent": AGENT})
-    with urllib.request.urlopen(req, timeout=60) as r, open(dest, "wb") as f:
+    with urllib.request.urlopen(req, timeout=25) as r, open(dest, "wb") as f:
         n = 0
         while bloc := r.read(1 << 16):
             n += len(bloc)
@@ -101,7 +102,7 @@ def pexels_photo(recherche, cle, dest):
 
 def openverse_photo(recherche, dest):
     """Photo du domaine public (PDM) ou CC0 : aucune condition, usage commercial libre."""
-    vus = set()
+    vus, debut, essais = set(), time.time(), 0
     for extra in ({"source": "stocksnap,rawpixel,wikimedia"}, {}):
         params = {"q": recherche, "license": "cc0,pdm", "page_size": 20, "mature": "false", **extra}
         d = get_json("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(params))
@@ -109,6 +110,9 @@ def openverse_photo(recherche, dest):
             if r["id"] in vus or (r.get("width") or 0) < 1000 or (r.get("height") or 1) > (r.get("width") or 0):
                 continue
             vus.add(r["id"])
+            essais += 1
+            if essais > 6 or time.time() - debut > 60:  # 1 min au plus par recherche
+                return None
             brut = dest.with_suffix(".brut")
             try:
                 telecharger(r["url"], brut, 25_000_000)

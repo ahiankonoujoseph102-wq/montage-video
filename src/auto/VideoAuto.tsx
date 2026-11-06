@@ -91,7 +91,11 @@ const Marque: React.FC<{ok: boolean; k: number; taille?: number}> = ({ok, k, tai
 // Instant (image, relative à la scène) où un mot de la phrase est dit.
 type Ctx = {debut: number; fin: number; motA: (m: string) => number};
 
-const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
+const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
+  // Filet de sécurité : une scène d'image sans fichier préparé devient une carte de texte (le rendu ne casse jamais).
+  const s: Scene = (brute.type === 'photo' && !brute.fichier) || (brute.type === 'outil' && !(brute.outils ?? []).length)
+    ? {type: 'carte', texte: (brute.texte ?? 'L\'IA').toUpperCase(), emoji: brute.emoji}
+    : brute.type === 'demo' && brute.logo && !brute.outil ? {...brute, logo: false} : brute;
   const f = useCurrentFrame();
   const k = pop(f, 0);
   const duree = c.fin - c.debut;

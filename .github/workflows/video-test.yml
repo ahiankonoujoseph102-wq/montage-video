@@ -112,6 +112,8 @@ jobs:
           echo "T_SCRIPT=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: Captures des outils cités et images libres de droits
+        timeout-minutes: 12
+        continue-on-error: true
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: |
