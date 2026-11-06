@@ -1,6 +1,7 @@
 # Vidéo de test automatique (étape 1) : script Gemini (clé gratuite, secret GEMINI_API_KEY), voix clonée de Joseph
-# (Chatterbox, gratuit, licence MIT), double animé et style dynamique (Remotion), puis la vidéo part par e-mail (Gmail,
-# secret GMAIL_MOT_DE_PASSE_APP) ; le script et les mesures sont rangés dans le dépôt.
+# (Chatterbox, gratuit, licence MIT), double animé et style dynamique (Remotion). La vidéo en pleine qualité est publiée
+# dans une Release GitHub du dépôt (gratuit), puis un e-mail (Gmail, secret GMAIL_APP_PASSWORD) donne le lien direct,
+# le titre, la description, les hashtags et le prompt ; le script et les mesures sont rangés dans le dépôt.
 # Lancement à la main (bouton « Run workflow »). Rien de payant : machine GitHub gratuite, aucun service payant.
 name: Vidéo de test (voix clonée + double animé)
 
@@ -87,9 +88,12 @@ jobs:
 
       - name: Rendu de la vidéo
         run: |
-          npx remotion render src/index.ts VideoAuto out/image.mp4 --props=public/test-auto/props.json --crf=18 --muted \
+          # Haute qualité pour TikTok : 1080 × 1920, 30 i/s, H.264 CRF 16 (un seul encodage), son AAC 256 kbit/s 48 kHz.
+          npx remotion render src/index.ts VideoAuto out/image.mp4 --props=public/test-auto/props.json --crf=16 --muted \
             --concurrency=2
-          bash scripts/encoder_email.sh out/image.mp4 public/test-auto/mix.wav out/video.mp4
+          ffmpeg -loglevel error -y -i out/image.mp4 -i public/test-auto/mix.wav -map 0:v -map 1:a -c:v copy \
+            -c:a aac -b:a 256k -ar 48000 -shortest -movflags +faststart out/video.mp4
+          ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,bit_rate -of compact out/video.mp4
           echo "T_RENDU=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: Ranger le script et les mesures dans le dépôt (dossier projets/test-auto/runs, sans la vidéo)
@@ -113,12 +117,30 @@ jobs:
           git push -q origin "HEAD:${BRANCHE}"
           echo "DOSSIER=$D" >> "$GITHUB_ENV"
 
-      - name: Envoyer la vidéo par e-mail
+      - name: Publier la vidéo en pleine qualité (Release GitHub) et vérifier le téléchargement
         env:
-          GMAIL_ADRESSE: academyjoseph71@gmail.com
-          GMAIL_MOT_DE_PASSE_APP: ${{ secrets.GMAIL_MOT_DE_PASSE_APP }}
+          GH_TOKEN: ${{ github.token }}
         run: |
-          python scripts/envoyer_email.py out/video.mp4 projets/test-auto/run/script.json
+          NOM=$(python -c "import json,re,unicodedata,datetime;t=json.load(open('projets/test-auto/run/script.json'))['titre'];t=unicodedata.normalize('NFKD',t).encode('ascii','ignore').decode().lower();print(datetime.date.today().isoformat()+'_'+(re.sub(r'[^a-z0-9]+','-',t).strip('-')[:60] or 'video')+'.mp4')")
+          TAG="video-$(date -u +%Y-%m-%d_%Hh%M)"
+          cp out/video.mp4 "out/$NOM"
+          TITRE=$(python -c "import json;print(json.load(open('projets/test-auto/run/script.json'))['titre'])")
+          gh release create "$TAG" "out/$NOM" --target "$BRANCHE" --title "$TITRE" \
+            --notes "Vidéo TikTok du $(date -u +%d/%m/%Y), pleine qualité (1080 × 1920)."
+          # Vérification : le fichier publié est bien un .mp4 identique, téléchargeable.
+          gh release download "$TAG" -p "$NOM" -D "$RUNNER_TEMP/verif"
+          cmp "out/$NOM" "$RUNNER_TEMP/verif/$NOM" && echo "Fichier publié identique ($(stat -c %s "out/$NOM") octets)"
+          gh release view "$TAG" --json assets -q '.assets[0] | "Type : \(.contentType), taille : \(.size)"'
+          URL=$(gh release view "$TAG" --json assets -q '.assets[0].url')
+          echo "Lien direct : $URL"
+          echo "LIEN=$URL" >> "$GITHUB_ENV"
+          echo "FICHIER=out/$NOM" >> "$GITHUB_ENV"
+
+      - name: Envoyer l'e-mail (lien, titre, description, hashtags, prompt)
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          python scripts/envoyer_email.py "$FICHIER" projets/test-auto/run/script.json "$LIEN"
           echo "T_EMAIL=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: Résumé (temps mesurés)
@@ -135,10 +157,11 @@ jobs:
             echo "| Voix clonée | $(m "$T_SCRIPT" "$T_VOIX") |"
             echo "| Temps des mots, bouche, son | $(m "$T_VOIX" "$T_PREP") |"
             echo "| Rendu et encodage | $(m "$T_PREP" "$T_RENDU") |"
-            echo "| E-mail | $(m "$T_RENDU" "$T_EMAIL") |"
+            echo "| Release et e-mail | $(m "$T_RENDU" "$T_EMAIL") |"
             echo "| **Total** | $(m "$T0" "$(date +%s)") |"
             echo ""
-            if [ -f out/video.mp4 ]; then echo "Vidéo : $(( $(stat -c %s out/video.mp4) / 1000000 )) Mo (pièce jointe ci-dessous et e-mail)"; fi
+            if [ -f out/video.mp4 ]; then echo "Vidéo : $(( $(stat -c %s out/video.mp4) / 1000000 )) Mo, pleine qualité"; fi
+            if [ -n "$LIEN" ]; then echo ""; echo "**Télécharger :** $LIEN"; fi
             if [ -f projets/test-auto/run/gemini.json ]; then
               python -c "import json;d=json.load(open('projets/test-auto/run/gemini.json'));j=d['journal'] if isinstance(d,dict) else d;print('\n**Gemini :** '+'; '.join(str(x.get('modele'))+' '+str(x.get('secondes'))+' s'+(' ('+x['erreur'][:80]+')' if 'erreur' in x else '') for x in j))"
             fi
