@@ -110,6 +110,13 @@ jobs:
           python scripts/script_gemini.py projets/test-auto/run "$SUJET"
           echo "T_SCRIPT=$(date +%s)" >> "$GITHUB_ENV"
 
+      - name: Captures des outils cités et images libres de droits
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          python -c "import PIL" 2>/dev/null || pip install -q pillow
+          python scripts/medias.py projets/test-auto/run || echo "Médias ignorés : cartes de texte à la place"
+
       - name: Générer la voix clonée
         run: |
           ffmpeg -loglevel error -y -ss 6.55 -t 13.2 -i projets/talkami-pub/pub-kit/voix-off/voix-off.mp4 \
