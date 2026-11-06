@@ -20,7 +20,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MODELES = [m for m in os.environ.get("GEMINI_MODELES", "gemini-2.5-flash,gemini-flash-latest,gemini-2.0-flash").split(",") if m]
+BASE = "https://generativelanguage.googleapis.com/v1beta"
+PREFERES = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.0-flash"]
 EMOJIS = {p.stem for p in (ROOT / "projets" / "test-auto" / "emojis").glob("*.json")}
 TYPES = {"reponseIA", "question", "alerte", "carte", "numero", "prompt", "deux", "liste", "telephone", "final"}
 FONDS = {"bleu", "violet", "orange", "nuit", "vert", "rose"}
@@ -72,8 +73,34 @@ Réponds UNIQUEMENT en JSON : {"titre": "...", "description_tiktok": "... avec 4
 [{"partie": "accroche|r1|r2|...|morale|appel", "texte": "..."}], "scenes": [...], "fond": [...]}"""
 
 
+def erreur_http(e):
+    """Message d'erreur de Google (code et texte), sans jamais la clé."""
+    try:
+        detail = json.loads(e.read().decode()).get("error", {})
+        return f"HTTP {e.code} {detail.get('status', '')} : {detail.get('message', '')[:300]}"
+    except Exception:
+        return f"HTTP {e.code}"
+
+
+def modeles_disponibles(cle):
+    """Modèles Gemini que la clé peut utiliser pour écrire du texte, les « flash » gratuits d'abord."""
+    req = urllib.request.Request(f"{BASE}/models?pageSize=1000", headers={"x-goog-api-key": cle})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            liste = json.load(r).get("models", [])
+    except urllib.error.HTTPError as e:
+        sys.exit("Gemini refuse la liste des modèles : " + erreur_http(e))
+    noms = [m["name"].split("/")[-1] for m in liste if "generateContent" in m.get("supportedGenerationMethods", [])]
+    exclus = ("lite", "image", "tts", "live", "audio", "embedding", "exp", "preview", "thinking", "learnlm", "gemma")
+    flash = [n for n in noms if "flash" in n and not any(x in n for x in exclus)]
+    rang = lambda n: (PREFERES.index(n) if n in PREFERES else len(PREFERES), [-int(x) for x in re.findall(r"\d+", n)])
+    choix = sorted(flash, key=rang) or [n for n in noms if "gemini" in n and "pro" not in n][:3]
+    print("Modèles Gemini utilisables avec cette clé :", ", ".join(choix[:5]) or "aucun", flush=True)
+    return choix[:3]
+
+
 def appeler(modele, cle, texte):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{modele}:generateContent"
+    url = f"{BASE}/models/{modele}:generateContent"
     corps = {"contents": [{"role": "user", "parts": [{"text": texte}]}],
              "generationConfig": {"responseMimeType": "application/json", "temperature": 0.9}}
     req = urllib.request.Request(url, data=json.dumps(corps).encode(), method="POST",
@@ -148,16 +175,20 @@ def verifier(d, deja):
 def main():
     dossier = Path(sys.argv[1])
     sujet = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2].strip() else ""
-    cle = os.environ.get("GEMINI_API_KEY", "")
+    cle = os.environ.get("GEMINI_API_KEY", "").strip()  # un retour à la ligne collé avec la clé la rendrait invalide
     if not cle:
-        sys.exit("GEMINI_API_KEY manquant (secret GitHub).")
+        sys.exit("GEMINI_API_KEY manquant ou vide (secret GitHub non transmis).")
+    print(f"Clé Gemini lue ({len(cle)} caractères, valeur masquée).", flush=True)
+    MODELES = modeles_disponibles(cle)
+    if not MODELES:
+        sys.exit("Aucun modèle Gemini de texte n'est disponible pour cette clé.")
     hist_f = ROOT / "projets" / "test-auto" / "historique.json"
     deja = json.loads(hist_f.read_text()) if hist_f.exists() else []
     demande = CONSIGNE.replace("EMOJIS", ", ".join(sorted(EMOJIS)))
     demande += "\n\nSujets déjà traités (à NE PAS reprendre) : " + "; ".join(deja or ["aucun"])
     if sujet:
         demande += f"\n\nSujet imposé : {sujet}"
-    journal = []
+    journal, d, err = [], {}, ["aucune réponse"]
     for essai in range(3):
         for modele in MODELES:
             t0 = time.time()
@@ -165,12 +196,23 @@ def main():
                 brut = appeler(modele, cle, demande)
                 break
             except urllib.error.HTTPError as e:
-                journal.append({"modele": modele, "erreur": e.code, "detail": e.read().decode()[:300]})
+                journal.append({"modele": modele, "erreur": erreur_http(e)})
+                print(f"{modele} : {journal[-1]['erreur']}", flush=True)
+            except (urllib.error.URLError, TimeoutError, KeyError, IndexError) as e:
+                journal.append({"modele": modele, "erreur": repr(e)[:300]})
+                print(f"{modele} : {journal[-1]['erreur']}", flush=True)
         else:
             dossier.mkdir(parents=True, exist_ok=True)
             (dossier / "gemini.json").write_text(json.dumps(journal, ensure_ascii=False, indent=1))
             sys.exit("Aucun modèle Gemini n'a répondu : voir gemini.json.")
-        d = corriger(json.loads(brut))
+        try:
+            d = corriger(json.loads(brut))
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            journal.append({"essai": essai + 1, "modele": modele, "erreur": f"réponse illisible : {e}"})
+            print(journal[-1], flush=True)
+            demande += "\n\nTa réponse n'était pas un JSON valide au format demandé. Réponds uniquement en JSON."
+            err = ["JSON"]
+            continue
         err = verifier(d, deja)
         journal.append({"essai": essai + 1, "modele": modele, "secondes": round(time.time() - t0, 1), "erreurs": err})
         print(json.dumps(journal[-1], ensure_ascii=False), flush=True)
