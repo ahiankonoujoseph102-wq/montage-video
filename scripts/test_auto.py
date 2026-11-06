@@ -1,7 +1,7 @@
 """Vidéo de test automatique (étape 1) : assemble la voix clonée, calcule les temps des mots, la bouche du double,
 le son, et écrit les props de la composition Remotion `VideoAuto`.
 
-Usage : python3 scripts/test_auto.py <dossier des phrases générées>
+Usage : python3 scripts/test_auto.py <dossier des phrases générées> [dossier du script et du plan]
 Entrées : projets/test-auto/script.json et plan.json ; <dossier>/00.wav, 01.wav… (une phrase chacune, voix clonée) ;
           sons/musique_defaut.m4a (musique de Joseph) et sons/effets/*.wav.
 Sorties (non versionnées) : public/test-auto/voix.wav, mix.wav, props.json, emojis/ ; relevé projets/test-auto/mesures.md.
@@ -106,8 +106,9 @@ def visemes_images(mots, n_images, energie):
 def main():
     t_debut = time.time()
     dossier = Path(sys.argv[1])
-    script = json.loads((PROJET / "script.json").read_text())
-    plan = json.loads((PROJET / "plan.json").read_text())
+    source = Path(sys.argv[2]) if len(sys.argv) > 2 else PROJET  # script et plan (ceux de Gemini en automatique)
+    script = json.loads((source / "script.json").read_text())
+    plan = json.loads((source / "plan.json").read_text())
     phrases = script["phrases"]
     PUBLIC.mkdir(parents=True, exist_ok=True)
     # 1. Assemblage : phrases rognées, pauses courtes, puis chaîne « radio ».
