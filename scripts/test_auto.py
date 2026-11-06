@@ -192,6 +192,8 @@ def main():
     mus *= (10 ** (gain / 20))[:, None]
     fx = np.zeros_like(voix)
     effets = [(0.0, "ouverture", -4)]
+    if script.get("accroche", {}).get("lignes"):  # claquement de chaque ligne du titre (images 5 et 10)
+        effets += [(k * 5 / FPS, "mot", -9) for k in range(1, len(script["accroche"]["lignes"]))]
     for i, s in enumerate(plan["scenes"]):
         a = bornes[i][0] if i else 0
         if i:
@@ -232,6 +234,8 @@ def main():
              "motsFrames": mots_frames, "masques": masques, "visemes": visemes,
              "bouche": [round(float(x), 3) for x in energie], "scenes": plan["scenes"], "fonds": plan["fond"],
              "emojis": codes, "decalageDouble": 110}
+    if script.get("accroche", {}).get("lignes"):
+        props["titre"] = script["accroche"]
     (PUBLIC / "props.json").write_text(json.dumps(props, ensure_ascii=False))
     print(json.dumps({"duree_video_s": round(duree, 1), "transcription_s": round(t_w, 1), "ecarts_alignement": ecarts,
                       "preparation_totale_s": round(time.time() - t_debut, 1), "lufs_mix": round(lufs(lire(PUBLIC / "mix.wav")), 1)}))

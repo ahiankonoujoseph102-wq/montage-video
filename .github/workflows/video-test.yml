@@ -33,7 +33,7 @@ env:
 jobs:
   video:
     runs-on: ubuntu-24.04
-    timeout-minutes: 120
+    timeout-minutes: 170
     steps:
       - name: Récupérer le code de montage
         uses: actions/checkout@v5

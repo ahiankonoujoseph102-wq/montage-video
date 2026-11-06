@@ -30,11 +30,12 @@ const S = (s: number) => Math.round(s * FPS);
 export type Scene = {type: string; texte?: string; kicker?: string; sous?: string; emoji?: string; n?: number;
   gauche?: {texte: string; ok: boolean}; droite?: {texte: string; ok: boolean}; a?: string | string[];
   titre?: string; items?: {texte: string; a: string}[]; lignes?: string[]; geste?: string; doigts?: number;
-  expression?: string; outil?: string; fichier?: string; credit?: string; recherche?: string};
+  expression?: string; outil?: string; outils?: OutilScene[]; fichier?: string; credit?: string; recherche?: string};
+export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
   masques: [number, number][]; visemes: string; bouche: number[]; scenes: Scene[]; fonds: string[]; emojis: string[];
-  decalageDouble: number};
+  decalageDouble: number; titre?: {lignes: string[]; cle?: string}; logos?: Record<string, {nom: string; couleur: string}>};
 
 const pop = (f: number, a = 0, raide = 220, amorti = 10) =>
   f < a ? 0 : spring({frame: f - a, fps: FPS, config: {damping: amorti, stiffness: raide, mass: 0.7}});
@@ -249,27 +250,57 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
       );
     }
     case 'outil': {
-      // Vraie capture de la page publique de l'outil (projets/outils/), nom écrit en texte, sans affiliation.
-      const noms: Record<string, [string, string]> = {chatgpt: ['ChatGPT', 'chatgpt.com'], claude: ['Claude', 'claude.ai'],
-        gemini: ['Gemini', 'gemini.google.com'], perplexity: ['Perplexity', 'perplexity.ai']};
-      const [nom, site] = noms[s.outil ?? ''] ?? [s.outil ?? '', ''];
-      const kc = pop(f, 3, 200, 12);
+      // Outils cités : logo officiel (identification seulement) + nom en texte ; capture réelle de la page publique
+      // quand il n'y a qu'un outil et qu'elle existe. Aucune affiliation suggérée.
+      const outils = s.outils ?? [];
+      const tuile = (o: OutilScene, x: number, y: number, taille: number, a: number) => {
+        const kt = pop(f, a, 240, 11);
+        return (
+          <div key={o.id} style={{position: 'absolute', left: x - taille / 2, top: y, width: taille, textAlign: 'center',
+            transform: `scale(${kt})`, opacity: kt > 0 ? 1 : 0}}>
+            <div style={{width: taille, height: taille, borderRadius: taille * 0.24, background: '#fff', display: 'flex',
+              alignItems: 'center', justifyContent: 'center', boxShadow: '0 18px 36px rgba(0,0,0,0.45)'}}>
+              {o.logo ? <Img src={staticFile(`test-auto/logos/${o.id}.svg`)} style={{width: taille * 0.62, height: taille * 0.62}} />
+                : <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: taille * 0.4, color: '#1B1B2F'}}>{o.nom.slice(0, 1)}</div>}
+            </div>
+          </div>
+        );
+      };
+      if (outils.length === 1 && outils[0].capture) {
+        const o = outils[0];
+        const kc = pop(f, 5, 200, 12);
+        return (
+          <>
+            {tuile(o, 205, 175, 150, 0)}
+            <div style={{position: 'absolute', left: 300, top: 205, fontFamily: POLICE, fontWeight: 900, fontSize: 84,
+              color: BLANC, WebkitTextStroke: '12px #0B0F2E', paintOrder: 'stroke fill', transform: `scale(${k})`,
+              transformOrigin: 'left center'}}>{o.nom}</div>
+            <div style={{position: 'absolute', left: 90, top: 345, width: 900, height: 520, borderRadius: 28, overflow: 'hidden',
+              background: '#fff', boxShadow: '0 30px 60px rgba(0,0,0,0.5)', transform: `scale(${0.6 + 0.4 * kc})`,
+              opacity: kc > 0 ? 1 : 0}}>
+              <div style={{height: 52, background: '#E9EBF2', display: 'flex', alignItems: 'center', gap: 12, padding: '0 22px'}}>
+                {['#FF5F57', '#FEBC2E', '#28C840'].map((c) => <div key={c} style={{width: 16, height: 16, borderRadius: 8, background: c}} />)}
+                <div style={{marginLeft: 14, flex: 1, height: 34, borderRadius: 17, background: '#fff', fontFamily: POLICE,
+                  fontWeight: 700, fontSize: 24, color: '#444', display: 'flex', alignItems: 'center', padding: '0 18px'}}>{o.site}</div>
+              </div>
+              <Img src={staticFile(`test-auto/outils/${o.id}.png`)} style={{width: 900, height: 468, objectFit: 'cover',
+                objectPosition: 'top', transform: `scale(${interpolate(f, [0, Math.max(1, duree)], [1, 1.06], clamp)})`,
+                transformOrigin: 'top center'}} />
+            </div>
+          </>
+        );
+      }
+      const n = Math.max(1, outils.length);
+      const taille = n === 1 ? 330 : n === 2 ? 270 : n === 3 ? 230 : 190;
+      const ecart = Math.min(300, 840 / n);
       return (
         <>
-          <Kicker texte={nom.toUpperCase()} y={215} k={k} />
-          <div style={{position: 'absolute', left: 90, top: 320, width: 900, height: 540, borderRadius: 28, overflow: 'hidden',
-            background: '#fff', boxShadow: '0 30px 60px rgba(0,0,0,0.5)', transform: `scale(${0.6 + 0.4 * kc}) rotate(${(1 - kc) * -4}deg)`,
-            opacity: kc > 0 ? 1 : 0}}>
-            <div style={{height: 56, background: '#E9EBF2', display: 'flex', alignItems: 'center', gap: 12, padding: '0 22px'}}>
-              {['#FF5F57', '#FEBC2E', '#28C840'].map((c) => <div key={c} style={{width: 18, height: 18, borderRadius: 9, background: c}} />)}
-              <div style={{marginLeft: 14, flex: 1, height: 36, borderRadius: 18, background: '#fff', fontFamily: POLICE,
-                fontWeight: 700, fontSize: 24, color: '#444', display: 'flex', alignItems: 'center', padding: '0 18px'}}>{site}</div>
-            </div>
-            <Img src={staticFile(`test-auto/outils/${s.outil}.png`)} style={{width: 900, height: 484, objectFit: 'cover',
-              objectPosition: 'top', transform: `scale(${interpolate(f, [0, Math.max(1, duree)], [1, 1.06], clamp)})`,
-              transformOrigin: 'top center'}} />
-          </div>
-          <Emoji code={s.emoji} x={900} y={330} taille={150} a={10} />
+          {s.texte ? <Kicker texte={s.texte} y={215} k={k} /> : null}
+          {outils.map((o, i) => tuile(o, CX + (i - (n - 1) / 2) * ecart, n === 1 ? 300 : 340, taille, 3 + i * 5))}
+          {outils.map((o, i) => (
+            <Gros key={o.id} texte={o.nom} y={(n === 1 ? 300 : 340) + taille + 30} max={n === 1 ? 110 : 64} largeur={Math.min(820, ecart - 10)}
+              k={pop(f, 6 + i * 5)} />
+          )).map((g, i) => <div key={i} style={{position: 'absolute', left: (i - (n - 1) / 2) * ecart, top: 0, width: 1080, height: HAUT}}>{g}</div>)}
         </>
       );
     }
@@ -363,7 +394,8 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
       <AbsoluteFill style={{background: '#020629'}}>
         {/* Double animé, dans la moitié basse. */}
         <AbsoluteFill style={{top: HAUT + BANDEAU - 40, overflow: 'hidden'}}>
-          <AbsoluteFill style={{transform: `translateY(${p.decalageDouble - HAUT - BANDEAU + 40}px)`}}>
+          <AbsoluteFill style={{transform: `translateY(${p.decalageDouble - HAUT - BANDEAU + 40}px) translate(${zoomDouble(f).x}px, ${zoomDouble(f).y}px) scale(${zoomDouble(f).z})`,
+            transformOrigin: '540px 1260px'}}>
             <Decor2D />
             <Double2D etat={etat} />
             <Bureau2D />
@@ -395,10 +427,88 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
           background: 'linear-gradient(180deg, rgba(6,8,22,0.92), rgba(6,8,22,0.8))'}} />
         <div style={{position: 'absolute', left: 0, right: 0, top: HAUT - 4, height: 8,
           background: 'linear-gradient(90deg, rgba(255,255,255,0.2), #fff, rgba(255,255,255,0.2))', boxShadow: '0 0 24px rgba(255,255,255,0.8)'}} />
-        <SousTitresMot mots={p.motsFrames} masques={p.masques} partages={[[0, S(p.duree) + 1]]} />
+        {p.titre ? <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT, overflow: 'hidden'}}>
+          <OuvertureAuto lignes={p.titre.lignes} cle={p.titre.cle} /></div> : null}
+        <SousTitresMot mots={p.motsFrames} masques={p.titre ? [[0, FIN_TITRE_GEANT], ...p.masques] : p.masques}
+          partages={[[0, S(p.duree) + 1]]} />
+        {/* Flash blanc léger à l'impact d'ouverture. */}
+        {f < 2 ? <AbsoluteFill style={{background: '#fff', opacity: f === 0 ? 0.6 : 0.3}} /> : null}
       </AbsoluteFill>
     </EmojiCtx.Provider>
   );
+};
+
+// Ouverture (modèle habituel) : titre d'accroche géant de 3 lignes qui claquent une à une (toutes les 5 images,
+// étirement vertical qui se pose en 4 images), mot-clé en noir sur bloc jaune ; à 2,5 s il rétrécit et monte dans un
+// bandeau en haut jusqu'à 5 s. Sous-titres masqués tant qu'il est géant.
+export const FIN_TITRE_GEANT = S(2.5) + 12;
+const OuvertureAuto: React.FC<{lignes: string[]; cle?: string}> = ({lignes, cle}) => {
+  const f = useCurrentFrame();
+  if (f >= S(5)) return null;
+  const norm = (m: string) => m.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+  const cles = new Set((cle ?? '').split(' ').map(norm).filter(Boolean));
+  const LARG = 840;
+  const tailles = lignes.map((l) => Math.min(230, fitText({text: l.toUpperCase(), withinWidth: LARG - 40, fontFamily: POLICE,
+    fontWeight: '900'}).fontSize));
+  let total = tailles.reduce((h, x) => h + x * 1.08, 0);
+  const red = Math.min(1, 640 / total);
+  total *= red;
+  const haut0 = 215 + (660 - total) / 2;
+  const p = interpolate(f, [S(2.5), S(2.5) + 12], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
+  const ech = 1 - 0.58 * p;
+  const dy = (200 - haut0) * p;
+  const sortie = interpolate(f, [S(5) - 8, S(5)], [1, 0], clamp);
+  let y = 0;
+  return (
+    <>
+      <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, #1F2D8F 0%, #0A0F33 70%)', opacity: 1 - p, height: HAUT}} />
+      <div style={{position: 'absolute', left: CX - LARG / 2, width: LARG, top: haut0, height: total, opacity: sortie,
+        transform: `translateY(${dy}px) scale(${ech})`, transformOrigin: '50% 0%', borderRadius: 40,
+        background: `rgba(8,10,30,${0.75 * p})`, borderBottom: `${Math.round(14 * p)}px solid rgba(255,200,61,${p})`}}>
+        {lignes.map((l, i) => {
+          const taille = tailles[i] * red;
+          const local = f - i * 5;
+          const top = y;
+          y += taille * 1.08;
+          if (local < 0) return null;
+          const etire = interpolate(local, [0, 4], [1.25, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+          return (
+            <div key={i} style={{position: 'absolute', left: 0, width: LARG, top, height: taille * 1.08, display: 'flex',
+              justifyContent: 'center', alignItems: 'center', gap: taille * 0.26, transform: `scaleY(${etire})`,
+              transformOrigin: '50% 0%'}}>
+              {l.toUpperCase().split(' ').map((m, j) => {
+                const estCle = cles.has(norm(m));
+                return (
+                  <span key={j} style={{fontFamily: POLICE, fontWeight: 900, fontSize: taille, lineHeight: 1,
+                    color: estCle ? '#0B0F2E' : BLANC, background: estCle ? OR : 'transparent',
+                    padding: estCle ? `0 ${taille * 0.12}px` : 0, borderRadius: estCle ? taille * 0.12 : 0,
+                    WebkitTextStroke: estCle ? '0px' : `${Math.round(taille * 0.16)}px #0B0F2E`, paintOrder: 'stroke fill',
+                    filter: 'drop-shadow(0 10px 18px rgba(0,0,0,0.5))', whiteSpace: 'nowrap'}}>{m}</span>
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+// Coup de zoom d'ouverture sur le double (35 % → cadre normal en 12 images, recul linéaire, tremblement amorti),
+// puis changement de cadrage toutes les 1,5 s pendant les 5 premières secondes.
+const zoomDouble = (f: number) => {
+  if (f < 12) {
+    const z = 1.35 - (0.35 * f) / 12;
+    const tremble = 14 * (1 - f / 12) * Math.sin(f * 2.3);
+    return {z, x: tremble, y: tremble * 0.6};
+  }
+  const pas = [S(1.5), S(3), S(4.5), S(5.5)];
+  const cibles = [1, 1.09, 1, 1.09, 1];
+  let z = 1;
+  pas.forEach((a, i) => {
+    z += (cibles[i + 1] - cibles[i]) * interpolate(f, [a, a + 4], [0, 1], clamp);
+  });
+  return {z, x: 0, y: 0};
 };
 
 // Entrée de chaque scène : glissement, coup de zoom ou bascule (en rotation), 7 images.

@@ -42,6 +42,6 @@ jobs:
         run: |
           git config user.name "Montage automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add projets/outils
+          git add projets/outils projets/logos
           git commit -q -m "Captures des outils et essai des images libres du $(date -u +%d/%m/%Y)" || exit 0
           for i in 1 2 3; do git pull -q --rebase origin claude/great-heisenberg-8p7tj4 && git push -q origin HEAD:claude/great-heisenberg-8p7tj4 && break; sleep 5; done

@@ -66,3 +66,24 @@ with sync_playwright() as p:
     "le nom est écrit en texte, aucun partenariat ni affiliation n'est suggéré. Une capture n'est utilisée que si\n"
     "`projets/outils/<outil>.png` existe (vérifiée).\n\n| Outil | Page | Date | État |\n|---|---|---|---|\n"
     + "\n".join(lignes) + "\n")
+
+# Logo de ChatGPT (absent de Simple Icons à la demande d'OpenAI) : fichier de Wikimedia Commons, montré seulement pour
+# identifier l'outil. Gardé seulement si c'est bien un fichier SVG.
+import json
+import urllib.request
+LOGOS = ROOT / "projets" / "logos"
+for nom in ("ChatGPT_logo.svg", "ChatGPT-Logo.svg", "OpenAI_Logo.svg"):
+    try:
+        req = urllib.request.Request(f"https://commons.wikimedia.org/wiki/Special:FilePath/{nom}",
+                                     headers={"User-Agent": "LomeIASchool-montage/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            svg = r.read()
+        if b"<svg" in svg[:3000] and len(svg) < 500_000:
+            (LOGOS / "chatgpt.svg").write_bytes(svg)
+            meta = json.loads((LOGOS / "logos.json").read_text())
+            meta["chatgpt"] = {"nom": "ChatGPT", "couleur": "#10A37F", "source": f"Wikimedia Commons, {nom}"}
+            (LOGOS / "logos.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1))
+            print("Logo ChatGPT :", nom, flush=True)
+            break
+    except Exception as e:
+        print("Logo ChatGPT", nom, ":", type(e).__name__, flush=True)

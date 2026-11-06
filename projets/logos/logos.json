@@ -1,0 +1,94 @@
+{
+ "claude": {
+  "nom": "Claude",
+  "couleur": "#D97757"
+ },
+ "anthropic": {
+  "nom": "Anthropic",
+  "couleur": "#191919"
+ },
+ "gemini": {
+  "nom": "Google Gemini",
+  "couleur": "#8E75B2"
+ },
+ "perplexity": {
+  "nom": "Perplexity",
+  "couleur": "#1FB8CD"
+ },
+ "whatsapp": {
+  "nom": "WhatsApp",
+  "couleur": "#25D366"
+ },
+ "n8n": {
+  "nom": "n8n",
+  "couleur": "#EA4B71"
+ },
+ "make": {
+  "nom": "Make",
+  "couleur": "#6D00CC"
+ },
+ "zapier": {
+  "nom": "Zapier",
+  "couleur": "#FF4F00"
+ },
+ "wordpress": {
+  "nom": "WordPress",
+  "couleur": "#21759B"
+ },
+ "cursor": {
+  "nom": "Cursor",
+  "couleur": "#000000"
+ },
+ "googlesheets": {
+  "nom": "Google Sheets",
+  "couleur": "#34A853"
+ },
+ "gmail": {
+  "nom": "Gmail",
+  "couleur": "#EA4335"
+ },
+ "tiktok": {
+  "nom": "TikTok",
+  "couleur": "#000000"
+ },
+ "facebook": {
+  "nom": "Facebook",
+  "couleur": "#0866FF"
+ },
+ "instagram": {
+  "nom": "Instagram",
+  "couleur": "#FF0069"
+ },
+ "youtube": {
+  "nom": "YouTube",
+  "couleur": "#FF0000"
+ },
+ "telegram": {
+  "nom": "Telegram",
+  "couleur": "#26A5E4"
+ },
+ "notion": {
+  "nom": "Notion",
+  "couleur": "#000000"
+ },
+ "figma": {
+  "nom": "Figma",
+  "couleur": "#F24E1E"
+ },
+ "replit": {
+  "nom": "Replit",
+  "couleur": "#F26207"
+ },
+ "github": {
+  "nom": "GitHub",
+  "couleur": "#181717"
+ },
+ "vercel": {
+  "nom": "Vercel",
+  "couleur": "#000000"
+ },
+ "python": {
+  "nom": "Python",
+  "couleur": "#3776AB"
+ }
+}

@@ -14,6 +14,7 @@ Usage : python3 scripts/medias.py <dossier du lancement (plan.json, script.json)
 """
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -27,7 +28,7 @@ OUTILS = {"chatgpt": ("ChatGPT", "chatgpt.com"), "claude": ("Claude", "claude.ai
           "gemini": ("Gemini", "gemini.google.com"), "perplexity": ("Perplexity", "perplexity.ai")}
 AGENT = "LomeIASchool-montage/1.0 (montage video automatique)"
 SIMPLES = {"question", "alerte", "carte", "reponseIA"}  # scènes qu'on peut remplacer par une capture d'outil
-MAX_OUTILS, MAX_PHOTOS = 2, 4
+MAX_PHOTOS = 8
 
 
 def get_json(url, entetes=None):
@@ -157,39 +158,58 @@ def main(dossier):
     plan = json.loads(plan_f.read_text())
     phrases = json.loads((dossier / "script.json").read_text())["phrases"]
     sources = []
-    # 1. Captures des outils (celles prévues par Gemini, puis la 1re phrase qui cite un outil).
     caps = {k: ROOT / "projets" / "outils" / f"{k}.png" for k in OUTILS}
-    n_outils, cites = 0, set()
+    # 1. Outils cités : logo (identification seulement) + nom ; capture réelle de la page publique à la 1re mention.
+    logos = json.loads((ROOT / "projets" / "logos" / "logos.json").read_text())
+    noms = {**{k: v["nom"] for k, v in logos.items()}, "chatgpt": "ChatGPT", "gemini": "Gemini",
+            "googlesheets": "Google Sheets"}
+    motifs = {k: re.compile(r"(?<![\w-])" + re.escape(n) + r"(?![\w-])", re.I if len(n) > 4 else 0)
+              for k, n in noms.items() if k != "anthropic"}
+    motifs["make"] = re.compile(r"(?<![\w-])Make(?![\w-])")  # « make » seulement avec sa majuscule (nom de l'outil)
+    a_logo = lambda k: (ROOT / "projets" / "logos" / f"{k}.svg").exists()
+    deja_capture, utilises, n_outils, precedent = set(), set(), 0, None
     for i, s in enumerate(plan["scenes"]):
-        if s.get("type") == "outil":
-            k = str(s.get("outil", "")).lower().replace(" ", "")
-            if k in OUTILS and caps[k].exists() and n_outils < MAX_OUTILS and k not in cites:
-                s["outil"] = k
-                cites.add(k)
-                n_outils += 1
-            else:
-                repli(s, phrases[i]["texte"] if i < len(phrases) else "")
-    for i, (p, s) in enumerate(zip(phrases, plan["scenes"])):
-        if n_outils >= MAX_OUTILS or s.get("type") not in SIMPLES or p.get("partie") == "fin":
+        texte = phrases[i]["texte"] if i < len(phrases) else ""
+        if phrases[i:i + 1] and phrases[i].get("partie") == "fin":
             continue
-        for k, (nom, _) in OUTILS.items():
-            if k not in cites and caps[k].exists() and nom.lower() in p["texte"].lower():
-                emoji = s.get("emoji")
-                s.clear()
-                s.update({"type": "outil", "outil": k, "geste": "designe"})
-                if emoji:
-                    s["emoji"] = emoji
-                cites.add(k)
-                n_outils += 1
-                break
-    if cites:
-        (PUBLIC / "outils").mkdir(parents=True, exist_ok=True)
-    for k in cites:
-        shutil.copy2(caps[k], PUBLIC / "outils" / f"{k}.png")
-        nom, site = OUTILS[k]
-        sources.append({"type": "capture", "outil": nom, "page": f"https://{site}",
-                        "licence": "Capture d'écran de la page publique, montrée pour identifier l'outil (citation) ; "
-                                   "aucune affiliation"})
+        prevus = s.get("outils") or ([s["outil"]] if s.get("outil") else [])
+        prevus = [str(x.get("id", x) if isinstance(x, dict) else x).lower().replace(" ", "") for x in prevus]
+        cites = [k for k in motifs if motifs[k].search(texte)]
+        ids = [k for k in dict.fromkeys(prevus + cites) if k in noms and (a_logo(k) or caps.get(k, Path("/")).exists())][:4]
+        if s.get("type") == "outil" and not ids:
+            repli(s, texte)
+            continue
+        if not ids or (s.get("type") != "outil" and s.get("type") not in SIMPLES) or ids == precedent:
+            precedent = None if s.get("type") != "outil" else precedent
+            continue
+        emoji, texte_scene = s.get("emoji"), s.get("texte") if s.get("type") == "outil" else None
+        s.clear()
+        liste = []
+        for k in ids:
+            capture = len(ids) == 1 and k in caps and caps[k].exists() and k not in deja_capture
+            if capture:
+                deja_capture.add(k)
+            liste.append({"id": k, "nom": noms[k], "site": OUTILS.get(k, ("", ""))[1], "logo": a_logo(k), "capture": capture})
+            utilises.add(k)
+        s.update({"type": "outil", "outils": liste, "geste": "designe"})
+        if texte_scene:
+            s["texte"] = texte_scene
+        if emoji and len(ids) > 1:
+            s["emoji"] = emoji
+        precedent = ids
+        n_outils += 1
+    (PUBLIC / "outils").mkdir(parents=True, exist_ok=True)
+    (PUBLIC / "logos").mkdir(parents=True, exist_ok=True)
+    for k in utilises:
+        if a_logo(k):
+            shutil.copy2(ROOT / "projets" / "logos" / f"{k}.svg", PUBLIC / "logos" / f"{k}.svg")
+        if k in deja_capture:
+            shutil.copy2(caps[k], PUBLIC / "outils" / f"{k}.png")
+        sources.append({"type": "logo" + (" + capture" if k in deja_capture else ""), "outil": noms[k],
+                        "source": "Simple Icons (CC0)" if k != "chatgpt" else "Wikimedia Commons",
+                        "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), "
+                                   "aucune affiliation" + (" ; capture de la page publique" if k in deja_capture else "")})
+    cites = utilises
     # 2. Photos et vidéos libres de droits.
     (PUBLIC / "photos").mkdir(parents=True, exist_ok=True)
     n_photos, n_videos = 0, 0
@@ -210,7 +230,7 @@ def main(dossier):
         sources.append({"type": "vidéo" if fichier.suffix == ".mp4" else "photo", "recherche": s["recherche"], **credit})
     plan_f.write_text(json.dumps(plan, ensure_ascii=False, indent=1))
     (dossier / "sources.json").write_text(json.dumps(sources, ensure_ascii=False, indent=1))
-    print(f"Médias : {len(cites)} capture(s) d'outil, {n_photos} photo(s)/vidéo(s) libres "
+    print(f"Médias : {n_outils} scène(s) d'outils ({len(deja_capture)} capture(s)), logos : {', '.join(sorted(cites)) or 'aucun'}, {n_photos} photo(s)/vidéo(s) libres "
           f"({'Pexels + ' if os.environ.get('PEXELS_API_KEY', '').strip() else ''}Openverse)")
 
 
@@ -234,7 +254,7 @@ if __name__ == "__main__":
             plan = json.loads(plan_f.read_text())
             for s in plan["scenes"]:
                 ok = (s.get("type") == "photo" and s.get("fichier") and (ROOT / "public" / s["fichier"]).exists()) or \
-                     (s.get("type") == "outil" and (PUBLIC / "outils" / f"{s.get('outil')}.png").exists())
+                     (s.get("type") == "outil" and all((PUBLIC / "logos" / f"{o['id']}.svg").exists() or not o.get("logo") for o in s.get("outils", [])) and all((PUBLIC / "outils" / f"{o['id']}.png").exists() for o in s.get("outils", []) if o.get("capture")) and s.get("outils"))
                 if s.get("type") in ("photo", "outil") and not ok:
                     repli(s)
             plan_f.write_text(json.dumps(plan, ensure_ascii=False, indent=1))
