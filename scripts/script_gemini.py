@@ -43,7 +43,8 @@ FAITS = json.loads((ROOT / "projets" / "faits_verifies.json").read_text())
 CALENDRIER = json.loads((ROOT / "projets" / "calendrier.json").read_text())["rubriques"]
 CONTACTS = FAITS["chiffres_autorises"]
 NUMERO_DIT = "plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un"
-MOTS_MIN, MOTS_MAX = 340, 460
+MOTS_MIN, MOTS_MAX = 340, 460  # visés ; accepté à partir de MOTS_PLANCHER (environ 2 min de vidéo)
+MOTS_PLANCHER = 300
 # Mots et tournures interdits (fausses promesses, chiffres, peur, mépris, domination, religion).
 INTERDITS = ["%", "garanti", "garantie", "millionnaire", "devenir riche", "sans effort", "en une nuit", "meilleur au monde",
              "gratuit à vie", "argent facile", "gagner de l'argent", "salaire", "emploi assuré", "dominer", "domine",
@@ -93,7 +94,8 @@ l'apprennent prennent de l'avance. »
 RUBRIQUE DE CETTE VIDÉO : RUBRIQUE
 
 RÈGLES ABSOLUES :
-- MOTS_GEMINI mots au total (compte-les), 22 à 34 phrases (une phrase = une ligne du tableau "phrases").
+- LONGUEUR : MOTS_GEMINI mots au total (compte-les : c'est la règle la plus souvent ratée), 24 à 34 phrases de 10 à 18
+  mots chacune (une phrase = une ligne du tableau "phrases"). Développe chaque étape avec un exemple concret.
 - Jamais de peur (« l'IA va te remplacer »), jamais de mépris envers ceux qui n'utilisent pas l'IA, jamais « dominer les
   autres », jamais de comparaison avec une religion.
 - Aucune promesse de revenus, d'argent ou d'emploi, aucun faux témoignage, aucun pourcentage, aucune statistique, aucun
@@ -156,7 +158,7 @@ def modeles_disponibles(cle):
     rang = lambda n: (n != dernier, n != PRIORITAIRE, "preview" in n or "exp" in n, "latest" in n, version(n), n)
     choix = sorted(flash, key=rang)
     print("Modèles Gemini utilisables avec cette clé :", ", ".join(choix[:6]) or "aucun", flush=True)
-    return choix[:4]
+    return choix[:6]
 
 
 def reflexion(modele):
@@ -169,19 +171,22 @@ def reflexion(modele):
     return [None]
 
 
+LENTS = set()  # modèles qui refusent la réflexion minimale (plus d'une minute par réponse)
+
+
 class Echec(Exception):
     """Un modèle n'a pas répondu (message lisible, sans la clé)."""
 
 
-def appeler(modele, cle, texte, delai):
+def appeler(modele, cle, tours, delai, reglages=None):
     """Un appel à Gemini, sans nouvelle tentative (un échec fait passer au modèle suivant). Seul un réglage de
     réflexion refusé (erreur 400) est réessayé tout de suite avec le réglage suivant."""
     url = f"{BASE}/models/{modele}:generateContent"
-    for reglage in reflexion(modele):
+    for reglage in (reglages or reflexion(modele)):
         config = {"responseMimeType": "application/json", "temperature": 0.9}
         if reglage:
             config["thinkingConfig"] = reglage
-        corps = {"contents": [{"role": "user", "parts": [{"text": texte}]}], "generationConfig": config}
+        corps = {"contents": [{"role": r, "parts": [{"text": x}]} for r, x in tours], "generationConfig": config}
         req = urllib.request.Request(url, data=json.dumps(corps).encode(), method="POST",
                                      headers={"Content-Type": "application/json", "x-goog-api-key": cle})
         try:
@@ -192,7 +197,10 @@ def appeler(modele, cle, texte, delai):
         except urllib.error.HTTPError as e:
             msg = erreur_http(e)
             if e.code == 400 and "think" in msg.lower() and reglage is not None:
-                print(f"{modele} : réglage de réflexion {reglage} refusé, essai suivant", flush=True)
+                print(f"{modele} : réglage de réflexion {reglage} refusé", flush=True)
+                if reglage == {"thinkingLevel": "minimal"} and not reglages:
+                    LENTS.add(modele)  # ce modèle réfléchit forcément : lent, gardé pour le second tour
+                    raise Echec("réflexion minimale refusée (modèle lent, gardé pour le second tour)")
                 continue
             raise Echec(msg)
         except (urllib.error.URLError, TimeoutError, OSError, KeyError, IndexError, ValueError) as e:
@@ -200,16 +208,19 @@ def appeler(modele, cle, texte, delai):
     raise Echec("aucun réglage de réflexion accepté")
 
 
-def generer(modeles, cle, texte, journal):
+def generer(modeles, cle, tours, journal):
     """Premier modèle qui répond : tour rapide (90 s, sans attente), puis tour patient (180 s) si tous ont échoué."""
     for tour, delai in enumerate(DELAIS):
         if tour:
             print("Tous les modèles ont échoué au premier tour : second tour, plus patient, dans 15 s", flush=True)
             time.sleep(15)
         for modele in modeles:
+            if tour == 0 and modele in LENTS:
+                continue
             t0 = time.time()
             try:
-                return modele, appeler(modele, cle, texte, delai), time.time() - t0
+                reglages = [{"thinkingLevel": "low"}, None] if modele in LENTS else None
+                return modele, appeler(modele, cle, tours, delai, reglages), time.time() - t0
             except Echec as e:
                 journal.append({"modele": modele, "erreur": str(e), "secondes": round(time.time() - t0, 1)})
                 print(f"{modele} : {e} — modèle suivant", flush=True)
@@ -247,8 +258,11 @@ def verifier(d, deja):
     err = []
     ph, sc = d.get("phrases", []), d.get("scenes", [])
     mots = sum(len(p["texte"].split()) for p in ph)
-    if not MOTS_MIN - 10 <= mots <= MOTS_MAX + 10:
-        err.append(f"{mots - MOTS_FIN} mots : il en faut entre {MOTS_MIN - MOTS_FIN} et {MOTS_MAX - MOTS_FIN}.")
+    if not MOTS_PLANCHER <= mots <= MOTS_MAX + 10:
+        manque = MOTS_MIN - mots
+        err.append(f"Ton script fait {mots - MOTS_FIN} mots, il en faut entre {MOTS_MIN - MOTS_FIN} et {MOTS_MAX - MOTS_FIN}"
+                   + (f" : ajoute environ {manque} mots (par exemple {max(2, manque // 13)} phrases de plus dans le contenu,"
+                      " avec leurs scènes et leurs fonds) en gardant le reste." if manque > 0 else " : raccourcis."))
     if not 22 + len(FIN) <= len(ph) <= 36 + len(FIN):
         err.append(f"{len(ph) - len(FIN)} phrases : il en faut entre 22 et 34.")
     if len(sc) != len(ph) or len(d.get("fond", [])) != len(ph):
@@ -274,6 +288,11 @@ def verifier(d, deja):
                 if int(n) > 10:
                     err.append(f"{ou} : nombre « {n} » interdit (aucun chiffre non vérifié).")
     for i, s in enumerate(sc):
+        if s.get("type") not in TYPES:  # type rangé sous un autre nom par Gemini
+            for k in ("type_scene", "typeScene", "scene", "kind", "genre", "layout"):
+                if isinstance(s.get(k), str) and s[k] in TYPES:
+                    s["type"] = s.pop(k)
+                    break
         if s.get("type") not in TYPES:
             err.append(f"Scène {i} : type « {s.get('type')} » inconnu.")
         if s.get("emoji") and s["emoji"] not in EMOJIS:
@@ -326,8 +345,9 @@ def main():
         demande += f"\n\nSujet imposé : {sujet}"
     print(f"Rubrique : {rub['nom']}", flush=True)
     journal, d, err, modele = [], {}, ["aucune réponse"], None
+    tours = [("user", demande)]
     for essai in range(3):
-        modele, brut, duree = generer(modeles, cle, demande, journal)
+        modele, brut, duree = generer(modeles, cle, tours, journal)
         if brut is None:
             dossier.mkdir(parents=True, exist_ok=True)
             (dossier / "gemini.json").write_text(json.dumps(journal, ensure_ascii=False, indent=1))
@@ -338,7 +358,7 @@ def main():
         except (json.JSONDecodeError, KeyError, TypeError, AttributeError) as e:
             journal.append({"essai": essai + 1, "modele": modele, "erreur": f"réponse illisible : {e}"})
             print(journal[-1], flush=True)
-            demande += "\n\nTa réponse n'était pas un JSON valide au format demandé. Réponds uniquement en JSON."
+            tours += [("model", brut), ("user", "Ta réponse n'est pas un JSON valide au format demandé. Réponds uniquement en JSON.")]
             err = ["JSON"]
             continue
         err = verifier(d, deja)
@@ -346,7 +366,8 @@ def main():
         print(json.dumps(journal[-1], ensure_ascii=False), flush=True)
         if not err:
             break
-        demande += "\n\nTa réponse précédente ne respecte pas ces règles, corrige-les :\n- " + "\n- ".join(err)
+        tours += [("model", brut), ("user", "Ta réponse ne respecte pas ces règles. Renvoie le JSON complet corrigé :\n- "
+                                       + "\n- ".join(err[:12]))]
     dossier.mkdir(parents=True, exist_ok=True)
     (dossier / "gemini.json").write_text(json.dumps({"journal": journal, "reponse": d, "rubrique": rub["id"],
                                                     "secondes": round(time.time() - t_debut, 1)},
