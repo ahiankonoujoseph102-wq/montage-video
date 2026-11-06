@@ -26,13 +26,14 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-      - name: Installer le navigateur de capture
-        run: |
-          pip install -q playwright pillow
-          python -m playwright install --with-deps chromium > /dev/null
+      - name: Installer l'outil de capture (Google Chrome est déjà sur la machine GitHub)
+        timeout-minutes: 5
+        run: pip install -q playwright pillow
       - name: Capturer les pages publiques des outils
+        timeout-minutes: 8
         run: python scripts/captures_outils.py
       - name: Essai des images et vidéos libres
+        timeout-minutes: 5
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: |
@@ -42,6 +43,6 @@ jobs:
         run: |
           git config user.name "Montage automatique"
           git config user.email "actions@users.noreply.github.com"
-          git add projets/outils
+          git add projets/outils projets/logos
           git commit -q -m "Captures des outils et essai des images libres du $(date -u +%d/%m/%Y)" || exit 0
           for i in 1 2 3; do git pull -q --rebase origin claude/great-heisenberg-8p7tj4 && git push -q origin HEAD:claude/great-heisenberg-8p7tj4 && break; sleep 5; done
