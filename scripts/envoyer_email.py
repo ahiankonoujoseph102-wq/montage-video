@@ -24,6 +24,14 @@ taille = video.stat().st_size
 joindre = taille < LIMITE
 
 
+try:
+    _src = json.loads((Path(sys.argv[2]).parent / "sources.json").read_text())
+except Exception:
+    _src = []
+sources = "\n".join(f"- {x.get('type')} : {x.get('outil') or x.get('recherche', '')} — {x.get('source', '')} "
+                     f"{x.get('auteur', '')} — {x.get('licence', '')} — {x.get('page', '')}" for x in _src) or "- aucune"
+
+
 def message(avec_piece):
     piece = (f"La vidéo est aussi en pièce jointe ({taille / 1e6:.1f} Mo, pleine qualité)." if avec_piece else
              f"Vidéo trop lourde pour être jointe ({taille / 1e6:.0f} Mo) : télécharge-la avec le lien ci-dessus "
@@ -49,6 +57,9 @@ def message(avec_piece):
 
 ━━━━━━━━ PROMPT (à envoyer en privé à ceux qui commentent PROMPT) ━━━━━━━━
 {script.get('prompt', '')}
+
+━━━━━━━━ SOURCES DES IMAGES ━━━━━━━━
+{sources}
 
 Rubrique : {script.get('rubrique', '?')}
 — Montage automatique Lomé IA School

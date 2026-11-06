@@ -1,0 +1,47 @@
+# Captures réelles des pages publiques des outils (ChatGPT, Claude, Gemini, Perplexity) et essai des banques d'images
+# libres (Openverse, et Pexels si le secret PEXELS_API_KEY existe). Les captures sont rangées dans projets/outils/ sur la
+# branche de montage, puis utilisées par la vidéo quotidienne. Lancement à la main, et le 1er de chaque mois (mise à jour).
+name: Captures des outils et essai des images libres
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 2 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: video-auto
+  cancel-in-progress: false
+
+jobs:
+  captures:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: claude/great-heisenberg-8p7tj4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Installer le navigateur de capture
+        run: |
+          pip install -q playwright pillow
+          python -m playwright install --with-deps chromium > /dev/null
+      - name: Capturer les pages publiques des outils
+        run: python scripts/captures_outils.py
+      - name: Essai des images et vidéos libres
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          python scripts/medias.py --essai projets/outils/essai "woman working laptop office" "students studying library" \
+            "market shop owner phone" || true
+      - name: Ranger dans le dépôt
+        run: |
+          git config user.name "Montage automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add projets/outils
+          git commit -q -m "Captures des outils et essai des images libres du $(date -u +%d/%m/%Y)" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin claude/great-heisenberg-8p7tj4 && git push -q origin HEAD:claude/great-heisenberg-8p7tj4 && break; sleep 5; done

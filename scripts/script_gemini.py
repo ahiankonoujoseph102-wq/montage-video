@@ -35,7 +35,8 @@ PRIORITAIRE = "gemini-3.5-flash-lite"  # utilisé avec succès sur le site Lomé
 MEMOIRE = ROOT / "projets" / "test-auto" / "gemini_modele.txt"  # dernier modèle qui a réussi
 DELAIS = [90, 180]  # s d'attente d'une réponse : 1er tour rapide, 2e tour patient
 EMOJIS = {p.stem for p in (ROOT / "projets" / "test-auto" / "emojis").glob("*.json")}
-TYPES = {"reponseIA", "question", "alerte", "carte", "numero", "prompt", "deux", "liste", "telephone", "final"}
+TYPES = {"reponseIA", "question", "alerte", "carte", "numero", "prompt", "deux", "liste", "telephone", "final",
+         "outil", "photo"}
 FONDS = {"bleu", "violet", "orange", "nuit", "vert", "rose"}
 GESTES = {"repos", "explique", "designe", "compte", "bras-croises", "pouce"}
 EXPRESSIONS = {"neutre", "parle", "grimace", "sourire", "surpris"}
@@ -117,7 +118,12 @@ PLAN VISUEL : pour CHAQUE phrase, une scène (même ordre, même nombre). Types 
 - "numero" {n (1 à 10), texte (majuscules, 2 lignes), emoji, geste "compte", doigts (= n, 4 au plus)} ;
 - "prompt" {texte (la demande exacte à écrire à l'IA, 80 caractères au plus), geste "designe"} ;
 - "deux" {gauche {texte, ok}, droite {texte, ok}, a [mot de la phrase pour la carte gauche, mot pour la droite]} ;
-- "liste" {titre, items [{texte (court), a (mot de la phrase)}] (2 à 4 items)}.
+- "liste" {titre, items [{texte (court), a (mot de la phrase)}] (2 à 4 items)} ;
+- "outil" {outil: "chatgpt" | "claude" | "gemini" | "perplexity"} : vraie capture de la page publique de l'outil, pour la
+  phrase qui présente ou recommande cet outil (2 au plus par vidéo) ;
+- "photo" {recherche (2 à 4 mots EN ANGLAIS pour une banque d'images, ex. "woman laptop office"), texte (2 à 4 mots
+  en majuscules)} : vraie photo ou vidéo libre de droits d'une situation concrète (travail, étude, commerce, téléphone…),
+  3 ou 4 par vidéo, jamais de célébrité, de marque ni de logo.
 Les mots "a" doivent être copiés EXACTEMENT tels qu'ils sont écrits dans la phrase (avec leur ponctuation collée, ex. "mots,").
 Champs facultatifs pour le double : "geste" parmi repos, explique, designe, compte, bras-croises, pouce ; "expression"
 parmi neutre, parle, grimace, sourire, surpris.

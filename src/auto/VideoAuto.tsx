@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {fitText} from '@remotion/layout-utils';
 import {Lottie, type LottieAnimationData} from '@remotion/lottie';
-import {AbsoluteFill, continueRender, delayRender, Easing, interpolate, random, Sequence, spring, staticFile,
-  useCurrentFrame} from 'remotion';
+import {AbsoluteFill, continueRender, delayRender, Easing, Img, interpolate, OffthreadVideo, random, Sequence, spring,
+  staticFile, useCurrentFrame} from 'remotion';
 import {FONDS_ILLUSTRATION} from '../dynamique/Illustrations';
 import {SousTitresMot} from '../dynamique/SousTitresMot';
 import type {Mot} from '../types';
@@ -30,7 +30,7 @@ const S = (s: number) => Math.round(s * FPS);
 export type Scene = {type: string; texte?: string; kicker?: string; sous?: string; emoji?: string; n?: number;
   gauche?: {texte: string; ok: boolean}; droite?: {texte: string; ok: boolean}; a?: string | string[];
   titre?: string; items?: {texte: string; a: string}[]; lignes?: string[]; geste?: string; doigts?: number;
-  expression?: string};
+  expression?: string; outil?: string; fichier?: string; credit?: string; recherche?: string};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
   masques: [number, number][]; visemes: string; bouche: number[]; scenes: Scene[]; fonds: string[]; emojis: string[];
@@ -245,6 +245,48 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
                 opacity: kc > 0 ? 1 : 0}}>{ch === ' ' ? ' ' : ch}</span>;
             })}
           </div>
+        </>
+      );
+    }
+    case 'outil': {
+      // Vraie capture de la page publique de l'outil (projets/outils/), nom écrit en texte, sans affiliation.
+      const noms: Record<string, [string, string]> = {chatgpt: ['ChatGPT', 'chatgpt.com'], claude: ['Claude', 'claude.ai'],
+        gemini: ['Gemini', 'gemini.google.com'], perplexity: ['Perplexity', 'perplexity.ai']};
+      const [nom, site] = noms[s.outil ?? ''] ?? [s.outil ?? '', ''];
+      const kc = pop(f, 3, 200, 12);
+      return (
+        <>
+          <Kicker texte={nom.toUpperCase()} y={215} k={k} />
+          <div style={{position: 'absolute', left: 90, top: 320, width: 900, height: 540, borderRadius: 28, overflow: 'hidden',
+            background: '#fff', boxShadow: '0 30px 60px rgba(0,0,0,0.5)', transform: `scale(${0.6 + 0.4 * kc}) rotate(${(1 - kc) * -4}deg)`,
+            opacity: kc > 0 ? 1 : 0}}>
+            <div style={{height: 56, background: '#E9EBF2', display: 'flex', alignItems: 'center', gap: 12, padding: '0 22px'}}>
+              {['#FF5F57', '#FEBC2E', '#28C840'].map((c) => <div key={c} style={{width: 18, height: 18, borderRadius: 9, background: c}} />)}
+              <div style={{marginLeft: 14, flex: 1, height: 36, borderRadius: 18, background: '#fff', fontFamily: POLICE,
+                fontWeight: 700, fontSize: 24, color: '#444', display: 'flex', alignItems: 'center', padding: '0 18px'}}>{site}</div>
+            </div>
+            <Img src={staticFile(`test-auto/outils/${s.outil}.png`)} style={{width: 900, height: 484, objectFit: 'cover',
+              objectPosition: 'top', transform: `scale(${interpolate(f, [0, Math.max(1, duree)], [1, 1.06], clamp)})`,
+              transformOrigin: 'top center'}} />
+          </div>
+          <Emoji code={s.emoji} x={900} y={330} taille={150} a={10} />
+        </>
+      );
+    }
+    case 'photo': {
+      // Photo ou vidéo libre de droits (Pexels ou domaine public / CC0), lent zoom ; source dans sources.json.
+      const z = interpolate(f, [0, Math.max(1, duree)], [1.02, 1.14], clamp);
+      const style: React.CSSProperties = {width: 1080, height: HAUT, objectFit: 'cover', transform: `scale(${z})`};
+      const src = staticFile(s.fichier ?? '');
+      return (
+        <>
+          <AbsoluteFill style={{opacity: interpolate(f, [0, 6], [0, 1], clamp)}}>
+            {(s.fichier ?? '').endsWith('.mp4') ? <OffthreadVideo src={src} muted style={style} /> : <Img src={src} style={style} />}
+          </AbsoluteFill>
+          <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%)'}} />
+          {s.texte ? <Gros texte={s.texte} y={650} max={110} k={pop(f, 6)} /> : null}
+          {s.credit ? <div style={{position: 'absolute', right: 150, top: 860, fontFamily: POLICE, fontWeight: 600, fontSize: 20,
+            color: 'rgba(255,255,255,0.75)'}}>{s.credit}</div> : null}
         </>
       );
     }
