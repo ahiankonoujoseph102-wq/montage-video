@@ -128,7 +128,7 @@ Réponds UNIQUEMENT en JSON :
 {"titre": "titre TikTok accrocheur, 70 caractères au plus",
  "description": "description TikTok de 1 à 3 phrases, sans hashtag",
  "hashtags": ["#IA", "... 4 à 7 hashtags"],
- "prompt": "le prompt complet à envoyer en message privé à ceux qui commentent PROMPT (400 caractères au plus)",
+ "prompt": "UNIQUEMENT le texte du prompt à copier-coller dans ChatGPT, Claude ou Gemini (sans salutation ni introduction), celui montré dans la vidéo, en version complète (400 caractères au plus)",
  "phrases": [{"partie": "accroche|presentation|r1|r2|...|morale", "texte": "..."}], "scenes": [...], "fond": [...]}"""
 
 
