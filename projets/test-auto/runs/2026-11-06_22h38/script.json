@@ -1,0 +1,176 @@
+{
+ "accroche": {
+  "lignes": [
+   "CREE TON",
+   "SITE WEB",
+   "AVEC CLAUDE"
+  ],
+  "cle": "SITE"
+ },
+ "titre": "Crée le site de ta boutique avec Claude, étape par étape",
+ "description": "Apprends à créer le site vitrine de ta boutique ou de ton restaurant à Lomé en quelques minutes avec Claude sans savoir coder.",
+ "hashtags": "#IA #Lome #Togo #SiteWeb #Claude #Entrepreneuriat",
+ "prompt": "Agis en expert du web. Rédige le code complet en HTML et CSS d'un site vitrine moderne pour une boutique de vêtements à Adidogomé Lomé. Inclus une section d'accueil, un catalogue de trois produits, et un bouton de commande directe par WhatsApp.",
+ "description_tiktok": "Apprends à créer le site vitrine de ta boutique ou de ton restaurant à Lomé en quelques minutes avec Claude sans savoir coder. #IA #Lome #Togo #SiteWeb #Claude #Entrepreneuriat",
+ "rubrique": "sites",
+ "date": "2026-11-06",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu vends des vêtements ou de la nourriture sur WhatsApp mais tu n'as pas de site web pour ta boutique ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Aujourd'hui, tu vas apprendre à créer ton propre site vitrine en quelques minutes sans écrire une seule ligne de code."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Beaucoup de commerçants à Lomé pensent encore qu'il faut dépenser une fortune pour avoir un beau site web."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Pourtant, avec les bons outils d'intelligence artificielle et un prompt bien rédigé, tout devient très simple et rapide."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School, et nous allons utiliser ensemble l'outil gratuit Claude pour ce projet.",
+   "dit": "Je suis Joseph, de Lomé i-a School, et nous allons utiliser ensemble l'outil gratuit Claude pour ce projet."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Lomé IA School forme chacun pour créer ses propres solutions web et automatiser ses tâches répétitives sans coder.",
+   "dit": "Lomé i-a School forme chacun pour créer ses propres solutions web et automatiser ses tâches répétitives sans coder."
+  },
+  {
+   "partie": "presentation",
+   "texte": "À la fin de cette courte mini-formation, tu sauras créer et publier la page web de ton commerce."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Étape 1, ouvre ton navigateur sur téléphone ou ordinateur et rends-toi directement sur le site claude.ai."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Claude est un assistant IA, c'est-à-dire un outil intelligent qui comprend tes instructions en français et génère du code.",
+   "dit": "Claude est un assistant i-a, c'est-à-dire un outil intelligent qui comprend tes instructions en français et génère du code."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Un site vitrine, c'est une page web simple qui présente tes produits et permet aux clients de te contacter."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Connecte-toi simplement avec ton adresse Google pour accéder gratuitement à l'interface de discussion sans payer aucun abonnement."
+  },
+  {
+   "partie": "demo1",
+   "texte": "Étape 2, copie et colle le prompt exact préparé dans la zone de texte pour commander ton site."
+  },
+  {
+   "partie": "demo1",
+   "texte": "Demande à Claude de rédiger le code HTML et CSS complet d'un site avec un bouton vers ton WhatsApp."
+  },
+  {
+   "partie": "demo1",
+   "texte": "L'outil génère automatiquement tout le code informatique nécessaire avec tes textes, tes couleurs et tes sections de présentation."
+  },
+  {
+   "partie": "demo1",
+   "texte": "Regarde le résultat : tu obtiens un bloc de code propre que tu peux utiliser directement pour ta boutique."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Étape 3, clique sur le bouton de copie du code fourni par Claude sur ton écran de téléphone."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Ouvre une application de bloc-notes ou un éditeur de texte puis colle l'intégralité du code copié dedans."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Un éditeur de texte, c'est un logiciel simple qui permet de lire et modifier des fichiers informatiques bruts."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Enregistre ensuite ce document sur ton appareil sous le nom précis index.html pour valider le format web."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Étape 4, double-clique sur le fichier sauvegardé pour l'ouvrir dans ton navigateur web et tester ton site."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Clique directement sur le bouton WhatsApp du site pour vérifier qu'il ouvre bien ta discussion privée sans erreur."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Cette étape de test permet de confirmer que tes clients à Adidogomé pourront te joindre en un clic."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Si le lien fonctionne correctement, ton prospect bascule directement sur ton numéro pour valider sa commande."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Étape 5, rends-toi sur le site replit.com pour héberger gratuitement ton fichier en ligne en deux minutes."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Un hébergeur, c'est un serveur connecté en permanence qui rend ta page accessible au monde entier sur Internet."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Dépose ton fichier index.html puis récupère le lien public généré pour l'ajouter sur tes réseaux sociaux."
+  },
+  {
+   "partie": "erreur",
+   "texte": "L'erreur fréquente à éviter est d'oublier de remplacer l'indicatif international avant ton numéro WhatsApp dans le code."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Si tu oublies l'indicatif de ton pays, les acheteurs cliqueront sans jamais pouvoir t'envoyer de message."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Astuce de pro, demande à Claude d'ajouter un bouton de paiement direct par Mobile Money sur la page."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Indique clairement tes instructions d'envoi pour que le client règle son achat avant de récupérer sa commande."
+  },
+  {
+   "partie": "recap",
+   "texte": "En résumé : tu ouvres Claude, tu colles le prompt, tu enregistres le fichier et tu publies sur Replit."
+  },
+  {
+   "partie": "recap",
+   "texte": "Cinq actions très simples pour offrir une vitrine professionnelle moderne à ton restaurant ou à ta boutique."
+  },
+  {
+   "partie": "recap",
+   "texte": "J'ai moi-même créé l'application Talkami sur mon téléphone sans coder pour aider à parler anglais."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail ; ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ]
+}

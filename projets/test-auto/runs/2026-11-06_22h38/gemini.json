@@ -1,0 +1,516 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 1.6
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 26.8
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 32.6
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 1.2
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 5.5,
+   "erreurs": [
+    "Ton script fait 264 mots, il en faut entre 463 et 663 : ajoute environ 199 mots (par exemple 15 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "16 phrases : il en faut entre 34 et 56."
+   ]
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 7.0,
+   "erreurs": [
+    "Ton script fait 409 mots, il en faut entre 463 et 663 : ajoute environ 54 mots (par exemple 4 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "27 phrases : il en faut entre 34 et 56."
+   ]
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 3.6
+  },
+  {
+   "essai": 3,
+   "modele": "gemini-3.6-flash",
+   "secondes": 16.7,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "CREE TON",
+    "SITE WEB",
+    "AVEC CLAUDE"
+   ],
+   "cle": "SITE"
+  },
+  "titre": "Crée le site de ta boutique avec Claude, étape par étape",
+  "description": "Apprends à créer le site web professionnel de ta boutique ou restaurant à Lomé en utilisant l'IA Claude sans savoir coder.",
+  "hashtags": [
+   "#IA",
+   "#Lome",
+   "#Togo",
+   "#SiteWeb",
+   "#Claude",
+   "#Entrepreneuriat"
+  ],
+  "prompt": "Agis en expert du web. Rédige le code complet en HTML et CSS d'un site vitrine moderne pour une boutique de vêtements à Adidogomé Lomé. Inclus une section d'accueil, un catalogue de trois produits, et un bouton de commande directe par WhatsApp.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tu vends des articles sur les réseaux sociaux mais tu n'as pas de site web pour ta boutique à Lomé ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Aujourd'hui, tu vas apprendre à créer ton propre site vitrine en quelques minutes sans écrire une seule ligne de code."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Beaucoup de commerçants pensent encore qu'il faut dépenser une fortune pour avoir une belle présence professionnelle en ligne."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Pourtant, avec les bons outils d'intelligence artificielle et un accompagnement pratique, tout devient simple et immédiatement accessible."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, de Lomé IA School, et nous allons utiliser ensemble l'outil Claude pour réaliser ce projet.",
+    "dit": "Je suis Joseph, de Lomé i-a School, et nous allons utiliser ensemble l'outil Claude pour réaliser ce projet."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Notre mission au quotidien est de t'aider concrètement à transformer tes compétences en réelles opportunités numériques modernes."
+   },
+   {
+    "partie": "presentation",
+    "texte": "À la fin de cette courte vidéo, tu sauras exactement comment concevoir et publier ta propre plateforme web."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Premièrement, rends-toi sur le site officiel de Claude avec ton téléphone intelligent ou ton ordinateur de bureau."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Claude est un assistant virtuel très puissant qui comprend le langage humain et génère du code informatique propre."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Un assistant virtuel, c'est une intelligence artificielle conçue pour exécuter tes demandes textuelles de manière autonome."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Il suffit d'ouvrir un compte totalement gratuit sur la plateforme pour commencer à discuter avec lui immédiatement."
+   },
+   {
+    "partie": "demo1",
+    "texte": "Écris ce prompt très précis dans la zone de discussion pour lancer la création automatique de ta page."
+   },
+   {
+    "partie": "demo1",
+    "texte": "Précise clairement le nom de ton commerce, ton quartier à Lomé et la liste des produits à présenter."
+   },
+   {
+    "partie": "demo1",
+    "texte": "L'intelligence artificielle rédige instantanément la structure complète du site avec de très belles couleurs et des textes."
+   },
+   {
+    "partie": "demo1",
+    "texte": "Tu obtiens directement à l'écran un résultat visuel propre, lisible et parfaitement adapté à ton activité commerciale."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Deuxièmement, copie l'intégralité du code informatique généré par l'outil et colle-le dans un éditeur de texte simple."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Un éditeur de texte, c'est un logiciel de base conçu pour enregistrer des fichiers informatiques sans complication."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Tu peux utiliser des applications gratuites disponibles directement sur ton smartphone Android ou sur ton ordinateur."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Enregistre simplement ce fichier sous le nom index.html pour que les navigateurs web puissent le lire sans erreur."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Troisièmement, teste ton site localement pour vérifier que le bouton de commande WhatsApp fonctionne parfaitement pour tes clients."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Cette vérification rapide évite de perdre des ventes précieuses à cause d'un lien de redirection mal configuré."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Le client clique sur ton produit et arrive directement dans ta discussion privée pour valider son paiement."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Cela simplifie énormément le parcours d'achat de tes visiteurs et augmente naturellement tes ventes au quotidien."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Quatrièmement, héberge ton nouveau site vitrine sur une plateforme gratuite comme Replit pour le rendre accessible partout."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Un hébergeur web, c'est un ordinateur connecté en permanence qui stocke tes fichiers pour les rendre publics."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Obtiens ainsi un lien internet unique à partager facilement sur tes statuts WhatsApp et tes pages Facebook."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Attention à ne pas oublier d'adapter le numéro de téléphone pour le paiement Mobile Money dans le code."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Une simple erreur de chiffre dans le script empêcherait tes nouveaux clients d'envoyer leur argent correctement."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Astuce de pro, demande à Claude d'ajouter des avis clients fictifs pour rassurer rapidement les futurs visiteurs."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Des témoignages locaux et chaleureux renforcent immédiatement la crédibilité et la confiance des acheteurs encore hésitants."
+   },
+   {
+    "partie": "recap",
+    "texte": "En résumé, tu ouvres Claude, tu génères le code HTML, tu vérifies le lien WhatsApp et tu publies."
+   },
+   {
+    "partie": "recap",
+    "texte": "Seulement quatre étapes très simples pour propulser durablement ton activité commerciale vers le succès numérique."
+   },
+   {
+    "partie": "recap",
+    "texte": "Tu possèdes maintenant un véritable outil de vente autonome qui travaille pour toi nuit et jour."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'IA change déjà le travail, et ceux qui l'apprennent prennent de l'avance.",
+    "dit": "L'i-a change déjà le travail, et ceux qui l'apprennent prennent de l'avance."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african woman shop smartphone",
+    "texte": "BOUTIQUE EN LIGNE"
+   },
+   {
+    "type": "question",
+    "texte": "CREER SON SITE",
+    "sous": "SANS CODER",
+    "emoji": "1f4a1"
+   },
+   {
+    "type": "carte",
+    "kicker": "MYTHE",
+    "texte": "PAS BESOIN\nDE DEPENSER\nUNE FORTUNE",
+    "sous": "ACCESSIBLE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african team working together",
+    "texte": "SOLUTION SIMPLE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man smiling presentation",
+    "texte": "JOSEPH LOME IA"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Transformer tes compétences en opportunités numériques.",
+    "emoji": "1f3af"
+   },
+   {
+    "type": "carte",
+    "kicker": "OBJECTIF",
+    "texte": "CREER ET PUBLIER\nTA PLATEFORME\nFACILE",
+    "sous": "RESULTAT PRO",
+    "emoji": "1f680"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "OUVRIR CLAUDE\nSUR NAVIGATEUR",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "outil",
+    "outil": "claude"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Assistant IA : programme intelligent qui exécute tes demandes.",
+    "emoji": "1f9e0"
+   },
+   {
+    "type": "carte",
+    "kicker": "GRATUIT",
+    "texte": "CREE TON COMPTE\nEN QUELQUES\nSECONDES",
+    "sous": "FACILE",
+    "emoji": "2705"
+   },
+   {
+    "type": "prompt",
+    "texte": "Rédige le code HTML d'un site vitrine pour boutique à Lomé",
+    "geste": "designe"
+   },
+   {
+    "type": "carte",
+    "kicker": "DETAILS",
+    "texte": "DONNE LE NOM\nET LE QUARTIER\nDE TA BOUTIQUE",
+    "sous": "PRECIS"
+   },
+   {
+    "type": "demo",
+    "outil": "claude",
+    "prompt": "Code HTML site boutique Lomé",
+    "reponse": "<!DOCTYPE html>\n<html>\n<head><title>Boutique Adidogomé</title></head>\n<body>\n<h1>Bienvenue dans notre boutique</h1>\n<button>Commander sur WhatsApp</button>\n</body>\n</html>"
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur proud store",
+    "texte": "SITE PROFESSIONNEL"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "COPIER LE CODE\nPRODUIT PAR L'IA",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Éditeur de texte : logiciel simple pour enregistrer ton code."
+   },
+   {
+    "type": "photo",
+    "recherche": "african student typing smartphone",
+    "texte": "SUR SMARTPHONE"
+   },
+   {
+    "type": "carte",
+    "kicker": "FICHIER",
+    "texte": "ENREGISTRE SOUS\nLE NOM INDEX.HTML\nFACILE",
+    "sous": "ASTUCE"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "TESTER LE LIEN\nWHATSAPP",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "alerte",
+    "texte": "VERIFIE BIEN\nLES LIENS",
+    "emoji": "26a0_fe0f"
+   },
+   {
+    "type": "photo",
+    "recherche": "african customer happy phone",
+    "texte": "COMMANDE DIRECTE"
+   },
+   {
+    "type": "carte",
+    "kicker": "VENTES",
+    "texte": "SIMPLIFIE LE\nPARCOURS CLIENT\nRAPIDE",
+    "sous": "EFFICACE"
+   },
+   {
+    "type": "numero",
+    "n": 4,
+    "texte": "HEBERGER SUR\nUNE PLATEFORME",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Hébergeur web : serveur qui rend ton site visible sur Internet."
+   },
+   {
+    "type": "carte",
+    "kicker": "PARTAGE",
+    "texte": "OBTIENS UN LIEN\nPOUR TES STATUTS\nWHATSAPP",
+    "sous": "VISIBLE"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION AUX\nNUMEROS MOBILE",
+    "emoji": "26a0_fe0f"
+   },
+   {
+    "type": "alerte",
+    "texte": "EVITE LES ERREURS\nDE CHIFFRES",
+    "emoji": "274c"
+   },
+   {
+    "type": "carte",
+    "kicker": "ASTUCE",
+    "texte": "AJOUTER DES AVIS\nPOUR RASSURER\nLES CLIENTS",
+    "sous": "PRO",
+    "emoji": "2728"
+   },
+   {
+    "type": "photo",
+    "recherche": "african businesswoman smiling",
+    "texte": "CONFIANCE CLIENT"
+   },
+   {
+    "type": "liste",
+    "titre": "RECAPITULATIF",
+    "items": [
+     {
+      "texte": "Claude",
+      "a": "Claude"
+     },
+     {
+      "texte": "Code",
+      "a": "code"
+     },
+     {
+      "texte": "WhatsApp",
+      "a": "WhatsApp"
+     },
+     {
+      "texte": "Mettre en ligne",
+      "a": "publies."
+     }
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "BILAN",
+    "texte": "QUATRE ETAPES\nPOUR TON ACTIVITE",
+    "sous": "SUCCES",
+    "emoji": "1f389"
+   },
+   {
+    "type": "photo",
+    "recherche": "african market online sales phone",
+    "texte": "AUTONOMIE TOTALE"
+   },
+   {
+    "type": "carte",
+    "kicker": "AVENIR",
+    "texte": "L'IA CHANGE\nDEJA LE\nTRAVAIL",
+    "sous": "LOME IA SCHOOL",
+    "emoji": "1f680"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "sites",
+ "secondes": 95.0
+}
