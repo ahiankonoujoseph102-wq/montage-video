@@ -1,0 +1,405 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "erreur": "HTTP 503"
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "HTTP 503"
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 503"
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.6-flash",
+   "secondes": 21.9,
+   "erreurs": [
+    "302 mots : il en faut entre 330 et 420."
+   ]
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "erreur": "HTTP 503"
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "TimeoutError('The read operation timed out')"
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "TimeoutError('The read operation timed out')"
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.6-flash",
+   "secondes": 51.4,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "titre": "Rédiger un CV percutant avec l'IA",
+  "description_tiktok": "Apprends à utiliser l'IA pour créer un CV parfait et décrocher plus d'entretiens à Lomé ! 🚀 #LomeIASchool #IntelligenceArtificielle #Togo #TiktokTogo #FormationIA #ConseilEmploi #TechTogo",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tu envoies des dizaines de CV chaque semaine mais tu n'obtiens aucun entretien ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Tu penses que ton profil manque d'expérience ou qu'il n'est pas assez attrayant ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "En réalité, le problème vient souvent de la façon dont tu rediges tes compétences."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Je suis Joseph, de Lomé IA School, et je vais te montrer une méthode simple.",
+    "dit": "Je suis Joseph, de Lomé i-a School, et je vais te montrer une méthode simple."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Aujourd'hui, nous allons transformer ton CV grâce à des demandes très précises."
+   },
+   {
+    "partie": "r1",
+    "texte": "Étape 1 : Demande à l'outil de jouer le rôle d'un recruteur exigeant."
+   },
+   {
+    "partie": "r1",
+    "texte": "Écris à ChatGPT ou Claude ceci : Tu es un responsable des ressources humaines."
+   },
+   {
+    "partie": "r1",
+    "texte": "Analyse mon texte et donne-moi trois points faibles à corriger immédiatement."
+   },
+   {
+    "partie": "r1",
+    "texte": "L'intelligence artificielle va alors pointer du doigt tes phrases vagues et tes imprécisions."
+   },
+   {
+    "partie": "r2",
+    "texte": "Étape 2 : Reformule tes réalisations avec des exemples d'actions très concrètes."
+   },
+   {
+    "partie": "r2",
+    "texte": "Ne dis plus simplement que tu as géré un projet ou une équipe."
+   },
+   {
+    "partie": "r2",
+    "texte": "Demande plutôt : Reformule mes expériences en utilisant des verbes d'action puissants."
+   },
+   {
+    "partie": "r2",
+    "texte": "L'assistant te proposera des formulations dynamiques qui captent tout de suite l'attention."
+   },
+   {
+    "partie": "r3",
+    "texte": "Étape 3 : Adapte ton document à chaque offre d'emploi spécifique."
+   },
+   {
+    "partie": "r3",
+    "texte": "Copie le texte de l'annonce et colle-le directement dans ta discussion."
+   },
+   {
+    "partie": "r3",
+    "texte": "Écris ensuite cette phrase simple : Trouve les mots clés essentiels de cette offre."
+   },
+   {
+    "partie": "r3",
+    "texte": "Il ne te reste plus qu'à intégrer ces mots importants dans tes explications."
+   },
+   {
+    "partie": "morale",
+    "texte": "Ces outils ne remplacent pas ton talent, mais ils savent valoriser ton parcours."
+   },
+   {
+    "partie": "morale",
+    "texte": "En posant les bonnes questions, tu obtiens des résultats impressionnants très rapidement."
+   },
+   {
+    "partie": "appel",
+    "texte": "Tu veux maîtriser ces technologies et devenir un expert dans ton domaine ?"
+   },
+   {
+    "partie": "appel",
+    "texte": "Rejoins-nous à Adidogomé, Lycée Moderne 2, pour une consultation gratuite."
+   },
+   {
+    "partie": "appel",
+    "texte": "Clique sur le lien dans la bio pour réserver ton créneau avec nous."
+   },
+   {
+    "partie": "appel",
+    "texte": "Tu peux aussi nous écrire directement sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Tu peux aussi nous écrire directement sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   },
+   {
+    "partie": "appel",
+    "texte": "Quel est le plus grand obstacle que tu rencontres dans ta recherche d'emploi ?"
+   },
+   {
+    "partie": "appel",
+    "texte": "Dis-le-moi en commentaire et je te donnerai une astuce adaptée à ton cas."
+   },
+   {
+    "partie": "appel",
+    "texte": "Lomé IA School : maîtrisez l'IA, et transformez vos compétences en opportunités.",
+    "dit": "Lomé i-a School : maîtrisez l'i-a, et transformez vos compétences en opportunités."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "question",
+    "texte": "AUCUN ENTRETIEN ?",
+    "sous": "Tes CV restent sans réponse ?",
+    "emoji": "1f62c",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "Manque d'expérience",
+     "ok": false
+    },
+    "droite": {
+     "texte": "Mauvaise présentation",
+     "ok": true
+    },
+    "a": [
+     "expérience",
+     "attrayant"
+    ],
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION À LA\nRÉDACTION !",
+    "emoji": "26a0_fe0f",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "PRÉSENTATION",
+    "texte": "JOSEPH DE LOMÉ\nIA SCHOOL",
+    "sous": "Formateur en IA",
+    "emoji": "1f44b",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "TRANSFORMATION",
+    "texte": "OPTIMISE TON CV\nAVEC L'IA",
+    "emoji": "1f680",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "JOUE LE RÔLE\nDU RECRUTEUR",
+    "emoji": "1f9d0",
+    "geste": "compte",
+    "doigts": 1,
+    "expression": "neutre"
+   },
+   {
+    "type": "prompt",
+    "texte": "Tu es un responsable des ressources humaines.",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "prompt",
+    "texte": "Analyse mon texte et donne-moi trois points faibles à corriger.",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Vos phrases sont trop vagues. Précisez vos actions et vos résultats avec exactitude.",
+    "emoji": "1f4ac",
+    "geste": "explique",
+    "expression": "surpris"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "UTILISE DES VERBES\nD'ACTION",
+    "emoji": "1f4aa",
+    "geste": "compte",
+    "doigts": 2,
+    "expression": "sourire"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "J'ai géré un projet",
+     "ok": false
+    },
+    "droite": {
+     "texte": "J'ai piloté l'équipe",
+     "ok": true
+    },
+    "a": [
+     "géré",
+     "équipe."
+    ],
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "prompt",
+    "texte": "Reformule mes expériences en utilisant des verbes d'action puissants.",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Coordonné la communication, optimisé les processus et structuré les tâches.",
+    "emoji": "2728",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "ADAPTE TON CV\nÀ L'OFFRE",
+    "emoji": "1f3af",
+    "geste": "compte",
+    "doigts": 3,
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "METHODE",
+    "texte": "COLLER L'ANNONCE\nDANS LE CHAT",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "prompt",
+    "texte": "Trouve les mots clés essentiels de cette offre.",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Mots clés identifiés : Gestion de projet, Rigueur, Analyse, Organisation.",
+    "emoji": "1f50e",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "VALEUR",
+    "texte": "VALORISE TON\nVRAI TALENT",
+    "emoji": "1f9e0",
+    "geste": "bras-croises",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "EFFICACITÉ",
+    "texte": "RÉSULTATS RAPIDES\nET CONCRETS",
+    "emoji": "2705",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "question",
+    "texte": "PRÊT À APPRENDRE ?",
+    "sous": "Maîtrise les meilleurs outils",
+    "emoji": "1f914",
+    "geste": "explique",
+    "expression": "surpris"
+   },
+   {
+    "type": "carte",
+    "kicker": "ADRESSE",
+    "texte": "ADIDOGOMÉ\nLYCÉE MODERNE 2",
+    "sous": "Consultation gratuite",
+    "emoji": "1f4a1",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "ACTION",
+    "texte": "LIEN EN BIO",
+    "sous": "RÉSERVE TA SESSION",
+    "emoji": "1f449",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "question",
+    "texte": "TON OBSTACLE ?",
+    "sous": "Écris-le en commentaire",
+    "emoji": "1f4ac",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉCHANGE",
+    "texte": "REPONSE EN\nCOMMENTAIRE",
+    "emoji": "1f60e",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "final",
+    "lignes": [
+     "Lomé IA School",
+     "Maîtrisez l'IA et transformez",
+     "vos compétences en opportunités"
+    ],
+    "geste": "bras-croises",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "bleu",
+   "violet",
+   "orange",
+   "vert",
+   "nuit",
+   "bleu"
+  ]
+ }
+}
