@@ -53,21 +53,22 @@ jobs:
       # Caches gardés entre les lancements (gratuits, 10 Go par dépôt) : modèles, paquets Python, paquets Node
       # (avec le navigateur de rendu de Remotion).
       - name: Cache des modèles (voix, transcription)
-        uses: actions/cache@v5
+        id: hf
+        uses: actions/cache/restore@v5
         with:
           path: ~/.cache/huggingface
           key: modeles-hf-v2
 
       - name: Cache des paquets Python (environnement complet)
         id: venv
-        uses: actions/cache@v5
+        uses: actions/cache/restore@v5
         with:
           path: ~/venv-auto
           key: venv-${{ runner.os }}-py${{ steps.py.outputs.python-version }}-v1
 
       - name: Cache des paquets Node et du navigateur de rendu
         id: node
-        uses: actions/cache@v5
+        uses: actions/cache/restore@v5
         with:
           path: node_modules
           key: node-${{ hashFiles('package-lock.json') }}-v1
@@ -83,6 +84,14 @@ jobs:
           echo "$HOME/venv-auto/bin" >> "$GITHUB_PATH"
           if [ "${{ steps.node.outputs.cache-hit }}" != "true" ]; then npm ci --no-audit --no-fund; fi
           echo "T_INSTALL=$(date +%s)" >> "$GITHUB_ENV"
+
+      # Chaque cache est enregistré dès qu'il est complet, même si une étape suivante échoue.
+      - name: Enregistrer le cache Python
+        if: steps.venv.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: ~/venv-auto
+          key: ${{ steps.venv.outputs.cache-primary-key }}
 
       - name: Supprimer les vidéos des Releases de plus de 30 jours
         env:
@@ -113,6 +122,13 @@ jobs:
           python scripts/test_auto.py "$RUNNER_TEMP/phrases" projets/test-auto/run | tail -1 | tee projets/test-auto/run/preparation.json
           echo "T_PREP=$(date +%s)" >> "$GITHUB_ENV"
 
+      - name: Enregistrer le cache des modèles
+        if: always() && steps.hf.outputs.cache-hit != 'true' && env.T_PREP != ''
+        uses: actions/cache/save@v5
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ steps.hf.outputs.cache-primary-key }}
+
       - name: Rendu de la vidéo
         run: |
           # Haute qualité pour TikTok : 1080 × 1920, 30 i/s, H.264 CRF 16 (un seul encodage), son AAC 256 kbit/s 48 kHz.
@@ -122,6 +138,13 @@ jobs:
             -c:a aac -b:a 256k -ar 48000 -shortest -movflags +faststart out/video.mp4
           ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,bit_rate -of compact out/video.mp4
           echo "T_RENDU=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Enregistrer le cache Node (avec le navigateur de rendu)
+        if: always() && steps.node.outputs.cache-hit != 'true' && env.T_RENDU != ''
+        uses: actions/cache/save@v5
+        with:
+          path: node_modules
+          key: ${{ steps.node.outputs.cache-primary-key }}
 
       - name: Minutes GitHub du mois (alerte sous 300 minutes gratuites)
         env:
