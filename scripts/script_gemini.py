@@ -152,6 +152,8 @@ PLAN VISUEL : pour CHAQUE phrase, une scène (même ordre, même nombre). Types 
 - "photo" {recherche (3 à 5 mots EN ANGLAIS pour une banque d'images ; ajoute "african" quand on voit des personnes,
   ex. "african woman shop smartphone"), texte (2 à 4 mots en majuscules)} : vraie photo ou vidéo libre de droits de la
   situation concrète dont parle la phrase ; 6 à 10 par vidéo, jamais de célébrité, de marque ni de logo.
+Chaque scène est un objet avec la clé "type", par exemple {"type": "carte", "kicker": "ÉTAPE 1", "texte": "OUVRE\\nCLAUDE",
+"emoji": "1f4a1"} ou {"type": "photo", "recherche": "african woman laptop", "texte": "TA BOUTIQUE"}.
 Les mots "a" doivent être copiés EXACTEMENT tels qu'ils sont écrits dans la phrase (avec leur ponctuation collée, ex. "mots,").
 Champs facultatifs pour le double : "geste" parmi repos, explique, designe, compte, bras-croises, pouce ; "expression"
 parmi neutre, parle, grimace, sourire, surpris.
@@ -326,10 +328,19 @@ def verifier(d, deja):
                 if int(n) > 10:
                     err.append(f"{ou} : nombre « {n} » interdit (aucun chiffre non vérifié).")
     for i, s in enumerate(sc):
-        if s.get("type") not in TYPES:  # type rangé sous un autre nom par Gemini
-            for k in ("type_scene", "typeScene", "scene", "kind", "genre", "layout"):
-                if isinstance(s.get(k), str) and s[k] in TYPES:
+        if s.get("type") not in TYPES:  # type rangé autrement par Gemini : {"carte": {...}}, {"scene": {...}}, {"genre": "carte"}
+            for k, v in list(s.items()):
+                if isinstance(v, str) and v in TYPES and k != "texte":
                     s["type"] = s.pop(k)
+                    break
+                if k in TYPES and isinstance(v, dict):
+                    s.pop(k)
+                    s.update(v)
+                    s["type"] = k
+                    break
+                if isinstance(v, dict) and v.get("type") in TYPES:
+                    s.pop(k)
+                    s.update(v)
                     break
         if s.get("type") not in TYPES:
             err.append(f"Scène {i} : type « {s.get('type')} » inconnu.")
