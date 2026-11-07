@@ -174,7 +174,7 @@ jobs:
             python scripts/recevoir_voix.py "$RUNNER_TEMP/voix"
             python scripts/decouper_voix.py "$(ls "$RUNNER_TEMP"/voix/voix* | head -1)" projets/test-auto/run/script.json "$RUNNER_TEMP/phrases"
           elif [ "${{ inputs.voix }}" != "clonee" ] && python scripts/voix_gemini.py projets/test-auto/run/script.json "$RUNNER_TEMP/voix_gemini.wav" \
-               && python scripts/decouper_voix.py "$RUNNER_TEMP/voix_gemini.wav" projets/test-auto/run/script.json "$RUNNER_TEMP/phrases"; then
+               && SOURCE_VOIX="voix Gemini (synthèse)" python scripts/decouper_voix.py "$RUNNER_TEMP/voix_gemini.wav" projets/test-auto/run/script.json "$RUNNER_TEMP/phrases"; then
             echo "Voix Gemini utilisée"
           else
             cp projets/voix/reference.wav "$RUNNER_TEMP/reference.wav"

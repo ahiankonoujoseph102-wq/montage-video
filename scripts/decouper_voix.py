@@ -64,7 +64,7 @@ for i in range(n):  # pas de chevauchement, marges douces
         w.setnchannels(1), w.setsampwidth(2), w.setframerate(SR)
         w.writeframes((np.clip(seg, -1, 1) * 32767).astype(np.int16).tobytes())
 reconnus = sum(n for *_, n in sm.get_matching_blocks())
-mesures = {"source": "voix enregistrée par Joseph", "duree_s": round(duree, 1), "mots_script": len(cibles),
+mesures = {"source": __import__("os").environ.get("SOURCE_VOIX", "voix enregistrée par Joseph"), "duree_s": round(duree, 1), "mots_script": len(cibles),
            "mots_reconnus": reconnus, "phrases_reperees": len(debut), "phrases": n}
 (out / "mesures.json").write_text(json.dumps(mesures, ensure_ascii=False))
 print(json.dumps(mesures, ensure_ascii=False))
