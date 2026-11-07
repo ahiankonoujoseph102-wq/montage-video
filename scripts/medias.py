@@ -101,30 +101,40 @@ def pexels_photo(recherche, cle, dest):
 
 
 def openverse_photo(recherche, dest):
-    """Photo du domaine public (PDM) ou CC0 : aucune condition, usage commercial libre."""
+    """Photo du domaine public, CC0 ou CC BY (usage commercial libre ; pour CC BY, l'auteur est crédité sur l'image et
+    dans les sources). Si la recherche ne donne rien, elle est simplifiée (sans « african », puis 2 mots)."""
+    mots = recherche.split()
+    variantes = list(dict.fromkeys([recherche, " ".join(m for m in mots if m.lower() != "african"),
+                                    " ".join([m for m in mots if m.lower() != "african"][-2:])]))
     vus, debut, essais = set(), time.time(), 0
-    for extra in ({"source": "stocksnap,rawpixel,wikimedia"}, {}):
-        params = {"q": recherche, "license": "cc0,pdm", "page_size": 20, "mature": "false", **extra}
-        d = get_json("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(params))
-        for r in d.get("results", []):
-            if r["id"] in vus or (r.get("width") or 0) < 1000 or (r.get("height") or 1) > (r.get("width") or 0):
-                continue
-            vus.add(r["id"])
-            essais += 1
-            if essais > 6 or time.time() - debut > 60:  # 1 min au plus par recherche
-                return None
-            brut = dest.with_suffix(".brut")
+    for q in [v for v in variantes if v.strip()]:
+        for extra in ({"source": "stocksnap,rawpixel,wikimedia,flickr"}, {}):
+            params = {"q": q, "license": "cc0,pdm,by", "license_type": "commercial", "page_size": 20,
+                      "mature": "false", **extra}
             try:
-                telecharger(r["url"], brut, 25_000_000)
-                preparer_photo(brut, dest)
+                d = get_json("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(params))
             except Exception:
                 continue
-            finally:
-                brut.unlink(missing_ok=True)
-            lic = (r.get("license") or "").upper()
-            return {"source": f"Openverse / {r.get('source', '')}", "auteur": r.get("creator") or "inconnu",
-                    "page": r.get("foreign_landing_url", ""),
-                    "licence": "Domaine public (PDM)" if lic == "PDM" else f"CC0 {r.get('license_version', '')}".strip()}
+            for r in d.get("results", []):
+                if r["id"] in vus or (r.get("width") or 0) < 900 or (r.get("height") or 1) > (r.get("width") or 0) * 1.1:
+                    continue
+                vus.add(r["id"])
+                essais += 1
+                if essais > 10 or time.time() - debut > 75:  # 75 s au plus par recherche
+                    return None
+                brut = dest.with_suffix(".brut")
+                try:
+                    telecharger(r["url"], brut, 25_000_000)
+                    preparer_photo(brut, dest)
+                except Exception:
+                    continue
+                finally:
+                    brut.unlink(missing_ok=True)
+                lic = (r.get("license") or "").lower()
+                licence = {"pdm": "Domaine public (PDM)", "cc0": f"CC0 {r.get('license_version', '')}".strip()}.get(
+                    lic, f"CC BY {r.get('license_version', '')} (attribution : {r.get('creator') or 'auteur inconnu'})")
+                return {"source": f"Openverse / {r.get('source', '')}", "auteur": r.get("creator") or "inconnu",
+                        "page": r.get("foreign_landing_url", ""), "licence": licence, "recherche_utilisee": q}
     return None
 
 
@@ -238,7 +248,8 @@ def main(dossier):
             continue
         fichier, credit = trouve
         s["fichier"] = f"test-auto/photos/{fichier.name}"
-        s["credit"] = credit["source"].split(" ")[0] + (f" · {credit['auteur']}" if credit["auteur"] else "")
+        s["credit"] = (f"Photo : {credit['auteur']} · {credit['licence'].split(' (')[0]}" if "CC BY" in credit["licence"]
+                       else credit["source"].split(" ")[0] + (f" · {credit['auteur']}" if credit["auteur"] else ""))
         n_photos += 1
         n_videos += fichier.suffix == ".mp4"
         sources.append({"type": "vidéo" if fichier.suffix == ".mp4" else "photo", "recherche": s["recherche"], **credit})
