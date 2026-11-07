@@ -1,0 +1,557 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 8.8
+  },
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 19.6
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 4.5,
+   "erreurs": [
+    "Ton script fait 162 mots, il en faut entre 463 et 663 : ajoute environ 301 mots (par exemple 23 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "17 phrases : il en faut entre 34 et 56.",
+    "[visuel] Seulement 3 scènes « photo » : il en faut 6 à 10 (vraies photos des situations).",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil)."
+   ]
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 5.8,
+   "erreurs": [
+    "Ton script fait 255 mots, il en faut entre 463 et 663 : ajoute environ 208 mots (par exemple 16 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "27 phrases : il en faut entre 34 et 56."
+   ]
+  },
+  {
+   "essai": 3,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 9.4,
+   "erreurs": [
+    "[visuel] Trop de cartes de texte (14) : remplace-les par des photos, démonstrations, listes ou outils."
+   ]
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "CREE",
+    "UN AGENT IA",
+    "SUR WHATSAPP"
+   ],
+   "cle": "AGENT"
+  },
+  "titre": "Crée ton agent IA pour répondre aux clients",
+  "description": "Apprends à configurer un assistant intelligent pour automatiser les réponses à tes clients sur WhatsApp.",
+  "hashtags": [
+   "#IA",
+   "#Lome",
+   "#Togo",
+   "#WhatsApp",
+   "#Business",
+   "#Astuce"
+  ],
+  "prompt": "Tu es l'assistant virtuel de ma boutique à Lomé. Ton rôle est de répondre aux clients sur WhatsApp en donnant les prix, les horaires et les disponibilités des articles. Sois poli, clair et concis dans tes réponses.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tu perds des heures précieuses à répéter les mêmes prix sur WhatsApp chaque jour ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Tes fidèles clients attendent parfois trop longtemps avant d'avoir une réponse claire."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Les commandes s'accumulent rapidement pendant que tu gères ton stock physique à la boutique."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Il est grand temps de confier cette tâche répétitive à un assistant intelligent."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, formateur professionnel en intelligence artificielle chez Lomé IA School au Togo.",
+    "dit": "Je suis Joseph, formateur professionnel en intelligence artificielle chez Lomé i-a School au Togo."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Aujourd'hui nous allons apprendre ensemble à créer ton tout premier agent IA personnalisé.",
+    "dit": "Aujourd'hui nous allons apprendre ensemble à créer ton tout premier agent i-a personnalisé."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Cette méthode simple va transformer complètement ta façon de gérer ta petite entreprise."
+   },
+   {
+    "partie": "r1",
+    "texte": "Un agent IA est un assistant virtuel qui agit directement à ta place pour répondre.",
+    "dit": "Un agent i-a est un assistant virtuel qui agit directement à ta place pour répondre."
+   },
+   {
+    "partie": "r1",
+    "texte": "Il utilise des instructions fixes pour guider et aider tes clients du mieux possible."
+   },
+   {
+    "partie": "r1",
+    "texte": "Il classe les messages reçus et envoie rapidement les informations les plus utiles."
+   },
+   {
+    "partie": "r1",
+    "texte": "C'est exactement comme avoir un employé disponible vingt-quatre heures sur vingt-quatre sans pause."
+   },
+   {
+    "partie": "r2",
+    "texte": "Pour la première étape, ouvre l'outil gratuit des Gems de Gemini sur ton écran."
+   },
+   {
+    "partie": "r2",
+    "texte": "Cet outil formidable permet de concevoir un assistant personnalisé en quelques clics seulement."
+   },
+   {
+    "partie": "r2",
+    "texte": "Connecte-toi simplement avec ton compte Google habituel pour accéder à cette interface."
+   },
+   {
+    "partie": "r2",
+    "texte": "Clique ensuite sur le bouton de création pour démarrer ton nouveau projet d'assistant."
+   },
+   {
+    "partie": "r3",
+    "texte": "Pour la deuxième étape, écris des instructions précises et claires pour ton commerce."
+   },
+   {
+    "partie": "r3",
+    "texte": "Explique clairement à l'intelligence artificielle les produits et les horaires de ta boutique."
+   },
+   {
+    "partie": "r3",
+    "texte": "Donne des exemples concrets pour bien guider ses futures réponses envers les acheteurs."
+   },
+   {
+    "partie": "r3",
+    "texte": "Précise le ton à adopter pour rester toujours chaleureux, poli et professionnel."
+   },
+   {
+    "partie": "r4",
+    "texte": "Pour la troisième étape, teste ton nouvel agent avant de le lancer publiquement."
+   },
+   {
+    "partie": "r4",
+    "texte": "Pose toi-même des questions de clients pour vérifier la qualité de ses réponses."
+   },
+   {
+    "partie": "r4",
+    "texte": "Corrige immédiatement si l'assistant fait une petite erreur dans ses explications."
+   },
+   {
+    "partie": "r4",
+    "texte": "Assure-toi que les informations fournies correspondent exactement à la réalité de ton stock."
+   },
+   {
+    "partie": "r5",
+    "texte": "Pour la quatrième étape, utilise l'application gratuite WhatsApp Business pour la base."
+   },
+   {
+    "partie": "r5",
+    "texte": "Configure soigneusement les messages d'absence automatiques pour rassurer tes acheteurs."
+   },
+   {
+    "partie": "r5",
+    "texte": "Ajoute ton catalogue complet pour que tout le monde puisse voir tes beaux articles."
+   },
+   {
+    "partie": "r5",
+    "texte": "Utilise les réponses rapides pour gagner un temps précieux lors des fortes affluences."
+   },
+   {
+    "partie": "morale",
+    "texte": "Évite surtout l'erreur classique de laisser l'intelligence artificielle répondre sans aucune surveillance humaine."
+   },
+   {
+    "partie": "morale",
+    "texte": "Garde toujours un œil attentif sur les messages importants pour maintenir la confiance."
+   },
+   {
+    "partie": "morale",
+    "texte": "Retiens bien que l'IA change déjà le travail et que ceux qui l'apprennent avancent vite.",
+    "dit": "Retiens bien que l'i-a change déjà le travail et que ceux qui l'apprennent avancent vite."
+   },
+   {
+    "partie": "morale",
+    "texte": "Maîtrise ces outils puissants pour développer durablement ton activité au Togo et partout ailleurs."
+   },
+   {
+    "partie": "morale",
+    "texte": "Tu disposes maintenant de toutes les bases nécessaires pour réussir ton automatisation."
+   },
+   {
+    "partie": "morale",
+    "texte": "Continue de pratiquer régulièrement pour t'améliorer chaque jour avec ton assistant."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'avenir appartient à ceux qui adoptent ces nouvelles compétences numériques très tôt."
+   },
+   {
+    "partie": "morale",
+    "texte": "N'oublie pas que chaque petit effort compte pour moderniser ton entreprise locale."
+   },
+   {
+    "partie": "morale",
+    "texte": "Sois fier du travail accompli pour propulser ton commerce vers de nouveaux sommets."
+   },
+   {
+    "partie": "morale",
+    "texte": "Partage cette méthode autour de toi pour aider d'autres entrepreneurs motivés."
+   },
+   {
+    "partie": "morale",
+    "texte": "Ensemble, faisons progresser l'usage des technologies utiles dans notre beau pays."
+   },
+   {
+    "partie": "morale",
+    "texte": "Prépare-toi pour notre prochaine formation exclusive dédiée aux outils numériques."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african merchant phone shop",
+    "texte": "CLIENTS"
+   },
+   {
+    "type": "carte",
+    "kicker": "ATTENTE",
+    "texte": "TROP DE TEMPS\nPOUR REPONDRE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman busy market smartphone",
+    "texte": "COMMANDES"
+   },
+   {
+    "type": "carte",
+    "kicker": "SOLUTION",
+    "texte": "UN ASSISTANT\nPOUR T'AIDER",
+    "emoji": "1f4a1"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man smiling office",
+    "texte": "JOSEPH"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "AGENT IA",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur smiling laptop",
+    "texte": "FORMATION"
+   },
+   {
+    "type": "carte",
+    "kicker": "DEFINITION",
+    "texte": "UN ASSISTANT\nQUI AGIT\nA TA PLACE",
+    "emoji": "1f4a1"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Instructions enregistrées avec succès.",
+    "emoji": "2705"
+   },
+   {
+    "type": "carte",
+    "kicker": "ROLE",
+    "texte": "AIDER TES\nCLIENTS"
+   },
+   {
+    "type": "demo",
+    "outil": "gemini",
+    "prompt": "Classe les messages urgents",
+    "reponse": "Message classé comme prioritaire pour le vendeur."
+   },
+   {
+    "type": "outil",
+    "outil": "gemini"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "OUTIL",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman shop",
+    "texte": "TA BOUTIQUE"
+   },
+   {
+    "type": "prompt",
+    "texte": "Tu es l'assistant virtuel de ma boutique.",
+    "geste": "designe"
+   },
+   {
+    "type": "demo",
+    "outil": "gemini",
+    "prompt": "Quels sont les horaires ?",
+    "reponse": "Nous sommes ouverts de huit heures à dix-neuf heures du lundi au samedi."
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "INSTRUCTIONS",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "photo",
+    "recherche": "african student smiling smartphone",
+    "texte": "PRODUITS"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Exemple pris en compte pour les réponses.",
+    "emoji": "2705"
+   },
+   {
+    "type": "numero",
+    "n": 4,
+    "texte": "TESTER",
+    "emoji": "1f50e",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "photo",
+    "recherche": "african businessman modern office",
+    "texte": "VERIFICATION"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Bonjour, comment puis-je vous aider aujourd'hui ?",
+    "emoji": "1f4ac"
+   },
+   {
+    "type": "numero",
+    "n": 5,
+    "texte": "WHATSAPP",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "carte",
+    "kicker": "MESSAGE",
+    "texte": "CONFIGURER\nL'ABSENCE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african team working together",
+    "texte": "CATALOGUE"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION\nSURVEILLE TON IA",
+    "emoji": "26a0"
+   },
+   {
+    "type": "carte",
+    "kicker": "ASTUCE",
+    "texte": "GARDE TOUJOURS\nUN HUMAIN",
+    "emoji": "1f44d"
+   },
+   {
+    "type": "carte",
+    "kicker": "AVENIR",
+    "texte": "APPRENDS L'IA\nCHAQUE JOUR",
+    "emoji": "1f680"
+   },
+   {
+    "type": "carte",
+    "kicker": "SUCCES",
+    "texte": "DEVELOPPE\nTON ACTIVITE",
+    "emoji": "1f389"
+   },
+   {
+    "type": "photo",
+    "recherche": "african person happy using phone",
+    "texte": "SUCCES"
+   },
+   {
+    "type": "carte",
+    "kicker": "OBJECTIF",
+    "texte": "MAITRISER\nL'OUTIL",
+    "emoji": "1f3af"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Assistant prêt pour le service."
+   },
+   {
+    "type": "carte",
+    "kicker": "PROGRES",
+    "texte": "AVANCER\nCHAQUE JOUR",
+    "emoji": "1f4aa"
+   },
+   {
+    "type": "photo",
+    "recherche": "african young entrepreneur smiling",
+    "texte": "AVENIR"
+   },
+   {
+    "type": "carte",
+    "kicker": "VISION",
+    "texte": "MODERNISER\nSON ENTREPRISE"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Formation validée avec succès.",
+    "emoji": "2705"
+   },
+   {
+    "type": "carte",
+    "kicker": "PARTAGE",
+    "texte": "AIDER LES\nAUTRES"
+   },
+   {
+    "type": "carte",
+    "kicker": "UNION",
+    "texte": "PROGRESSER\nENSEMBLE"
+   },
+   {
+    "type": "carte",
+    "kicker": "SUITE",
+    "texte": "PROCHAINE\nETAPE",
+    "emoji": "1f680"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "violet",
+   "orange",
+   "nuit",
+   "vert",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "nuit",
+   "vert",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "nuit",
+   "vert",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "nuit",
+   "vert",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "nuit",
+   "vert",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "nuit",
+   "vert",
+   "rose",
+   "bleu",
+   "violet",
+   "orange",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "agents",
+ "secondes": 48.8
+}

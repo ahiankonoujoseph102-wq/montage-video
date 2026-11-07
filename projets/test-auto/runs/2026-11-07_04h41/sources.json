@@ -1,0 +1,86 @@
+[
+ {
+  "type": "logo",
+  "outil": "WhatsApp",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "logo + capture",
+  "outil": "Gemini",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation ; capture de la page publique"
+ },
+ {
+  "type": "photo",
+  "recherche": "african merchant phone shop",
+  "source": "Openverse / flickr",
+  "auteur": "Oxfam East Africa",
+  "page": "https://www.flickr.com/photos/46434833@N05/5757861495",
+  "licence": "CC BY 2.0 (attribution : Oxfam East Africa)",
+  "recherche_utilisee": "merchant phone shop"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman busy market smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/44876337385",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african woman busy market smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man smiling office",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/30849316687",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african man smiling office"
+ },
+ {
+  "type": "photo",
+  "recherche": "african entrepreneur smiling laptop",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/43972158150",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "entrepreneur smiling laptop"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman shop",
+  "source": "Openverse / flickr",
+  "auteur": "Kheel Center, Cornell University Library",
+  "page": "https://www.flickr.com/photos/38445726@N04/5279601872",
+  "licence": "CC BY 2.0 (attribution : Kheel Center, Cornell University Library)",
+  "recherche_utilisee": "african woman shop"
+ },
+ {
+  "type": "photo",
+  "recherche": "african student smiling smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "Kartlyn Earth & ArtKN",
+  "page": "https://www.flickr.com/photos/149685850@N05/38438110522",
+  "licence": "Domaine public (PDM)",
+  "recherche_utilisee": "student smiling smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african businessman modern office",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/45739297502",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african businessman modern office"
+ },
+ {
+  "type": "photo",
+  "recherche": "african team working together",
+  "source": "Openverse / flickr",
+  "auteur": "US Army Africa",
+  "page": "https://www.flickr.com/photos/36281822@N08/4089995942",
+  "licence": "CC BY 2.0 (attribution : US Army Africa)",
+  "recherche_utilisee": "african team working together"
+ }
+]

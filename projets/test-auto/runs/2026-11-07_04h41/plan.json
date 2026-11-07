@@ -1,0 +1,330 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "recherche": "african merchant phone shop",
+   "texte": "CLIENTS",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Photo : Oxfam East Africa · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "ATTENTE",
+   "texte": "TROP DE TEMPS\nPOUR REPONDRE"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman busy market smartphone",
+   "texte": "COMMANDES",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "SOLUTION",
+   "texte": "UN ASSISTANT\nPOUR T'AIDER",
+   "emoji": "1f4a1"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man smiling office",
+   "texte": "JOSEPH",
+   "fichier": "test-auto/photos/04.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "AGENT IA",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "photo",
+   "recherche": "african entrepreneur smiling laptop",
+   "texte": "FORMATION",
+   "fichier": "test-auto/photos/06.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "DEFINITION",
+   "texte": "UN ASSISTANT\nQUI AGIT\nA TA PLACE",
+   "emoji": "1f4a1"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Instructions enregistrées avec succès.",
+   "emoji": "2705"
+  },
+  {
+   "type": "carte",
+   "kicker": "ROLE",
+   "texte": "AIDER TES\nCLIENTS"
+  },
+  {
+   "type": "demo",
+   "outil": "gemini",
+   "prompt": "Classe les messages urgents",
+   "reponse": "Message classé comme prioritaire pour le vendeur.",
+   "nom": "Gemini",
+   "logo": true
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "gemini",
+     "nom": "Gemini",
+     "site": "gemini.google.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "OUTIL",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman shop",
+   "texte": "TA BOUTIQUE",
+   "fichier": "test-auto/photos/13.jpg",
+   "credit": "Photo : Kheel Center, Cornell University Library · CC BY 2.0"
+  },
+  {
+   "type": "prompt",
+   "texte": "Tu es l'assistant virtuel de ma boutique.",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "gemini",
+   "prompt": "Quels sont les horaires ?",
+   "reponse": "Nous sommes ouverts de huit heures à dix-neuf heures du lundi au samedi.",
+   "nom": "Gemini",
+   "logo": true
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "INSTRUCTIONS",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "photo",
+   "recherche": "african student smiling smartphone",
+   "texte": "PRODUITS",
+   "fichier": "test-auto/photos/17.jpg",
+   "credit": "Openverse · Kartlyn Earth & ArtKN"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Exemple pris en compte pour les réponses.",
+   "emoji": "2705"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "TESTER",
+   "emoji": "1f50e",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "photo",
+   "recherche": "african businessman modern office",
+   "texte": "VERIFICATION",
+   "fichier": "test-auto/photos/20.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Bonjour, comment puis-je vous aider aujourd'hui ?",
+   "emoji": "1f4ac"
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "WHATSAPP",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "whatsapp",
+     "nom": "WhatsApp",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african team working together",
+   "texte": "CATALOGUE",
+   "fichier": "test-auto/photos/24.jpg",
+   "credit": "Photo : US Army Africa · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "ATTENTION\nSURVEILLE TON IA",
+   "emoji": "26a0"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE",
+   "texte": "GARDE TOUJOURS\nUN HUMAIN",
+   "emoji": "1f44d"
+  },
+  {
+   "type": "carte",
+   "kicker": "AVENIR",
+   "texte": "APPRENDS L'IA\nCHAQUE JOUR",
+   "emoji": "1f680"
+  },
+  {
+   "type": "carte",
+   "kicker": "SUCCES",
+   "texte": "DEVELOPPE\nTON ACTIVITE",
+   "emoji": "1f389"
+  },
+  {
+   "type": "carte",
+   "texte": "SUCCES"
+  },
+  {
+   "type": "carte",
+   "kicker": "OBJECTIF",
+   "texte": "MAITRISER\nL'OUTIL",
+   "emoji": "1f3af"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Assistant prêt pour le service."
+  },
+  {
+   "type": "carte",
+   "kicker": "PROGRES",
+   "texte": "AVANCER\nCHAQUE JOUR",
+   "emoji": "1f4aa"
+  },
+  {
+   "type": "carte",
+   "texte": "AVENIR"
+  },
+  {
+   "type": "carte",
+   "kicker": "VISION",
+   "texte": "MODERNISER\nSON ENTREPRISE"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Formation validée avec succès.",
+   "emoji": "2705"
+  },
+  {
+   "type": "carte",
+   "kicker": "PARTAGE",
+   "texte": "AIDER LES\nAUTRES"
+  },
+  {
+   "type": "carte",
+   "kicker": "UNION",
+   "texte": "PROGRESSER\nENSEMBLE"
+  },
+  {
+   "type": "carte",
+   "kicker": "SUITE",
+   "texte": "PROCHAINE\nETAPE",
+   "emoji": "1f680"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}
