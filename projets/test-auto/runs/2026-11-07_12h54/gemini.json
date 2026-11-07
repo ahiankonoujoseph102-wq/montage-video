@@ -1,0 +1,55 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "script_valide": "02-facebook",
+   "essai": 1,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 14.8,
+   "erreurs": [
+    "Il faut exactement une scène et un fond par phrase.",
+    "[visuel] Trop de cartes de texte (7) : remplace-les par des photos, démonstrations, listes ou outils."
+   ]
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 2.6
+  },
+  {
+   "script_valide": "02-facebook",
+   "essai": 2,
+   "modele": "gemini-3.6-flash",
+   "secondes": 8.4,
+   "erreurs": []
+  },
+  {
+   "demo": "gemini-3.5-flash-lite",
+   "prompt": "Développe l'idée 3 avec une accroche forte et des émojis."
+  },
+  {
+   "demo": "gemini-3.5-flash-lite",
+   "prompt": "Tu es un expert en contenu des réseaux sociaux. Donne-moi 10"
+  }
+ ],
+ "script_valide": "02-facebook"
+}

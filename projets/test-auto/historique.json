@@ -34,5 +34,11 @@
   "rubrique": "script",
   "script": "01-rtctfo",
   "date": "2026-11-07"
+ },
+ {
+  "titre": "10 jours de posts Facebook en 2 prompts avec ChatGPT",
+  "rubrique": "script",
+  "script": "02-facebook",
+  "date": "2026-11-07"
  }
 ]
