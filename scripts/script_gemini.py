@@ -439,7 +439,8 @@ def reponses_reelles(d, modeles, cle, journal):
              "5 lignes courtes au plus (45 caractères par ligne au plus), sans titre ni markdown.\n\nDemande : " + s["prompt"])
         for modele in [m for m in modeles if "pro" not in m][:3]:
             try:
-                r = appeler(modele, cle, [("user", q)], 60, en_json=False)
+                r = appeler(modele, cle, [("user", q.replace(s["prompt"], s.get("prompt_complet", s["prompt"])))], 60,
+                        en_json=False)
             except Echec:
                 continue
             try:
@@ -485,6 +486,10 @@ def scenes_pour_script(sv, modeles, cle, journal, deja):
             d = {k: sv[k] for k in ("titre", "description", "hashtags", "prompt", "accroche")}
             d.update({"phrases": [dict(p) for p in sv["phrases"]], "scenes": r["scenes"], "fond": r["fond"]})
             d = corriger(d)
+            demos = [s for s in d["scenes"] if s.get("type") == "demo"]
+            if demos and sv.get("prompt"):  # la dernière démonstration montre le résultat du prompt complet du script
+                demos[-1]["prompt_complet"] = sv["prompt"]
+                demos[-1]["prompt"] = sv["prompt"][:137].rsplit(" ", 1)[0] + "…"
         except Exception as e:
             tours += [("model", brut or ""), ("user", f"Réponse illisible ({e}). Réponds uniquement en JSON {{\"scenes\": [...], \"fond\": [...]}}.")]
             continue
