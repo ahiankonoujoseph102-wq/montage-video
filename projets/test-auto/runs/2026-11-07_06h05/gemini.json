@@ -1,0 +1,509 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 5.5,
+   "erreurs": [
+    "Ton script fait 139 mots, il en faut entre 449 et 649 : ajoute environ 310 mots (par exemple 23 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "12 phrases : il en faut entre 34 et 56.",
+    "« accroche » : 3 lignes très courtes (16 caractères au plus chacune) et un mot-clé « cle ».",
+    "[visuel] Seulement 1 scènes « photo » : il en faut 6 à 10 (vraies photos des situations).",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil).",
+    "[visuel] Trop de cartes de texte (6) : remplace-les par des photos, démonstrations, listes ou outils."
+   ]
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 6.8,
+   "erreurs": [
+    "Ton script fait 282 mots, il en faut entre 449 et 649 : ajoute environ 167 mots (par exemple 12 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "24 phrases : il en faut entre 34 et 56."
+   ]
+  },
+  {
+   "essai": 3,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 11.2,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "STOP LES BUDS",
+    "MAUVAISE IA",
+    "CHANGE TOUT"
+   ],
+   "cle": "CHANGE"
+  },
+  "titre": "Pourquoi tes prompts ChatGPT échouent et comment changer cela",
+  "description": "Découvre la méthode exacte enseignée à Lomé IA School pour transformer tes résultats avec l'intelligence artificielle.",
+  "hashtags": [
+   "#LomeIASchool",
+   "#Togo",
+   "#ChatGPT",
+   "#IntelligenceArtificielle",
+   "#FormationIA"
+  ],
+  "prompt": "Agis en expert en marketing digital pour une boutique à Lomé. Rédige un post Facebook accrocheur pour vendre de nouvelles chaussures pour femmes. Utilise un ton chaleureux, inclus un appel à l'action clair avec contact WhatsApp, et formate le tout avec des tirets et des emojis.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Ton post Facebook ne génère aucune vente et tu ne comprends pas pourquoi ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Le problème ne vient pas de l'intelligence artificielle mais de ta façon de lui parler."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, formateur chez Lomé IA School.",
+    "dit": "Je suis Joseph, formateur chez Lomé i-a School."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Aujourd'hui, nous allons voir pourquoi ta méthode actuelle te donne des résultats décevants."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Première erreur, croire que l'outil devine ce que tu veux sans contexte précis."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Si tu écris simplement rédige un post, tu obtiendras un texte fade et sans âme."
+   },
+   {
+    "partie": "etape1",
+    "texte": "L'IA est comme un nouvel employé qui a besoin d'instructions claires pour bosser.",
+    "dit": "L'i-a est comme un nouvel employé qui a besoin d'instructions claires pour bosser."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Elle ne connaît ni ta marque ni tes clients habituels du quartier."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Ouvre ChatGPT ou Claude sur ton téléphone pour tester une approche professionnelle."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Il faut donner un rôle clair, une tâche précise et un public cible bien défini."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Utilise l'adresse ChatGPT.com ou l'application mobile pour commencer rapidement."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Tape directement ta demande dans la zone de texte prévue à cet effet."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Regarde la différence quand tu précises le contexte local de ta boutique à Lomé."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Le résultat devient immédiatement percutant, captivant et prêt à être publié."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Ajoute des détails sur tes produits et le quartier pour guider l'assistant."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Précise aussi le ton à adopter pour rester chaleureux et naturel."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Vérifie toujours le texte généré avant de le partager sur tes réseaux sociaux."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Corrige les éventuelles expressions qui ne correspondent pas à tes habitudes locales."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Assure-toi que ton numéro WhatsApp et tes conditions de livraison sont bien visibles."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Un bon post doit donner envie d'agir dès la première lecture."
+   },
+   {
+    "partie": "etape5",
+    "texte": "Évite de copier des textes génériques qui ne ressemblent pas à ton style."
+   },
+   {
+    "partie": "etape5",
+    "texte": "Tes clients ont besoin de sentir ta vraie personnalité derrière chaque publication."
+   },
+   {
+    "partie": "etape5",
+    "texte": "L'authenticité fait toute la différence dans le commerce de proximité aujourd'hui."
+   },
+   {
+    "partie": "etape5",
+    "texte": "Prends le temps de tester plusieurs variations pour trouver la meilleure formule."
+   },
+   {
+    "partie": "etape6",
+    "texte": "Enregistre tes prompts favoris dans une note dédiée sur ton téléphone portable."
+   },
+   {
+    "partie": "etape6",
+    "texte": "Cette bibliothèque personnelle te fera gagner un temps précieux chaque semaine."
+   },
+   {
+    "partie": "etape6",
+    "texte": "Pratique vingt minutes par jour pour ancrer durablement ces nouvelles habitudes professionnelles."
+   },
+   {
+    "partie": "etape6",
+    "texte": "La régularité dans l'apprentissage garantit des progrès rapides dès la première semaine."
+   },
+   {
+    "partie": "etape7",
+    "texte": "N'aie pas peur de faire des erreurs lors de tes premiers essais."
+   },
+   {
+    "partie": "etape7",
+    "texte": "Chaque erreur est une opportunité d'apprendre à mieux briefer ton assistant virtuel."
+   },
+   {
+    "partie": "recap",
+    "texte": "Retiens bien ces étapes pour structurer toutes tes demandes à l'avenir."
+   },
+   {
+    "partie": "recap",
+    "texte": "Consigne tes meilleurs prompts dans un cahier ou une note sur ton téléphone."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'intelligence artificielle change le travail et ceux qui l'apprennent prennent de l'avance."
+   },
+   {
+    "partie": "morale",
+    "texte": "Ne reste pas spectateur d'une révolution qui transforme déjà notre manière de travailler."
+   },
+   {
+    "partie": "morale",
+    "texte": "Deviens acteur de ton propre succès grâce à la maîtrise de ces outils."
+   },
+   {
+    "partie": "morale",
+    "texte": "Rejoins-nous pour découvrir encore plus de méthodes pratiques adaptées à ton activité."
+   },
+   {
+    "partie": "morale",
+    "texte": "Ton avenir professionnel se construit dès maintenant avec les bonnes compétences numériques."
+   },
+   {
+    "partie": "morale",
+    "texte": "Applique ces conseils dès aujourd'hui et observe les changements dans ton activité."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african woman smartphone shop",
+    "texte": "TELEPHONE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african merchant frustrated smartphone",
+    "texte": "PROBLEME"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man smiling studio portrait",
+    "texte": "JOSEPH"
+   },
+   {
+    "type": "photo",
+    "recherche": "african students training classroom",
+    "texte": "ECOLE"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "L'IA NE\nDEVINE RIEN",
+    "emoji": "1f914",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "prompt",
+    "texte": "Rédige un post",
+    "geste": "designe"
+   },
+   {
+    "type": "photo",
+    "recherche": "modern office desk african worker",
+    "texte": "EMPLOYE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman smiling boutique",
+    "texte": "CLIENTS"
+   },
+   {
+    "type": "outil",
+    "outil": "chatgpt"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Agis en expert marketing",
+    "reponse": "Voici ton rôle défini\nPrêt pour la tâche"
+   },
+   {
+    "type": "photo",
+    "recherche": "smartphone screen chat app",
+    "texte": "APPLICATION"
+   },
+   {
+    "type": "prompt",
+    "texte": "Tape ta demande",
+    "geste": "designe"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Boutique à Lomé chaussures",
+    "reponse": "Bonjour chers clients\nNouvelle collection dispo\nContactez nous vite"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Post Facebook généré avec succès",
+    "emoji": "2705"
+   },
+   {
+    "type": "photo",
+    "recherche": "african shoes shop display",
+    "texte": "PRODUITS"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman friendly smile",
+    "texte": "TON CHALEUREUX"
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur reviewing notes",
+    "texte": "VERIFICATION"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman typing phone",
+    "texte": "CORRECTION"
+   },
+   {
+    "type": "photo",
+    "recherche": "whatsapp mobile screen message",
+    "texte": "WHATSAPP"
+   },
+   {
+    "type": "photo",
+    "recherche": "african customer happy reading",
+    "texte": "LECTURE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman market vendor",
+    "texte": "STYLE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man smiling entrepreneur",
+    "texte": "PERSONNALITE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african street shop local",
+    "texte": "COMMERCE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman testing phone",
+    "texte": "TESTS"
+   },
+   {
+    "type": "photo",
+    "recherche": "notebook writing pen african",
+    "texte": "PROMPTS"
+   },
+   {
+    "type": "photo",
+    "recherche": "african professional success modern",
+    "texte": "GAIN TEMPS"
+   },
+   {
+    "type": "photo",
+    "recherche": "african student focused laptop",
+    "texte": "PRATIQUE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african group learning class",
+    "texte": "PROGRES"
+   },
+   {
+    "type": "photo",
+    "recherche": "african startup team brainstorming",
+    "texte": "ESSAIS"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman smiling learning",
+    "texte": "APPRENTISSAGE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur success smiling",
+    "texte": "ETAPES"
+   },
+   {
+    "type": "photo",
+    "recherche": "smartphone notes app open",
+    "texte": "NOTES"
+   },
+   {
+    "type": "photo",
+    "recherche": "african modern office worker",
+    "texte": "AVENIR"
+   },
+   {
+    "type": "photo",
+    "recherche": "african business team modern",
+    "texte": "REVOLUTION"
+   },
+   {
+    "type": "photo",
+    "recherche": "african smiling professional success",
+    "texte": "SUCCES"
+   },
+   {
+    "type": "photo",
+    "recherche": "african people working together",
+    "texte": "METHODES"
+   },
+   {
+    "type": "photo",
+    "recherche": "african tech expert smiling",
+    "texte": "COMPETENCES"
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur modern shop",
+    "texte": "ACTIVITE"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "nuit",
+   "violet",
+   "bleu",
+   "orange",
+   "vert",
+   "rose",
+   "nuit",
+   "violet",
+   "bleu",
+   "orange",
+   "vert",
+   "rose",
+   "nuit",
+   "violet",
+   "bleu",
+   "orange",
+   "vert",
+   "rose",
+   "nuit",
+   "violet",
+   "bleu",
+   "orange",
+   "vert",
+   "rose",
+   "nuit",
+   "violet",
+   "bleu",
+   "orange",
+   "vert",
+   "rose",
+   "nuit",
+   "violet",
+   "bleu",
+   "orange",
+   "vert",
+   "rose",
+   "nuit",
+   "violet",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "formation",
+ "secondes": 24.0
+}

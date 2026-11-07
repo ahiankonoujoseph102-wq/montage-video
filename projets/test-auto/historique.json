@@ -20,5 +20,13 @@
   "titre": "Crée ton agent IA pour répondre aux clients",
   "rubrique": "agents",
   "date": "2026-11-07"
+ },
+ {
+  "titre": "Pourquoi tes prompts ChatGPT échouent et comment changer cela",
+  "rubrique": "formation",
+  "date": "2026-11-07",
+  "lecon": "contenu_pro_chatgpt_claude:0",
+  "partie": 1,
+  "total": 1
  }
 ]

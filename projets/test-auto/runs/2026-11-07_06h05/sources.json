@@ -1,0 +1,86 @@
+[
+ {
+  "type": "logo",
+  "outil": "Claude",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "logo",
+  "outil": "ChatGPT",
+  "source": "Wikimedia Commons",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman smartphone shop",
+  "source": "Openverse / flickr",
+  "auteur": "Sharon Hahn Darlin",
+  "page": "https://www.flickr.com/photos/41980486@N07/12875813135",
+  "licence": "CC BY 2.0 (attribution : Sharon Hahn Darlin)",
+  "recherche_utilisee": "woman smartphone shop"
+ },
+ {
+  "type": "photo",
+  "recherche": "african merchant frustrated smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "seanmfreese",
+  "page": "https://www.flickr.com/photos/66779558@N02/8073114643",
+  "licence": "CC BY 2.0 (attribution : seanmfreese)",
+  "recherche_utilisee": "frustrated smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man smiling studio portrait",
+  "source": "Openverse / flickr",
+  "auteur": "AndYaDontStop",
+  "page": "https://www.flickr.com/photos/10563720@N03/3949721032",
+  "licence": "CC BY 2.0 (attribution : AndYaDontStop)",
+  "recherche_utilisee": "man smiling studio portrait"
+ },
+ {
+  "type": "photo",
+  "recherche": "african students training classroom",
+  "source": "Openverse / flickr",
+  "auteur": "US Army Africa",
+  "page": "https://www.flickr.com/photos/36281822@N08/5660648664",
+  "licence": "CC BY 2.0 (attribution : US Army Africa)",
+  "recherche_utilisee": "african students training classroom"
+ },
+ {
+  "type": "photo",
+  "recherche": "modern office desk african worker",
+  "source": "Openverse / flickr",
+  "auteur": "ell brown",
+  "page": "https://www.flickr.com/photos/39415781@N06/6061839213",
+  "licence": "CC BY 2.0 (attribution : ell brown)",
+  "recherche_utilisee": "modern office desk worker"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman smiling boutique",
+  "source": "Openverse / flickr",
+  "auteur": "shankar s.",
+  "page": "https://www.flickr.com/photos/77742560@N06/14419068347",
+  "licence": "CC BY 2.0 (attribution : shankar s.)",
+  "recherche_utilisee": "woman smiling boutique"
+ },
+ {
+  "type": "photo",
+  "recherche": "smartphone screen chat app",
+  "source": "Openverse / flickr",
+  "auteur": "Visual Content",
+  "page": "https://www.flickr.com/photos/143601516@N03/28346073830",
+  "licence": "CC BY 2.0 (attribution : Visual Content)",
+  "recherche_utilisee": "chat app"
+ },
+ {
+  "type": "photo",
+  "recherche": "african shoes shop display",
+  "source": "Openverse / flickr",
+  "auteur": "markhillary",
+  "page": "https://www.flickr.com/photos/56087830@N00/415615871",
+  "licence": "CC BY 2.0 (attribution : markhillary)",
+  "recherche_utilisee": "shoes shop display"
+ }
+]
