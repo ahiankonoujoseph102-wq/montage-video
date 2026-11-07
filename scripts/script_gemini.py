@@ -69,7 +69,7 @@ FIN = [
      {"type": "telephone", "texte": "+228 72 24 02 31", "sous": "WhatsApp", "geste": "pouce", "expression": "sourire"},
      "vert"),
 ]
-MOTS_FIN = sum(len(p["texte"].split()) for p, _, _ in FIN)
+MOTS_FIN = sum(len(p["texte"].split()) for p, _, _ in FIN) + 14
 
 
 def faits_texte():
@@ -95,6 +95,9 @@ PUBLIC : des Africains francophones (Togo, Bénin, Côte d'Ivoire, Sénégal, Ca
 étudiants, employés, créateurs de contenu. Prends des exemples de LEUR quotidien : boutique ou restaurant à Lomé,
 couturière, salon de coiffure, vente sur WhatsApp et Facebook, école, cabinet, ONG, paiement Mobile Money (sans montant).
 Tutoiement, phrases claires et naturelles à l'oral, ton direct, chaleureux et motivant.
+
+GUIDE PÉDAGOGIQUE DE JOSEPH (à suivre à la lettre) :
+GUIDE
 
 RUBRIQUE DE CETTE VIDÉO : RUBRIQUE
 
@@ -227,12 +230,12 @@ class Echec(Exception):
     """Un modèle n'a pas répondu (message lisible, sans la clé)."""
 
 
-def appeler(modele, cle, tours, delai, reglages=None):
+def appeler(modele, cle, tours, delai, reglages=None, en_json=True):
     """Un appel à Gemini, sans nouvelle tentative (un échec fait passer au modèle suivant). Seul un réglage de
     réflexion refusé (erreur 400) est réessayé tout de suite avec le réglage suivant."""
     url = f"{BASE}/models/{modele}:generateContent"
     for reglage in (reglages or reflexion(modele)):
-        config = {"responseMimeType": "application/json", "temperature": 0.9}
+        config = {"responseMimeType": "application/json" if en_json else "text/plain", "temperature": 0.9}
         if reglage:
             config["thinkingConfig"] = reglage
         corps = {"contents": [{"role": r, "parts": [{"text": x}]} for r, x in tours], "generationConfig": config}
@@ -276,6 +279,9 @@ def generer(modeles, cle, tours, journal):
     return None, None, 0
 
 
+FIN_SERIE = []  # phrase « fin de la partie N » quand la leçon continue dans la vidéo suivante
+
+
 def corriger(d):
     """Corrections automatiques : glossaire, fin fixe ajoutée, numéro dit en toutes lettres, « IA » dit « i-a »."""
     gloss = json.loads((ROOT / "glossaire.json").read_text())["termes"]
@@ -291,7 +297,7 @@ def corriger(d):
                 t = re.sub(rf"(?i)\b{re.escape(v)}\b", g["terme"], t)
         p["texte"] = t
     if len(d["scenes"]) == n and len(d["fond"]) == n:
-        for p, s, f in FIN:
+        for p, s, f in FIN_SERIE + FIN:
             d["phrases"].append(dict(p)), d["scenes"].append(dict(s)), d["fond"].append(f)
     for p in d["phrases"]:
         t = p["texte"]
@@ -419,6 +425,50 @@ def methodes(rid):
     return m.group(1).strip() if m else "(aucune fiche : reste sur des généralités certaines)"
 
 
+def reponses_reelles(d, modeles, cle, journal):
+    """Démonstrations : la réponse affichée est une vraie réponse d'IA (Gemini) au prompt montré, pas une invention."""
+    for s in d.get("scenes", []):
+        if s.get("type") != "demo" or not s.get("prompt"):
+            continue
+        q = ("Réponds en français à la demande suivante comme un assistant IA. Donne seulement le début de ta réponse : "
+             "5 lignes courtes au plus (45 caractères par ligne au plus), sans titre ni markdown.\n\nDemande : " + s["prompt"])
+        for modele in [m for m in modeles if "pro" not in m][:3]:
+            try:
+                r = appeler(modele, cle, [("user", q)], 60, en_json=False)
+            except Echec:
+                continue
+            try:
+                r = json.loads(r)  # le modèle répond en JSON (format imposé) : on prend le texte
+                r = r if isinstance(r, str) else "\n".join(str(v) for v in (r.values() if isinstance(r, dict) else r))
+            except Exception:
+                pass
+            lignes = [l.strip(" -*•") for l in str(r).replace("\\n", "\n").split("\n") if l.strip()][:5]
+            if lignes:
+                s["reponse"] = "\n".join(l[:60] for l in lignes)
+                s["note"] = "Réponse réelle obtenue avec Gemini"
+                journal.append({"demo": modele, "prompt": s["prompt"][:60]})
+                break
+
+
+def lecon_suivante(historique):
+    """Leçon suivante des formations de Joseph (dans l'ordre), ou None. Une série commencée est toujours continuée ;
+    sinon on alterne : une leçon de formation, puis un sujet du calendrier."""
+    f = ROOT / "projets" / "formations_joseph" / "lecons.json"
+    if not f.exists():
+        return None
+    lecons = json.loads(f.read_text())
+    faits = [h for h in historique if isinstance(h, dict) and h.get("lecon")]
+    dernier = historique[-1] if historique else {}
+    if faits:
+        der = faits[-1]
+        i = next((k for k, l in enumerate(lecons) if l["id"] == der["lecon"]), -1)
+        serie_en_cours = der.get("partie", 1) < der.get("total", 1)
+        if not serie_en_cours and isinstance(dernier, dict) and dernier.get("lecon"):
+            return None  # alternance : la dernière vidéo était une leçon terminée, place à un sujet du calendrier
+        return lecons[(i + 1) % len(lecons)]
+    return lecons[0]
+
+
 def rubrique_suivante(historique):
     """Rubrique qui suit celle de la dernière vidéo (rotation du calendrier)."""
     ids = [r["id"] for r in CALENDRIER]
@@ -442,8 +492,25 @@ def main():
     historique = json.loads(hist_f.read_text()) if hist_f.exists() else []
     deja = [h["titre"] if isinstance(h, dict) else h for h in historique]
     rub = rubrique_suivante(historique)
+    lecon = None if sujet else lecon_suivante(historique)
+    guide = (ROOT / "projets" / "guide_pedagogique.md").read_text()
+    if lecon:
+        rub = {"id": "formation", "nom": f"Leçon de la formation de Joseph « {lecon['formation']} » : {lecon['titre']}"
+               f" (partie {lecon['partie']} sur {lecon['total']})", "idees": "enseigner fidèlement la source ci-dessous"}
+        source = ("SOURCE : extrait de LA FORMATION DE JOSEPH. Enseigne FIDÈLEMENT ce contenu (idées, exemples, prompts, "
+                  "points clés, erreurs), reformulé pour l'oral, avec des démonstrations ; n'ajoute rien qui le contredise ; "
+                  "ignore les pourcentages et les chiffres de la source.\n\n" + lecon["texte"])
+        if lecon["partie"] < lecon["total"]:
+            source += (f"\n\nCette vidéo est la partie {lecon['partie']} sur {lecon['total']} : termine à un point naturel ; "
+                       "la suite sera la vidéo suivante.")
+            FIN_SERIE[:] = [({"partie": "fin", "texte": f"C'est la fin de la partie {lecon['partie']}. Abonne-toi : la partie "
+                                                        f"{lecon['partie'] + 1} arrive très vite."},
+                             {"type": "carte", "kicker": f"PARTIE {lecon['partie']}/{lecon['total']}", "texte": "LA SUITE\nARRIVE",
+                              "sous": "Abonne-toi pour ne pas la rater", "emoji": "1f680", "geste": "designe"}, "nuit")]
     demande = (CONSIGNE.replace("EMOJIS", ", ".join(sorted(EMOJIS))).replace("FAITS", faits_texte())
-               .replace("RUBRIQUE", f"{rub['nom']} ({rub['idees']})").replace("METHODES", methodes(rub["id"]))
+               .replace("GUIDE", guide)
+               .replace("RUBRIQUE", f"{rub['nom']} ({rub['idees']})")
+               .replace("METHODES", source if lecon else methodes(rub["id"]))
                .replace("MOTS_GEMINI", f"{MOTS_MIN - MOTS_FIN} à {MOTS_MAX - MOTS_FIN}"))
     demande += "\n\nSujets déjà traités (à NE PAS reprendre) : " + "; ".join(deja or ["aucun"])
     if sujet:
@@ -490,6 +557,10 @@ def main():
               "titre": d["titre"], "description": d["description"], "hashtags": hashtags, "prompt": d["prompt"],
               "description_tiktok": f"{d['description']} {hashtags}", "rubrique": rub["id"],
               "date": datetime.date.today().isoformat(), "phrases": d["phrases"]}
+    script["historique"] = {"titre": d["titre"], "rubrique": rub["id"], "date": script["date"]}
+    if lecon:
+        script["historique"].update({"lecon": lecon["id"], "partie": lecon["partie"], "total": lecon["total"]})
+    reponses_reelles(d, modeles, cle, journal)
     plan = {"scenes": d["scenes"], "fond": d["fond"]}
     (dossier / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=1))
     (dossier / "plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1))

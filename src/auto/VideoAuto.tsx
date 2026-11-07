@@ -30,7 +30,7 @@ const S = (s: number) => Math.round(s * FPS);
 export type Scene = {type: string; texte?: string; kicker?: string; sous?: string; emoji?: string; n?: number;
   gauche?: {texte: string; ok: boolean}; droite?: {texte: string; ok: boolean}; a?: string | string[];
   titre?: string; items?: {texte: string; a: string}[]; lignes?: string[]; geste?: string; doigts?: number;
-  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; nom?: string; fichier?: string; credit?: string; recherche?: string};
+  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; nom?: string; note?: string; fichier?: string; credit?: string; recherche?: string};
 export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
@@ -342,6 +342,8 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
               </div>
             ) : f > finFrappe - 2 ? <div style={{fontFamily: POLICE, fontSize: 40, color: '#888'}}>• • •</div> : null}
           </div>
+          {s.note && f > finFrappe + 4 ? <div style={{position: 'absolute', left: 30, bottom: 16, fontFamily: POLICE, fontWeight: 600,
+            fontSize: 22, color: '#8A8FA3'}}>{s.note}</div> : null}
         </div>
       );
     }
