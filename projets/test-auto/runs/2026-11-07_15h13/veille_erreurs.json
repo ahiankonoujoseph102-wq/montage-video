@@ -1,0 +1,18 @@
+[
+ {
+  "modele": "gemini-3.6-flash",
+  "erreur": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+ },
+ {
+  "modele": "gemini-3.8-flash",
+  "erreur": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+ },
+ {
+  "modele": "gemini-3.7-flash",
+  "erreur": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+ },
+ {
+  "modele": "gemini-3.5-flash",
+  "erreur": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/do"
+ }
+]

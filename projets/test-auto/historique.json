@@ -40,5 +40,11 @@
   "rubrique": "script",
   "script": "02-facebook",
   "date": "2026-11-07"
+ },
+ {
+  "titre": "Le script TikTok qui retient jusqu'à la fin (prompt inclus)",
+  "rubrique": "script",
+  "script": "03-tiktok",
+  "date": "2026-11-07"
  }
 ]

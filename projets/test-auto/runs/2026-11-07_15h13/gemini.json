@@ -1,0 +1,45 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 2.1
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 8.3
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 2.9
+  },
+  {
+   "script_valide": "03-tiktok",
+   "essai": 1,
+   "modele": "gemini-3.5-flash",
+   "secondes": 8.9,
+   "erreurs": []
+  },
+  {
+   "demo": "gemini-3.6-flash",
+   "prompt": "Accroche choc dans les 3 premières secondes, 3 points rapide"
+  },
+  {
+   "demo": "gemini-3.6-flash",
+   "prompt": "Tu es un expert en contenu viral TikTok. Écris un script de "
+  }
+ ],
+ "script_valide": "03-tiktok"
+}
