@@ -309,6 +309,12 @@ def corriger(d):
         dit = t.replace(CONTACTS[0], NUMERO_DIT)
         dit = re.sub(r"\bl'IA\b", "l'i-a", dit)
         dit = re.sub(r"\bIA\b", "i-a", dit)
+        # Texte dit par la voix clonée : sans guillemets ni deux-points (ils lui font inventer des mots, mesuré le
+        # 7 novembre : « Oui, tout est en haut… »), et prononciation des noms anglais.
+        dit = re.sub(r"[«»“”\"]", "", dit).replace(" :", ",").replace(":", ",").replace(";", ",")
+        dit = re.sub(r"\bChatGPT\b", "Tchat-gé-pé-té", dit)
+        dit = re.sub(r"\bSchool\b", "Skoul", dit)
+        dit = re.sub(r"\s+", " ", dit).strip()
         if dit != t:
             p["dit"] = dit
     return d

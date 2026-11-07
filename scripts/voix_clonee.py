@@ -23,14 +23,14 @@ if os.environ.get("VOIX_DECODEUR", "normal") == "rapide":
     s3 = S3Gen(meanflow=True)
     s3.load_state_dict(load_file(hf_hub_download("ResembleAI/chatterbox-turbo", "s3gen_meanflow.safetensors")))
     m.s3gen = s3.eval()
-m.prepare_conditionals(ref, exaggeration=0.6)
+m.prepare_conditionals(ref, exaggeration=0.5)
 mesures = {"chargement_s": round(time.time() - t0, 1), "fils": torch.get_num_threads(),
            "decodeur": os.environ.get("VOIX_DECODEUR", "normal"), "phrases": []}
 for i, p in enumerate(json.load(open(script))["phrases"]):
     texte = p.get("dit", p["texte"])
     t1 = time.time()
     torch.manual_seed(1234 + i)
-    w = m.generate(texte, language_id="fr", exaggeration=0.6, cfg_weight=0.45, temperature=0.8)
+    w = m.generate(texte, language_id="fr", exaggeration=0.5, cfg_weight=0.5, temperature=0.8)
     torchaudio.save(str(out / f"{i:02d}.wav"), w, m.sr)
     mesures["phrases"].append({"i": i, "duree_audio": round(w.shape[-1] / m.sr, 2), "temps_calcul": round(time.time() - t1, 1)})
     print(i, mesures["phrases"][-1], flush=True)

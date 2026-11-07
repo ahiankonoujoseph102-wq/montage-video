@@ -129,8 +129,8 @@ jobs:
 
       - name: Générer la voix clonée
         run: |
-          # Référence : la voix naturelle de Joseph dans un de ses cours (projets/voix/, privé).
-          cp projets/voix/reference_formation.wav "$RUNNER_TEMP/reference.wav"
+          # Référence : la voix de Joseph choisie à l'écoute (projets/voix/reference.wav, privé).
+          cp projets/voix/reference.wav "$RUNNER_TEMP/reference.wav"
           python scripts/voix_clonee.py projets/test-auto/run/script.json "$RUNNER_TEMP/reference.wav" "$RUNNER_TEMP/phrases"
           cp "$RUNNER_TEMP/phrases/mesures.json" projets/test-auto/run/mesures_voix.json
           echo "T_VOIX=$(date +%s)" >> "$GITHUB_ENV"
