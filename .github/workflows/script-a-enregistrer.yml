@@ -1,0 +1,41 @@
+# Chaque soir, envoie à Joseph les prochains textes à lire (scripts écrits et vérifiés à l'avance, d'après ses
+# formations). Il répond à l'e-mail avec sa note vocale ; « Vidéo quotidienne » monte alors la vidéo avec sa vraie voix.
+name: Textes à enregistrer (voix de Joseph)
+
+on:
+  schedule:
+    - cron: "41 17 * * *"   # 17 h 41 à Lomé
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: "Nombre de textes à envoyer"
+        required: false
+        default: "2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: video-auto
+  cancel-in-progress: false
+
+jobs:
+  envoyer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: claude/great-heisenberg-8p7tj4
+      - name: Envoyer les textes à lire
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          # Pas de nouveau texte si deux attendent encore la voix de Joseph (il ne se retrouve pas débordé).
+          N=$(python3 -c "import json,pathlib;p=pathlib.Path('projets/voix/attente.json');a=json.loads(p.read_text()) if p.exists() else {};print(max(0,int('${{ inputs.nombre || '2' }}')-sum(1 for v in a.values() if not v.get('recu'))))")
+          if [ "$N" -gt 0 ]; then python3 scripts/envoyer_script.py "$N"; else echo "Des textes attendent déjà ta voix"; fi
+          git config user.name "Montage automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add projets/voix/attente.json 2>/dev/null || true
+          git commit -q -m "Textes envoyés à Joseph pour enregistrement ($(date -u +%d/%m/%Y))" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin claude/great-heisenberg-8p7tj4 && git push -q origin HEAD:claude/great-heisenberg-8p7tj4 && break; sleep 5; done

@@ -7,15 +7,20 @@
 # En cas d'échec : e-mail d'alerte et nouvelle tentative automatique (fichier alerte-echec.yml).
 name: Vidéo quotidienne Lomé IA School
 
+# VOIX DE JOSEPH : chaque soir, script-a-enregistrer.yml lui envoie les textes à lire ; il répond à l'e-mail avec sa
+# note vocale (ou un lien Drive). Ce lancement regarde Gmail 6 fois par jour (environ 1 min chaque fois) et, dès
+# qu'une voix est arrivée, monte la vidéo avec sa vraie voix et la lui envoie.
 on:
-  # Programmation en pause : reprise après validation par Joseph de la nouvelle vidéo de test.
-  # schedule:
-  #   - cron: "7 4 * * *"
-  #   - cron: "7 16 * * *"
+  schedule:
+    - cron: "23 6,9,12,15,18,21 * * *"
   workflow_dispatch:
     inputs:
+      voix:
+        description: "enregistree (voix de Joseph reçue par e-mail) ou clonee (ancienne voix de synthèse)"
+        required: false
+        default: "enregistree"
       sujet:
-        description: "Sujet imposé (laisser vide : Gemini choisit un nouveau sujet)"
+        description: "Sujet imposé (voix clonée seulement ; laisser vide sinon)"
         required: false
         default: ""
 
@@ -31,9 +36,33 @@ env:
   BRANCHE: claude/great-heisenberg-8p7tj4
 
 jobs:
+  verifier:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    outputs:
+      script: ${{ steps.r.outputs.script }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCHE }}
+      - name: Une voix de Joseph est-elle arrivée par e-mail ?
+        id: r
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          if [ "${{ inputs.voix }}" = "clonee" ]; then echo "script=" >> "$GITHUB_OUTPUT"; echo "Voix clonée demandée"; exit 0; fi
+          R=$(python3 scripts/recevoir_voix.py "$RUNNER_TEMP/voix" | tail -1)
+          echo "$R"
+          ID=$(echo "$R" | sed -n 's/^TROUVE \([^ ]*\).*/\1/p')
+          echo "script=$ID" >> "$GITHUB_OUTPUT"
+
   video:
+    needs: verifier
+    if: needs.verifier.outputs.script != '' || inputs.voix == 'clonee'
     runs-on: ubuntu-24.04
     timeout-minutes: 170
+    env:
+      SCRIPT_ID: ${{ needs.verifier.outputs.script }}
     steps:
       - name: Récupérer le code de montage
         uses: actions/checkout@v5
@@ -127,11 +156,17 @@ jobs:
           python -c "import PIL" 2>/dev/null || pip install -q pillow
           python scripts/medias.py projets/test-auto/run || echo "Médias ignorés : cartes de texte à la place"
 
-      - name: Générer la voix clonée
+      - name: Voix de Joseph (enregistrée) ou voix clonée
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
-          # Référence : la voix de Joseph choisie à l'écoute (projets/voix/reference.wav, privé).
-          cp projets/voix/reference.wav "$RUNNER_TEMP/reference.wav"
-          python scripts/voix_clonee.py projets/test-auto/run/script.json "$RUNNER_TEMP/reference.wav" "$RUNNER_TEMP/phrases"
+          if [ -n "$SCRIPT_ID" ]; then
+            python scripts/recevoir_voix.py "$RUNNER_TEMP/voix"
+            python scripts/decouper_voix.py "$(ls "$RUNNER_TEMP"/voix/voix* | head -1)" projets/test-auto/run/script.json "$RUNNER_TEMP/phrases"
+          else
+            cp projets/voix/reference.wav "$RUNNER_TEMP/reference.wav"
+            python scripts/voix_clonee.py projets/test-auto/run/script.json "$RUNNER_TEMP/reference.wav" "$RUNNER_TEMP/phrases"
+          fi
           cp "$RUNNER_TEMP/phrases/mesures.json" projets/test-auto/run/mesures_voix.json
           echo "T_VOIX=$(date +%s)" >> "$GITHUB_ENV"
 
@@ -194,12 +229,19 @@ jobs:
           liste = json.loads(h.read_text()) if h.exists() else []
           s = json.loads(Path("projets/test-auto/run/script.json").read_text())
           liste.append(s.get("historique") or {"titre": s["titre"], "rubrique": s.get("rubrique"), "date": s.get("date")})
+          import os, datetime
+          a = Path("projets/voix/attente.json")
+          if os.environ.get("SCRIPT_ID") and a.exists():
+              att = json.loads(a.read_text())
+              att.setdefault(os.environ["SCRIPT_ID"], {})["recu"] = datetime.datetime.utcnow().isoformat(timespec="minutes")
+              a.write_text(json.dumps(att, ensure_ascii=False, indent=1))
           h.write_text(json.dumps(liste, ensure_ascii=False, indent=1))
           EOF
           git config user.name "Montage automatique"
           git config user.email "actions@users.noreply.github.com"
           touch projets/test-auto/alerte_minutes.txt
-          git add "$D" projets/test-auto/historique.json projets/test-auto/gemini_modele.txt projets/test-auto/alerte_minutes.txt
+          touch projets/voix/attente.json
+          git add "$D" projets/voix/attente.json projets/test-auto/historique.json projets/test-auto/gemini_modele.txt projets/test-auto/alerte_minutes.txt
           git commit -q -m "Vidéo automatique du $(date -u +%d/%m/%Y) (dossier $D)"
           for i in 1 2 3; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:${BRANCHE}" && break; sleep 5; done
           echo "DOSSIER=$D" >> "$GITHUB_ENV"

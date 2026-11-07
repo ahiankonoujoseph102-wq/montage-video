@@ -465,9 +465,10 @@ def reponses_reelles(d, modeles, cle, journal):
 def script_valide_suivant(historique):
     """Prochain script écrit et vérifié à l'avance (projets/scripts_valides/), pas encore produit ; sinon None."""
     faits = {h.get("script") for h in historique if isinstance(h, dict)}
+    force = os.environ.get("SCRIPT_ID", "").strip()  # voix enregistrée par Joseph : ce script-là, exactement
     for f in sorted((ROOT / "projets" / "scripts_valides").glob("*.json")):
         s = json.loads(f.read_text())
-        if s["id"] not in faits:
+        if (force and s["id"] == force) or (not force and s["id"] not in faits):
             return s
     return None
 
@@ -551,6 +552,8 @@ def main():
     historique = json.loads(hist_f.read_text()) if hist_f.exists() else []
     deja = [h["titre"] if isinstance(h, dict) else h for h in historique]
     sv = None if sujet else script_valide_suivant(historique)
+    if os.environ.get("SCRIPT_ID", "").strip() and not sv:
+        sys.exit(f"Script {os.environ['SCRIPT_ID']} introuvable dans projets/scripts_valides.")
     if sv:
         print(f"Script validé à l'avance : {sv['id']} — {sv['titre']}", flush=True)
         journal = []
