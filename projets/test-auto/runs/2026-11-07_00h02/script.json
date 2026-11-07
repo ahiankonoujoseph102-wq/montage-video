@@ -1,0 +1,178 @@
+{
+ "accroche": {
+  "lignes": [
+   "TRANSFORME TES",
+   "DOCUMENTS EN",
+   "TABLEAU EXCEL"
+  ],
+  "cle": "DOCUMENTS"
+ },
+ "titre": "Convertis n'importe quelle photo de document en tableau propre avec l'IA",
+ "description": "Tu perds du temps à recopier tes factures ou tes cahiers de compte ? Découvre cette méthode simple et gratuite avec ChatGPT.",
+ "hashtags": "#IA #ChatGPT #Productivite #Afrique #LomeIASchool #AstuceIA",
+ "prompt": "Tu es un expert en saisie et analyse de données financières et comptables. Voici la photo d'une feuille de comptes manuelle d'une boutique. Analyse l'image attentivement et extrait toutes les informations sous forme de tableau propre. Le tableau doit contenir quatre colonnes précises : Date, Description du produit, Quantité vendue, et Prix total. Si un texte sur la photo est difficile à lire, indique lisibilité incertaine sans inventer d'information.",
+ "description_tiktok": "Tu perds du temps à recopier tes factures ou tes cahiers de compte ? Découvre cette méthode simple et gratuite avec ChatGPT. #IA #ChatGPT #Productivite #Afrique #LomeIASchool #AstuceIA",
+ "rubrique": "astuce",
+ "date": "2026-11-06",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu perds des heures chaque soir à recopier tes factures manuscrites dans ton ordinateur ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Que tu gères une boutique à Lomé ou un salon de coiffure cette tâche te fatigue."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Cette méthode répétitive te fait perdre un temps très précieux que tu pourrais utiliser autrement."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Heureusement une simple photo prise avec ton téléphone portable va tout résoudre en quelques secondes."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph de Lomé IA School et nous formons les entrepreneurs aux outils modernes.",
+   "dit": "Je suis Joseph de Lomé i-a School et nous formons les entrepreneurs aux outils modernes."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Aujourd'hui tu vas apprendre à transformer n'importe quelle photo de document en tableau propre."
+  },
+  {
+   "partie": "r1",
+   "texte": "Un modèle de vision c'est une IA capable de lire le texte présent sur une image.",
+   "dit": "Un modèle de vision c'est une i-a capable de lire le texte présent sur une image."
+  },
+  {
+   "partie": "r1",
+   "texte": "Étape un ouvre l'application gratuite ChatGPT sur ton téléphone portable pour démarrer l'opération."
+  },
+  {
+   "partie": "r1",
+   "texte": "Touche l'icône de l'appareil photo située juste à côté du champ de texte habituel."
+  },
+  {
+   "partie": "r1",
+   "texte": "Prends une photo bien claire et bien éclairée de ton registre de ventes du jour."
+  },
+  {
+   "partie": "r1",
+   "texte": "Assure-toi que toutes les écritures manuscrites soient lisibles pour éviter les erreurs de lecture."
+  },
+  {
+   "partie": "r2",
+   "texte": "Étape deux écris un prompt professionnel en précisant le rôle le contexte et le format."
+  },
+  {
+   "partie": "r2",
+   "texte": "Un prompt c'est l'instruction précise que tu donnes à l'intelligence artificielle pour travailler."
+  },
+  {
+   "partie": "r2",
+   "texte": "Dis à l'IA qu'elle est une secrétaire comptable rigoureuse chargée d'analyser ce document.",
+   "dit": "Dis à l'i-a qu'elle est une secrétaire comptable rigoureuse chargée d'analyser ce document."
+  },
+  {
+   "partie": "r2",
+   "texte": "Demande-lui d'extraire les articles vendus avec les quantités et les montants correspondants."
+  },
+  {
+   "partie": "r2",
+   "texte": "Précise clairement que la réponse doit être présentée sous la forme d'un tableau structuré."
+  },
+  {
+   "partie": "r3",
+   "texte": "Regarde la démonstration à l'écran avec le prompt complet préparé pour ton activité commerciale."
+  },
+  {
+   "partie": "r3",
+   "texte": "ChatGPT analyse la photo et génère instantanément toutes les lignes de tes comptes quotidiens."
+  },
+  {
+   "partie": "r3",
+   "texte": "Étape trois valide le texte puis copie le résultat directement dans ton presse-papier."
+  },
+  {
+   "partie": "r3",
+   "texte": "Tu peux coller ce tableau directement dans Google Sheets ou dans un fichier Excel."
+  },
+  {
+   "partie": "r3",
+   "texte": "Cette méthode te fait gagner un temps colossal sur toute ta gestion de stock."
+  },
+  {
+   "partie": "r4",
+   "texte": "Voyons maintenant une deuxième démonstration sur une facture de fournisseur écrite à la main."
+  },
+  {
+   "partie": "r4",
+   "texte": "L'IA repère les totaux les dates et classe chaque dépense dans les bonnes colonnes.",
+   "dit": "L'i-a repère les totaux les dates et classe chaque dépense dans les bonnes colonnes."
+  },
+  {
+   "partie": "r4",
+   "texte": "Tu n'as plus besoin de taper chaque chiffre manuellement avec ton clavier de téléphone."
+  },
+  {
+   "partie": "r5",
+   "texte": "Voici l'erreur fréquente à éviter absolument quand tu utilises cette technique de travail rapide."
+  },
+  {
+   "partie": "r5",
+   "texte": "Ne colle jamais des données très sensibles ou des mots de passe personnels dans l'application."
+  },
+  {
+   "partie": "r5",
+   "texte": "Protège toujours les informations confidentielles de tes clients pour garder leur entière confiance."
+  },
+  {
+   "partie": "r6",
+   "texte": "Voici mon astuce de pro demande à l'IA d'indiquer clairement les textes peu lisibles.",
+   "dit": "Voici mon astuce de pro demande à l'i-a d'indiquer clairement les textes peu lisibles."
+  },
+  {
+   "partie": "r6",
+   "texte": "Cette consigne évite que l'outil n'invente des montants douteux en cas de doute."
+  },
+  {
+   "partie": "r6",
+   "texte": "Cela t'évite d'avoir des informations inventées dans tes tableaux de gestion finale."
+  },
+  {
+   "partie": "r7",
+   "texte": "En résumé prends une photo écris ton prompt structuré puis valide ton tableau instantanément."
+  },
+  {
+   "partie": "r7",
+   "texte": "Tu transformes ainsi ton smartphone en un véritable assistant administratif disponible à tout moment."
+  },
+  {
+   "partie": "r7",
+   "texte": "Cette compétence pratique te permet de moderniser ton entreprise sans dépenser aucun argent."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail ; ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ]
+}

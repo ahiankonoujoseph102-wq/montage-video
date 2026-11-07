@@ -1,0 +1,324 @@
+{
+ "scenes": [
+  {
+   "type": "carte",
+   "texte": "PERDRE DU TEMPS"
+  },
+  {
+   "type": "carte",
+   "texte": "BOUTIQUE OU SALON"
+  },
+  {
+   "type": "carte",
+   "kicker": "TÂCHE LOURDE",
+   "texte": "RECOPIER LES\nFACTURES",
+   "emoji": "1f62c",
+   "geste": "explique",
+   "expression": "grimace"
+  },
+  {
+   "type": "carte",
+   "texte": "UNE SIMPLE PHOTO"
+  },
+  {
+   "type": "carte",
+   "texte": "JOSEPH AHIANKONOU"
+  },
+  {
+   "type": "liste",
+   "titre": "AU PROGRAMME",
+   "items": [
+    {
+     "texte": "Prendre photo",
+     "a": "photo"
+    },
+    {
+     "texte": "Créer tableau",
+     "a": "tableau"
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "DÉFINITION",
+   "texte": "MODÈLE DE VISION\nLIT LES IMAGES",
+   "emoji": "1f9e0",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "OUVRE CHATGPT\nSUR SMARTPHONE",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "carte",
+   "texte": "PHOTO DU REGISTRE"
+  },
+  {
+   "type": "carte",
+   "texte": "IMAGE BIEN CLAIRE"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "ÉCRIS LE PROMPT\nSTRUCTURE PRO",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "liste",
+   "titre": "PROMPT PARFAIT",
+   "items": [
+    {
+     "texte": "Rôle exact",
+     "a": "rôle"
+    },
+    {
+     "texte": "Contexte clair",
+     "a": "contexte"
+    },
+    {
+     "texte": "Format tableau",
+     "a": "format"
+    }
+   ]
+  },
+  {
+   "type": "prompt",
+   "texte": "Tu es une secrétaire comptable rigoureuse. Extrais les données de la photo.",
+   "geste": "designe"
+  },
+  {
+   "type": "carte",
+   "texte": "ARTICLES ET PRIX"
+  },
+  {
+   "type": "carte",
+   "kicker": "FORMAT",
+   "texte": "EXIGE UN TABLEAU\nAVEC COLONNES",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "neutre"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Extrais les données sous forme de tableau avec colonnes Date, Produit, Quantité, Prix.",
+   "reponse": "Voici votre tableau :\n- Date | Produit | Qté | Prix\n- 12/05 | Sac de riz | 2 | 25000\n- 12/05 | Huile 5L | 1 | 6500",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "VALIDE ET COPIE\nLE RESULTAT",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "carte",
+   "texte": "EXCEL ET SHEETS"
+  },
+  {
+   "type": "carte",
+   "texte": "GAIN DE TEMPS"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Analyse cette facture manuscrite et liste les dépenses par catégorie.",
+   "reponse": "Facture Fournisseur :\n- Transport | 5000 FCFA\n- Emballage | 2500 FCFA\nTotal extrais : 7500 FCFA",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "texte": "TOUT EST CLASSÉ"
+  },
+  {
+   "type": "carte",
+   "texte": "FINI LE CLAVIER"
+  },
+  {
+   "type": "alerte",
+   "texte": "ATTENTION A\nL ERREUR",
+   "emoji": "26a0_fe0f"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Photo reçue",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Mot de passe",
+    "ok": false
+   },
+   "a": [
+    "données",
+    "mots"
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "DONNÉES SECRÈTES"
+  },
+  {
+   "type": "liste",
+   "titre": "ASTUCE DE PRO",
+   "items": [
+    {
+     "texte": "Signaler doutes",
+     "a": "lisibles"
+    },
+    {
+     "texte": "Vérifier prix",
+     "a": "douteux"
+    }
+   ]
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Attention : la ligne 3 contient un montant peu lisible (lisibilité incertaine).",
+   "emoji": "26a0"
+  },
+  {
+   "type": "carte",
+   "texte": "AUCUNE ERREUR"
+  },
+  {
+   "type": "liste",
+   "titre": "RESUME RAPIDE",
+   "items": [
+    {
+     "texte": "1. Photographier",
+     "a": "photo"
+    },
+    {
+     "texte": "2. Prompt structuré",
+     "a": "prompt"
+    },
+    {
+     "texte": "3. Exporter tableau",
+     "a": "tableau"
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "ASSISTANT POCHE"
+  },
+  {
+   "type": "carte",
+   "texte": "MODERNISE TOI"
+  },
+  {
+   "type": "carte",
+   "texte": "PRENDS L AVANCE"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "orange",
+  "orange",
+  "bleu",
+  "bleu",
+  "violet",
+  "nuit",
+  "vert",
+  "vert",
+  "violet",
+  "nuit",
+  "bleu",
+  "bleu",
+  "vert",
+  "vert",
+  "orange",
+  "orange",
+  "rose",
+  "violet",
+  "bleu",
+  "nuit",
+  "vert",
+  "bleu",
+  "orange",
+  "violet",
+  "orange",
+  "rose",
+  "nuit",
+  "vert",
+  "bleu",
+  "orange",
+  "violet",
+  "nuit",
+  "vert",
+  "bleu",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}
