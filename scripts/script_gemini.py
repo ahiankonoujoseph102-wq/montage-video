@@ -279,6 +279,9 @@ def generer(modeles, cle, tours, journal):
     return None, None, 0
 
 
+# Tournures interdites remplacées automatiquement (au lieu de refaire tout le script).
+REMPLACEMENTS = {r"\bsans (aucun )?effort\b": "plus simplement", r"\ben une nuit\b": "rapidement",
+                 r"\bgaranti(e|s|es)?\b": "solide", r"\bargent facile\b": "revenus"}
 FIN_SERIE = []  # phrase « fin de la partie N » quand la leçon continue dans la vidéo suivante
 
 
@@ -295,6 +298,8 @@ def corriger(d):
                 continue
             for v in g["variantes"]:
                 t = re.sub(rf"(?i)\b{re.escape(v)}\b", g["terme"], t)
+        for motif, par in REMPLACEMENTS.items():
+            t = re.sub(motif, par, t, flags=re.I)
         p["texte"] = t
     if len(d["scenes"]) == n and len(d["fond"]) == n:
         for p, s, f in FIN_SERIE + FIN:
@@ -518,7 +523,7 @@ def main():
     print(f"Rubrique : {rub['nom']}", flush=True)
     journal, d, err, modele = [], {}, ["aucune réponse"], None
     tours = [("user", demande)]
-    for essai in range(3):
+    for essai in range(4):
         modele, brut, duree = generer(modeles, cle, tours, journal)
         if brut is None:
             dossier.mkdir(parents=True, exist_ok=True)
@@ -536,7 +541,7 @@ def main():
         err = verifier(d, deja)
         journal.append({"essai": essai + 1, "modele": modele, "secondes": round(duree, 1), "erreurs": err})
         print(json.dumps(journal[-1], ensure_ascii=False), flush=True)
-        if not err or (essai == 2 and all(e.startswith("[visuel]") for e in err)):
+        if not err or (essai >= 2 and all(e.startswith("[visuel]") for e in err)):
             err = []
             break
         tours += [("model", brut), ("user", "Ta réponse ne respecte pas ces règles. Renvoie le JSON complet corrigé :\n- "
