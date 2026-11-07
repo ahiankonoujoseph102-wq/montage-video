@@ -58,6 +58,44 @@ def appeler_recherche(modele, recherche=True):
         return json.load(r)
 
 
+def youtube_tendances():
+    """Vraies vidéos IA les plus vues des 30 derniers jours (API YouTube Data v3, clé gratuite YOUTUBE_API_KEY)."""
+    import datetime
+    import urllib.parse
+    import urllib.request
+    yk = __import__("os").environ.get("YOUTUBE_API_KEY", "").strip()
+    if not yk:
+        return []
+    depuis = (datetime.datetime.utcnow() - datetime.timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    ids = []
+    for q, langue in [("ChatGPT astuce", "fr"), ("intelligence artificielle tutoriel", "fr"), ("IA business", "fr"),
+                      ("agent IA", "fr"), ("AI tutorial", "en"), ("ChatGPT tips", "en"), ("AI automation", "en")]:
+        u = "https://www.googleapis.com/youtube/v3/search?" + urllib.parse.urlencode({
+            "part": "id", "q": q, "type": "video", "order": "viewCount", "publishedAfter": depuis,
+            "relevanceLanguage": langue, "maxResults": 8, "key": yk})
+        try:
+            ids += [it["id"]["videoId"] for it in json.load(urllib.request.urlopen(u, timeout=30))["items"]]
+        except Exception as e:
+            print("YouTube :", repr(e)[:150], flush=True)
+    if not ids:
+        return []
+    u = "https://www.googleapis.com/youtube/v3/videos?" + urllib.parse.urlencode({
+        "part": "snippet,statistics", "id": ",".join(list(dict.fromkeys(ids))[:50]), "key": yk})
+    vids = json.load(urllib.request.urlopen(u, timeout=30)).get("items", [])
+    vids.sort(key=lambda v: -int(v["statistics"].get("viewCount", 0)))
+    return [{"titre": v["snippet"]["title"], "createur": v["snippet"]["channelTitle"], "plateforme": "YouTube",
+             "vues": int(v["statistics"].get("viewCount", 0)), "commentaires": int(v["statistics"].get("commentCount", 0)),
+             "likes": int(v["statistics"].get("likeCount", 0)), "lien": f"https://www.youtube.com/watch?v={v['id']}",
+             "description": v["snippet"].get("description", "")[:300]} for v in vids[:15]]
+
+
+YT = youtube_tendances()
+if YT:
+    print(f"YouTube : {len(YT)} vraies vidéos IA les plus vues des 30 derniers jours", flush=True)
+    DEMANDE = DEMANDE.replace("1. CHERCHE SUR INTERNET", "1. VOICI DE VRAIES DONNÉES YOUTUBE (vidéos IA les plus vues des 30 "
+                              "derniers jours, avec vues, likes et commentaires réels) : " + json.dumps(YT, ensure_ascii=False)
+                              + "\n   Complète si possible par une recherche sur Internet. CHERCHE SUR INTERNET")
+
 # Plan B (recherche Google refusée par le quota gratuit) : même demande, d'après les connaissances du modèle,
 # signalé comme tel dans veille.json (« recherche » : false).
 DEMANDE_SANS = DEMANDE.replace("CHERCHE SUR INTERNET (recherche Google)", "D'APRÈS TES CONNAISSANCES (sans recherche)")
@@ -84,6 +122,14 @@ for modele, recherche in [(m, True) for m in tous[:6]] + [(m, False) for m in co
         d["sources_recherche"] = sources
         d["modele"] = modele
         d["recherche"] = recherche
+        d["youtube"] = YT
+        if YT:  # tendances = vraies données YouTube (jamais des chiffres inventés)
+            d["tendances_modele"] = d.get("tendances", [])
+            d["tendances"] = [{"titre": v["titre"], "createur": v["createur"], "plateforme": "YouTube", "vues": v["vues"],
+                               "lien": v["lien"], "pourquoi": ""} for v in YT[:10]]
+        elif not recherche:
+            for x in d.get("tendances", []):
+                x["vues"] = "non vérifié"  # sans recherche ni YouTube, aucun chiffre n'est fiable
         if not d.get("sujet", {}).get("titre"):
             raise ValueError("pas de sujet")
         (dossier / "veille.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))

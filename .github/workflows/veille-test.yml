@@ -21,6 +21,7 @@ jobs:
       - name: Veille
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python scripts/veille.py projets/test-auto/veille-essai || true
       - name: Ranger le résultat
         run: |
