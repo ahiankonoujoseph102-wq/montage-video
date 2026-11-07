@@ -1,0 +1,86 @@
+[
+ {
+  "type": "logo + capture",
+  "outil": "ChatGPT",
+  "source": "Wikimedia Commons",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation ; capture de la page publique"
+ },
+ {
+  "type": "logo",
+  "outil": "Facebook",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man smiling office",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/30849316687",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african man smiling office"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman looking sad smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "comedy_nose",
+  "page": "https://www.flickr.com/photos/23408922@N07/16168114115",
+  "licence": "Domaine public (PDM)",
+  "recherche_utilisee": "sad smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man working office",
+  "source": "Openverse / flickr",
+  "auteur": "US Army Africa",
+  "page": "https://www.flickr.com/photos/36281822@N08/4034860294",
+  "licence": "CC BY 2.0 (attribution : US Army Africa)",
+  "recherche_utilisee": "african man working office"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman boutique clothes",
+  "source": "Openverse / flickr",
+  "auteur": "rverc",
+  "page": "https://www.flickr.com/photos/26270547@N07/14161251325",
+  "licence": "CC BY 2.0 (attribution : rverc)",
+  "recherche_utilisee": "african woman boutique clothes"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman elegant sandals shop",
+  "source": "Openverse / flickr",
+  "auteur": "erix!",
+  "page": "https://www.flickr.com/photos/68387408@N00/139199171",
+  "licence": "CC BY 2.0 (attribution : erix!)",
+  "recherche_utilisee": "woman elegant sandals shop"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman smartphone smiling",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/45739280552",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african woman smartphone smiling"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman notes smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/45789233691",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "woman notes smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african group smiling office",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/30849316687",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african group smiling office"
+ }
+]

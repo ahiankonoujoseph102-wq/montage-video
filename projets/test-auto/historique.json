@@ -28,5 +28,11 @@
   "lecon": "contenu_pro_chatgpt_claude:0",
   "partie": 1,
   "total": 1
+ },
+ {
+  "titre": "Le prompt qui fait vendre : la formule R.T.C.T.F.O.",
+  "rubrique": "script",
+  "script": "01-rtctfo",
+  "date": "2026-11-07"
  }
 ]
