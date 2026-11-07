@@ -46,20 +46,33 @@ Réponds UNIQUEMENT avec un objet JSON (sans texte autour) :
   "methode": {{"outil": "", "etapes": [""], "prompts": [""], "erreurs": [""], "astuces": [""], "gratuit": ""}}}}"""
 
 
-def appeler_recherche(modele):
+def appeler_recherche(modele, recherche=True):
     import urllib.request
-    corps = {"contents": [{"role": "user", "parts": [{"text": DEMANDE}]}], "tools": [{"google_search": {}}],
+    corps = {"contents": [{"role": "user", "parts": [{"text": DEMANDE if recherche else DEMANDE_SANS}]}],
              "generationConfig": {"temperature": 0.7}}
+    if recherche:
+        corps["tools"] = [{"google_search": {}}]
     req = urllib.request.Request(f"{g.BASE}/models/{modele}:generateContent", data=json.dumps(corps).encode(),
                                  method="POST", headers={"Content-Type": "application/json", "x-goog-api-key": cle})
     with urllib.request.urlopen(req, timeout=240) as r:
         return json.load(r)
 
 
+# Plan B (recherche Google refusée par le quota gratuit) : même demande, d'après les connaissances du modèle,
+# signalé comme tel dans veille.json (« recherche » : false).
+DEMANDE_SANS = DEMANDE.replace("CHERCHE SUR INTERNET (recherche Google)", "D'APRÈS TES CONNAISSANCES (sans recherche)")
+
+import urllib.request  # noqa: E402
+liste = json.load(urllib.request.urlopen(urllib.request.Request(f"{g.BASE}/models?pageSize=1000",
+                                                                 headers={"x-goog-api-key": cle}), timeout=30))["models"]
+tous = [m["name"].split("/")[-1] for m in liste if "generateContent" in m.get("supportedGenerationMethods", [])
+        and ("flash" in m["name"] or "gemini-2" in m["name"]) and not any(x in m["name"] for x in ("image", "tts", "live", "audio"))]
+tous.sort(key=lambda n: ("2.5" not in n and "2.0" not in n, "lite" in n))  # 2.x d'abord : recherche gratuite plus souvent permise
+print("Modèles essayés pour la veille :", ", ".join(tous), flush=True)
 journal = []
-for modele in [m for m in g.modeles_disponibles(cle) if "pro" not in m][:4]:
+for modele, recherche in [(m, True) for m in tous[:8]] + [(m, False) for m in tous[:3]]:
     try:
-        rep = appeler_recherche(modele)
+        rep = appeler_recherche(modele, recherche)
         c = rep["candidates"][0]
         texte = "".join(p.get("text", "") for p in c["content"]["parts"] if not p.get("thought"))
         m = re.search(r"\{.*\}", texte, re.S)
@@ -68,15 +81,16 @@ for modele in [m for m in g.modeles_disponibles(cle) if "pro" not in m][:4]:
                    for ch in c.get("groundingMetadata", {}).get("groundingChunks", []) if ch.get("web")]
         d["sources_recherche"] = sources
         d["modele"] = modele
+        d["recherche"] = recherche
         if not d.get("sujet", {}).get("titre"):
             raise ValueError("pas de sujet")
         (dossier / "veille.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))
-        print(f"Veille ({modele}) : {len(d.get('tendances', []))} tendances, {len(sources)} sources ; sujet : "
+        print(f"Veille ({modele}, {'avec' if recherche else 'SANS'} recherche Google) : {len(d.get('tendances', []))} tendances, {len(sources)} sources ; sujet : "
               f"{d['sujet']['titre']}")
         sys.exit(0)
     except Exception as e:
-        msg = e.read().decode()[:200] if hasattr(e, "read") else repr(e)[:200]
-        journal.append({"modele": modele, "erreur": msg})
+        msg = e.read().decode()[:700] if hasattr(e, "read") else repr(e)[:300]
+        journal.append({"modele": modele, "recherche": recherche, "erreur": msg})
         print(f"{modele} : {msg}", flush=True)
 (dossier / "veille_erreurs.json").write_text(json.dumps(journal, ensure_ascii=False, indent=1))
 sys.exit("Veille impossible : le script sera écrit sans elle.")
