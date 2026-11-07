@@ -140,6 +140,14 @@ jobs:
             -q '.[] | select(.tagName | startswith("video-")) | select((.createdAt | fromdateiso8601) < (now - 30*86400)) | .tagName' |
           while read -r t; do gh release delete "$t" --yes --cleanup-tag && echo "Supprimée : $t"; done
 
+      - name: Veille du jour (ce qui marche chez les meilleurs créateurs IA)
+        if: env.SCRIPT_ID == ''
+        continue-on-error: true
+        timeout-minutes: 10
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/veille.py projets/test-auto/run
+
       - name: Écrire le script avec Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

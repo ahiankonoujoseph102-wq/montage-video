@@ -551,7 +551,11 @@ def main():
     hist_f = ROOT / "projets" / "test-auto" / "historique.json"
     historique = json.loads(hist_f.read_text()) if hist_f.exists() else []
     deja = [h["titre"] if isinstance(h, dict) else h for h in historique]
-    sv = None if sujet else script_valide_suivant(historique)
+    vf = dossier / "veille.json"
+    veille = json.loads(vf.read_text()) if vf.exists() and not sujet else None
+    # Avec la veille du jour, le sujet vient de ce qui marche chez les meilleurs créateurs IA (demande de Joseph) ;
+    # les scripts écrits à l'avance et les leçons des formations ne sont plus prioritaires.
+    sv = None if (sujet or (veille and not os.environ.get("SCRIPT_ID"))) else script_valide_suivant(historique)
     if os.environ.get("SCRIPT_ID", "").strip() and not sv:
         sys.exit(f"Script {os.environ['SCRIPT_ID']} introuvable dans projets/scripts_valides.")
     if sv:
@@ -575,7 +579,20 @@ def main():
             return
         print("Plan visuel impossible pour le script validé : script écrit par Gemini à la place.", flush=True)
     rub = rubrique_suivante(historique)
-    lecon = None if sujet else lecon_suivante(historique)
+    lecon = None if (sujet or veille) else lecon_suivante(historique)
+    if veille:
+        sj, me = veille["sujet"], veille.get("methode", {})
+        rub = {"id": "veille", "nom": f"{sj['titre']} — angle : {sj.get('angle', '')}",
+               "idees": "sujet choisi par la veille du jour (ce qui marche chez les meilleurs créateurs IA)"}
+        tend = "\n".join(f"- {x.get('titre')} ({x.get('createur')}, {x.get('plateforme')}, vues : {x.get('vues') or '?'}) : "
+                         f"{x.get('pourquoi')}" for x in veille.get("tendances", [])[:8])
+        sources_veille = ("MÉTHODE VÉRIFIÉE PAR LA RECHERCHE (à enseigner, rien d'autre sur les outils) :\n"
+                          f"Outil : {me.get('outil', '')} ; gratuit : {me.get('gratuit', '')}\nÉtapes :\n- "
+                          + "\n- ".join(me.get("etapes", [])) + "\nPrompts qui fonctionnent :\n- " + "\n- ".join(me.get("prompts", []))
+                          + "\nErreurs fréquentes :\n- " + "\n- ".join(me.get("erreurs", []))
+                          + "\nAstuces de pro :\n- " + "\n- ".join(me.get("astuces", []))
+                          + "\n\nCE QUI MARCHE EN CE MOMENT CHEZ LES MEILLEURS CRÉATEURS IA (inspire-toi de leur accroche, de leur "
+                          "format et de leur valeur, sans les copier) :\n" + tend)
     guide = (ROOT / "projets" / "guide_pedagogique.md").read_text()
     ex = ROOT / "projets" / "formations_joseph" / "exemples_episodes.md"
     if ex.exists():
@@ -596,7 +613,7 @@ def main():
     demande = (CONSIGNE.replace("EMOJIS", ", ".join(sorted(EMOJIS))).replace("FAITS", faits_texte())
                .replace("GUIDE", guide)
                .replace("RUBRIQUE", f"{rub['nom']} ({rub['idees']})")
-               .replace("METHODES", source if lecon else methodes(rub["id"]))
+               .replace("METHODES", source if lecon else sources_veille if veille else methodes(rub["id"]))
                .replace("MOTS_GEMINI", f"{MOTS_MIN - MOTS_FIN} à {MOTS_MAX - MOTS_FIN}"))
     demande += "\n\nSujets déjà traités (à NE PAS reprendre) : " + "; ".join(deja or ["aucun"])
     if sujet:
