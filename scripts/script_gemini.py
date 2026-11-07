@@ -47,7 +47,7 @@ NUMERO_DIT = "plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deu
 MOTS_MIN, MOTS_MAX = 500, 700  # visés (3 à 4 min) ; accepté à partir de MOTS_PLANCHER (environ 3 min)
 MOTS_PLANCHER = 450
 # Mots et tournures interdits (fausses promesses, chiffres, peur, mépris, domination, religion).
-INTERDITS = ["%", "garanti", "garantie", "millionnaire", "devenir riche", "sans effort", "en une nuit", "meilleur au monde",
+INTERDITS = ["prochaine formation", "formation exclusive", "sois fier", "l'avenir appartient", "%", "garanti", "garantie", "millionnaire", "devenir riche", "sans effort", "en une nuit", "meilleur au monde",
              "gratuit à vie", "argent facile", "gagner de l'argent", "salaire", "emploi assuré", "dominer", "domine",
              "écraser", "religion", "bible", "coran", "prophète", "intelligence artificielle remplace"]
 PEUR = r"\b(te|vous|les) remplacer\b|\bperdre (ton|votre|son) (travail|emploi|boulot)\b|\bchômage\b|\bnuls?\b|\bidiots?\b"
@@ -117,6 +117,9 @@ CONTENU OBLIGATOIRE :
 - NIVEAU EXPERT : partage des méthodes de professionnel, du niveau de ce que des agences et des formateurs vendent très
   cher : la démarche complète, les bons réglages, les vrais prompts, l'ordre des étapes, comment obtenir un résultat
   propre et utilisable tout de suite. MONTRE ce que l'IA crée (scènes "demo" avec le prompt et la réponse).
+- AUCUN REMPLISSAGE : pas de phrases de motivation creuses (« sois fier », « l'avenir appartient à… », « continue de
+  pratiquer », « chaque effort compte »). Chaque phrase apprend quelque chose de concret. Après le message clé, arrête-toi.
+  N'annonce jamais de formation, d'événement, d'offre ou de date (ils ne sont pas dans les faits vérifiés).
 - EXACTITUDE : ne dis que des choses vraies et vérifiables sur les outils tels qu'ils existent aujourd'hui. Si tu n'es pas
   certain qu'une fonction, un bouton ou une offre gratuite existe, n'en parle pas. Pas de nom de menu inventé.
 
@@ -386,6 +389,8 @@ RELECTURE = """Relis maintenant ce script comme un formateur expert et exigeant,
 - CLARTÉ : chaque étape doit être refaisable par un débutant : quoi ouvrir, quoi écrire, quoi obtenir. Explique chaque
   mot technique. Supprime les phrases vagues ou génériques et remplace-les par du concret.
 - PUBLIC : exemples tirés du quotidien africain francophone.
+- REMPLISSAGE : supprime toute phrase de motivation creuse ou d'annonce (formation, événement, offre) et remplace-la par
+  une précision utile (un exemple, une étape détaillée, un prompt).
 - Garde la longueur (MOTS_GEMINI mots), une scène et un fond par phrase, le titre d'accroche et le prompt."""
 
 
