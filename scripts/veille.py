@@ -67,10 +67,12 @@ liste = json.load(urllib.request.urlopen(urllib.request.Request(f"{g.BASE}/model
                                                                  headers={"x-goog-api-key": cle}), timeout=30))["models"]
 tous = [m["name"].split("/")[-1] for m in liste if "generateContent" in m.get("supportedGenerationMethods", [])
         and ("flash" in m["name"] or "gemini-2" in m["name"]) and not any(x in m["name"] for x in ("image", "tts", "live", "audio"))]
-tous.sort(key=lambda n: ("2.5" not in n and "2.0" not in n, "lite" in n))  # 2.x d'abord : recherche gratuite plus souvent permise
+# Les modèles qui marchent pour le script (liste et ordre de script_gemini), puis les autres ; 2.x retirés (plus ouverts).
+connus = [m for m in g.modeles_disponibles(cle) if "pro" not in m]
+tous = connus + [m for m in tous if m not in connus and "2.5" not in m and "preview" not in m and "omni" not in m]
 print("Modèles essayés pour la veille :", ", ".join(tous), flush=True)
 journal = []
-for modele, recherche in [(m, True) for m in tous[:8]] + [(m, False) for m in tous[:3]]:
+for modele, recherche in [(m, True) for m in tous[:6]] + [(m, False) for m in connus[:3]]:
     try:
         rep = appeler_recherche(modele, recherche)
         c = rep["candidates"][0]
