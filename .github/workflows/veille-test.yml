@@ -1,0 +1,31 @@
+# Essai de la veille seule (sans vidéo) : quels modèles gratuits acceptent la recherche Google, et ce qu'elle trouve.
+name: Essai de la veille
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: claude/great-heisenberg-8p7tj4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Veille
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/veille.py projets/test-auto/veille-essai || true
+      - name: Ranger le résultat
+        run: |
+          git config user.name "Montage automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add projets/test-auto/veille-essai
+          git commit -q -m "Essai de la veille du $(date -u +%d/%m/%Y %Hh%M)" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin claude/great-heisenberg-8p7tj4 && git push -q origin HEAD:claude/great-heisenberg-8p7tj4 && break; sleep 5; done
