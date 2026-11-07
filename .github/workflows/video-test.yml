@@ -129,8 +129,8 @@ jobs:
 
       - name: Générer la voix clonée
         run: |
-          ffmpeg -loglevel error -y -ss 6.55 -t 13.2 -i projets/talkami-pub/pub-kit/voix-off/voix-off.mp4 \
-            -af "highpass=f=70,afftdn=nr=8:nf=-45" -ac 1 -ar 24000 "$RUNNER_TEMP/reference.wav"
+          # Référence : la voix naturelle de Joseph dans un de ses cours (projets/voix/, privé).
+          cp projets/voix/reference_formation.wav "$RUNNER_TEMP/reference.wav"
           python scripts/voix_clonee.py projets/test-auto/run/script.json "$RUNNER_TEMP/reference.wav" "$RUNNER_TEMP/phrases"
           cp "$RUNNER_TEMP/phrases/mesures.json" projets/test-auto/run/mesures_voix.json
           echo "T_VOIX=$(date +%s)" >> "$GITHUB_ENV"
@@ -193,7 +193,7 @@ jobs:
           h = Path("projets/test-auto/historique.json")
           liste = json.loads(h.read_text()) if h.exists() else []
           s = json.loads(Path("projets/test-auto/run/script.json").read_text())
-          liste.append({"titre": s["titre"], "rubrique": s.get("rubrique"), "date": s.get("date")})
+          liste.append(s.get("historique") or {"titre": s["titre"], "rubrique": s.get("rubrique"), "date": s.get("date")})
           h.write_text(json.dumps(liste, ensure_ascii=False, indent=1))
           EOF
           git config user.name "Montage automatique"
