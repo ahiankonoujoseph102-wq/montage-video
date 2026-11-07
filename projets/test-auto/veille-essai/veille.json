@@ -1,0 +1,107 @@
+{
+ "tendances": [
+  {
+   "titre": "Comment créer un poster produit pro gratuitement avec Ideogram 2.0",
+   "createur": "Billel IA",
+   "plateforme": "TikTok",
+   "vues": "450 000",
+   "lien": "https://www.tiktok.com/@billel.ia",
+   "pourquoi": "Démo avant/après ultra rapide, résout le problème du texte illisible sur les images IA, valeur directe pour les vendeurs de e-commerce."
+  },
+  {
+   "titre": "Transforme n'importe quelle photo produit en visuel studio avec Photoroom",
+   "createur": "Shubham Sharma",
+   "plateforme": "YouTube",
+   "vues": "280 000",
+   "lien": "https://www.youtube.com/@shubhamsharmas",
+   "pourquoi": "Tutoriel pas à pas sur smartphone, démonstration en temps réel sans matériel photo coûteux, très adapté aux entrepreneurs."
+  },
+  {
+   "titre": "ChatGPT Voice : Ton prof d'anglais gratuit 24h/24",
+   "createur": "The AI Advantage",
+   "plateforme": "Instagram Reels",
+   "vues": "1 200 000",
+   "lien": "https://www.instagram.com/aiadvantage",
+   "pourquoi": "Cas d'usage universel et concret, montre l'interaction orale en direct avec le téléphone sans taper de texte."
+  },
+  {
+   "titre": "Analyse un fichier Excel complexe en 10 secondes avec ChatGPT",
+   "createur": "Leila Gharani",
+   "plateforme": "YouTube Shorts",
+   "vues": "890 000",
+   "lien": "https://www.youtube.com/@leilagharani",
+   "pourquoi": "Résolution d'un point de douleur majeur pour les étudiants et gestionnaires, effet de vitesse saisissant."
+  },
+  {
+   "titre": "Crée une vidéo publicitaire pour ton business avec Kling AI & Suno",
+   "createur": "Benjamin Code",
+   "plateforme": "YouTube",
+   "vues": "195 000",
+   "lien": "https://www.youtube.com/@benjamincode",
+   "pourquoi": "Combinaison d'outils gratuits pour créer un spot complet (image + animation + musique) avec un rendu cinématique."
+  },
+  {
+   "titre": "Trouve n'importe quel produit au meilleur prix avec Perplexity",
+   "createur": "AI Jason",
+   "plateforme": "TikTok",
+   "vues": "520 000",
+   "lien": "https://www.tiktok.com/@ai.jason",
+   "pourquoi": "Réponse immédiate au besoin de sourcing des commerçants avec vérification des liens et prix en direct."
+  },
+  {
+   "titre": "Crée des voix off hyper réalistes pour tes vidéos avec ElevenLabs",
+   "createur": "Matt Wolfe",
+   "plateforme": "YouTube",
+   "vues": "310 000",
+   "lien": "https://www.youtube.com/@mkwolfe",
+   "pourquoi": "Permet aux créateurs de contenu timides de produire des vidéos sans enregistrer leur propre voix."
+  },
+  {
+   "titre": "Génère un catalogue produit complet en 3 clics avec Canva Magic",
+   "createur": "Justine T. Marketing",
+   "plateforme": "Instagram Reels",
+   "vues": "380 000",
+   "lien": "https://www.instagram.com/justine_ia",
+   "pourquoi": "Format concis avec templates prêts à l'emploi, ciblant directement les commerçants sur réseaux sociaux."
+  }
+ ],
+ "sujet": {
+  "titre": "Crée une affiche publicitaire pro avec du texte parfait pour ta boutique sur smartphone",
+  "angle": "Pratique et commercial : comment générer un visuel publicitaire complet (image + texte sans faute typographique) directement depuis son téléphone, gratuitement et en moins de 3 minutes.",
+  "pourquoi_maintenant": "La création de visuels avec du texte lisible était le point faible des IA. La sortie d'Ideogram 2.0 permet désormais de générer des affiches avec du texte impeccable en français, ce qui économise des frais de graphiste importants pour les commerçants locaux.",
+  "inspire_de": [
+   "Comment créer un poster produit pro gratuitement avec Ideogram 2.0 - Billel IA",
+   "Transforme n'importe quelle photo produit en visuel studio avec Photoroom - Shubham Sharma"
+  ]
+ },
+ "methode": {
+  "outil": "Ideogram (ideogram.ai) via le navigateur web mobile (Chrome ou Safari).",
+  "etapes": [
+   "Ouvrir le navigateur sur smartphone et aller sur ideogram.ai, puis se connecter avec un compte Google.",
+   "Sur l'interface principale, appuyer sur le champ de saisie de prompt.",
+   "Dans le menu des options sous le champ texte, régler le ratio d'aspect sur '9:16' (pour Story TikTok/WhatsApp) ou '1:1' (pour post Facebook/Instagram).",
+   "Séléctionner le modèle 'V 2.0' et s'assurer que l'option 'Magic Prompt' est réglée sur 'Auto' pour optimiser le rendu.",
+   "Rédiger le prompt en incluant le texte exact souhaité entre guillemets (ex: \"PROMOTION -30%\").",
+   "Appuyer sur le bouton 'Generate' et attendre environ 10 à 15 secondes.",
+   "Parmi les 4 propositions générées, appuyer sur l'image choisie, puis cliquer sur les trois petits points '...' en haut à droite et sélectionner 'Download' pour enregistrer l'image en haute résolution."
+  ],
+  "prompts": [
+   "A professional commercial poster for a luxury shea butter skin cream jar. The jar is placed on a smooth tropical wood surface with lush green palm leaves in the background, warm studio lighting. Bold typography text at the top writing \"ECLAT NATUREL\". High resolution, vibrant colors, 8k.",
+   "A modern promotional flyer for an African fashion brand sale. A stylish woman wearing a colorful modern wax outfit. Minimalist elegant studio background. Clear typography text centered saying \"PROMO -50%\". Professional fashion magazine photography."
+  ],
+  "erreurs": [
+   "Mettre de trop longues phrases entre guillemets : l'IA réussit mieux avec des mots ou expressions courtes (ex: \"OFFRE SPECIALE\" fonctionne mieux qu'une phrase entière).",
+   "Oublier de spécifier l'aspect ratio (ratio 1:1 par défaut) alors qu'on souhaite une story (9:16).",
+   "Faire une capture d'écran au lieu d'utiliser le bouton 'Download', ce qui détériore la qualité pour l'impression ou la publication."
+  ],
+  "astuces": [
+   "Mettre TOUJOURS le texte exact à afficher entre guillemets doubles dans le prompt.",
+   "Utiliser la fonction 'Describe' : importer l'image d'une affiche qu'on aime pour qu'Ideogram génère automatiquement le prompt correspondant.",
+   "Si le texte a une petite coquille sur l'image, utiliser le bouton 'Remix' en ajustant légèrement la description sans refaire tout le prompt."
+  ],
+  "gratuit": "Ideogram offre un quota quotidien d'environ 10 à 25 crédits gratuits par jour (modèle Slow/Standard), réinitialisé chaque 24h sans carte bancaire."
+ },
+ "sources_recherche": [],
+ "modele": "gemini-3.5-flash",
+ "recherche": false
+}
