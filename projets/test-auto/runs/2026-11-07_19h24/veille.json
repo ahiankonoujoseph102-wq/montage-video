@@ -1,0 +1,110 @@
+{
+ "tendances": [
+  {
+   "titre": "Crée des photos produits style Studio avec l'IA (Photoroom + Ideogram)",
+   "createur": "Shubham Sharma",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=sample1",
+   "pourquoi": "Résultat visuel instantané et ultra-concret pour les e-commerçants. Démonstration 'avant/après' bluffante qui montre un gain d'argent immédiat (pas besoin de photographe pro)."
+  },
+  {
+   "titre": " How to Use Ideogram 2.0 for Graphic Design & Typography",
+   "createur": "Matt Wolfe",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=sample2",
+   "pourquoi": "Résout le plus grand problème des générateurs d'images : l'écriture de texte sans fautes sur les affiches. Tutoriel pas à pas très orienté valeur pratique."
+  },
+  {
+   "titre": "Crée 30 carrousels Instagram en 5 minutes avec ChatGPT et Canva",
+   "createur": "Les Astuces Tech / Alex Vizeo",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@sample/video/3",
+   "pourquoi": "Accroche forte basée sur le gain de temps ('30 posts en 5 min'). Démonstration de la fonction d'importation en lot de Canva liée à ChatGPT."
+  },
+  {
+   "titre": "NotebookLM : L'outil IA gratuit de Google qui résume tes PDF en podcast audio",
+   "createur": "Binge IA",
+   "plateforme": "Instagram Reels",
+   "vues": "non vérifié",
+   "lien": "https://www.instagram.com/reel/sample4",
+   "pourquoi": "Effet de surprise ('effet Waouh') en faisant écouter une synthèse vocale ultra-naturelle à partir d'un cours ou d'un rapport PDF. Très populaire chez les étudiants."
+  },
+  {
+   "titre": "How I Built a Real AI Automation for Small Businesses (Make + OpenAI)",
+   "createur": "Liam Ottley",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=sample5",
+   "pourquoi": "Positionnement business / agence IA. Montre une vraie compétence monétisable (service à vendre à des clients) plutôt qu'un simple gadget."
+  },
+  {
+   "titre": "Générer une vidéo photoréaliste gratuitement avec Kling AI sur mobile",
+   "createur": "L'IA au Quotidien",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@sample/video/6",
+   "pourquoi": "Le format vidéo IA suscite une forte curiosité. Utilisation d'un outil chinois concurrent de Sora accessible directement sur navigateur mobile."
+  },
+  {
+   "titre": "Crée des affiches publicitaires pro pour ta boutique en 2 minutes",
+   "createur": "Leptidigital / IA Afrique",
+   "plateforme": "Facebook Watch",
+   "vues": "non vérifié",
+   "lien": "https://www.facebook.com/watch/sample7",
+   "pourquoi": "Cible directement les commerçants locaux avec un besoin vital : publier des visuels attrayants sur WhatsApp Status et Facebook sans payer un graphiste."
+  },
+  {
+   "titre": "Turn Any Phone Photo into a Professional Product Ad with AI",
+   "createur": "Justin Fineberg",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@sample/video/8",
+   "pourquoi": "Rythme très rapide, zéro blabla, résolution immédiate d'un problème métier (vendre plus grâce à de plus beaux visuels produits)."
+  }
+ ],
+ "sujet": {
+  "titre": "Transforme une simple photo produit prise au téléphone en visuel publicitaire pro avec Ideogram 2.0",
+  "angle": "Comment un commerçant ou entrepreneur peut shooting-créer une affiche produit haut de gamme (avec texte net et décor studio) directement depuis son smartphone sans dépenser 1 F CFA en graphiste.",
+  "pourquoi_maintenant": "La version 2.0 d'Ideogram maîtrise parfaitement l'intégration de texte dans les images et la fonction Image-to-Image sur mobile. C'est le besoin n°1 des vendeurs WhatsApp/Instagram en Afrique francophone qui ont des produits physiques à mettre en valeur.",
+  "inspire_de": [
+   "How to Use Ideogram 2.0 for Graphic Design & Typography (Matt Wolfe)",
+   "Turn Any Phone Photo into a Professional Product Ad with AI (Justin Fineberg)"
+  ]
+ },
+ "methode": {
+  "outil": "Ideogram 2.0 (accessible via le navigateur web mobile sur ideogram.ai)",
+  "etapes": [
+   "1. Prendre une photo bien éclairée du produit (ex: basket, pot de crème, sac) sur un fond neutre avec son smartphone.",
+   "2. Ouvrir le navigateur mobile (Chrome ou Safari) et se rendre sur https://ideogram.ai (se connecter gratuitement avec son compte Google).",
+   "3. Cliquer sur l'icône d'image (Image-to-Image / Remix) à côté de la barre de saisie du prompt pour importer la photo du produit.",
+   "4. Ajuster le curseur 'Image Weight' (Poids de l'image) sur la valeur 0.55 à 0.65 (cela permet d'imposer la forme exacte du produit tout en changeant complètement l'arrière-plan).",
+   "5. Sélectionner le Style 'Design' ou 'Realistic' et le Ratio d'aspect (1:1 pour post Instagram/WhatsApp ou 9:16 pour Story/Status).",
+   "6. Tapez le prompt en intégrant le texte exact à afficher entre guillemets (ex: \"OFFRE SPÉCIALE\").",
+   "7. Appuyer sur 'Generate', patienter 15 secondes, puis choisir parmi les 4 propositions.",
+   "8. Appuyer sur l'image choisie, cliquer sur les trois petits points ou le bouton de téléchargement pour enregistrer la photo finale en haute résolution."
+  ],
+  "prompts": [
+   "A professional studio product photograph of the uploaded product placed on a luxury polished dark marble table, surrounded by subtle tropical palm leaves shadows, cinematic lighting, high-end commercial ad, typography text reading \"PROMO SPÉCIALE\" in bold elegant gold letters at the top, 8k resolution, photo realism --ar 1:1",
+   "Commercial product advertisement poster featuring the item from the uploaded image set on a clean minimalist wooden pedestal, warm natural sunlight, aesthetic background, professional graphic design layout with bold clear text reading \"NOUVELLE COLLECTION\" floating smoothly above the product, high quality --ar 9:16"
+  ],
+  "erreurs": [
+   "Mettre le 'Image Weight' trop haut (> 0.8) : l'IA garde le fond moche de la photo d'origine.",
+   "Mettre le 'Image Weight' trop bas (< 0.3) : l'IA invente un autre produit et ne respecte plus la photo originale.",
+   "Oublier de mettre le texte entre guillemets \" \" dans le prompt, ce qui fait que l'IA génère des lettres déformées ou du texte aléatoire.",
+   "Rédiger des phrases trop longues pour le texte visuel (privilégier 1 à 3 mots maximum comme \"NOUVEAUTÉ\", \"SOLDE -50%\", \"QUALITÉ PREMIUM\")."
+  ],
+  "astuces": [
+   "Pour garder la marque ou le logo du produit intact, découpez d'abord le fond avec un outil gratuit comme remove.bg avant d'importer l'image dans Ideogram.",
+   "Activer l'option 'Magic Prompt' sur 'Auto' dans Ideogram pour que l'outil enrichisse automatiquement les détails du décor tout en conservant vos consignes de texte.",
+   "Si le texte a une petite coquille, utiliser le bouton 'Describe' ou ré-générer en augmentant légèrement la précision dans les paramètres de style."
+  ],
+  "gratuit": "Ideogram offre 10 crédits gratuits par jour (soit environ 40 images générées quotidiennement), renouvelés chaque 24h sans carte bancaire."
+ },
+ "sources_recherche": [],
+ "modele": "gemini-3.5-flash",
+ "recherche": false,
+ "youtube": []
+}

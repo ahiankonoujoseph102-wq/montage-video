@@ -1,0 +1,581 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.5-flash",
+   "secondes": 13.3,
+   "erreurs": [
+    "Ton script fait 310 mots, il en faut entre 449 et 649 : ajoute environ 139 mots (par exemple 10 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "23 phrases : il en faut entre 34 et 56.",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil)."
+   ]
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 3.1
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 8.4
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.8-flash",
+   "secondes": 149.8,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "PHOTOS PRODUIT",
+    "STYLE STUDIO",
+    "SANS GRAPHISTE"
+   ],
+   "cle": "STUDIO"
+  },
+  "titre": "Transforme tes photos smartphone en visuels de studio avec Ideogram 2.0",
+  "description": "Découvre comment créer une affiche publicitaire pro pour tes produits directement depuis ton téléphone sans dépenser un seul franc.",
+  "hashtags": [
+   "#IntelligenceArtificielle",
+   "#Ideogram",
+   "#MarketingDigital",
+   "#EntrepreneursAfricains",
+   "#LomeIASchool",
+   "#Graphisme"
+  ],
+  "prompt": "A professional studio product photograph of the uploaded product placed on a luxury polished dark marble table, surrounded by subtle tropical palm leaves shadows, cinematic lighting, high-end commercial ad, typography text reading \"PROMO SPÉCIALE\" in bold elegant gold letters at the top, 8k resolution, photo realism --ar 1:1",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tes photos de produits faites au téléphone ne font pas vendre sur tes statuts WhatsApp ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Tu poses un article sur une table en plastique et le résultat paraît négligé."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Payer un infographe pour chaque nouvel arrivage de ta boutique coûte beaucoup trop cher."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Il existe une méthode simple pour créer des affiches de luxe sans rien payer."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, de Lomé IA School.",
+    "dit": "Je suis Joseph, de Lomé i-a Skoul."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Aujourd'hui, tu vas apprendre à transformer n'importe quelle photo banale en affiche commerciale avec Ideogram."
+   },
+   {
+    "partie": "r1",
+    "texte": "Première étape, prends une photo bien claire de ton article avec la caméra de ton téléphone."
+   },
+   {
+    "partie": "r1",
+    "texte": "Place ton produit devant un mur uni ou sur un pagne sans motifs trop chargés."
+   },
+   {
+    "partie": "r1",
+    "texte": "Que ce soit une jolie chaussure pour femme ou un flacon d'huile cosmétique, reste simple."
+   },
+   {
+    "partie": "r1",
+    "texte": "Veille surtout à ce que la lumière du jour éclaire nettement les contours de l'objet."
+   },
+   {
+    "partie": "r2",
+    "texte": "Deuxième étape, lance ton navigateur web habituel sur ton mobile et rends-toi sur ideogram point ai."
+   },
+   {
+    "partie": "r2",
+    "texte": "Crée ton accès gratuit en un seul clic grâce à ton adresse électronique Google habituelle."
+   },
+   {
+    "partie": "r2",
+    "texte": "Ce service en ligne t'offre dix crédits gratuits renouvelés chaque jour sans carte bancaire."
+   },
+   {
+    "partie": "r2",
+    "texte": "Cela te donne la possibilité de concevoir environ quarante visuels publicitaires tous les jours."
+   },
+   {
+    "partie": "r3",
+    "texte": "Troisième étape, clique sur la petite icône d'image située juste à côté du champ de saisie."
+   },
+   {
+    "partie": "r3",
+    "texte": "Sélectionne la photo de ton article dans la galerie de ton smartphone pour la charger."
+   },
+   {
+    "partie": "r3",
+    "texte": "Repère le bouton de réglage appelé Image Weight qui contrôle la fidélité de ton produit."
+   },
+   {
+    "partie": "r3",
+    "texte": "Ajuste précisément ce curseur sur une position comprise entre zéro virgule cinquante-cinq et zéro virgule soixante-cinq."
+   },
+   {
+    "partie": "r3",
+    "texte": "Ce réglage impose à l'outil de garder ton article intact tout en reconstruisant le décor."
+   },
+   {
+    "partie": "r4",
+    "texte": "Quatrième étape, choisis le style Design puis définis le bon format pour ton canal de diffusion."
+   },
+   {
+    "partie": "r4",
+    "texte": "Prends le format carré pour ton catalogue WhatsApp ou le format vertical pour tes stories quotidiennes."
+   },
+   {
+    "partie": "r4",
+    "texte": "Rédige maintenant ta consigne en écrivant impérativement le texte publicitaire souhaité entre des guillemets doubles."
+   },
+   {
+    "partie": "r4",
+    "texte": "Demande par exemple une table en marbre luxueux avec le texte PROMO SPÉCIALE écrit au sommet."
+   },
+   {
+    "partie": "r4",
+    "texte": "Ideogram va générer un rendu digne d'une grande agence sans aucune faute d'orthographe sur l'affiche."
+   },
+   {
+    "partie": "r5",
+    "texte": "Cinquième étape, appuie sur le bouton violet Generate et attends une quinzaine de secondes au calme."
+   },
+   {
+    "partie": "r5",
+    "texte": "Le système fabrique quatre versions différentes avec des lumières et des angles de vue variés."
+   },
+   {
+    "partie": "r5",
+    "texte": "Touche l'affiche qui te séduit le plus puis télécharge le fichier directement sur ton téléphone."
+   },
+   {
+    "partie": "r5",
+    "texte": "Ton affiche est immédiatement prête à être diffusée sur Facebook et dans tes groupes de vente."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Voyons ensemble l'erreur classique commise par la grande majorité des débutants sur cette plateforme."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Si tu mets un poids d'image trop faible, l'intelligence artificielle va complètement inventer un autre objet."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Et si tu oublies les guillemets dans ton texte, les lettres sortiront totalement déformées et illisibles."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Voici maintenant une astuce de professionnel pour rendre le visuel encore plus net et impressionnant."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Supprime d'abord l'arrière-plan d'origine sur un site gratuit comme remove point bg avant l'importation."
+   },
+   {
+    "partie": "astuce",
+    "texte": "De cette façon, l'intelligence artificielle intègre ton produit avec des ombres naturelles extrêmement réalistes."
+   },
+   {
+    "partie": "recap",
+    "texte": "En résumé : prends une bonne photo, charge-la sur Ideogram, règle le poids et écris ton texte entre guillemets.",
+    "dit": "En résumé, prends une bonne photo, charge-la sur Ideogram, règle le poids et écris ton texte entre guillemets."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'intelligence artificielle transforme déjà le travail et ceux qui apprennent à la maîtriser prennent une avance considérable."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+    "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "question",
+    "texte": "PHOTOS NULLES\nSUR WHATSAPP ?",
+    "emoji": "1f630",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "african street vendor merchandise smartphone",
+    "texte": "FOND NÉGLIGÉ"
+   },
+   {
+    "type": "photo",
+    "recherche": "african shopkeeper looking stressed smartphone",
+    "texte": "GRAPHISTE CHER"
+   },
+   {
+    "type": "carte",
+    "kicker": "SOLUTION PRO",
+    "texte": "CRÉE TES AFFICHES\nSANS DÉPENSER",
+    "emoji": "1f525",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man professional instructor smiling",
+    "texte": "LOMÉ IA SCHOOL"
+   },
+   {
+    "type": "carte",
+    "kicker": "AU PROGRAMME",
+    "texte": "AFFICHES STUDIO\nAVEC IDEOGRAM",
+    "emoji": "1f3af",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "PRENDS LA PHOTO\nAVEC TON MOBILE",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "photo",
+    "recherche": "african artisan product tabletop indoors",
+    "texte": "FOND SIMPLE"
+   },
+   {
+    "type": "photo",
+    "recherche": "african beauty product bottle daylight",
+    "texte": "PRODUIT NET"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉCLAIRAGE",
+    "texte": "LUMIÈRE NATURELLE\nBIEN VISIBLE",
+    "emoji": "2728",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "OUVRE LE SITE\nIDEOGRAM.AI",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "carte",
+    "kicker": "CONNEXION",
+    "texte": "COMPTE GOOGLE\nEN UN CLIC",
+    "emoji": "1f512",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "OFFRE LIBRE",
+    "texte": "DIX CRÉDITS\nCHAQUE JOUR",
+    "emoji": "1f381",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african young entrepreneur phone success",
+    "texte": "40 IMAGES JOUR"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "CLIQUE SUR L'ICÔNE\nIMAGE TO IMAGE",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "photo",
+    "recherche": "african person holding smartphone gallery",
+    "texte": "CHOISIS LA PHOTO"
+   },
+   {
+    "type": "carte",
+    "kicker": "PARAMÈTRE",
+    "texte": "CURSEUR NOMMÉ\nIMAGE WEIGHT",
+    "emoji": "1f9e0",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "RÉGLAGE EXACT",
+    "texte": "VALEUR ENTRE\n0.55 ET 0.65",
+    "emoji": "1f3af",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african luxury leather shoes market",
+    "texte": "PRODUIT PRÉSERVÉ"
+   },
+   {
+    "type": "numero",
+    "n": 4,
+    "texte": "STYLE DESIGN\nET BON FORMAT",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "CARRÉ 1:1 POST",
+     "ok": true
+    },
+    "droite": {
+     "texte": "VERTICAL 9:16 STORY",
+     "ok": true
+    },
+    "a": [
+     "carré",
+     "vertical"
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "RÈGLE D'OR",
+    "texte": "METS TON TEXTE\nENTRE GUILLEMETS",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Studio product photograph on dark marble table with subtle palm leaves shadows, bold text \"PROMO SPÉCIALE\" in gold letters --ar 1:1",
+    "reponse": "Visuel généré avec succès :\n- Fond studio marbre sombre avec ombres tropicales\n- Produit original parfaitement détouré et mis en avant\n- Typographie dorée haute définition : \"PROMO SPÉCIALE\""
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Commercial product ad on luxury wooden pedestal with text reading \"NOUVELLE COLLECTION\" in elegant modern font --ar 9:16",
+    "reponse": "Rendu publicitaire format Story :\n- Éclairage solaire chaud et socle en bois design\n- Flacon cosmétique d'origine mis en valeur\n- Titre parfaitement centré : \"NOUVELLE COLLECTION\""
+   },
+   {
+    "type": "numero",
+    "n": 5,
+    "texte": "CLIQUE SUR LE BOUTON\nGENERATE",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "carte",
+    "kicker": "RÉSULTAT",
+    "texte": "QUATRE CHOIX\nEN QUINZE SECONDES",
+    "emoji": "2728",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman looking smartphone happy",
+    "texte": "TÉLÉCHARGE LE VISUEL"
+   },
+   {
+    "type": "photo",
+    "recherche": "african online seller packaging order",
+    "texte": "PUBLIE ET VENDS"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION !\nPIÈGES COURANTS",
+    "emoji": "26a0_fe0f"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "WEIGHT TROP BAS",
+     "ok": false
+    },
+    "droite": {
+     "texte": "WEIGHT 0.60 CONSEILLÉ",
+     "ok": true
+    },
+    "a": [
+     "faible,",
+     "objet."
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "ERREUR TEXTE",
+    "texte": "SANS GUILLEMETS\nLETTRES BIZARRES",
+    "emoji": "274c",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "carte",
+    "kicker": "ASTUCE PRO",
+    "texte": "ENLÈVE LE FOND\nAVANT DE CHARGER",
+    "emoji": "1f4a1",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african mobile worker coffee laptop",
+    "texte": "SITE REMOVE.BG"
+   },
+   {
+    "type": "photo",
+    "recherche": "african customer holding retail bag",
+    "texte": "OMBRES PARFAITES"
+   },
+   {
+    "type": "liste",
+    "titre": "LES ÉTAPES RECAP",
+    "items": [
+     {
+      "texte": "Photo bien nette",
+      "a": "photo,"
+     },
+     {
+      "texte": "Importer sur Ideogram",
+      "a": "Ideogram,"
+     },
+     {
+      "texte": "Poids entre 0.55 et 0.65",
+      "a": "poids"
+     },
+     {
+      "texte": "Texte entre guillemets",
+      "a": "guillemets."
+     }
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "MESSAGE CLÉ",
+    "texte": "L'IA AVANCE VITE\nFORME-TOI MAINTENANT",
+    "emoji": "1f680",
+    "geste": "bras-croises",
+    "expression": "neutre"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "orange",
+   "violet",
+   "nuit",
+   "vert",
+   "bleu",
+   "orange",
+   "violet",
+   "nuit",
+   "rose",
+   "vert",
+   "bleu",
+   "orange",
+   "violet",
+   "rose",
+   "vert",
+   "nuit",
+   "bleu",
+   "orange",
+   "violet",
+   "vert",
+   "rose",
+   "bleu",
+   "nuit",
+   "orange",
+   "violet",
+   "vert",
+   "rose",
+   "bleu",
+   "nuit",
+   "orange",
+   "violet",
+   "vert",
+   "rose",
+   "bleu",
+   "nuit",
+   "orange",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "veille",
+ "secondes": 175.5
+}

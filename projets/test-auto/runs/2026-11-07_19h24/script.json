@@ -1,0 +1,187 @@
+{
+ "accroche": {
+  "lignes": [
+   "PHOTOS PRODUIT",
+   "STYLE STUDIO",
+   "SANS GRAPHISTE"
+  ],
+  "cle": "STUDIO"
+ },
+ "titre": "Transforme tes photos smartphone en visuels de studio avec Ideogram 2.0",
+ "description": "Découvre comment créer une affiche publicitaire pro pour tes produits directement depuis ton téléphone sans dépenser un seul franc.",
+ "hashtags": "#IntelligenceArtificielle #Ideogram #MarketingDigital #EntrepreneursAfricains #LomeIASchool #Graphisme",
+ "prompt": "A professional studio product photograph of the uploaded product placed on a luxury polished dark marble table, surrounded by subtle tropical palm leaves shadows, cinematic lighting, high-end commercial ad, typography text reading \"PROMO SPÉCIALE\" in bold elegant gold letters at the top, 8k resolution, photo realism --ar 1:1",
+ "description_tiktok": "Découvre comment créer une affiche publicitaire pro pour tes produits directement depuis ton téléphone sans dépenser un seul franc. #IntelligenceArtificielle #Ideogram #MarketingDigital #EntrepreneursAfricains #LomeIASchool #Graphisme",
+ "rubrique": "veille",
+ "date": "2026-11-07",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tes photos de produits faites au téléphone ne font pas vendre sur tes statuts WhatsApp ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Tu poses ta paire de chaussures sur un fauteuil et le résultat fait amteur."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Payer un graphiste pour chaque nouveau modèle de ton magasin coûte cher et prend du temps."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Il existe une méthode simple pour fabriquer des affiches de grande marque sans rien dépenser."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School.",
+   "dit": "Je suis Joseph, de Lomé i-a Skoul."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Aujourd'hui, tu vas apprendre à transformer une simple photo en affiche publicitaire avec l'outil Ideogram."
+  },
+  {
+   "partie": "r1",
+   "texte": "Première étape, prends une photo bien claire de ton article avec l'appareil de ton téléphone."
+  },
+  {
+   "partie": "r1",
+   "texte": "Pose ton produit sur un fond neutre comme une table propre ou un tissu uni."
+  },
+  {
+   "partie": "r1",
+   "texte": "Que ce soit une basket pour homme ou un pot de crème, reste très simple."
+  },
+  {
+   "partie": "r1",
+   "texte": "Assure-toi que la lumière du jour éclaire correctement tous les détails du produit."
+  },
+  {
+   "partie": "r2",
+   "texte": "Deuxième étape, ouvre ton navigateur Chrome sur mobile et va sur l'adresse ideogram point ai."
+  },
+  {
+   "partie": "r2",
+   "texte": "Connecte-toi gratuitement en utilisant simplement ton compte Google."
+  },
+  {
+   "partie": "r2",
+   "texte": "Ce site gratuit te donne dix crédits chaque jour sans demander de carte bancaire."
+  },
+  {
+   "partie": "r2",
+   "texte": "Ces crédits te permettent de générer environ quarante images publicitaires gratuitement toutes les vingt-quatre heures."
+  },
+  {
+   "partie": "r3",
+   "texte": "Troisième étape, touche l'icône d'image à côté de la barre de texte pour importer ta photo."
+  },
+  {
+   "partie": "r3",
+   "texte": "Sélectionne l'image du produit que tu viens de prendre dans ta galerie."
+  },
+  {
+   "partie": "r3",
+   "texte": "Regarde la consigne nommée Image Weight qui définit l'influence de ta photo d'origine."
+  },
+  {
+   "partie": "r3",
+   "texte": "Déplace ce curseur pour choisir une valeur précise entre zéro virgule cinquante-cinq et zéro virgule soixante-cinq."
+  },
+  {
+   "partie": "r3",
+   "texte": "Ce réglage force l'outil à garder la forme exacte de ton produit tout en créant un nouveau décor."
+  },
+  {
+   "partie": "r4",
+   "texte": "Quatrième étape, choisis le style Design et sélectionne le ratio d'aspect selon ton besoin."
+  },
+  {
+   "partie": "r4",
+   "texte": "Prends le format un pour un pour Instagram ou le format neuf seizièmes pour tes statuts WhatsApp."
+  },
+  {
+   "partie": "r4",
+   "texte": "Rédige ton prompt en saisissant obligatoirement les mots à écrire sur l'affiche entre des guillemets."
+  },
+  {
+   "partie": "r4",
+   "texte": "Demande par exemple une table en marbre sombre avec l'inscription PROMO SPÉCIALE en lettres dorées."
+  },
+  {
+   "partie": "r4",
+   "texte": "Ideogram est l'un des rares générateurs capables de tracer du texte lisible sans déformer les lettres."
+  },
+  {
+   "partie": "r5",
+   "texte": "Cinquième étape, appuie sur Generate et patiente environ quinze secondes."
+  },
+  {
+   "partie": "r5",
+   "texte": "L'application te présente immédiatement quatre propositions d'affiches avec des éclairages différents."
+  },
+  {
+   "partie": "r5",
+   "texte": "Touche la meilleure image puis enregistre le fichier directement dans ton téléphone."
+  },
+  {
+   "partie": "r5",
+   "texte": "Ton affiche est prète à être publiée sur Facebook pour attirer tes premiers clients."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Voyons maintenant l'erreur fréquente à éviter absolument lors de la rédaction de ton prompt."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Si tu mets le poids d'image sous zéro virgule trente, l'outil va inventer un autre objet."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Si tu oublies les guillemets autour de ton mot, l'image affichera des lettres fausses ou illisibles."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Voici l'astuce de pro pour obtenir une qualité d'image digne d'un grand studio."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Efface d'abord le fond de ta photo d'origine sur remove point bg avant de la charger sur Ideogram."
+  },
+  {
+   "partie": "astuce",
+   "texte": "L'intelligence artificielle pourra placer ton produit détouré dans le décor avec des ombres ultra réalistes."
+  },
+  {
+   "partie": "recap",
+   "texte": "En résumé, prends la photo, importe-la sur Ideogram, règle le poids d'image et écris ton texte entre guillemets."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'intelligence artificielle transforme déjà le travail et ceux qui l'apprennent aujourd'hui prennent une grande avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+   "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ],
+ "historique": {
+  "titre": "Transforme tes photos smartphone en visuels de studio avec Ideogram 2.0",
+  "rubrique": "veille",
+  "date": "2026-11-07"
+ }
+}
