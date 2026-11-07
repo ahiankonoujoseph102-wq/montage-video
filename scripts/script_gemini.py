@@ -499,6 +499,9 @@ def main():
     rub = rubrique_suivante(historique)
     lecon = None if sujet else lecon_suivante(historique)
     guide = (ROOT / "projets" / "guide_pedagogique.md").read_text()
+    ex = ROOT / "projets" / "formations_joseph" / "exemples_episodes.md"
+    if ex.exists():
+        guide += "\n\nEXEMPLES DE SCRIPTS RÉUSSIS DE JOSEPH (même niveau de précision, sans les recopier) :\n" + ex.read_text()
     if lecon:
         rub = {"id": "formation", "nom": f"Leçon de la formation de Joseph « {lecon['formation']} » : {lecon['titre']}"
                f" (partie {lecon['partie']} sur {lecon['total']})", "idees": "enseigner fidèlement la source ci-dessous"}

@@ -36,3 +36,17 @@ l'attention. Donné à Gemini pour chaque vidéo.
 - Des conseils vagues (« sois productif », « utilise l'IA pour gagner du temps ») sans dire exactement comment.
 - Des phrases de motivation creuses, des annonces non vérifiées, des chiffres ou des pourcentages.
 - Décrire un outil sans le montrer ; inventer un menu, un bouton ou une offre.
+
+## Ce que font les meilleurs créateurs de tutoriels IA (recherche du 7 novembre 2026)
+- Les chaînes de tutoriels citées comme référence (Kevin Stratvert, Matt Wolfe, Jeff Su, Ludo Salenne en français)
+  montrent un processus complet et REFAISABLE, de la demande jusqu'au résultat publié, étape par étape, au calme,
+  pour des non-techniciens ; le créateur utilise lui-même la méthode dans son vrai travail.
+- Vidéos courtes : le résultat ou l'erreur dès la première seconde (pas de salutation avant), un seul savoir-faire
+  par vidéo, le schéma « problème → exemple → correction → à retenir », des sous-titres lisibles sans le son, un
+  changement d'image régulier, une suite annoncée (série) ou une question pour les commentaires.
+
+## Modèles à imiter
+Les épisodes de la série animée de Joseph (fichier projets/formations_joseph/exemples_episodes.md) sont le niveau
+attendu : vraie méthode utilisée par Joseph (ChatGPT + Pinterest pour une affiche, Claude Code + GitHub pour son site,
+formule R.T.C.F., sept formulations « Ne dis pas… Dis plutôt… »), chaque étape refaisable, et un mot-clé à commenter
+(« Écris AFFICHE en commentaire »).
