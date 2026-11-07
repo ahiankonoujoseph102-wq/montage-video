@@ -7,20 +7,21 @@
 # En cas d'échec : e-mail d'alerte et nouvelle tentative automatique (fichier alerte-echec.yml).
 name: Vidéo quotidienne Lomé IA School
 
-# VOIX DE JOSEPH : chaque soir, script-a-enregistrer.yml lui envoie les textes à lire ; il répond à l'e-mail avec sa
-# note vocale (ou un lien Drive). Ce lancement regarde Gmail 6 fois par jour (environ 1 min chaque fois) et, dès
-# qu'une voix est arrivée, monte la vidéo avec sa vraie voix et la lui envoie.
+# Production automatique : vidéo dans la boîte de Joseph avant 6 h et avant 16 h (heure de Lomé = UTC).
+# Voix off : synthèse vocale Gemini (voix de radio claire, clé gratuite) ; si elle échoue, voix clonée.
+# À la main : voix = enregistree (note vocale de Joseph reçue par e-mail) ou clonee.
 on:
   schedule:
-    - cron: "23 6,9,12,15,18,21 * * *"
+    - cron: "47 4 * * *"
+    - cron: "47 14 * * *"
   workflow_dispatch:
     inputs:
       voix:
-        description: "enregistree (voix de Joseph reçue par e-mail) ou clonee (ancienne voix de synthèse)"
+        description: "gemini (voix de radio, par défaut), clonee (voix de synthèse de Joseph) ou enregistree (note vocale)"
         required: false
-        default: "enregistree"
+        default: "gemini"
       sujet:
-        description: "Sujet imposé (voix clonée seulement ; laisser vide sinon)"
+        description: "Sujet imposé (laisser vide en général)"
         required: false
         default: ""
 
@@ -50,7 +51,7 @@ jobs:
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
-          if [ "${{ inputs.voix }}" = "clonee" ]; then echo "script=" >> "$GITHUB_OUTPUT"; echo "Voix clonée demandée"; exit 0; fi
+          if [ "${{ inputs.voix }}" != "enregistree" ]; then echo "script=" >> "$GITHUB_OUTPUT"; echo "Voix automatique"; exit 0; fi
           R=$(python3 scripts/recevoir_voix.py "$RUNNER_TEMP/voix" | tail -1)
           echo "$R"
           ID=$(echo "$R" | sed -n 's/^TROUVE \([^ ]*\).*/\1/p')
@@ -58,7 +59,7 @@ jobs:
 
   video:
     needs: verifier
-    if: needs.verifier.outputs.script != '' || inputs.voix == 'clonee'
+    if: needs.verifier.outputs.script != '' || inputs.voix != 'enregistree'
     runs-on: ubuntu-24.04
     timeout-minutes: 170
     env:
@@ -156,13 +157,17 @@ jobs:
           python -c "import PIL" 2>/dev/null || pip install -q pillow
           python scripts/medias.py projets/test-auto/run || echo "Médias ignorés : cartes de texte à la place"
 
-      - name: Voix de Joseph (enregistrée) ou voix clonée
+      - name: Voix off (Gemini, voix de radio ; sinon voix clonée)
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ -n "$SCRIPT_ID" ]; then
             python scripts/recevoir_voix.py "$RUNNER_TEMP/voix"
             python scripts/decouper_voix.py "$(ls "$RUNNER_TEMP"/voix/voix* | head -1)" projets/test-auto/run/script.json "$RUNNER_TEMP/phrases"
+          elif [ "${{ inputs.voix }}" != "clonee" ] && python scripts/voix_gemini.py projets/test-auto/run/script.json "$RUNNER_TEMP/voix_gemini.wav" \
+               && python scripts/decouper_voix.py "$RUNNER_TEMP/voix_gemini.wav" projets/test-auto/run/script.json "$RUNNER_TEMP/phrases"; then
+            echo "Voix Gemini utilisée"
           else
             cp projets/voix/reference.wav "$RUNNER_TEMP/reference.wav"
             python scripts/voix_clonee.py projets/test-auto/run/script.json "$RUNNER_TEMP/reference.wav" "$RUNNER_TEMP/phrases"

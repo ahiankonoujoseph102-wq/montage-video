@@ -3,8 +3,7 @@
 name: Textes à enregistrer (voix de Joseph)
 
 on:
-  schedule:
-    - cron: "41 17 * * *"   # 17 h 41 à Lomé
+  # Arrêté à la demande de Joseph (voix automatique) ; lancement à la main seulement.
   workflow_dispatch:
     inputs:
       nombre:
