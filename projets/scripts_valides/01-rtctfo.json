@@ -1,0 +1,128 @@
+{
+ "id": "01-rtctfo",
+ "titre": "Le prompt qui fait vendre : la formule R.T.C.T.F.O.",
+ "description": "Pourquoi ChatGPT te donne des textes plats, et la formule en six lettres pour obtenir un post qui vend. Prompt complet à copier.",
+ "hashtags": [
+  "#ChatGPT",
+  "#Prompt",
+  "#IA",
+  "#Lomé",
+  "#Togo",
+  "#MarketingDigital"
+ ],
+ "accroche": {
+  "lignes": [
+   "TON POST",
+   "NE VEND",
+   "RIEN ?"
+  ],
+  "cle": "VEND"
+ },
+ "prompt": "Tu es un expert en copywriting spécialisé dans la vente sur les réseaux sociaux. Rédige un post Facebook pour une boutique de chaussures pour femmes à Lomé. Objectif : annoncer une nouvelle collection de sandales élégantes à prix abordable. Cible : femmes de 25 à 45 ans qui aiment être bien habillées sans se ruiner. Ton chaleureux et complice. Commence par une accroche qui interpelle. Ajoute des émojis avec modération. Termine par un appel à l'action clair invitant à écrire en privé. Maximum 120 mots.",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Ton post Facebook ne vend rien ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Le problème, ce n'est pas ChatGPT. C'est ta demande."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School, et je vais te montrer la différence en direct."
+  },
+  {
+   "partie": "demo1",
+   "texte": "Regarde. Je tape : « Écris-moi un post Facebook pour vendre des chaussures. »"
+  },
+  {
+   "partie": "demo1",
+   "texte": "Résultat : un texte plat, qui pourrait servir à n'importe quelle boutique du monde."
+  },
+  {
+   "partie": "demo1",
+   "texte": "Aucune émotion, aucune accroche. Ce texte ne vendra rien."
+  },
+  {
+   "partie": "explication",
+   "texte": "Pourquoi ? Parce que l'IA, c'est comme un employé surdoué qui vient d'arriver."
+  },
+  {
+   "partie": "explication",
+   "texte": "Il est rapide, mais il ne connaît ni tes clientes, ni ta boutique, ni ton style."
+  },
+  {
+   "partie": "explication",
+   "texte": "Ton travail, ce n'est pas d'écrire à sa place. C'est de bien le briefer."
+  },
+  {
+   "partie": "formule",
+   "texte": "Pour ça, retiens la formule R, T, C, T, F, O."
+  },
+  {
+   "partie": "formule",
+   "texte": "R comme Rôle : « Tu es un expert en copywriting spécialisé dans la vente sur les réseaux sociaux. »"
+  },
+  {
+   "partie": "formule",
+   "texte": "T comme Tâche : « Rédige un post Facebook pour une boutique de chaussures pour femmes à Lomé. »"
+  },
+  {
+   "partie": "formule",
+   "texte": "C comme Contexte : la nouvelle collection de sandales élégantes, et les clientes de vingt-cinq à quarante-cinq ans qui aiment être bien habillées sans se ruiner."
+  },
+  {
+   "partie": "formule",
+   "texte": "T comme Ton : chaleureux et complice."
+  },
+  {
+   "partie": "formule",
+   "texte": "F comme Format : une accroche qui interpelle, quelques émojis, cent vingt mots au maximum."
+  },
+  {
+   "partie": "formule",
+   "texte": "O comme Objectif : donner envie d'écrire en privé pour commander."
+  },
+  {
+   "partie": "demo2",
+   "texte": "Maintenant, je colle ce prompt complet dans ChatGPT."
+  },
+  {
+   "partie": "demo2",
+   "texte": "Résultat : une accroche qui arrête le défilement, un texte vivant, et une invitation claire à écrire en privé."
+  },
+  {
+   "partie": "demo2",
+   "texte": "Même outil, même téléphone. La seule chose qui a changé, c'est la demande."
+  },
+  {
+   "partie": "erreurs",
+   "texte": "Attention aux trois erreurs de débutant."
+  },
+  {
+   "partie": "erreurs",
+   "texte": "Un : croire que l'IA devine. Elle ne devine rien, elle exécute."
+  },
+  {
+   "partie": "erreurs",
+   "texte": "Deux : accepter la première réponse. Demande toujours une deuxième version, plus courte ou plus directe."
+  },
+  {
+   "partie": "erreurs",
+   "texte": "Trois : publier sans relire. Ajoute ta touche, ton prix, ton numéro, sinon tout le monde verra que c'est une machine."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Mon astuce : garde tes meilleurs prompts dans une note sur ton téléphone. C'est ta bibliothèque personnelle."
+  },
+  {
+   "partie": "recap",
+   "texte": "Récapitulons : Rôle, Tâche, Contexte, Ton, Format, Objectif. Six lettres, et l'IA travaille enfin pour toi."
+  },
+  {
+   "partie": "recap",
+   "texte": "L'IA change déjà le travail. Ceux qui l'apprennent prennent de l'avance."
+  }
+ ]
+}

@@ -342,7 +342,7 @@ def verifier(d, deja):
         err.append("[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil).")
     if types and types.count("carte") > 0.35 * len(types):
         err.append(f"[visuel] Trop de cartes de texte ({types.count('carte')}) : remplace-les par des photos, démonstrations, listes ou outils.")
-    if not any(s.get("type") == "prompt" for s in sc):
+    if not any(s.get("type") in ("prompt", "demo") for s in sc):
         err.append("Il faut au moins une scène « prompt » qui montre la demande exacte à écrire à l'IA.")
     textes = [(f"Phrase {i}", p["texte"]) for i, p in enumerate(ph)]
     textes += [("Titre", d.get("titre", "")), ("Description", d.get("description", "")), ("Prompt", d.get("prompt", ""))]
@@ -455,6 +455,49 @@ def reponses_reelles(d, modeles, cle, journal):
                 break
 
 
+def script_valide_suivant(historique):
+    """Prochain script écrit et vérifié à l'avance (projets/scripts_valides/), pas encore produit ; sinon None."""
+    faits = {h.get("script") for h in historique if isinstance(h, dict)}
+    for f in sorted((ROOT / "projets" / "scripts_valides").glob("*.json")):
+        s = json.loads(f.read_text())
+        if s["id"] not in faits:
+            return s
+    return None
+
+
+def scenes_pour_script(sv, modeles, cle, journal, deja):
+    """Mode « script validé » : le texte est fixe (écrit et vérifié à l'avance) ; Gemini ne fait que le plan visuel."""
+    i0, i1 = CONSIGNE.index("PLAN VISUEL"), CONSIGNE.index("Réponds UNIQUEMENT en JSON")
+    numerotees = "\n".join(f"{i}. {p['texte']}" for i, p in enumerate(sv["phrases"]))
+    demande = (CONSIGNE[i0:i1].replace("EMOJIS", ", ".join(sorted(EMOJIS)))
+               + f"\nVoici les {len(sv['phrases'])} phrases EXACTES de la vidéo (ne les modifie pas) :\n{numerotees}\n\n"
+               "Fais le plan visuel : exactement une scène et un fond par phrase, dans l'ordre. Mets une scène « demo » sur "
+               "les phrases où un prompt est dit ou son résultat montré (le champ prompt reprend le prompt dit, en plus court "
+               "si besoin), des scènes « photo » pour les situations concrètes, « numero » pour les étapes, « outil » quand un "
+               "outil est cité. Réponds UNIQUEMENT en JSON : {\"scenes\": [...], \"fond\": [...]}")
+    tours = [("user", demande)]
+    for essai in range(3):
+        modele, brut, duree = generer(modeles, cle, tours, journal)
+        if brut is None:
+            return None
+        try:
+            r = json.loads(brut)
+            d = {k: sv[k] for k in ("titre", "description", "hashtags", "prompt", "accroche")}
+            d.update({"phrases": [dict(p) for p in sv["phrases"]], "scenes": r["scenes"], "fond": r["fond"]})
+            d = corriger(d)
+        except Exception as e:
+            tours += [("model", brut or ""), ("user", f"Réponse illisible ({e}). Réponds uniquement en JSON {{\"scenes\": [...], \"fond\": [...]}}.")]
+            continue
+        err = [e for e in verifier(d, []) if not e.startswith(("Ton script fait", "Sujet déjà"))
+               and "phrases : il en faut" not in e and not e.startswith("Phrase ")]
+        journal.append({"script_valide": sv["id"], "essai": essai + 1, "modele": modele, "secondes": round(duree, 1), "erreurs": err})
+        print(json.dumps(journal[-1], ensure_ascii=False), flush=True)
+        if not err or all(e.startswith("[visuel]") for e in err) and essai >= 1:
+            return d
+        tours += [("model", brut), ("user", "Corrige ces points et renvoie le JSON complet :\n- " + "\n- ".join(err[:10]))]
+    return None
+
+
 def lecon_suivante(historique):
     """Leçon suivante des formations de Joseph (dans l'ordre), ou None. Une série commencée est toujours continuée ;
     sinon on alterne : une leçon de formation, puis un sujet du calendrier."""
@@ -496,6 +539,27 @@ def main():
     hist_f = ROOT / "projets" / "test-auto" / "historique.json"
     historique = json.loads(hist_f.read_text()) if hist_f.exists() else []
     deja = [h["titre"] if isinstance(h, dict) else h for h in historique]
+    sv = None if sujet else script_valide_suivant(historique)
+    if sv:
+        print(f"Script validé à l'avance : {sv['id']} — {sv['titre']}", flush=True)
+        journal = []
+        d = scenes_pour_script(sv, modeles, cle, journal, deja)
+        if d:
+            MEMOIRE.write_text(journal[-1]["modele"] + "\n")
+            reponses_reelles(d, modeles, cle, journal)
+            hashtags = " ".join(h if h.startswith("#") else "#" + h for h in d["hashtags"])
+            script = {"accroche": sv["accroche"], "titre": d["titre"], "description": d["description"], "hashtags": hashtags,
+                      "prompt": d["prompt"], "description_tiktok": f"{d['description']} {hashtags}", "rubrique": "script",
+                      "date": datetime.date.today().isoformat(), "phrases": d["phrases"],
+                      "historique": {"titre": d["titre"], "rubrique": "script", "script": sv["id"],
+                                     "date": datetime.date.today().isoformat()}}
+            dossier.mkdir(parents=True, exist_ok=True)
+            (dossier / "gemini.json").write_text(json.dumps({"journal": journal, "script_valide": sv["id"]}, ensure_ascii=False, indent=1))
+            (dossier / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=1))
+            (dossier / "plan.json").write_text(json.dumps({"scenes": d["scenes"], "fond": d["fond"]}, ensure_ascii=False, indent=1))
+            print(f"Script validé {sv['id']} : {sum(len(p['texte'].split()) for p in d['phrases'])} mots, {len(d['phrases'])} phrases")
+            return
+        print("Plan visuel impossible pour le script validé : script écrit par Gemini à la place.", flush=True)
     rub = rubrique_suivante(historique)
     lecon = None if sujet else lecon_suivante(historique)
     guide = (ROOT / "projets" / "guide_pedagogique.md").read_text()
