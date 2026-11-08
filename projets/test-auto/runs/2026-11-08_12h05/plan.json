@@ -1,0 +1,346 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "recherche": "african businessman looking at phone doubt",
+   "texte": "DEVIS BANAL",
+   "geste": "explique",
+   "expression": "grimace",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Photo : adactio · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "luxury modern office building africa",
+   "texte": "CLIENTS PREMIUM",
+   "geste": "designe",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/01.jpg",
+   "credit": "Photo : US Army Africa · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "PROBLÈME",
+   "texte": "VENTES\nMANQUÉES",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "photo",
+   "recherche": "african entrepreneur frustrated holding phone",
+   "texte": "TEXTE BRUT",
+   "geste": "explique",
+   "expression": "grimace",
+   "fichier": "test-auto/photos/03.jpg",
+   "credit": "Photo : MadFishDigital · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african instructor smiling front laptop",
+   "texte": "JOSEPH AHIANKONOU",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/04.jpg",
+   "credit": "Photo : acnatta · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "OBJECTIF",
+   "texte": "DOCUMENT\nDE LUXE",
+   "emoji": "1f3af",
+   "geste": "explique"
+  },
+  {
+   "type": "photo",
+   "recherche": "african businesswoman showing presentation screen",
+   "texte": "IMAGE PRO",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/06.jpg",
+   "credit": "Photo : Jonathan SMITH - Thames Path Online Guide · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "OUVRIR\nGAMMA.APP",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "carte",
+   "kicker": "OUTIL IA",
+   "texte": "GAMMA\nAPP",
+   "emoji": "2728",
+   "geste": "explique",
+   "expression": "neutre"
+  },
+  {
+   "type": "carte",
+   "kicker": "GRATUIT",
+   "texte": "400 CRÉDITS\nOFFERTS",
+   "emoji": "1f381",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman using smartphone screen",
+   "texte": "CRÉER NOUVEAU",
+   "geste": "designe",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/10.jpg",
+   "credit": "Photo : Go-tea 郭天 · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "CHOISIR\nDOCUMENT",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "photo",
+   "recherche": "person scrolling smartphone vertical screen",
+   "texte": "DEFILEMENT MOBILE",
+   "geste": "designe",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/12.jpg",
+   "credit": "Photo : Nicola since 1972 · CC BY 2.0"
+  },
+  {
+   "type": "prompt",
+   "texte": "Rédige une proposition commerciale persuasive pour [Nom boutique]. Service : [Visuels].",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Rédige une proposition commerciale complète pour un service de création de visuels à Lomé.",
+   "reponse": "Voici le début de votre proposition.\nOffre de création visuelle à Lomé.\nNous proposons des designs uniques.\nIls sont adaptés à votre marché.\nDécouvrez ci-dessous les détails.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "STRUCTURE",
+   "texte": "ENJEUX ET\nTARIFS",
+   "emoji": "1f4ac",
+   "geste": "explique",
+   "expression": "neutre"
+  },
+  {
+   "type": "liste",
+   "titre": "CONTENU",
+   "items": [
+    {
+     "texte": "Garanties",
+     "a": "garanties"
+    },
+    {
+     "texte": "Grille tarifaire",
+     "a": "tarifaire"
+    },
+    {
+     "texte": "Deux options",
+     "a": "options"
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "VALIDATION",
+   "texte": "PLAN EN\n8 CARTES",
+   "emoji": "2705",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "THÈME\nONYX",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Générer la présentation commerciale au format Onyx premium.",
+   "reponse": "Bonjour ! Je prépare votre présentation\ncommerciale au format Onyx premium.\nCe style élégant mettra en valeur vos\noffres stratégiques et vos résultats.\nVoici le début du document :",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "DESIGN",
+   "texte": "MISE EN PAGE\nPRO",
+   "emoji": "2728",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman entrepreneur smiling phone",
+   "texte": "RÉSULTAT PRO",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/21.jpg",
+   "credit": "Openverse · Direct Media"
+  },
+  {
+   "type": "carte",
+   "texte": "PHOTOS SUR MESURE"
+  },
+  {
+   "type": "alerte",
+   "texte": "ATTENTION AUX\nTARIFS FICTIFS",
+   "emoji": "26a0"
+  },
+  {
+   "type": "carte",
+   "kicker": "RÈGLE D'OR",
+   "texte": "L'IA\nEXÉCUTE",
+   "emoji": "1f512",
+   "geste": "explique",
+   "expression": "neutre"
+  },
+  {
+   "type": "carte",
+   "kicker": "VÉRIFICATION",
+   "texte": "AJUSTE LES\nPRIX",
+   "emoji": "1f50e",
+   "geste": "explique",
+   "expression": "neutre"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "PDF LOURD",
+    "ok": false
+   },
+   "droite": {
+    "texte": "LIEN WEB",
+    "ok": true
+   },
+   "a": [
+    "WhatsApp"
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "PAGE ANIMÉE"
+  },
+  {
+   "type": "carte",
+   "kicker": "EXPORT",
+   "texte": "OPTION PDF\nINCLUSE",
+   "emoji": "2705",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "GAMMA.APP",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "FORMAT ET\nBRIEF",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "ONYX ET\nPARTAGE",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "carte",
+   "texte": "LOMÉ IA SCHOOL"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "nuit",
+  "orange",
+  "bleu",
+  "nuit",
+  "violet",
+  "vert",
+  "bleu",
+  "nuit",
+  "orange",
+  "bleu",
+  "vert",
+  "nuit",
+  "bleu",
+  "orange",
+  "vert",
+  "nuit",
+  "orange",
+  "bleu",
+  "vert",
+  "nuit",
+  "orange",
+  "bleu",
+  "nuit",
+  "orange",
+  "bleu",
+  "vert",
+  "nuit",
+  "orange",
+  "bleu",
+  "vert",
+  "nuit",
+  "bleu",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "tendances": [
+  {
+   "titre": "NotebookLM : L'outil gratuit de Google qui transforme tes PDF en podcast",
+   "createur": "Bastien Bricout (Basti UI)",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@basti_ui",
+   "pourquoi": "Accroche immédiate sur un cas d'usage étudiant/pro : 'Ne lis plus tes cours de 40 pages'. Démonstration de l'Audio Overview en 15 secondes. Gratuité totale soulignée."
+  },
+  {
+   "titre": "I tested DeepSeek R1 vs ChatGPT for Business Plans",
+   "createur": "Matt Wolfe",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/@mreflow",
+   "pourquoi": "Surfe sur l'actualité brûlante de DeepSeek. Valeur concrète avec un cas pratique de création de budget prévisionnel sans abonnement payant."
+  },
+  {
+   "titre": "Créer une présentation pro de 10 slides en 60 secondes sur mobile",
+   "createur": "Romain Pirotte",
+   "plateforme": "Instagram Reels",
+   "vues": "non vérifié",
+   "lien": "https://www.instagram.com/romainpirotte",
+   "pourquoi": "Format 'split-screen' montrant l'écran de smartphone et le résultat final imprimable/exportable. Gain de temps massif pour commerciaux."
+  },
+  {
+   "titre": "How to clone your voice and reply to WhatsApp clients automatically",
+   "createur": "Aisolo / Alex AI",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@alex.ai",
+   "pourquoi": "Résout la surcharge de SAV des solopreneurs. Effet 'waouh' de la synthèse vocale ultra-réaliste applicable au commerce informel."
+  },
+  {
+   "titre": "Traduis ta vidéo en anglais avec le mouvement des lèvres parfait",
+   "createur": "IA Café / Shubham Sharma",
+   "plateforme": "YouTube Shorts",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/@ShubhamSharmaIA",
+   "pourquoi": "Démonstration visuelle choquante (lip-sync). Promesse d'expansion internationale immédiate pour les créateurs et e-commerçants."
+  },
+  {
+   "titre": "Arrête de créer tes logos sur Canva, fais ça avec Recraft",
+   "createur": "Léo Duff",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@leoduffoff",
+   "pourquoi": "Accroche 'contrarienne' qui attaque un standard (Canva) pour proposer une alternative IA vectorielle gratuite de niveau professionnel."
+  },
+  {
+   "titre": "Turn bad product video into a luxury commercial with CapCut AI",
+   "createur": "Kody Kloe",
+   "plateforme": "Instagram Reels",
+   "vues": "non vérifié",
+   "lien": "https://www.instagram.com/kodykloe",
+   "pourquoi": "Avant/Après spectaculaire : une vidéo de produit prise sur une table devient un spot 4K avec fond de studio et voix off publicitaire."
+  },
+  {
+   "titre": "Entraîne-toi à vendre avec le mode vocal de ChatGPT avant ton entretien",
+   "createur": "Alec Henry",
+   "plateforme": "Facebook Watch",
+   "vues": "non vérifié",
+   "lien": "https://www.facebook.com/watch/alechenry",
+   "pourquoi": "Cas d'usage psychologique fort : surmonter la peur du closing client en utilisant l'IA comme un simulateur d'objections en temps réel."
+  }
+ ],
+ "sujet": {
+  "titre": "Crée une proposition commerciale de luxe en 2 minutes sur ton téléphone avec Gamma App",
+  "angle": "Transformer un devis basique ou une idée de service en document de présentation interactif et PDF prêt à envoyer à un client fortuné, sans compétences graphiques et sans ordinateur.",
+  "pourquoi_maintenant": "En Afrique francophone, de nombreux prestataires et commerçants perdent des contrats parce qu'ils envoient des devis bruts ou des listes de prix sur WhatsApp. Les outils de présentation IA mobile explosent sur TikTok pour leur capacité à crédibiliser une offre instantanément.",
+  "inspire_de": [
+   "Créer une présentation pro de 10 slides en 60 secondes sur mobile",
+   "Turn bad product video into a luxury commercial with CapCut AI"
+  ]
+ },
+ "methode": {
+  "outil": "Gamma App (accessible via navigateur mobile sur gamma.app ou application Android/iOS)",
+  "etapes": [
+   "Ouvrir gamma.app sur le navigateur du smartphone (Chrome ou Safari) et se connecter gratuitement avec son compte Google.",
+   "Sur le tableau de bord, appuyer sur le bouton bleu '+ Nouveau avec l'IA' puis sélectionner l'option 'Générer'.",
+   "Sélectionner le format : appuyer sur 'Présentation' (pour des diapositives) ou sur 'Document' (idéal pour un devis/plaquette commerciale défilable).",
+   "Dans le champ 'Saisissez une invite en quelques mots', coller le prompt de brief commercial détaillé (voir section prompts) et sélectionner la langue 'Français'.",
+   "Vérifier le plan de 8 diapositives/cartes généré automatiquement, puis appuyer sur 'Continuer'.",
+   "Choisir un thème visuel adapté (recommander 'Onyx' ou 'Obsidian' pour un look premium et sobre).",
+   "Appuyer sur 'Générer' et observer la génération en temps réel des textes, mises en page et visuels.",
+   "Pour exporter : appuyer sur l'icône de partage (les 3 points reliés en haut à droite) -> 'Exporter' -> 'Exporter au format PDF' ou copier le lien public de consultation."
+  ],
+  "prompts": [
+   "Rédige une proposition commerciale complète et persuasive pour un client potentiel. Prestataire : [Nom de ton agence/boutique]. Service proposé : [Ex: Refonte de l'image de marque et création de 20 visuels publicitaires pour une marque de cosmétiques bio à Lomé]. Cible du document : le Directeur Général. Structure attendue : 1. Compréhension des enjeux et défis actuels du client. 2. Solution sur mesure recommandée. 3. Plan d'action détaillé en 3 phases claires. 4. Exemples de résultats attendus (KPIs). 5. Grille tarifaire détaillée avec une option Standard et une option Premium. 6. Présentation de nos garanties et méthodologie de travail. 7. Témoignages et cas de succès. 8. Appel à l'action pour signer le bon de commande. Ton : professionnel, direct, haut de gamme et orienté retour sur investissement."
+  ],
+  "erreurs": [
+   "Laisser le prompt trop vague comme 'Fais-moi une présentation de vente' : l'IA générera des textes génériques avec des faux chiffres en dollars.",
+   "Ne pas relire les montants générés : Gamma invente des tarifs fictifs si on ne précise pas le coût exact de la prestation dans l'invite.",
+   "Générer sans modifier la langue dans les paramètres de génération : risque que les titres sortent en anglais.",
+   "Oublier de vérifier l'affichage mobile avant l'envoi : certains blocs de texte trop denses nuisent à la lecture sur petit écran."
+  ],
+  "astuces": [
+   "Remplacer les images générées en 1 seconde : taper sur l'image -> icône 'Image' -> choisir 'Rechercher sur le Web' ou uploader directement la photo de son travail enregistrée sur le téléphone.",
+   "Envoyer le lien web Gamma directement sur WhatsApp au client au lieu d'un PDF lourd : le client voit une page animée interactive avec les statistiques de consultation accessibles par l'émetteur.",
+   "Utiliser l'option 'Document' plutôt que 'Présentation' si le client lit principalement sur smartphone (défilement vertical naturel comme une page web)."
+  ],
+  "gratuit": "Version gratuite à 100% avec 400 crédits offerts à l'inscription (une génération complète coûte 40 crédits, soit 10 présentations gratuites). Pas de carte bancaire demandée. Export PDF inclus sans filigrane bloquant."
+ },
+ "sources_recherche": [],
+ "modele": "gemini-3.8-flash",
+ "recherche": false,
+ "youtube": []
+}
