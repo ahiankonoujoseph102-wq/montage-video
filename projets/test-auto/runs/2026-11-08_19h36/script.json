@@ -1,0 +1,191 @@
+{
+ "accroche": {
+  "lignes": [
+   "LIRE VOS",
+   "PDF SANS",
+   "FATIGUE"
+  ],
+  "cle": "PDF"
+ },
+ "titre": "Analyse tes gros documents et contrats sur ton téléphone avec NotebookLM",
+ "description": "Transforme tes contrats de bail, cours ou catalogues PDF en un assistant intelligent capable de tout analyser directement sur ton téléphone avec l'outil gratuit NotebookLM de Google.",
+ "hashtags": "#Productivité #NotebookLM #BusinessMobile #Google #TogoIA #LoméIASchool",
+ "prompt": "Fais-moi une synthèse claire en 5 points clés indispensables à retenir pour un entrepreneur. Fouille ensuite ce document et dresse la liste exacte de toutes les obligations, clauses financières et dates limites sous forme de tableau.",
+ "description_tiktok": "Transforme tes contrats de bail, cours ou catalogues PDF en un assistant intelligent capable de tout analyser directement sur ton téléphone avec l'outil gratuit NotebookLM de Google. #Productivité #NotebookLM #BusinessMobile #Google #TogoIA #LoméIASchool",
+ "rubrique": "veille",
+ "date": "2026-11-08",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu as un contrat de bail de vingt pages pour ta boutique ou un gros cours de cinquante pages à lire ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Au lieu de passer trois heures à chercher la bonne information, laisse l'intelligence artificielle analyser ton document."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School, ton formateur en intelligence artificielle.",
+   "dit": "Je suis Joseph, de Lomé i-a Skoul, ton formateur en intelligence artificielle."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Aujourd'hui, tu vas apprendre à transformer n'importe quel fichier PDF en assistant interactif sur ton smartphone."
+  },
+  {
+   "partie": "r1",
+   "texte": "Étape 1 : ouvre Chrome ou Safari sur ton téléphone et va sur le site notebooklm.google.com.",
+   "dit": "Étape 1, ouvre Chrome ou Safari sur ton téléphone et va sur le site notebooklm.google.com."
+  },
+  {
+   "partie": "r1",
+   "texte": "NotebookLM est un outil cent pour cent gratuit créé par Google pour analyser tes propres documents personnels."
+  },
+  {
+   "partie": "r1",
+   "texte": "Il travaille uniquement sur les fichiers que tu lui donnes sans rien inventer d'extérieur."
+  },
+  {
+   "partie": "r1",
+   "texte": "Connecte-toi simplement avec ton compte Google habituel pour ouvrir immédiatement ton premier espace de travail."
+  },
+  {
+   "partie": "r2",
+   "texte": "Étape 2 : touche le bouton Nouveau carnet puis appuie sur Ajouter des sources.",
+   "dit": "Étape 2, touche le bouton Nouveau carnet puis appuie sur Ajouter des sources."
+  },
+  {
+   "partie": "r2",
+   "texte": "Sélectionne un fichier PDF depuis ton téléphone : un contrat de bail commercial, un rapport d'ONG ou un cours.",
+   "dit": "Sélectionne un fichier PDF depuis ton téléphone, un contrat de bail commercial, un rapport d'ONG ou un cours."
+  },
+  {
+   "partie": "r2",
+   "texte": "Tu peux aussi coller un simple texte ou un lien web de ton choix."
+  },
+  {
+   "partie": "r2",
+   "texte": "NotebookLM prend entre cinq et dix secondes pour lire et mémoriser l'intégralité de ton document."
+  },
+  {
+   "partie": "r3",
+   "texte": "Étape 3 : découvre le Guide du carnet généré puis ouvre la barre de discussion en bas.",
+   "dit": "Étape 3, découvre le Guide du carnet généré puis ouvre la barre de discussion en bas."
+  },
+  {
+   "partie": "r3",
+   "texte": "Tu peux poser toutes tes questions directement en français pour interroger ton fichier."
+  },
+  {
+   "partie": "r3",
+   "texte": "Première mauvaise habitude de débutant : écrire une demande vague comme résume-moi simplement ce gros document.",
+   "dit": "Première mauvaise habitude de débutant, écrire une demande vague comme résume-moi simplement ce gros document."
+  },
+  {
+   "partie": "r3",
+   "texte": "Résultat : tu obtiendras un texte très plat qui oublie les clauses financières importantes.",
+   "dit": "Résultat, tu obtiendras un texte très plat qui oublie les clauses financières importantes."
+  },
+  {
+   "partie": "r3",
+   "texte": "Utilise la formule R.T.C.F. et tape ce bon prompt : Fais-moi une synthèse claire en cinq points clés indispensables.",
+   "dit": "Utilise la formule R.T.C.F. et tape ce bon prompt, Fais-moi une synthèse claire en cinq points clés indispensables."
+  },
+  {
+   "partie": "r3",
+   "texte": "Regarde la réponse : l'outil extrait immédiatement les cinq règles principales avec les numéros de page exacts.",
+   "dit": "Regarde la réponse, l'outil extrait immédiatement les cinq règles principales avec les numéros de page exacts."
+  },
+  {
+   "partie": "r4",
+   "texte": "Étape 4 : demande à l'IA d'organiser les informations sous la forme d'un tableau synthétique.",
+   "dit": "Étape 4, demande à l'i-a d'organiser les informations sous la forme d'un tableau synthétique."
+  },
+  {
+   "partie": "r4",
+   "texte": "Tape précisément : Fouille ce document et dresse la liste exacte de toutes les obligations et dates limites.",
+   "dit": "Tape précisément, Fouille ce document et dresse la liste exacte de toutes les obligations et dates limites."
+  },
+  {
+   "partie": "r4",
+   "texte": "Regarde la démonstration : l'outil isole le montant du loyer, la caution payable par Mobile Money et les préavis.",
+   "dit": "Regarde la démonstration, l'outil isole le montant du loyer, la caution payable par Mobile Money et les préavis."
+  },
+  {
+   "partie": "r4",
+   "texte": "Si tu touches un numéro de citation, l'application t'amène directement au paragraphe exact de la page."
+  },
+  {
+   "partie": "r5",
+   "texte": "Erreur fréquente : téléverser des documents scannés de très mauvaise qualité sous forme de simples images.",
+   "dit": "Erreur fréquente, téléverser des documents scannés de très mauvaise qualité sous forme de simples images."
+  },
+  {
+   "partie": "r5",
+   "texte": "Si le texte scanné est flou, la reconnaissance optique échoue et l'outil ne pourra pas extraire les données."
+  },
+  {
+   "partie": "r5",
+   "texte": "Deuxième piège : s'attendre à recevoir la synthèse audio automatique parlée directement en français.",
+   "dit": "Deuxième piège, s'attendre à recevoir la synthèse audio automatique parlée directement en français."
+  },
+  {
+   "partie": "r5",
+   "texte": "La génération d'aperçu audio automatique fonctionne actuellement principalement avec des voix en anglais."
+  },
+  {
+   "partie": "r5",
+   "texte": "Toutefois, toute la partie textuelle et le chat répondent parfaitement en français à tes questions."
+  },
+  {
+   "partie": "r5",
+   "texte": "Astuce de pro : tu peux combiner jusqu'à cinquante documents dans un seul carnet de travail.",
+   "dit": "Astuce de pro, tu peux combiner jusqu'à cinquante documents dans un seul carnet de travail."
+  },
+  {
+   "partie": "r5",
+   "texte": "Ajoute par exemple trois devis de fournisseurs à Lomé pour comparer instantanément leurs offres."
+  },
+  {
+   "partie": "r5",
+   "texte": "Un commerçant gagne ainsi des heures de lecture avant de signer le moindre contrat."
+  },
+  {
+   "partie": "morale",
+   "texte": "En résumé : va sur notebooklm.google.com, ajoute ton PDF, puis demande une synthèse claire en tableau.",
+   "dit": "En résumé, va sur notebooklm.google.com, ajoute ton PDF, puis demande une synthèse claire en tableau."
+  },
+  {
+   "partie": "morale",
+   "texte": "Cet outil te permet de lire dix fois plus vite et d'éviter les erreurs d'inattention."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail , ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+   "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ],
+ "historique": {
+  "titre": "Analyse tes gros documents et contrats sur ton téléphone avec NotebookLM",
+  "rubrique": "veille",
+  "date": "2026-11-08"
+ }
+}

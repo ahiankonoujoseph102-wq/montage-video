@@ -1,0 +1,359 @@
+{
+ "scenes": [
+  {
+   "type": "carte",
+   "texte": "CONTRAT DE BOUTIQUE"
+  },
+  {
+   "type": "carte",
+   "kicker": "GAIN DE TEMPS",
+   "texte": "LAISSE L'IA\nLIRE POUR TOI",
+   "emoji": "1f680",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man smiling teacher portrait",
+   "texte": "JOSEPH | LOMÉ IA SCHOOL",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : YWAM Orlando · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "OBJECTIF",
+   "texte": "TON ASSISTANT\nPDF MOBILE",
+   "emoji": "1f4a1",
+   "geste": "explique",
+   "expression": "neutre"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "VA SUR NOTEBOOKLM\nSUR TON TÉLÉPHONE",
+   "emoji": "1f449",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "gemini",
+     "nom": "Gemini",
+     "site": "gemini.google.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "carte",
+   "kicker": "ZÉRO INVENTION",
+   "texte": "SEULEMENT VOS\nDOCUMENTS SOURCES",
+   "emoji": "1f512",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "photo",
+   "recherche": "african student login google phone",
+   "texte": "COMPTE GOOGLE",
+   "geste": "repos",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/07.jpg",
+   "credit": "Photo : morrowplanet · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "AJOUTE TES\nDOCUMENTS PDF",
+   "emoji": "1f449",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman selecting pdf mobile",
+   "texte": "CHOISIR UN PDF",
+   "geste": "designe",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/09.jpg",
+   "credit": "Photo : mattcornock · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african student reading notebook school",
+   "texte": "COURS ET DIPLÔMES",
+   "geste": "explique",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/10.jpg",
+   "credit": "Photo : Generationbass.com · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "RAPIDE",
+   "texte": "ANALYSE EN\n10 SECONDES",
+   "emoji": "2705",
+   "geste": "pouce",
+   "expression": "surpris"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "CHATTER EN\nFRANÇAIS",
+   "emoji": "1f449",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "photo",
+   "recherche": "african man chatting mobile screen",
+   "texte": "POSE VOS QUESTIONS",
+   "geste": "designe",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/13.jpg",
+   "credit": "Photo : craftivist collective · CC BY 2.0"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Mauvais : résume tout",
+    "ok": false
+   },
+   "droite": {
+    "texte": "Résultat : trop vague",
+    "ok": false
+   },
+   "a": [
+    "vague",
+    "plat"
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "MAUVAIS PROMPT",
+   "texte": "CLAUSES CLÉS\nOUBLIÉES",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "prompt",
+   "texte": "Fais-moi une synthèse claire en 5 points clés indispensables.",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Fais-moi une synthèse claire en 5 points clés indispensables.",
+   "reponse": "Bonjour, voici votre synthèse.\nPremier point : fixer l'objectif.\nDeuxième point : analyser l'existant.\nTroisième point : cibler les priorités.\nQuatrième point : planifier la suite.",
+   "geste": "pouce",
+   "expression": "sourire",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "CRÉE UN TABLEAU\nDES OBLIGATIONS",
+   "emoji": "1f449",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "prompt",
+   "texte": "Fouille ce document et dresse la liste exacte de toutes les obligations.",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "gemini",
+   "prompt": "Fouille ce document et dresse la liste exacte de toutes les obligations.",
+   "reponse": "J'ai examiné le document fourni.\nVoici les obligations identifiées :\n1. Respecter les délais fixés.\n2. Régler la somme indiquée.\n3. Traiter les données reçues.",
+   "geste": "designe",
+   "expression": "surpris",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "Gemini",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "CITATIONS EXACTES",
+   "texte": "TOUCHE ET VOIS\nLA PAGE DU PDF",
+   "emoji": "1f50e",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "alerte",
+   "texte": "ATTENTION AUX\nSCANS FLOUS",
+   "emoji": "26a0"
+  },
+  {
+   "type": "carte",
+   "kicker": "ERREUR SCANN",
+   "texte": "TEXTE NET\nOBLIGATOIRE",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "neutre"
+  },
+  {
+   "type": "alerte",
+   "texte": "VOIX AUDIO\nEN ANGLAIS",
+   "emoji": "26a0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african student headphones smartphone",
+   "texte": "AUDIO OVERVIEW",
+   "geste": "explique",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/25.jpg",
+   "credit": "Photo : chocolatedazzles · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "TEXTE FRANÇAIS",
+   "texte": "LE CHAT EST 100%\nEN FRANÇAIS",
+   "emoji": "2705",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE DE PRO",
+   "texte": "JUSQU'À 50\nDOCUMENTS ENSEMBLE",
+   "emoji": "1f525",
+   "geste": "explique",
+   "expression": "surpris"
+  },
+  {
+   "type": "photo",
+   "recherche": "african entrepreneur comparing papers boutique",
+   "texte": "COMPARE 3 DEVIS",
+   "geste": "designe",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/28.jpg",
+   "credit": "Photo : craftivist collective · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african businesswoman smiling success market",
+   "texte": "NÉGOCIER AVANT SIGNATURE",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/29.jpg",
+   "credit": "Photo : wwward0 · CC BY 2.0"
+  },
+  {
+   "type": "liste",
+   "titre": "RÉSUMÉ",
+   "items": [
+    {
+     "texte": "notebooklm.google.com",
+     "a": "notebooklm.google.com,"
+    },
+    {
+     "texte": "Ajoute ton PDF",
+     "a": "PDF,"
+    },
+    {
+     "texte": "Demande un tableau",
+     "a": "tableau."
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "EFFICACITÉ",
+   "texte": "LIS 10 FOIS\nPLUS VITE",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "MESSAGE CLÉ",
+   "texte": "PRENDS DE L'AVANCE\nAVEC L'IA",
+   "emoji": "1f3af",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "vert",
+  "nuit",
+  "bleu",
+  "orange",
+  "vert",
+  "violet",
+  "rose",
+  "nuit",
+  "vert",
+  "orange",
+  "nuit",
+  "violet",
+  "bleu",
+  "vert",
+  "nuit",
+  "bleu",
+  "orange",
+  "rose",
+  "violet",
+  "vert",
+  "bleu",
+  "orange",
+  "nuit",
+  "violet",
+  "vert",
+  "bleu",
+  "nuit",
+  "orange",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

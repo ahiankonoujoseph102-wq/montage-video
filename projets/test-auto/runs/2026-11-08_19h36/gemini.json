@@ -1,0 +1,550 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.3
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.6-flash",
+   "secondes": 11.2,
+   "erreurs": [
+    "Ton script fait 291 mots, il en faut entre 449 et 649 : ajoute environ 158 mots (par exemple 12 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "20 phrases : il en faut entre 34 et 56.",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil)."
+   ]
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.6-flash",
+   "secondes": 17.4,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "LIRE VOS",
+    "PDF SANS",
+    "FATIGUE"
+   ],
+   "cle": "PDF"
+  },
+  "titre": "Analyse tes gros documents et contrats sur ton téléphone avec NotebookLM",
+  "description": "Transforme tes contrats de bail, cours ou catalogues PDF en un assistant intelligent capable de tout analyser directement sur ton téléphone avec l'outil gratuit NotebookLM de Google.",
+  "hashtags": [
+   "#Productivité",
+   "#NotebookLM",
+   "#BusinessMobile",
+   "#Google",
+   "#TogoIA",
+   "#LoméIASchool"
+  ],
+  "prompt": "Fais-moi une synthèse claire en 5 points clés indispensables à retenir pour un entrepreneur. Fouille ensuite ce document et dresse la liste exacte de toutes me obligations, clauses financières et dates limites sous forme de tableau.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tu as un contrat de bail de vingt pages ou un document de cinquante pages à lire ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Au lieu de passer trois heures à chercher la bonne information, laisse l'intelligence artificielle analyser ton document."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, de Lomé IA School, ton formateur en intelligence artificielle à Lomé.",
+    "dit": "Je suis Joseph, de Lomé i-a Skoul, ton formateur en intelligence artificielle à Lomé."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Aujourd'hui, tu vas apprendre à transformer n'importe quel fichier PDF en assistant interactif sur ton smartphone."
+   },
+   {
+    "partie": "r1",
+    "texte": "Étape 1 : ouvre le navigateur de ton téléphone et va sur le site gratuit notebooklm.google.com.",
+    "dit": "Étape 1, ouvre le navigateur de ton téléphone et va sur le site gratuit notebooklm.google.com."
+   },
+   {
+    "partie": "r1",
+    "texte": "NotebookLM est un outil puissant et totalement gratuit conçu par Google pour travailler sur tes propres fichiers."
+   },
+   {
+    "partie": "r1",
+    "texte": "Sa grande force est d'analyser scrupuleusement tes documents sans jamais inventer de fausses informations à côté."
+   },
+   {
+    "partie": "r1",
+    "texte": "Connecte-toi simplement avec ton compte Google habituel pour ouvrir immédiatement ton premier espace de travail."
+   },
+   {
+    "partie": "r2",
+    "texte": "Étape 2 : crée un nouveau carnet puis appuie sur le bouton pour ajouter tes sources.",
+    "dit": "Étape 2, crée un nouveau carnet puis appuie sur le bouton pour ajouter tes sources."
+   },
+   {
+    "partie": "r2",
+    "texte": "Téléverse ton fichier PDF depuis la mémoire de ton téléphone mobile ou colle un simple lien web."
+   },
+   {
+    "partie": "r2",
+    "texte": "Que ce soit un contrat de boutique, un rapport d'activité ou un long cours d'école, tout fonctionne."
+   },
+   {
+    "partie": "r2",
+    "texte": "L'application prend seulement cinq à dix secondes pour lire et mémoriser l'intégralité de ton texte."
+   },
+   {
+    "partie": "r3",
+    "texte": "Étape 3 : découvre le guide automatique généré puis ouvre la barre de discussion en bas de l'écran.",
+    "dit": "Étape 3, découvre le guide automatique généré puis ouvre la barre de discussion en bas de l'écran."
+   },
+   {
+    "partie": "r3",
+    "texte": "Tu peux maintenant poser toutes tes questions directement en français comme si tu parlais à un assistant."
+   },
+   {
+    "partie": "r3",
+    "texte": "Première mauvaise habitude de débutant : poser une demande vague comme résume-moi simplement ce gros document.",
+    "dit": "Première mauvaise habitude de débutant, poser une demande vague comme résume-moi simplement ce gros document."
+   },
+   {
+    "partie": "r3",
+    "texte": "Résultat : tu obtiendras un texte généraliste qui oublie les détails cruciaux et les lignes importantes.",
+    "dit": "Résultat, tu obtiendras un texte généraliste qui oublie les détails cruciaux et les lignes importantes."
+   },
+   {
+    "partie": "r3",
+    "texte": "Utilise plutôt cette demande précise : fais-moi une synthèse claire en cinq points clés pour un entrepreneur.",
+    "dit": "Utilise plutôt cette demande précise, fais-moi une synthèse claire en cinq points clés pour un entrepreneur."
+   },
+   {
+    "partie": "r3",
+    "texte": "Regarde le résultat affiché à l'écran : les cinq idées principales apparaissent clairement avec les numéros de page.",
+    "dit": "Regarde le résultat affiché à l'écran, les cinq idées principales apparaissent clairement avec les numéros de page."
+   },
+   {
+    "partie": "r4",
+    "texte": "Étape 4 : demande à l'outil d'extraire les clauses complexes sous la forme d'un tableau synthétique.",
+    "dit": "Étape 4, demande à l'outil d'extraire les clauses complexes sous la forme d'un tableau synthétique."
+   },
+   {
+    "partie": "r4",
+    "texte": "Tape ce prompt : dresse la liste exacte de toutes les obligations financières et des dates limites.",
+    "dit": "Tape ce prompt, dresse la liste exacte de toutes les obligations financières et des dates limites."
+   },
+   {
+    "partie": "r4",
+    "texte": "Regarde cette seconde démonstration : l'outil isole le montant du loyer, la caution et le préavis sans erreur.",
+    "dit": "Regarde cette seconde démonstration, l'outil isole le montant du loyer, la caution et le préavis sans erreur."
+   },
+   {
+    "partie": "r4",
+    "texte": "Si tu cliques sur un numéro de citation, l'application t'amène exactement au paragraphe source de la page."
+   },
+   {
+    "partie": "r5",
+    "texte": "Première erreur fréquente à éviter : téléverser des documents scannés de très mauvaise qualité sous forme d'images.",
+    "dit": "Première erreur fréquente à éviter, téléverser des documents scannés de très mauvaise qualité sous forme d'images."
+   },
+   {
+    "partie": "r5",
+    "texte": "Si l'écriture sur ton contrat est floue ou illisible, l'outil ne pourra pas extraire les données correctement."
+   },
+   {
+    "partie": "r5",
+    "texte": "Deuxième erreur : s'attendre à recevoir un résumé vocal automatique parlé directement en langue française.",
+    "dit": "Deuxième erreur, s'attendre à recevoir un résumé vocal automatique parlé directement en langue française."
+   },
+   {
+    "partie": "r5",
+    "texte": "La fonctionnalité d'aperçu audio automatique génère pour l'instant deux voix qui s'expriment uniquement en anglais."
+   },
+   {
+    "partie": "r5",
+    "texte": "Toutefois, sache que toute la partie textuelle et le chat de recherche fonctionnent parfaitement en français."
+   },
+   {
+    "partie": "r5",
+    "texte": "Astuce de pro indispensable : tu peux combiner jusqu'à cinquante documents différents dans un seul carnet.",
+    "dit": "Astuce de pro indispensable, tu peux combiner jusqu'à cinquante documents différents dans un seul carnet."
+   },
+   {
+    "partie": "r5",
+    "texte": "Par exemple, ajoute trois devis de fournisseurs pour obtenir une comparaison automatique des prix du marché."
+   },
+   {
+    "partie": "r5",
+    "texte": "C'est un moyen formidable pour les commerçants de négocier les meilleurs tarifs sans perdre de temps."
+   },
+   {
+    "partie": "morale",
+    "texte": "Récapitulons la méthode : ouvre NotebookLM sur mobile, ajoute tes documents PDF, et pose des questions très précises.",
+    "dit": "Récapitulons la méthode, ouvre NotebookLM sur mobile, ajoute tes documents PDF, et pose des questions très précises."
+   },
+   {
+    "partie": "morale",
+    "texte": "Cet outil te permet de lire dix fois plus vite et de sécuriser tes décisions de business."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'intelligence artificielle change déjà le travail ; ceux qui l'apprennent aujourd'hui prennent une grande avance.",
+    "dit": "L'intelligence artificielle change déjà le travail , ceux qui l'apprennent aujourd'hui prennent une grande avance."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+    "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african man reading smartphone frustrated contract",
+    "texte": "CONTRAT DE 20 PAGES",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "carte",
+    "kicker": "GAIN DE TEMPS",
+    "texte": "LAISSE L'IA\nLIRE POUR TOI",
+    "emoji": "1f680",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man smiling teacher portrait",
+    "texte": "JOSEPH | LOMÉ IA SCHOOL",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "OBJECTIF",
+    "texte": "TON ASSISTANT\nPDF MOBILE",
+    "emoji": "1f4a1",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "OUVRE NOTEBOOKLM\nSUR TON TÉLÉPHONE",
+    "emoji": "1f449",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "outil",
+    "outil": "perplexity"
+   },
+   {
+    "type": "carte",
+    "kicker": "ACCURATE IA",
+    "texte": "ZÉRO INVENTIONS\nSOURCES VÉRIFIÉES",
+    "emoji": "1f512",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african student using smartphone google account",
+    "texte": "CONNEXION GOOGLE",
+    "geste": "repos",
+    "expression": "neutre"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "AJOUTE TES\nDOCUMENTS PDF",
+    "emoji": "1f449",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman selecting document file phone",
+    "texte": "CHOISIR LE PDF",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "photo",
+    "recherche": "african business contract documents table",
+    "texte": "CONTRATS ET COURS",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "ANALYSE RAPIDE",
+    "texte": "LECTURE EN\n10 SECONDES",
+    "emoji": "2705",
+    "geste": "pouce",
+    "expression": "surpris"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "POSE TES QUESTIONS\nEN FRANÇAIS",
+    "emoji": "1f449",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur chatting phone screen",
+    "texte": "CHAT INTERACTIF",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "Demande vague : résume tout",
+     "ok": false
+    },
+    "droite": {
+     "texte": "Résultat : texte banal et incomplet",
+     "ok": false
+    },
+    "a": [
+     "vague",
+     "incomplet"
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "MAUVAIS PROMPT",
+    "texte": "INFOS CLÉS\nOUBLIÉES",
+    "emoji": "274c",
+    "geste": "bras-croises",
+    "expression": "grimace"
+   },
+   {
+    "type": "prompt",
+    "texte": "Fais-moi une synthèse claire en 5 points clés pour un entrepreneur.",
+    "geste": "designe"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Fais-moi une synthèse claire en 5 points clés pour un entrepreneur.",
+    "reponse": "1. Objet du bail commercial (p. 2)\n2. Loyers et charges mensuelles (p. 4)\n3. Conditions de renouvellement (p. 8)\n4. Clauses de résiliation anticipée (p. 12)\n5. Travaux à la charge du locataire (p. 15)",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 4,
+    "texte": "EXTRAIS UN TABLEAU\nDES CLAUSES",
+    "emoji": "1f449",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "prompt",
+    "texte": "Dresse la liste exacte des obligations financières et des dates limites.",
+    "geste": "designe"
+   },
+   {
+    "type": "demo",
+    "outil": "gemini",
+    "prompt": "Dresse la liste exacte des obligations financières et des dates limites.",
+    "reponse": "Type | Montant | Date Limite\nLoyer | Fixe | 05 de chaque mois\nCaution | 3 Mois | À la signature\nPréavis | Sans frais | 90 jours avant terme",
+    "geste": "designe",
+    "expression": "surpris"
+   },
+   {
+    "type": "carte",
+    "kicker": "CITATIONS EXACTES",
+    "texte": "CLIQUE ET VOIS\nLA PAGE SOURCE",
+    "emoji": "1f50e",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION AUX\nSCANS ILLISIBLES",
+    "emoji": "26a0"
+   },
+   {
+    "type": "carte",
+    "kicker": "QUALITÉ SOURCE",
+    "texte": "TEXTE NET\nEXIGÉ",
+    "emoji": "274c",
+    "geste": "bras-croises",
+    "expression": "neutre"
+   },
+   {
+    "type": "alerte",
+    "texte": "AUDIO SEULEMENT\nEN ANGLAIS",
+    "emoji": "26a0"
+   },
+   {
+    "type": "photo",
+    "recherche": "african student wearing headphones smartphone",
+    "texte": "AUDIO OVERVIEW",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "TEXTE FRANÇAIS",
+    "texte": "LE CHAT EST 100%\nEN FRANÇAIS",
+    "emoji": "2705",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "ASTUCE DE PRO",
+    "texte": "COMPARE JUSQU'À\n50 DOCUMENTS",
+    "emoji": "1f525",
+    "geste": "explique",
+    "expression": "surpris"
+   },
+   {
+    "type": "photo",
+    "recherche": "african businesswoman comparing quotes paper",
+    "texte": "COMPARATIF DEVIS",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african trader market smiling phone",
+    "texte": "NÉGOCIER LES PRIX",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "liste",
+    "titre": "EN RÉSUMÉ",
+    "items": [
+     {
+      "texte": "notebooklm.google.com",
+      "a": "NotebookLM"
+     },
+     {
+      "texte": "Importe tes PDF",
+      "a": "PDF,"
+     },
+     {
+      "texte": "Questions précises",
+      "a": "précises."
+     }
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "PRODUCTIVITÉ",
+    "texte": "LIS 10 FOIS\nPLUS VITE",
+    "emoji": "1f680",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "MESSAGE CLÉ",
+    "texte": "L'IA VOUS DONNE\nUNE AVANCE PRO",
+    "emoji": "1f3af",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "bleu",
+   "vert",
+   "nuit",
+   "bleu",
+   "orange",
+   "vert",
+   "violet",
+   "rose",
+   "nuit",
+   "vert",
+   "orange",
+   "nuit",
+   "violet",
+   "bleu",
+   "vert",
+   "nuit",
+   "bleu",
+   "orange",
+   "rose",
+   "violet",
+   "vert",
+   "bleu",
+   "orange",
+   "nuit",
+   "violet",
+   "vert",
+   "bleu",
+   "nuit",
+   "orange",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "veille",
+ "secondes": 29.3
+}

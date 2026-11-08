@@ -1,0 +1,107 @@
+{
+ "tendances": [
+  {
+   "titre": "J'ai testé NotebookLM de Google : l'outil ultime pour réviser et analyser des documents",
+   "createur": "Micode",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example1",
+   "pourquoi": "Accroche narrative forte, démonstration stupéfiante de la génération de podcast audio à partir d'un fichier PDF, cas d'usage très concret pour les étudiants et professionnels."
+  },
+  {
+   "titre": "Créer une application complète en 5 minutes avec v0 et Bolt.new sans coder",
+   "createur": "Benjamin Code",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example2",
+   "pourquoi": "Effet 'Waooh' immédiat (promesse de rapidité), écran partagé montrant l'invite de départ et l'application fonctionnelle générée en direct, idéal pour les entrepreneurs."
+  },
+  {
+   "titre": "How to Build AI Agents with No-Code (Full Tutorial)",
+   "createur": "Liam Ottley",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example3",
+   "pourquoi": "Valeur perçue extrêmement élevée (automatisation d'entreprise), structuré pas à pas avec des schémas visuels clairs et réutilisables."
+  },
+  {
+   "titre": "Générer des visuels produits 3D de qualité studio gratuitement avec FLUX.1",
+   "createur": "Shubham Sharma",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@shubham/video/example4",
+   "pourquoi": "Format ultra rapide (45 sec), comparaison 'Avant / Après' saisissante pour les commerçants, accès direct via une plateforme web gratuite."
+  },
+  {
+   "titre": "Ne cherchez plus sur Google ! Utilisez Perplexity AI comme un Pro",
+   "createur": "Eliott Meunier",
+   "plateforme": "Instagram Reels",
+   "vues": "non vérifié",
+   "lien": "https://www.instagram.com/reel/example5",
+   "pourquoi": "Montage dynamique, accroche problème/solution, montre l'interface mobile et le gain de temps immédiat sur les recherches d'actualités et de données."
+  },
+  {
+   "titre": "How to Make Viral Faceless Videos for TikTok with CapCut AI in 3 Minutes",
+   "createur": "Modern Millie",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@modernmillie/video/example6",
+   "pourquoi": "Format 'clé en main' ciblant les créateurs de contenu souhaitant monétiser sans montrer leur visage, démonstration fluide 100% mobile."
+  },
+  {
+   "titre": "Créer un spot publicitaire audio pro pour sa marque avec Suno AI",
+   "createur": "Bricoleur Web",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@bricoleurweb/video/example7",
+   "pourquoi": "Résultat sonore bluffant généré à partir d'un simple texte, application immédiate pour les commerçants (promotions WhatsApp / radio / réseaux)."
+  },
+  {
+   "titre": "Deep Research sur ChatGPT : Comment faire une étude de marché complète gratuitement",
+   "createur": "Justin Fineberg",
+   "plateforme": "YouTube Shorts",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/shorts/example8",
+   "pourquoi": "Cible les porteurs de projet, montre exactement quel bouton cliquer et fournit une formule de prompt directement réutilisable dans la description."
+  }
+ ],
+ "sujet": {
+  "titre": "Transforme n'importe quel PDF long ou contrat en assistant interactif et synthèse audio sur ton téléphone avec Google NotebookLM",
+  "angle": "Productivité & Business Mobile : Analyser des documents complexes (cours, contrats de bail/fournisseurs, catalogues produits de 50 pages) sans tout lire, directement depuis son smartphone.",
+  "pourquoi_maintenant": "NotebookLM de Google est la tendance IA majeure du moment grâce à sa gratuité totale et sa capacité unique à créer des aperçus interactifs et audio sans aucune hallucination (car basé uniquement sur vos fichiers). C'est parfait pour notre audience d'étudiants et d'entrepreneurs africains souvent sur mobile.",
+  "inspire_de": [
+   "J'ai testé NotebookLM de Google : l'outil ultime pour réviser et analyser des documents - Micode",
+   "Ne cherchez plus sur Google ! Utilisez Perplexity AI comme un Pro - Eliott Meunier"
+  ]
+ },
+ "methode": {
+  "outil": "Google NotebookLM (accessible gratuitement via navigateur mobile sur notebooklm.google.com)",
+  "etapes": [
+   "Ouvre Chrome ou Safari sur ton smartphone et va sur notebooklm.google.com.",
+   "Connecte-toi avec ton compte Google habituel.",
+   "Clique sur le bouton '+ Nouveau carnet'.",
+   "Appuie sur 'Ajouter des sources' : sélectionne un fichier PDF depuis ton téléphone (ex: un cours, un contrat, un rapport) ou colle un lien Web / texte.",
+   "Attends 5 à 10 secondes que NotebookLM analyse le document.",
+   "Découvre le 'Guide du carnet' automatiquement généré : clique sur 'Fiche d'étude' ou pose tes questions en français dans la barre de discussion en bas."
+  ],
+  "prompts": [
+   "Fais-moi une synthèse claire en 5 points clés indispensables à retenir pour un entrepreneur/étudiant.",
+   "Rédige un questionnaire de 10 questions/réponses basées uniquement sur ce document pour me tester.",
+   "Fouille ce document et dresse la liste exacte de toutes les obligations, clauses financières et dates limites mentionnées sous forme de tableau."
+  ],
+  "erreurs": [
+   "Téléverser des PDF scannés de très mauvaise qualité sous forme d'images sans texte sélectionnable (OCR illisible).",
+   "Poser des questions sur des sujets extérieurs au document : NotebookLM réponds scrupuleusement aux sources fournies pour éviter d'inventer des faits.",
+   "S'attendre à une voix française pour l'Aperçu Audio ('Audio Overview') : la génération audio automatique est actuellement principalement en anglais, bien que toute l'interface textuelle et le chat fonctionnent parfaitement en français."
+  ],
+  "astuces": [
+   "Tu peux combiner jusqu'à 50 documents dans un seul carnet (ex: 3 devis de fournisseurs différents pour les comparer instantanément).",
+   "Clique sur les petits numéros de citation dans les réponses de l'IA : cela t'amène directement au paragraphe exact de la page du PDF source."
+  ],
+  "gratuit": "100% gratuit avec un simple compte Google, aucune limite d'utilisation payante actuellement."
+ },
+ "sources_recherche": [],
+ "modele": "gemini-3.6-flash",
+ "recherche": false,
+ "youtube": []
+}
