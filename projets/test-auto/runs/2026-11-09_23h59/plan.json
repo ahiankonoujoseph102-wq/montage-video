@@ -1,0 +1,375 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "recherche": "african entrepreneur frustrated looking at smartphone",
+   "texte": "VOIX MAUVAISE",
+   "geste": "bras-croises",
+   "expression": "grimace",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Openverse · D Coetzee"
+  },
+  {
+   "type": "photo",
+   "recherche": "african merchant in shop lome togo",
+   "texte": "PAS DE MICRO",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/01.jpg",
+   "credit": "Photo : 300td.org · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "LE SOUCI\nC'EST LE SON",
+   "emoji": "26a0_fe0f",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "FORMATEUR",
+   "texte": "JOSEPH\nLOMÉ IA SCHOOL",
+   "emoji": "1f3af",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "OBJECTIF",
+   "texte": "SPOT PUBLICITAIRE\nSUR MOBILE",
+   "emoji": "1f680",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "GÉNÉRER LE SCRIPT\nSUR CHATGPT",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "prompt",
+   "texte": "Écris un script publicitaire pour ma boutique de vêtements à Lomé avec WhatsApp.",
+   "geste": "designe"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "whatsapp",
+     "nom": "WhatsApp",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Rédige un script publicitaire court pour ma boutique de chaussures à Lomé.",
+   "reponse": "Bonjour Lomé ! Envie de style ?\nDécouvrez nos plus belles chaussures.\nDes modèles uniques pour tous.\nQualité et confort garantis.\nRendez-vous vite en boutique !",
+   "expression": "parle",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman watching smartphone intently",
+   "texte": "ACCROCHE CHOC",
+   "geste": "designe",
+   "expression": "surpris",
+   "fichier": "test-auto/photos/09.jpg",
+   "credit": "Photo : sagesolar · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSEIL",
+   "texte": "COPIE SEULEMENT\nLE TEXTE BRUT",
+   "emoji": "2705",
+   "geste": "designe",
+   "expression": "neutre"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "GÉNÉRER LA VOIX\nSUR ELEVENLABS",
+   "emoji": "1f442",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Voix Brian",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Voix Adam",
+    "ok": true
+   },
+   "a": [
+    "Brian",
+    "Adam"
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "RÉGLAGE",
+   "texte": "STABILITÉ BASSE\nVOIX DYNAMIQUE",
+   "emoji": "1f4a1",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Colle ton texte dans ElevenLabs et clique sur Generate Speech.",
+   "reponse": "Je ne peux pas accéder à ElevenLabs.\nMais je peux rédiger le texte idéal.\nQuel est le sujet de votre audio ?\nDonnez-moi vos instructions.\nJe prépare le texte à copier.",
+   "expression": "sourire",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Fichier MP3 enregistré dans le téléphone.",
+   "emoji": "2705"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "ASSEMBLER VISUELS\nET AUDIO CAPCUT",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "photo",
+   "recherche": "african fashion products shoes bags",
+   "texte": "IMPORTE IMAGES",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/18.jpg",
+   "credit": "Photo : Muffet · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "smartphone screen audio file selection",
+   "texte": "AJOUTE AUDIO",
+   "geste": "designe",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/19.jpg",
+   "credit": "Openverse · Unspecified"
+  },
+  {
+   "type": "photo",
+   "recherche": "editing video on smartphone screen african hands",
+   "texte": "COUPE SUR LE RYTHME",
+   "geste": "designe",
+   "expression": "parle",
+   "fichier": "test-auto/photos/20.jpg",
+   "credit": "Photo : qubodup · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "RETENTION",
+   "texte": "RYTHME RAPIDE\nCLIENT CAPTIVÉ",
+   "emoji": "1f3af",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "SOUS-TITRES ET\nRÉGLAGE SONORE",
+   "emoji": "2728",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "carte",
+   "kicker": "CAPCUT",
+   "texte": "LÉGENDES\nAUTOMATIQUES",
+   "emoji": "1f4ac",
+   "expression": "parle"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Sous-titres générés automatiquement en français sur la vidéo.",
+   "emoji": "2705"
+  },
+  {
+   "type": "carte",
+   "kicker": "AUDIO",
+   "texte": "MUSIQUE DOUCE\nVOLUME TRÈS BAS",
+   "geste": "designe",
+   "expression": "neutre"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man happy showing smartphone screen",
+   "texte": "EXPORTE LA VIDÉO",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/26.jpg",
+   "credit": "Photo : jorge.correa · CC BY 2.0"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african person reading smartphone text confused",
+   "texte": "IA LIT ANNOTATIONS",
+   "geste": "designe",
+   "expression": "grimace",
+   "fichier": "test-auto/photos/28.jpg",
+   "credit": "Photo : CarbonNYC [in SF!] · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "CAPCUT",
+   "texte": "SUPPRIME LA\nFIN PAR DÉFAUT",
+   "emoji": "274c",
+   "expression": "neutre"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE",
+   "texte": "AJOUTE DES VIRGULES\nPOUR RESPIRER",
+   "emoji": "1f4a1",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "PAUSES NATURELLES"
+  },
+  {
+   "type": "liste",
+   "titre": "TROIS OUTILS GRATUITS",
+   "items": [
+    {
+     "texte": "ChatGPT : Script",
+     "a": "ChatGPT,"
+    },
+    {
+     "texte": "ElevenLabs : Voix",
+     "a": "ElevenLabs,"
+    },
+    {
+     "texte": "CapCut : Montage",
+     "a": "CapCut."
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "SPOT PRÊT À VENDRE"
+  },
+  {
+   "type": "carte",
+   "kicker": "MESSAGE CLÉ",
+   "texte": "L'IA CHANGE LE TRAVAIL\nPRENDS DE L'AVANCE",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

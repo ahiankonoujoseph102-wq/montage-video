@@ -1,0 +1,109 @@
+{
+ "tendances": [
+  {
+   "titre": "I built an AI app in 10 minutes (No Code)",
+   "createur": "Justin Fineberg",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@justinfineberg",
+   "pourquoi": "Accroche choc dès la première seconde (résultat final montré tout de suite), promesse de vitesse ('10 minutes'), démonstration écran fluide et aucune compétence technique requise."
+  },
+  {
+   "titre": "Créer une vidéo pub e-commerce complète avec l'IA",
+   "createur": "Shubham Sharma",
+   "plateforme": "YouTube Shorts",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/@ShubhamSharmaIA",
+   "pourquoi": "Forte valeur business pour commerçants. Découpage étape par étape (Prompt -> Image -> Vidéo -> Voix), rendu visuel impressionnant et application immédiate pour vendre."
+  },
+  {
+   "titre": "The Best Free AI Video Generator Right Now (Minimax / Hailuo)",
+   "createur": "Matt Wolfe",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/@mxbrain",
+   "pourquoi": "Positionnement sur la gratuité ('Free') et la nouveauté. Comparatif visuel avant/après direct, très fort taux de partage dans la communauté créateur."
+  },
+  {
+   "titre": "Comment doubler ton rythme de création de contenu avec Perplexity",
+   "createur": "Eliott Meunier",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@eliottmeunier",
+   "pourquoi": "Format dynamique capté au smartphone, résolution d'un problème quotidien (panne d'inspiration), structure 'Problème -> Prompt magique -> Résultat'."
+  },
+  {
+   "titre": "How to create AI Voiceovers for Instagram Reels for Free",
+   "createur": "AI Jason",
+   "plateforme": "Instagram Reels",
+   "vues": "non vérifié",
+   "lien": "https://www.instagram.com/ai.jason",
+   "pourquoi": "Démonstration du réalisme de la voix IA qui capte l'attention. Tutoriel très court (moins de 60s), utilisable directement depuis son smartphone."
+  },
+  {
+   "titre": "Créer un logo et sa charte graphique pro avec l'IA sans Canva Pro",
+   "createur": "Bénédict / IA Business",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@iabusinessfr",
+   "pourquoi": "Cible les petits entrepreneurs sans budget design. Hook basé sur l'économie d'argent ('Arrête de payer des graphistes 100€')."
+  },
+  {
+   "titre": "Create an entire TikTok faceless video with ChatGPT & CapCut",
+   "createur": "Brett Malinowski",
+   "plateforme": "YouTube Shorts",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/@BrettMalinowski",
+   "pourquoi": "Sujet 'Side Hustle' très engageant (gagner de l'argent de chez soi). Montage ultra-cut, texte à l'écran dynamique, checklist simple d'outils."
+  },
+  {
+   "titre": "Automatiser ses réponses clients WhatsApp avec un agent IA gratuit",
+   "createur": "LeStudioIA",
+   "plateforme": "Facebook Watch",
+   "vues": "non vérifié",
+   "lien": "https://www.facebook.com/LeStudioIA",
+   "pourquoi": "Répond exactement aux besoins des vendeurs sur les réseaux sociaux. Montre le gain de temps et les ventes manquées récupérées."
+  }
+ ],
+ "sujet": {
+  "titre": "Crée un spot publicitaire vidéo avec voix-off IA pro pour ton produit (depuis ton téléphone)",
+  "angle": "Permettre aux commerçants et créateurs africains de générer une publicité vidéo captivante pour WhatsApp, TikTok et Facebook sans micro pro, sans studio et sans payer de comédien.",
+  "pourquoi_maintenant": "La vidéo avec voix-off expressive et sous-titres animés est le format publicitaire le plus convertissant sur WhatsApp et TikTok en Afrique francophone, mais la majorité des commerçants n'osent pas poser leur voix ou n'ont pas le bon matériel.",
+  "inspire_de": [
+   "Création de vidéos pub e-commerce (Shubham Sharma)",
+   "Utilisation des voix IA ultra-réalistes sur mobile (AI Jason)"
+  ]
+ },
+ "methode": {
+  "outil": "ChatGPT (Application mobile) + ElevenLabs (Navigateur mobile browser) + CapCut (Application mobile)",
+  "etapes": [
+   "Étape 1 : Générer le script publicitaire sur ChatGPT mobile avec la formule AIDA (Attention, Intérêt, Désir, Action).",
+   "Étape 2 : Ouvrir Chrome/Safari sur smartphone, aller sur elevenlabs.io et se connecter à un compte gratuit.",
+   "Étape 3 : Dans ElevenLabs, aller dans le menu 'Speech' (ou 'Text to Speech'), sélectionner une voix francophone naturelle (ex: 'Brian', 'Adam' ou 'Charlie'), régler la stabilité à 40% et la clarté à 75%.",
+   "Étape 4 : Coller le script produit par ChatGPT, cliquer sur 'Generate speech' puis sur le bouton de téléchargement (icône flèche vers le bas) pour enregistrer le fichier audio MP3 sur le téléphone.",
+   "Étape 5 : Ouvrir l'application CapCut sur téléphone, cliquer sur 'Nouveau projet', importer les photos ou séquences vidéo du produit.",
+   "Étape 6 : Cliquer sur le menu 'Audio' en bas > 'Sons' > icône Dossier > 'Depuis l'appareil' et sélectionner le fichier MP3 ElevenLabs.",
+   "Étape 7 : Ajuster les cuts vidéo sur le rythme de la voix. Cliquer sur 'Texte' > 'Légendes automatiques' > Choisir la langue 'Français' > 'Démarrer' pour générer les sous-titres animés.",
+   "Étape 8 : Exporter la vidéo en 1080p / 30 fps via le bouton flèche en haut à droite."
+  ],
+  "prompts": [
+   "Jeu de rôle : Tu es un expert en rédaction publicitaire TikTok/WhatsApp pour le marché africain francophone.\nProduit : [Remplacer par ton produit, ex: Chaussures en cuir pour hommes / Huile capillaire pousse rapide].\nCible : [Ex: Jeunes professionnels / Femmes de 20-35 ans].\nObjectif : Inciter à commander immédiatement sur WhatsApp.\nContrainte : Rédige un script court (moins de 30 secondes, environ 60 à 75 mots) pour une publicité vidéo.\nStructure obligatoire :\n1. Hook (0-3s) : Une question choc ou un problème frustrant.\n2. Solution (3-15s) : Présente le produit et 2 bénéfices clés.\n3. Preuve/Offre (15-22s) : Promotion spéciale ou livraison offerte.\n4. Appel à l'action (22-30s) : 'Clique sur le lien en bio' ou 'Écris-nous sur WhatsApp'.\nFormate la réponse uniquement sous forme de texte brut lisible à voix haute, sans indications entre parenthèses."
+  ],
+  "erreurs": [
+   "Copier les annotations du script (ex: '[Musique de fond]') dans ElevenLabs, ce qui fait lire ces mots par l'IA.",
+   "Générer un texte trop long : dépasser 80 mots donne une publicité de plus de 45 secondes, moins performante sur TikTok/Reels.",
+   "Garder le taux de stabilité d'ElevenLabs à 100% : la voix devient monotone et robotique. Il faut le descendre autour de 35-40% pour plus d'émotion.",
+   "Oublier d'activer l'option 'Légendes automatiques' dans CapCut : 80% des utilisateurs regardent les vidéos sur mobile sans le son au départ."
+  ],
+  "astuces": [
+   "Dans ElevenLabs, ajoute des virgules et des points supplémentaires dans ton texte pour forcer l'IA à faire de vraies pauses respiration aux endroits stratégiques.",
+   "Sur CapCut, ajoute un fond sonore instrumental très bas (volume à 5-10%) sous la voix IA (volume à 100-150%) pour donner un rendu 100% professionnel.",
+   "Utilise le style de sous-titres 'Légendes dynamiques' (mot par mot) avec une couleur jaune/blanche dans CapCut pour maximiser la rétention visuelle."
+  ],
+  "gratuit": "ChatGPT : 100% gratuit sur mobile. ElevenLabs : 10 000 caractères gratuits par mois (environ 15 à 20 spots publicitaires). CapCut : montage et sous-titres automatiques 100% gratuits sans filigrane si on supprime la séquence de fin par défaut."
+ },
+ "sources_recherche": [],
+ "modele": "gemini-3.6-flash",
+ "recherche": false,
+ "youtube": []
+}
