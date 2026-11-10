@@ -1,0 +1,339 @@
+{
+ "scenes": [
+  {
+   "type": "carte",
+   "texte": "TON LOGO PRO"
+  },
+  {
+   "type": "alerte",
+   "texte": "IMAGE FLOUSE\nÀ L'IMPRESSION",
+   "emoji": "26a0_fe0f",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "photo",
+   "recherche": "african print shop sign banner street",
+   "texte": "ENSEIGNE À LOMÉ",
+   "geste": "designe",
+   "expression": "parle",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Openverse · Matthew Paul Argall - Old Ads"
+  },
+  {
+   "type": "photo",
+   "recherche": "african person holding smartphone design",
+   "texte": "DEPUIS LE TELEPHONE",
+   "geste": "designe",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/03.jpg",
+   "credit": "Photo : jorge.correa · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "EXPERT IA",
+   "texte": "JOSEPH\nLOMÉ IA SCHOOL",
+   "emoji": "1f3af",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african graphic designer tablet screen",
+   "texte": "FORMAT VECTORIEL",
+   "geste": "explique",
+   "expression": "parle",
+   "fichier": "test-auto/photos/05.jpg",
+   "credit": "Photo : CompleteMerchandise · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "OUVRE RECRAFT.AI\nSUR CHROME OU SAFARI",
+   "emoji": "1f680",
+   "geste": "compte",
+   "doigts": 1,
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "GRATUIT",
+   "texte": "50 CRÉDITS\nCHAQUE JOUR",
+   "emoji": "1f381",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "SANS RIEN PAYER"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "CHOISIS LE STYLE\nVECTOR ART",
+   "geste": "compte",
+   "doigts": 2,
+   "expression": "parle"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "FLAT 2D",
+    "ok": true
+   },
+   "droite": {
+    "texte": "PHOTO REALISTE",
+    "ok": false
+   },
+   "a": [
+    "Flat",
+    "photo."
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "IMPRESSION T-SHIRT"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "ÉCRIS LE PROMPT\nAVEC VRAIES COULEURS",
+   "emoji": "1f4ac",
+   "geste": "compte",
+   "doigts": 3,
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "texte": "CAFÉ KPALIMÉ"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Minimalist vector logo for an African coffee brand, coffee bean and cocoa pod, emerald green and warm gold colors, isolated, flat 2d",
+   "reponse": "Voici le concept de logo proposé.\nUn grain de café croise une cabosse.\nLes formes sont simples et épurées.\nLe vert émeraude sublime l'or chaud.\nLe visuel est isolé sur fond blanc.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "texte": "4 PROPOSITIONS"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "AJOUTE LE TEXTE\nDE TA MARQUE",
+   "emoji": "2728",
+   "geste": "compte",
+   "doigts": 4,
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "OUTIL DE TEXTE"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Add text 'Café Kpalimé' to the generated vector icon, modern clean typography, emerald green color, centered alignment",
+   "reponse": "J'ai bien pris en compte votre demande.\nLe texte \"Café Kpalimé\" sera ajouté.\nAlignement centré et style moderne.\nUtilisation du vert émeraude.\nMise à jour de l'icône en cours...",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉDITEUR",
+   "texte": "ÉVITE LES FAUTES\nSUR L'IMAGE",
+   "emoji": "1f3af",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "ÉXPORTE EN FORMAT\nVECTORIEL SVG",
+   "geste": "compte",
+   "doigts": 4,
+   "expression": "parle"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "FORMAT SVG (NET)",
+    "ok": true
+   },
+   "droite": {
+    "texte": "FORMAT JPG (FLOU)",
+    "ok": false
+   },
+   "a": [
+    "SVG",
+    "enseignes."
+   ]
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "whatsapp",
+     "nom": "WhatsApp",
+     "site": "",
+     "logo": true,
+     "capture": false
+    },
+    {
+     "id": "facebook",
+     "nom": "Facebook",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "alerte",
+   "texte": "NE DIS PAS juste\nBEAU LOGO PRO",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "EXPORT SVG",
+    "ok": true
+   },
+   "droite": {
+    "texte": "EXPORT JPG",
+    "ok": false
+   },
+   "a": [
+    "SVG,",
+    "JPG"
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "COULEURS",
+   "texte": "OPTION PALETTE\nEXACTE",
+   "emoji": "2728",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE PRO",
+   "texte": "OPTION VECTORIZE\nDEPUIS CROQUIS",
+   "emoji": "1f4a1",
+   "geste": "pouce",
+   "expression": "surpris"
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉTAPE 1",
+   "texte": "OUVRE RECRAFT.AI\nSUR MOBILES",
+   "emoji": "1f680",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉTAPE 2",
+   "texte": "STYLE VECTOR ART\nET FLAT 2D",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉTAPE 3",
+   "texte": "PROMPT DÉTAILLÉ\nET NOM EXACT",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉTAPE 4",
+   "texte": "EXPORTATION SVG\nIMPRIMABLE",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "texte": "PRENEZ DE L AVANCE"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "orange",
+  "nuit",
+  "vert",
+  "violet",
+  "rose",
+  "orange",
+  "bleu",
+  "nuit",
+  "vert",
+  "violet",
+  "rose",
+  "orange",
+  "bleu",
+  "vert",
+  "nuit",
+  "orange",
+  "violet",
+  "bleu",
+  "rose",
+  "vert",
+  "nuit",
+  "orange",
+  "violet",
+  "bleu",
+  "vert",
+  "rose",
+  "orange",
+  "nuit",
+  "vert",
+  "violet",
+  "bleu",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}
