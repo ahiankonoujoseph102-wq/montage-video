@@ -101,7 +101,13 @@ QUALITE = """RÈGLES DE QUALITÉ (obligatoires, toutes les vidéos) :
 9. Mise en page variée (clé "mise") : "plein" (l'illustration ou la photo occupe tout l'écran), "double" (le double
    animé de Joseph en grand, l'idée en vignette inclinée au-dessus), "partage" (illustration en haut, double en bas).
    Jamais plus de 2 fois de suite la même mise ; le double en grand au moins toutes les 20 secondes ; les photos en
-   "plein" ; les démonstrations en "plein" ou "partage"."""
+   "plein" ; les démonstrations en "plein" ou "partage".
+10. Pédagogie (demande de Joseph) : chaque idée est EXPLIQUÉE, pas seulement illustrée — un exemple concret et
+   montré (demo, reponseIA, prompt, deux : avant / après, liste d'étapes), dans l'ordre où il l'explique ; ton doux et
+   clair ; faire sentir l'importance et l'urgence d'apprendre (alerte ou question aux moments forts), sans peur ni
+   fausse promesse. Le spectateur doit COMPRENDRE à quoi ça sert et comment on fait.
+11. En cas de doute sur une photo, choisis une animation explicative : une illustration juste vaut mieux qu'une photo
+   approximative."""
 MISES = {"plein", "double", "partage"}
 OUTILS_NOMS = ["Claude Code", "Codex", "ChatGPT", "Claude", "Gemini", "Perplexity", "Canva", "CapCut", "Midjourney",
                "WhatsApp", "Copilot", "Cursor", "Lovable", "Suno", "Kling", "Veo", "Sora", "n8n", "Make", "Zapier"]

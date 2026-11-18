@@ -306,9 +306,17 @@ e-mail = demande de correction, refaite et renvoyée.
   phrase de plus de 7 s coupée en plans de 3,5 s au moins qui changent de mise (`plans`) ;
   illustration entière sur l'écran du studio (jamais coupée) ; coup de zoom + éclair blanc à chaque changement, cadrage du double alterné à chaque phrase ; texte trop long coupé en
   deux lignes équilibrées (`Gros`).
+- **Marque et fin** : logo Lomé IA School (`projets/marque/logo.jpg`, copié de la série animée) en haut à gauche
+  pendant toute la vidéo ; carton de fin habituel de 4 s après la voix (logo qui flotte, « ABONNE-TOI / LIKE •
+  PARTAGE », « Consultation gratuite », « Lien dans la bio », WhatsApp), effet `carton`.
+- **Début et voix** : parole dès la première image (0,05 s avant le premier mot), silences de plus de 0,6 s ramenés
+  à 0,35 s ; chaîne radio sans porte de bruit, compression lente, gain constant (mesuré : plus de « coupures »).
+- **Photos** : tout texte incrusté (crédit, site, filigrane) flouté automatiquement (`flouter_textes`, Tesseract) ;
+  sans clé Pexels (`PEXELS_API_KEY`), seules les photos Openverse/Flickr sont disponibles (souvent approximatives).
 - **Qualité du plan** (`QUALITE`, `verifier_plan`, `reparer` dans `scripts/courriel_preparer.py`, tirées des remarques
   de Joseph) : plan fait par paquets de 10 phrases (jamais de scène manquante) ; vérifications automatiques puis
   relecture Gemini (orthographe, textes trop longs, liste au bon nombre d'éléments, tous les outils cités affichés,
-  numéro affiché quand il est dit, pas deux scènes identiques de suite, mises variées) ; jamais de carte de secours
+  numéro affiché quand il est dit, pas deux scènes identiques de suite, mises variées, pédagogie : chaque idée
+  expliquée par un exemple montré, animation plutôt qu'une photo approximative) ; jamais de carte de secours
   au texte d'une autre phrase. Mode d'emploi : `projets/courriel/MODE-EMPLOI.md`. L'ancienne
 automatisation quotidienne (`video-test.yml`) est gardée en lancement manuel.

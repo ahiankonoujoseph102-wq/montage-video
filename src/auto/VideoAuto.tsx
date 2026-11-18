@@ -37,7 +37,7 @@ export type OutilScene = {id: string; nom: string; site: string; logo: boolean; 
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
   masques: [number, number][]; visemes: string; bouche: number[]; scenes: Scene[]; fonds: string[]; emojis: string[];
-  decalageDouble: number; titre?: {lignes: string[]; cle?: string}; logos?: Record<string, {nom: string; couleur: string}>};
+  decalageDouble: number; titre?: {lignes: string[]; cle?: string}; carton?: {debut: number; whatsapp?: string}; logos?: Record<string, {nom: string; couleur: string}>};
 
 const pop = (f: number, a = 0, raide = 220, amorti = 10) =>
   f < a ? 0 : spring({frame: f - a, fps: FPS, config: {damping: amorti, stiffness: raide, mass: 0.7}});
@@ -560,6 +560,13 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
         <SousTitresMot mots={p.motsFrames} masques={p.titre ? [[0, FIN_TITRE_GEANT], ...p.masques] : p.masques}
           partages={partages} />
         {eclair > 0 ? <AbsoluteFill style={{background: '#fff', opacity: eclair}} /> : null}
+        {/* Logo Lomé IA School pendant toute la vidéo (zone sûre : sous les 10 % du haut, à gauche). */}
+        {!p.carton || f < p.carton.debut ? <LogoCoin /> : null}
+        {p.carton ? (
+          <Sequence from={p.carton.debut}>
+            <CartonFinAuto whatsapp={p.carton.whatsapp ?? '+228 72 24 02 31'} />
+          </Sequence>
+        ) : null}
         {/* Flash blanc léger à l'impact d'ouverture. */}
         {f < 2 ? <AbsoluteFill style={{background: '#fff', opacity: f === 0 ? 0.6 : 0.3}} /> : null}
       </AbsoluteFill>
@@ -592,6 +599,42 @@ const misesAuto = (scenes: Scene[], bornes: number[][]): Mise[] => {
     res.push(m);
   });
   return res;
+};
+
+// Logo discret de l'école, en haut à gauche, toute la vidéo (même rendu que la série animée).
+const LogoCoin: React.FC = () => (
+  <div style={{position: 'absolute', left: 40, top: 205, width: 112, height: 112, borderRadius: 24, overflow: 'hidden',
+    opacity: 0.95, boxShadow: `0 0 0 3px ${OR}66, 0 8px 24px rgba(0,0,0,0.55)`}}>
+    <Img src={staticFile('test-auto/marque/logo.jpg')} style={{width: '100%', height: '100%'}} />
+  </div>
+);
+
+// Carton de fin habituel (4 s) : logo qui flotte, « ABONNE-TOI • LIKE • PARTAGE », « Consultation gratuite »,
+// « Lien dans la bio », WhatsApp ; étoiles qui tournent, aucun élément figé.
+const CartonFinAuto: React.FC<{whatsapp: string}> = ({whatsapp}) => {
+  const f = useCurrentFrame();
+  const t = f / FPS;
+  const entree = interpolate(f, [0, 8], [0, 1], clamp);
+  const respire = 1 + 0.04 * Math.sin(t * 4.4);
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(circle at ${50 + Math.sin(t * 1.3) * 12}% ${38 + Math.cos(t * 1.1) * 8}%, #1b1f63 0%, #020629 68%)`,
+      opacity: entree}}>
+      {[[160, 300, 64, OR], [900, 380, 48, '#8B5CF6'], [130, 1330, 44, '#8B5CF6'], [910, 1260, 60, OR]].map(([x, y, tl, c], i) => (
+        <div key={i} style={{position: 'absolute', left: x as number, top: y as number, fontSize: tl as number, color: c as string,
+          transform: `rotate(${t * 40 + i * 30}deg) scale(${pop(f, 9 + i * 3)})`}}>✦</div>
+      ))}
+      <Img src={staticFile('test-auto/marque/logo.jpg')} style={{position: 'absolute', left: CX - 210, top: 270, width: 420, height: 420,
+        borderRadius: 60, boxShadow: `0 0 60px ${OR}55`, transform: `translateY(${Math.sin(t * 2.2) * 16}px) rotate(${Math.sin(t * 1.7) * 3}deg) scale(${pop(f, 3, 200)})`}} />
+      <Gros texte={'ABONNE-TOI\nLIKE • PARTAGE'} y={740} max={92} k={pop(f, 14) * respire} />
+      <Gros texte={'Consultation\ngratuite'} y={960} max={74} couleur={OR} k={pop(f, 24)} />
+      <div style={{position: 'absolute', left: CX - 330, width: 660, top: 1145, display: 'flex', justifyContent: 'center',
+        transform: `scale(${pop(f, 32) * (1 + 0.05 * Math.sin(t * 6))})`}}>
+        <div style={{background: '#fff', color: '#020629', borderRadius: 999, padding: '16px 40px', fontFamily: POLICE,
+          fontWeight: 900, fontSize: 52, boxShadow: `0 0 ${30 + 20 * Math.sin(t * 6)}px ${OR}`}}>Lien dans la bio ↓</div>
+      </div>
+      <Gros texte={`WhatsApp\n${whatsapp}`} y={1265} max={58} k={pop(f, 40)} />
+    </AbsoluteFill>
+  );
 };
 
 // Plans : une phrase longue (plus de 7 s) est coupée en plans de 3,5 s au moins qui changent de mise en page

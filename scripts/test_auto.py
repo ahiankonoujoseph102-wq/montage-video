@@ -27,6 +27,7 @@ FPS = 30
 PAUSE_PHRASE = 0.32  # s entre deux phrases d'une même partie
 PAUSE_PARTIE = 0.6   # s entre deux parties (accroche, réflexe 1…)
 FIN = 2.2            # s gardées après la dernière phrase
+CARTON = 4.0         # carton de fin Lomé IA School (logo, abonne-toi, consultation, WhatsApp) après la voix
 # Chaîne « radio » choisie par Joseph pour la pub Talkami (scripts/voix_pub3.py), sans accélération.
 # Voix naturelle (demande de Joseph) : plus de chaîne « radio » (égaliseur, double compression, désesseur) ; seulement
 # un filtre des graves inutiles et une compression très douce pour garder un niveau régulier.
@@ -161,7 +162,7 @@ def main():
         bornes.append([round(t, 3), round(t + len(x) / SR, 3)])
         morceaux.append(x)
         t += len(x) / SR
-    morceaux.append(np.zeros(int(FIN * SR)))
+    morceaux.append(np.zeros(int((0.5 + CARTON) * SR)))  # 0,5 s de respiration puis le carton de fin
     brut = np.concatenate(morceaux)
     ecrire(PUBLIC / "voix_brute.wav", brut)
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(PUBLIC / "voix_brute.wav"), "-af", RADIO,
@@ -248,6 +249,8 @@ def main():
                     effets.append((w["a"] + 2 / FPS, "coche" if ok else "croix", -9))
         if s["type"] == "numero":
             effets.append((a + 0.05, "autocollant", -8))
+    fin_voix = bornes[-1][1]
+    effets.append((fin_voix + 0.5, "carton", -4))
     for t0, nom, g in effets:
         x = lire(ROOT / "sons" / "effets" / f"{nom}.wav") * 10 ** (g / 20) * 0.5
         i0 = int(t0 * SR)
@@ -266,12 +269,15 @@ def main():
     # 5. Emojis utilisés et props.
     codes = sorted({s["emoji"] for s in plan["scenes"] if s.get("emoji")} | {"2728"})
     (PUBLIC / "emojis").mkdir(exist_ok=True)
+    (PUBLIC / "marque").mkdir(exist_ok=True)
+    shutil.copy2(ROOT / "projets" / "marque" / "logo.jpg", PUBLIC / "marque" / "logo.jpg")
     for c in codes:
         shutil.copy2(PROJET / "emojis" / f"{c}.json", PUBLIC / "emojis" / f"{c}.json")
     props = {"duree": round(duree, 3), "phrases": [{"a": a, "b": b} for a, b in bornes], "mots": mots,
              "motsFrames": mots_frames, "masques": masques, "visemes": visemes,
              "bouche": [round(float(x), 3) for x in energie], "scenes": plan["scenes"], "fonds": plan["fond"],
-             "emojis": codes, "decalageDouble": 110}
+             "emojis": codes, "decalageDouble": 110,
+             "carton": {"debut": int(round((fin_voix + 0.5) * FPS)), "whatsapp": "+228 72 24 02 31"}}
     if script.get("accroche", {}).get("lignes"):
         props["titre"] = script["accroche"]
     (PUBLIC / "props.json").write_text(json.dumps(props, ensure_ascii=False))

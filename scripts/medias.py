@@ -58,7 +58,62 @@ def preparer_photo(brut, dest):
             raise ValueError(f"image trop petite ({im.width}×{im.height})")
         if im.width > 1600:
             im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+        im = flouter_textes(im)
         im.save(dest, "JPEG", quality=90)
+
+
+def flouter_textes(im):
+    """Floute tout texte incrusté dans la photo (nom du photographe, filigrane, signature) : demande de Joseph, ce
+    n'est pas professionnel. Texte repéré par Tesseract (OCR) ; sans Tesseract, les bandes du bas et des coins où
+    se trouvent presque toujours les filigranes sont floutées par précaution."""
+    import shutil
+    import subprocess
+    import tempfile
+    from PIL import ImageFilter
+    zones = []
+    if shutil.which("tesseract"):
+        from PIL import ImageOps
+        gris = ImageOps.grayscale(im)
+        # Texte clair ou foncé : on lit l'image et son négatif, contraste renforcé.
+        for variante in (ImageOps.autocontrast(gris), ImageOps.invert(ImageOps.autocontrast(gris))):
+            with tempfile.NamedTemporaryFile(suffix=".png") as t:
+                variante.save(t.name)
+                r = subprocess.run(["tesseract", t.name, "stdout", "--psm", "11", "tsv"], capture_output=True, text=True)
+            for ligne in r.stdout.splitlines()[1:]:
+                c = ligne.split("\t")
+                if len(c) == 12 and len(c[11].strip()) >= 1 and float(c[10]) > 30:
+                    x, y, w, h = map(int, c[6:10])
+                    bord = y + h / 2 < im.height * 0.15 or y + h / 2 > im.height * 0.85
+                    # Bords (où sont les filigranes) : on floute au moindre doute ; ailleurs, seulement le texte sûr.
+                    if 6 < h < im.height * 0.12 and w < im.width * 0.9 and (bord or (float(c[10]) > 70 and len(c[11].strip()) >= 3)):
+                        zones.append([x, y, w, h])
+        # Mots d'une même ligne réunis (un filigrane entier, pas des morceaux), élargis d'une hauteur de chaque côté.
+        zones.sort(key=lambda z: (z[1], z[0]))
+        lignes = []
+        for z in zones:
+            for L in lignes:
+                if abs((L[1] + L[3] / 2) - (z[1] + z[3] / 2)) < max(L[3], z[3]) * 0.6 and z[0] - (L[0] + L[2]) < 3 * max(L[3], z[3]) \
+                        and L[0] - (z[0] + z[2]) < 3 * max(L[3], z[3]):
+                    x0, y0 = min(L[0], z[0]), min(L[1], z[1])
+                    x1, y1 = max(L[0] + L[2], z[0] + z[2]), max(L[1] + L[3], z[1] + z[3])
+                    L[:] = [x0, y0, x1 - x0, y1 - y0]
+                    break
+            else:
+                lignes.append(list(z))
+        # Une ligne de texte près d'un bord (crédit, site web, filigrane) : toute la largeur de la bande est floutée.
+        zones = [(0, y, im.width, h) if (y + h / 2 < im.height * 0.15 or y + h / 2 > im.height * 0.85)
+                 else (x - h, y, w + 2 * h, h) for x, y, w, h in lignes]
+    else:
+        zones = [(0, int(im.height * 0.9), im.width, int(im.height * 0.1))]
+    for x, y, w, h in zones:
+        m = max(8, h // 2)
+        boite = (max(0, x - m), max(0, y - m), min(im.width, x + w + m), min(im.height, y + h + m))
+        large = (max(0, boite[0] - 3 * m), max(0, boite[1] - 3 * m), min(im.width, boite[2] + 3 * m), min(im.height, boite[3] + 3 * m))
+        flou = im.crop(large).filter(ImageFilter.GaussianBlur(max(6, h * 0.45))).filter(ImageFilter.GaussianBlur(max(4, h * 0.3)))
+        im.paste(flou.crop((boite[0] - large[0], boite[1] - large[1], boite[2] - large[0], boite[3] - large[1])), boite[:2])
+    if zones:
+        print(f"  {len(zones)} texte(s) incrusté(s) flouté(s)", flush=True)
+    return im
 
 
 def pexels_video(recherche, cle, dest):
