@@ -1,0 +1,410 @@
+{
+ "scenes": [
+  {
+   "type": "alerte",
+   "texte": "5 BUSINESS RENTABLES\nAVEC L'IA EN 2026",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "surpris"
+  },
+  {
+   "type": "question",
+   "texte": "NOUVELLE ACTIVITÉ ?",
+   "sous": "Lancer en 2026",
+   "emoji": "1f914",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "photo",
+   "recherche": "african businessman working laptop office",
+   "texte": "DÉVELOPPER VOS REVENUS",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "OPPORTUNITÉ",
+   "texte": "L'IA CHANGE\nLE MONDE",
+   "sous": "Opportunités extraordinaires",
+   "emoji": "2728",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "liste",
+   "titre": "5 BUSINESS IA",
+   "items": [
+    {
+     "texte": "Sites & Apps",
+     "a": "cinq"
+    },
+    {
+     "texte": "Agents IA",
+     "a": "business"
+    },
+    {
+     "texte": "Contenu",
+     "a": "lancer"
+    },
+    {
+     "texte": "Formation",
+     "a": "elle."
+    }
+   ]
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "SITES WEB &\nAPPLICATIONS",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "photo",
+   "recherche": "african programmer writing code laptop",
+   "texte": "CREER DES APPS",
+   "fichier": "test-auto/photos/06.jpg",
+   "credit": "Openverse · inconnu"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "claude",
+     "nom": "Claude",
+     "site": "claude.ai",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african store owner digital tablet",
+   "texte": "GESTION COMMERCE",
+   "fichier": "test-auto/photos/08.jpg",
+   "credit": "Openverse · fireboyx25"
+  },
+  {
+   "type": "carte",
+   "kicker": "CLIENTS",
+   "texte": "VENDRE VOS\nSERVICES IA",
+   "emoji": "1f4aa",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "VENTE D'AGENTS\nINTELLIGENTS",
+   "emoji": "1f9e0",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman using smartphone whatsapp",
+   "texte": "AGENTS INTELLIGENTS",
+   "fichier": "test-auto/photos/11.jpg",
+   "credit": "Openverse · StockyPics"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Bonjour ! Je suis l'agent IA de la boutique. Comment puis-je vous aider à passer commande ?",
+   "emoji": "1f4ac"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Réponds à la question client sur les horaires de livraison à Lomé",
+   "reponse": "Bonjour ! Concernant vos livraisons\nà Lomé, nos équipes interviennent\ndu lundi au samedi, de 8h à 18h.\nNous proposons aussi des créneaux\nexpress sur demande spécifique.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "AUTOMATISATION\nDE CONTENUS",
+   "emoji": "1f525",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman stress desk social media",
+   "texte": "PERTE DE TEMPS",
+   "fichier": "test-auto/photos/15.jpg",
+   "credit": "Photo : Sean MacEntee · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "SOLUTION",
+   "texte": "AUTOMATISEZ\nLES VIDÉOS",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "prompt",
+   "texte": "Génère 5 posts et 1 vidéo à partir de ce texte d'email",
+   "geste": "designe"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Email reçu ! Vidéo générée et programmée pour diffusion automatique à 18h.",
+   "emoji": "2728"
+  },
+  {
+   "type": "question",
+   "texte": "LE SAVIEZ VOUS ?",
+   "sous": "Regardez cette vidéo",
+   "emoji": "1f914",
+   "geste": "designe",
+   "expression": "surpris"
+  },
+  {
+   "type": "carte",
+   "kicker": "COULISSES",
+   "texte": "VIDÉO 100%\nAUTOMATISÉE",
+   "emoji": "2728",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "BUSINESS",
+   "texte": "VENDES CETTE\nSOLUTION",
+   "emoji": "1f4a1",
+   "geste": "pouce",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "VIDÉOS PUBLICITAIRES\nAVEC L'IA",
+   "emoji": "1f3af",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "photo",
+   "recherche": "african street market products sale",
+   "texte": "PROMOTION PRODUITS",
+   "fichier": "test-auto/photos/23.jpg",
+   "credit": "Photo : Tracy Hunter · CC BY 2.0"
+  },
+  {
+   "type": "demo",
+   "outil": "claude",
+   "prompt": "Écris un script publicitaire captivant pour une marque de jus locaux",
+   "reponse": "Voix off : Le goût pur de nos vergers.\nDes fruits d'ici, pressés ce matin.\nSentez la fraîcheur à chaque gorgée.\nRien d'ajouté, juste la nature.\nVotre nouveau jus local est arrivé.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "Claude",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "SERVICES",
+   "texte": "OFFREZ CE SERVICE\nAUX MARQUES",
+   "emoji": "1f4aa",
+   "geste": "bras-croises",
+   "expression": "neutre"
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "FORMATION &\nCONSEIL EN IA",
+   "emoji": "1f389",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "photo",
+   "recherche": "african classroom students tech learning",
+   "texte": "FORMER LES ÉQUIPES",
+   "fichier": "test-auto/photos/27.jpg",
+   "credit": "Openverse · U.S. Embassy South Africa"
+  },
+  {
+   "type": "carte",
+   "kicker": "AVENIR",
+   "texte": "ACTIVITÉ EN\nPLEIN ESSOR",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "question",
+   "texte": "COMMENT PROFITER ?",
+   "sous": "Des opportunités IA",
+   "emoji": "2753",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "EXIGENCE",
+   "texte": "APPRENDRE LES\nCOMPÉTENCES",
+   "emoji": "1f4a1",
+   "geste": "designe",
+   "expression": "neutre"
+  },
+  {
+   "type": "alerte",
+   "texte": "MAÎTRISEZ L'IA\nAVANT DE VENDRE",
+   "emoji": "26a0_fe0f",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "photo",
+   "recherche": "african student reading laptop study",
+   "texte": "INVESTISSEZ EN VOUS",
+   "fichier": "test-auto/photos/32.jpg",
+   "credit": "Photo : Generationbass.com · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONFIEZ-NOUS",
+   "texte": "LOMÉ IA\nSCHOOL",
+   "sous": "Votre partenaire IA",
+   "emoji": "1f389",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "EXPERT PRATIQUE"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Entrepreneurs",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Entreprises",
+    "ok": true
+   },
+   "a": [
+    "particulier,",
+    "entreprise"
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "SUR MESURE",
+   "texte": "SOLUTIONS IA\nSUR MESURE",
+   "emoji": "1f4a1",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONTACT",
+   "texte": "APPOLEZ LOMÉ\nIA SCHOOL",
+   "emoji": "1f449",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONTACTEZ-NOUS",
+   "texte": "72 24 02 31\n79 16 23 90",
+   "sous": "Lomé, Togo",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "alerte",
+   "texte": "STOP AUX MÉTHODES\nDE 1990 !",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "carte",
+   "texte": "PRENEZ L'AVANCE"
+  },
+  {
+   "type": "carte",
+   "kicker": "LOMÉ IA SCHOOL",
+   "texte": "TRANSFORMEZ VOS\nCOMPÉTENCES !",
+   "emoji": "1f389",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "",
+   "texte": "5 BUSINESS RENTABLES À LANCER "
+  },
+  {
+   "type": "carte",
+   "kicker": "",
+   "texte": "VOUS CHERCHEZ UNE NOUVELLE ACT"
+  },
+  {
+   "type": "carte",
+   "kicker": "",
+   "texte": "VOUS SOUHAITEZ CRÉER UN BUSINE"
+  },
+  {
+   "type": "carte",
+   "kicker": "",
+   "texte": "L'INTELLIGENCE ARTIFICIELLE OF"
+  }
+ ],
+ "fond": [
+  "nuit",
+  "bleu",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit"
+ ]
+}

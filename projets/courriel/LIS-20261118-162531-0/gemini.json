@@ -1,0 +1,103 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 0.7
+  },
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 0.4
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 2.5
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 6.7
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 30.7
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "secondes": 23.3
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "secondes": 30.6
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "secondes": 12.1
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.5-flash",
+   "secondes": 11.6
+  },
+  {
+   "demo": "gemini-3.5-flash",
+   "prompt": "Réponds à la question client sur les horaires de livraison à"
+  },
+  {
+   "demo": "gemini-3.5-flash",
+   "prompt": "Écris un script publicitaire captivant pour une marque de ju"
+  }
+ ]
+}
