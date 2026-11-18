@@ -171,9 +171,21 @@ Réponds UNIQUEMENT en JSON : {{"scenes": [{{"i": 0, "scene": {{...}}}}]}}""")
             if isinstance(m, dict) and isinstance(m.get("i"), int) and 0 <= m["i"] < len(scenes) and isinstance(m.get("scene"), dict) and m["scene"].get("type"):
                 scenes[m["i"]] = m["scene"]
     restants = verifier_plan(phrases, scenes)
-    for i in restants:  # dernier filet : mise retirée (le moteur choisit), le reste est signalé dans le journal
-        if any("mise" in x for x in restants[i]):
+    for i, pbs in restants.items():  # dernier filet, sans Gemini : le défaut est corrigé directement
+        texte = phrases[i]["texte"]
+        if any("mise" in x for x in pbs):
             scenes[i].pop("mise", None)
+        if any("numéro" in x for x in pbs):
+            nums = re.findall(r"(?:\d\d[ .]?){3}\d\d", texte)
+            scenes[i] = {"type": "carte", "kicker": "APPELEZ-NOUS", "mise": scenes[i].get("mise", "plein"),
+                         "texte": "\n".join(" ".join(re.findall(r"\d\d", n)) for n in nums[:2]), "emoji": "1f449"}
+        elif any("outils cités" in x for x in pbs):
+            cites = [o for o in OUTILS_NOMS if re.search(r"\b" + re.escape(o.lower()) + r"\b", texte.lower())]
+            cites = [o for o in cites if not any(o != x and o in x for x in cites)]
+            scenes[i] = {"type": "carte", "kicker": "OUTILS", "texte": "\n".join(c.upper() for c in cites[:3]),
+                         "emoji": "1f680", "mise": scenes[i].get("mise", "plein")}
+        elif any("texte trop long" in x for x in pbs):
+            scenes[i]["texte"] = "\n".join((scenes[i].get("texte") or "").split("\n")[:3])
     journal.append({"verification": {str(i): m for i, m in verifier_plan(phrases, scenes).items()}})
     return scenes, fond
 
