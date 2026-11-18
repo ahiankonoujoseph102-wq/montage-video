@@ -93,7 +93,10 @@ def plan_visuel(phrases, consignes, precedent=None):
             return scenes, fond
         demande += f"\n\nATTENTION : il faut exactement {len(phrases)} scènes et {len(phrases)} fonds (tu en as donné {len(scenes)})."
     # dernier recours : on complète avec des cartes simples
-    scenes = (scenes + [{"type": "carte", "kicker": "", "texte": p["texte"].upper()[:30]} for p in phrases])[:len(phrases)]
+    # dernier recours : la scène précédente reste affichée (jamais le texte d'une autre phrase, ni un texte tronqué)
+    while scenes and len(scenes) < len(phrases):
+        scenes.append(dict(scenes[-1]))
+    scenes = (scenes or [{"type": "carte", "kicker": "LOMÉ IA SCHOOL", "texte": "MAÎTRISEZ\nL'IA"}] * len(phrases))[:len(phrases)]
     fond = (fond + ["bleu", "violet", "orange", "nuit", "vert", "rose"] * len(phrases))[:len(phrases)]
     return scenes, fond
 

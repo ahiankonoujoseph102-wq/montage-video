@@ -55,7 +55,31 @@ for i in range(n):
     av = max([fin[j] for j in range(i) if j in fin], default=0.0)
     ap = min([debut[j] for j in range(i + 1, n) if j in debut], default=duree)
     bornes.append([av, ap])
+if TRAITEE:
+    # Voix de Joseph : découpe CONTIGUË, jamais dans un mot. Chaque coupure tombe sur l'instant le plus calme entre
+    # deux phrases (fenêtre élargie si l'alignement est douteux) ; les morceaux mis bout à bout redonnent exactement
+    # l'enregistrement complet : aucun mot, aucune syllabe ne peut disparaître.
+    pas = int(0.02 * SR)
+    ener = np.array([np.sqrt(np.mean(x[k:k + pas] ** 2)) for k in range(0, len(x) - pas, pas)]) + 1e-9
+    coupes = [0.0]
+    for i in range(n - 1):
+        g, d = bornes[i][1], bornes[i + 1][0]
+        if d - g < 0.06:
+            m = (g + d) / 2
+            g, d = m - 0.35, m + 0.35
+        k0 = max(int(max(g, coupes[-1] + 0.05) / 0.02), 0)
+        k1 = max(min(int(d / 0.02), len(ener) - 1), k0 + 1)
+        k = k0 + int(np.argmin(ener[k0:k1]))
+        coupes.append(max(coupes[-1] + 0.05, k * 0.02 + 0.01))
+    coupes.append(duree)
+    bornes = [[coupes[i], coupes[i + 1]] for i in range(n)]
 for i in range(n):  # pas de chevauchement, marges douces
+    if TRAITEE:
+        seg = x[int(bornes[i][0] * SR):int(bornes[i][1] * SR) if i + 1 < n else len(x)]
+        with wave.open(str(out / f"{i:02d}.wav"), "wb") as w:
+            w.setnchannels(1), w.setsampwidth(2), w.setframerate(SR)
+            w.writeframes((np.clip(seg, -1, 1) * 32767).astype(np.int16).tobytes())
+        continue
     a = bornes[i][0] - 0.08
     b = bornes[i][1] + 0.18
     if i:

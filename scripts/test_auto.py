@@ -8,6 +8,7 @@ Sorties (non versionnées) : public/test-auto/voix.wav, mix.wav, props.json, emo
 """
 import difflib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -113,9 +114,12 @@ def main():
     PUBLIC.mkdir(parents=True, exist_ok=True)
     # 1. Assemblage : phrases rognées, pauses courtes, puis chaîne « radio ».
     morceaux, bornes, t = [], [], 0.0
+    # Voix enregistrée par Joseph (morceaux contigus) : rien n'est rogné ni ajouté, l'enregistrement reste entier.
+    continue_ = os.environ.get("VOIX_CONTINUE") == "1"
     for i, p in enumerate(phrases):
-        x = rogner(lire(dossier / f"{i:02d}.wav", mono=True))
-        if i:
+        x = lire(dossier / f"{i:02d}.wav", mono=True)
+        x = x if continue_ else rogner(x)
+        if i and not continue_:
             pause = PAUSE_PARTIE if phrases[i - 1]["partie"] != p["partie"] else PAUSE_PHRASE
             morceaux.append(np.zeros(int(pause * SR)))
             t += pause
@@ -136,7 +140,6 @@ def main():
     t_w = time.time()
     # Le texte est connu : il ne s'agit que de caler les mots. « small » suffit (écart médian 20 ms avec large-v3-turbo)
     # et va 5 à 7 fois plus vite.
-    import os
     modele = WhisperModel("small", device="cpu", compute_type="int8", cpu_threads=os.cpu_count() or 2)
     segs, _ = modele.transcribe(str(PUBLIC / "voix.wav"), language="fr", word_timestamps=True, beam_size=1,
                                 vad_filter=False, condition_on_previous_text=False)
