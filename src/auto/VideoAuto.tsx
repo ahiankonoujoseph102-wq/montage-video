@@ -62,7 +62,7 @@ const Gros: React.FC<{texte: string; y: number; max?: number; largeur?: number; 
   // Une ligne trop longue (plus de 16 caractères) est coupée en deux lignes équilibrées : jamais de texte minuscule.
   const lignes = texte.split('\n').flatMap((l) => {
     const mots = l.trim().split(/\s+/);
-    if (l.length <= 16 || mots.length < 2) return [l];
+    if (l.length <= 16 || mots.length < 2 || texte.includes('\n')) return [l];
     let best = 1;
     let ecart = Infinity;
     for (let c = 1; c < mots.length; c++) {
@@ -448,17 +448,17 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
   const etat = etatDouble(t, gestes, expressions, p.bouche, p.visemes, FPS);
   // Bornes des scènes : de la fin de la phrase précédente (ou 0) à la fin de la sienne.
   const bornes = p.phrases.map((ph, i) => [i === 0 ? 0 : S(p.phrases[i - 1].b), i === p.phrases.length - 1 ? S(p.duree) : S(ph.b)]);
-  const mises = misesAuto(p.scenes, bornes);
+  const segs = plans(p.scenes, bornes, misesAuto(p.scenes, bornes));
   let ic = 0;
-  bornes.forEach(([a], i) => { if (f >= a) ic = i; });
-  const mise = mises[ic] ?? 'partage';
-  const depuis = f - (bornes[ic]?.[0] ?? 0);
+  segs.forEach((g, k) => { if (f >= g.a) ic = k; });
+  const mise = segs[ic]?.mise ?? 'partage';
+  const depuis = f - (segs[ic]?.a ?? 0);
   // Changement de mise en page : coup de zoom + éclair blanc de 5 images (coupe nette, jamais de fondu mou).
-  const change = ic > 0 && mises[ic - 1] !== mise;
+  const change = ic > 0 && segs[ic - 1].mise !== mise;
   const coup = change ? interpolate(depuis, [0, 7], [1.1, 1], {...clamp, easing: Easing.out(Easing.cubic)}) : 1;
   const eclair = change ? interpolate(depuis, [0, 5], [0.55, 0], clamp) : 0;
   // Cadrage du double : alterne normal / serré à chaque phrase (coupe franche), en plus du coup d'ouverture.
-  const serre = ic % 2 === 1 ? 1.07 : 1;
+  const serre = ic % 2 === 1 ? 1.07 : 1;  // ic = indice du plan
   const z0 = zoomDouble(f);
   const ctxDe = (i: number, a: number, b: number, h?: number): Ctx => ({debut: a, fin: b, h, motA: (m) => {
     const x = p.mots.find((w) => w.ph === i && w.t === m);
@@ -471,7 +471,7 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
       <BrasDouble2D etat={etat} />
     </>
   );
-  const partages: [number, number][] = bornes.filter((_, i) => mises[i] === 'partage').map(([a, b]) => [a, b]);
+  const partages: [number, number][] = segs.filter((g) => g.mise === 'partage').map((g) => [g.a, g.b]);
   return (
     <EmojiCtx.Provider value={donnees}>
       <AbsoluteFill style={{background: '#020629', overflow: 'hidden'}}>
@@ -492,15 +492,15 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
               <Decor2D />
               <div style={{position: 'absolute', left: ECRAN.x, top: ECRAN.y, width: ECRAN.l, height: ECRAN.h, overflow: 'hidden',
                 borderRadius: 10}}>
-                {p.scenes.map((s, i) => {
-                  const [a, b] = bornes[i] ?? [0, 0];
-                  if (mises[i] !== 'double' || b <= a) return null;
-                  const ech = Math.max(ECRAN.l / 1080, ECRAN.h / HAUT);
+                {segs.map(({i, a, b, mise: m}, k) => {
+                  if (m !== 'double' || b <= a) return null;
+                  // Toute l'illustration tient sur l'écran (rien de coupé) ; le fond remplit les côtés.
+                  const ech = Math.min(ECRAN.l / 1080, ECRAN.h / HAUT);
                   return (
-                    <Sequence key={i} from={a} durationInFrames={b - a}>
+                    <Sequence key={k} from={a} durationInFrames={b - a}>
+                      <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
                       <div style={{position: 'absolute', left: (ECRAN.l - 1080 * ech) / 2, top: (ECRAN.h - HAUT * ech) / 2,
                         width: 1080, height: HAUT, transform: `scale(${ech})`, transformOrigin: '0 0'}}>
-                        <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
                         <SceneVue s={p.scenes[i]} c={ctxDe(i, a, b)} />
                       </div>
                     </Sequence>
@@ -512,14 +512,14 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
             </AbsoluteFill>
           ) : null}
           {/* Illustrations : en haut (partage) ou en plein écran (plein). */}
-          {p.scenes.map((s, i) => {
-            const [a, b] = bornes[i] ?? [0, 0];
-            if (b <= a || mises[i] === 'double') return null;
-            const sens = i % 3;
-            if (mises[i] === 'plein') {
+          {segs.map(({i, a, b, mise: m}, k) => {
+            const s = p.scenes[i];
+            if (b <= a || m === 'double') return null;
+            const sens = k % 3;
+            if (m === 'plein') {
               const photo = s.type === 'photo';
               return (
-                <Sequence key={i} from={a} durationInFrames={b - a}>
+                <Sequence key={k} from={a} durationInFrames={b - a}>
                   <Entree sens={sens} hauteur={1920}>
                     <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} h={1920} />
                     {photo ? <SceneVue s={s} c={ctxDe(i, a, b, 1920)} /> : (
@@ -532,7 +532,7 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
               );
             }
             return (
-              <Sequence key={i} from={a} durationInFrames={b - a}>
+              <Sequence key={k} from={a} durationInFrames={b - a}>
                 <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT, overflow: 'hidden'}}>
                   <Entree sens={sens}>
                     <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
@@ -590,6 +590,23 @@ const misesAuto = (scenes: Scene[], bornes: number[][]): Mise[] => {
     }
     if (m === 'double' || m === 'partage') dernierDouble = a;
     res.push(m);
+  });
+  return res;
+};
+
+// Plans : une phrase longue (plus de 7 s) est coupée en plans de 3,5 s au moins qui changent de mise en page
+// (ex. illustration en plein écran puis le double en présentateur), pour qu'aucune image ne reste figée.
+type Plan = {i: number; a: number; b: number; mise: Mise};
+const plans = (scenes: Scene[], bornes: number[][], mises: Mise[]): Plan[] => {
+  const res: Plan[] = [];
+  scenes.forEach((s, i) => {
+    const [a, b] = bornes[i] ?? [0, 0];
+    const m = mises[i] ?? 'partage';
+    const n = b - a > S(7) && a >= S(5) ? Math.min(3, Math.floor((b - a) / S(3.5))) : 1;
+    const autre: Mise = m === 'double' ? (s.type === 'photo' ? 'plein' : 'plein') : 'double';
+    for (let k = 0; k < n; k++) {
+      res.push({i, a: Math.round(a + ((b - a) * k) / n), b: Math.round(a + ((b - a) * (k + 1)) / n), mise: k % 2 ? autre : m});
+    }
   });
   return res;
 };

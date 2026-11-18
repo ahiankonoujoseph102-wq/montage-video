@@ -303,7 +303,8 @@ e-mail = demande de correction, refaite et renvoyée.
   choisie d'après le type) — `plein` (illustration ou photo sur tout l'écran, poussée de caméra), `double` (le double en
   grand dans son studio, l'idée affichée sur le grand écran derrière lui), `partage` (illustration en haut, double en
   bas) ; jamais 3 fois de suite la même, le double en grand au moins toutes les 20 s, écran partagé pendant l'ouverture ;
-  coup de zoom + éclair blanc à chaque changement, cadrage du double alterné à chaque phrase ; texte trop long coupé en
+  phrase de plus de 7 s coupée en plans de 3,5 s au moins qui changent de mise (`plans`) ;
+  illustration entière sur l'écran du studio (jamais coupée) ; coup de zoom + éclair blanc à chaque changement, cadrage du double alterné à chaque phrase ; texte trop long coupé en
   deux lignes équilibrées (`Gros`).
 - **Qualité du plan** (`QUALITE`, `verifier_plan`, `reparer` dans `scripts/courriel_preparer.py`, tirées des remarques
   de Joseph) : plan fait par paquets de 10 phrases (jamais de scène manquante) ; vérifications automatiques puis
