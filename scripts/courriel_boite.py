@@ -127,28 +127,24 @@ def liens_drive(texte):
 
 def telecharger_drive(fid, dossier):
     """Télécharge un fichier Drive partagé « Tous les utilisateurs disposant du lien » ; None s'il n'est pas audio."""
-    import subprocess
     import urllib.request
     out = Path(dossier)
     out.mkdir(parents=True, exist_ok=True)
-    f = out / "voix_drive"
     try:
         req = urllib.request.Request(f"https://drive.usercontent.google.com/download?id={fid}&export=download&confirm=t",
                                      headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=120) as r:
-            if "html" in r.headers.get("Content-Type", ""):
-                return None
-            f.write_bytes(r.read())
+            genre = r.headers.get("Content-Type", "")
+            octets = r.read()
     except Exception as e:
         print(f"Lien Drive {fid} illisible : {e!r}"[:200], flush=True)
         return None
-    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=codec_name", "-of", "csv=p=0",
-                        str(f)], capture_output=True, text=True)
-    if not r.stdout.strip():
-        f.unlink(missing_ok=True)
+    # Pas partagé = page web de connexion ; un vrai fichier audio/vidéo commence par octets binaires connus.
+    if "html" in genre or len(octets) < 5000 or not (genre.startswith(("audio/", "video/", "application/octet-stream"))):
+        print(f"Lien Drive {fid} : pas un fichier audio ({genre}, {len(octets)} octets)", flush=True)
         return None
     v = out / "voix.audio"
-    f.rename(v)
+    v.write_bytes(octets)
     return v
 
 
@@ -173,9 +169,17 @@ def relever():
                 livraisons[mid] = d
     m = connexion()
     depuis = (datetime.date.today() - datetime.timedelta(days=JOURS)).strftime("%d-%b-%Y")
-    _, ids = m.search(None, f'(SINCE "{depuis}")')
+    # Seuls les e-mails écrits par Joseph (FROM) sont lus en entier : la boîte en reçoit beaucoup d'autres.
+    nums = []
+    for a_ in sorted(AUTORISES):
+        _, ids = m.search(None, f'(SINCE "{depuis}" FROM "{a_}")')
+        nums += ids[0].split()
     nouveaux = 0
-    for num in ids[0].split():
+    for num in sorted(set(nums), key=int):
+        _, entete = m.fetch(num, "(BODY.PEEK[HEADER.FIELDS (MESSAGE-ID X-MONTAGE-AUTO)])")
+        h = email.message_from_bytes(entete[0][1])
+        if (h.get("Message-ID") or "").strip() in connues or h.get(EN_TETE):
+            continue
         _, data = m.fetch(num, "(BODY.PEEK[])")
         msg = email.message_from_bytes(data[0][1])
         mid = (msg.get("Message-ID") or "").strip()
