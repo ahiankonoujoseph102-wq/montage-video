@@ -178,7 +178,10 @@ jobs:
 
       - name: Temps des mots, bouche du double, son
         if: env.ID != ''
-        run: python scripts/test_auto.py "$RUNNER_TEMP/phrases" "$RUN" | tail -1 | tee "$RUN/preparation.json"
+        run: |
+          # Voix de Joseph : morceaux contigus gardés tels quels (aucun mot coupé, aucune pause ajoutée).
+          export VOIX_CONTINUE=$(python -c "import json;print(int(json.load(open('$RUN/choix.json'))['voix_joseph']))")
+          python scripts/test_auto.py "$RUNNER_TEMP/phrases" "$RUN" | tail -1 | tee "$RUN/preparation.json"
 
       - name: Enregistrer le cache des modèles
         if: always() && env.ID != '' && steps.hf.outputs.cache-hit != 'true'
