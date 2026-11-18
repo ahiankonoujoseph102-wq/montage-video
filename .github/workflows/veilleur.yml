@@ -1,0 +1,51 @@
+name: Veilleur de la boîte e-mail
+# La programmation de GitHub (cron) part ici avec des heures de retard : ce veilleur regarde la boîte de Joseph
+# toutes les 3 minutes (lecture légère des en-têtes, rien n'est envoyé) et lance « Vidéo par e-mail » dès qu'un
+# nouvel e-mail arrive ou qu'une demande est à reprendre. Il dure ~5 h 40 puis se relance lui-même ; la
+# programmation horaire ne sert que de secours si la chaîne s'arrête (un seul veilleur à la fois).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: veilleur
+  cancel-in-progress: false
+
+env:
+  BRANCHE: claude/great-heisenberg-8p7tj4
+
+jobs:
+  veiller:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCHE }}
+      - name: Regarder la boîte toutes les 3 minutes
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EXPEDITEURS: ${{ secrets.EXPEDITEURS }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          fin=$((SECONDS + 335 * 60))
+          while [ $SECONDS -lt $fin ]; do
+            git pull -q origin "$BRANCHE" || true
+            R=$(python3 scripts/courriel_boite.py regarder 2>&1 || true)
+            echo "$(date -u +%H:%M) $(echo "$R" | head -1)"
+            if echo "$R" | grep -q '^A_FAIRE=1'; then
+              gh workflow run courriel.yml --ref main -R "$GITHUB_REPOSITORY" && echo "→ montage lancé" || true
+              sleep 300  # le temps que la relève enregistre la demande et accuse réception
+            fi
+            sleep 180
+          done
+      - name: Relancer le veilleur
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run veilleur.yml --ref main -R "$GITHUB_REPOSITORY"

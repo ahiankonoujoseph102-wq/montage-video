@@ -207,7 +207,8 @@ def modeles_disponibles(cle):
                       version(n), n)
     choix = sorted(flash, key=rang)
     print("Modèles Gemini utilisables avec cette clé :", ", ".join(choix[:6]) or "aucun", flush=True)
-    pros = [n for n in choix if "pro" in n][:2]
+    # Pro : les versions stables d'abord, puis une préversion (un modèle retiré par Google reste ainsi remplacé).
+    pros = [n for n in choix if "pro" in n and not any(x in n for x in ("deep-research", "customtools", "lyria"))][:3]
     return pros + [n for n in choix if "pro" not in n][:5]
 
 
@@ -223,6 +224,7 @@ def reflexion(modele):
     return [None]
 
 
+RETIRES = set()  # modèles retirés par Google (erreur 404)
 LENTS = set()  # modèles qui refusent la réflexion minimale (plus d'une minute par réponse)
 
 
@@ -267,13 +269,15 @@ def generer(modeles, cle, tours, journal):
             print("Tous les modèles ont échoué au premier tour : second tour, plus patient, dans 15 s", flush=True)
             time.sleep(15)
         for modele in modeles:
-            if tour == 0 and modele in LENTS:
+            if (tour == 0 and modele in LENTS) or modele in RETIRES:
                 continue
             t0 = time.time()
             try:
                 reglages = [{"thinkingLevel": "low"}, None] if modele in LENTS else None
                 return modele, appeler(modele, cle, tours, 300 if "pro" in modele else delai, reglages), time.time() - t0
             except Echec as e:
+                if "404" in str(e):  # modèle retiré par Google : plus jamais réessayé pendant ce lancement
+                    RETIRES.add(modele)
                 journal.append({"modele": modele, "erreur": str(e), "secondes": round(time.time() - t0, 1)})
                 print(f"{modele} : {e} — modèle suivant", flush=True)
     return None, None, 0

@@ -39,8 +39,14 @@ def gemini_json(demande, essais=3):
     tours = [("user", demande)]
     for _ in range(essais):
         modele, brut, duree = sg.generer(modeles, cle, tours, journal)
+        for attente in (60, 120, 240):  # serveurs de Google saturés (503) : on patiente avant d'abandonner
+            if brut is not None:
+                break
+            print(f"Gemini saturé : nouvel essai dans {attente} s", flush=True)
+            sg.time.sleep(attente)
+            modele, brut, duree = sg.generer(modeles, cle, tours, journal)
         if brut is None:
-            sys.exit("Gemini ne répond pas (tous les modèles ont échoué).")
+            sys.exit("Gemini ne répond pas (tous les modèles ont échoué, même après 7 minutes d'attente).")
         try:
             r = json.loads(brut)
             journal.append({"modele": modele, "secondes": round(duree, 1)})

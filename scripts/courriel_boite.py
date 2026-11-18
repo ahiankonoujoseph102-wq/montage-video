@@ -257,6 +257,28 @@ def relever():
     print("A_FAIRE=" + ("1" if any(d["statut"] == "en_attente" for d in reste) else "0"))
 
 
+def regarder():
+    """Contrôle léger (veilleur) : y a-t-il un e-mail de Joseph pas encore enregistré, ou une demande à reprendre ?
+    N'envoie rien et n'écrit rien : seule la relève (courriel.yml) enregistre et accuse réception."""
+    connues = {d["message_id"] for d in demandes()}
+    toutes = demandes()
+    reprendre = any(d["statut"] == "en_attente" for d in toutes) and not any(d["statut"] == "en_cours" for d in toutes)
+    m = connexion()
+    depuis = (datetime.date.today() - datetime.timedelta(days=JOURS)).strftime("%d-%b-%Y")
+    nouveaux = 0
+    for a_ in sorted(AUTORISES):
+        _, ids = m.search(None, f'(SINCE "{depuis}" FROM "{a_}")')
+        for num in ids[0].split():
+            _, entete = m.fetch(num, "(BODY.PEEK[HEADER.FIELDS (MESSAGE-ID X-MONTAGE-AUTO SUBJECT)])")
+            h = email.message_from_bytes(entete[0][1])
+            mid = (h.get("Message-ID") or "").strip()
+            if mid and mid not in connues and not h.get(EN_TETE) and not re.match(r"^(🎬|✅|⚠️|🔧)", dec(h.get("Subject"))):
+                nouveaux += 1
+    m.logout()
+    print(f"{nouveaux} e-mail(s) nouveau(x), reprise {'oui' if reprendre else 'non'}")
+    print("A_FAIRE=" + ("1" if nouveaux or reprendre else "0"))
+
+
 def prochain():
     maintenant = datetime.datetime.utcnow()
     for d in demandes():  # un montage coupé net (machine arrêtée) reste « en cours » : il repart après 3 heures
@@ -354,6 +376,8 @@ if __name__ == "__main__":
         prochain()
     elif action == "extraire":
         extraire(sys.argv[2], sys.argv[3])
+    elif action == "regarder":
+        regarder()
     elif action == "extraire-voix":
         extraire_voix(sys.argv[2], sys.argv[3])
     elif action == "statut":

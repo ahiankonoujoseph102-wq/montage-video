@@ -294,6 +294,11 @@ fournie, **toujours retravaillée en voix radio** (`scripts/voix_radio.py` : net
 en retranscrivant le rendu (aucun mot perdu), sinon voix IA Gemini (Puck homme / Kore femme), **jamais sa voix clonée** ; rendu `VideoAuto` ; Release
 `courriel-<id>` ; `scripts/courriel_livrer.py` renvoie la vidéo avec titre, description et hashtags. Une réponse à cet
 e-mail = demande de correction, refaite et renvoyée.
+- **Déclenchement** : la programmation de GitHub part ici avec des heures de retard ; le **veilleur**
+  (`.github/workflows/veilleur.yml`) regarde la boîte toutes les 3 min (`courriel_boite.py regarder`, en-têtes seulement)
+  et lance `courriel.yml` dès qu'un e-mail arrive ou qu'une demande est à reprendre ; il dure ~5 h 40 puis se relance
+  lui-même (secours : programmation horaire). Gemini saturé (503) : nouveaux essais pendant 7 min, modèle Pro en
+  préversion en secours, modèles retirés (404) écartés.
 - **Montage (moteur `VideoAuto`)** : trois mises en page qui alternent à chaque phrase (`mise` dans le plan, sinon
   choisie d'après le type) — `plein` (illustration ou photo sur tout l'écran, poussée de caméra), `double` (le double en
   grand dans son studio, l'idée affichée sur le grand écran derrière lui), `partage` (illustration en haut, double en
