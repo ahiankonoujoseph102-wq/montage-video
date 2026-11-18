@@ -161,7 +161,9 @@ jobs:
               MID=$(python -c "import json;print(json.load(open('$RUN/choix.json'))['voix_message'])")
               V=$(python scripts/courriel_boite.py extraire-voix "$MID" "$RUNNER_TEMP/voix" | tail -1)
             fi
-            SOURCE_VOIX="voix enregistrée par Joseph" python scripts/decouper_voix.py "$V" "$RUN/script.json" "$RUNNER_TEMP/phrases"
+            # Toujours : traitement « voix radio » (énergique, pleine, claire, forte) avant le découpage.
+            python scripts/voix_radio.py "$V" "$RUNNER_TEMP/voix_radio.wav"
+            VOIX_TRAITEE=1 SOURCE_VOIX="voix de Joseph, traitement radio" python scripts/decouper_voix.py "$RUNNER_TEMP/voix_radio.wav" "$RUN/script.json" "$RUNNER_TEMP/phrases"
           else
             export VOIX_GEMINI=$(python -c "import json;print(json.load(open('$RUN/choix.json'))['voix_gemini'])")
             if [ "$VOIX_GEMINI" = "Kore" ]; then

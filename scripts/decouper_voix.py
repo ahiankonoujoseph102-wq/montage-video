@@ -20,9 +20,12 @@ from faster_whisper import WhisperModel
 
 audio, script, out = Path(sys.argv[1]), json.loads(Path(sys.argv[2]).read_text()), Path(sys.argv[3])
 out.mkdir(parents=True, exist_ok=True)
-SR = 24000
+# Voix déjà traitée par scripts/voix_radio.py (VOIX_TRAITEE=1) : gardée en 48 kHz, sans second nettoyage.
+TRAITEE = __import__("os").environ.get("VOIX_TRAITEE") == "1"
+SR = 48000 if TRAITEE else 24000
 propre = out / "voix_propre.wav"
-subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(audio), "-af", "highpass=f=70,afftdn=nr=6:nf=-45",
+subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(audio), "-af",
+                "anull" if TRAITEE else "highpass=f=70,afftdn=nr=6:nf=-45",
                 "-ac", "1", "-ar", str(SR), str(propre)], check=True)
 with wave.open(str(propre)) as w:
     x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768

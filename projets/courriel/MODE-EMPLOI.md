@@ -9,6 +9,7 @@ Tu n'as plus besoin d'ouvrir Claude : tout passe par **academyjoseph71@gmail.com
 
 - **le texte** de la vidéo dans le message (ou en pièce jointe `.txt` / `.docx`) ;
 - **ta voix off** en pièce jointe si tu l'as enregistrée (note vocale `.m4a`, `.mp3`, `.ogg`, `.opus`, `.wav`…) ;
+  elle est **toujours retravaillée en voix radio** : bruit retiré, voix pleine, claire, énergique et plus forte ;
   sans voix off jointe, une **voix d'IA** lit le texte (voix d'homme par défaut ; écris « voix de femme » si tu
   préfères) — **jamais ta voix clonée** ;
 - si tu veux, une **petite consigne** avant le texte, par exemple « Crée-moi la vidéo comme d'habitude » ou
