@@ -53,6 +53,29 @@ def lufs(x):
     return pyln.Meter(SR).integrated_loudness(x)
 
 
+def masque_silences(x, seuil_db=-40, plus_de=0.6, garde=0.35):
+    """Voix de Joseph : un silence de plus de 0,6 s est ramené à 0,35 s (au milieu du silence, jamais dans un mot).
+    Renvoie le masque des échantillons gardés."""
+    n = int(0.02 * SR)
+    e = np.array([np.sqrt(np.mean(x[i:i + n] ** 2)) for i in range(0, len(x) - n + 1, n)]) + 1e-9
+    calme = 20 * np.log10(e / (np.percentile(e, 95) + 1e-9)) < seuil_db
+    garder = np.ones(len(x), bool)
+    k = 0
+    while k < len(calme):
+        if calme[k]:
+            j = k
+            while j < len(calme) and calme[j]:
+                j += 1
+            if (j - k) * 0.02 > plus_de:
+                a = k * n + int(garde / 2 * SR)
+                b = j * n - int(garde / 2 * SR)
+                garder[a:b] = False
+            k = j
+        else:
+            k += 1
+    return garder
+
+
 def rogner(x, seuil_db=-42):
     """Retire le silence au début et à la fin d'une phrase générée (garde 40 ms)."""
     n = int(0.02 * SR)
@@ -116,10 +139,22 @@ def main():
     morceaux, bornes, t = [], [], 0.0
     # Voix enregistrée par Joseph (morceaux contigus) : rien n'est rogné ni ajouté, l'enregistrement reste entier.
     continue_ = os.environ.get("VOIX_CONTINUE") == "1"
-    for i, p in enumerate(phrases):
-        x = lire(dossier / f"{i:02d}.wav", mono=True)
-        x = x if continue_ else rogner(x)
-        if i and not continue_:
+    if continue_:
+        # Toute la voix d'un seul tenant : seuls les silences de plus de 0,6 s sont raccourcis (jamais un mot touché),
+        # puis les bornes des phrases sont recalculées sur la voix raccourcie.
+        parts = [lire(dossier / f"{i:02d}.wav", mono=True) for i in range(len(phrases))]
+        entier = np.concatenate(parts)
+        garde = masque_silences(entier)
+        cumul = np.concatenate([[0], np.cumsum(garde)])
+        pos = 0
+        for x in parts:
+            bornes.append([round(cumul[pos] / SR, 3), round(cumul[pos + len(x)] / SR, 3)])
+            pos += len(x)
+        morceaux.append(entier[garde])
+        t = len(morceaux[0]) / SR
+    for i, p in enumerate(phrases if not continue_ else []):
+        x = rogner(lire(dossier / f"{i:02d}.wav", mono=True))
+        if i:
             pause = PAUSE_PARTIE if phrases[i - 1]["partie"] != p["partie"] else PAUSE_PHRASE
             morceaux.append(np.zeros(int(pause * SR)))
             t += pause

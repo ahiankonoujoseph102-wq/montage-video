@@ -61,7 +61,8 @@ if TRAITEE:
     # l'enregistrement complet : aucun mot, aucune syllabe ne peut disparaître.
     pas = int(0.02 * SR)
     ener = np.array([np.sqrt(np.mean(x[k:k + pas] ** 2)) for k in range(0, len(x) - pas, pas)]) + 1e-9
-    coupes = [0.0]
+    # Début : la première parole arrive tout de suite (0,05 s gardées avant le premier mot), jamais de silence d'entrée.
+    coupes = [max(0.0, bornes[0][0] - 0.05)]
     for i in range(n - 1):
         g, d = bornes[i][1], bornes[i + 1][0]
         if d - g < 0.06:
@@ -71,11 +72,11 @@ if TRAITEE:
         k1 = max(min(int(d / 0.02), len(ener) - 1), k0 + 1)
         k = k0 + int(np.argmin(ener[k0:k1]))
         coupes.append(max(coupes[-1] + 0.05, k * 0.02 + 0.01))
-    coupes.append(duree)
+    coupes.append(min(duree, max(coupes[-1] + 0.3, bornes[-1][1] + 0.4)))  # fin : pas de longue traîne silencieuse
     bornes = [[coupes[i], coupes[i + 1]] for i in range(n)]
 for i in range(n):  # pas de chevauchement, marges douces
     if TRAITEE:
-        seg = x[int(bornes[i][0] * SR):int(bornes[i][1] * SR) if i + 1 < n else len(x)]
+        seg = x[int(bornes[i][0] * SR):int(bornes[i][1] * SR)]
         with wave.open(str(out / f"{i:02d}.wav"), "wb") as w:
             w.setnchannels(1), w.setsampwidth(2), w.setframerate(SR)
             w.writeframes((np.clip(seg, -1, 1) * 32767).astype(np.int16).tobytes())
