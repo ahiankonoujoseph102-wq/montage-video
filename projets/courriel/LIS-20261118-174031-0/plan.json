@@ -1,0 +1,509 @@
+{
+ "scenes": [
+  {
+   "type": "alerte",
+   "texte": "5 BUSINESS RENTABLES\nAVEC L'IA EN 2026",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "surpris",
+   "mise": "double",
+   "fond": "bleu"
+  },
+  {
+   "type": "question",
+   "texte": "NOUVELLE ACTIVITÉ ?",
+   "sous": "Se lancer en 2026",
+   "emoji": "1f914",
+   "geste": "explique",
+   "expression": "parle",
+   "mise": "plein",
+   "fond": "violet"
+  },
+  {
+   "type": "photo",
+   "recherche": "african businessman laptop office success",
+   "texte": "DÉVELOPPER VOS REVENUS",
+   "mise": "partage",
+   "fond": "orange",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Openverse · Artem Beliaikin"
+  },
+  {
+   "type": "carte",
+   "kicker": "OPPORTUNITÉ",
+   "texte": "L'IA OFFRE DES\nOPPORTUNITÉS",
+   "sous": "Potentiel extraordinaire",
+   "emoji": "2728",
+   "geste": "explique",
+   "expression": "sourire",
+   "mise": "double",
+   "fond": "vert"
+  },
+  {
+   "type": "liste",
+   "titre": "5 BUSINESS IA",
+   "items": [
+    {
+     "texte": "Sites & Apps",
+     "a": "cinq"
+    },
+    {
+     "texte": "Agents IA",
+     "a": "business"
+    },
+    {
+     "texte": "Automatisation",
+     "a": "pouvez"
+    },
+    {
+     "texte": "Vidéos Pubs",
+     "a": "lancer"
+    },
+    {
+     "texte": "Formation",
+     "a": "elle."
+    }
+   ],
+   "mise": "plein",
+   "fond": "rose"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "SITES WEB &\nAPPLICATIONS",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1,
+   "mise": "double",
+   "fond": "nuit"
+  },
+  {
+   "type": "photo",
+   "recherche": "african developer coding mobile app",
+   "texte": "CRÉER DES APPS",
+   "mise": "partage",
+   "fond": "bleu",
+   "fichier": "test-auto/photos/06.jpg",
+   "credit": "Photo : tlaukkanen · CC BY 2.0"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Claude Code",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Codex",
+    "ok": true
+   },
+   "a": [
+    "Claude",
+    "Codex,"
+   ],
+   "mise": "plein",
+   "fond": "violet"
+  },
+  {
+   "type": "photo",
+   "recherche": "african business team dashboard computer",
+   "texte": "SOLUTIONS DIGITALES",
+   "mise": "double",
+   "fond": "orange",
+   "fichier": "test-auto/photos/08.jpg",
+   "credit": "Photo : Nicola since 1972 · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "CLIENTS",
+   "texte": "COMMERCIALISER\nVOS SERVICES",
+   "emoji": "1f4aa",
+   "geste": "designe",
+   "expression": "parle",
+   "mise": "plein",
+   "fond": "vert"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "VENTE D'AGENTS\nINTELLIGENTS",
+   "emoji": "1f9e0",
+   "geste": "compte",
+   "doigts": 2,
+   "mise": "partage",
+   "fond": "rose"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman using customer support tech",
+   "texte": "AGENTS IA",
+   "mise": "double",
+   "fond": "nuit",
+   "fichier": "test-auto/photos/11.jpg",
+   "credit": "Photo : runJMrun · CC BY 2.0"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Bonjour ! Je suis votre agent IA. Je réponds à vos questions 24h/7d.",
+   "emoji": "1f4ac",
+   "mise": "plein",
+   "fond": "bleu"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Réponds au client qui souhaite réserver un créneau de conseil",
+   "reponse": "Agent IA : Votre rendez-vous est confirmé pour ce jeudi à 15h !\nUn rappel automatique vous sera envoyé.",
+   "mise": "partage",
+   "fond": "violet",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "photo",
+   "recherche": "african retail store owner messaging smartphone",
+   "texte": "ASSISTANCE WHATSAPP",
+   "mise": "double",
+   "fond": "orange",
+   "fichier": "test-auto/photos/14.jpg",
+   "credit": "Openverse · StockyPics"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "AUTOMATISATION\nDE CONTENUS",
+   "emoji": "1f525",
+   "geste": "compte",
+   "doigts": 3,
+   "mise": "plein",
+   "fond": "vert"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman exhausted laptop desk social media",
+   "texte": "TEMPS PERDU",
+   "mise": "partage",
+   "fond": "rose",
+   "fichier": "test-auto/photos/16.jpg",
+   "credit": "Photo : Sean MacEntee · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "SOLUTION",
+   "texte": "GÉNÉRATION &\nPROGRAMMATION",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "double",
+   "fond": "nuit"
+  },
+  {
+   "type": "prompt",
+   "texte": "Envoyer le texte à ia@agence.com pour générer la vidéo",
+   "geste": "designe",
+   "mise": "plein",
+   "fond": "bleu"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Email reçu ! 5 posts créés et 1 vidéo générée.",
+   "emoji": "2728",
+   "mise": "partage",
+   "fond": "violet"
+  },
+  {
+   "type": "demo",
+   "outil": "gemini",
+   "prompt": "Transforme ce texte en script vidéo",
+   "reponse": "Analyse du texte...\nConversion en vidéo OK !\nPublication programmée.",
+   "mise": "double",
+   "fond": "orange",
+   "nom": "Gemini",
+   "logo": true
+  },
+  {
+   "type": "question",
+   "texte": "LE SAVIEZ-VOUS ?",
+   "sous": "Une surprise...",
+   "emoji": "1f914",
+   "geste": "designe",
+   "expression": "surpris",
+   "mise": "plein",
+   "fond": "vert"
+  },
+  {
+   "type": "carte",
+   "kicker": "COULISSES",
+   "texte": "CETTE VIDÉO EST\nAUTOMATISÉE !",
+   "emoji": "1f929",
+   "geste": "explique",
+   "expression": "sourire",
+   "mise": "partage",
+   "fond": "rose"
+  },
+  {
+   "type": "carte",
+   "kicker": "OPPORTUNITÉ",
+   "texte": "VENDEZ CETTE\nSOLUTION !",
+   "emoji": "1f4a1",
+   "geste": "pouce",
+   "expression": "parle",
+   "mise": "double",
+   "fond": "nuit"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "VIDÉOS PUBLICITAIRES\nAVEC L'IA",
+   "emoji": "1f3af",
+   "geste": "compte",
+   "doigts": 4,
+   "mise": "plein",
+   "fond": "bleu"
+  },
+  {
+   "type": "photo",
+   "recherche": "african market products commercial presentation",
+   "texte": "BESOIN DE PUBS",
+   "mise": "partage",
+   "fond": "violet",
+   "fichier": "test-auto/photos/25.jpg",
+   "credit": "Openverse · USDAgov"
+  },
+  {
+   "type": "demo",
+   "outil": "claude",
+   "prompt": "Crée un spot publicitaire captivant sans studio",
+   "reponse": "Script IA Spot Pub :\n- Visuel : Produit HD\n- Voix off : Excellence\n- Rendu : Studio",
+   "mise": "double",
+   "fond": "orange",
+   "nom": "Claude",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "BUSINESS",
+   "texte": "VOTRE ACTIVITÉ\nCOMMERCIALE",
+   "emoji": "1f4aa",
+   "geste": "bras-croises",
+   "expression": "neutre",
+   "mise": "plein",
+   "fond": "vert"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMPÉTENCE",
+   "texte": "TRANSFORMEZ\nVOTRE ACTIVITÉ",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "partage",
+   "fond": "rose"
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "FORMATION &\nCONSEIL EN IA",
+   "emoji": "1f389",
+   "geste": "compte",
+   "doigts": 4,
+   "mise": "double",
+   "fond": "nuit"
+  },
+  {
+   "type": "photo",
+   "recherche": "african trainer teaching corporate team laptop",
+   "texte": "FORMER LES ÉQUIPES",
+   "mise": "plein",
+   "fond": "bleu",
+   "fichier": "test-auto/photos/30.jpg",
+   "credit": "Openverse · Startup Stock Photos"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSEIL",
+   "texte": "INTÉGRER\nLES SOLUTIONS",
+   "emoji": "1f4a1",
+   "geste": "explique",
+   "expression": "parle",
+   "mise": "partage",
+   "fond": "violet"
+  },
+  {
+   "type": "carte",
+   "kicker": "BUSINESS",
+   "texte": "ACTIVITÉ\nPROFESSIONNELLE",
+   "emoji": "1f4aa",
+   "geste": "bras-croises",
+   "expression": "neutre",
+   "mise": "double",
+   "fond": "orange"
+  },
+  {
+   "type": "question",
+   "texte": "COMMENT PROFITER ?",
+   "sous": "De ces opportunités",
+   "emoji": "2753",
+   "geste": "explique",
+   "expression": "parle",
+   "mise": "plein",
+   "fond": "vert"
+  },
+  {
+   "type": "carte",
+   "kicker": "EXIGENCE",
+   "texte": "ACQUÉRIR LES\nCOMPÉTENCES",
+   "emoji": "1f4a1",
+   "geste": "designe",
+   "expression": "neutre",
+   "mise": "partage",
+   "fond": "rose"
+  },
+  {
+   "type": "alerte",
+   "texte": "MAÎTRISEZ D'ABORD\nLES OUTILS IA !",
+   "emoji": "26a0_fe0f",
+   "geste": "bras-croises",
+   "expression": "grimace",
+   "mise": "double",
+   "fond": "nuit"
+  },
+  {
+   "type": "carte",
+   "texte": "INVESTISSEZ EN VOUS"
+  },
+  {
+   "type": "carte",
+   "kicker": "LOMÉ IA SCHOOL",
+   "texte": "FAITES-NOUS\nCONFIANCE",
+   "sous": "Votre partenaire",
+   "emoji": "1f389",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "partage",
+   "fond": "violet"
+  },
+  {
+   "type": "carte",
+   "texte": "COMPÉTENCES PRATIQUES"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Particuliers",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Entreprises",
+    "ok": true
+   },
+   "a": [
+    "particulier,",
+    "entreprise"
+   ],
+   "mise": "plein",
+   "fond": "vert"
+  },
+  {
+   "type": "carte",
+   "texte": "SUR MESURE"
+  },
+  {
+   "type": "question",
+   "texte": "APPELEZ NOUS !",
+   "sous": "Lomé IA School",
+   "emoji": "1f449",
+   "geste": "designe",
+   "expression": "sourire",
+   "mise": "double",
+   "fond": "nuit"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONTACT DIRECT",
+   "texte": "72 24 02 31\n79 16 23 90",
+   "sous": "Appel & WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "plein",
+   "fond": "bleu"
+  },
+  {
+   "type": "alerte",
+   "texte": "NE TRAVAILLEZ PLUS\nCOMME EN 1990 !",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "grimace",
+   "mise": "partage",
+   "fond": "violet"
+  },
+  {
+   "type": "carte",
+   "kicker": "RÉVOLUTION 2026",
+   "texte": "PRENEZ L'AVANCE\nSUR LA CONCURRENCE",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "double",
+   "fond": "orange"
+  },
+  {
+   "type": "carte",
+   "kicker": "LOMÉ IA SCHOOL",
+   "texte": "MAÎTRISER L'IA &\nTRANSFORMER VOS\nCOMPÉTENCES !",
+   "sous": "72 24 02 31 / 79 16 23 90",
+   "emoji": "1f389",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "plein",
+   "fond": "vert"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "vert",
+  "bleu",
+  "rose",
+  "nuit",
+  "vert",
+  "orange",
+  "violet",
+  "bleu",
+  "nuit",
+  "vert",
+  "orange",
+  "violet",
+  "rose",
+  "bleu",
+  "nuit",
+  "vert",
+  "violet",
+  "nuit",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "violet",
+  "nuit",
+  "bleu",
+  "orange",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "bleu",
+  "orange",
+  "vert",
+  "nuit",
+  "violet",
+  "orange"
+ ]
+}
