@@ -107,7 +107,7 @@ def envoyer(sujet, corps, repond_a=None, references=None, piece=None):
     m["Message-ID"] = make_msgid(domain="lome-ia-school.auto")
     if repond_a:
         m["In-Reply-To"] = repond_a
-        m["References"] = " ".join(x for x in (references or "", repond_a) if x).strip()
+        m["References"] = " ".join(" ".join(x for x in (references or "", repond_a) if x).split())
     m.set_content(corps + "\n\n— Montage automatique Lomé IA School\n")
     if piece:
         m.add_attachment(Path(piece).read_bytes(), maintype="video", subtype="mp4", filename=Path(piece).name)
@@ -193,7 +193,7 @@ def relever():
             continue
         texte = corps_texte(msg)
         jointes = [n for n, _ in pieces(msg)]
-        refs = f"{msg.get('In-Reply-To', '')} {msg.get('References', '')}"
+        refs = " ".join(f"{msg.get('In-Reply-To', '')} {msg.get('References', '')}".split())  # en-têtes repliés
         parent = next((d for k, d in livraisons.items() if k and k in refs), None)
         etiquette = re.search(r"\[(LIS-[0-9-]+)\]", sujet)
         if not parent and etiquette and (DEMANDES / f"{etiquette.group(1)}.json").exists():

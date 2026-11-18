@@ -38,6 +38,7 @@ jobs:
           EXPEDITEURS: ${{ secrets.EXPEDITEURS }}
           DESTINATAIRE: ${{ secrets.DESTINATAIRE }}
         run: |
+          set -o pipefail
           python3 scripts/courriel_boite.py relever | tee "$RUNNER_TEMP/releve.txt"
           echo "a_faire=$(sed -n 's/^A_FAIRE=//p' "$RUNNER_TEMP/releve.txt" | tail -1)" >> "$GITHUB_OUTPUT"
       - name: Ranger les demandes dans le dépôt
