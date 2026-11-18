@@ -117,6 +117,49 @@ def envoyer(sujet, corps, repond_a=None, references=None, piece=None):
     return m["Message-ID"]
 
 
+DRIVE = re.compile(r"https?://(?:drive|docs)\.google\.com/(?:file/d/|open\?id=|uc\?(?:export=download&)?id=)([\w-]{20,})")
+
+
+def liens_drive(texte):
+    """Identifiants des fichiers Google Drive cités dans le texte (voix off envoyée en lien)."""
+    return list(dict.fromkeys(DRIVE.findall(texte or "")))
+
+
+def telecharger_drive(fid, dossier):
+    """Télécharge un fichier Drive partagé « Tous les utilisateurs disposant du lien » ; None s'il n'est pas audio."""
+    import subprocess
+    import urllib.request
+    out = Path(dossier)
+    out.mkdir(parents=True, exist_ok=True)
+    f = out / "voix_drive"
+    try:
+        req = urllib.request.Request(f"https://drive.usercontent.google.com/download?id={fid}&export=download&confirm=t",
+                                     headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            if "html" in r.headers.get("Content-Type", ""):
+                return None
+            f.write_bytes(r.read())
+    except Exception as e:
+        print(f"Lien Drive {fid} illisible : {e!r}"[:200], flush=True)
+        return None
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=codec_name", "-of", "csv=p=0",
+                        str(f)], capture_output=True, text=True)
+    if not r.stdout.strip():
+        f.unlink(missing_ok=True)
+        return None
+    v = out / "voix.audio"
+    f.rename(v)
+    return v
+
+
+def voix_drive(texte, dossier):
+    for fid in liens_drive(texte):
+        v = telecharger_drive(fid, dossier)
+        if v:
+            return v
+    return None
+
+
 def nouvel_id():
     return "LIS-" + datetime.datetime.utcnow().strftime("%Y%m%d-%H%M%S")
 
@@ -163,7 +206,25 @@ def relever():
             quoi = "la correction de ta vidéo"
         else:
             d["origine"], d["version"] = d["id"], 1
-            voix = "ta voix off" if any(n.lower().endswith(AUDIO) for n in jointes) else "une voix off d'IA (tu n'as pas joint d'audio)"
+            if any(n.lower().endswith(AUDIO) for n in jointes):
+                voix = "ta voix off"
+            elif liens_drive(texte):
+                if not voix_drive(texte, "/tmp/courriel-verif"):  # lien pas encore partagé : on attend, sans relancer
+                    d["statut"] = "attente_partage"
+                    d["accuse"] = envoyer(f"⚠️ Je n'arrive pas à ouvrir ta voix off [{d['id']}]",
+                                          "Bonjour Joseph,\n\nJ'ai bien reçu ton texte, mais le lien Google Drive de ta voix off "
+                                          "n'est pas accessible.\nDans Google Drive : appuie sur ⋮ à côté du fichier → Partager → "
+                                          "Accès général → « Tous les utilisateurs disposant du lien ».\n\nJe revérifie "
+                                          "toutes les 10 minutes et je commence dès que le lien s'ouvre : tu n'as rien à renvoyer.",
+                                          repond_a=mid, references=refs.strip())
+                    ecrire(d)
+                    connues[mid] = d
+                    nouveaux += 1
+                    print(f"Demande {d['id']} : lien de voix off pas partagé, en attente", flush=True)
+                    continue
+                voix = "ta voix off (lien Google Drive)"
+            else:
+                voix = "une voix off d'IA (tu n'as pas joint d'audio)"
             quoi = f"ta vidéo, avec {voix}"
         d["accuse"] = envoyer(f"✅ Reçu : je commence {('la version ' + str(d['version'])) if parent else 'ta vidéo'} [{d['origine']}]",
                               f"Bonjour Joseph,\n\nJ'ai bien reçu ta demande et je commence {quoi}.\n"
@@ -175,6 +236,18 @@ def relever():
         nouveaux += 1
         print(f"Nouvelle demande {d['id']} ({d['type']}) : « {sujet} », pièces {jointes}", flush=True)
     m.logout()
+    for d in demandes():  # voix off en lien Drive pas encore partagé : revérifiée à chaque relève (3 jours au plus)
+        if d["statut"] == "attente_partage":
+            if voix_drive(d["texte"], "/tmp/courriel-verif"):
+                d["statut"] = "en_attente"
+                envoyer(f"✅ Reçu : je commence ta vidéo [{d['origine']}]",
+                        "Bonjour Joseph,\n\nLe lien de ta voix off s'ouvre maintenant : je commence ta vidéo avec ta voix.\n"
+                        "Tu la recevras par e-mail dès qu'elle est prête (environ 30 à 60 minutes).\n\n"
+                        f"Numéro de la demande : {d['id']}", repond_a=d["message_id"], references=d.get("references", ""))
+                ecrire(d)
+            elif datetime.datetime.utcnow() - datetime.datetime.fromisoformat(d["recu"]) > datetime.timedelta(days=JOURS):
+                d["statut"] = "echec"
+                ecrire(d)
     reste = [d for d in demandes() if d["statut"] in ("en_attente", "en_cours")]
     print(f"{nouveaux} nouvelle(s) demande(s) ; {len(reste)} en attente ou en cours")
     print("A_FAIRE=" + ("1" if any(d["statut"] == "en_attente" for d in reste) else "0"))
@@ -216,6 +289,8 @@ def extraire(d_id, dossier):
                 f.write_bytes(octets)
                 textes.append(f)
     m.logout()
+    if not voix:  # voix off envoyée en lien Google Drive dans le message
+        voix = voix_drive(d.get("texte", ""), out)
     lus = []
     for f in textes:
         if f.suffix == ".docx":
@@ -245,6 +320,10 @@ def extraire_voix(message_id, dossier):
                 f.write_bytes(octets)
                 print(f)
                 return
+        v = voix_drive(corps_texte(email.message_from_bytes(data[0][1])), out)
+        if v:
+            print(v)
+            return
     sys.exit("Voix off d'origine introuvable dans Gmail.")
 
 

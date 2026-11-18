@@ -24,6 +24,9 @@ sg.FIN, sg.FIN_SERIE = [], []  # aucune fin ajoutée : le texte est celui de Jos
 ROOT = sg.ROOT
 dossier = Path(sys.argv[1])
 d = json.loads((dossier / "demande.json").read_text())
+# Les lignes qui donnent le lien de la voix off (« Ma voix off : https://drive… ») ne font pas partie du texte.
+d["texte"] = "\n".join(l for l in (d.get("texte") or "").splitlines()
+                        if not re.search(r"https?://(drive|docs)\.google\.com/", l)).strip()
 cle = sg.os.environ.get("GEMINI_API_KEY", "").strip()
 if not cle:
     sys.exit("GEMINI_API_KEY manquant ou vide (secret GitHub non transmis).")
