@@ -375,8 +375,7 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
           </AbsoluteFill>
           <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%)'}} />
           {s.texte ? <Gros texte={s.texte} y={h > HAUT ? 1010 : 650} max={h > HAUT ? 130 : 110} k={pop(f, 6)} /> : null}
-          {s.credit ? <div style={{position: 'absolute', right: 150, top: h - 40 - (h > HAUT ? 330 : 0), fontFamily: POLICE, fontWeight: 600, fontSize: 20,
-            color: 'rgba(255,255,255,0.75)'}}>{s.credit}</div> : null}
+          {/* Crédit de la photo : dans l'e-mail et la description, jamais sur l'image (demande de Joseph). */}
         </>
       );
     }

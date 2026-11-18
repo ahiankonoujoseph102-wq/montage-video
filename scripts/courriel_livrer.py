@@ -16,6 +16,13 @@ d = cb.lire(d_id)
 script = json.loads((dossier / "script.json").read_text())
 choix = json.loads((dossier / "choix.json").read_text())
 joindre = leger if leger and leger.stat().st_size < 24_000_000 else None
+try:  # crédits des photos et vidéos libres de droits (affichés ici, plus jamais sur l'image)
+    _src = json.loads((dossier / "sources.json").read_text())
+except Exception:
+    _src = []
+_cc = [x for x in _src if "CC BY" in (x.get("licence") or "")]
+credits = ("\n\nCRÉDITS À AJOUTER EN FIN DE DESCRIPTION (licence CC BY) :\n"
+           + "\n".join(f"Photo : {x.get('auteur') or 'auteur inconnu'} ({x.get('source', '')}), {x.get('licence', '')}" for x in _cc)) if _cc else ""
 version = f"version {choix['version']} — " if choix.get("version", 1) > 1 else ""
 corps = f"""Bonjour Joseph,
 
@@ -31,7 +38,7 @@ TITRE :
 DESCRIPTION À COPIER :
 {script['description']}
 
-{script['hashtags']}
+{script['hashtags']}{credits}
 
 —
 Une correction ? Réponds simplement à cet e-mail en disant ce qui ne te plaît pas ou ce que tu veux changer

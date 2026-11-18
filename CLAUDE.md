@@ -312,7 +312,9 @@ e-mail = demande de correction, refaite et renvoyée.
 - **Début et voix** : parole dès la première image (0,05 s avant le premier mot), silences de plus de 0,6 s ramenés
   à 0,35 s ; chaîne radio sans porte de bruit, compression lente, gain constant (mesuré : plus de « coupures »).
 - **Photos** : tout texte incrusté (crédit, site, filigrane) flouté automatiquement (`flouter_textes`, Tesseract) ;
-  sans clé Pexels (`PEXELS_API_KEY`), seules les photos Openverse/Flickr sont disponibles (souvent approximatives).
+  ordre : Pexels (`PEXELS_API_KEY` ; nouvelles clés suspendues par Pexels en 11/2026), Pixabay (`PIXABAY_API_KEY`,
+  gratuit, sans filigrane), Openverse/Flickr en dernier recours ; crédit jamais affiché sur l'image (crédits CC BY
+  donnés dans l'e-mail de livraison).
 - **Qualité du plan** (`QUALITE`, `verifier_plan`, `reparer` dans `scripts/courriel_preparer.py`, tirées des remarques
   de Joseph) : plan fait par paquets de 10 phrases (jamais de scène manquante) ; vérifications automatiques puis
   relecture Gemini (orthographe, textes trop longs, liste au bon nombre d'éléments, tous les outils cités affichés,

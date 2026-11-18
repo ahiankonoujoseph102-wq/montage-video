@@ -155,6 +155,45 @@ def pexels_photo(recherche, cle, dest):
     return None
 
 
+def pixabay_video(recherche, cle, dest):
+    """Vidéo Pixabay (licence Pixabay : usage commercial gratuit, sans attribution, sans filigrane)."""
+    d = get_json("https://pixabay.com/api/videos/?" + urllib.parse.urlencode(
+        {"key": cle, "q": recherche[:100], "per_page": 10, "safesearch": "true", "lang": "en"}))
+    for v in d.get("hits", []):
+        if v.get("duration", 0) < 4:
+            continue
+        f = next((v["videos"][k] for k in ("medium", "large", "small") if (v.get("videos", {}).get(k) or {}).get("url")
+                  and 960 <= v["videos"][k].get("width", 0) <= 1920), None)
+        if not f:
+            continue
+        brut = dest.with_suffix(".brut.mp4")
+        telecharger(f["url"], brut)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(brut), "-t", "8", "-an", "-vf",
+                        "scale=1280:-2,fps=30", "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p", str(dest)],
+                       check=True)
+        brut.unlink()
+        return {"source": "Pixabay (vidéo)", "auteur": v.get("user", ""), "page": v.get("pageURL", ""),
+                "licence": "Licence Pixabay (usage commercial gratuit, attribution non obligatoire)"}
+    return None
+
+
+def pixabay_photo(recherche, cle, dest):
+    d = get_json("https://pixabay.com/api/?" + urllib.parse.urlencode(
+        {"key": cle, "q": recherche[:100], "image_type": "photo", "per_page": 10, "safesearch": "true", "lang": "en"}))
+    for p in d.get("hits", []):
+        brut = dest.with_suffix(".brut")
+        try:
+            telecharger(p["largeImageURL"], brut)
+            preparer_photo(brut, dest)
+        except Exception:
+            continue
+        finally:
+            brut.unlink(missing_ok=True)
+        return {"source": "Pixabay (photo)", "auteur": p.get("user", ""), "page": p.get("pageURL", ""),
+                "licence": "Licence Pixabay (usage commercial gratuit, attribution non obligatoire)"}
+    return None
+
+
 def openverse_photo(recherche, dest):
     """Photo du domaine public, CC0 ou CC BY (usage commercial libre ; pour CC BY, l'auteur est crédité sur l'image et
     dans les sources). Si la recherche ne donne rien, elle est simplifiée (sans « african », puis 2 mots)."""
@@ -194,7 +233,7 @@ def openverse_photo(recherche, dest):
 
 
 def chercher(recherche, dest_base, video_ok=True):
-    """Essaie Pexels (vidéo puis photo) si une clé existe, sinon Openverse. Retourne (fichier, crédit) ou None."""
+    """Essaie Pexels puis Pixabay (vidéo puis photo) si leurs clés existent, Openverse en dernier recours. Retourne (fichier, crédit) ou None."""
     cle = os.environ.get("PEXELS_API_KEY", "").strip()
     essais = []
     if cle:
@@ -202,6 +241,13 @@ def chercher(recherche, dest_base, video_ok=True):
             essais.append((".mp4", lambda d: pexels_video(recherche, cle, d)))
         essais.append((".jpg", lambda d: pexels_photo(recherche, cle, d)))
     essais.append((".jpg", lambda d: openverse_photo(recherche, d)))
+    cle_px = os.environ.get("PIXABAY_API_KEY", "").strip()
+    if cle_px:  # avant Openverse (photos Flickr souvent approximatives ou signées)
+        pos = len(essais)
+        if video_ok:
+            essais.insert(pos, (".mp4", lambda d: pixabay_video(recherche, cle_px, d)))
+        essais.insert(pos + (1 if video_ok else 0), (".jpg", lambda d: pixabay_photo(recherche, cle_px, d)))
+        essais.sort(key=lambda e: e[1].__code__.co_names.count("openverse_photo"))  # Openverse en dernier
     for ext, f in essais:
         dest = dest_base.with_suffix(ext)
         try:
