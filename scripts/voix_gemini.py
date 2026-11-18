@@ -21,7 +21,7 @@ from pathlib import Path
 BASE = "https://generativelanguage.googleapis.com/v1beta"
 cle = os.environ["GEMINI_API_KEY"].strip()
 VOIX = os.environ.get("VOIX_GEMINI", "Puck")
-CONSIGNE = ("Lis ce texte en français, mot pour mot, comme un animateur radio professionnel qui donne un cours : voix "
+CONSIGNE = os.environ.get("CONSIGNE_VOIX", "").strip() or ("Lis ce texte en français, mot pour mot, comme un animateur radio professionnel qui donne un cours : voix "
             "masculine, énergique, chaleureuse et souriante, ton enthousiaste, articulation parfaite de chaque mot, "
             "rythme dynamique mais jamais précipité, petites pauses naturelles entre les phrases. Prononce les noms "
             "d'outils à la française courante (ChatGPT, Claude, Gemini, TikTok, Facebook) et « IA » comme « i-a ». "

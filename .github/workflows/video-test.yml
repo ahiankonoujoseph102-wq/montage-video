@@ -11,9 +11,10 @@ name: Vidéo quotidienne Lomé IA School
 # Voix off : synthèse vocale Gemini (voix de radio claire, clé gratuite) ; si elle échoue, voix clonée.
 # À la main : voix = enregistree (note vocale de Joseph reçue par e-mail) ou clonee.
 on:
-  schedule:
-    - cron: "47 4 * * *"
-    - cron: "47 14 * * *"
+  # Ancienne automatisation quotidienne : gardée, lancement manuel seulement (remplacée par « Vidéo par e-mail »).
+  # schedule:
+  #   - cron: "47 4 * * *"
+  #   - cron: "47 14 * * *"
   workflow_dispatch:
     inputs:
       voix:

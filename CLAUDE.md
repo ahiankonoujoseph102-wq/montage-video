@@ -281,3 +281,14 @@ partout ; « Lomé IA School » ne change pas.
 - `projets/<projet>/` : script, `montage.json`, transcriptions, rapport (la vidéo source n'est pas versionnée).
 - `src/` : composition Remotion `Montage` (props lues dans `public/<projet>/props.json`).
 - `public/<projet>/`, `out/` : fichiers générés, non versionnés.
+
+## Vidéo par e-mail (automatisation principale)
+
+Joseph écrit à l'adresse de l'automatisation : texte (+ voix off en pièce jointe, + consignes éventuelles). Workflow
+`.github/workflows/courriel.yml` (toutes les 10 min, GitHub Actions + Gemini, indépendant de Claude) :
+`scripts/courriel_boite.py` relève la boîte, répond « ✅ Reçu, je commence », met la demande en file
+(`projets/courriel/demandes/`) ; `scripts/courriel_preparer.py` prépare script et plan (Gemini) ; voix de Joseph si
+fournie, sinon voix IA Gemini (Puck homme / Kore femme), **jamais sa voix clonée** ; rendu `VideoAuto` ; Release
+`courriel-<id>` ; `scripts/courriel_livrer.py` renvoie la vidéo avec titre, description et hashtags. Une réponse à cet
+e-mail = demande de correction, refaite et renvoyée. Mode d'emploi : `projets/courriel/MODE-EMPLOI.md`. L'ancienne
+automatisation quotidienne (`video-test.yml`) est gardée en lancement manuel.

@@ -1,0 +1,248 @@
+# Vidéo par e-mail : Joseph écrit à academyjoseph71@gmail.com (texte, et s'il veut sa voix off en pièce jointe et ses
+# consignes) ; toutes les 10 minutes, GitHub relève la boîte, répond « ✅ Reçu », monte la vidéo (double animé, style
+# de la vidéo quotidienne, plan visuel écrit par Gemini), la publie dans une Release et la renvoie par e-mail avec titre,
+# description et hashtags. Une réponse à cet e-mail = une correction, appliquée puis renvoyée de la même façon.
+# Sans voix off jointe : voix de synthèse Gemini (homme ou femme), jamais la voix clonée de Joseph.
+# Secrets : GMAIL_APP_PASSWORD, GEMINI_API_KEY ; facultatifs : PEXELS_API_KEY, EXPEDITEURS (adresses autorisées à
+# envoyer des demandes, séparées par des virgules), DESTINATAIRE (adresse qui reçoit les vidéos).
+name: Vidéo par e-mail
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  BRANCHE: claude/great-heisenberg-8p7tj4
+
+jobs:
+  boite:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    concurrency:
+      group: courriel-boite
+      cancel-in-progress: false
+    outputs:
+      a_faire: ${{ steps.r.outputs.a_faire }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCHE }}
+      - name: Relever la boîte, accuser réception
+        id: r
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EXPEDITEURS: ${{ secrets.EXPEDITEURS }}
+          DESTINATAIRE: ${{ secrets.DESTINATAIRE }}
+        run: |
+          python3 scripts/courriel_boite.py relever | tee "$RUNNER_TEMP/releve.txt"
+          echo "a_faire=$(sed -n 's/^A_FAIRE=//p' "$RUNNER_TEMP/releve.txt" | tail -1)" >> "$GITHUB_OUTPUT"
+      - name: Ranger les demandes dans le dépôt
+        run: |
+          git config user.name "Montage automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git add projets/courriel/demandes
+          git commit -q -m "Demandes reçues par e-mail ($(date -u +%d/%m/%Y\ %Hh%M))" || exit 0
+          for i in 1 2 3 4; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:$BRANCHE" && break; sleep 6; done
+
+  video:
+    needs: boite
+    if: needs.boite.outputs.a_faire == '1'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    # Une seule vidéo à la fois (même groupe que les autres montages) ; chaque lancement prend la plus ancienne
+    # demande en attente : une demande n'est jamais perdue, même si un lancement en attente est remplacé.
+    concurrency:
+      group: video-auto
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCHE }}
+
+      - name: Prendre la demande suivante
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          git config user.name "Montage automatique"
+          git config user.email "actions@users.noreply.github.com"
+          git pull -q --rebase origin "$BRANCHE"
+          ID=$(python3 scripts/courriel_boite.py prochain)
+          if [ -z "$ID" ]; then echo "Rien à faire"; echo "ID=" >> "$GITHUB_ENV"; exit 0; fi
+          echo "ID=$ID" >> "$GITHUB_ENV"
+          echo "RUN=projets/test-auto/run" >> "$GITHUB_ENV"
+          git add projets/courriel/demandes && git commit -q -m "Demande $ID : montage commencé"
+          for i in 1 2 3 4; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:$BRANCHE" && break; sleep 6; done
+          rm -rf projets/test-auto/run && mkdir -p projets/test-auto/run
+          python3 scripts/courriel_boite.py extraire "$ID" projets/test-auto/run
+
+      - uses: actions/setup-python@v6
+        if: env.ID != ''
+        id: py
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v5
+        if: env.ID != ''
+        with:
+          node-version: "22"
+      - name: Cache des modèles (transcription)
+        if: env.ID != ''
+        id: hf
+        uses: actions/cache/restore@v5
+        with:
+          path: ~/.cache/huggingface
+          key: modeles-hf-courriel-v1
+      - name: Cache des paquets Python
+        if: env.ID != ''
+        id: venv
+        uses: actions/cache/restore@v5
+        with:
+          path: ~/venv-courriel
+          key: venv-courriel-${{ runner.os }}-py${{ steps.py.outputs.python-version }}-v1
+      - name: Cache des paquets Node et du navigateur de rendu
+        if: env.ID != ''
+        id: node
+        uses: actions/cache/restore@v5
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('package-lock.json') }}-v1
+
+      - name: Installer ce qui manque
+        if: env.ID != ''
+        timeout-minutes: 15
+        run: |
+          for i in 1 2 3; do
+            command -v ffmpeg > /dev/null && break
+            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 update -qq || true
+            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 install -y -qq --no-install-recommends ffmpeg > /dev/null || true
+          done
+          command -v ffmpeg
+          if [ "${{ steps.venv.outputs.cache-hit }}" != "true" ]; then
+            python -m venv ~/venv-courriel
+            ~/venv-courriel/bin/pip install -q faster-whisper "av<16" pyloudnorm scipy numpy pillow
+          fi
+          echo "$HOME/venv-courriel/bin" >> "$GITHUB_PATH"
+          if [ "${{ steps.node.outputs.cache-hit }}" != "true" ]; then npm ci --no-audit --no-fund; fi
+      - name: Enregistrer le cache Python
+        if: env.ID != '' && steps.venv.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: ~/venv-courriel
+          key: ${{ steps.venv.outputs.cache-primary-key }}
+
+      - name: Texte, consignes et plan visuel (Gemini)
+        if: env.ID != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/courriel_preparer.py "$RUN"
+
+      - name: Photos et vidéos libres de droits
+        if: env.ID != ''
+        timeout-minutes: 12
+        continue-on-error: true
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          python scripts/medias.py "$RUN" || echo "Médias ignorés, cartes de texte à la place"
+
+      - name: Voix off (celle de Joseph si jointe, sinon voix Gemini — jamais clonée)
+        if: env.ID != ''
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          JOSEPH=$(python -c "import json;print(int(json.load(open('$RUN/choix.json'))['voix_joseph']))")
+          if [ "$JOSEPH" = "1" ]; then
+            V=$(ls "$RUN"/voix.* 2>/dev/null | head -1)
+            if [ -z "$V" ]; then
+              MID=$(python -c "import json;print(json.load(open('$RUN/choix.json'))['voix_message'])")
+              V=$(python scripts/courriel_boite.py extraire-voix "$MID" "$RUNNER_TEMP/voix" | tail -1)
+            fi
+            SOURCE_VOIX="voix enregistrée par Joseph" python scripts/decouper_voix.py "$V" "$RUN/script.json" "$RUNNER_TEMP/phrases"
+          else
+            export VOIX_GEMINI=$(python -c "import json;print(json.load(open('$RUN/choix.json'))['voix_gemini'])")
+            if [ "$VOIX_GEMINI" = "Kore" ]; then
+              export CONSIGNE_VOIX="Lis ce texte en français, mot pour mot, comme une animatrice radio professionnelle qui présente : voix féminine, énergique, chaleureuse et souriante, articulation parfaite, rythme dynamique mais jamais précipité, petites pauses naturelles entre les phrases. Prononce « IA » comme « i-a ». Texte :
+
+          "
+            fi
+            python scripts/voix_gemini.py "$RUN/script.json" "$RUNNER_TEMP/voix_gemini.wav"
+            SOURCE_VOIX="voix Gemini ($VOIX_GEMINI)" python scripts/decouper_voix.py "$RUNNER_TEMP/voix_gemini.wav" "$RUN/script.json" "$RUNNER_TEMP/phrases"
+          fi
+          cp "$RUNNER_TEMP/phrases/mesures.json" "$RUN/mesures_voix.json"
+
+      - name: Temps des mots, bouche du double, son
+        if: env.ID != ''
+        run: python scripts/test_auto.py "$RUNNER_TEMP/phrases" "$RUN" | tail -1 | tee "$RUN/preparation.json"
+
+      - name: Enregistrer le cache des modèles
+        if: always() && env.ID != '' && steps.hf.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ steps.hf.outputs.cache-primary-key }}
+
+      - name: Rendu de la vidéo
+        if: env.ID != ''
+        run: |
+          npx remotion render src/index.ts VideoAuto out/image.mp4 --props=public/test-auto/props.json --crf=16 --muted --concurrency=2
+          ffmpeg -loglevel error -y -i out/image.mp4 -i public/test-auto/mix.wav -map 0:v -map 1:a -c:v copy \
+            -c:a aac -b:a 256k -ar 48000 -shortest -movflags +faststart out/video.mp4
+          # Version légère (720 × 1280, environ 20 Mo) pour la pièce jointe.
+          D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 out/video.mp4)
+          BR=$(python -c "print(max(500, min(3500, int((20e6*8/$D - 128000)/1000))))")
+          C="-i out/video.mp4 -vf scale=720:1280:flags=lanczos -c:v libx264 -preset medium -b:v ${BR}k -pix_fmt yuv420p"
+          ffmpeg -loglevel error -y $C -pass 1 -passlogfile out/p -an -f mp4 /dev/null
+          ffmpeg -loglevel error -y $C -pass 2 -passlogfile out/p -c:a aac -b:a 128k -movflags +faststart out/video-legere.mp4
+          ls -la out/video.mp4 out/video-legere.mp4
+      - name: Enregistrer le cache Node
+        if: always() && env.ID != '' && steps.node.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: node_modules
+          key: ${{ steps.node.outputs.cache-primary-key }}
+
+      - name: Publier (Release) et envoyer la vidéo par e-mail
+        if: env.ID != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DESTINATAIRE: ${{ secrets.DESTINATAIRE }}
+        run: |
+          TAG="courriel-$ID"
+          NOM=$(python -c "import json,re,unicodedata;t=json.load(open('$RUN/script.json'))['titre'];t=unicodedata.normalize('NFKD',t).encode('ascii','ignore').decode().lower();print((re.sub(r'[^a-z0-9]+','-',t).strip('-')[:60] or 'video')+'.mp4')")
+          cp out/video.mp4 "out/$NOM"
+          gh release create "$TAG" "out/$NOM" --target "$BRANCHE" --title "$(python -c "import json;print(json.load(open('$RUN/script.json'))['titre'])")" \
+            --notes "Vidéo demandée par e-mail ($ID), pleine qualité 1080 × 1920."
+          URL=$(gh release view "$TAG" --json assets -q '.assets[0].url')
+          MID=$(python scripts/courriel_livrer.py "$ID" "$RUN" "$URL" out/video-legere.mp4 | tail -1)
+          D="projets/courriel/$ID"
+          mkdir -p "$D" && cp "$RUN"/*.json "$D/" && rm -f "$D/demande.json"
+          python scripts/courriel_boite.py statut "$ID" livre "livraison=$MID" "lien=$URL"
+          git add "$D" projets/courriel/demandes projets/test-auto/gemini_modele.txt
+          git commit -q -m "Vidéo $ID livrée par e-mail"
+          for i in 1 2 3 4; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:$BRANCHE" && break; sleep 6; done
+
+      - name: En cas d'échec, prévenir Joseph et remettre la demande en attente (2 essais au plus)
+        if: failure() && env.ID != ''
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DESTINATAIRE: ${{ secrets.DESTINATAIRE }}
+          LIEN_RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          git stash -q -u || true
+          git pull -q --rebase origin "$BRANCHE" || true
+          ST=$(python3 scripts/courriel_boite.py statut "$ID" en_attente)
+          if [ "$ST" = "echec" ]; then
+            SUITE="J'ai déjà essayé deux fois : je m'arrête là. Renvoie ta demande (ou un texte plus court), ou dis-le à Claude."
+          else
+            SUITE="Je réessaie automatiquement dans quelques minutes."
+          fi
+          MID=$(python3 -c "import json;print(json.load(open('projets/courriel/demandes/$ID.json'))['message_id'])")
+          printf "Bonjour Joseph,\n\nUn problème est survenu pendant le montage de ta vidéo (%s).\n%s\n\nDétails techniques : %s\n" "$ID" "$SUITE" "$LIEN_RUN" |
+            python3 scripts/courriel_boite.py envoyer "⚠️ Problème pendant le montage [$ID]" "$MID" || true
+          git add projets/courriel/demandes && git commit -q -m "Demande $ID : échec ($ST)" || true
+          for i in 1 2 3 4; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:$BRANCHE" && break; sleep 6; done
