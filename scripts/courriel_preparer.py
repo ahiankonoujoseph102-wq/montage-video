@@ -72,33 +72,144 @@ def phrases_de(texte):
 
 REGLES_VISUEL = sg.CONSIGNE[sg.CONSIGNE.index("PLAN VISUEL"):sg.CONSIGNE.index("Réponds UNIQUEMENT en JSON")].replace(
     "EMOJIS", ", ".join(sorted(sg.EMOJIS)))
-STYLE = ("Montage TikTok professionnel et captivant de Lomé IA School : accroche forte dès la première seconde, une scène "
-         "nouvelle à chaque phrase, des photos concrètes de la vie africaine, des démonstrations quand un outil est cité, "
-         "des cartes « numero » pour les étapes, une alerte ou une question pour les moments forts ; quand Joseph donne son "
-         "numéro de téléphone, une scène « carte » avec le numéro en grand (appel à l'action clair).")
+STYLE = ("Montage TikTok professionnel, très mouvementé et captivant de Lomé IA School : accroche forte dès la première "
+         "seconde, une scène nouvelle à chaque phrase, des photos concrètes de la vie africaine, des démonstrations quand un "
+         "outil est cité, des cartes « numero » pour les étapes, une alerte ou une question pour les moments forts ; quand "
+         "Joseph donne son numéro de téléphone, une scène « carte » avec le numéro en grand (appel à l'action clair).")
+# Règles permanentes, tirées des remarques de Joseph sur la première vidéo par e-mail (18/11/2026) : elles valent pour
+# TOUTES les vidéos, sans qu'il ait à les redemander.
+QUALITE = """RÈGLES DE QUALITÉ (obligatoires, toutes les vidéos) :
+1. Orthographe parfaite dans chaque texte affiché (« APPELEZ », accents, pluriels) ; relis chaque mot.
+2. Aucun texte coupé ni trop long : 3 lignes au plus, 20 caractères au plus par ligne dans carte, alerte, numero,
+   question ; un prompt ou une réponse d'IA complets (jamais une phrase qui s'arrête au milieu).
+3. Une liste annoncée avec un nombre (« 5 business », « 3 étapes ») montre exactement ce nombre d'éléments, tous
+   justes, dans l'ordre où Joseph les dit (5 éléments au plus).
+4. Chaque outil ou marque cité dans la phrase (ex. « Claude Code et Codex ») apparaît tous dans la scène (dans
+   « outil », un « deux » ou le texte d'une carte).
+5. Une photo ou vidéo seulement si elle montre EXACTEMENT ce que dit la phrase (recherche précise en anglais) ; sinon
+   une animation (demo, reponseIA, carte, numero, deux, liste…). Jamais d'image sans rapport.
+6. Jamais deux scènes de suite avec le même texte ou la même idée : change d'image à chaque idée.
+7. Une scène différente et adaptée jusqu'à la DERNIÈRE phrase ; la fin reprend la signature de Joseph et le numéro.
+8. Emojis aux moments qui s'y prêtent, et de temps en temps une petite touche d'humour (expression « surpris » ou
+   « grimace », emoji drôle), sans jamais être ridicule.
+9. Mise en page variée (clé "mise") : "plein" (l'illustration ou la photo occupe tout l'écran), "double" (le double
+   animé de Joseph en grand, l'idée en vignette inclinée au-dessus), "partage" (illustration en haut, double en bas).
+   Jamais plus de 2 fois de suite la même mise ; le double en grand au moins toutes les 20 secondes ; les photos en
+   "plein" ; les démonstrations en "plein" ou "partage"."""
+MISES = {"plein", "double", "partage"}
+OUTILS_NOMS = ["Claude Code", "Codex", "ChatGPT", "Claude", "Gemini", "Perplexity", "Canva", "CapCut", "Midjourney",
+               "WhatsApp", "Copilot", "Cursor", "Lovable", "Suno", "Kling", "Veo", "Sora", "n8n", "Make", "Zapier"]
+
+
+def textes_visibles(sc):
+    """Tous les textes affichés d'une scène, mis bout à bout (pour les vérifications)."""
+    morceaux = [sc.get(k) or "" for k in ("texte", "kicker", "sous", "titre", "prompt", "reponse", "outil")]
+    morceaux += [it.get("texte", "") for it in sc.get("items") or []]
+    morceaux += [(sc.get(k) or {}).get("texte", "") for k in ("gauche", "droite") if isinstance(sc.get(k), dict)]
+    morceaux += [o.get("nom", "") + " " + o.get("id", "") for o in sc.get("outils") or [] if isinstance(o, dict)]
+    return " ".join(m for m in morceaux if isinstance(m, str))
+
+
+def verifier_plan(phrases, scenes):
+    """Défauts constatés automatiquement : {indice: [problèmes]} (vide si tout est bon)."""
+    pb = {}
+    ajoute = lambda i, m: pb.setdefault(i, []).append(m)
+    norm = lambda t: re.sub(r"\W", "", (t or "").lower())
+    for i, (p, sc) in enumerate(zip(phrases, scenes)):
+        t = sc.get("type")
+        if t in ("carte", "alerte", "numero", "question"):
+            lignes = (sc.get("texte") or "").split("\n")
+            if len(lignes) > 3 or any(len(l) > 22 for l in lignes):
+                ajoute(i, "texte trop long (3 lignes de 20 caractères au plus)")
+        if t == "liste":
+            items = sc.get("items") or []
+            n = re.search(r"\b(\d+)\b", sc.get("titre") or "")
+            if n and int(n.group(1)) != len(items):
+                ajoute(i, f"la liste annonce {n.group(1)} éléments mais en montre {len(items)}")
+            if len(items) > 5:
+                ajoute(i, "5 éléments au plus dans une liste")
+        mots = {norm(m) for m in p["texte"].split()}
+        for k in [it.get("a") for it in sc.get("items") or []] + list(sc.get("a") or []):
+            if k and norm(k) not in mots:
+                ajoute(i, f"le mot d'ancrage « {k} » n'est pas dans la phrase")
+        vis = textes_visibles(sc).lower()
+        cites = [o for o in OUTILS_NOMS if re.search(r"\b" + re.escape(o.lower()) + r"\b", p["texte"].lower())]
+        cites = [o for o in cites if not any(o != x and o in x for x in cites)]  # « Claude » dans « Claude Code »
+        manquants = [o for o in cites if o.lower() not in vis and o.lower().replace(" ", "") not in vis.replace(" ", "")]
+        if len(cites) >= 2 and manquants:
+            ajoute(i, f"outils cités absents de la scène : {', '.join(manquants)}")
+        if re.search(r"\d\d[ .]?\d\d[ .]?\d\d[ .]?\d\d", p["texte"]) and not re.search(r"\d\d \d\d \d\d \d\d", textes_visibles(sc)):
+            ajoute(i, "la phrase donne le numéro : il doit être affiché en grand (72 24 02 31 / 79 16 23 90)")
+        if i and norm(textes_visibles(sc)) and norm(textes_visibles(sc)) == norm(textes_visibles(scenes[i - 1])):
+            ajoute(i, "même scène que la précédente : change d'image")
+        if sc.get("mise") and sc["mise"] not in MISES:
+            ajoute(i, "mise inconnue (plein, double ou partage)")
+    for i in range(2, len(scenes)):
+        if scenes[i].get("mise") and scenes[i].get("mise") == scenes[i - 1].get("mise") == scenes[i - 2].get("mise"):
+            ajoute(i, "3 fois de suite la même mise : varie (plein, double, partage)")
+    return pb
+
+
+def reparer(phrases, scenes, fond, consignes=""):
+    """Relecture par Gemini : orthographe de tous les textes, puis correction des défauts constatés (2 tours au plus)."""
+    for tour in range(3):
+        pb = verifier_plan(phrases, scenes)
+        if tour and not pb:
+            break
+        liste = "\n".join(f"- scène {i} : {'; '.join(m)}" for i, m in sorted(pb.items())) or "- aucun défaut automatique"
+        r = gemini_json(QUALITE + "\n\n" + REGLES_VISUEL + f"""
+
+Tu es le relecteur final du montage. Phrases (texte dit, à ne pas changer) et scènes actuelles :
+{json.dumps([{"i": i, "phrase": p["texte"], "scene": sc} for i, (p, sc) in enumerate(zip(phrases, scenes))], ensure_ascii=False)}
+{f"CONSIGNES DE JOSEPH : {consignes}" if consignes else ""}
+Défauts constatés automatiquement :
+{liste}
+Corrige ces défauts{" et TOUTE faute d'orthographe dans les textes affichés" if tour == 0 else ""}, en respectant les
+règles de qualité. Renvoie seulement les scènes modifiées.
+Réponds UNIQUEMENT en JSON : {{"scenes": [{{"i": 0, "scene": {{...}}}}]}}""")
+        for m in r.get("scenes") or []:
+            if isinstance(m, dict) and isinstance(m.get("i"), int) and 0 <= m["i"] < len(scenes) and isinstance(m.get("scene"), dict) and m["scene"].get("type"):
+                scenes[m["i"]] = m["scene"]
+    restants = verifier_plan(phrases, scenes)
+    for i in restants:  # dernier filet : mise retirée (le moteur choisit), le reste est signalé dans le journal
+        if any("mise" in x for x in restants[i]):
+            scenes[i].pop("mise", None)
+    journal.append({"verification": {str(i): m for i, m in verifier_plan(phrases, scenes).items()}})
+    return scenes, fond
 
 
 def plan_visuel(phrases, consignes, precedent=None):
-    numerotees = "\n".join(f"{i}. {p['texte']}" for i, p in enumerate(phrases))
-    demande = (REGLES_VISUEL + "\n" + STYLE + "\n\nVoici les " + str(len(phrases)) + " phrases EXACTES de la vidéo (ne les "
-               "modifie pas) :\n" + numerotees + "\n\n"
-               + (f"CONSIGNES DE JOSEPH (à respecter en priorité) : {consignes}\n\n" if consignes else "")
-               + (f"PLAN DE LA VERSION PRÉCÉDENTE (garde ce qui n'est pas critiqué) :\n{json.dumps(precedent, ensure_ascii=False)}\n\n" if precedent else "")
-               + "Fais le plan visuel : exactement une scène et un fond par phrase, dans l'ordre. "
-               "Réponds UNIQUEMENT en JSON : {\"scenes\": [...], \"fond\": [...]}")
-    for essai in range(3):
-        r = gemini_json(demande)
-        scenes, fond = r.get("scenes", []), r.get("fond", [])
-        if len(scenes) == len(phrases) and len(fond) == len(phrases):
-            return scenes, fond
-        demande += f"\n\nATTENTION : il faut exactement {len(phrases)} scènes et {len(phrases)} fonds (tu en as donné {len(scenes)})."
-    # dernier recours : on complète avec des cartes simples
-    # dernier recours : la scène précédente reste affichée (jamais le texte d'une autre phrase, ni un texte tronqué)
-    while scenes and len(scenes) < len(phrases):
-        scenes.append(dict(scenes[-1]))
-    scenes = (scenes or [{"type": "carte", "kicker": "LOMÉ IA SCHOOL", "texte": "MAÎTRISEZ\nL'IA"}] * len(phrases))[:len(phrases)]
-    fond = (fond + ["bleu", "violet", "orange", "nuit", "vert", "rose"] * len(phrases))[:len(phrases)]
-    return scenes, fond
+    """Plan visuel par paquets de 10 phrases (Gemini oublie des scènes au-delà de ~40) : toujours une scène par phrase."""
+    scenes, fond = [], []
+    PAQUET = 10
+    for d0 in range(0, len(phrases), PAQUET):
+        paquet = phrases[d0:d0 + PAQUET]
+        numerotees = "\n".join(f"{d0 + i}. {p['texte']}" for i, p in enumerate(paquet))
+        contexte = "\n".join(f"{i}. {p['texte']}" for i, p in enumerate(phrases))
+        demande = (REGLES_VISUEL + "\n" + STYLE + "\n\n" + QUALITE + "\n\nTEXTE COMPLET DE LA VIDÉO (pour le contexte) :\n"
+                   + contexte + "\n\n"
+                   + (f"SCÈNES DÉJÀ FAITES (ne les répète pas, continue la variété) :\n{json.dumps(scenes[-6:], ensure_ascii=False)}\n\n" if scenes else "")
+                   + (f"CONSIGNES DE JOSEPH (à respecter en priorité) : {consignes}\n\n" if consignes else "")
+                   + (f"PLAN DE LA VERSION PRÉCÉDENTE pour ces phrases (garde ce qui n'est pas critiqué) :\n"
+                      f"{json.dumps(precedent['scenes'][d0:d0 + PAQUET], ensure_ascii=False)}\n\n" if precedent else "")
+                   + f"Fais le plan visuel de ces {len(paquet)} phrases EXACTES (phrases {d0} à {d0 + len(paquet) - 1}) :\n"
+                   + numerotees + f"\n\nExactement {len(paquet)} scènes et {len(paquet)} fonds, dans l'ordre. "
+                   "Réponds UNIQUEMENT en JSON : {\"scenes\": [...], \"fond\": [...]}")
+        sc, fo = [], []
+        for essai in range(3):
+            r = gemini_json(demande)
+            sc, fo = r.get("scenes", []), r.get("fond", [])
+            if len(sc) == len(paquet):
+                break
+            demande += f"\n\nATTENTION : il faut exactement {len(paquet)} scènes (tu en as donné {len(sc)})."
+        sc = [x for x in sc if isinstance(x, dict) and x.get("type")][:len(paquet)]
+        while len(sc) < len(paquet):  # dernier recours : une carte tirée de la phrase elle-même (jamais d'une autre)
+            p = paquet[len(sc)]["texte"]
+            mots = [w for w in re.findall(r"[\wÀ-ÿ'’-]+", p.upper()) if len(w) > 3][:4]
+            sc.append({"type": "carte", "kicker": "LOMÉ IA SCHOOL", "texte": "\n".join([" ".join(mots[:2]), " ".join(mots[2:4])]).strip()})
+        scenes += sc
+        fond += (fo + ["bleu", "violet", "orange", "nuit", "vert", "rose"])[:len(paquet)]
+    return reparer(phrases, scenes, fond, consignes)
 
 
 avec_voix = bool(d.get("voix"))
@@ -156,6 +267,8 @@ VERSION PRÉCÉDENTE :
 Règles des scènes :
 {REGLES_VISUEL}
 
+{QUALITE}
+
 Réponds UNIQUEMENT en JSON : {{"phrases": [{{"partie": "...", "texte": "..."}}], "scenes": [...], "fond": [...],
 "titre": "...", "description": "...", "hashtags": ["#..."], "accroche": {{"lignes": [...], "cle": "..."}},
 "voix": "homme|femme", "reponse": "ce que tu as changé, en 1 à 4 phrases, en tutoyant Joseph"}}""")
@@ -165,6 +278,8 @@ Réponds UNIQUEMENT en JSON : {{"phrases": [{{"partie": "...", "texte": "..."}}]
     scenes, fond = r.get("scenes", []), r.get("fond", [])
     if len(scenes) != len(phrases) or len(fond) != len(phrases):
         scenes, fond = plan_visuel(phrases, d.get("texte", ""), {"scenes": scenes or ancien_plan["scenes"], "fond": fond or ancien_plan["fond"]})
+    else:
+        scenes, fond = reparer(phrases, scenes, fond, d.get("texte", ""))
     meta = {k: r.get(k) or ancien_script.get(k) for k in ("titre", "description", "hashtags", "accroche")}
     if isinstance(meta["hashtags"], str):
         meta["hashtags"] = meta["hashtags"].split()

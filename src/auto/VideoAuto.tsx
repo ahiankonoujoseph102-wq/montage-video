@@ -9,6 +9,8 @@ import type {Mot} from '../types';
 import {etatDouble, type EtapeExpression, type EtapeGeste} from '../double/commun/animationDouble';
 import {BrasDouble2D, Double2D} from '../double/v2d/Double2D';
 import {Bureau2D, Decor2D} from '../double/v2d/Decor2D';
+import {MISE_EN_PAGE} from '../double/theme';
+const ECRAN = MISE_EN_PAGE.ecran;
 
 // Vidéo automatique (test, étape 1) : style dynamique en écran partagé.
 // - en haut (0 → 900 px) : une scène générique par phrase (carte, question, alerte, numéro, demande tapée, deux cartes,
@@ -30,7 +32,7 @@ const S = (s: number) => Math.round(s * FPS);
 export type Scene = {type: string; texte?: string; kicker?: string; sous?: string; emoji?: string; n?: number;
   gauche?: {texte: string; ok: boolean}; droite?: {texte: string; ok: boolean}; a?: string | string[];
   titre?: string; items?: {texte: string; a: string}[]; lignes?: string[]; geste?: string; doigts?: number;
-  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; nom?: string; note?: string; fichier?: string; credit?: string; recherche?: string};
+  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; mise?: string; nom?: string; note?: string; fichier?: string; credit?: string; recherche?: string};
 export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
@@ -57,7 +59,18 @@ const Emoji: React.FC<{code?: string; x: number; y: number; taille: number; a?: 
 // Gros texte blanc à contour, ajusté à la largeur (une ou plusieurs lignes séparées par \n).
 const Gros: React.FC<{texte: string; y: number; max?: number; largeur?: number; couleur?: string; k?: number}> = (
   {texte, y, max = 120, largeur = 820, couleur = BLANC, k = 1}) => {
-  const lignes = texte.split('\n');
+  // Une ligne trop longue (plus de 16 caractères) est coupée en deux lignes équilibrées : jamais de texte minuscule.
+  const lignes = texte.split('\n').flatMap((l) => {
+    const mots = l.trim().split(/\s+/);
+    if (l.length <= 16 || mots.length < 2) return [l];
+    let best = 1;
+    let ecart = Infinity;
+    for (let c = 1; c < mots.length; c++) {
+      const e = Math.abs(mots.slice(0, c).join(' ').length - mots.slice(c).join(' ').length);
+      if (e < ecart) { ecart = e; best = c; }
+    }
+    return [mots.slice(0, best).join(' '), mots.slice(best).join(' ')];
+  });
   const taille = Math.min(max, ...lignes.map((l) => fitText({text: l, withinWidth: largeur, fontFamily: POLICE,
     fontWeight: '900'}).fontSize));
   return (
@@ -89,7 +102,7 @@ const Marque: React.FC<{ok: boolean; k: number; taille?: number}> = ({ok, k, tai
 );
 
 // Instant (image, relative à la scène) où un mot de la phrase est dit.
-type Ctx = {debut: number; fin: number; motA: (m: string) => number};
+type Ctx = {debut: number; fin: number; motA: (m: string) => number; h?: number};
 
 const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
   // Filet de sécurité : une scène d'image sans fichier préparé devient une carte de texte (le rendu ne casse jamais).
@@ -219,14 +232,16 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
           {(s.items ?? []).map((it, i) => {
             const a = c.motA(it.a);
             const ki = pop(f, Math.max(0, a - 3), 240);
-            const y = 360 + i * (440 / Math.max(3, (s.items ?? []).length));
+            const n = (s.items ?? []).length;
+            const pas = Math.min(140, 520 / Math.max(3, n));
+            const y = 345 + i * pas;
             return (
-              <div key={i} style={{position: 'absolute', left: 130, top: y, width: 740, height: 110, borderRadius: 30,
+              <div key={i} style={{position: 'absolute', left: 130, top: y, width: 740, height: Math.min(110, pas - 14), borderRadius: 30,
                 background: '#fff', display: 'flex', alignItems: 'center', gap: 28, padding: '0 30px',
                 transform: `translateX(${(1 - Math.min(1, ki)) * 600}px)`, opacity: ki > 0 ? 1 : 0,
                 boxShadow: '0 14px 28px rgba(0,0,0,0.35)'}}>
-                <Marque ok k={pop(f, a, 260)} taille={74} />
-                <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 56, color: '#1B1B2F'}}>{it.texte}</div>
+                <Marque ok k={pop(f, a, 260)} taille={n > 4 ? 62 : 74} />
+                <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: n > 4 ? 48 : 56, color: '#1B1B2F', whiteSpace: 'nowrap'}}>{it.texte}</div>
               </div>
             );
           })}
@@ -350,7 +365,8 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
     case 'photo': {
       // Photo ou vidéo libre de droits (Pexels ou domaine public / CC0), lent zoom ; source dans sources.json.
       const z = interpolate(f, [0, Math.max(1, duree)], [1.02, 1.14], clamp);
-      const style: React.CSSProperties = {width: 1080, height: HAUT, objectFit: 'cover', transform: `scale(${z})`};
+      const h = c.h ?? HAUT;
+      const style: React.CSSProperties = {width: 1080, height: h, objectFit: 'cover', transform: `scale(${z})`};
       const src = staticFile(s.fichier ?? '');
       return (
         <>
@@ -358,8 +374,8 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
             {(s.fichier ?? '').endsWith('.mp4') ? <OffthreadVideo src={src} muted style={style} /> : <Img src={src} style={style} />}
           </AbsoluteFill>
           <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%)'}} />
-          {s.texte ? <Gros texte={s.texte} y={650} max={110} k={pop(f, 6)} /> : null}
-          {s.credit ? <div style={{position: 'absolute', right: 150, top: 860, fontFamily: POLICE, fontWeight: 600, fontSize: 20,
+          {s.texte ? <Gros texte={s.texte} y={h > HAUT ? 1010 : 650} max={h > HAUT ? 130 : 110} k={pop(f, 6)} /> : null}
+          {s.credit ? <div style={{position: 'absolute', right: 150, top: h - 40 - (h > HAUT ? 330 : 0), fontFamily: POLICE, fontWeight: 600, fontSize: 20,
             color: 'rgba(255,255,255,0.75)'}}>{s.credit}</div> : null}
         </>
       );
@@ -378,17 +394,17 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
 };
 
 // Fond animé du panneau du haut (même esprit que les scènes illustrées).
-const Fond: React.FC<{nom: string; graine: number}> = ({nom, graine}) => {
+const Fond: React.FC<{nom: string; graine: number; h?: number}> = ({nom, graine, h = HAUT}) => {
   const f = useCurrentFrame();
   const [a, b, c] = FONDS_ILLUSTRATION[nom] ?? FONDS_ILLUSTRATION.bleu;
   return (
     <AbsoluteFill style={{background: `linear-gradient(${160 + 12 * Math.sin(f / 40)}deg, ${a} 0%, ${b} 55%, ${c} 100%)`}}>
-      <svg width={1080} height={HAUT} style={{position: 'absolute'}}>
+      <svg width={1080} height={h} style={{position: 'absolute'}}>
         <circle cx={250 + 90 * Math.sin(f / 33)} cy={330 + 60 * Math.cos(f / 41)} r={340} fill="#fff" opacity={0.08} />
         <circle cx={850 + 70 * Math.cos(f / 29)} cy={720 + 50 * Math.sin(f / 37)} r={280} fill="#fff" opacity={0.06} />
         {Array.from({length: 24}).map((_, i) => {
           const x = random(`x${graine}${i}`) * 1080;
-          const y = ((random(`y${graine}${i}`) * HAUT - f * (1 + random(`v${graine}${i}`) * 2)) % HAUT + HAUT) % HAUT;
+          const y = ((random(`y${graine}${i}`) * h - f * (1 + random(`v${graine}${i}`) * 2)) % h + h) % h;
           return <circle key={i} cx={x} cy={y} r={2 + random(`r${graine}${i}`) * 4} fill="#fff" opacity={0.25} />;
         })}
       </svg>
@@ -432,52 +448,158 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
   const etat = etatDouble(t, gestes, expressions, p.bouche, p.visemes, FPS);
   // Bornes des scènes : de la fin de la phrase précédente (ou 0) à la fin de la sienne.
   const bornes = p.phrases.map((ph, i) => [i === 0 ? 0 : S(p.phrases[i - 1].b), i === p.phrases.length - 1 ? S(p.duree) : S(ph.b)]);
+  const mises = misesAuto(p.scenes, bornes);
+  let ic = 0;
+  bornes.forEach(([a], i) => { if (f >= a) ic = i; });
+  const mise = mises[ic] ?? 'partage';
+  const depuis = f - (bornes[ic]?.[0] ?? 0);
+  // Changement de mise en page : coup de zoom + éclair blanc de 5 images (coupe nette, jamais de fondu mou).
+  const change = ic > 0 && mises[ic - 1] !== mise;
+  const coup = change ? interpolate(depuis, [0, 7], [1.1, 1], {...clamp, easing: Easing.out(Easing.cubic)}) : 1;
+  const eclair = change ? interpolate(depuis, [0, 5], [0.55, 0], clamp) : 0;
+  // Cadrage du double : alterne normal / serré à chaque phrase (coupe franche), en plus du coup d'ouverture.
+  const serre = ic % 2 === 1 ? 1.07 : 1;
+  const z0 = zoomDouble(f);
+  const ctxDe = (i: number, a: number, b: number, h?: number): Ctx => ({debut: a, fin: b, h, motA: (m) => {
+    const x = p.mots.find((w) => w.ph === i && w.t === m);
+    return x ? S(x.a) - a : 6;
+  }});
+  const corpsDouble = (
+    <>
+      <Double2D etat={etat} />
+      <Bureau2D />
+      <BrasDouble2D etat={etat} />
+    </>
+  );
+  const partages: [number, number][] = bornes.filter((_, i) => mises[i] === 'partage').map(([a, b]) => [a, b]);
   return (
     <EmojiCtx.Provider value={donnees}>
-      <AbsoluteFill style={{background: '#020629'}}>
-        {/* Double animé, dans la moitié basse. */}
-        <AbsoluteFill style={{top: HAUT + BANDEAU - 40, overflow: 'hidden'}}>
-          <AbsoluteFill style={{transform: `translateY(${p.decalageDouble - HAUT - BANDEAU + 40}px) translate(${zoomDouble(f).x}px, ${zoomDouble(f).y}px) scale(${zoomDouble(f).z})`,
-            transformOrigin: '540px 1260px'}}>
-            <Decor2D />
-            <Double2D etat={etat} />
-            <Bureau2D />
-            <BrasDouble2D etat={etat} />
-          </AbsoluteFill>
-        </AbsoluteFill>
-        {/* Panneau du haut : une scène par phrase. */}
-        <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT, overflow: 'hidden'}}>
+      <AbsoluteFill style={{background: '#020629', overflow: 'hidden'}}>
+        <AbsoluteFill style={{transform: `scale(${coup})`}}>
+          {mise === 'partage' ? (
+            /* Écran partagé : double dans la moitié basse, illustration en haut. */
+            <AbsoluteFill style={{top: HAUT + BANDEAU - 40, overflow: 'hidden'}}>
+              <AbsoluteFill style={{transform: `translateY(${p.decalageDouble - HAUT - BANDEAU + 40}px) translate(${z0.x}px, ${z0.y}px) scale(${z0.z * serre})`,
+                transformOrigin: '540px 1260px'}}>
+                <Decor2D />
+                {corpsDouble}
+              </AbsoluteFill>
+            </AbsoluteFill>
+          ) : mise === 'double' ? (
+            /* Présentateur : le double en grand dans son studio, l'idée affichée sur le grand écran derrière lui. */
+            <AbsoluteFill style={{transform: `scale(${(serre === 1 ? 1.04 : 1.12) + 0.03 * Math.min(1, depuis / 120)})`,
+              transformOrigin: '540px 760px'}}>
+              <Decor2D />
+              <div style={{position: 'absolute', left: ECRAN.x, top: ECRAN.y, width: ECRAN.l, height: ECRAN.h, overflow: 'hidden',
+                borderRadius: 10}}>
+                {p.scenes.map((s, i) => {
+                  const [a, b] = bornes[i] ?? [0, 0];
+                  if (mises[i] !== 'double' || b <= a) return null;
+                  const ech = Math.max(ECRAN.l / 1080, ECRAN.h / HAUT);
+                  return (
+                    <Sequence key={i} from={a} durationInFrames={b - a}>
+                      <div style={{position: 'absolute', left: (ECRAN.l - 1080 * ech) / 2, top: (ECRAN.h - HAUT * ech) / 2,
+                        width: 1080, height: HAUT, transform: `scale(${ech})`, transformOrigin: '0 0'}}>
+                        <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
+                        <SceneVue s={p.scenes[i]} c={ctxDe(i, a, b)} />
+                      </div>
+                    </Sequence>
+                  );
+                })}
+                <AbsoluteFill style={{background: 'linear-gradient(120deg, rgba(255,255,255,0.16), rgba(255,255,255,0) 40%)'}} />
+              </div>
+              {corpsDouble}
+            </AbsoluteFill>
+          ) : null}
+          {/* Illustrations : en haut (partage) ou en plein écran (plein). */}
           {p.scenes.map((s, i) => {
             const [a, b] = bornes[i] ?? [0, 0];
-            if (b <= a) return null;
-            const ctx: Ctx = {debut: a, fin: b, motA: (m) => {
-              const x = p.mots.find((w) => w.ph === i && w.t === m);
-              return x ? S(x.a) - a : 6;
-            }};
+            if (b <= a || mises[i] === 'double') return null;
             const sens = i % 3;
+            if (mises[i] === 'plein') {
+              const photo = s.type === 'photo';
+              return (
+                <Sequence key={i} from={a} durationInFrames={b - a}>
+                  <Entree sens={sens} hauteur={1920}>
+                    <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} h={1920} />
+                    {photo ? <SceneVue s={s} c={ctxDe(i, a, b, 1920)} /> : (
+                      <PleinEcran>
+                        <SceneVue s={s} c={ctxDe(i, a, b)} />
+                      </PleinEcran>
+                    )}
+                  </Entree>
+                </Sequence>
+              );
+            }
             return (
               <Sequence key={i} from={a} durationInFrames={b - a}>
-                <Entree sens={sens}>
-                  <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
-                  <SceneVue s={s} c={ctx} />
-                </Entree>
+                <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT, overflow: 'hidden'}}>
+                  <Entree sens={sens}>
+                    <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
+                    <SceneVue s={s} c={ctxDe(i, a, b)} />
+                  </Entree>
+                </div>
               </Sequence>
             );
           })}
-        </div>
-        {/* Bandeau des sous-titres et liserés. */}
-        <div style={{position: 'absolute', left: 0, right: 0, top: HAUT, height: BANDEAU,
-          background: 'linear-gradient(180deg, rgba(6,8,22,0.92), rgba(6,8,22,0.8))'}} />
-        <div style={{position: 'absolute', left: 0, right: 0, top: HAUT - 4, height: 8,
-          background: 'linear-gradient(90deg, rgba(255,255,255,0.2), #fff, rgba(255,255,255,0.2))', boxShadow: '0 0 24px rgba(255,255,255,0.8)'}} />
+          {mise === 'partage' ? (
+            <>
+              {/* Bandeau des sous-titres et liserés. */}
+              <div style={{position: 'absolute', left: 0, right: 0, top: HAUT, height: BANDEAU,
+                background: 'linear-gradient(180deg, rgba(6,8,22,0.92), rgba(6,8,22,0.8))'}} />
+              <div style={{position: 'absolute', left: 0, right: 0, top: HAUT - 4, height: 8,
+                background: 'linear-gradient(90deg, rgba(255,255,255,0.2), #fff, rgba(255,255,255,0.2))', boxShadow: '0 0 24px rgba(255,255,255,0.8)'}} />
+            </>
+          ) : (
+            /* Léger dégradé sombre sous les sous-titres hors écran partagé. */
+            <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(2,6,30,0.55) 82%, rgba(2,6,30,0.2) 100%)'}} />
+          )}
+        </AbsoluteFill>
         {p.titre ? <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT, overflow: 'hidden'}}>
           <OuvertureAuto lignes={p.titre.lignes} cle={p.titre.cle} /></div> : null}
         <SousTitresMot mots={p.motsFrames} masques={p.titre ? [[0, FIN_TITRE_GEANT], ...p.masques] : p.masques}
-          partages={[[0, S(p.duree) + 1]]} />
+          partages={partages} />
+        {eclair > 0 ? <AbsoluteFill style={{background: '#fff', opacity: eclair}} /> : null}
         {/* Flash blanc léger à l'impact d'ouverture. */}
         {f < 2 ? <AbsoluteFill style={{background: '#fff', opacity: f === 0 ? 0.6 : 0.3}} /> : null}
       </AbsoluteFill>
     </EmojiCtx.Provider>
+  );
+};
+
+// Mise en page de chaque scène : celle du plan ("mise") si elle est valable, sinon d'après le type ; puis règles de
+// rythme : écran partagé pendant l'ouverture (titre géant), jamais 3 fois de suite la même mise, le double en grand au
+// moins toutes les 20 s, les photos en plein écran.
+type Mise = 'partage' | 'plein' | 'double';
+const misesAuto = (scenes: Scene[], bornes: number[][]): Mise[] => {
+  const parType = (s: Scene, i: number): Mise => {
+    if (s.type === 'photo') return 'plein';
+    if (['numero', 'alerte', 'question', 'carte', 'final'].includes(s.type)) return i % 2 ? 'double' : 'plein';
+    if (['demo', 'reponseIA', 'prompt', 'outil', 'telephone'].includes(s.type)) return i % 2 ? 'plein' : 'partage';
+    return 'partage';
+  };
+  const res: Mise[] = [];
+  let dernierDouble = 0;
+  scenes.forEach((s, i) => {
+    const a = bornes[i]?.[0] ?? 0;
+    let m: Mise = (['partage', 'plein', 'double'] as Mise[]).includes(s.mise as Mise) ? (s.mise as Mise) : parType(s, i);
+    if (a < S(5)) m = 'partage';
+    else {
+      if (i >= 2 && res[i - 1] === m && res[i - 2] === m) m = m === 'double' ? (s.type === 'photo' ? 'plein' : 'partage') : 'double';
+      if (a - dernierDouble > S(20) && s.type !== 'photo') m = 'double';
+    }
+    if (m === 'double' || m === 'partage') dernierDouble = a;
+    res.push(m);
+  });
+  return res;
+};
+
+// Illustration du panneau (1080 × 900) posée au centre de l'écran entier, avec une lente poussée de caméra.
+const PleinEcran: React.FC<React.PropsWithChildren> = ({children}) => {
+  const f = useCurrentFrame();
+  return (
+    <div style={{position: 'absolute', left: 0, top: 330, width: 1080, height: HAUT,
+      transform: `scale(${1.14 + 0.05 * Math.min(1, f / 150)})`, transformOrigin: '500px 450px'}}>{children}</div>
   );
 };
 
@@ -555,9 +677,9 @@ const zoomDouble = (f: number) => {
 };
 
 // Entrée de chaque scène : glissement, coup de zoom ou bascule (en rotation), 7 images.
-const Entree: React.FC<React.PropsWithChildren<{sens: number}>> = ({sens, children}) => {
+const Entree: React.FC<React.PropsWithChildren<{sens: number; hauteur?: number}>> = ({sens, hauteur = HAUT, children}) => {
   const f = useCurrentFrame();
   const p = interpolate(f, [0, 7], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
-  const tr = sens === 0 ? `translateX(${(1 - p) * 1080}px)` : sens === 1 ? `scale(${1.25 - 0.25 * p})` : `translateY(${(1 - p) * -HAUT}px)`;
+  const tr = sens === 0 ? `translateX(${(1 - p) * 1080}px)` : sens === 1 ? `scale(${1.25 - 0.25 * p})` : `translateY(${(1 - p) * -hauteur}px)`;
   return <AbsoluteFill style={{transform: tr, opacity: sens === 1 ? p : 1}}>{children}</AbsoluteFill>;
 };

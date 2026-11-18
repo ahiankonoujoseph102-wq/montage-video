@@ -293,5 +293,16 @@ fournie, **toujours retravaillée en voix radio** (`scripts/voix_radio.py` : net
 (`VOIX_TRAITEE=1` dans `decouper_voix.py`), rien de rogné ni ajouté (`VOIX_CONTINUE=1` dans `test_auto.py`) ; vérifié
 en retranscrivant le rendu (aucun mot perdu), sinon voix IA Gemini (Puck homme / Kore femme), **jamais sa voix clonée** ; rendu `VideoAuto` ; Release
 `courriel-<id>` ; `scripts/courriel_livrer.py` renvoie la vidéo avec titre, description et hashtags. Une réponse à cet
-e-mail = demande de correction, refaite et renvoyée. Mode d'emploi : `projets/courriel/MODE-EMPLOI.md`. L'ancienne
+e-mail = demande de correction, refaite et renvoyée.
+- **Montage (moteur `VideoAuto`)** : trois mises en page qui alternent à chaque phrase (`mise` dans le plan, sinon
+  choisie d'après le type) — `plein` (illustration ou photo sur tout l'écran, poussée de caméra), `double` (le double en
+  grand dans son studio, l'idée affichée sur le grand écran derrière lui), `partage` (illustration en haut, double en
+  bas) ; jamais 3 fois de suite la même, le double en grand au moins toutes les 20 s, écran partagé pendant l'ouverture ;
+  coup de zoom + éclair blanc à chaque changement, cadrage du double alterné à chaque phrase ; texte trop long coupé en
+  deux lignes équilibrées (`Gros`).
+- **Qualité du plan** (`QUALITE`, `verifier_plan`, `reparer` dans `scripts/courriel_preparer.py`, tirées des remarques
+  de Joseph) : plan fait par paquets de 10 phrases (jamais de scène manquante) ; vérifications automatiques puis
+  relecture Gemini (orthographe, textes trop longs, liste au bon nombre d'éléments, tous les outils cités affichés,
+  numéro affiché quand il est dit, pas deux scènes identiques de suite, mises variées) ; jamais de carte de secours
+  au texte d'une autre phrase. Mode d'emploi : `projets/courriel/MODE-EMPLOI.md`. L'ancienne
 automatisation quotidienne (`video-test.yml`) est gardée en lancement manuel.
