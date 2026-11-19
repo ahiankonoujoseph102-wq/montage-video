@@ -19,6 +19,7 @@ import shutil
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -236,18 +237,26 @@ STYLE_IA = (", photorealistic professional photograph, natural soft light, sharp
             "(Lomé, Togo), people of African descent, vertical composition, no text, no letters, no logo, no watermark")
 
 
+QUOTA_IA_EPUISE = False
+
+
 def image_ia(prompt, dest):
     """Image créée par l'IA (Cloudflare Workers AI) qui montre EXACTEMENT ce que dit la phrase : demande de Joseph quand
-    les banques d'images ne correspondent pas. Verticale (768 × 1344) avec Lucid Origin, sinon carrée avec FLUX.1
-    schnell. Clés : CLOUDFLARE_ACCOUNT_ID et CLOUDFLARE_API_TOKEN (secrets GitHub)."""
+    les banques d'images ne correspondent pas. FLUX.1 schnell en premier : ~60 « neurones » par image, soit plus de
+    150 images par jour dans le quota gratuit (10 000) ; Lucid Origin (vertical, mais ~2 500 neurones par image, le
+    quota partait en 4 images) seulement en secours. Quota du jour épuisé (code 4006) : on n'insiste plus, les
+    banques d'images prennent le relais. Clés : CLOUDFLARE_ACCOUNT_ID et CLOUDFLARE_API_TOKEN."""
+    global QUOTA_IA_EPUISE
+    if QUOTA_IA_EPUISE:
+        return None
     import base64
     compte = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
     jeton = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
     if not (compte and jeton and prompt.strip()):
         return None
     texte = prompt.strip()[:900] + STYLE_IA
-    for modele, extra in (("@cf/leonardo/lucid-origin", {"width": 768, "height": 1344}),
-                          ("@cf/black-forest-labs/flux-1-schnell", {"steps": 6})):
+    for modele, extra in (("@cf/black-forest-labs/flux-1-schnell", {"steps": 6}),
+                          ("@cf/leonardo/lucid-origin", {"width": 768, "height": 1344})):
         req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{compte}/ai/run/{modele}",
                                      data=json.dumps({"prompt": texte, **extra}).encode(), method="POST",
                                      headers={"Authorization": f"Bearer {jeton}", "Content-Type": "application/json"})
@@ -264,7 +273,17 @@ def image_ia(prompt, dest):
             return {"source": f"Image créée par IA ({modele.split('/')[-1]}, Cloudflare)", "auteur": "",
                     "page": "", "licence": "Image générée pour Lomé IA School (usage commercial autorisé)"}
         except Exception as e:
-            print(f"  image IA ({modele}) : {type(e).__name__} {str(e)[:150]}", flush=True)
+            detail = str(e)[:150]
+            if isinstance(e, urllib.error.HTTPError):
+                try:
+                    detail = e.read().decode("utf-8", "replace")[:200]
+                except Exception:
+                    pass
+            print(f"  image IA ({modele}) : {type(e).__name__} {detail}", flush=True)
+            if "4006" in detail or "daily free allocation" in detail:
+                QUOTA_IA_EPUISE = True
+                print("  quota gratuit Cloudflare du jour épuisé : banques d'images pour la suite", flush=True)
+                return None
     return None
 
 
