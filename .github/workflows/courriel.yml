@@ -240,7 +240,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           DESTINATAIRE: ${{ secrets.DESTINATAIRE }}
         run: |
-          TAG="courriel-$ID"
+          TAG="courriel-$ID-$(date -u +%Y%m%d-%H%M%S)"  # nom unique : une correction ou une relance ne bute jamais sur la précédente
           NOM=$(python -c "import json,re,unicodedata;t=json.load(open('$RUN/script.json'))['titre'];t=unicodedata.normalize('NFKD',t).encode('ascii','ignore').decode().lower();print((re.sub(r'[^a-z0-9]+','-',t).strip('-')[:60] or 'video')+'.mp4')")
           cp out/video.mp4 "out/$NOM"
           gh release create "$TAG" "out/$NOM" --target "$BRANCHE" --title "$(python -c "import json;print(json.load(open('$RUN/script.json'))['titre'])")" \
