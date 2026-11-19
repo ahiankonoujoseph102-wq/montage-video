@@ -238,6 +238,7 @@ STYLE_IA = (", photorealistic professional photograph, natural soft light, sharp
 
 
 QUOTA_IA_EPUISE = False
+EPUISES = set()
 
 
 def image_ia(prompt, dest):
@@ -250,41 +251,49 @@ def image_ia(prompt, dest):
     if QUOTA_IA_EPUISE:
         return image_gemini(prompt, dest)
     import base64
-    compte = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
-    jeton = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
-    if not (compte and jeton and prompt.strip()):
+    if not prompt.strip():
         return None
     texte = prompt.strip()[:900] + STYLE_IA
-    for modele, extra in (("@cf/black-forest-labs/flux-1-schnell", {"steps": 6}),
-                          ("@cf/leonardo/lucid-origin", {"width": 768, "height": 1344})):
-        req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{compte}/ai/run/{modele}",
-                                     data=json.dumps({"prompt": texte, **extra}).encode(), method="POST",
-                                     headers={"Authorization": f"Bearer {jeton}", "Content-Type": "application/json"})
-        try:
-            with urllib.request.urlopen(req, timeout=120) as r:
-                d = json.load(r)
-            img = (d.get("result") or {}).get("image")
-            if not img:
-                raise ValueError(str(d.get("errors"))[:150])
-            brut = dest.with_suffix(".brut")
-            brut.write_bytes(base64.b64decode(img))
-            preparer_photo(brut, dest, ia=True)
-            brut.unlink(missing_ok=True)
-            return {"source": f"Image créée par IA ({modele.split('/')[-1]}, Cloudflare)", "auteur": "",
-                    "page": "", "licence": "Image générée pour Lomé IA School (usage commercial autorisé)"}
-        except Exception as e:
-            detail = str(e)[:150]
-            if isinstance(e, urllib.error.HTTPError):
-                try:
-                    detail = e.read().decode("utf-8", "replace")[:200]
-                except Exception:
-                    pass
-            print(f"  image IA ({modele}) : {type(e).__name__} {detail}", flush=True)
-            if "4006" in detail or "daily free allocation" in detail:
-                QUOTA_IA_EPUISE = True
-                print("  quota gratuit Cloudflare du jour épuisé (remis à zéro à minuit UTC)", flush=True)
-                return image_gemini(prompt, dest)
-    return None
+    # Plusieurs comptes Cloudflare gratuits possibles (CLOUDFLARE_ACCOUNT_ID_2 / _TOKEN_2, _3…) : 10 000 neurones par
+    # jour chacun ; quand l'un est épuisé, on passe au suivant.
+    for n in ("", "_2", "_3", "_4"):
+        compte = os.environ.get("CLOUDFLARE_ACCOUNT_ID" + n, "").strip()
+        jeton = os.environ.get("CLOUDFLARE_API_TOKEN" + n, "").strip()
+        if not (compte and jeton) or compte in EPUISES:
+            continue
+        for modele, extra in (("@cf/black-forest-labs/flux-1-schnell", {"steps": 6}),
+                              ("@cf/leonardo/lucid-origin", {"width": 768, "height": 1344})):
+            req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{compte}/ai/run/{modele}",
+                                         data=json.dumps({"prompt": texte, **extra}).encode(), method="POST",
+                                         headers={"Authorization": f"Bearer {jeton}", "Content-Type": "application/json"})
+            try:
+                with urllib.request.urlopen(req, timeout=120) as r:
+                    d = json.load(r)
+                img = (d.get("result") or {}).get("image")
+                if not img:
+                    raise ValueError(str(d.get("errors"))[:150])
+                brut = dest.with_suffix(".brut")
+                brut.write_bytes(base64.b64decode(img))
+                preparer_photo(brut, dest, ia=True)
+                brut.unlink(missing_ok=True)
+                return {"source": f"Image créée par IA ({modele.split('/')[-1]}, Cloudflare)", "auteur": "",
+                        "page": "", "licence": "Image générée pour Lomé IA School (usage commercial autorisé)"}
+            except Exception as e:
+                detail = str(e)[:150]
+                if isinstance(e, urllib.error.HTTPError):
+                    try:
+                        detail = e.read().decode("utf-8", "replace")[:200]
+                    except Exception:
+                        pass
+                print(f"  image IA ({modele}) : {type(e).__name__} {detail}", flush=True)
+                if "4006" in detail or "daily free allocation" in detail:
+                    EPUISES.add(compte)
+                    print(f"  quota gratuit du compte Cloudflare {n or '_1'} épuisé (remis à zéro à minuit UTC)", flush=True)
+                    break
+    comptes = {os.environ.get("CLOUDFLARE_ACCOUNT_ID" + n, "").strip() for n in ("", "_2", "_3", "_4")} - {""}
+    if comptes <= EPUISES:  # tous les comptes Cloudflare épuisés (ou aucun) : Gemini, sinon report
+        QUOTA_IA_EPUISE = True
+    return image_gemini(prompt, dest)
 
 
 GEMINI_IMAGE_KO = False
@@ -443,7 +452,7 @@ def main(dossier):
             dest = PUBLIC / "photos" / f"{i:02d}.jpg"
             invite = s.get("image") or (s.get("recherche", "") + ". Scene: " + (phrases[i]["texte"] if i < len(phrases) else ""))
             credit = image_ia(invite, dest)
-            if not credit and QUOTA_IA_EPUISE and GEMINI_IMAGE_KO and os.environ.get("ATTENDRE_IMAGES_IA") == "1":
+            if not credit and QUOTA_IA_EPUISE and EPUISES and GEMINI_IMAGE_KO and os.environ.get("ATTENDRE_IMAGES_IA") == "1":
                 # Joseph veut des images créées par l'IA, pas des photos approximatives : on reporte le montage
                 # après la remise à zéro du quota (minuit UTC) au lieu de livrer avec des banques d'images.
                 (dossier / "quota_ia.txt").write_text("quota Cloudflare épuisé, pas de secours Gemini\n")
