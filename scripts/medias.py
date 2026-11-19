@@ -248,7 +248,7 @@ def image_ia(prompt, dest):
     banques d'images prennent le relais. Clés : CLOUDFLARE_ACCOUNT_ID et CLOUDFLARE_API_TOKEN."""
     global QUOTA_IA_EPUISE
     if QUOTA_IA_EPUISE:
-        return None
+        return image_gemini(prompt, dest)
     import base64
     compte = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
     jeton = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
@@ -282,8 +282,49 @@ def image_ia(prompt, dest):
             print(f"  image IA ({modele}) : {type(e).__name__} {detail}", flush=True)
             if "4006" in detail or "daily free allocation" in detail:
                 QUOTA_IA_EPUISE = True
-                print("  quota gratuit Cloudflare du jour épuisé : banques d'images pour la suite", flush=True)
-                return None
+                print("  quota gratuit Cloudflare du jour épuisé (remis à zéro à minuit UTC)", flush=True)
+                return image_gemini(prompt, dest)
+    return None
+
+
+GEMINI_IMAGE_KO = False
+
+
+def image_gemini(prompt, dest):
+    """Secours payant : image créée par Gemini (« Nano Banana », ~0,04 $ l'image), seulement si la facturation est
+    activée sur la clé GEMINI_API_KEY (l'offre gratuite de l'API ne crée pas d'images : refus 429, on n'insiste pas)."""
+    global GEMINI_IMAGE_KO
+    cle = os.environ.get("GEMINI_API_KEY", "").strip()
+    if GEMINI_IMAGE_KO or not cle:
+        return None
+    import base64
+    corps = {"contents": [{"parts": [{"text": prompt.strip()[:900] + STYLE_IA}]}],
+             "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": "9:16"}}}
+    for modele in ("gemini-2.5-flash-image", "gemini-3.1-flash-image-preview"):
+        req = urllib.request.Request(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{modele}:generateContent",
+            data=json.dumps(corps).encode(), method="POST",
+            headers={"x-goog-api-key": cle, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                d = json.load(r)
+            parts = d["candidates"][0]["content"]["parts"]
+            img = next(p["inlineData"]["data"] for p in parts if p.get("inlineData"))
+            brut = dest.with_suffix(".brut")
+            brut.write_bytes(base64.b64decode(img))
+            preparer_photo(brut, dest, ia=True)
+            brut.unlink(missing_ok=True)
+            return {"source": f"Image créée par IA ({modele}, Gemini)", "auteur": "", "page": "",
+                    "licence": "Image générée pour Lomé IA School (usage commercial autorisé)"}
+        except Exception as e:
+            detail = str(e)[:150]
+            if isinstance(e, urllib.error.HTTPError):
+                try:
+                    detail = e.read().decode("utf-8", "replace")[:200]
+                except Exception:
+                    pass
+            print(f"  image Gemini ({modele}) : {type(e).__name__} {detail}", flush=True)
+    GEMINI_IMAGE_KO = True
     return None
 
 
@@ -402,6 +443,12 @@ def main(dossier):
             dest = PUBLIC / "photos" / f"{i:02d}.jpg"
             invite = s.get("image") or (s.get("recherche", "") + ". Scene: " + (phrases[i]["texte"] if i < len(phrases) else ""))
             credit = image_ia(invite, dest)
+            if not credit and QUOTA_IA_EPUISE and GEMINI_IMAGE_KO and os.environ.get("ATTENDRE_IMAGES_IA") == "1":
+                # Joseph veut des images créées par l'IA, pas des photos approximatives : on reporte le montage
+                # après la remise à zéro du quota (minuit UTC) au lieu de livrer avec des banques d'images.
+                (dossier / "quota_ia.txt").write_text("quota Cloudflare épuisé, pas de secours Gemini\n")
+                print("Images IA impossibles aujourd'hui : montage reporté après minuit UTC", flush=True)
+                return
             trouve = (dest, credit) if credit else chercher(s["recherche"] or invite[:60], PUBLIC / "photos" / f"{i:02d}",
                                                             video_ok=n_videos < 2)
         if not trouve:
