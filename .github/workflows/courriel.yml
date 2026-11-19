@@ -183,8 +183,27 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY || env.PIXABAY_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || env.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || env.CLOUDFLARE_API_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ATTENDRE_IMAGES_IA: "1"
         run: |
           python scripts/medias.py "$RUN" || echo "Médias ignorés, cartes de texte à la place"
+
+      - name: Images IA impossibles aujourd'hui → montage reporté après minuit (UTC)
+        if: env.ID != '' && hashFiles('projets/test-auto/run/quota_ia.txt') != ''
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          git stash -q -u || true
+          git pull -q --rebase origin "$BRANCHE" || true
+          PREVENIR=$(python3 scripts/courriel_boite.py reporter "$ID")
+          if [ "$PREVENIR" = "1" ]; then
+            MID=$(python3 -c "import json;print(json.load(open('projets/courriel/demandes/$ID.json'))['message_id'])")
+            printf "Bonjour Joseph,\n\nLe quota gratuit d'images créées par l'IA est épuisé pour aujourd'hui.\nPour que les images correspondent exactement à ce que tu dis, je ne monte pas ta vidéo avec des photos approximatives : elle sera faite automatiquement après minuit (heure de Lomé) et t'arrivera dans la foulée.\n\nRien à faire de ton côté.\n" |
+              python3 scripts/courriel_boite.py envoyer "⏳ Ta vidéo est reportée à cette nuit [$ID]" "$MID" || true
+          fi
+          git add projets/courriel/demandes && git commit -q -m "Demande $ID : reportée (images IA)" || true
+          for i in 1 2 3 4; do git pull -q --rebase origin "$BRANCHE" && git push -q origin "HEAD:$BRANCHE" && break; sleep 6; done
+          echo "ID=" >> "$GITHUB_ENV"
 
       - name: Voix off (celle de Joseph si jointe, sinon voix Gemini — jamais clonée)
         if: env.ID != ''
