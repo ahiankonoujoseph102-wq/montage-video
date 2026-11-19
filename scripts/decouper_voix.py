@@ -32,7 +32,7 @@ with wave.open(str(propre)) as w:
 duree = len(x) / SR
 
 norm = lambda t: re.sub(r"[^\w]", "", t.lower())
-modele = WhisperModel("small", device="cpu", compute_type="int8")
+modele = WhisperModel(__import__("os").environ.get("MODELE_ALIGNEMENT", "small"), device="cpu", compute_type="int8")
 segs, _ = modele.transcribe(str(propre), language="fr", word_timestamps=True, vad_filter=False, beam_size=5)
 mots = [(norm(w.word), w.start, w.end) for s in segs for w in s.words if norm(w.word)]
 

@@ -60,7 +60,8 @@
    "emoji": "1f442",
    "geste": "designe",
    "expression": "parle",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/bougie_1.mp4"
   },
   {
    "type": "question",
@@ -68,7 +69,8 @@
    "sous": "de devenir qui tu rêves",
    "emoji": "1f914",
    "geste": "explique",
-   "expression": "surpris"
+   "expression": "surpris",
+   "fondVideo": "test-auto/stock/route_2.mp4"
   },
   {
    "type": "photo",
@@ -77,7 +79,8 @@
    "mise": "plein",
    "recherche": "Close-up of the hands of a young",
    "fichier": "test-auto/photos/07.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/ecrire_1.mp4"
   },
   {
    "type": "photo",
@@ -95,7 +98,8 @@
    "emoji": "1f9d0",
    "geste": "bras-croises",
    "expression": "neutre",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/bougie_5.mp4"
   },
   {
    "type": "photo",
@@ -104,7 +108,8 @@
    "mise": "plein",
    "recherche": "A long queue of young African graduates",
    "fichier": "test-auto/photos/10.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/foule_3.mp4"
   },
   {
    "type": "photo",
@@ -113,7 +118,8 @@
    "mise": "partage",
    "recherche": "A young Togolese man sitting on the",
    "fichier": "test-auto/photos/11.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/pluie_0.mp4"
   },
   {
    "type": "photo",
@@ -222,7 +228,8 @@
    "emoji": "1f630",
    "geste": "explique",
    "expression": "grimace",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/pluie_2.mp4"
   },
   {
    "type": "photo",
@@ -263,7 +270,8 @@
    "mise": "plein",
    "recherche": "A little Togolese boy in a school",
    "fichier": "test-auto/photos/23.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/plage_1.mp4"
   },
   {
    "type": "carte",
@@ -272,7 +280,8 @@
    "emoji": "1f914",
    "geste": "bras-croises",
    "expression": "neutre",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/nuages_0.mp4"
   },
   {
    "type": "question",
@@ -354,7 +363,8 @@
    "emoji": "1f9d0",
    "geste": "explique",
    "expression": "surpris",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/echecs_3.mp4"
   },
   {
    "type": "liste",
@@ -376,7 +386,8 @@
      "ok": false
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/porte_0.mp4"
   },
   {
    "type": "alerte",
@@ -392,7 +403,8 @@
    "mise": "plein",
    "recherche": "A young Togolese graduate standing in front",
    "fichier": "test-auto/photos/32.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/horloge_1.mp4"
   },
   {
    "type": "carte",
@@ -401,7 +413,8 @@
    "emoji": "1f44b",
    "geste": "explique",
    "expression": "neutre",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/bougie_1.mp4"
   },
   {
    "type": "photo",
@@ -420,7 +433,8 @@
    "mise": "plein",
    "recherche": "A young Togolese man in a dark",
    "fichier": "test-auto/photos/35.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/pluie_5.mp4"
   },
   {
    "type": "chiffre",
@@ -429,7 +443,8 @@
    "kicker": "LE PLUS INQUIÉTANT",
    "emoji": "1f6a8",
    "geste": "designe",
-   "expression": "grimace"
+   "expression": "grimace",
+   "fondVideo": "test-auto/stock/foule_4.mp4"
   },
   {
    "type": "question",
@@ -485,7 +500,8 @@
      "doute": true
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/horloge_3.mp4"
   },
   {
    "type": "liste",
@@ -504,7 +520,8 @@
      "a": "formations"
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/livres_0.mp4"
   },
   {
    "type": "carte",
@@ -537,7 +554,8 @@
    "de": 2026,
    "vers": 2027,
    "emoji": "1f525",
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/sablier_1.mp4"
   },
   {
    "type": "photo",
@@ -546,7 +564,8 @@
    "mise": "plein",
    "recherche": "A young African woman doing a job",
    "fichier": "test-auto/photos/45.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/nuit_2.mp4"
   },
   {
    "type": "photo",
@@ -587,7 +606,8 @@
    "texte": "CHANGE DE\nMENTALITÉ",
    "emoji": "26a0_fe0f",
    "geste": "bras-croises",
-   "expression": "neutre"
+   "expression": "neutre",
+   "fondVideo": "test-auto/stock/echecs_2.mp4"
   },
   {
    "type": "photo",
@@ -596,7 +616,8 @@
    "mise": "plein",
    "recherche": "A determined young Togolese woman looking straight",
    "fichier": "test-auto/photos/50.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/course_0.mp4"
   },
   {
    "type": "liste",
@@ -607,7 +628,8 @@
      "a": "vision"
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/ampoule_0.mp4"
   },
   {
    "type": "liste",
@@ -622,7 +644,8 @@
      "a": "compétences"
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/escalier_2.mp4"
   },
   {
    "type": "liste",
@@ -649,14 +672,16 @@
      "a": "revenus."
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/escalier_2.mp4"
   },
   {
    "type": "alerte",
    "texte": "COMMENCE\nMAINTENANT",
    "emoji": "1f680",
    "geste": "designe",
-   "expression": "parle"
+   "expression": "parle",
+   "fondVideo": "test-auto/stock/course_5.mp4"
   },
   {
    "type": "photo",
@@ -665,7 +690,8 @@
    "mise": "plein",
    "recherche": "A young Togolese student learning to build",
    "fichier": "test-auto/photos/55.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/ecrire_3.mp4"
   },
   {
    "type": "photo",
@@ -684,7 +710,8 @@
    "mise": "plein",
    "recherche": "A young Togolese graduate in gown sitting",
    "fichier": "test-auto/photos/57.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/route_1.mp4"
   },
   {
    "type": "carte",
@@ -693,7 +720,8 @@
    "emoji": "1f64c",
    "geste": "explique",
    "expression": "sourire",
-   "mise": "double"
+   "mise": "double",
+   "fondVideo": "test-auto/stock/lever_2.mp4"
   },
   {
    "type": "photo",
@@ -702,7 +730,8 @@
    "mise": "plein",
    "recherche": "A young Togolese man and woman smiling",
    "fichier": "test-auto/photos/59.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/nuages_3.mp4"
   },
   {
    "type": "question",
@@ -710,7 +739,8 @@
    "sous": "pour réussir au Togo",
    "emoji": "1f914",
    "geste": "explique",
-   "expression": "surpris"
+   "expression": "surpris",
+   "fondVideo": "test-auto/stock/route_1.mp4"
   },
   {
    "type": "cadenas",
@@ -742,7 +772,8 @@
      "a": "intelligence"
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/bougie_0.mp4"
   },
   {
    "type": "partie2",
@@ -768,7 +799,8 @@
      "a": "stratégies"
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/nuages_4.mp4"
   },
   {
    "type": "deux",
@@ -794,7 +826,8 @@
    "mise": "plein",
    "recherche": "Aerial view of Lomé, Togo at golden",
    "fichier": "test-auto/photos/66.jpg",
-   "credit": "Image"
+   "credit": "Image",
+   "fichier2": "test-auto/stock/lever_3.mp4"
   },
   {
    "type": "carte",
@@ -828,7 +861,8 @@
      "a": "sérieux."
     }
    ],
-   "mise": "plein"
+   "mise": "plein",
+   "fondVideo": "test-auto/stock/course_2.mp4"
   },
   {
    "type": "partie2",

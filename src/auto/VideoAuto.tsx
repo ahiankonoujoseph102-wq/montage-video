@@ -35,7 +35,8 @@ export type Scene = {type: string; texte?: string; kicker?: string; sous?: strin
   expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; mise?: string; nom?: string; note?: string; fichier?: string; credit?: string; recherche?: string;
   eteint?: boolean; depart?: number;
   calc?: {texte: string; montant: number; a: string; total?: boolean}[]; etapes?: {texte: string; a: string; doute?: boolean}[];
-  cartes?: {texte: string; a: string}[]; de?: number; vers?: number};
+  cartes?: {texte: string; a: string}[]; de?: number; vers?: number;
+  fichier2?: string; fondVideo?: string};
 export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
@@ -104,8 +105,43 @@ const Marque: React.FC<{ok: boolean; k: number; taille?: number}> = ({ok, k, tai
   </div>
 );
 
+// Particules de lumière qui flottent (bokeh) et reflet chaud qui passe lentement : de la vie sur chaque image.
+const Lumieres: React.FC<{h: number; graine: number; chaud?: boolean}> = ({h, graine, chaud = true}) => {
+  const f = useCurrentFrame();
+  const reflet = (f % 240) / 240;
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      <svg width={1080} height={h} style={{position: 'absolute'}}>
+        {Array.from({length: 18}).map((_, i) => {
+          const x = (random(`lx${graine}${i}`) * 1080 + Math.sin((f + i * 40) / 60) * 30);
+          const y = ((random(`ly${graine}${i}`) * h - f * (0.4 + random(`lv${graine}${i}`) * 0.9)) % h + h) % h;
+          const r = 4 + random(`lr${graine}${i}`) * 14;
+          const o = 0.12 + 0.18 * (0.5 + 0.5 * Math.sin((f + i * 17) / 20));
+          return <circle key={i} cx={x} cy={y} r={r} fill={chaud ? '#FFE3A3' : '#CFE0FF'} opacity={o} style={{filter: 'blur(3px)'}} />;
+        })}
+      </svg>
+      {chaud ? <AbsoluteFill style={{background: `linear-gradient(115deg, rgba(255,170,60,0) ${reflet * 140 - 40}%, rgba(255,170,60,0.16) ${reflet * 140 - 20}%, rgba(255,170,60,0) ${reflet * 140}%)`,
+        mixBlendMode: 'screen'}} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+// Fond d'une scène : vidéo libre de droits assombrie (émotion, mouvement) si le plan en donne une, sinon dégradé animé.
+const FondScene: React.FC<{s: Scene; nom: string; graine: number; h?: number}> = ({s, nom, graine, h = HAUT}) => {
+  const f = useCurrentFrame();
+  if (!s.fondVideo) return <Fond nom={nom} graine={graine} h={h} />;
+  return (
+    <AbsoluteFill style={{background: '#05070F'}}>
+      <OffthreadVideo src={staticFile(s.fondVideo)} muted style={{width: 1080, height: h, objectFit: 'cover',
+        transform: `scale(${1.05 + 0.0006 * f})`}} />
+      <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(5,7,25,0.55), rgba(5,7,25,0.42) 50%, rgba(5,7,25,0.62))'}} />
+      <Lumieres h={h} graine={graine} />
+    </AbsoluteFill>
+  );
+};
+
 // Instant (image, relative à la scène) où un mot de la phrase est dit.
-type Ctx = {debut: number; fin: number; motA: (m: string) => number; h?: number};
+type Ctx = {debut: number; fin: number; motA: (m: string) => number; h?: number; s0?: number; s1?: number};
 
 const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
   // Filet de sécurité : une scène d'image sans fichier préparé devient une carte de texte (le rendu ne casse jamais).
@@ -366,20 +402,35 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
       );
     }
     case 'photo': {
-      // Photo ou vidéo libre de droits (Pexels ou domaine public / CC0), lent zoom ; source dans sources.json.
-      const z = interpolate(f, [0, Math.max(1, duree)], [1.02, 1.14], clamp);
+      // Image IA ou vidéo libre de droits. Mouvement de caméra varié (avant, arrière, glissé gauche/droite), particules
+      // de lumière, vignette et reflet chaud : jamais d'image figée. « fichier2 » : second plan sur la 2e moitié.
       const h = c.h ?? HAUT;
-      // « eteint » : le rêve s'éteint doucement (couleurs puis lumière qui baissent sur la fin de la phrase).
+      const t = c.debut + f;
+      const milieu = c.s0 !== undefined && c.s1 !== undefined ? (c.s0 + c.s1) / 2 : Infinity;
+      const second = !!s.fichier2 && t >= milieu;
+      const fichier = second ? s.fichier2! : (s.fichier ?? '');
+      const d0 = second ? milieu : (c.s0 ?? c.debut);
+      const d1 = second ? (c.s1 ?? c.fin) : Math.min(milieu, c.s1 ?? c.fin);
+      const prog = interpolate(t, [d0, Math.max(d0 + 1, d1)], [0, 1], clamp);
+      let graine = 0;
+      for (const ch of fichier) graine = (graine * 31 + ch.charCodeAt(0)) % 997;
+      const mv = graine % 4;
+      const z = mv === 1 ? 1.2 - 0.12 * prog : 1.06 + 0.12 * prog;
+      const dx = mv === 2 ? -50 + 100 * prog : mv === 3 ? 50 - 100 * prog : 0;
       const gris = s.eteint ? interpolate(f, [duree * 0.45, Math.max(duree * 0.45 + 1, duree - 4)], [0, 1], clamp) : 0;
-      const style: React.CSSProperties = {width: 1080, height: h, objectFit: 'cover', transform: `scale(${z})`,
+      const style: React.CSSProperties = {width: 1080, height: h, objectFit: 'cover', transform: `scale(${z}) translateX(${dx}px)`,
         filter: gris ? `grayscale(${gris}) brightness(${1 - 0.45 * gris})` : undefined};
-      const src = staticFile(s.fichier ?? '');
+      const src = staticFile(fichier);
+      const flash = second ? interpolate(t, [milieu, milieu + 5], [0.5, 0], clamp) : 0;
       return (
         <>
           <AbsoluteFill style={{opacity: interpolate(f, [0, 6], [0, 1], clamp)}}>
-            {(s.fichier ?? '').endsWith('.mp4') ? <OffthreadVideo src={src} muted style={style} /> : <Img src={src} style={style} />}
+            {fichier.endsWith('.mp4') ? <OffthreadVideo src={src} muted style={style} /> : <Img src={src} style={style} />}
           </AbsoluteFill>
+          <Lumieres h={h} graine={graine} chaud={!s.eteint} />
           <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%)'}} />
+          <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.45) 100%)'}} />
+          {flash ? <AbsoluteFill style={{background: '#fff', opacity: flash}} /> : null}
           {s.texte ? <Gros texte={s.texte} y={h > HAUT ? 1010 : 650} max={h > HAUT ? 130 : 110} k={pop(f, 6)} /> : null}
           {/* Crédit de la photo : dans l'e-mail et la description, jamais sur l'image (demande de Joseph). */}
         </>
@@ -633,7 +684,8 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
   // Cadrage du double : alterne normal / serré à chaque phrase (coupe franche), en plus du coup d'ouverture.
   const serre = ic % 2 === 1 ? 1.07 : 1;  // ic = indice du plan
   const z0 = zoomDouble(f);
-  const ctxDe = (i: number, a: number, b: number, h?: number): Ctx => ({debut: a, fin: b, h, motA: (m) => {
+  const ctxDe = (i: number, a: number, b: number, h?: number): Ctx => ({debut: a, fin: b, h,
+    s0: S(p.phrases[i].a), s1: S(p.phrases[i].b), motA: (m) => {
     const x = p.mots.find((w) => w.ph === i && w.t === m);
     return x ? S(x.a) - a : 6;
   }});
@@ -671,7 +723,7 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
                   const ech = Math.min(ECRAN.l / 1080, ECRAN.h / HAUT);
                   return (
                     <Sequence key={k} from={a} durationInFrames={b - a}>
-                      <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
+                      <FondScene s={p.scenes[i]} nom={p.fonds[i] ?? 'bleu'} graine={i} />
                       <div style={{position: 'absolute', left: (ECRAN.l - 1080 * ech) / 2, top: (ECRAN.h - HAUT * ech) / 2,
                         width: 1080, height: HAUT, transform: `scale(${ech})`, transformOrigin: '0 0'}}>
                         <SceneVue s={p.scenes[i]} c={ctxDe(i, a, b)} />
@@ -694,7 +746,7 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
               return (
                 <Sequence key={k} from={a} durationInFrames={b - a}>
                   <Entree sens={sens} hauteur={1920}>
-                    <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} h={1920} />
+                    <FondScene s={s} nom={p.fonds[i] ?? 'bleu'} graine={i} h={1920} />
                     {photo ? <SceneVue s={s} c={ctxDe(i, a, b, 1920)} /> : (
                       <PleinEcran>
                         <SceneVue s={s} c={ctxDe(i, a, b)} />
@@ -708,7 +760,7 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
               <Sequence key={k} from={a} durationInFrames={b - a}>
                 <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: HAUT, overflow: 'hidden'}}>
                   <Entree sens={sens}>
-                    <Fond nom={p.fonds[i] ?? 'bleu'} graine={i} />
+                    <FondScene s={s} nom={p.fonds[i] ?? 'bleu'} graine={i} />
                     <SceneVue s={s} c={ctxDe(i, a, b)} />
                   </Entree>
                 </div>
