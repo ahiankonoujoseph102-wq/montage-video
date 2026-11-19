@@ -254,7 +254,7 @@ def relever():
                 ecrire(d)
     reste = [d for d in demandes() if d["statut"] in ("en_attente", "en_cours")]
     print(f"{nouveaux} nouvelle(s) demande(s) ; {len(reste)} en attente ou en cours")
-    print("A_FAIRE=" + ("1" if any(d["statut"] == "en_attente" for d in reste) else "0"))
+    print("A_FAIRE=" + ("1" if any(d["statut"] == "en_attente" and not pas_encore(d) for d in reste) else "0"))
 
 
 def regarder():
@@ -262,7 +262,7 @@ def regarder():
     N'envoie rien et n'écrit rien : seule la relève (courriel.yml) enregistre et accuse réception."""
     connues = {d["message_id"] for d in demandes()}
     toutes = demandes()
-    reprendre = any(d["statut"] == "en_attente" for d in toutes) and not any(d["statut"] == "en_cours" for d in toutes)
+    reprendre = any(d["statut"] == "en_attente" and not pas_encore(d) for d in toutes) and not any(d["statut"] == "en_cours" for d in toutes)
     m = connexion()
     depuis = (datetime.date.today() - datetime.timedelta(days=JOURS)).strftime("%d-%b-%Y")
     nouveaux = 0
@@ -286,7 +286,7 @@ def prochain():
             d["statut"] = "en_attente" if d.get("essais", 0) < 2 else "echec"
             ecrire(d)
     for d in demandes():
-        if d["statut"] == "en_attente":
+        if d["statut"] == "en_attente" and not pas_encore(d):
             d["statut"], d["debut"] = "en_cours", datetime.datetime.utcnow().isoformat(timespec="seconds")
             d["essais"] = d.get("essais", 0) + 1
             ecrire(d)
@@ -353,6 +353,23 @@ def extraire_voix(message_id, dossier):
     sys.exit("Voix off d'origine introuvable dans Gmail.")
 
 
+def pas_encore(d):
+    """Demande reportée (quota d'images IA du jour épuisé) : pas avant l'heure notée dans « pas_avant »."""
+    return bool(d.get("pas_avant")) and datetime.datetime.utcnow() < datetime.datetime.fromisoformat(d["pas_avant"])
+
+
+def reporter(d_id):
+    """Remet la demande en attente jusqu'à minuit UTC + 10 min (remise à zéro du quota Cloudflare), sans compter
+    l'essai. Affiche « 1 » si Joseph n'a pas encore été prévenu de ce report (un seul e-mail par report)."""
+    d = lire(d_id)
+    demain = (datetime.datetime.utcnow() + datetime.timedelta(days=1)).replace(hour=0, minute=10, second=0, microsecond=0)
+    deja = d.get("pas_avant") == demain.isoformat(timespec="seconds")
+    d["statut"], d["pas_avant"] = "en_attente", demain.isoformat(timespec="seconds")
+    d["essais"] = max(0, d.get("essais", 1) - 1)
+    ecrire(d)
+    print("0" if deja else "1")
+
+
 def statut(d_id, st, *kv):
     d = lire(d_id)
     d["statut"] = st
@@ -380,6 +397,8 @@ if __name__ == "__main__":
         regarder()
     elif action == "extraire-voix":
         extraire_voix(sys.argv[2], sys.argv[3])
+    elif action == "reporter":
+        reporter(sys.argv[2])
     elif action == "statut":
         statut(sys.argv[2], sys.argv[3], *sys.argv[4:])
     elif action == "envoyer":  # envoyer <objet> <id-réponse ou -> < corps

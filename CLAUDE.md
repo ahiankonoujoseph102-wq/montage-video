@@ -313,7 +313,7 @@ e-mail = demande de correction, refaite et renvoyée.
   à 0,35 s ; chaîne radio sans porte de bruit, compression lente, gain constant (mesuré : plus de « coupures »).
 - **Images créées par l'IA** (`image_ia` dans `scripts/medias.py`) : pour chaque scène photo, image verticale
   créée d'après la phrase (clé `image` du plan, description en anglais écrite par Gemini) avec Cloudflare Workers AI
-  (`flux-1-schnell` en premier : ~60 neurones par image, quota gratuit de 10 000 par jour ; `lucid-origin` en secours, trop cher : 4 images épuisaient le quota ; quota épuisé, code 4006 → banques d'images) ; secrets `CLOUDFLARE_ACCOUNT_ID`,
+  (`flux-1-schnell` en premier : ~60 neurones par image, quota gratuit de 10 000 par jour ; `lucid-origin` en secours, trop cher : 4 images épuisaient le quota ; quota épuisé, code 4006 → Gemini `gemini-2.5-flash-image` si la facturation est activée sur la clé, sinon **montage reporté après minuit UTC** (`ATTENDRE_IMAGES_IA`, `pas_avant` dans la demande, e-mail « ⏳ » à Joseph) : jamais de photos approximatives à la place) ; secrets `CLOUDFLARE_ACCOUNT_ID`,
   `CLOUDFLARE_API_TOKEN` ; sans eux ou en cas d'échec, banques d'images. Relais texte quand Gemini est saturé :
   Groq (`GROQ_API_KEY`, `openai/gpt-oss-120b`, en-tête User-Agent obligatoire sinon 403).
   Ces 4 clés (Pixabay, Cloudflare ×2, Groq) sont **chiffrées dans `projets/courriel/cles.enc`** (AES-256, openssl
