@@ -29,7 +29,7 @@ OUTILS = {"chatgpt": ("ChatGPT", "chatgpt.com"), "claude": ("Claude", "claude.ai
           "gemini": ("Gemini", "gemini.google.com"), "perplexity": ("Perplexity", "perplexity.ai")}
 AGENT = "LomeIASchool-montage/1.0 (montage video automatique)"
 SIMPLES = {"question", "alerte", "carte", "reponseIA"}  # scènes qu'on peut remplacer par une capture d'outil
-MAX_PHOTOS = 8
+MAX_PHOTOS = 10
 
 
 def get_json(url, entetes=None):
@@ -49,20 +49,20 @@ def telecharger(url, dest, max_octets=60_000_000):
             f.write(bloc)
 
 
-def preparer_photo(brut, dest):
+def preparer_photo(brut, dest, ia=False):
     """Vérifie que c'est une vraie image assez grande, la ramène à 1600 px de large au plus (JPEG)."""
     from PIL import Image
     with Image.open(brut) as im:
         im = im.convert("RGB")
-        if im.width < 800 or im.height < 500:
+        if im.width < 700 or im.height < 500:
             raise ValueError(f"image trop petite ({im.width}×{im.height})")
         if im.width > 1600:
             im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
-        im = flouter_textes(im)
+        im = flouter_textes(im, bandes=not ia)
         im.save(dest, "JPEG", quality=90)
 
 
-def flouter_textes(im):
+def flouter_textes(im, bandes=True):
     """Floute tout texte incrusté dans la photo (nom du photographe, filigrane, signature) : demande de Joseph, ce
     n'est pas professionnel. Texte repéré par Tesseract (OCR) ; sans Tesseract, les bandes du bas et des coins où
     se trouvent presque toujours les filigranes sont floutées par précaution."""
@@ -83,7 +83,7 @@ def flouter_textes(im):
                 c = ligne.split("\t")
                 if len(c) == 12 and len(c[11].strip()) >= 1 and float(c[10]) > 30:
                     x, y, w, h = map(int, c[6:10])
-                    bord = y + h / 2 < im.height * 0.15 or y + h / 2 > im.height * 0.85
+                    bord = bandes and (y + h / 2 < im.height * 0.15 or y + h / 2 > im.height * 0.85)
                     # Bords (où sont les filigranes) : on floute au moindre doute ; ailleurs, seulement le texte sûr.
                     if 6 < h < im.height * 0.12 and w < im.width * 0.9 and (bord or (float(c[10]) > 70 and len(c[11].strip()) >= 3)):
                         zones.append([x, y, w, h])
@@ -101,7 +101,7 @@ def flouter_textes(im):
             else:
                 lignes.append(list(z))
         # Une ligne de texte près d'un bord (crédit, site web, filigrane) : toute la largeur de la bande est floutée.
-        zones = [(0, y, im.width, h) if (y + h / 2 < im.height * 0.15 or y + h / 2 > im.height * 0.85)
+        zones = [(0, y, im.width, h) if bandes and (y + h / 2 < im.height * 0.15 or y + h / 2 > im.height * 0.85)
                  else (x - h, y, w + 2 * h, h) for x, y, w, h in lignes]
     else:
         zones = [(0, int(im.height * 0.9), im.width, int(im.height * 0.1))]
@@ -232,6 +232,42 @@ def openverse_photo(recherche, dest):
     return None
 
 
+STYLE_IA = (", photorealistic professional photograph, natural soft light, sharp focus, modern West African setting "
+            "(Lomé, Togo), people of African descent, vertical composition, no text, no letters, no logo, no watermark")
+
+
+def image_ia(prompt, dest):
+    """Image créée par l'IA (Cloudflare Workers AI) qui montre EXACTEMENT ce que dit la phrase : demande de Joseph quand
+    les banques d'images ne correspondent pas. Verticale (768 × 1344) avec Lucid Origin, sinon carrée avec FLUX.1
+    schnell. Clés : CLOUDFLARE_ACCOUNT_ID et CLOUDFLARE_API_TOKEN (secrets GitHub)."""
+    import base64
+    compte = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "").strip()
+    jeton = os.environ.get("CLOUDFLARE_API_TOKEN", "").strip()
+    if not (compte and jeton and prompt.strip()):
+        return None
+    texte = prompt.strip()[:900] + STYLE_IA
+    for modele, extra in (("@cf/leonardo/lucid-origin", {"width": 768, "height": 1344}),
+                          ("@cf/black-forest-labs/flux-1-schnell", {"steps": 6})):
+        req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{compte}/ai/run/{modele}",
+                                     data=json.dumps({"prompt": texte, **extra}).encode(), method="POST",
+                                     headers={"Authorization": f"Bearer {jeton}", "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                d = json.load(r)
+            img = (d.get("result") or {}).get("image")
+            if not img:
+                raise ValueError(str(d.get("errors"))[:150])
+            brut = dest.with_suffix(".brut")
+            brut.write_bytes(base64.b64decode(img))
+            preparer_photo(brut, dest, ia=True)
+            brut.unlink(missing_ok=True)
+            return {"source": f"Image créée par IA ({modele.split('/')[-1]}, Cloudflare)", "auteur": "",
+                    "page": "", "licence": "Image générée pour Lomé IA School (usage commercial autorisé)"}
+        except Exception as e:
+            print(f"  image IA ({modele}) : {type(e).__name__} {str(e)[:150]}", flush=True)
+    return None
+
+
 def chercher(recherche, dest_base, video_ok=True):
     """Essaie Pexels puis Pixabay (vidéo puis photo) si leurs clés existent, Openverse en dernier recours. Retourne (fichier, crédit) ou None."""
     cle = os.environ.get("PEXELS_API_KEY", "").strip()
@@ -342,8 +378,13 @@ def main(dossier):
         if s.get("type") != "photo":
             continue
         trouve = None
-        if n_photos < MAX_PHOTOS and str(s.get("recherche", "")).strip():
-            trouve = chercher(s["recherche"], PUBLIC / "photos" / f"{i:02d}", video_ok=n_videos < 2)
+        if n_photos < MAX_PHOTOS and str(s.get("image") or s.get("recherche", "")).strip():
+            # 1. Image créée par l'IA d'après la phrase (correspond exactement) ; 2. banques d'images en secours.
+            dest = PUBLIC / "photos" / f"{i:02d}.jpg"
+            invite = s.get("image") or (s.get("recherche", "") + ". Scene: " + (phrases[i]["texte"] if i < len(phrases) else ""))
+            credit = image_ia(invite, dest)
+            trouve = (dest, credit) if credit else chercher(s["recherche"] or invite[:60], PUBLIC / "photos" / f"{i:02d}",
+                                                            video_ok=n_videos < 2)
         if not trouve:
             repli(s, phrases[i]["texte"] if i < len(phrases) else "")
             continue

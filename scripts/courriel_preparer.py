@@ -35,6 +35,31 @@ journal = []
 VOIX = {"homme": "Puck", "femme": "Kore"}
 
 
+def groq(tours):
+    """Relais quand Gemini est saturé : Groq (clé GROQ_API_KEY), même demande, réponse JSON."""
+    import time
+    import urllib.request
+    cle_g = sg.os.environ.get("GROQ_API_KEY", "").strip()
+    if not cle_g:
+        return None, None, 0
+    for modele in ("openai/gpt-oss-120b", "qwen/qwen3.8-27b", "openai/gpt-oss-20b"):
+        t0 = time.time()
+        corps = {"model": modele, "response_format": {"type": "json_object"}, "temperature": 0.7,
+                 "messages": [{"role": "assistant" if r == "model" else "user", "content": x} for r, x in tours]}
+        req = urllib.request.Request("https://api.groq.com/openai/v1/chat/completions", data=json.dumps(corps).encode(),
+                                     headers={"Authorization": f"Bearer {cle_g}", "Content-Type": "application/json",
+                                              "User-Agent": "lome-ia-school-montage/1.0"})
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                rep = json.load(r)
+            print(f"Relais Groq : {modele}", flush=True)
+            return "groq/" + modele, rep["choices"][0]["message"]["content"], time.time() - t0
+        except Exception as e:
+            journal.append({"modele": "groq/" + modele, "erreur": repr(e)[:200]})
+            print(f"Groq {modele} : {repr(e)[:150]}", flush=True)
+    return None, None, 0
+
+
 def gemini_json(demande, essais=3):
     tours = [("user", demande)]
     for _ in range(essais):
@@ -46,11 +71,14 @@ def gemini_json(demande, essais=3):
             sg.time.sleep(attente)
             modele, brut, duree = sg.generer(modeles, cle, tours, journal)
         if brut is None:
-            sys.exit("Gemini ne répond pas (tous les modèles ont échoué, même après 7 minutes d'attente).")
+            modele, brut, duree = groq(tours)
+        if brut is None:
+            sys.exit("Gemini et Groq ne répondent pas (tous les modèles ont échoué, même après 7 minutes d'attente).")
         try:
             r = json.loads(brut)
             journal.append({"modele": modele, "secondes": round(duree, 1)})
-            sg.MEMOIRE.write_text(modele + "\n")
+            if not modele.startswith("groq/"):
+                sg.MEMOIRE.write_text(modele + "\n")
             return r
         except Exception as e:
             tours += [("model", brut), ("user", f"Réponse illisible ({e}). Réponds uniquement en JSON valide.")]
@@ -107,7 +135,11 @@ QUALITE = """RÈGLES DE QUALITÉ (obligatoires, toutes les vidéos) :
    clair ; faire sentir l'importance et l'urgence d'apprendre (alerte ou question aux moments forts), sans peur ni
    fausse promesse. Le spectateur doit COMPRENDRE à quoi ça sert et comment on fait.
 11. En cas de doute sur une photo, choisis une animation explicative : une illustration juste vaut mieux qu'une photo
-   approximative."""
+   approximative.
+12. Chaque scène "photo" a aussi une clé "image" : la description EN ANGLAIS (25 à 50 mots) de l'image à créer par
+   l'IA, qui montre EXACTEMENT ce que dit la phrase : qui (personnes africaines, âge, tenue), fait quoi, où (Lomé,
+   boutique, bureau, salle de classe…), quel objet à l'écran, l'ambiance ; jamais de texte écrit ni de logo dans
+   l'image."""
 MISES = {"plein", "double", "partage"}
 OUTILS_NOMS = ["Claude Code", "Codex", "ChatGPT", "Claude", "Gemini", "Perplexity", "Canva", "CapCut", "Midjourney",
                "WhatsApp", "Copilot", "Cursor", "Lovable", "Suno", "Kling", "Veo", "Sora", "n8n", "Make", "Zapier"]

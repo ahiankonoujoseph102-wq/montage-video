@@ -311,6 +311,11 @@ e-mail = demande de correction, refaite et renvoyée.
   PARTAGE », « Consultation gratuite », « Lien dans la bio », WhatsApp), effet `carton`.
 - **Début et voix** : parole dès la première image (0,05 s avant le premier mot), silences de plus de 0,6 s ramenés
   à 0,35 s ; chaîne radio sans porte de bruit, compression lente, gain constant (mesuré : plus de « coupures »).
+- **Images créées par l'IA** (`image_ia` dans `scripts/medias.py`) : pour chaque scène photo, image verticale
+  créée d'après la phrase (clé `image` du plan, description en anglais écrite par Gemini) avec Cloudflare Workers AI
+  (`@cf/leonardo/lucid-origin` 768 × 1344, secours `flux-1-schnell`) ; secrets `CLOUDFLARE_ACCOUNT_ID`,
+  `CLOUDFLARE_API_TOKEN` ; sans eux ou en cas d'échec, banques d'images. Relais texte quand Gemini est saturé :
+  Groq (`GROQ_API_KEY`, `openai/gpt-oss-120b`, en-tête User-Agent obligatoire sinon 403).
 - **Photos** : tout texte incrusté (crédit, site, filigrane) flouté automatiquement (`flouter_textes`, Tesseract) ;
   ordre : Pexels (`PEXELS_API_KEY` ; nouvelles clés suspendues par Pexels en 11/2026), Pixabay (`PIXABAY_API_KEY`,
   gratuit, sans filigrane), Openverse/Flickr en dernier recours ; crédit jamais affiché sur l'image (crédits CC BY
