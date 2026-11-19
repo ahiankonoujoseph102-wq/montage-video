@@ -17,59 +17,7 @@
   },
   {
    "modele": "gemini-3.5-flash-lite",
-   "secondes": 9.0
-  },
-  {
-   "modele": "gemini-pro-latest",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.1-pro-preview",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-pro-latest",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.1-pro-preview",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.5-flash-lite",
-   "secondes": 1.7
-  },
-  {
-   "modele": "gemini-pro-latest",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.1-pro-preview",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.5-flash-lite",
-   "secondes": 2.0
-  },
-  {
-   "modele": "gemini-pro-latest",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.1-pro-preview",
-   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
-   "secondes": 0.1
-  },
-  {
-   "modele": "gemini-3.5-flash-lite",
-   "secondes": 2.0
+   "secondes": 9.2
   },
   {
    "modele": "gemini-pro-latest",
@@ -97,7 +45,7 @@
   },
   {
    "modele": "gemini-3.5-flash-lite",
-   "secondes": 1.5
+   "secondes": 2.0
   },
   {
    "modele": "gemini-pro-latest",
@@ -111,10 +59,60 @@
   },
   {
    "modele": "gemini-3.5-flash-lite",
-   "secondes": 6.0
+   "secondes": 3.6
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.1-pro-preview",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 3.7
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.1-pro-preview",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 1.9
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.1-pro-preview",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 1.8
   },
   {
    "verification": {}
+  },
+  {
+   "demo": "gemini-3.5-flash-lite",
+   "prompt": "Crée un site web avec Claude Code et Codex"
+  },
+  {
+   "demo": "gemini-3.5-flash-lite",
+   "prompt": "Réponds à la question client sur les horaires de livraison à"
   },
   {
    "demo": "gemini-3.5-flash-lite",

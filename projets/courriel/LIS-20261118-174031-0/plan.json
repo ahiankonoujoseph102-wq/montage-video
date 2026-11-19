@@ -5,8 +5,7 @@
    "texte": "5 BUSINESS RENTABLES\nAVEC L'IA EN 2026",
    "emoji": "1f680",
    "geste": "pouce",
-   "expression": "surpris",
-   "mise": "plein"
+   "expression": "surpris"
   },
   {
    "type": "question",
@@ -14,17 +13,15 @@
    "sous": "Lancer en 2026",
    "emoji": "1f914",
    "geste": "explique",
-   "expression": "parle",
-   "mise": "double"
+   "expression": "parle"
   },
   {
    "type": "photo",
    "recherche": "african businessman working laptop office",
    "texte": "DÉVELOPPER VOS REVENUS",
-   "image": "An African businessman working on a laptop in a modern office in Lomé, smiling while looking at financial charts on screen.",
-   "mise": "plein",
-   "fichier": "test-auto/photos/02.mp4",
-   "credit": "Pixabay · Coverr-Free-Footage"
+   "image": "An African businessman working on a laptop in a modern brightly lit office in Lomé, focused expression, professional attire, clean desk with a notebook and pen, professional lighting.",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Image"
   },
   {
    "type": "carte",
@@ -33,8 +30,7 @@
    "sous": "Opportunités extraordinaires",
    "emoji": "2728",
    "geste": "explique",
-   "expression": "sourire",
-   "mise": "partage"
+   "expression": "sourire"
   },
   {
    "type": "liste",
@@ -49,11 +45,11 @@
      "a": "business"
     },
     {
-     "texte": "Contenus",
+     "texte": "Contenu",
      "a": "lancer"
     },
     {
-     "texte": "Vidéos",
+     "texte": "Publicités",
      "a": "grâce"
     },
     {
@@ -61,7 +57,7 @@
      "a": "elle."
     }
    ],
-   "mise": "double"
+   "mise": "plein"
   },
   {
    "type": "numero",
@@ -69,42 +65,39 @@
    "texte": "SITES WEB &\nAPPLICATIONS",
    "emoji": "1f4a1",
    "geste": "compte",
-   "doigts": 1,
-   "mise": "partage"
+   "doigts": 1
   },
   {
-   "type": "photo",
-   "recherche": "african programmer writing code laptop",
-   "texte": "CRÉER DES APPS",
-   "image": "An African software developer writing code on a laptop computer displaying lines of code in a bright workspace.",
-   "mise": "plein",
-   "fichier": "test-auto/photos/06.mp4",
-   "credit": "Pixabay · Ceos_Stock"
-  },
-  {
-   "type": "deux",
-   "gauche": {
-    "texte": "Claude Code",
-    "ok": true
-   },
-   "droite": {
-    "texte": "Codex",
-    "ok": true
-   },
-   "a": [
-    "Claude",
-    "Codex"
+   "type": "outil",
+   "outils": [
+    {
+     "id": "claude",
+     "nom": "Claude",
+     "site": "claude.ai",
+     "logo": true,
+     "capture": true
+    }
    ],
-   "mise": "double"
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "claude",
+   "prompt": "Crée un site web avec Claude Code et Codex",
+   "reponse": "Bonjour ! Je peux t'aider.\nAssocier Claude et Codex\nest une excellente idée.\nVoici comment procéder\nétape par étape :",
+   "geste": "designe",
+   "mise": "plein",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "Claude",
+   "logo": true
   },
   {
    "type": "photo",
    "recherche": "african store owner digital tablet",
    "texte": "GESTION COMMERCE",
-   "image": "An African store owner using a digital tablet to manage inventory inside a local shop in Lomé.",
-   "mise": "plein",
+   "image": "An African store owner using a digital tablet smiling inside a well-stocked modern shop in Lomé, warm lighting, shelves with products in the background.",
    "fichier": "test-auto/photos/08.jpg",
-   "credit": "Pixabay · kaboompics"
+   "credit": "Image"
   },
   {
    "type": "carte",
@@ -112,75 +105,61 @@
    "texte": "VENDRE VOS\nSERVICES IA",
    "emoji": "1f4aa",
    "geste": "designe",
-   "expression": "parle",
-   "mise": "partage"
+   "expression": "parle"
   },
   {
    "type": "numero",
    "n": 2,
-   "texte": "AGENTS IA\nINTELLIGENTS",
+   "texte": "VENTE D'AGENTS\nINTELLIGENTS",
    "emoji": "1f9e0",
    "geste": "compte",
-   "doigts": 2,
-   "mise": "partage"
+   "doigts": 2
   },
   {
    "type": "photo",
-   "recherche": "african tech entrepreneur office desk",
-   "texte": "AGENTS IA",
-   "image": "An African tech entrepreneur working in a modern office, developing AI agents on a dual-monitor computer setup.",
-   "mise": "plein",
+   "recherche": "african woman using smartphone whatsapp",
+   "texte": "AGENTS INTELLIGENTS",
+   "image": "An African woman smiling while looking at her smartphone in a bright living room, chatting on a messaging app, relaxed and happy atmosphere.",
    "fichier": "test-auto/photos/11.jpg",
-   "credit": "Pixabay · StartupStockPhotos"
-  },
-  {
-   "type": "carte",
-   "kicker": "AUTOMATISATION",
-   "texte": "RÉPONSES ET\nRDV CLIENTS",
-   "emoji": "1f4ac",
-   "geste": "explique",
-   "expression": "sourire",
-   "mise": "double"
+   "credit": "Image"
   },
   {
    "type": "reponseIA",
-   "texte": "Bonjour ! Je prends votre rendez-vous pour demain à 14h."
+   "texte": "Bonjour ! Je suis l'agent IA de la boutique. Comment puis-je vous aider ?",
+   "emoji": "1f4ac"
   },
   {
-   "type": "photo",
-   "recherche": "african woman shop smartphone whatsapp",
-   "texte": "WHATSAPP 24H/24",
-   "image": "An African woman smiling while using a smartphone for business in a well-lit local boutique.",
-   "mise": "plein",
-   "fichier": "test-auto/photos/14.jpg",
-   "credit": "Pixabay · LoboStudioHamburg"
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Réponds à la question client sur les horaires de livraison à Lomé",
+   "reponse": "Bonjour, pour vos livraisons\nà Lomé, nous livrons\ndu lundi au samedi\nde 8h00 à 18h00.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
   },
   {
    "type": "numero",
    "n": 3,
-   "texte": "CRÉATION DE\nCONTENUS",
+   "texte": "AUTOMATISATION\nDE CONTENUS",
    "emoji": "1f525",
    "geste": "compte",
-   "doigts": 3,
-   "mise": "partage"
+   "doigts": 3
   },
   {
    "type": "photo",
-   "recherche": "african creator tired desk papers",
-   "texte": "TROP DE TEMPS",
-   "image": "An African content creator looking tired and overwhelmed at a desk with many papers and a laptop.",
-   "mise": "plein",
-   "fichier": "test-auto/photos/16.jpg",
-   "credit": "Pixabay · daha3131053"
+   "recherche": "african woman stress desk social media",
+   "texte": "PERTE DE TEMPS",
+   "image": "An African woman looking stressed at her office desk surrounded by papers and a computer showing social media icons, working late in Lomé.",
+   "fichier": "test-auto/photos/15.jpg",
+   "credit": "Image"
   },
   {
    "type": "carte",
-   "kicker": "SYSTÈME",
-   "texte": "GÉNÉREZ TOUT\nAUTOMATIQUEMENT",
+   "kicker": "SOLUTION",
+   "texte": "AUTOMATISEZ\nLES VIDÉOS",
    "emoji": "1f680",
    "geste": "pouce",
-   "expression": "sourire",
-   "mise": "double"
+   "expression": "sourire"
   },
   {
    "type": "prompt",
@@ -189,22 +168,28 @@
   },
   {
    "type": "reponseIA",
-   "texte": "Email reçu ! Vidéo générée et programmée pour diffusion automatique.",
+   "texte": "Email reçu ! Vidéo générée et programmée pour diffusion automatique à 18h.",
    "emoji": "2728"
   },
   {
+   "type": "question",
+   "texte": "LE SAVIEZ VOUS ?",
+   "sous": "Regardez cette vidéo",
+   "emoji": "1f914",
+   "geste": "designe",
+   "expression": "surpris"
+  },
+  {
    "type": "reponseIA",
-   "texte": "Vidéo générée et programmée automatiquement.",
-   "emoji": "2728",
-   "mise": "plein"
+   "texte": "Vidéo générée avec succès et prête pour publication !",
+   "emoji": "2728"
   },
   {
    "type": "question",
-   "texte": "VOUS SAVEZ\nQUOI ?",
-   "sous": "La suite",
+   "texte": "DEVINEZ QUOI ?",
+   "sous": "Regardez bien",
    "emoji": "1f914",
-   "mise": "double",
-   "geste": "explique",
+   "geste": "designe",
    "expression": "surpris"
   },
   {
@@ -212,43 +197,38 @@
    "kicker": "COULISSES",
    "texte": "VIDÉO 100%\nAUTOMATISÉE",
    "emoji": "1f680",
-   "mise": "plein",
-   "geste": "pouce",
+   "geste": "explique",
    "expression": "sourire"
   },
   {
    "type": "carte",
    "kicker": "BUSINESS",
-   "texte": "VENDEZ CETTE\nSOLUTION",
+   "texte": "VENDEZ CETte\nSOLUTION",
    "emoji": "1f4a1",
-   "mise": "partage",
-   "geste": "bras-croises",
+   "geste": "pouce",
    "expression": "parle"
   },
   {
    "type": "numero",
    "n": 4,
-   "texte": "VIDÉOS\nPUBLICITAIRES",
+   "texte": "VIDÉOS PUBLICITAIRES\nAVEC L'IA",
    "emoji": "1f3af",
-   "mise": "double",
    "geste": "compte",
    "doigts": 4
   },
   {
    "type": "photo",
-   "recherche": "african street market products sale",
+   "recherche": "african merchant market smartphone",
    "texte": "PROMOTION PRODUITS",
-   "image": "An energetic African street market scene with colorful products on display and local vendors smiling.",
-   "mise": "plein",
+   "image": "An African merchant in a lively colorful market in Lomé showing products on a smartphone, sunny day, vibrant atmosphere.",
    "fichier": "test-auto/photos/25.jpg",
-   "credit": "Pixabay · stevepb"
+   "credit": "Image"
   },
   {
    "type": "demo",
    "outil": "claude",
    "prompt": "Écris un script publicitaire captivant pour une marque de jus locaux",
-   "reponse": "Envie de fraîcheur locale ?\nLe vrai goût des fruits d'ici.\n100% naturels et pressés.\nPrêts à savourer l'été ?",
-   "mise": "partage",
+   "reponse": "Le vrai goût du fruit.\n100% local et frais.\nPressé près de chez vous.\nOsez la différence.\nÉcoutez ça :",
    "note": "Réponse réelle obtenue avec Gemini",
    "nom": "Claude",
    "logo": true
@@ -256,109 +236,106 @@
   {
    "type": "carte",
    "kicker": "SERVICES",
-   "texte": "OFFREZ CE\nSERVICE",
+   "texte": "OFFREZ CE SERVICE\nAUX MARQUES",
    "emoji": "1f4aa",
-   "mise": "double",
-   "geste": "pouce",
-   "expression": "sourire"
+   "geste": "bras-croises",
+   "expression": "neutre"
   },
   {
    "type": "carte",
    "kicker": "ACTIVITÉ",
-   "texte": "LANCEZ VOTRE\nCOMMERCE",
+   "texte": "CRÉEZ VOTRE\nCOMMERCE",
    "emoji": "1f389",
-   "mise": "plein",
-   "geste": "explique",
-   "expression": "parle"
+   "geste": "pouce",
+   "expression": "sourire"
   },
   {
    "type": "numero",
    "n": 5,
-   "texte": "FORMATION &\nCONSEIL",
-   "mise": "double",
+   "texte": "FORMATION &\nCONSEIL EN IA",
+   "emoji": "1f3af",
    "geste": "compte",
    "doigts": 4
   },
   {
-   "type": "carte",
-   "kicker": "FORMATION",
-   "texte": "CONSEIL ET\nFORMATION IA",
-   "emoji": "1f4a1",
-   "mise": "plein",
-   "geste": "explique",
-   "expression": "sourire"
+   "type": "photo",
+   "recherche": "african AI training expert workshop",
+   "texte": "CONSEIL EN IA",
+   "image": "An African AI consultant explaining complex machine learning models on a large screen to attentive entrepreneurs in a modern tech hub in Lomé.",
+   "mise": "partage",
+   "fichier": "test-auto/photos/30.jpg",
+   "credit": "Image"
   },
   {
    "type": "photo",
-   "recherche": "african business team training workshop",
-   "texte": "ACCOMPAGNER\nLES ÉQUIPES",
-   "image": "An African business professional conducting a training workshop in a modern office with colleagues taking notes.",
+   "recherche": "african business team training classroom",
+   "texte": "FORMEZ VOS ÉQUIPES",
+   "image": "An African business trainer presenting AI solutions on a whiteboard to a group of engaged African entrepreneurs in a modern office in Lomé.",
    "mise": "plein",
    "fichier": "test-auto/photos/31.jpg",
-   "credit": "Pixabay · DiggityMarketing"
+   "credit": "Image"
   },
   {
    "type": "carte",
    "kicker": "ACTIVITÉ",
-   "texte": "DÉVELOPPEZ\nVOTRE ACTIVITÉ",
-   "emoji": "1f389",
-   "mise": "double",
-   "geste": "pouce",
-   "expression": "sourire"
+   "texte": "ACTIVITÉ\nPROFESSIONNELLE",
+   "emoji": "1f4aa",
+   "geste": "bras-croises",
+   "expression": "neutre",
+   "mise": "double"
   },
   {
    "type": "question",
-   "texte": "COMMENT PROFITER\nDES OPPORTUNITÉS ?",
-   "sous": "Passez à l'action",
+   "texte": "COMMENT PROFITER\nDE CES OPPORTUNITÉS ?",
    "emoji": "2753",
-   "mise": "plein",
    "geste": "explique",
-   "expression": "surpris"
+   "expression": "surpris",
+   "mise": "plein"
   },
   {
    "type": "carte",
    "kicker": "EXIGENCE",
    "texte": "APPRENDRE LES\nCOMPÉTENCES",
-   "emoji": "1f4aa",
-   "mise": "double",
+   "emoji": "1f4a1",
    "geste": "designe",
-   "expression": "neutre"
+   "expression": "neutre",
+   "mise": "double"
   },
   {
    "type": "alerte",
    "texte": "MAÎTRISEZ L'IA\nAVANT DE VENDRE",
    "emoji": "26a0_fe0f",
-   "mise": "plein",
    "geste": "bras-croises",
-   "expression": "grimace"
+   "expression": "grimace",
+   "mise": "plein"
   },
   {
    "type": "photo",
    "recherche": "african student reading laptop study",
-   "texte": "INVESTISSEZ\nEN VOUS",
-   "image": "An African student focused on studying with a laptop and notebooks on a wooden table.",
+   "texte": "INVESTISSEZ EN VOUS",
+   "image": "An African student deeply focused on online courses using a laptop with books around in a quiet library in Lomé, soft lighting.",
    "mise": "plein",
    "fichier": "test-auto/photos/36.jpg",
-   "credit": "Pixabay · JESHOOTS-com"
+   "credit": "Image"
   },
   {
    "type": "carte",
    "kicker": "CONFIEZ-NOUS",
    "texte": "LOMÉ IA\nSCHOOL",
    "sous": "Votre partenaire IA",
-   "emoji": "1f680",
-   "mise": "double",
+   "emoji": "1f389",
    "geste": "pouce",
-   "expression": "sourire"
+   "expression": "sourire",
+   "mise": "double"
   },
   {
    "type": "carte",
    "kicker": "FORMATION",
-   "texte": "EXPERT\nPRATIQUE",
-   "emoji": "1f3af",
-   "mise": "plein",
+   "texte": "COMPÉTENCES\nPRATIQUES",
+   "emoji": "1f4a1",
    "geste": "explique",
-   "expression": "parle"
+   "expression": "parle",
+   "mise": "partage"
   },
   {
    "type": "deux",
@@ -374,82 +351,73 @@
     "particulier,",
     "entreprise"
    ],
-   "mise": "partage",
    "geste": "explique",
-   "expression": "sourire"
+   "expression": "sourire",
+   "mise": "plein"
   },
   {
    "type": "carte",
    "kicker": "SUR MESURE",
    "texte": "CONCEPTION ET\nIMPLÉMENTATION",
    "emoji": "1f4a1",
-   "mise": "plein",
    "geste": "explique",
-   "expression": "sourire"
-  },
-  {
-   "type": "carte",
-   "kicker": "ACTION",
-   "texte": "CONTACTEZ-NOUS\nDÈS MAINTENANT",
-   "mise": "double",
-   "geste": "pouce",
-   "expression": "sourire"
+   "expression": "sourire",
+   "mise": "plein"
   },
   {
    "type": "carte",
    "kicker": "APPELEZ",
+   "texte": "CONTACTEZ-NOUS\nDÈS MAINTENANT",
+   "emoji": "1f44b",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "double"
+  },
+  {
+   "type": "carte",
+   "kicker": "NUMÉRO",
    "texte": "72 24 02 31\n79 16 23 90",
-   "mise": "plein",
    "geste": "designe",
-   "expression": "parle"
+   "expression": "parle",
+   "mise": "plein"
   },
   {
    "type": "alerte",
-   "texte": "FINI 1990\nPLACE À 2026",
-   "emoji": "1f680",
-   "mise": "partage",
+   "texte": "NE TRAVAILLEZ PLUS\nCOMME EN 1990 !",
+   "emoji": "26a0_fe0f",
    "geste": "bras-croises",
-   "expression": "surpris"
+   "expression": "grimace",
+   "mise": "plein"
   },
   {
-   "type": "photo",
-   "recherche": "african modern office productivity success",
-   "texte": "GAGNEZ\nDU TEMPS",
-   "image": "An African business person smiling in a modern office, working efficiently with advanced technology.",
-   "mise": "plein",
-   "fichier": "test-auto/photos/44.jpg",
-   "credit": "Pixabay · StockSnap"
+   "type": "carte",
+   "kicker": "PRODUCTIVITÉ",
+   "texte": "PRENEZ UNE LONGUEUR\nD'AVANCE",
+   "emoji": "1f680",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "double"
   },
   {
    "type": "carte",
    "kicker": "LOMÉ IA SCHOOL",
-   "texte": "MAÎTRISER L'IA\nET FORMATION",
+   "texte": "MAÎTRISER L'IA ET\nTRANSFORMER VOS\nCOMPÉTENCES",
    "sous": "72 24 02 31",
    "emoji": "1f389",
-   "mise": "double",
    "geste": "pouce",
-   "expression": "sourire"
+   "expression": "sourire",
+   "mise": "plein"
   }
  ],
  "fond": [
-  "violet",
   "bleu",
-  "nuit",
-  "orange",
-  "vert",
-  "rose",
   "violet",
-  "bleu",
-  "nuit",
-  "orange",
-  "violet",
-  "bleu",
   "orange",
   "nuit",
   "vert",
   "rose",
-  "violet",
   "bleu",
+  "violet",
   "orange",
   "nuit",
   "bleu",
@@ -471,7 +439,17 @@
   "bleu",
   "violet",
   "orange",
+  "nuit",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
   "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
   "bleu",
   "violet",
   "orange",
