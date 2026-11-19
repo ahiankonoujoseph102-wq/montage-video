@@ -131,14 +131,29 @@ jobs:
 
       - name: Installer ce qui manque
         if: env.ID != ''
-        timeout-minutes: 15
+        timeout-minutes: 25
         run: |
+          # Le miroir Ubuntu de GitHub reste parfois bloqué (15 min perdues le 19/11) : essais courts, puis miroir
+          # officiel d'Ubuntu, puis ffmpeg statique en dernier recours (tesseract seul manquant = pas de floutage).
+          apt_essai() {
+            timeout -k 10 150 sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=15 update -qq || true
+            timeout -k 10 240 sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=15 install -y -qq --no-install-recommends ffmpeg tesseract-ocr > /dev/null || true
+          }
           for i in 1 2 3; do
             command -v ffmpeg > /dev/null && command -v tesseract > /dev/null && break
-            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 update -qq || true
-            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 install -y -qq --no-install-recommends ffmpeg tesseract-ocr > /dev/null || true
+            if [ "$i" = 2 ]; then
+              echo "Miroir bloqué : passage au miroir officiel d'Ubuntu"
+              sudo sed -i 's#http://azure.archive.ubuntu.com#http://archive.ubuntu.com#g' /etc/apt/sources.list /etc/apt/sources.list.d/*.sources 2>/dev/null || true
+            fi
+            apt_essai
           done
+          if ! command -v ffmpeg > /dev/null; then
+            echo "apt indisponible : ffmpeg statique"
+            curl -sSL --retry 3 -m 300 https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar -xJ -C "$RUNNER_TEMP"
+            sudo cp "$RUNNER_TEMP"/ffmpeg-*-static/ffmpeg "$RUNNER_TEMP"/ffmpeg-*-static/ffprobe /usr/local/bin/
+          fi
           command -v ffmpeg
+          command -v tesseract || echo "⚠️ tesseract absent : textes des photos non floutés"
           if [ "${{ steps.venv.outputs.cache-hit }}" != "true" ]; then
             python -m venv ~/venv-courriel
             ~/venv-courriel/bin/pip install -q faster-whisper "av<16" pyloudnorm scipy numpy pillow
