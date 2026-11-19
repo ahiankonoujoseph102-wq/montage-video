@@ -31,8 +31,11 @@ const S = (s: number) => Math.round(s * FPS);
 
 export type Scene = {type: string; texte?: string; kicker?: string; sous?: string; emoji?: string; n?: number;
   gauche?: {texte: string; ok: boolean}; droite?: {texte: string; ok: boolean}; a?: string | string[];
-  titre?: string; items?: {texte: string; a: string}[]; lignes?: string[]; geste?: string; doigts?: number;
-  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; mise?: string; nom?: string; note?: string; fichier?: string; credit?: string; recherche?: string};
+  titre?: string; items?: {texte: string; a: string; ok?: boolean}[]; lignes?: string[]; geste?: string; doigts?: number;
+  expression?: string; outil?: string; outils?: OutilScene[]; prompt?: string; reponse?: string; logo?: boolean; mise?: string; nom?: string; note?: string; fichier?: string; credit?: string; recherche?: string;
+  eteint?: boolean; depart?: number;
+  calc?: {texte: string; montant: number; a: string; total?: boolean}[]; etapes?: {texte: string; a: string; doute?: boolean}[];
+  cartes?: {texte: string; a: string}[]; de?: number; vers?: number};
 export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
@@ -240,7 +243,7 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
                 background: '#fff', display: 'flex', alignItems: 'center', gap: 28, padding: '0 30px',
                 transform: `translateX(${(1 - Math.min(1, ki)) * 600}px)`, opacity: ki > 0 ? 1 : 0,
                 boxShadow: '0 14px 28px rgba(0,0,0,0.35)'}}>
-                <Marque ok k={pop(f, a, 260)} taille={n > 4 ? 62 : 74} />
+                <Marque ok={it.ok !== false} k={pop(f, a, 260)} taille={n > 4 ? 62 : 74} />
                 <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: n > 4 ? 48 : 56, color: '#1B1B2F', whiteSpace: 'nowrap'}}>{it.texte}</div>
               </div>
             );
@@ -366,7 +369,10 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
       // Photo ou vidéo libre de droits (Pexels ou domaine public / CC0), lent zoom ; source dans sources.json.
       const z = interpolate(f, [0, Math.max(1, duree)], [1.02, 1.14], clamp);
       const h = c.h ?? HAUT;
-      const style: React.CSSProperties = {width: 1080, height: h, objectFit: 'cover', transform: `scale(${z})`};
+      // « eteint » : le rêve s'éteint doucement (couleurs puis lumière qui baissent sur la fin de la phrase).
+      const gris = s.eteint ? interpolate(f, [duree * 0.45, Math.max(duree * 0.45 + 1, duree - 4)], [0, 1], clamp) : 0;
+      const style: React.CSSProperties = {width: 1080, height: h, objectFit: 'cover', transform: `scale(${z})`,
+        filter: gris ? `grayscale(${gris}) brightness(${1 - 0.45 * gris})` : undefined};
       const src = staticFile(s.fichier ?? '');
       return (
         <>
@@ -387,6 +393,174 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
           <Emoji code="2728" x={850} y={760} taille={170} a={10} />
         </>
       );
+    case 'chiffre': {
+      // Chiffre clé en très grand, doré, qui arrive avec un rebond.
+      const kc = pop(f, 3, 260, 9);
+      return (
+        <>
+          {s.kicker ? <Kicker texte={s.kicker} y={250} k={k} /> : null}
+          <Gros texte={s.texte ?? ''} y={400} max={150} couleur={OR} k={kc} />
+          {s.sous ? <Gros texte={s.sous} y={600} max={80} k={pop(f, 10)} /> : null}
+          <Emoji code={s.emoji} x={CX} y={800} taille={160} a={14} />
+        </>
+      );
+    }
+    case 'calcul': {
+      // Le compte du mois : chaque ligne arrive sur son mot et le solde se vide en direct (compteur animé).
+      const lignes = s.calc ?? [];
+      const fmt = (v: number) => `${Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')} F`;
+      const ancres = lignes.map((l) => c.motA(l.a));
+      const base = (lignes[0]?.montant ?? 0) > 0 ? 0 : (s.depart ?? 0);
+      const solde = base + lignes.reduce((t, l, i) => l.total ? t : t + l.montant *
+        interpolate(f, [ancres[i], ancres[i] + 14], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)}), 0);
+      const pas = Math.min(104, 430 / Math.max(3, lignes.length));
+      const aSolde = lignes.some((l) => l.total);
+      const faible = solde < (s.depart ?? 1) * 0.2;
+      return (
+        <>
+          <Kicker texte={s.titre ?? ''} y={215} k={k} />
+          {lignes.map((l, i) => {
+            const kl = pop(f, Math.max(0, ancres[i] - 2), 240);
+            const rouge = l.montant < 0;
+            return (
+              <div key={i} style={{position: 'absolute', left: 110, top: 300 + i * pas, width: 780, height: pas - 16,
+                borderRadius: 26, background: l.total ? OR : '#fff', display: 'flex', alignItems: 'center',
+                justifyContent: 'space-between', padding: '0 34px', boxShadow: '0 14px 28px rgba(0,0,0,0.35)',
+                transform: `translateX(${(1 - Math.min(1, kl)) * -700}px)`, opacity: kl > 0 ? 1 : 0}}>
+                <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 46, color: '#1B1B2F'}}>{l.texte}</div>
+                <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 50, color: l.total ? '#1B1446' : rouge ? ROUGE : '#159947'}}>
+                  {l.total ? fmt(solde) : `${rouge ? '−' : '+'}${fmt(Math.abs(l.montant))}`}</div>
+              </div>
+            );
+          })}
+          {!aSolde ? (
+            <div style={{position: 'absolute', left: 60, width: 880, top: 300 + lignes.length * pas + 8, textAlign: 'center',
+              fontFamily: POLICE, fontWeight: 900, fontSize: 88, color: faible ? ROUGE : BLANC, whiteSpace: 'nowrap',
+              WebkitTextStroke: '12px #0B0F2E', paintOrder: 'stroke fill',
+              transform: `scale(${faible ? 1 + 0.04 * Math.sin(f / 3) : 1})`}}>
+              {`RESTE : ${fmt(Math.max(0, solde))}`}
+            </div>
+          ) : null}
+        </>
+      );
+    }
+    case 'chemin': {
+      // Le parcours, étape par étape, relié par des flèches ; la dernière étape (doute) reste suspendue à un « ? ».
+      const etapes = s.etapes ?? [];
+      const n = etapes.length;
+      const pas = Math.min(130, 560 / Math.max(3, n));
+      return (
+        <>
+          <Kicker texte={s.titre ?? ''} y={205} k={k} />
+          {etapes.map((e, i) => {
+            const a = e.a ? c.motA(e.a) : 0;
+            const ke = pop(f, Math.max(0, a - 2), 230);
+            const y = 310 + i * pas;
+            const doute = !!e.doute;
+            return (
+              <React.Fragment key={i}>
+                {i > 0 ? <div style={{position: 'absolute', left: CX - 6, top: y - pas * 0.32, width: 12, height: pas * 0.3,
+                  background: OR, opacity: ke > 0 ? 1 : 0, borderRadius: 6}} /> : null}
+                <div style={{position: 'absolute', left: CX - 260, top: y, width: 520, height: pas * 0.66, borderRadius: 999,
+                  background: doute ? 'rgba(255,255,255,0.12)' : '#fff', border: doute ? `6px dashed ${OR}` : 'none',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18,
+                  transform: `scale(${ke}) rotate(${doute ? Math.sin(f / 6) * 2.5 : 0}deg)`, opacity: ke > 0 ? 1 : 0,
+                  boxShadow: '0 12px 26px rgba(0,0,0,0.35)'}}>
+                  <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: Math.min(58, pas * 0.4),
+                    color: doute ? OR : '#1B1B2F'}}>{e.texte}</div>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </>
+      );
+    }
+    case 'annee': {
+      // 2026 qui bascule vers 2027 : le temps presse.
+      const de = s.de ?? 2026;
+      const vers = s.vers ?? de + 1;
+      const t = interpolate(f, [Math.max(10, duree * 0.45), Math.max(14, duree * 0.45 + 10)], [0, 1], clamp);
+      const tremble = t > 0 && t < 1 ? Math.sin(f * 2) * 6 : 0;
+      return (
+        <>
+          <Kicker texte="LE TEMPS PRESSE" y={250} k={k} />
+          <div style={{position: 'absolute', left: 0, width: 1080, top: 380, height: 260, overflow: 'hidden',
+            transform: `translateX(${tremble}px)`}}>
+            {[de, vers].map((an, i) => (
+              <div key={an} style={{position: 'absolute', left: 0, width: 1000, top: (i - t) * 260, textAlign: 'center',
+                fontFamily: POLICE, fontWeight: 900, fontSize: 230, lineHeight: '260px', color: i ? OR : BLANC,
+                WebkitTextStroke: '18px #0B0F2E', paintOrder: 'stroke fill'}}>{an}</div>
+            ))}
+          </div>
+          <Emoji code={s.emoji} x={CX} y={780} taille={170} a={Math.max(14, Math.round(duree * 0.45 + 8))} />
+        </>
+      );
+    }
+    case 'cadenas': {
+      // Les réponses de la partie 2, encore verrouillées : on donne envie sans rien dévoiler.
+      const cartes = s.cartes ?? [];
+      const n = cartes.length;
+      const pas = Math.min(170, 540 / Math.max(2, n));
+      return (
+        <>
+          <Kicker texte="DANS LA PARTIE 2" y={215} k={k} />
+          {cartes.map((cte, i) => {
+            const a = cte.a ? c.motA(cte.a) : 0;
+            const kc = pop(f, Math.max(0, a - 2), 230);
+            return (
+              <div key={i} style={{position: 'absolute', left: 140, top: 320 + i * pas, width: 720, height: pas - 30,
+                borderRadius: 30, background: 'rgba(255,255,255,0.14)', border: '4px solid rgba(255,255,255,0.6)',
+                display: 'flex', alignItems: 'center', gap: 30, padding: '0 36px', backdropFilter: 'blur(6px)',
+                transform: `scale(${kc})`, opacity: kc > 0 ? 1 : 0}}>
+                <div style={{fontSize: 70, transform: `rotate(${Math.sin((f + i * 11) / 7) * 8}deg)`}}>🔒</div>
+                <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 58, color: BLANC, filter: 'blur(0.6px)', whiteSpace: 'nowrap',
+                  WebkitTextStroke: '8px #0B0F2E', paintOrder: 'stroke fill'}}>{cte.texte}</div>
+              </div>
+            );
+          })}
+        </>
+      );
+    }
+    case 'partie2': {
+      const pulse = 1 + 0.04 * Math.sin(f / 5);
+      return (
+        <>
+          <div style={{position: 'absolute', left: CX - 330, top: 270, width: 660, height: 660, borderRadius: 330,
+            background: `radial-gradient(circle, rgba(255,201,40,${0.35 + 0.15 * Math.sin(f / 6)}) 0%, rgba(255,201,40,0) 70%)`}} />
+          <Gros texte={s.texte ?? ''} y={420} max={170} couleur={OR} k={k * pulse} />
+          {s.sous ? <Gros texte={s.sous} y={640} max={80} k={pop(f, 8)} /> : null}
+          <Emoji code={s.emoji} x={840} y={330} taille={170} a={10} />
+        </>
+      );
+    }
+    case 'commentaire': {
+      // Appel à l'action : bouton « S'abonner » puis commentaire « PARTIE 2 » tapé dans une bulle TikTok (sans logo).
+      const kb = pop(f, 2, 220);
+      const ka = pop(f, Math.round(duree * 0.4), 220);
+      const txt = s.texte ?? '';
+      const nTape = Math.floor(interpolate(f, [Math.round(duree * 0.4) + 6, Math.round(duree * 0.4) + 26], [0, txt.length], clamp));
+      const clic = f > 16 && f < 24;
+      return (
+        <>
+          <div style={{position: 'absolute', left: CX - 280, top: 250, width: 560, height: 150, borderRadius: 75,
+            background: clic || f >= 24 ? '#3A3F55' : '#FE2C55', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontFamily: POLICE, fontWeight: 900, fontSize: 64, color: '#fff', transform: `scale(${kb * (clic ? 0.92 : 1)})`,
+            boxShadow: '0 18px 36px rgba(0,0,0,0.45)'}}>{f >= 24 ? 'Abonné ✓' : "S'abonner"}</div>
+          <div style={{position: 'absolute', left: 90, top: 480, width: 840, borderRadius: 34, background: '#fff', padding: '30px 34px',
+            display: 'flex', alignItems: 'center', gap: 24, transform: `translateY(${(1 - Math.min(1, ka)) * 300}px)`,
+            opacity: ka > 0 ? 1 : 0, boxShadow: '0 24px 50px rgba(0,0,0,0.45)'}}>
+            <div style={{width: 96, height: 96, borderRadius: 48, background: '#6D4BFF', flexShrink: 0, display: 'flex',
+              alignItems: 'center', justifyContent: 'center', fontSize: 52}}>🙋🏾</div>
+            <div>
+              <div style={{fontFamily: POLICE, fontWeight: 700, fontSize: 30, color: '#8A8FA3'}}>Ton commentaire</div>
+              <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: 76, color: '#1B1B2F'}}>
+                {txt.slice(0, nTape)}<span style={{opacity: nTape < txt.length && f % 16 < 8 ? 1 : 0}}>|</span></div>
+            </div>
+          </div>
+          <Emoji code={s.emoji} x={860} y={820} taille={150} a={Math.round(duree * 0.4) + 28} />
+        </>
+      );
+    }
     default:
       return null;
   }

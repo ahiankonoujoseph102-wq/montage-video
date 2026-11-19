@@ -219,7 +219,7 @@ def main():
     energie = np.clip(e / (np.percentile(e, 95) + 1e-9), 0, 1)
     visemes = visemes_images(reconnus, n_img, energie)
     # 4. Son : musique de Joseph sous la voix (16 LU, +6 dB dans les pauses), effets aux changements de scène.
-    mus = lire(ROOT / "sons" / "musique_defaut.m4a")
+    mus = lire(Path(os.environ.get("MUSIQUE") or ROOT / "sons" / "musique_defaut.m4a"))
     while len(mus) < len(voix):
         mus = np.concatenate([mus, mus])
     mus = mus[:len(voix)] * 10 ** ((lufs(voix) - 16 - lufs(mus[:len(voix)])) / 20)

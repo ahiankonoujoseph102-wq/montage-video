@@ -30,7 +30,7 @@ OUTILS = {"chatgpt": ("ChatGPT", "chatgpt.com"), "claude": ("Claude", "claude.ai
           "gemini": ("Gemini", "gemini.google.com"), "perplexity": ("Perplexity", "perplexity.ai")}
 AGENT = "LomeIASchool-montage/1.0 (montage video automatique)"
 SIMPLES = {"question", "alerte", "carte", "reponseIA"}  # scènes qu'on peut remplacer par une capture d'outil
-MAX_PHOTOS = 10
+MAX_PHOTOS = int(os.environ.get("MAX_PHOTOS", "10"))
 
 
 def get_json(url, entetes=None):

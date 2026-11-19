@@ -1,0 +1,914 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese graduate in a black graduation gown and cap, holding a rolled diploma, standing alone on a busy dusty street in Lomé, looking worried and uncertain into the distance, sunset.",
+   "texte": "",
+   "mise": "plein",
+   "expression": "neutre",
+   "recherche": "A young Togolese graduate in a black",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A crowded university lecture hall in Lomé, young African students taking notes, seen from behind, one student in focus looking thoughtful.",
+   "texte": "À L'UNIVERSITÉ",
+   "mise": "plein",
+   "recherche": "A crowded university lecture hall in Lomé",
+   "fichier": "test-auto/photos/01.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese woman student reading thick textbooks at night under a small lamp in a simple bedroom, tired but determined.",
+   "texte": "",
+   "mise": "partage",
+   "recherche": "A young Togolese woman student reading thick",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "liste",
+   "titre": "TON PARCOURS",
+   "items": [
+    {
+     "texte": "Licence",
+     "a": "licence"
+    },
+    {
+     "texte": "Master",
+     "a": "master,"
+    }
+   ],
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese man in a vocational training workshop, wearing safety glasses, learning with an instructor, focused face.",
+   "texte": "FORMATION PRO",
+   "mise": "plein",
+   "recherche": "A young Togolese man in a vocational",
+   "fichier": "test-auto/photos/04.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉCOUTE BIEN",
+   "texte": "UNE\nQUESTION",
+   "emoji": "1f442",
+   "geste": "designe",
+   "expression": "parle",
+   "mise": "double"
+  },
+  {
+   "type": "question",
+   "texte": "ES-TU\nVRAIMENT SÛR ?",
+   "sous": "de devenir qui tu rêves",
+   "emoji": "1f914",
+   "geste": "explique",
+   "expression": "surpris"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. Close-up of the hands of a young African graduate holding a diploma with a red ribbon, blurred city lights behind, melancholic mood.",
+   "texte": "TON DIPLÔME\nSUFFIRA-T-IL ?",
+   "mise": "plein",
+   "recherche": "Close-up of the hands of a young",
+   "fichier": "test-auto/photos/07.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese man sitting on the Lomé beach at dusk, looking at the ocean horizon, dreaming, silhouette against an orange sky.",
+   "texte": "LA VIE QUE\nTU SOUHAITES",
+   "mise": "partage",
+   "recherche": "A young Togolese man sitting on the",
+   "fichier": "test-auto/photos/08.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "carte",
+   "kicker": "PAUSE",
+   "texte": "RÉFLÉCHIS\nSÉRIEUSEMENT",
+   "emoji": "1f9d0",
+   "geste": "bras-croises",
+   "expression": "neutre",
+   "mise": "double"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A long queue of young African graduates in formal clothes holding CV folders, waiting outside an office building in Lomé under the sun, tired faces.",
+   "texte": "DIPLÔMÉS…",
+   "mise": "plein",
+   "recherche": "A long queue of young African graduates",
+   "fichier": "test-auto/photos/10.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese man sitting on the edge of his bed in a small room, head in his hands, papers and job rejection letters on the floor, dim light.",
+   "texte": "SANS EMPLOI",
+   "mise": "partage",
+   "recherche": "A young Togolese man sitting on the",
+   "fichier": "test-auto/photos/11.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young African man selling phone credit cards at a busy Lomé street junction, motorbikes passing, hot day.",
+   "texte": "PETITS TRAVAUX",
+   "mise": "plein",
+   "recherche": "A young African man selling phone credit",
+   "fichier": "test-auto/photos/12.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young educated-looking Togolese man carrying cement blocks on his shoulder on a construction site, sweat, dust, serious sad expression.",
+   "texte": "POUR SURVIVRE",
+   "mise": "plein",
+   "recherche": "A young educated-looking Togolese man carrying cement",
+   "fichier": "test-auto/photos/13.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "chiffre",
+   "texte": "60 000 – 70 000",
+   "sous": "FCFA PAR MOIS",
+   "kicker": "LE SALAIRE",
+   "emoji": "1f630",
+   "geste": "explique",
+   "expression": "grimace"
+  },
+  {
+   "type": "carte",
+   "kicker": "CALCULONS",
+   "texte": "UN PETIT\nCALCUL",
+   "emoji": "1f9e0",
+   "geste": "designe",
+   "mise": "double"
+  },
+  {
+   "type": "calcul",
+   "titre": "TON MOIS",
+   "depart": 60000,
+   "calc": [
+    {
+     "texte": "Salaire",
+     "montant": 60000,
+     "a": "gagnes"
+    },
+    {
+     "texte": "Loyer",
+     "montant": -30000,
+     "a": "loyer."
+    },
+    {
+     "texte": "Il reste",
+     "montant": 0,
+     "a": "reste",
+     "total": true
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "calcul",
+   "titre": "AVEC 30 000 F",
+   "depart": 30000,
+   "calc": [
+    {
+     "texte": "Manger",
+     "montant": -12000,
+     "a": "manger,"
+    },
+    {
+     "texte": "Transport",
+     "montant": -7000,
+     "a": "déplacer,"
+    },
+    {
+     "texte": "Vêtements",
+     "montant": -5000,
+     "a": "t'habiller,"
+    },
+    {
+     "texte": "Imprévus",
+     "montant": -4000,
+     "a": "imprévus"
+    },
+    {
+     "texte": "Famille",
+     "montant": -2000,
+     "a": "famille."
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese father holding his small child in a modest home, worried look while counting a few banknotes on the table.",
+   "texte": "ET TA FAMILLE ?",
+   "mise": "plein",
+   "recherche": "A young Togolese father holding his small",
+   "fichier": "test-auto/photos/18.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "question",
+   "texte": "COMMENT\nT'EN SORTIR ?",
+   "emoji": "1f630",
+   "geste": "explique",
+   "expression": "grimace",
+   "mise": "double"
+  },
+  {
+   "type": "photo",
+   "eteint": true,
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A shiny new motorcycle parked in a Lomé street, seen through a shop window, a young man looking at it from outside, longing.",
+   "texte": "TA MOTO ?",
+   "mise": "plein",
+   "recherche": "A shiny new motorcycle parked in a",
+   "fichier": "test-auto/photos/20.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "eteint": true,
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A beautiful modern car in a car dealership in Lomé, a young African man standing far from it with empty pockets, dreaming.",
+   "texte": "UNE VOITURE ?",
+   "sous": "5 À 10 MILLIONS",
+   "mise": "plein",
+   "recherche": "A beautiful modern car in a car",
+   "fichier": "test-auto/photos/21.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "eteint": true,
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. An unfinished family house in a Togo neighborhood, only walls and iron bars, construction stopped, grass growing, evening light.",
+   "texte": "TA MAISON ?",
+   "mise": "plein",
+   "recherche": "An unfinished family house in a Togo",
+   "fichier": "test-auto/photos/22.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "eteint": true,
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A little Togolese boy in a school uniform looking up at the sky with a big smile, holding a paper airplane, dreamy golden light.",
+   "texte": "TES RÊVES\nD'ENFANT ?",
+   "mise": "plein",
+   "recherche": "A little Togolese boy in a school",
+   "fichier": "test-auto/photos/23.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "carte",
+   "kicker": "SINCÈREMENT",
+   "texte": "POSE-TOI\nCES QUESTIONS",
+   "emoji": "1f914",
+   "geste": "bras-croises",
+   "expression": "neutre",
+   "mise": "double"
+  },
+  {
+   "type": "question",
+   "texte": "TON CAS SERA\nDIFFÉRENT ?",
+   "emoji": "1f60e",
+   "geste": "designe",
+   "expression": "surpris"
+  },
+  {
+   "type": "chemin",
+   "titre": "TON PLAN",
+   "etapes": [
+    {
+     "texte": "Licence",
+     "a": "licence,"
+    },
+    {
+     "texte": "Master",
+     "a": "master."
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "chemin",
+   "titre": "TON PLAN",
+   "etapes": [
+    {
+     "texte": "Licence",
+     "a": ""
+    },
+    {
+     "texte": "Master",
+     "a": ""
+    },
+    {
+     "texte": "Stage",
+     "a": "stage,"
+    },
+    {
+     "texte": "Formation",
+     "a": "formation"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "chemin",
+   "titre": "TON PLAN",
+   "etapes": [
+    {
+     "texte": "Licence",
+     "a": ""
+    },
+    {
+     "texte": "Master",
+     "a": ""
+    },
+    {
+     "texte": "Stage",
+     "a": ""
+    },
+    {
+     "texte": "Formation",
+     "a": ""
+    },
+    {
+     "texte": "Emploi ?",
+     "a": "chance,",
+     "doute": true
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "question",
+   "texte": "SUR QUOI ?",
+   "sous": "repose cette certitude",
+   "emoji": "1f9d0",
+   "geste": "explique",
+   "expression": "surpris",
+   "mise": "double"
+  },
+  {
+   "type": "liste",
+   "titre": "AS-TU…",
+   "items": [
+    {
+     "texte": "Des parents riches ?",
+     "a": "parents",
+     "ok": false
+    },
+    {
+     "texte": "Des relations ?",
+     "a": "relations",
+     "ok": false
+    },
+    {
+     "texte": "Un réseau ?",
+     "a": "réseau",
+     "ok": false
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "alerte",
+   "texte": "COMPRENDS\nUNE CHOSE",
+   "emoji": "26a0_fe0f",
+   "geste": "bras-croises",
+   "expression": "neutre"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese graduate standing in front of a closed office door with a sign-less door, holding his CV folder, waiting alone in an empty corridor.",
+   "texte": "PAS SUR\nL'ESPOIR SEUL",
+   "mise": "plein",
+   "recherche": "A young Togolese graduate standing in front",
+   "fichier": "test-auto/photos/32.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "carte",
+   "kicker": "SINCÈREMENT",
+   "texte": "AUCUN INTÉRÊT\nÀ TE MENTIR",
+   "emoji": "1f44b",
+   "geste": "explique",
+   "expression": "neutre",
+   "mise": "double"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A confident young Togolese entrepreneur in a modern office in Lomé, smiling, working on a laptop with a view of the city, success.",
+   "texte": "CERTAINS\nCONSTRUISENT",
+   "mise": "plein",
+   "recherche": "A confident young Togolese entrepreneur in a",
+   "fichier": "test-auto/photos/34.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "eteint": true,
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese man in a dark small room counting a few coins in his palm, worried face, rain on the window.",
+   "texte": "D'AUTRES\nS'ENFONCENT",
+   "mise": "plein",
+   "recherche": "A young Togolese man in a dark",
+   "fichier": "test-auto/photos/35.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "chiffre",
+   "texte": "UNE MINORITÉ",
+   "sous": "sort du lot",
+   "kicker": "LE PLUS INQUIÉTANT",
+   "emoji": "1f6a8",
+   "geste": "designe",
+   "expression": "grimace"
+  },
+  {
+   "type": "question",
+   "texte": "POURQUOI ?",
+   "emoji": "2753",
+   "geste": "explique",
+   "expression": "surpris",
+   "mise": "double"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. Many young Africans in identical white shirts walking in a straight line on a single narrow road towards a distant city, seen from above, symbolic.",
+   "texte": "UNE SEULE\nVOIE ?",
+   "mise": "plein",
+   "recherche": "Many young Africans in identical white shirts",
+   "fichier": "test-auto/photos/38.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "chemin",
+   "titre": "LE SYSTÈME",
+   "etapes": [
+    {
+     "texte": "Études",
+     "a": "études,"
+    },
+    {
+     "texte": "Diplôme",
+     "a": "diplôme,"
+    },
+    {
+     "texte": "Stage",
+     "a": "stage,"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "chemin",
+   "titre": "LE SYSTÈME",
+   "etapes": [
+    {
+     "texte": "Dossiers",
+     "a": "dossiers,"
+    },
+    {
+     "texte": "Attente",
+     "a": "attendre"
+    },
+    {
+     "texte": "Salaire ?",
+     "a": "espérer",
+     "doute": true
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "liste",
+   "titre": "ATTENTION !",
+   "items": [
+    {
+     "texte": "Les études",
+     "a": "études."
+    },
+    {
+     "texte": "Les diplômes",
+     "a": "diplômes."
+    },
+    {
+     "texte": "Les formations",
+     "a": "formations"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "carte",
+   "kicker": "AU CONTRAIRE",
+   "texte": "COMPÉTENCES\nINDISPENSABLES",
+   "emoji": "1f4a1",
+   "geste": "pouce",
+   "expression": "sourire",
+   "mise": "double"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Diplôme\nseul",
+    "ok": false
+   },
+   "droite": {
+    "texte": "Diplôme +\ncompétences",
+    "ok": true
+   },
+   "a": [
+    "seul,",
+    "financier."
+   ],
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "annee",
+   "de": 2026,
+   "vers": 2027,
+   "emoji": "1f525",
+   "mise": "plein"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young African woman doing a job interview by video call on a laptop in a modern office in Lomé, recruiter on screen.",
+   "texte": "LE MONDE\nCHANGE",
+   "mise": "plein",
+   "recherche": "A young African woman doing a job",
+   "fichier": "test-auto/photos/45.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese technician working with a robotic arm and a tablet in a modern workshop, futuristic blue light.",
+   "texte": "LES MÉTIERS\nSE TRANSFORMENT",
+   "mise": "plein",
+   "recherche": "A young Togolese technician working with a",
+   "fichier": "test-auto/photos/46.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A Togolese mother at a busy Lomé market looking worried at expensive food prices, holding a nearly empty basket.",
+   "texte": "LA VIE COÛTE\nPLUS CHER",
+   "mise": "plein",
+   "recherche": "A Togolese mother at a busy Lomé",
+   "fichier": "test-auto/photos/47.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Hier",
+    "ok": false
+   },
+   "droite": {
+    "texte": "Aujourd'hui",
+    "ok": true
+   },
+   "a": [
+    "d'aujourd'hui",
+    "d'hier."
+   ],
+   "geste": "explique"
+  },
+  {
+   "type": "alerte",
+   "texte": "CHANGE DE\nMENTALITÉ",
+   "emoji": "26a0_fe0f",
+   "geste": "bras-croises",
+   "expression": "neutre"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A determined young Togolese woman looking straight ahead with confidence, sunrise light on her face, city of Lomé waking up behind her, hopeful.",
+   "texte": "RÉFLÉCHIS\nAUTREMENT",
+   "mise": "plein",
+   "recherche": "A determined young Togolese woman looking straight",
+   "fichier": "test-auto/photos/50.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "liste",
+   "titre": "CE QU'IL TE FAUT",
+   "items": [
+    {
+     "texte": "Une vision claire",
+     "a": "vision"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "liste",
+   "titre": "CE QU'IL TE FAUT",
+   "items": [
+    {
+     "texte": "Une vision claire",
+     "a": ""
+    },
+    {
+     "texte": "Des compétences",
+     "a": "compétences"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "liste",
+   "titre": "CE QU'IL TE FAUT",
+   "items": [
+    {
+     "texte": "Une vision claire",
+     "a": ""
+    },
+    {
+     "texte": "Des compétences",
+     "a": ""
+    },
+    {
+     "texte": "Des opportunités",
+     "a": "opportunités,"
+    },
+    {
+     "texte": "Des solutions",
+     "a": "problèmes"
+    },
+    {
+     "texte": "Des revenus",
+     "a": "revenus."
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "alerte",
+   "texte": "COMMENCE\nMAINTENANT",
+   "emoji": "1f680",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese student learning to build a website on a laptop at night after class, focused, notebook next to him, small room.",
+   "texte": "CONSTRUIS\nÀ CÔTÉ",
+   "mise": "plein",
+   "recherche": "A young Togolese student learning to build",
+   "fichier": "test-auto/photos/55.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese freelancer shaking hands with a small business owner in a shop in Lomé, closing a deal, both smiling.",
+   "texte": "VENDS TES\nSERVICES",
+   "mise": "partage",
+   "recherche": "A young Togolese freelancer shaking hands with",
+   "fichier": "test-auto/photos/56.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "photo",
+   "eteint": true,
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese graduate in gown sitting alone on stairs after the ceremony, diploma on his knees, empty courtyard, contemplative.",
+   "texte": "UN DIPLÔME\nSANS STRATÉGIE",
+   "mise": "plein",
+   "recherche": "A young Togolese graduate in gown sitting",
+   "fichier": "test-auto/photos/57.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "carte",
+   "kicker": "MON FRÈRE, MA SŒUR",
+   "texte": "PAS POUR TE\nDÉCOURAGER",
+   "emoji": "1f64c",
+   "geste": "explique",
+   "expression": "sourire",
+   "mise": "double"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. A young Togolese man and woman smiling with hope, looking at the sunrise over Lomé from a rooftop, warm golden light, inspiring.",
+   "texte": "TON AVENIR\nMÉRITE MIEUX",
+   "mise": "plein",
+   "recherche": "A young Togolese man and woman smiling",
+   "fichier": "test-auto/photos/59.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "question",
+   "texte": "QUE FAIRE ?",
+   "sous": "pour réussir au Togo",
+   "emoji": "1f914",
+   "geste": "explique",
+   "expression": "surpris"
+  },
+  {
+   "type": "cadenas",
+   "cartes": [
+    {
+     "texte": "Compétences ?",
+     "a": "compétences"
+    },
+    {
+     "texte": "Business ?",
+     "a": "business"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "cadenas",
+   "cartes": [
+    {
+     "texte": "Compétences ?",
+     "a": ""
+    },
+    {
+     "texte": "Business ?",
+     "a": ""
+    },
+    {
+     "texte": "L'IA ?",
+     "a": "intelligence"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "partie2",
+   "texte": "PARTIE 2",
+   "sous": "Bientôt",
+   "emoji": "1f525",
+   "mise": "plein"
+  },
+  {
+   "type": "liste",
+   "titre": "DANS LA PARTIE 2",
+   "items": [
+    {
+     "texte": "Les opportunités",
+     "a": "opportunités,"
+    },
+    {
+     "texte": "Les compétences",
+     "a": "compétences"
+    },
+    {
+     "texte": "Les stratégies",
+     "a": "stratégies"
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Du rêve",
+    "ok": false
+   },
+   "droite": {
+    "texte": "Du concret",
+    "ok": true
+   },
+   "a": [
+    "rêve.",
+    "concrètes"
+   ],
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "photo",
+   "image": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, natural warm light, shallow depth of field, emotional, documentary style, no text, no letters, no logos. Aerial view of Lomé, Togo at golden hour, the coastline, the city with buildings and palm trees, beautiful and hopeful.",
+   "texte": "ICI, AU TOGO",
+   "mise": "plein",
+   "recherche": "Aerial view of Lomé, Togo at golden",
+   "fichier": "test-auto/photos/66.jpg",
+   "credit": "Image"
+  },
+  {
+   "type": "carte",
+   "kicker": "POUR TOI",
+   "texte": "TRÈS\nIMPORTANT",
+   "emoji": "1f3af",
+   "geste": "designe",
+   "expression": "parle",
+   "mise": "double"
+  },
+  {
+   "type": "commentaire",
+   "texte": "PARTIE 2",
+   "emoji": "1f449",
+   "mise": "plein"
+  },
+  {
+   "type": "liste",
+   "titre": "ES-TU PRÊT ?",
+   "items": [
+    {
+     "texte": "Ouvrir les yeux",
+     "a": "yeux,"
+    },
+    {
+     "texte": "Changer de stratégie",
+     "a": "stratégie"
+    },
+    {
+     "texte": "Agir sérieusement",
+     "a": "sérieux."
+    }
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "partie2",
+   "texte": "RENDEZ-VOUS",
+   "sous": "Partie 2",
+   "emoji": "1f44b",
+   "mise": "double"
+  }
+ ],
+ "fond": [
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "nuit",
+  "orange",
+  "bleu",
+  "violet"
+ ]
+}

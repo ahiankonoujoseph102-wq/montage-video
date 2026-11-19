@@ -1,0 +1,299 @@
+{
+ "accroche": {
+  "lignes": [
+   "TON DIPLÔME",
+   "SUFFIRA-T-IL",
+   "AU TOGO ?"
+  ],
+  "cle": "DIPLÔME"
+ },
+ "titre": "Ton diplôme suffira-t-il pour réussir au Togo ? (Partie 1)",
+ "description": "Licence, master, formation… Est-ce vraiment assez pour vivre la vie dont tu rêves ? Fais le calcul avec moi 🧮 et prépare-toi pour la partie 2 : compétences, business et IA pour réussir ici, au Togo 🇹🇬. Abonne-toi et écris « PARTIE 2 » en commentaire 👇",
+ "hashtags": "#Togo #Lomé #Diplôme #Emploi #JeunesseTogolaise #Motivation #IA #LoméIASchool #Partie1",
+ "phrases": [
+  {
+   "partie": "p0",
+   "texte": "Ton diplôme suffira-t-il pour réussir au Togo ?"
+  },
+  {
+   "partie": "p1",
+   "texte": "Toi qui es actuellement à l'université,"
+  },
+  {
+   "partie": "p1",
+   "texte": "toi qui suis une filière universitaire,"
+  },
+  {
+   "partie": "p1",
+   "texte": "toi qui prépares une licence ou un master,"
+  },
+  {
+   "partie": "p1",
+   "texte": "ou encore toi qui suis une formation professionnelle,"
+  },
+  {
+   "partie": "p1",
+   "texte": "j'aimerais te poser une question."
+  },
+  {
+   "partie": "p1",
+   "texte": "Est-ce que tu es vraiment sûr que le parcours que tu suis actuellement te permettra de devenir la personne que tu rêves de devenir ?"
+  },
+  {
+   "partie": "p1",
+   "texte": "Est-ce que tu es certain que ton diplôme, ta licence, ton master ou ta formation professionnelle te permettront d'atteindre tes ambitions,"
+  },
+  {
+   "partie": "p1",
+   "texte": "de réaliser tes projets et de vivre la vie que tu souhaites ?"
+  },
+  {
+   "partie": "p1",
+   "texte": "Réfléchis sérieusement à cette question."
+  },
+  {
+   "partie": "p2",
+   "texte": "Combien de personnes ont aujourd'hui une licence, un master ou même plusieurs formations professionnelles,"
+  },
+  {
+   "partie": "p2",
+   "texte": "mais qui éprouvent énormément de difficultés à trouver un emploi et à joindre les deux bouts ?"
+  },
+  {
+   "partie": "p2",
+   "texte": "Certaines sont obligées de faire de petits travaux par-ci par-là,"
+  },
+  {
+   "partie": "p2",
+   "texte": "parfois comme aide-maçon ou manœuvre, simplement pour survivre."
+  },
+  {
+   "partie": "p2",
+   "texte": "D'autres finissent par trouver un emploi, mais avec un salaire de 60 000 ou 70 000 francs CFA par mois."
+  },
+  {
+   "partie": "p3",
+   "texte": "Maintenant, faisons un petit calcul."
+  },
+  {
+   "partie": "p3",
+   "texte": "Tu gagnes 60 000 francs CFA par mois. Tu paies 30 000 francs de loyer. Il te reste 30 000 francs."
+  },
+  {
+   "partie": "p3",
+   "texte": "Et avec ces 30 000 francs, tu dois manger, te déplacer, t'habiller, gérer les imprévus et éventuellement prendre soin de ta famille."
+  },
+  {
+   "partie": "p3",
+   "texte": "Imagine que tu aies une copine, que tu sois marié ou que tu aies des enfants."
+  },
+  {
+   "partie": "p3",
+   "texte": "Comment vas-tu t'en sortir ?"
+  },
+  {
+   "partie": "p4",
+   "texte": "Quand est-ce que tu vas acheter ta moto ?"
+  },
+  {
+   "partie": "p4",
+   "texte": "Quand est-ce que tu vas acheter une voiture de 5, 6 ou 10 millions de francs CFA ?"
+  },
+  {
+   "partie": "p4",
+   "texte": "Quand est-ce que tu vas construire ta maison ?"
+  },
+  {
+   "partie": "p4",
+   "texte": "Quand est-ce que tu vas réaliser les rêves que tu portes depuis ton enfance ?"
+  },
+  {
+   "partie": "p4",
+   "texte": "Pose-toi sincèrement ces questions."
+  },
+  {
+   "partie": "p5",
+   "texte": "Ou alors, tu te dis que ton cas sera différent ?"
+  },
+  {
+   "partie": "p5",
+   "texte": "Tu te dis peut-être : « Moi, quand j'aurai ma licence, je vais faire un master."
+  },
+  {
+   "partie": "p5",
+   "texte": "Ensuite, je vais faire un stage, compléter mon parcours avec une formation professionnelle"
+  },
+  {
+   "partie": "p5",
+   "texte": "et, avec un peu de chance, je finirai par décrocher un bon emploi. »"
+  },
+  {
+   "partie": "p5",
+   "texte": "Mais sur quoi repose réellement cette certitude ?"
+  },
+  {
+   "partie": "p5",
+   "texte": "Est-ce que tes parents sont financièrement à l'aise ? Est-ce que ta famille dispose de relations influentes ? Est-ce que tu as déjà un réseau professionnel capable de t'ouvrir certaines portes ?"
+  },
+  {
+   "partie": "p5",
+   "texte": "Si tu n'as aucun de ces avantages, tu dois comprendre une chose :"
+  },
+  {
+   "partie": "p5",
+   "texte": "tu ne peux pas te permettre de construire ton avenir uniquement sur l'espoir de décrocher un emploi après tes études."
+  },
+  {
+   "partie": "p6",
+   "texte": "Je te parle sincèrement. Je n'ai aucun intérêt à te mentir."
+  },
+  {
+   "partie": "p6",
+   "texte": "Ce qui me fait particulièrement mal, c'est de constater que pendant que certaines personnes construisent leur richesse au Togo,"
+  },
+  {
+   "partie": "p6",
+   "texte": "d'autres s'enfoncent progressivement dans les difficultés financières."
+  },
+  {
+   "partie": "p6",
+   "texte": "Et le plus inquiétant, c'est que ceux qui parviennent à véritablement sortir du lot restent minoritaires."
+  },
+  {
+   "partie": "p6",
+   "texte": "Mais pourquoi ?"
+  },
+  {
+   "partie": "p7",
+   "texte": "Parce que beaucoup de jeunes continuent de suivre aveuglément un parcours que le système leur a présenté comme étant la seule voie vers la réussite."
+  },
+  {
+   "partie": "p7",
+   "texte": "Faire des études, obtenir un diplôme, chercher un stage,"
+  },
+  {
+   "partie": "p7",
+   "texte": "déposer des dossiers, attendre un recrutement et espérer décrocher un salaire qui permettra de vivre correctement."
+  },
+  {
+   "partie": "p8",
+   "texte": "Attention ! Je ne suis pas contre les études. Je ne suis pas contre les diplômes. Je ne suis pas non plus contre les formations professionnelles."
+  },
+  {
+   "partie": "p8",
+   "texte": "Au contraire, les connaissances et les compétences sont indispensables."
+  },
+  {
+   "partie": "p8",
+   "texte": "Mais le problème, c'est de croire que le diplôme, à lui seul, garantit ton avenir financier."
+  },
+  {
+   "partie": "p9",
+   "texte": "Nous sommes en 2026, et 2027 approche à grands pas."
+  },
+  {
+   "partie": "p9",
+   "texte": "Le monde du travail évolue. Les entreprises changent leurs méthodes de recrutement."
+  },
+  {
+   "partie": "p9",
+   "texte": "Les nouvelles technologies transforment les métiers."
+  },
+  {
+   "partie": "p9",
+   "texte": "Le coût de la vie augmente et le pouvoir d'achat reste une véritable préoccupation pour de nombreuses familles."
+  },
+  {
+   "partie": "p9",
+   "texte": "Les réalités d'aujourd'hui ne sont plus celles d'hier."
+  },
+  {
+   "partie": "p9",
+   "texte": "Tu ne peux donc pas continuer à préparer ton avenir avec une mentalité qui ne tient pas compte des nouvelles réalités économiques."
+  },
+  {
+   "partie": "p10",
+   "texte": "Si tu es vraiment ambitieux, si tu as des rêves et si tu veux véritablement changer ta situation financière, tu dois commencer à réfléchir autrement."
+  },
+  {
+   "partie": "p10",
+   "texte": "Tu dois avoir une vision claire de ce que tu veux devenir."
+  },
+  {
+   "partie": "p10",
+   "texte": "Tu dois développer des compétences qui ont une réelle valeur sur le marché."
+  },
+  {
+   "partie": "p10",
+   "texte": "Tu dois apprendre à créer des opportunités, à résoudre des problèmes et à générer des revenus."
+  },
+  {
+   "partie": "p10",
+   "texte": "Et surtout, tu dois commencer dès maintenant."
+  },
+  {
+   "partie": "p10",
+   "texte": "Parce que si tu passes toutes ces années à étudier sans construire quelque chose à côté, sans développer une compétence recherchée,"
+  },
+  {
+   "partie": "p10",
+   "texte": "sans apprendre à vendre tes services et sans préparer ton indépendance financière,"
+  },
+  {
+   "partie": "p10",
+   "texte": "tu risques de terminer tes études avec un diplôme, mais sans véritable stratégie pour construire la vie que tu souhaites."
+  },
+  {
+   "partie": "p11",
+   "texte": "Mon frère, ma sœur, je ne te dis pas tout cela pour te décourager."
+  },
+  {
+   "partie": "p11",
+   "texte": "Je te le dis parce que ton avenir mérite mieux que des promesses et des espérances."
+  },
+  {
+   "partie": "p12",
+   "texte": "Mais alors, qu'est-ce qu'un jeune Togolais doit réellement faire aujourd'hui pour réussir financièrement ?"
+  },
+  {
+   "partie": "p12",
+   "texte": "Quelles compétences doit-il apprendre ? Quels business peut-il lancer ?"
+  },
+  {
+   "partie": "p12",
+   "texte": "Comment peut-il utiliser les nouvelles technologies, notamment l'intelligence artificielle, pour créer des opportunités et devenir financièrement indépendant ?"
+  },
+  {
+   "partie": "p12",
+   "texte": "C'est exactement ce que je vais te dévoiler dans la deuxième partie de cette vidéo."
+  },
+  {
+   "partie": "p12",
+   "texte": "Je vais te parler des véritables opportunités, des compétences à développer et surtout des stratégies que tu peux commencer à appliquer, même si tu pars de zéro."
+  },
+  {
+   "partie": "p12",
+   "texte": "Je ne suis pas là pour te vendre du rêve. Je veux te montrer des pistes concrètes pour que tu puisses prendre ton avenir en main."
+  },
+  {
+   "partie": "p12",
+   "texte": "Alors, si tu n'as pas encore de projet de voyage à l'étranger et que tu souhaites construire quelque chose ici, au Togo,"
+  },
+  {
+   "partie": "p12",
+   "texte": "cette deuxième partie est particulièrement importante pour toi."
+  },
+  {
+   "partie": "p13",
+   "texte": "Abonne-toi à mon compte TikTok et écris « PARTIE 2 » dans les commentaires."
+  },
+  {
+   "partie": "p13",
+   "texte": "Je veux voir combien de jeunes sont réellement prêts à ouvrir les yeux, à changer de stratégie et à prendre leur avenir au sérieux."
+  },
+  {
+   "partie": "p13",
+   "texte": "Rendez-vous dans la deuxième partie."
+  }
+ ]
+}
