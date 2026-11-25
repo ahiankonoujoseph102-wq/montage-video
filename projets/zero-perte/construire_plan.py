@@ -27,14 +27,14 @@ ph("p0", "Commerçants ! Savez-vous vraiment combien vous gagnez chaque jour ?",
 ph("p1", "Vous vendez toute la journée… mais le soir, la caisse ne tombe pas juste.",
    type="photo", fichier=IM("journee"), fichier2=IM("caisse_soir"), mise="plein")
 ph("p1", "Il manque 1 000 francs. Et personne ne sait pourquoi.", "orange",
-   type="chiffre", kicker="LE SOIR", texte="– 1 000 F", sous="Personne ne sait pourquoi", emoji="1f631",
+   type="chiffre", kicker="LE SOIR", texte="– 1 000 F", sous="Pourquoi ?", emoji="1f631",
    mise="double", expression="grimace", geste="explique")
 ph("p1", "Un client a pris à crédit… et plus personne ne se souvient du montant.",
    type="photo", fichier=IM("credit_client"), texte="CRÉDIT OUBLIÉ", mise="plein")
 ph("p1", "Un carton disparaît du magasin.",
    type="photo", fichier=IM("carton"), texte="CARTON DISPARU", mise="plein")
 ph("p1", "Au total, une boutique ordinaire peut perdre 61 000 francs en un seul mois. Sans même le savoir !", "orange",
-   type="chiffre", kicker="EN UN SEUL MOIS", texte="61 000 F", sous="perdus sans le savoir", emoji="1f4b8",
+   type="chiffre", kicker="EN UN SEUL MOIS", texte="61 000 F", sous="PERDUS !", emoji="1f4b8",
    fondVideo=VI("billets"), mise="partage", expression="surpris", geste="explique")
 # --- La solution
 ph("p2", "Stop ! Voici Zéro Perte.", type="logo", mise="plein")
@@ -82,7 +82,7 @@ ph("p5", "Chaque vendeur a son propre code : vous savez qui a vendu quoi.", "ble
    reperes=[{"a": "savez", "x": 40, "y": 576, "l": 735, "h": 351}],
    badges=[{"a": "quoi.", "texte": "CHAQUE VENTE À SON NOM"}], mise="partage", geste="explique")
 ph("p5", "Vous vendez même sans Internet, sur Android, tablette et ordinateur.", "nuit",
-   type="appareils", a=["sans", "Android,", "tablette", "ordinateur."], mise="plein")
+   type="appareils", a=["sans", "vendez", "Android,", "tablette"], mise="plein")
 ph("p6", "Et vous payez une seule fois. Aucun abonnement !", "vert",
    type="carte", kicker="UN SEUL PAIEMENT", texte="PAYEZ\n1 SEULE FOIS", sous="Aucun abonnement", emoji="1f389",
    fondVideo=VI("pieces"), mise="double", geste="pouce", expression="sourire")

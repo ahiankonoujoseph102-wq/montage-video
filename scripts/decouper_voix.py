@@ -74,6 +74,29 @@ if TRAITEE:
         coupes.append(max(coupes[-1] + 0.05, k * 0.02 + 0.01))
     coupes.append(min(duree, max(coupes[-1] + 0.3, bornes[-1][1] + 0.4)))  # fin : pas de longue traîne silencieuse
     bornes = [[coupes[i], coupes[i + 1]] for i in range(n)]
+if not TRAITEE and __import__("os").environ.get("ETENDRE") == "1":
+    # Voix de synthèse : Whisper place souvent le 1er mot d'une phrase trop tard (« Commerçants », « L'application »
+    # perdus). Chaque début est repoussé jusqu'au vrai silence d'avant (0,35 s sous −38 dB, plus long que la pause après
+    # « Commerçants ! »), chaque fin jusqu'au silence d'après (0,1 s) ; jamais dans la phrase voisine.
+    pas = int(0.01 * SR)
+    ener = np.array([np.sqrt(np.mean(x[k:k + pas] ** 2)) for k in range(0, len(x) - pas, pas)]) + 1e-9
+    calme = 20 * np.log10(ener / np.percentile(ener, 95)) < -38
+    def silence_avant(t, limite):
+        k = int(t / 0.01)
+        while k > int(limite / 0.01) and not calme[max(0, k - 35):k].all():
+            k -= 1
+        return k * 0.01
+    def silence_apres(t, limite):
+        k = int(t / 0.01)
+        while k < min(len(calme) - 10, int(limite / 0.01)) and not calme[k:k + 10].all():
+            k += 1
+        return k * 0.01
+    nouv = []
+    for i in range(n):
+        lim_a = bornes[i - 1][1] if i else 0.0
+        lim_b = bornes[i + 1][0] if i + 1 < n else duree
+        nouv.append([silence_avant(bornes[i][0], lim_a), silence_apres(bornes[i][1], lim_b)])
+    bornes = nouv
 for i in range(n):  # pas de chevauchement, marges douces
     if TRAITEE:
         seg = x[int(bornes[i][0] * SR):int(bornes[i][1] * SR)]

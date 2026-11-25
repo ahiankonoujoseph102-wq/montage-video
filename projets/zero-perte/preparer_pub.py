@@ -312,7 +312,7 @@ def main():
              "emojis": codes, "decalageDouble": 110,
              "carton": {"debut": int(round((fin_voix + 0.5) * FPS)), "whatsapp": "+228 72 24 02 31"},
              "marque": "zeroperte",
-             "logoDes": int(round(bornes[next(k for k, x in enumerate(plan["scenes"]) if x["type"] == "logo") - 1][1] * FPS))}
+             "logoDes": int(round(bornes[next(k for k, x in enumerate(plan["scenes"]) if x["type"] == "logo")][1] * FPS))}
     if script.get("accroche", {}).get("lignes"):
         props["titre"] = script["accroche"]
     (PUBLIC / "props.json").write_text(json.dumps(props, ensure_ascii=False))

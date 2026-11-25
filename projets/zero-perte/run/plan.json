@@ -17,7 +17,7 @@
    "type": "chiffre",
    "kicker": "LE SOIR",
    "texte": "– 1 000 F",
-   "sous": "Personne ne sait pourquoi",
+   "sous": "Pourquoi ?",
    "emoji": "1f631",
    "mise": "double",
    "expression": "grimace",
@@ -39,7 +39,7 @@
    "type": "chiffre",
    "kicker": "EN UN SEUL MOIS",
    "texte": "61 000 F",
-   "sous": "perdus sans le savoir",
+   "sous": "PERDUS !",
    "emoji": "1f4b8",
    "fondVideo": "test-auto/zp/videos/billets.mp4",
    "mise": "partage",
@@ -396,9 +396,9 @@
    "type": "appareils",
    "a": [
     "sans",
+    "vendez",
     "Android,",
-    "tablette",
-    "ordinateur."
+    "tablette"
    ],
    "mise": "plein"
   },

@@ -802,7 +802,8 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
         {eclair > 0 ? <AbsoluteFill style={{background: '#fff', opacity: eclair}} /> : null}
         {/* Logo Lomé IA School pendant toute la vidéo (zone sûre : sous les 10 % du haut, à gauche). */}
         {(!p.carton || f < p.carton.debut) && p.marque !== 'zeroperte' ? <LogoCoin /> : null}
-        {p.marque === 'zeroperte' && f >= (p.logoDes ?? 0) && (!p.carton || f < p.carton.debut) ? <LogoCoinZP /> : null}
+        {p.marque === 'zeroperte' && f >= (p.logoDes ?? 0) && (!p.carton || f < p.carton.debut)
+          && !['app', 'appareils', 'contact', 'logo'].includes(p.scenes[segs[ic]?.i ?? 0]?.type) ? <LogoCoinZP /> : null}
         {p.carton ? (
           <Sequence from={p.carton.debut}>
             {p.marque === 'zeroperte' ? <CartonZeroPerte /> : <CartonFinAuto whatsapp={p.carton.whatsapp ?? '+228 72 24 02 31'} />}
@@ -1087,11 +1088,12 @@ const SceneApp: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
         const k = pop(f, a, 280, 10);
         const y = b.y ?? (plein ? 1090 : 690);
         const coul = b.couleur ?? ZP_VERT;
+        const tb = Math.min(60, fitText({text: b.texte, withinWidth: 780, fontFamily: POLICE, fontWeight: '900'}).fontSize);
         return (
           <div key={i} style={{position: 'absolute', left: CX - 440, width: 880, top: y, display: 'flex', justifyContent: 'center',
             transform: `scale(${k}) rotate(${-2 + Math.sin((f - a) / 9)}deg)`}}>
             <div style={{display: 'flex', alignItems: 'center', gap: 18, background: coul, border: '7px solid #fff', borderRadius: 34,
-              padding: '14px 34px', boxShadow: '0 18px 36px rgba(0,0,0,0.5)', fontFamily: POLICE, fontWeight: 900, fontSize: 60,
+              padding: '14px 34px', boxShadow: '0 18px 36px rgba(0,0,0,0.5)', fontFamily: POLICE, fontWeight: 900, fontSize: tb,
               color: coul === '#FFD43B' || coul === OR ? '#14141F' : '#fff', whiteSpace: 'nowrap', letterSpacing: 0.5}}>
               {b.emoji ? <span style={{fontSize: 62}}>{b.emoji}</span> : null}{b.texte}
             </div>
@@ -1227,7 +1229,7 @@ const SceneContact: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
           </svg>
         </div>
       </div>
-      <div style={{position: 'absolute', left: CX - 230, top: y + 330, width: 460, textAlign: 'center', transform: `scale(${pop(f, 5)})`,
+      <div style={{position: 'absolute', left: CX - 420, top: y + 330, width: 840, textAlign: 'center', transform: `scale(${pop(f, 5)})`,
         fontFamily: POLICE, fontWeight: 900, fontSize: 56, color: '#fff', WebkitTextStroke: `8px ${ZP_NUIT}`, paintOrder: 'stroke fill'}}>WhatsApp / Appel</div>
       <div style={{position: 'absolute', left: CX - 460, width: 920, top: y + 430, textAlign: 'center', fontFamily: POLICE, fontWeight: 900,
         fontSize: 118, color: '#1E5BFF', WebkitTextStroke: '22px #fff', paintOrder: 'stroke fill', whiteSpace: 'pre',
@@ -1266,8 +1268,8 @@ const CartonZeroPerte: React.FC = () => {
           border: '6px solid #fff', boxShadow: `0 0 ${24 + 16 * Math.sin(t * 6)}px rgba(37,211,102,0.9)`}}>WhatsApp / Appel</div>
       </div>
       <Gros texte={'+228 72 24 02 31\n+228 79 16 23 90'} y={1060} max={80} k={pop(f, 26)} />
-      <Gros texte={'Payez une seule fois • Sans abonnement'} y={1300} max={44} couleur="#86EFAC" k={pop(f, 34)} />
-      <Gros texte={'Joseph Ahiankonou, créateur de Zéro Perte'} y={1380} max={36} k={pop(f, 40)} />
+      <Gros texte={'Payez une seule fois\nSans abonnement'} y={1255} max={46} couleur="#86EFAC" k={pop(f, 34)} />
+      <Gros texte={'Joseph Ahiankonou\ncréateur de Zéro Perte'} y={1385} max={38} k={pop(f, 40)} />
     </AbsoluteFill>
   );
 };

@@ -5,8 +5,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 const [bundle, propsFile, dossier, liste, id = 'Montage'] = process.argv.slice(2);
 const inputProps = JSON.parse(fs.readFileSync(propsFile, 'utf8'));
-const exe = fs.readdirSync('/opt/pw-browsers').filter((d) => d.startsWith('chromium_headless_shell'))
-  .map((d) => `/opt/pw-browsers/${d}/chrome-linux/headless_shell`)[0];
+// Navigateur sans interface : ancien chemin (chrome-linux/headless_shell) ou nouveau (chrome-headless-shell-linux64).
+const exe = fs.readdirSync('/opt/pw-browsers').filter((d) => /^chromium_headless_shell-\d+$/.test(d))
+  .flatMap((d) => [`/opt/pw-browsers/${d}/chrome-linux/headless_shell`,
+    `/opt/pw-browsers/${d}/chrome-headless-shell-linux64/chrome-headless-shell`]).find((f) => fs.existsSync(f));
 const browser = await openBrowser('chrome', {browserExecutable: exe});
 const composition = await selectComposition({serveUrl: bundle, id, inputProps, puppeteerInstance: browser, browserExecutable: exe});
 fs.mkdirSync(dossier, {recursive: true});
