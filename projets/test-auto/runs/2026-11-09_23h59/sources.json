@@ -1,0 +1,86 @@
+[
+ {
+  "type": "logo + capture",
+  "outil": "ChatGPT",
+  "source": "Wikimedia Commons",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation ; capture de la page publique"
+ },
+ {
+  "type": "logo",
+  "outil": "WhatsApp",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "photo",
+  "recherche": "african entrepreneur frustrated looking at smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "D Coetzee",
+  "page": "https://www.flickr.com/photos/29507259@N02/6773901135",
+  "licence": "CC0 1.0",
+  "recherche_utilisee": "at smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african merchant in shop lome togo",
+  "source": "Openverse / flickr",
+  "auteur": "300td.org",
+  "page": "https://www.flickr.com/photos/18832004@N07/2407877320",
+  "licence": "CC BY 2.0 (attribution : 300td.org)",
+  "recherche_utilisee": "lome togo"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman watching smartphone intently",
+  "source": "Openverse / flickr",
+  "auteur": "sagesolar",
+  "page": "https://www.flickr.com/photos/62356799@N06/22383556774",
+  "licence": "CC BY 2.0 (attribution : sagesolar)",
+  "recherche_utilisee": "smartphone intently"
+ },
+ {
+  "type": "photo",
+  "recherche": "african fashion products shoes bags",
+  "source": "Openverse / flickr",
+  "auteur": "Muffet",
+  "page": "https://www.flickr.com/photos/53133240@N00/2601011409",
+  "licence": "CC BY 2.0 (attribution : Muffet)",
+  "recherche_utilisee": "shoes bags"
+ },
+ {
+  "type": "photo",
+  "recherche": "smartphone screen audio file selection",
+  "source": "Openverse / wikimedia",
+  "auteur": "Unspecified",
+  "page": "https://commons.wikimedia.org/w/index.php?curid=43094228",
+  "licence": "CC0 1.0",
+  "recherche_utilisee": "file selection"
+ },
+ {
+  "type": "photo",
+  "recherche": "editing video on smartphone screen african hands",
+  "source": "Openverse / flickr",
+  "auteur": "qubodup",
+  "page": "https://www.flickr.com/photos/21051491@N02/15688150589",
+  "licence": "CC BY 2.0 (attribution : qubodup)",
+  "recherche_utilisee": "screen hands"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man happy showing smartphone screen",
+  "source": "Openverse / flickr",
+  "auteur": "jorge.correa",
+  "page": "https://www.flickr.com/photos/24325001@N00/4359779134",
+  "licence": "CC BY 2.0 (attribution : jorge.correa)",
+  "recherche_utilisee": "smartphone screen"
+ },
+ {
+  "type": "photo",
+  "recherche": "african person reading smartphone text confused",
+  "source": "Openverse / flickr",
+  "auteur": "CarbonNYC [in SF!]",
+  "page": "https://www.flickr.com/photos/15923063@N00/496721450",
+  "licence": "CC BY 2.0 (attribution : CarbonNYC [in SF!])",
+  "recherche_utilisee": "text confused"
+ }
+]

@@ -1,0 +1,51 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "script_valide": "01-rtctfo",
+   "essai": 1,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 3.5,
+   "erreurs": [
+    "[visuel] Seulement 3 scènes « photo » : il en faut 6 à 10 (vraies photos des situations).",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil).",
+    "[visuel] Trop de cartes de texte (17) : remplace-les par des photos, démonstrations, listes ou outils."
+   ]
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.1
+  },
+  {
+   "script_valide": "01-rtctfo",
+   "essai": 2,
+   "modele": "gemini-3.5-flash-lite",
+   "secondes": 7.1,
+   "erreurs": []
+  },
+  {
+   "demo": "gemini-3.5-flash-lite",
+   "prompt": "Écris-moi un post Facebook pour vendre des chaussures."
+  },
+  {
+   "demo": "gemini-3.5-flash-lite",
+   "prompt": "Rédige un post pour sandales à Lomé"
+  }
+ ],
+ "script_valide": "01-rtctfo"
+}

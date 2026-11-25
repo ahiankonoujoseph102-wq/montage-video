@@ -1,0 +1,41 @@
+[
+ {
+  "type": "logo",
+  "outil": "Facebook",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "logo",
+  "outil": "WhatsApp",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "photo",
+  "recherche": "african print shop sign banner street",
+  "source": "Openverse / flickr",
+  "auteur": "Matthew Paul Argall - Old Ads",
+  "page": "https://www.flickr.com/photos/159358942@N07/48226810646",
+  "licence": "Domaine public (PDM)",
+  "recherche_utilisee": "banner street"
+ },
+ {
+  "type": "photo",
+  "recherche": "african person holding smartphone design",
+  "source": "Openverse / flickr",
+  "auteur": "jorge.correa",
+  "page": "https://www.flickr.com/photos/24325001@N00/4359779134",
+  "licence": "CC BY 2.0 (attribution : jorge.correa)",
+  "recherche_utilisee": "smartphone design"
+ },
+ {
+  "type": "photo",
+  "recherche": "african graphic designer tablet screen",
+  "source": "Openverse / flickr",
+  "auteur": "CompleteMerchandise",
+  "page": "https://www.flickr.com/photos/95247477@N06/8936028797",
+  "licence": "CC BY 2.0 (attribution : CompleteMerchandise)",
+  "recherche_utilisee": "tablet screen"
+ }
+]

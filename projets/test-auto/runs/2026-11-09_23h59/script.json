@@ -1,0 +1,195 @@
+{
+ "accroche": {
+  "lignes": [
+   "PAS DE MICRO",
+   "PUB VIDÉO PRO",
+   "SANS COMÉDIEN"
+  ],
+  "cle": "PUB"
+ },
+ "titre": "Crée un spot vidéo avec voix IA pro pour ta boutique (depuis ton mobile)",
+ "description": "Tu veux une publicité vidéo avec une voix professionnelle sans payer un studio ? Voici la méthode exacte avec ChatGPT, ElevenLabs et CapCut sur ton téléphone.",
+ "hashtags": "#IA #MarketingIA #WhatsAppBusiness #TikTokAfrique #ElevenLabs #CapCut #LomeIASchool",
+ "prompt": "Tu es un expert en rédaction publicitaire vidéo pour le marché africain francophone. Produit : [Chaussures en cuir pour hommes]. Cible : [Jeunes professionnels]. Objectif : Inciter à commander sur WhatsApp. Contrainte : Script court de 60 mots maximum. Structure : 1. Question choc (0-3s), 2. Présentation et bénéfices (3-15s), 3. Promotion spéciale (15-22s), 4. Appel à l'action WhatsApp (22-30s). Texte brut uniquement, sans indications entre parenthèses.",
+ "description_tiktok": "Tu veux une publicité vidéo avec une voix professionnelle sans payer un studio ? Voici la méthode exacte avec ChatGPT, ElevenLabs et CapCut sur ton téléphone. #IA #MarketingIA #WhatsAppBusiness #TikTokAfrique #ElevenLabs #CapCut #LomeIASchool",
+ "rubrique": "veille",
+ "date": "2026-11-09",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tes vidéos WhatsApp ou TikTok n'attirent aucun client à cause d'une mauvaise voix enregistrée ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Tu n'as ni micro professionnel, ni budget pour payer un studio ou un comédien ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Le problème n'est pas ton produit, mais la qualité de ta présentation vidéo."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School.",
+   "dit": "Je suis Joseph, de Lomé i-a Skoul."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Tu vas apprendre à créer un spot vidéo publicitaire captivant depuis ton téléphone."
+  },
+  {
+   "partie": "r1",
+   "texte": "Étape 1 : générer un script percutant sur l'application mobile gratuite ChatGPT.",
+   "dit": "Étape 1, générer un script percutant sur l'application mobile gratuite Tchat-gé-pé-té."
+  },
+  {
+   "partie": "r1",
+   "texte": "Ouvre ChatGPT et demande-lui d'écrire un texte court pour ta boutique de Lomé.",
+   "dit": "Ouvre Tchat-gé-pé-té et demande-lui d'écrire un texte court pour ta boutique de Lomé."
+  },
+  {
+   "partie": "r1",
+   "texte": "Précise le rôle, ton produit, ta cible et demande d'inclure ton contact WhatsApp."
+  },
+  {
+   "partie": "r1",
+   "texte": "Regarde cette démonstration où l'IA génère un texte de vente prêt à lire.",
+   "dit": "Regarde cette démonstration où l'i-a génère un texte de vente prêt à lire."
+  },
+  {
+   "partie": "r1",
+   "texte": "Une bonne accroche capte l'attention dès les trois premières secondes du spectateur."
+  },
+  {
+   "partie": "r1",
+   "texte": "Copie uniquement le texte brut sans garder les indications écrites entre parenthèses."
+  },
+  {
+   "partie": "r2",
+   "texte": "Étape 2 : générer une voix-off ultra réaliste sur le site elevenlabs.io.",
+   "dit": "Étape 2, générer une voix-off ultra réaliste sur le site elevenlabs.io."
+  },
+  {
+   "partie": "r2",
+   "texte": "Ouvre ton navigateur mobile Chrome, connecte-toi gratuitement et va dans le menu Speech."
+  },
+  {
+   "partie": "r2",
+   "texte": "Sélectionne une voix francophone naturelle comme Brian ou Adam pour lire le texte."
+  },
+  {
+   "partie": "r2",
+   "texte": "Diminue la stabilité pour donner de l'émotion et de l'énergie à la voix."
+  },
+  {
+   "partie": "r2",
+   "texte": "Regarde la démonstration : clique sur le bouton pour générer puis télécharge le MP3.",
+   "dit": "Regarde la démonstration, clique sur le bouton pour générer puis télécharge le MP3."
+  },
+  {
+   "partie": "r2",
+   "texte": "Le fichier audio s'enregistre directement dans le dossier de téléchargement de ton téléphone."
+  },
+  {
+   "partie": "r3",
+   "texte": "Étape 3 : assembler tes photos et ta voix dans l'application gratuite CapCut.",
+   "dit": "Étape 3, assembler tes photos et ta voix dans l'application gratuite CapCut."
+  },
+  {
+   "partie": "r3",
+   "texte": "Ouvre CapCut, touche Nouveau projet et importe les photos de tes articles."
+  },
+  {
+   "partie": "r3",
+   "texte": "Touche Audio, puis Sons, ouvre l'icône dossier et choisis le fichier MP3 téléchargé."
+  },
+  {
+   "partie": "r3",
+   "texte": "Ajuste la durée de chaque image pour coller exactement au rythme de la voix."
+  },
+  {
+   "partie": "r3",
+   "texte": "Une bonne synchronisation visuelle garde le client attentif jusqu'à la fin du spot."
+  },
+  {
+   "partie": "r4",
+   "texte": "Étape 4 : ajouter les sous-titres automatiques et régler le volume sonore.",
+   "dit": "Étape 4, ajouter les sous-titres automatiques et régler le volume sonore."
+  },
+  {
+   "partie": "r4",
+   "texte": "Dans le menu Texte de CapCut, touche Légendes automatiques puis choisis la langue français."
+  },
+  {
+   "partie": "r4",
+   "texte": "CapCut écrit automatiquement les mots prononcés par la voix sur l'écran du mobile."
+  },
+  {
+   "partie": "r4",
+   "texte": "Si tu ajoutes une musique de fond, baisse son volume très bas sous la voix."
+  },
+  {
+   "partie": "r4",
+   "texte": "Touche le bouton d'exportation en haut à droite pour enregistrer ta vidéo finale."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Première erreur : copier les parenthèses de ChatGPT dans ElevenLabs pour la voix.",
+   "dit": "Première erreur, copier les parenthèses de Tchat-gé-pé-té dans ElevenLabs pour la voix."
+  },
+  {
+   "partie": "erreur",
+   "texte": "L'intelligence artificielle va lire ces annotations à voix haute dans ta publicité."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Deuxième erreur : oublier d'effacer la séquence de fin par défaut dans CapCut.",
+   "dit": "Deuxième erreur, oublier d'effacer la séquence de fin par défaut dans CapCut."
+  },
+  {
+   "partie": "astuce",
+   "texte": "L'astuce de pro consiste à ajouter des virgules pour forcer des pauses naturelles."
+  },
+  {
+   "partie": "astuce",
+   "texte": "L'IA marquera un temps d'arrêt pour laisser respirer le texte au bon moment.",
+   "dit": "L'i-a marquera un temps d'arrêt pour laisser respirer le texte au bon moment."
+  },
+  {
+   "partie": "recap",
+   "texte": "En récapitulatif : script sur ChatGPT, voix sur ElevenLabs, et montage dans CapCut.",
+   "dit": "En récapitulatif, script sur Tchat-gé-pé-té, voix sur ElevenLabs, et montage dans CapCut."
+  },
+  {
+   "partie": "recap",
+   "texte": "Tu cré斯的 ainsi des publicités vidéo captivantes depuis chez toi sans matériel cher."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail , ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+   "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ],
+ "historique": {
+  "titre": "Crée un spot vidéo avec voix IA pro pour ta boutique (depuis ton mobile)",
+  "rubrique": "veille",
+  "date": "2026-11-09"
+ }
+}

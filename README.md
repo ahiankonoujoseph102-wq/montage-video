@@ -10,3 +10,5 @@ python3 scripts/corriger.py <projet>      # → projets/<projet>/rapport_transcr
 python3 scripts/preparer.py <projet>      # coupe des silences, recalage, onde sonore
 scripts/rendre.sh <projet> [secondes]
 ```
+
+Dossier complet du dépôt (informations Lomé IA School et Talkami incluses) : [DOSSIER_COMPLET.md](DOSSIER_COMPLET.md).

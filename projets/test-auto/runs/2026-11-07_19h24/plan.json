@@ -1,0 +1,368 @@
+{
+ "scenes": [
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "whatsapp",
+     "nom": "WhatsApp",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african street vendor merchandise smartphone",
+   "texte": "PHOTO AMATEUR",
+   "fichier": "test-auto/photos/01.jpg",
+   "credit": "Photo : MIKI Yoshihito. (#mikiyoshihito) · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african shopkeeper looking stressed smartphone",
+   "texte": "GRAPHISTE CHER",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : danielsteuri · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "SOLUTION PRO",
+   "texte": "CRÉE TES AFFICHES\nSANS DÉPENSER",
+   "emoji": "1f525",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man professional instructor smiling",
+   "texte": "LOMÉ IA SCHOOL",
+   "fichier": "test-auto/photos/04.jpg",
+   "credit": "Photo : US Army Africa · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "AU PROGRAMME",
+   "texte": "AFFICHES STUDIO\nAVEC IDEOGRAM",
+   "emoji": "1f3af",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "PRENDS LA PHOTO\nAVEC TON MOBILE",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "photo",
+   "recherche": "african artisan product tabletop indoors",
+   "texte": "FOND NEUTRE",
+   "fichier": "test-auto/photos/07.jpg",
+   "credit": "Photo : VinothChandar · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african beauty product bottle daylight",
+   "texte": "PRODUIT SIMPLE",
+   "fichier": "test-auto/photos/08.jpg",
+   "credit": "Photo : dph1110 · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "ÉCLAIRAGE",
+   "texte": "LUMIÈRE NATURELLE\nBIEN VISIBLE",
+   "emoji": "2728",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "OUVRE LE SITE\nIDEOGRAM.AI",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "carte",
+   "kicker": "CONNEXION",
+   "texte": "COMPTE GOOGLE\nEN UN CLIC",
+   "emoji": "1f512",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "GRATUIT",
+   "texte": "DIX CRÉDITS\nCHAQUE JOUR",
+   "emoji": "1f381",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african young entrepreneur phone success",
+   "texte": "40 IMAGES JOUR",
+   "fichier": "test-auto/photos/13.jpg",
+   "credit": "Photo : Eva Rinaldi Celebrity Photographer · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "CLIQUE SUR L'ICÔNE\nPOUR IMPORTER",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "photo",
+   "recherche": "african person holding smartphone gallery",
+   "texte": "GALERIE MOBILE",
+   "fichier": "test-auto/photos/15.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "PARAMÈTRE",
+   "texte": "CURSEUR NOMMÉ\nIMAGE WEIGHT",
+   "emoji": "1f9e0",
+   "geste": "designe",
+   "expression": "neutre"
+  },
+  {
+   "type": "carte",
+   "kicker": "RÉGLAGE EXACT",
+   "texte": "VALEUR ENTRE\n0.55 ET 0.65",
+   "emoji": "1f3af",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "photo",
+   "recherche": "african luxury leather shoes market",
+   "texte": "PRODUIT CONSERVÉ",
+   "fichier": "test-auto/photos/18.jpg",
+   "credit": "Photo : Menswear Market · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "STYLE DESIGN\nET BON FORMAT",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "POST 1:1",
+    "ok": true
+   },
+   "droite": {
+    "texte": "STORY 9:16",
+    "ok": true
+   },
+   "a": [
+    "un",
+    "neuf"
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "RÈGLE D'OR",
+   "texte": "METS TON TEXTE\nENTRE GUILLEMETS",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "parle"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Studio product ad photo of the uploaded product on dark marble table with palm shadows, bold text \"PROMO SPÉCIALE\" in gold letters --ar 1:1",
+   "reponse": "Voici votre image publicitaire.\nLe produit est sur marbre noir.\nDes ombres de palmiers l'entourent.\nLe texte d'or brille bien.\nLe format carré est prêt.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Commercial ad for cosmetics product on minimalist pedestal with warm light, clear typography reading \"NOUVAUTÉ\" at top --ar 9:16",
+   "reponse": "Voici un prompt optimisé pour Midjourney :\nUn flacon de sérum cosmétique de luxe\nposé sur un socle minimaliste beige,\nbaigné d'une lumière chaude et douce,\ntypographie nette \"NOUVAUTÉ\" en haut,",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "CLIQUE SUR LE BOUTON\nGENERATE",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "carte",
+   "kicker": "RÉSULTAT",
+   "texte": "QUATRE IMAGES\nEN 15 SECONDES",
+   "emoji": "2728",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "TÉLÉCHARGE L'IMAGE"
+  },
+  {
+   "type": "carte",
+   "texte": "PUBLIE SUR FACEBOOK"
+  },
+  {
+   "type": "alerte",
+   "texte": "ATTENTION !\nERREUR DU PROMPT",
+   "emoji": "26a0_fe0f"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "WEIGHT TROP BAS",
+    "ok": false
+   },
+   "droite": {
+    "texte": "WEIGHT 0.60 BON",
+    "ok": true
+   },
+   "a": [
+    "trente,",
+    "objet."
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "ERREUR TEXTE",
+   "texte": "SANS GUILLEMETS\nLETTRES DÉFORMÉES",
+   "emoji": "274c",
+   "geste": "explique",
+   "expression": "grimace"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE PRO",
+   "texte": "ENLÈVE LE FOND\nAVANT DE CHARGER",
+   "emoji": "1f4a1",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "REMOVE.BG D'ABORD"
+  },
+  {
+   "type": "carte",
+   "texte": "OMBRES PARFAITES"
+  },
+  {
+   "type": "liste",
+   "titre": "LES ÉTAPES RECAP",
+   "items": [
+    {
+     "texte": "Photo bien nette",
+     "a": "photo,"
+    },
+    {
+     "texte": "Importer sur Ideogram",
+     "a": "Ideogram,"
+    },
+    {
+     "texte": "Poids entre 0.55 et 0.65",
+     "a": "poids"
+    },
+    {
+     "texte": "Texte entre guillemets",
+     "a": "guillemets."
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "MESSAGE CLÉ",
+   "texte": "L'IA AVANCE VITE\nFORME-TOI MAINTENANT",
+   "emoji": "1f680",
+   "geste": "bras-croises",
+   "expression": "neutre"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "orange",
+  "violet",
+  "nuit",
+  "vert",
+  "bleu",
+  "orange",
+  "violet",
+  "nuit",
+  "rose",
+  "vert",
+  "bleu",
+  "orange",
+  "violet",
+  "rose",
+  "vert",
+  "nuit",
+  "bleu",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "violet",
+  "vert",
+  "rose",
+  "bleu",
+  "nuit",
+  "orange",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "scenes": [
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "facebook",
+     "nom": "Facebook",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man smiling office",
+   "texte": "LOMÉ IA SCHOOL",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "prompt",
+   "texte": "Écris-moi un post Facebook pour vendre des chaussures.",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Écris-moi un post Facebook pour vendre des chaussures.",
+   "reponse": "Nouvelles baskets dispo !\nStyle et confort uniques.\nStock très limité.\nVite, profitez-en !",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman looking sad smartphone",
+   "texte": "TEXTE PLAT",
+   "fichier": "test-auto/photos/05.jpg",
+   "credit": "Openverse · comedy_nose"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man working office",
+   "texte": "EMPLOYÉ SURDOUÉ",
+   "fichier": "test-auto/photos/06.jpg",
+   "credit": "Photo : US Army Africa · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman boutique clothes",
+   "texte": "CLIENTES ET STYLE",
+   "fichier": "test-auto/photos/07.jpg",
+   "credit": "Photo : rverc · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "TON TRAVAIL",
+   "texte": "BIEN BRIEFER\nL'IA",
+   "emoji": "1f4a1"
+  },
+  {
+   "type": "liste",
+   "titre": "FORMULE",
+   "items": [
+    {
+     "texte": "RÔLE",
+     "a": "R,"
+    },
+    {
+     "texte": "TÂCHE",
+     "a": "T,"
+    },
+    {
+     "texte": "CONTEXTE",
+     "a": "C,"
+    },
+    {
+     "texte": "FORMAT",
+     "a": "F,"
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "RÔLE",
+   "texte": "EXPERT EN\nCOPYWRITING",
+   "emoji": "1f9d0"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "facebook",
+     "nom": "Facebook",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman elegant sandals shop",
+   "texte": "SANDALES ÉLÉGANTES",
+   "fichier": "test-auto/photos/12.jpg",
+   "credit": "Photo : erix! · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "kicker": "TON",
+   "texte": "CHALEUREUX\nET COMPLICE",
+   "emoji": "1f60a"
+  },
+  {
+   "type": "carte",
+   "kicker": "FORMAT",
+   "texte": "ACCROCHE\nET ÉMOJIS",
+   "emoji": "1f4ac"
+  },
+  {
+   "type": "carte",
+   "kicker": "OBJECTIF",
+   "texte": "ÉCRIRE\nEN PRIVÉ",
+   "emoji": "1f3af"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Rédige un post pour sandales à Lomé",
+   "reponse": "Chaleur à Lomé ?\nNos sandales sont là !\nStyle et confort top.\nParfaites pour la plage.\nViens vite choisir les tiennes.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman smartphone smiling",
+   "texte": "BONNE DEMANDE",
+   "fichier": "test-auto/photos/18.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "TROIS ERREURS\nDE DÉBUTANT",
+   "emoji": "26a0"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "CROIRE QUE\nL'IA DEVINE",
+   "emoji": "1f914",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "ACCEPTER\nLA PREMIÈRE",
+   "emoji": "274c",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "PUBLIER\nSANS RELIRE",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman notes smartphone",
+   "texte": "BIBLIOTHÈQUE",
+   "fichier": "test-auto/photos/23.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "liste",
+   "titre": "RÉCAPITULONS",
+   "items": [
+    {
+     "texte": "RÔLE",
+     "a": "Rôle,"
+    },
+    {
+     "texte": "TÂCHE",
+     "a": "Tâche,"
+    },
+    {
+     "texte": "CONTEXTE",
+     "a": "Contexte,"
+    },
+    {
+     "texte": "OBJECTIF",
+     "a": "Objectif."
+    }
+   ]
+  },
+  {
+   "type": "photo",
+   "recherche": "african group smiling office",
+   "texte": "PRENDRE L'AVANCE",
+   "fichier": "test-auto/photos/25.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

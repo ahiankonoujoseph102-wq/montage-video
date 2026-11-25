@@ -1,0 +1,81 @@
+[
+ "4 réflexes pour vérifier une réponse de l'IA",
+ "Rédiger un CV percutant avec l'IA",
+ {
+  "titre": "Gagne du temps chaque jour avec l'IA !",
+  "rubrique": "productivite",
+  "date": "2026-11-06"
+ },
+ {
+  "titre": "Crée le site de ta boutique avec Claude, étape par étape",
+  "rubrique": "sites",
+  "date": "2026-11-06"
+ },
+ {
+  "titre": "Convertis n'importe quelle photo de document en tableau propre avec l'IA",
+  "rubrique": "astuce",
+  "date": "2026-11-06"
+ },
+ {
+  "titre": "Crée ton agent IA pour répondre aux clients",
+  "rubrique": "agents",
+  "date": "2026-11-07"
+ },
+ {
+  "titre": "Pourquoi tes prompts ChatGPT échouent et comment changer cela",
+  "rubrique": "formation",
+  "date": "2026-11-07",
+  "lecon": "contenu_pro_chatgpt_claude:0",
+  "partie": 1,
+  "total": 1
+ },
+ {
+  "titre": "Le prompt qui fait vendre : la formule R.T.C.T.F.O.",
+  "rubrique": "script",
+  "script": "01-rtctfo",
+  "date": "2026-11-07"
+ },
+ {
+  "titre": "10 jours de posts Facebook en 2 prompts avec ChatGPT",
+  "rubrique": "script",
+  "script": "02-facebook",
+  "date": "2026-11-07"
+ },
+ {
+  "titre": "Le script TikTok qui retient jusqu'à la fin (prompt inclus)",
+  "rubrique": "script",
+  "script": "03-tiktok",
+  "date": "2026-11-07"
+ },
+ {
+  "titre": "Transforme tes photos smartphone en visuels de studio avec Ideogram 2.0",
+  "rubrique": "veille",
+  "date": "2026-11-07"
+ },
+ {
+  "titre": "Crée une proposition commerciale de luxe sur ton téléphone avec Gamma App",
+  "rubrique": "veille",
+  "date": "2026-11-08"
+ },
+ {
+  "titre": "Analyse tes gros documents et contrats sur ton téléphone avec NotebookLM",
+  "rubrique": "veille",
+  "date": "2026-11-08"
+ },
+ {
+  "titre": "Film IA : le secret pour garder le même personnage dans chaque scène",
+  "rubrique": "script",
+  "script": "04-film-personnage",
+  "date": "2026-11-09"
+ },
+ {
+  "titre": "Crée un spot vidéo avec voix IA pro pour ta boutique (depuis ton mobile)",
+  "rubrique": "veille",
+  "date": "2026-11-09"
+ },
+ {
+  "titre": "Crée le logo vectoriel de ta marque sur ton téléphone avec Recraft AI",
+  "rubrique": "veille",
+  "date": "2026-11-10"
+ }
+]

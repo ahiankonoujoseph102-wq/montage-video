@@ -1,0 +1,155 @@
+{
+ "accroche": {
+  "lignes": [
+   "3 SECONDES",
+   "POUR",
+   "EXISTER"
+  ],
+  "cle": "EXISTER"
+ },
+ "titre": "Le script TikTok qui retient jusqu'à la fin (prompt inclus)",
+ "description": "Accroche, corps, appel à l'action : la structure des vidéos qui percent, et le prompt qui écrit le script ET ce qu'il faut montrer à l'écran.",
+ "hashtags": "#TikTok #ChatGPT #CreateurDeContenu #IA #Lomé #Afrique",
+ "prompt": "Tu es un expert en contenu viral TikTok. Écris un script de vidéo de 30 secondes sur le thème « [ton thème] ». Structure obligatoire : une accroche choc dans les 3 premières secondes qui interpelle directement le spectateur, puis 3 points rapides et percutants, et enfin un appel à l'action à la fin. Ton direct, énergique. Pour chaque partie, indique entre crochets ce que je dois montrer à l'écran et le texte à incruster. Le tout doit se lire en environ 30 secondes à voix haute.",
+ "description_tiktok": "Accroche, corps, appel à l'action : la structure des vidéos qui percent, et le prompt qui écrit le script ET ce qu'il faut montrer à l'écran. #TikTok #ChatGPT #CreateurDeContenu #IA #Lomé #Afrique",
+ "rubrique": "script",
+ "date": "2026-11-07",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Sur TikTok, tu n'as pas trois secondes pour faire bonne impression."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Tu as trois secondes pour exister."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School. Aujourd'hui, je te montre comment ChatGPT écrit un script qui retient les gens jusqu'à la fin.",
+   "dit": "Je suis Joseph, de Lomé i-a Skoul. Aujourd'hui, je te montre comment Tchat-gé-pé-té écrit un script qui retient les gens jusqu'à la fin."
+  },
+  {
+   "partie": "structure",
+   "texte": "D'abord, la structure. Une vidéo courte qui marche a presque toujours trois parties."
+  },
+  {
+   "partie": "structure",
+   "texte": "Un : l'accroche, dans les trois premières secondes. Une phrase choc, une question, ou une promesse forte.",
+   "dit": "Un, l'accroche, dans les trois premières secondes. Une phrase choc, une question, ou une promesse forte."
+  },
+  {
+   "partie": "structure",
+   "texte": "Deux : le corps. Tu livres ce que tu as promis, vite, sans temps mort.",
+   "dit": "Deux, le corps. Tu livres ce que tu as promis, vite, sans temps mort."
+  },
+  {
+   "partie": "structure",
+   "texte": "Trois : l'appel à l'action. Tu dis au spectateur quoi faire : s'abonner, commenter, partager.",
+   "dit": "Trois, l'appel à l'action. Tu dis au spectateur quoi faire, s'abonner, commenter, partager."
+  },
+  {
+   "partie": "structure",
+   "texte": "Sans cette fin, l'élan retombe."
+  },
+  {
+   "partie": "prompt",
+   "texte": "Maintenant, le prompt. Ouvre ChatGPT et écris :",
+   "dit": "Maintenant, le prompt. Ouvre Tchat-gé-pé-té et écris,"
+  },
+  {
+   "partie": "prompt",
+   "texte": "« Tu es un expert en contenu viral TikTok. Écris un script de trente secondes sur le thème : trois erreurs qui te gardent pauvre. »",
+   "dit": "Tu es un expert en contenu viral TikTok. Écris un script de trente secondes sur le thème, trois erreurs qui te gardent pauvre."
+  },
+  {
+   "partie": "prompt",
+   "texte": "« Accroche choc dans les trois premières secondes, puis trois points rapides, puis un appel à l'action. Ton direct et énergique. »",
+   "dit": "Accroche choc dans les trois premières secondes, puis trois points rapides, puis un appel à l'action. Ton direct et énergique."
+  },
+  {
+   "partie": "prompt",
+   "texte": "Et voici la phrase qui change tout : « Pour chaque partie, indique entre crochets ce que je dois montrer à l'écran et le texte à incruster. »",
+   "dit": "Et voici la phrase qui change tout, Pour chaque partie, indique entre crochets ce que je dois montrer à l'écran et le texte à incruster."
+  },
+  {
+   "partie": "prompt",
+   "texte": "Résultat : tu ne reçois pas seulement le texte. Tu reçois aussi le plan de ta vidéo, image par image.",
+   "dit": "Résultat, tu ne reçois pas seulement le texte. Tu reçois aussi le plan de ta vidéo, image par image."
+  },
+  {
+   "partie": "formats",
+   "texte": "Ensuite, varie les formats. Cinq formats reviennent chez les créateurs qui percent."
+  },
+  {
+   "partie": "formats",
+   "texte": "La liste rapide : trois façons de, cinq erreurs à éviter.",
+   "dit": "La liste rapide, trois façons de, cinq erreurs à éviter."
+  },
+  {
+   "partie": "formats",
+   "texte": "Le mythe démonté : tu crois que… C'est faux, voici la vérité.",
+   "dit": "Le mythe démonté, tu crois que… C'est faux, voici la vérité."
+  },
+  {
+   "partie": "formats",
+   "texte": "L'histoire express : un récit court avec une leçon à la fin.",
+   "dit": "L'histoire express, un récit court avec une leçon à la fin."
+  },
+  {
+   "partie": "formats",
+   "texte": "Le tutoriel minute, et la transformation, avec un avant et un après."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Mon astuce de pro : ne demande pas un script à la fois.",
+   "dit": "Mon astuce de pro, ne demande pas un script à la fois."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Demande cinq scripts d'un coup, un par format, sur ton thème."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Tu choisis l'accroche la plus forte, tu lis le script à voix haute avec un chronomètre, et tu enregistres."
+  },
+  {
+   "partie": "erreur",
+   "texte": "L'erreur à éviter : attendre la vidéo parfaite. Ceux qui percent publient souvent et apprennent de chaque vidéo.",
+   "dit": "L'erreur à éviter, attendre la vidéo parfaite. Ceux qui percent publient souvent et apprennent de chaque vidéo."
+  },
+  {
+   "partie": "recap",
+   "texte": "Récapitulons : accroche, corps, appel à l'action, et les indications d'écran entre crochets.",
+   "dit": "Récapitulons, accroche, corps, appel à l'action, et les indications d'écran entre crochets."
+  },
+  {
+   "partie": "recap",
+   "texte": "L'IA change déjà le travail. Ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail. Ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+   "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ],
+ "historique": {
+  "titre": "Le script TikTok qui retient jusqu'à la fin (prompt inclus)",
+  "rubrique": "script",
+  "script": "03-tiktok",
+  "date": "2026-11-07"
+ }
+}

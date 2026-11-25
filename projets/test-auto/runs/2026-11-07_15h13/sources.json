@@ -1,0 +1,44 @@
+[
+ {
+  "type": "logo + capture",
+  "outil": "ChatGPT",
+  "source": "Wikimedia Commons",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation ; capture de la page publique"
+ },
+ {
+  "type": "photo",
+  "recherche": "african teen scrolling tiktok smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "Chris Yarzab",
+  "page": "https://www.flickr.com/photos/10957255@N08/50149843953",
+  "licence": "CC BY 2.0 (attribution : Chris Yarzab)",
+  "recherche_utilisee": "tiktok smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african creator telling story storytelling",
+  "source": "Openverse / flickr",
+  "auteur": "Het Nieuwe Instituut",
+  "page": "https://www.flickr.com/photos/94688030@N04/8634462364",
+  "licence": "CC BY 2.0 (attribution : Het Nieuwe Instituut)",
+  "recherche_utilisee": "story storytelling"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man filming smartphone tripod",
+  "source": "Openverse / flickr",
+  "auteur": "fixedandfrailing",
+  "page": "https://www.flickr.com/photos/11435686@N03/39583433671",
+  "licence": "CC BY 2.0 (attribution : fixedandfrailing)",
+  "recherche_utilisee": "smartphone tripod"
+ },
+ {
+  "type": "photo",
+  "recherche": "african people modern office artificial intelligence",
+  "source": "Openverse / flickr",
+  "auteur": "CoreForce",
+  "page": "https://www.flickr.com/photos/58441544@N00/5162398243",
+  "licence": "CC BY 2.0 (attribution : CoreForce)",
+  "recherche_utilisee": "people modern office artificial intelligence"
+ }
+]

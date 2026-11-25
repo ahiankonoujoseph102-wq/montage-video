@@ -1,0 +1,258 @@
+{
+ "scenes": [
+  {
+   "type": "question",
+   "texte": "VISAGE CHANGEANT ?",
+   "sous": "Problème de film IA",
+   "emoji": "1f630",
+   "geste": "explique",
+   "expression": "grimace"
+  },
+  {
+   "type": "carte",
+   "kicker": "LE SECRET",
+   "texte": "TECHNIQUE DES\nPROS DE L'IA",
+   "emoji": "1f525",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man teaching instructor laptop studio",
+   "texte": "LOMÉ IA SCHOOL",
+   "geste": "explique",
+   "expression": "parle",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : Capture Queen ™ · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "PAS DE MÉMOIRE\nENTRE LES IMAGES",
+   "emoji": "26a0_fe0f",
+   "geste": "designe",
+   "expression": "surpris"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Prompt vagues",
+    "ok": false
+   },
+   "droite": {
+    "texte": "Nouveau visage",
+    "ok": false
+   },
+   "a": [
+    "berger »,",
+    "visage"
+   ],
+   "geste": "explique",
+   "expression": "grimace"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "FICHE PERSONNAGE\nFIGÉE DANS CHATGPT",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 1,
+   "expression": "parle"
+  },
+  {
+   "type": "prompt",
+   "texte": "Pour chaque personnage, crée une fiche détaillée et figée pour toutes les scènes.",
+   "geste": "designe"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Humain: âge, peau, coiffure, habits.\nAnimal: espèce, pelage, cicatrice.",
+   "emoji": "1f4ac"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Génère la fiche de Koffi",
+   "reponse": "Voici la fiche de Koffi.\nNom : Koffi\nÂge : 28 ans\nProfession : Analyste\nStatut : Actif",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Génère la fiche de Simba",
+   "reponse": "Nom : Simba\nEspèce : Lion\nUnivers : Le Roi Lion\nRôle : Roi de la Terre des Lions\nFamille : Mufasa (père), Sarabi (mère)",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "IMAGE DE\nRÉFÉRENCE",
+   "emoji": "1f50e",
+   "geste": "compte",
+   "doigts": 2,
+   "expression": "parle"
+  },
+  {
+   "type": "photo",
+   "recherche": "african shepherd character concept art full body neutral background",
+   "texte": "IMAGE RÉFÉRENCE",
+   "geste": "designe",
+   "expression": "neutre",
+   "fichier": "test-auto/photos/11.jpg",
+   "credit": "Photo : Peter G Trimming · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man holding tablet editing video film",
+   "texte": "GARDE CETTE IMAGE",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/12.jpg",
+   "credit": "Photo : unawe · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "PROMPTS DES\nSCÈNES DÉTAILLÉS",
+   "emoji": "1f680",
+   "geste": "compte",
+   "doigts": 3,
+   "expression": "parle"
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE",
+   "texte": "RÉPÈTE LA FICHE\nENTRE PARENTHÈSES",
+   "emoji": "1f4aa",
+   "geste": "explique",
+   "expression": "parle"
+  },
+  {
+   "type": "demo",
+   "outil": "midjourney",
+   "prompt": "Pour chaque personnage de mon film, crée une FICHE PERSONNAGE détaillée et FIGÉE : une description physique complète et définitive qui…",
+   "reponse": "Voici les fiches de vos personnages.\nLe visuel restera toujours identique.\nFICHE 1 : HUMAIN (NOM DU PERSO)\nÂge : 30 ans, peau mate, yeux bruns.\nCoiffure : cheveux courts noirs.",
+   "prompt_complet": "Pour chaque personnage de mon film, crée une FICHE PERSONNAGE détaillée et FIGÉE : une description physique complète et définitive qui sera répétée à chaque scène pour que l'IA génère toujours exactement le même personnage. Pour un humain : âge, peau, visage, coiffure, corpulence, vêtements exacts. Pour un animal : espèce, taille, couleur du pelage ou des plumes, signes distinctifs, expression, accessoires éventuels. Nomme chaque fiche.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "Assistant IA",
+   "logo": false
+  },
+  {
+   "type": "carte",
+   "kicker": "RÈGLE D'OR",
+   "texte": "FICHE FIGÉE +\nIMAGE RÉFÉRENCE",
+   "emoji": "2728",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "texte": "DÉTAILS PRÉCIS"
+  },
+  {
+   "type": "alerte",
+   "texte": "NE GÉNÈRE PAS\nTOUT D'UN COUP",
+   "emoji": "274c",
+   "geste": "bras-croises",
+   "expression": "grimace"
+  },
+  {
+   "type": "liste",
+   "titre": "LES 3 ÉTAPES",
+   "items": [
+    {
+     "texte": "1. Fiche figée",
+     "a": "figée,"
+    },
+    {
+     "texte": "2. Image réf.",
+     "a": "référence,"
+    },
+    {
+     "texte": "3. Répétition",
+     "a": "scène."
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "PARTIE 2",
+   "texte": "SYNCHRO LABIALE\nDES PERSONNAGES",
+   "emoji": "1f389",
+   "geste": "explique",
+   "expression": "surpris"
+  },
+  {
+   "type": "photo",
+   "recherche": "african student learning artificial intelligence laptop vision",
+   "texte": "PRENDS DE L'AVANCE",
+   "geste": "pouce",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/21.jpg",
+   "credit": "Photo : jurvetson · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "vert",
+  "bleu",
+  "violet",
+  "vert",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "vert",
+  "orange",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

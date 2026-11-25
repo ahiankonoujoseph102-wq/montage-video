@@ -1,0 +1,112 @@
+{
+ "id": "04-film-personnage",
+ "titre": "Film IA : le secret pour garder le même personnage dans chaque scène",
+ "description": "Pourquoi ton personnage change de visage d'une scène à l'autre, et la méthode de la fiche personnage figée + image de référence. Exemple complet : Koffi et le lion Simba.",
+ "hashtags": [
+  "#FilmIA",
+  "#ChatGPT",
+  "#IA",
+  "#CreationVideo",
+  "#Afrique",
+  "#Lomé"
+ ],
+ "accroche": {
+  "lignes": [
+   "TON PERSONNAGE",
+   "CHANGE DE",
+   "VISAGE ?"
+  ],
+  "cle": "VISAGE"
+ },
+ "prompt": "Pour chaque personnage de mon film, crée une FICHE PERSONNAGE détaillée et FIGÉE : une description physique complète et définitive qui sera répétée à chaque scène pour que l'IA génère toujours exactement le même personnage. Pour un humain : âge, peau, visage, coiffure, corpulence, vêtements exacts. Pour un animal : espèce, taille, couleur du pelage ou des plumes, signes distinctifs, expression, accessoires éventuels. Nomme chaque fiche.",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Ton film IA est raté parce que ton personnage change de visage à chaque scène ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Voici le secret des créateurs professionnels."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School. On va créer ensemble les personnages d'un vrai film : Koffi et le lion Simba."
+  },
+  {
+   "partie": "probleme",
+   "texte": "Le problème est simple : l'IA ne se souvient pas de ton personnage d'une image à l'autre."
+  },
+  {
+   "partie": "probleme",
+   "texte": "Si tu écris juste « un jeune berger », elle invente un nouveau visage à chaque fois."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Étape un : la fiche personnage figée. Dans ChatGPT, écris :"
+  },
+  {
+   "partie": "etape1",
+   "texte": "« Pour chaque personnage de mon film, crée une fiche personnage détaillée et figée, qui sera répétée à chaque scène. »"
+  },
+  {
+   "partie": "etape1",
+   "texte": "« Pour un humain : âge, peau, visage, coiffure, corpulence, vêtements exacts. Pour un animal : espèce, couleur du pelage, signes distinctifs. »"
+  },
+  {
+   "partie": "etape1",
+   "texte": "Résultat. Koffi : jeune berger africain de vingt ans, peau noire, cheveux courts crépus, tunique beige simple, bâton de berger."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Simba : lion majestueux à l'épaisse crinière dorée, fine cicatrice sur l'œil gauche, regard noble."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Étape deux : l'image de référence."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Tu demandes une image réaliste de chaque personnage, en pied, sur un fond neutre, avec la fiche collée mot pour mot."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Cette image, tu la gardes. Elle accompagnera chaque scène du film."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Étape trois : les prompts des scènes."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Pour chaque scène, tu répètes la fiche entre parenthèses juste après le nom du personnage."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Par exemple : dans la savane au coucher du soleil, Koffi, jeune berger africain de vingt ans, tunique beige, bâton de berger, s'approche de Simba, lion à la crinière dorée, cicatrice sur l'œil gauche."
+  },
+  {
+   "partie": "regle",
+   "texte": "La règle d'or : la cohérence, c'est la répétition de la fiche plus l'image de référence."
+  },
+  {
+   "partie": "regle",
+   "texte": "La cicatrice de Simba doit apparaître dans chaque prompt, sinon elle disparaît."
+  },
+  {
+   "partie": "erreur",
+   "texte": "L'erreur à éviter : générer tout le film d'un coup. Teste deux ou trois scènes d'abord, ajuste, puis continue."
+  },
+  {
+   "partie": "recap",
+   "texte": "Récapitulons : la fiche figée, l'image de référence, et la fiche répétée dans chaque scène."
+  },
+  {
+   "partie": "recap",
+   "texte": "Dans la partie deux, on fait parler Koffi et Simba, avec les lèvres synchronisées."
+  },
+  {
+   "partie": "recap",
+   "texte": "L'IA change déjà le travail. Ceux qui l'apprennent prennent de l'avance."
+  }
+ ]
+}

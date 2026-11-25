@@ -1,0 +1,136 @@
+{
+ "chargement_s": 36.5,
+ "phrases": [
+  {
+   "i": 0,
+   "duree_audio": 4.16,
+   "temps_calcul": 92.2
+  },
+  {
+   "i": 1,
+   "duree_audio": 4.0,
+   "temps_calcul": 75.8
+  },
+  {
+   "i": 2,
+   "duree_audio": 4.84,
+   "temps_calcul": 86.7
+  },
+  {
+   "i": 3,
+   "duree_audio": 4.8,
+   "temps_calcul": 84.8
+  },
+  {
+   "i": 4,
+   "duree_audio": 4.52,
+   "temps_calcul": 81.1
+  },
+  {
+   "i": 5,
+   "duree_audio": 4.04,
+   "temps_calcul": 75.5
+  },
+  {
+   "i": 6,
+   "duree_audio": 4.76,
+   "temps_calcul": 85.1
+  },
+  {
+   "i": 7,
+   "duree_audio": 4.24,
+   "temps_calcul": 78.9
+  },
+  {
+   "i": 8,
+   "duree_audio": 4.4,
+   "temps_calcul": 81.1
+  },
+  {
+   "i": 9,
+   "duree_audio": 5.92,
+   "temps_calcul": 96.9
+  },
+  {
+   "i": 10,
+   "duree_audio": 3.44,
+   "temps_calcul": 67.9
+  },
+  {
+   "i": 11,
+   "duree_audio": 6.8,
+   "temps_calcul": 106.7
+  },
+  {
+   "i": 12,
+   "duree_audio": 4.44,
+   "temps_calcul": 82.0
+  },
+  {
+   "i": 13,
+   "duree_audio": 3.92,
+   "temps_calcul": 74.8
+  },
+  {
+   "i": 14,
+   "duree_audio": 5.04,
+   "temps_calcul": 88.5
+  },
+  {
+   "i": 15,
+   "duree_audio": 4.96,
+   "temps_calcul": 86.4
+  },
+  {
+   "i": 16,
+   "duree_audio": 3.8,
+   "temps_calcul": 72.1
+  },
+  {
+   "i": 17,
+   "duree_audio": 3.92,
+   "temps_calcul": 73.9
+  },
+  {
+   "i": 18,
+   "duree_audio": 5.28,
+   "temps_calcul": 90.6
+  },
+  {
+   "i": 19,
+   "duree_audio": 4.76,
+   "temps_calcul": 84.7
+  },
+  {
+   "i": 20,
+   "duree_audio": 5.28,
+   "temps_calcul": 90.5
+  },
+  {
+   "i": 21,
+   "duree_audio": 4.08,
+   "temps_calcul": 75.3
+  },
+  {
+   "i": 22,
+   "duree_audio": 8.24,
+   "temps_calcul": 126.5
+  },
+  {
+   "i": 23,
+   "duree_audio": 3.64,
+   "temps_calcul": 71.4
+  },
+  {
+   "i": 24,
+   "duree_audio": 3.96,
+   "temps_calcul": 75.5
+  },
+  {
+   "i": 25,
+   "duree_audio": 4.64,
+   "temps_calcul": 82.5
+  }
+ ],
+ "total_s": 2223.8
+}

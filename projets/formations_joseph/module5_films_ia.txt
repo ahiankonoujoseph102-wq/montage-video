@@ -1,0 +1,359 @@
+                 FORMATION EN INTELLIGENCE ARTIFICIELLE
+
+
+                              MODULE 5
+                    Créer un Vrai Film avec l'IA
+Des personnages qui parlent, avec de vrais dialogues synchronisés : humains, animaux, ou les
+           deux — étape par étape, avec tous les prompts prêts à personnaliser
+
+
+
+                                    Coach Joseph
+                                    Joseph Academy
+                                    +228 72 24 02 31
+Introduction
+Dans le Module 4, vous avez appris a creer des films d'histoire : une voix off raconte, et les images
+illustrent. Dans ce Module 5, on passe au niveau superieur : le vrai film, comme au cinema.
+
+La grande difference entre les deux :
+
+Module 4 : un narrateur raconte l'histoire par-dessus les images (voix off).
+Module 5 : les personnages parlent eux-memes, avec leur propre voix et leurs levres synchronisees.
+Ils se repondent, ils vivent la scene.
+
+Avec ce module, vous saurez creer : des mini-films dramatiques, des sketchs comiques, des
+dialogues educatifs, des publicites avec des acteurs IA, des films d'animaux qui parlent (fables,
+dessins animes realistes), et des courts-metrages complets.
+
+Nous avancerons en six etapes :
+
+1. Ecrire le scenario avec les dialogues
+2. Creer les personnages (humains ou animaux)
+3. Animer les scenes avec la parole
+4. Les scenes a plusieurs personnages
+5. Le montage final
+6. Les regles d'or professionnelles
+
+    POINT CLE
+
+    A la fin de ce module, vous saurez creer n'importe quel film, avec n'importe quel type de
+    personnage : des humains, des animaux, ou les deux ensemble. La methode est toujours la
+    meme.
+
+
+
+
+Etape 1 — Ecrire le scenario avec les dialogues
+Dans un film, le dialogue est roi. Ce sont les paroles des personnages qui portent l'histoire, pas un
+narrateur. Le scenario doit donc preciser QUI parle, QUAND, et QUOI exactement.
+
+Possibilite 1 : Vous n'avez aucune idee (l'IA propose)
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Tu es un scenariste professionnel. Propose-moi 5 idees de courts films avec dialogues sur le
+    theme [comedie / lecon de vie / famille / argent / amitie], pour un public africain francophone. Pour
+    chaque idee : un titre et un resume en deux phrases.
+
+
+Vous choisissez votre idee preferee, puis :
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Developpe l'idee numero [X] en un scenario complet de court film avec de vrais dialogues entre
+    les personnages.
+Possibilite 2 : Vous avez deja votre idee
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Tu es un scenariste professionnel. Ecris le scenario d'un court film a partir de mon idee :
+    [racontez votre idee]. Je veux de vrais dialogues naturels entre les personnages, une histoire
+    captivante et une chute forte a la fin. Public africain francophone.
+
+
+
+Possibilite 3 : Le decoupage en scenes filmables (indispensable)
+Quelle que soit l'origine du scenario, on le decoupe toujours :
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Decoupe ce scenario en scenes de 8 secondes maximum chacune. Pour chaque scene, indique :
+    1) le decor precis, 2) les personnages presents, 3) QUI parle et la phrase EXACTE qu'il dit (une a
+    deux phrases courtes maximum par scene), 4) l'emotion et le ton de voix. Numerote les scenes.
+
+
+    POINT CLE
+
+    Un clip video IA dure environ 8 secondes. Un personnage ne peut donc dire qu'UNE ou DEUX
+    phrases courtes par scene. Si un dialogue est long, on le decoupe en plusieurs scenes. C'est la
+    regle numero 1 des films IA.
+Etape 2 — Creer les personnages (humains ou animaux)
+Comme au Module 4, le secret de la coherence est double : la fiche personnage figee + l'image de
+reference.
+
+Etape 2.1 : La fiche personnage figee
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Pour chaque personnage de mon film, cree une FICHE PERSONNAGE detaillee et FIGEE : une
+    description physique complete et definitive qui sera repetee a chaque scene pour que l'IA genere
+    toujours exactement le meme personnage. Pour un humain : age, peau (africaine, peau noire),
+    visage, coiffure, corpulence, vetements exacts. Pour un animal : espece, taille, couleur du pelage
+    ou des plumes, signes distinctifs, expression, accessoires eventuels. Nomme chaque fiche.
+
+
+
+Etape 2.2 : L'image de reference de chaque personnage
+Pour un personnage HUMAIN :
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Cree une image realiste d'un personnage pour mon film : [collez sa fiche figee, ex : homme
+    africain de 45 ans, peau noire, barbe grise courte, boubou bleu royal, regard sage]. Plan en pied,
+    fond neutre, lumiere naturelle, qualite photo professionnelle, tres net.
+
+
+Pour un personnage ANIMAL :
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Cree une image realiste d'un animal personnage pour mon film : [ex : un lion majestueux a la
+    criniere doree epaisse, une cicatrice fine sur l'oeil gauche, regard noble et bienveillant]. Corps
+    entier visible, fond neutre de savane floue, lumiere naturelle, style cinematographique realiste,
+    tres net.
+
+
+    POINT CLE
+
+    Un film d'animaux qui parlent suit EXACTEMENT la meme methode qu'un film d'humains. Seule
+    la description change. Le lion garde sa cicatrice sur l'oeil gauche a chaque scene, comme un
+    personnage humain garde ses vetements. La coherence = la repetition de la description + l'image
+    de reference.
+
+
+
+Etape 2.3 : Demander a ChatGPT tous les prompts d'images des scenes
+
+    PROMPT A COPIER / PERSONNALISER
+Pour chaque scene numerotee du scenario, ecris-moi UN SEUL prompt d'image complet, pret a
+copier-coller, avec la description physique de chaque personnage entre parentheses juste apres
+son nom, le decor, la position des personnages et l'action. Style cinematographique realiste,
+image tres nette. Numerote selon les scenes, en plusieurs parties si necessaire.
+
+
+CONSEIL
+
+Les films d'animaux qui parlent (fables, histoires morales) marchent tres fort sur les reseaux
+sociaux. C'est un excellent creneau a explorer.
+Etape 3 — Animer les scenes avec la parole
+C'est ici que le film prend vie. Contrairement au Module 4, ici on veut que les personnages parlent
+reellement, avec les levres synchronisees et leur voix.
+
+L'outil roi : Google Flow (avec Veo)
+Pour les dialogues parles synchronises, Google Flow est le meilleur outil actuellement. C'est
+precisement son point fort : il genere la voix ET synchronise les levres.
+
+Lien : https://flow.google
+
+Kling reste utile pour les scenes d'action sans dialogue : paysages, courses, batailles, moments
+d'ambiance.
+
+Lien : https://klingai.com
+
+Le prompt video pour une scene avec dialogue (humain)
+
+    PROMPT A COPIER / PERSONNALISER
+
+    A partir de cette image de reference, anime ce personnage [fiche figee] dans le decor suivant :
+    [decrivez]. Il dit en francais, d'une voix [grave et sage / joyeuse / inquiete] : "[la phrase exacte]".
+    Synchronisation naturelle des levres, gestes et expressions realistes correspondant a l'emotion,
+    style cinematographique.
+
+
+
+Le prompt video pour un animal qui parle
+
+    PROMPT A COPIER / PERSONNALISER
+
+    A partir de cette image de reference, anime ce [lion a la criniere doree, cicatrice sur l'oeil gauche]
+    dans [la savane au coucher du soleil]. Il parle en francais d'une voix profonde et royale et dit : "[la
+    phrase exacte]". Sa gueule s'anime de facon synchronisee avec les paroles, expression vivante
+    et expressive, style cinematographique realiste.
+
+
+
+Demander a ChatGPT tous les prompts videos d'un coup
+
+    PROMPT A COPIER / PERSONNALISER
+
+    J'ai cree toutes les images de mes scenes. Pour chaque scene numerotee, ecris-moi un prompt
+    video pret a copier-coller pour Google Flow. Chaque prompt doit contenir : la description du
+    personnage (rappelee), le decor, l'action et les gestes, la phrase EXACTE dite par le personnage
+    avec la mention "en francais" et le ton de voix, et la synchronisation des levres. Numerote selon
+    les scenes, en plusieurs parties si necessaire.
+Etape 4 — Les scenes a plusieurs personnages
+Le coeur d'un vrai film : des personnages qui se repondent.
+
+La regle : un echange = plusieurs clips courts
+Dans un clip de 8 secondes, on peut faire tenir au maximum une replique et une reponse courte.
+Pour un vrai dialogue, on enchaine les clips :
+
+Clip 1 : le Personnage A pose sa question.
+Clip 2 : le Personnage B repond.
+Clip 3 : le Personnage A reagit.
+Puis on colle tout dans CapCut. C'est exactement comme ca que travaillent les createurs
+professionnels.
+
+Le prompt pour une scene a deux personnages
+
+    PROMPT A COPIER / PERSONNALISER
+
+    Voici les images de reference de mes deux personnages. Cree une scene dans [le decor].
+    [Personnage 1 + fiche figee] dit en francais, d'une voix [ton] : "[replique]". Puis [Personnage 2 +
+    fiche figee] repond en francais, d'une voix [ton] : "[reponse courte]". Precise bien qui parle en
+    premier. Synchronisation des levres naturelle pour chacun, expressions et regards realistes entre
+    les personnages, style cinematographique.
+
+
+
+L'astuce des plans alternes (comme au cinema)
+Pour un long dialogue, alternez les plans : un clip sur le visage de celui qui parle, puis un clip sur celui
+qui repond. C'est plus simple a generer (un seul personnage parlant par clip), plus fiable, et ca donne
+un vrai rythme de cinema.
+
+    PROMPT A COPIER / PERSONNALISER
+
+    A partir de l'image de reference, plan rapproche sur [personnage + fiche], dans [decor]. Il ecoute
+    d'abord une seconde, puis repond en francais d'une voix [ton] : "[reponse]". Levres
+    synchronisees, expression realiste.
+
+
+
+
+Etape 5 — Le montage final (CapCut)
+Lien : https://www.capcut.com
+
+1. Importez tous vos clips dans l'ordre des scenes.
+2. GARDEZ LE SON des clips : c'est la grande difference avec le Module 4. Ici, les voix des
+personnages SONT le film. On ne coupe rien.
+3. Ajoutez une musique de fond a volume bas (elle ne doit jamais couvrir les dialogues).
+4. Ajoutez les sous-titres des dialogues (beaucoup regardent sans le son).
+5. Des transitions discretes entre les scenes (coupes franches de preference, comme au cinema).
+6. Le titre au debut, votre nom et contact a la fin.
+7. Eventuels bruitages (porte, pas, vent) pour enrichir l'ambiance : CapCut en propose gratuitement.
+Etape 6 — Les regles d'or professionnelles
+
+    POINT CLE
+
+    Toujours preciser "en francais" dans chaque prompt de dialogue, sinon l'IA risque de faire parler
+    vos personnages en anglais.
+
+
+    POINT CLE
+
+    Dialogues courts : 1 a 2 phrases par clip de 8 secondes, jamais plus.
+
+
+    POINT CLE
+
+    Chiffres et prix en toutes lettres : "vingt-cinq mille francs", jamais "25 000 F", sinon mauvaise
+    prononciation.
+
+
+    POINT CLE
+
+    Pas de texte ecrit sur les images (risque de blocage et de fautes) : tout texte s'ajoute dans
+    CapCut.
+
+
+    POINT CLE
+
+    La fiche personnage figee se repete dans CHAQUE prompt, image et video. L'image de reference
+    accompagne chaque generation de scene.
+
+
+    POINT CLE
+
+    Testez 2 ou 3 scenes d'abord avant de generer tout le film : si le rendu vous plait, continuez ;
+    sinon, ajustez les prompts. Ca economise vos credits.
+
+
+    POINT CLE
+
+    Un long dialogue = plusieurs clips alternes, jamais un seul clip surcharge.
+
+
+
+
+Exemple complet fil rouge : Le Lion et le Berger
+Pour tout illustrer, suivons un mini-film de 6 scenes melant un humain et un animal qui parlent.
+
+    EXEMPLE
+
+    L'HISTOIRE : un jeune berger sauve un lion pris au piege. Des annees plus tard, capture et jete
+    aux fauves, il retrouve ce meme lion... qui le reconnait. Lecon : aucune bonte n'est jamais perdue.
+
+
+Les fiches figees (creees a l'Etape 2) :
+    EXEMPLE
+
+    KOFFI : jeune berger africain de 20 ans, peau noire, cheveux courts crepus, tunique beige
+    simple, baton de berger, visage doux et courageux.
+
+
+    EXEMPLE
+
+    SIMBA : lion majestueux a l'epaisse criniere doree, fine cicatrice sur l'oeil gauche, regard noble.
+
+
+Scene 3 : exemple de prompt video (dialogue humain vers animal) :
+
+    PROMPT A COPIER / PERSONNALISER
+
+    A partir des images de reference, dans la savane au coucher du soleil, Koffi (jeune berger africain
+    de 20 ans, peau noire, cheveux courts, tunique beige, baton de berger) s'approche prudemment
+    de Simba (lion a l'epaisse criniere doree, cicatrice sur l'oeil gauche) pris dans un piege de cordes.
+    Koffi dit en francais, d'une voix douce et rassurante : "N'aie pas peur... je vais te liberer."
+    Synchronisation des levres, gestes lents et prudents, style cinematographique realiste.
+
+
+Scene 6 : la chute, l'animal parle :
+
+    PROMPT A COPIER / PERSONNALISER
+
+    A partir des images de reference, dans une arene poussiereuse, Simba (lion a la criniere doree,
+    cicatrice sur l'oeil gauche) s'avance vers Koffi terrifie, puis s'arrete et dit en francais, d'une voix
+    profonde et royale : "Toi... tu m'as sauve un jour. Aujourd'hui, c'est mon tour." Sa gueule s'anime
+    en synchronisation avec les paroles, regard emu, style cinematographique realiste.
+
+
+    POINT CLE
+
+    Vous voyez la methode : fiches repetees + dialogue exact en francais + ton de voix +
+    synchronisation. C'est la meme recette pour n'importe quel film.
+Conclusion du Module 5
+Pour creer un vrai film avec l'IA, quelle que soit l'histoire (humains, animaux, ou les deux) :
+
+1. SCENARIO avec dialogues courts, decoupe en scenes de 8 secondes (ChatGPT)
+2. FICHES PERSONNAGES figees + images de reference
+3. PROMPTS VIDEOS avec dialogue exact, "en francais", ton de voix, synchronisation (Google Flow)
+4. DIALOGUES a plusieurs = clips alternes
+5. MONTAGE dans CapCut en GARDANT le son des voix
+6. REGLES D'OR respectees a chaque etape
+
+Les outils et leurs liens
+ChatGPT (scenario et tous les prompts) : https://chat.openai.com
+
+Google Flow (scenes parlees) : https://flow.google
+
+Kling (scenes d'action sans dialogue) : https://klingai.com
+
+CapCut (montage) : https://www.capcut.com
+
+
+Avec le Module 4 (histoires en voix off) et ce Module 5 (vrais films avec dialogues), vous maitrisez les
+deux grands formats de la creation video par IA. Vous pouvez tout creer. A vous de jouer !
+
+
+                       Coach Joseph — Joseph Academy — +228 72 24 02 31
+

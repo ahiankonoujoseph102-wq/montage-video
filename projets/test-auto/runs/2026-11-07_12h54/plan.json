@@ -1,0 +1,270 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "recherche": "african person scrolling smartphone",
+   "texte": "PUBLIER SUR FACEBOOK",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Photo : Peter Mooney · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african team working desk",
+   "texte": "GAGNER DU TEMPS",
+   "fichier": "test-auto/photos/01.jpg",
+   "credit": "Photo : US Army Africa · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man smiling office",
+   "texte": "JOSEPH LOMÉ IA",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african person social media feed",
+   "texte": "LE SCROLL RAPIDE",
+   "fichier": "test-auto/photos/03.jpg",
+   "credit": "Openverse · Eric Seneca Kim"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman looking smartphone",
+   "texte": "CAPTER L'ATTENTION",
+   "fichier": "test-auto/photos/04.jpg",
+   "credit": "Photo : Stemack Street · CC BY 2.0"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Les idées",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Le post",
+    "ok": true
+   },
+   "a": [
+    "idées,",
+    "complet."
+   ]
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "prompt",
+   "texte": "Tu es un expert en contenu des réseaux sociaux. Donne-moi dix idées de posts Facebook.",
+   "geste": "designe"
+  },
+  {
+   "type": "prompt",
+   "texte": "Chaque idée doit être accrocheuse, apporter de la valeur et donner envie de cliquer.",
+   "geste": "designe"
+  },
+  {
+   "type": "numero",
+   "n": 10,
+   "texte": "DIX IDÉES\nPOUR DIX JOURS",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "photo",
+   "recherche": "african business woman thinking",
+   "texte": "SELECTIONNER",
+   "fichier": "test-auto/photos/10.jpg",
+   "credit": "Photo : Rawpixel Ltd · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "DÉVELOPPER\nL'IDÉE",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "prompt",
+   "texte": "Développe l'idée numéro trois en un post Facebook complet, ton inspirant.",
+   "geste": "designe"
+  },
+  {
+   "type": "prompt",
+   "texte": "Commence par une accroche forte, courts paragraphes, quelques émojis.",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Développe l'idée 3 avec une accroche forte et des émojis.",
+   "reponse": "Prêt à tout révolutionner ? 🚀\nC'est le moment d'agir ! 🔥\nOubliez les règles reçues. 💡\nFoncez vers le succès. ⭐\nDécouvrons l'idée 3. 👇",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "liste",
+   "titre": "TYPES DE POSTS",
+   "items": [
+    {
+     "texte": "Valeur",
+     "a": "enseigne."
+    },
+    {
+     "texte": "Preuve",
+     "a": "résultat."
+    },
+    {
+     "texte": "Histoire",
+     "a": "lien."
+    },
+    {
+     "texte": "Offre",
+     "a": "vend."
+    }
+   ]
+  },
+  {
+   "type": "photo",
+   "recherche": "african speaker teaching students",
+   "texte": "PARTAGER DU CONTENU",
+   "fichier": "test-auto/photos/16.jpg",
+   "credit": "Photo : Jirka Matousek · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african customer success celebrating",
+   "texte": "CRÉER DE LA PREUVE",
+   "fichier": "test-auto/photos/17.jpg",
+   "credit": "Photo : USAG-Humphreys · CC BY 2.0"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "3 Posts Valeur",
+    "ok": true
+   },
+   "droite": {
+    "texte": "1 Post Vente",
+    "ok": true
+   },
+   "a": [
+    "valeur,",
+    "vend"
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "GAGNER LA CONFIANCE"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Tu es un expert en contenu des réseaux sociaux. Donne-moi 10 idées de posts Facebook pour [ton activité] qui s'adresse à [ta cible, ex.…",
+   "reponse": "Bonjour ! Voici tes idées.\nCoaching en ligne pour jeunes.\nCible : Africains de 20-35 ans.\nVoici les 10 concepts clés.\nC'est parti pour le succès !",
+   "prompt_complet": "Tu es un expert en contenu des réseaux sociaux. Donne-moi 10 idées de posts Facebook pour [ton activité] qui s'adresse à [ta cible, ex. : jeunes adultes africains de 20 à 35 ans]. Chaque idée doit être accrocheuse, apporter de la valeur et donner envie de cliquer. Présente-les sous forme de liste numérotée avec pour chacune un titre court.\n\nPuis : Développe l'idée numéro [X] en un post Facebook complet. Ton [inspirant et motivant], comme si je parlais directement à un ami. Commence par une accroche forte qui interpelle dès la première ligne. Courts paragraphes faciles à lire sur téléphone. Quelques émojis pertinents. Termine par une question ouverte pour engager les commentaires. Maximum 150 mots.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "texte": "TESTER ET ANALYSER"
+  },
+  {
+   "type": "liste",
+   "titre": "RÉCAPITULATIF",
+   "items": [
+    {
+     "texte": "10 Idées",
+     "a": "idées"
+    },
+    {
+     "texte": "Post Complet",
+     "a": "complet"
+    },
+    {
+     "texte": "Règle 3 pour 1",
+     "a": "trois"
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "texte": "PRENDRE L'AVANCE"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "nuit",
+  "vert",
+  "rose",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

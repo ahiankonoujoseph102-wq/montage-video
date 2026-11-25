@@ -1,0 +1,14 @@
+[
+ {
+  "type": "logo",
+  "outil": "WhatsApp",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation"
+ },
+ {
+  "type": "logo + capture",
+  "outil": "Claude",
+  "source": "Simple Icons (CC0)",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation ; capture de la page publique"
+ }
+]

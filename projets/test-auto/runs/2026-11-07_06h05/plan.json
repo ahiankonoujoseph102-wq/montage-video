@@ -1,0 +1,289 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "recherche": "african woman smartphone shop",
+   "texte": "TELEPHONE",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Photo : Sharon Hahn Darlin · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african merchant frustrated smartphone",
+   "texte": "PROBLEME",
+   "fichier": "test-auto/photos/01.jpg",
+   "credit": "Photo : seanmfreese · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man smiling studio portrait",
+   "texte": "JOSEPH",
+   "fichier": "test-auto/photos/02.jpg",
+   "credit": "Photo : AndYaDontStop · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african students training classroom",
+   "texte": "ECOLE",
+   "fichier": "test-auto/photos/03.jpg",
+   "credit": "Photo : US Army Africa · CC BY 2.0"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "L'IA NE\nDEVINE RIEN",
+   "emoji": "1f914",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "prompt",
+   "texte": "Rédige un post",
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "modern office desk african worker",
+   "texte": "EMPLOYE",
+   "fichier": "test-auto/photos/06.jpg",
+   "credit": "Photo : ell brown · CC BY 2.0"
+  },
+  {
+   "type": "photo",
+   "recherche": "african woman smiling boutique",
+   "texte": "CLIENTS",
+   "fichier": "test-auto/photos/07.jpg",
+   "credit": "Photo : shankar s. · CC BY 2.0"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": false
+    },
+    {
+     "id": "claude",
+     "nom": "Claude",
+     "site": "claude.ai",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Agis en expert marketing",
+   "reponse": "Bonjour, expert à votre service.\nBoostons votre visibilité.\nQuelle est votre cible ?\nQuel est votre produit ?\nPassons à l'action.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "photo",
+   "recherche": "smartphone screen chat app",
+   "texte": "APPLICATION",
+   "fichier": "test-auto/photos/10.jpg",
+   "credit": "Photo : Visual Content · CC BY 2.0"
+  },
+  {
+   "type": "prompt",
+   "texte": "Tape ta demande",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Boutique à Lomé chaussures",
+   "reponse": "Bonjour pour des chaussures\nà Lomé voici des adresses\nTop Mode au grand marché\nBata sur le boulevard\nEt Espace Chaussures",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Post Facebook généré avec succès",
+   "emoji": "2705"
+  },
+  {
+   "type": "photo",
+   "recherche": "african shoes shop display",
+   "texte": "PRODUITS",
+   "fichier": "test-auto/photos/14.jpg",
+   "credit": "Photo : markhillary · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "texte": "TON CHALEUREUX"
+  },
+  {
+   "type": "carte",
+   "texte": "VERIFICATION"
+  },
+  {
+   "type": "carte",
+   "texte": "CORRECTION"
+  },
+  {
+   "type": "carte",
+   "texte": "WHATSAPP"
+  },
+  {
+   "type": "carte",
+   "texte": "LECTURE"
+  },
+  {
+   "type": "carte",
+   "texte": "STYLE"
+  },
+  {
+   "type": "carte",
+   "texte": "PERSONNALITE"
+  },
+  {
+   "type": "carte",
+   "texte": "COMMERCE"
+  },
+  {
+   "type": "carte",
+   "texte": "TESTS"
+  },
+  {
+   "type": "carte",
+   "texte": "PROMPTS"
+  },
+  {
+   "type": "carte",
+   "texte": "GAIN TEMPS"
+  },
+  {
+   "type": "carte",
+   "texte": "PRATIQUE"
+  },
+  {
+   "type": "carte",
+   "texte": "PROGRES"
+  },
+  {
+   "type": "carte",
+   "texte": "ESSAIS"
+  },
+  {
+   "type": "carte",
+   "texte": "APPRENTISSAGE"
+  },
+  {
+   "type": "carte",
+   "texte": "ETAPES"
+  },
+  {
+   "type": "carte",
+   "texte": "NOTES"
+  },
+  {
+   "type": "carte",
+   "texte": "AVENIR"
+  },
+  {
+   "type": "carte",
+   "texte": "REVOLUTION"
+  },
+  {
+   "type": "carte",
+   "texte": "SUCCES"
+  },
+  {
+   "type": "carte",
+   "texte": "METHODES"
+  },
+  {
+   "type": "carte",
+   "texte": "COMPETENCES"
+  },
+  {
+   "type": "carte",
+   "texte": "ACTIVITE"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "nuit",
+  "violet",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "violet",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "violet",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "violet",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "violet",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "violet",
+  "bleu",
+  "orange",
+  "vert",
+  "rose",
+  "nuit",
+  "violet",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

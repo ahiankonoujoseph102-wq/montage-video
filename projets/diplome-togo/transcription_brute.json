@@ -1,0 +1,6128 @@
+[
+ {
+  "mot": "Ton",
+  "debut": 1.74,
+  "fin": 2.24,
+  "proba": 0.97
+ },
+ {
+  "mot": "diplôme",
+  "debut": 2.24,
+  "fin": 2.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "suffira",
+  "debut": 2.86,
+  "fin": 3.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "-t",
+  "debut": 3.46,
+  "fin": 3.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "-il",
+  "debut": 3.64,
+  "fin": 3.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 3.76,
+  "fin": 4.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "réussir",
+  "debut": 4.0,
+  "fin": 4.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "au",
+  "debut": 4.44,
+  "fin": 4.58,
+  "proba": 0.98
+ },
+ {
+  "mot": "Togo?",
+  "debut": 4.58,
+  "fin": 4.82,
+  "proba": 0.97
+ },
+ {
+  "mot": "Toi",
+  "debut": 6.06,
+  "fin": 6.7,
+  "proba": 0.99
+ },
+ {
+  "mot": "qui",
+  "debut": 6.7,
+  "fin": 6.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "es",
+  "debut": 6.86,
+  "fin": 7.06,
+  "proba": 0.95
+ },
+ {
+  "mot": "actuellement",
+  "debut": 7.06,
+  "fin": 7.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 7.68,
+  "fin": 7.86,
+  "proba": 0.99
+ },
+ {
+  "mot": "l",
+  "debut": 7.86,
+  "fin": 7.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "'université,",
+  "debut": 7.9,
+  "fin": 8.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "toi",
+  "debut": 8.94,
+  "fin": 9.5,
+  "proba": 0.97
+ },
+ {
+  "mot": "qui",
+  "debut": 9.5,
+  "fin": 9.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 9.68,
+  "fin": 10.02,
+  "proba": 0.71
+ },
+ {
+  "mot": "une",
+  "debut": 10.02,
+  "fin": 10.32,
+  "proba": 0.98
+ },
+ {
+  "mot": "filière",
+  "debut": 10.32,
+  "fin": 10.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "universitaire,",
+  "debut": 10.9,
+  "fin": 11.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "toi",
+  "debut": 12.76,
+  "fin": 12.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "qui",
+  "debut": 12.96,
+  "fin": 13.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "prépares",
+  "debut": 13.12,
+  "fin": 13.7,
+  "proba": 0.91
+ },
+ {
+  "mot": "une",
+  "debut": 13.7,
+  "fin": 13.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "licence",
+  "debut": 13.94,
+  "fin": 14.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "ou",
+  "debut": 14.38,
+  "fin": 14.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 14.68,
+  "fin": 14.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "master,",
+  "debut": 14.88,
+  "fin": 15.3,
+  "proba": 0.98
+ },
+ {
+  "mot": "ou",
+  "debut": 15.86,
+  "fin": 16.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "encore",
+  "debut": 16.18,
+  "fin": 16.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "toi",
+  "debut": 16.5,
+  "fin": 16.8,
+  "proba": 0.96
+ },
+ {
+  "mot": "qui",
+  "debut": 16.8,
+  "fin": 16.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 16.96,
+  "fin": 17.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 17.22,
+  "fin": 17.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "formation",
+  "debut": 17.42,
+  "fin": 17.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "professionnelle,",
+  "debut": 17.8,
+  "fin": 18.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "j",
+  "debut": 19.36,
+  "fin": 19.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "'aimerais",
+  "debut": 19.54,
+  "fin": 19.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 19.86,
+  "fin": 20.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "poser",
+  "debut": 20.02,
+  "fin": 20.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 20.42,
+  "fin": 20.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "question.",
+  "debut": 20.8,
+  "fin": 21.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "Est",
+  "debut": 22.16,
+  "fin": 22.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "-ce",
+  "debut": 22.8,
+  "fin": 22.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 22.88,
+  "fin": 22.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 22.98,
+  "fin": 23.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "es",
+  "debut": 23.2,
+  "fin": 23.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "vraiment",
+  "debut": 23.4,
+  "fin": 23.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "sûr",
+  "debut": 23.76,
+  "fin": 24.2,
+  "proba": 0.99
+ },
+ {
+  "mot": "que",
+  "debut": 24.2,
+  "fin": 24.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "le",
+  "debut": 24.54,
+  "fin": 24.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "parcours",
+  "debut": 24.68,
+  "fin": 25.12,
+  "proba": 0.99
+ },
+ {
+  "mot": "que",
+  "debut": 25.12,
+  "fin": 25.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 25.28,
+  "fin": 25.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 25.44,
+  "fin": 25.68,
+  "proba": 0.81
+ },
+ {
+  "mot": "actuellement",
+  "debut": 25.68,
+  "fin": 26.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 26.24,
+  "fin": 26.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "permettra",
+  "debut": 26.54,
+  "fin": 27.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 27.34,
+  "fin": 27.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "devenir",
+  "debut": 27.52,
+  "fin": 27.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 27.88,
+  "fin": 28.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "personne",
+  "debut": 28.1,
+  "fin": 28.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 28.52,
+  "fin": 28.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 28.68,
+  "fin": 28.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "rêves",
+  "debut": 28.8,
+  "fin": 29.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 29.12,
+  "fin": 29.22,
+  "proba": 0.99
+ },
+ {
+  "mot": "devenir?",
+  "debut": 29.22,
+  "fin": 29.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "Est",
+  "debut": 31.28,
+  "fin": 31.82,
+  "proba": 0.73
+ },
+ {
+  "mot": "-ce",
+  "debut": 31.82,
+  "fin": 31.9,
+  "proba": 0.99
+ },
+ {
+  "mot": "que",
+  "debut": 31.9,
+  "fin": 32.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 32.04,
+  "fin": 32.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "es",
+  "debut": 32.22,
+  "fin": 32.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "certain",
+  "debut": 32.46,
+  "fin": 33.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 33.02,
+  "fin": 33.44,
+  "proba": 0.99
+ },
+ {
+  "mot": "ton",
+  "debut": 33.44,
+  "fin": 33.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "diplôme,",
+  "debut": 33.66,
+  "fin": 34.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "ta",
+  "debut": 34.42,
+  "fin": 34.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "licence,",
+  "debut": 34.5,
+  "fin": 34.9,
+  "proba": 0.98
+ },
+ {
+  "mot": "ton",
+  "debut": 35.3,
+  "fin": 35.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "master",
+  "debut": 35.4,
+  "fin": 35.66,
+  "proba": 0.2
+ },
+ {
+  "mot": "ou",
+  "debut": 35.66,
+  "fin": 35.82,
+  "proba": 0.93
+ },
+ {
+  "mot": "ta",
+  "debut": 35.82,
+  "fin": 35.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "formation",
+  "debut": 35.96,
+  "fin": 36.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "professionnelle",
+  "debut": 36.28,
+  "fin": 36.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 36.96,
+  "fin": 37.1,
+  "proba": 0.97
+ },
+ {
+  "mot": "permettront",
+  "debut": 37.1,
+  "fin": 38.18,
+  "proba": 0.98
+ },
+ {
+  "mot": "d",
+  "debut": 38.18,
+  "fin": 38.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "'atteindre",
+  "debut": 38.38,
+  "fin": 38.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "tes",
+  "debut": 38.9,
+  "fin": 39.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "ambitions,",
+  "debut": 39.12,
+  "fin": 39.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 40.02,
+  "fin": 40.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "réaliser",
+  "debut": 40.32,
+  "fin": 41.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "tes",
+  "debut": 41.12,
+  "fin": 41.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "projets,",
+  "debut": 41.26,
+  "fin": 41.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 41.76,
+  "fin": 41.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "vivre",
+  "debut": 41.82,
+  "fin": 42.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 42.18,
+  "fin": 42.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "vie",
+  "debut": 42.4,
+  "fin": 42.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 42.64,
+  "fin": 42.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 42.76,
+  "fin": 42.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "souhaites?",
+  "debut": 42.88,
+  "fin": 43.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "Réfléchis",
+  "debut": 45.04,
+  "fin": 45.58,
+  "proba": 0.99
+ },
+ {
+  "mot": "sérieusement",
+  "debut": 45.58,
+  "fin": 46.02,
+  "proba": 0.97
+ },
+ {
+  "mot": "à",
+  "debut": 46.02,
+  "fin": 46.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "cette",
+  "debut": 46.12,
+  "fin": 46.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "question.",
+  "debut": 46.22,
+  "fin": 46.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "Combien",
+  "debut": 47.62,
+  "fin": 48.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 48.16,
+  "fin": 48.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "personnes",
+  "debut": 48.32,
+  "fin": 48.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "ont",
+  "debut": 48.68,
+  "fin": 48.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "aujourd",
+  "debut": 48.92,
+  "fin": 49.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "'hui",
+  "debut": 49.2,
+  "fin": 49.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 49.38,
+  "fin": 49.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "licence,",
+  "debut": 49.46,
+  "fin": 49.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 50.12,
+  "fin": 50.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "master",
+  "debut": 50.2,
+  "fin": 50.48,
+  "proba": 0.99
+ },
+ {
+  "mot": "ou",
+  "debut": 50.48,
+  "fin": 50.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "même",
+  "debut": 50.7,
+  "fin": 50.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "plusieurs",
+  "debut": 50.92,
+  "fin": 51.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "formations",
+  "debut": 51.32,
+  "fin": 51.92,
+  "proba": 0.98
+ },
+ {
+  "mot": "professionnelles",
+  "debut": 51.92,
+  "fin": 52.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "mais",
+  "debut": 52.98,
+  "fin": 53.42,
+  "proba": 0.75
+ },
+ {
+  "mot": "qui",
+  "debut": 53.42,
+  "fin": 53.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "éprouvent",
+  "debut": 53.68,
+  "fin": 54.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "énormément",
+  "debut": 54.38,
+  "fin": 54.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 54.92,
+  "fin": 55.22,
+  "proba": 0.99
+ },
+ {
+  "mot": "difficultés",
+  "debut": 55.22,
+  "fin": 55.94,
+  "proba": 0.97
+ },
+ {
+  "mot": "à",
+  "debut": 55.94,
+  "fin": 56.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "trouver",
+  "debut": 56.42,
+  "fin": 56.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 56.68,
+  "fin": 56.82,
+  "proba": 0.99
+ },
+ {
+  "mot": "emploi",
+  "debut": 56.82,
+  "fin": 57.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 57.2,
+  "fin": 58.02,
+  "proba": 0.99
+ },
+ {
+  "mot": "à",
+  "debut": 58.02,
+  "fin": 58.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "joindre",
+  "debut": 58.58,
+  "fin": 58.88,
+  "proba": 0.79
+ },
+ {
+  "mot": "les",
+  "debut": 58.88,
+  "fin": 59.14,
+  "proba": 0.96
+ },
+ {
+  "mot": "deux",
+  "debut": 59.14,
+  "fin": 59.34,
+  "proba": 0.95
+ },
+ {
+  "mot": "bouts?",
+  "debut": 59.34,
+  "fin": 59.5,
+  "proba": 0.98
+ },
+ {
+  "mot": "Certaines",
+  "debut": 61.6,
+  "fin": 62.04,
+  "proba": 0.73
+ },
+ {
+  "mot": "sont",
+  "debut": 62.04,
+  "fin": 62.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "obligées",
+  "debut": 62.26,
+  "fin": 62.94,
+  "proba": 0.99
+ },
+ {
+  "mot": "de",
+  "debut": 62.94,
+  "fin": 63.14,
+  "proba": 0.93
+ },
+ {
+  "mot": "faire",
+  "debut": 63.14,
+  "fin": 63.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 63.42,
+  "fin": 63.58,
+  "proba": 0.79
+ },
+ {
+  "mot": "petits",
+  "debut": 63.58,
+  "fin": 63.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "travaux",
+  "debut": 63.8,
+  "fin": 64.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "par",
+  "debut": 64.3,
+  "fin": 64.88,
+  "proba": 0.41
+ },
+ {
+  "mot": "ici,",
+  "debut": 64.88,
+  "fin": 65.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "par",
+  "debut": 65.32,
+  "fin": 65.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "là,",
+  "debut": 65.46,
+  "fin": 65.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "parfois",
+  "debut": 66.44,
+  "fin": 66.88,
+  "proba": 0.98
+ },
+ {
+  "mot": "comme",
+  "debut": 66.88,
+  "fin": 67.2,
+  "proba": 0.96
+ },
+ {
+  "mot": "aide",
+  "debut": 67.2,
+  "fin": 67.4,
+  "proba": 0.94
+ },
+ {
+  "mot": "-maçon",
+  "debut": 67.4,
+  "fin": 67.82,
+  "proba": 0.91
+ },
+ {
+  "mot": "ou",
+  "debut": 67.82,
+  "fin": 68.06,
+  "proba": 0.99
+ },
+ {
+  "mot": "manœuvre,",
+  "debut": 68.06,
+  "fin": 68.46,
+  "proba": 0.9
+ },
+ {
+  "mot": "simplement",
+  "debut": 68.54,
+  "fin": 68.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 68.84,
+  "fin": 69.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "survivre.",
+  "debut": 69.36,
+  "fin": 69.58,
+  "proba": 0.97
+ },
+ {
+  "mot": "D",
+  "debut": 71.22,
+  "fin": 71.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "'autres",
+  "debut": 71.44,
+  "fin": 71.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "finissent",
+  "debut": 71.54,
+  "fin": 71.96,
+  "proba": 0.99
+ },
+ {
+  "mot": "pas",
+  "debut": 71.96,
+  "fin": 72.18,
+  "proba": 0.64
+ },
+ {
+  "mot": "à",
+  "debut": 72.18,
+  "fin": 72.3,
+  "proba": 0.85
+ },
+ {
+  "mot": "trouver",
+  "debut": 72.3,
+  "fin": 72.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 72.56,
+  "fin": 72.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "emploi",
+  "debut": 72.94,
+  "fin": 73.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "mais",
+  "debut": 73.3,
+  "fin": 73.84,
+  "proba": 0.09
+ },
+ {
+  "mot": "avec",
+  "debut": 73.84,
+  "fin": 74.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 74.02,
+  "fin": 74.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "salaire",
+  "debut": 74.18,
+  "fin": 74.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 74.52,
+  "fin": 74.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "70",
+  "debut": 74.7,
+  "fin": 75.0,
+  "proba": 0.35
+ },
+ {
+  "mot": "000",
+  "debut": 75.0,
+  "fin": 75.22,
+  "proba": 0.89
+ },
+ {
+  "mot": "ou",
+  "debut": 75.22,
+  "fin": 75.32,
+  "proba": 0.95
+ },
+ {
+  "mot": "70",
+  "debut": 75.32,
+  "fin": 75.58,
+  "proba": 0.65
+ },
+ {
+  "mot": "000",
+  "debut": 75.58,
+  "fin": 75.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "francs",
+  "debut": 75.8,
+  "fin": 76.06,
+  "proba": 0.99
+ },
+ {
+  "mot": "c",
+  "debut": 76.06,
+  "fin": 76.18,
+  "proba": 0.22
+ },
+ {
+  "mot": "'est",
+  "debut": 76.18,
+  "fin": 76.24,
+  "proba": 0.92
+ },
+ {
+  "mot": "-à",
+  "debut": 76.24,
+  "fin": 76.3,
+  "proba": 0.66
+ },
+ {
+  "mot": "-dire",
+  "debut": 76.3,
+  "fin": 76.32,
+  "proba": 0.98
+ },
+ {
+  "mot": "par",
+  "debut": 76.32,
+  "fin": 76.44,
+  "proba": 0.91
+ },
+ {
+  "mot": "mois.",
+  "debut": 76.44,
+  "fin": 76.66,
+  "proba": 0.79
+ },
+ {
+  "mot": "Maintenant,",
+  "debut": 78.28,
+  "fin": 78.64,
+  "proba": 0.93
+ },
+ {
+  "mot": "en",
+  "debut": 78.82,
+  "fin": 78.86,
+  "proba": 0.25
+ },
+ {
+  "mot": "faisant",
+  "debut": 78.86,
+  "fin": 79.06,
+  "proba": 0.86
+ },
+ {
+  "mot": "un",
+  "debut": 79.06,
+  "fin": 79.16,
+  "proba": 0.95
+ },
+ {
+  "mot": "petit",
+  "debut": 79.16,
+  "fin": 79.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "calcul,",
+  "debut": 79.32,
+  "fin": 79.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "tu",
+  "debut": 79.64,
+  "fin": 80.56,
+  "proba": 0.07
+ },
+ {
+  "mot": "gagnes",
+  "debut": 80.56,
+  "fin": 80.86,
+  "proba": 0.88
+ },
+ {
+  "mot": "60",
+  "debut": 80.86,
+  "fin": 81.14,
+  "proba": 0.79
+ },
+ {
+  "mot": "000",
+  "debut": 81.14,
+  "fin": 81.54,
+  "proba": 0.65
+ },
+ {
+  "mot": "francs",
+  "debut": 81.54,
+  "fin": 81.84,
+  "proba": 0.97
+ },
+ {
+  "mot": "c",
+  "debut": 81.84,
+  "fin": 81.94,
+  "proba": 0.16
+ },
+ {
+  "mot": "'est",
+  "debut": 81.94,
+  "fin": 81.98,
+  "proba": 0.7
+ },
+ {
+  "mot": "-à",
+  "debut": 81.98,
+  "fin": 82.0,
+  "proba": 0.45
+ },
+ {
+  "mot": "-dire",
+  "debut": 82.0,
+  "fin": 82.1,
+  "proba": 0.89
+ },
+ {
+  "mot": "par",
+  "debut": 82.1,
+  "fin": 82.12,
+  "proba": 0.58
+ },
+ {
+  "mot": "mois,",
+  "debut": 82.12,
+  "fin": 82.38,
+  "proba": 0.88
+ },
+ {
+  "mot": "tu",
+  "debut": 82.66,
+  "fin": 82.84,
+  "proba": 0.99
+ },
+ {
+  "mot": "paies",
+  "debut": 82.84,
+  "fin": 83.12,
+  "proba": 0.67
+ },
+ {
+  "mot": "30",
+  "debut": 83.12,
+  "fin": 83.56,
+  "proba": 0.97
+ },
+ {
+  "mot": "000",
+  "debut": 83.56,
+  "fin": 83.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "francs",
+  "debut": 83.76,
+  "fin": 84.18,
+  "proba": 0.99
+ },
+ {
+  "mot": "de",
+  "debut": 84.18,
+  "fin": 84.32,
+  "proba": 0.93
+ },
+ {
+  "mot": "loyer,",
+  "debut": 84.32,
+  "fin": 84.64,
+  "proba": 0.98
+ },
+ {
+  "mot": "il",
+  "debut": 85.12,
+  "fin": 85.2,
+  "proba": 0.98
+ },
+ {
+  "mot": "te",
+  "debut": 85.2,
+  "fin": 85.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "reste",
+  "debut": 85.32,
+  "fin": 85.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "30",
+  "debut": 85.54,
+  "fin": 85.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "000",
+  "debut": 85.78,
+  "fin": 86.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "francs",
+  "debut": 86.0,
+  "fin": 86.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "c",
+  "debut": 86.4,
+  "fin": 86.4,
+  "proba": 0.97
+ },
+ {
+  "mot": "'est",
+  "debut": 86.4,
+  "fin": 86.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "-à",
+  "debut": 86.58,
+  "fin": 86.58,
+  "proba": 0.97
+ },
+ {
+  "mot": "-dire",
+  "debut": 86.58,
+  "fin": 87.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "par",
+  "debut": 87.12,
+  "fin": 88.82,
+  "proba": 0.06
+ },
+ {
+  "mot": "mois.",
+  "debut": 88.82,
+  "fin": 103.16,
+  "proba": 0.35
+ },
+ {
+  "mot": "Quand",
+  "debut": 103.16,
+  "fin": 103.72,
+  "proba": 0.65
+ },
+ {
+  "mot": "est",
+  "debut": 103.72,
+  "fin": 104.0,
+  "proba": 0.98
+ },
+ {
+  "mot": "-ce",
+  "debut": 104.0,
+  "fin": 104.08,
+  "proba": 0.99
+ },
+ {
+  "mot": "que",
+  "debut": 104.08,
+  "fin": 104.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 104.18,
+  "fin": 104.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "vas",
+  "debut": 104.32,
+  "fin": 104.56,
+  "proba": 0.99
+ },
+ {
+  "mot": "acheter",
+  "debut": 104.56,
+  "fin": 104.9,
+  "proba": 0.99
+ },
+ {
+  "mot": "une",
+  "debut": 104.9,
+  "fin": 105.08,
+  "proba": 0.99
+ },
+ {
+  "mot": "voiture",
+  "debut": 105.08,
+  "fin": 105.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 105.42,
+  "fin": 105.96,
+  "proba": 0.96
+ },
+ {
+  "mot": "5,",
+  "debut": 105.96,
+  "fin": 106.26,
+  "proba": 0.99
+ },
+ {
+  "mot": "6",
+  "debut": 106.34,
+  "fin": 106.54,
+  "proba": 0.98
+ },
+ {
+  "mot": "ou",
+  "debut": 106.54,
+  "fin": 106.68,
+  "proba": 0.99
+ },
+ {
+  "mot": "10",
+  "debut": 106.68,
+  "fin": 106.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "millions",
+  "debut": 106.98,
+  "fin": 107.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 107.3,
+  "fin": 107.48,
+  "proba": 0.99
+ },
+ {
+  "mot": "francs",
+  "debut": 107.48,
+  "fin": 107.74,
+  "proba": 0.99
+ },
+ {
+  "mot": "c",
+  "debut": 107.74,
+  "fin": 107.8,
+  "proba": 0.04
+ },
+ {
+  "mot": "'est",
+  "debut": 107.8,
+  "fin": 107.86,
+  "proba": 0.63
+ },
+ {
+  "mot": "-à",
+  "debut": 107.86,
+  "fin": 107.94,
+  "proba": 0.23
+ },
+ {
+  "mot": "-dire",
+  "debut": 107.94,
+  "fin": 108.02,
+  "proba": 0.7
+ },
+ {
+  "mot": "par",
+  "debut": 108.02,
+  "fin": 108.42,
+  "proba": 0.0
+ },
+ {
+  "mot": "mois",
+  "debut": 108.42,
+  "fin": 108.42,
+  "proba": 0.0
+ },
+ {
+  "mot": "?",
+  "debut": 108.42,
+  "fin": 108.42,
+  "proba": 0.54
+ },
+ {
+  "mot": "Quand",
+  "debut": 108.42,
+  "fin": 108.5,
+  "proba": 0.98
+ },
+ {
+  "mot": "est",
+  "debut": 108.5,
+  "fin": 108.84,
+  "proba": 0.99
+ },
+ {
+  "mot": "-ce",
+  "debut": 108.84,
+  "fin": 108.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 108.96,
+  "fin": 109.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 109.14,
+  "fin": 109.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "vas",
+  "debut": 109.36,
+  "fin": 109.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "construire",
+  "debut": 109.72,
+  "fin": 110.76,
+  "proba": 0.96
+ },
+ {
+  "mot": "ta",
+  "debut": 110.76,
+  "fin": 110.9,
+  "proba": 0.97
+ },
+ {
+  "mot": "maison",
+  "debut": 110.9,
+  "fin": 111.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 111.26,
+  "fin": 112.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "Quand",
+  "debut": 112.24,
+  "fin": 112.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "est",
+  "debut": 112.66,
+  "fin": 112.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "-ce",
+  "debut": 112.88,
+  "fin": 112.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 112.96,
+  "fin": 113.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 113.12,
+  "fin": 113.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "vas",
+  "debut": 113.32,
+  "fin": 113.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "réaliser",
+  "debut": 113.56,
+  "fin": 114.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 114.28,
+  "fin": 114.44,
+  "proba": 0.98
+ },
+ {
+  "mot": "rêves",
+  "debut": 114.44,
+  "fin": 114.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 114.84,
+  "fin": 115.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 115.16,
+  "fin": 115.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "portes",
+  "debut": 115.3,
+  "fin": 115.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "depuis",
+  "debut": 115.66,
+  "fin": 115.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "ton",
+  "debut": 115.9,
+  "fin": 116.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "enfance",
+  "debut": 116.16,
+  "fin": 116.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 116.58,
+  "fin": 117.12,
+  "proba": 0.99
+ },
+ {
+  "mot": "Pose",
+  "debut": 117.12,
+  "fin": 117.52,
+  "proba": 0.86
+ },
+ {
+  "mot": "-toi",
+  "debut": 117.52,
+  "fin": 117.8,
+  "proba": 0.98
+ },
+ {
+  "mot": "sincèrement",
+  "debut": 117.8,
+  "fin": 118.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "ces",
+  "debut": 118.6,
+  "fin": 118.74,
+  "proba": 0.99
+ },
+ {
+  "mot": "questions.",
+  "debut": 118.74,
+  "fin": 119.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "Ou",
+  "debut": 119.38,
+  "fin": 119.66,
+  "proba": 0.99
+ },
+ {
+  "mot": "alors,",
+  "debut": 119.66,
+  "fin": 120.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 120.42,
+  "fin": 120.48,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 120.48,
+  "fin": 120.62,
+  "proba": 0.98
+ },
+ {
+  "mot": "dis",
+  "debut": 120.62,
+  "fin": 120.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 120.74,
+  "fin": 120.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "ton",
+  "debut": 120.9,
+  "fin": 121.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "cas",
+  "debut": 121.08,
+  "fin": 121.28,
+  "proba": 0.92
+ },
+ {
+  "mot": "sera",
+  "debut": 121.28,
+  "fin": 121.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "différent",
+  "debut": 121.5,
+  "fin": 121.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 121.86,
+  "fin": 122.46,
+  "proba": 0.75
+ },
+ {
+  "mot": "Tu",
+  "debut": 122.46,
+  "fin": 123.4,
+  "proba": 0.86
+ },
+ {
+  "mot": "te",
+  "debut": 123.4,
+  "fin": 123.5,
+  "proba": 0.96
+ },
+ {
+  "mot": "dis",
+  "debut": 123.5,
+  "fin": 123.62,
+  "proba": 0.99
+ },
+ {
+  "mot": "peut",
+  "debut": 123.62,
+  "fin": 123.84,
+  "proba": 0.98
+ },
+ {
+  "mot": "-être,",
+  "debut": 123.84,
+  "fin": 124.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "moi",
+  "debut": 124.66,
+  "fin": 125.02,
+  "proba": 0.96
+ },
+ {
+  "mot": "quand",
+  "debut": 125.02,
+  "fin": 125.24,
+  "proba": 0.87
+ },
+ {
+  "mot": "j",
+  "debut": 125.24,
+  "fin": 125.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "'aurai",
+  "debut": 125.42,
+  "fin": 125.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "ma",
+  "debut": 125.6,
+  "fin": 125.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "licence,",
+  "debut": 125.74,
+  "fin": 126.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "je",
+  "debut": 126.56,
+  "fin": 126.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "vais",
+  "debut": 126.78,
+  "fin": 126.94,
+  "proba": 0.99
+ },
+ {
+  "mot": "faire",
+  "debut": 126.94,
+  "fin": 127.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 127.22,
+  "fin": 127.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "master.",
+  "debut": 127.46,
+  "fin": 127.86,
+  "proba": 0.99
+ },
+ {
+  "mot": "Ensuite,",
+  "debut": 128.34,
+  "fin": 128.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "je",
+  "debut": 129.2,
+  "fin": 129.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "vais",
+  "debut": 129.42,
+  "fin": 129.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "faire",
+  "debut": 129.64,
+  "fin": 130.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 130.0,
+  "fin": 130.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "stage",
+  "debut": 130.26,
+  "fin": 130.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "complètement",
+  "debut": 130.68,
+  "fin": 131.76,
+  "proba": 0.87
+ },
+ {
+  "mot": "parcours",
+  "debut": 131.76,
+  "fin": 132.24,
+  "proba": 0.36
+ },
+ {
+  "mot": "par",
+  "debut": 132.24,
+  "fin": 132.46,
+  "proba": 0.97
+ },
+ {
+  "mot": "une",
+  "debut": 132.46,
+  "fin": 132.58,
+  "proba": 0.99
+ },
+ {
+  "mot": "formation",
+  "debut": 132.58,
+  "fin": 132.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "professionnelle",
+  "debut": 132.86,
+  "fin": 133.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 133.46,
+  "fin": 133.98,
+  "proba": 0.64
+ },
+ {
+  "mot": "avec",
+  "debut": 133.98,
+  "fin": 134.48,
+  "proba": 0.97
+ },
+ {
+  "mot": "peu",
+  "debut": 134.48,
+  "fin": 134.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 134.7,
+  "fin": 134.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "chance,",
+  "debut": 134.82,
+  "fin": 135.22,
+  "proba": 0.72
+ },
+ {
+  "mot": "je",
+  "debut": 135.74,
+  "fin": 135.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "finirai",
+  "debut": 135.8,
+  "fin": 136.26,
+  "proba": 0.98
+ },
+ {
+  "mot": "par",
+  "debut": 136.26,
+  "fin": 136.46,
+  "proba": 0.93
+ },
+ {
+  "mot": "décrocher",
+  "debut": 136.46,
+  "fin": 137.02,
+  "proba": 0.99
+ },
+ {
+  "mot": "un",
+  "debut": 137.02,
+  "fin": 137.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "bon",
+  "debut": 137.18,
+  "fin": 137.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "emploi.",
+  "debut": 137.34,
+  "fin": 137.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "Mais",
+  "debut": 138.54,
+  "fin": 138.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "sur",
+  "debut": 138.8,
+  "fin": 138.96,
+  "proba": 0.98
+ },
+ {
+  "mot": "quoi",
+  "debut": 138.96,
+  "fin": 139.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "repose",
+  "debut": 139.18,
+  "fin": 139.7,
+  "proba": 0.96
+ },
+ {
+  "mot": "réellement",
+  "debut": 139.7,
+  "fin": 140.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "cette",
+  "debut": 140.36,
+  "fin": 140.58,
+  "proba": 0.96
+ },
+ {
+  "mot": "certitude",
+  "debut": 140.58,
+  "fin": 141.24,
+  "proba": 0.96
+ },
+ {
+  "mot": "?",
+  "debut": 141.24,
+  "fin": 141.92,
+  "proba": 0.4
+ },
+ {
+  "mot": "Est",
+  "debut": 141.92,
+  "fin": 142.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "-ce",
+  "debut": 142.36,
+  "fin": 142.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 142.44,
+  "fin": 142.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "tes",
+  "debut": 142.54,
+  "fin": 142.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "parents",
+  "debut": 142.76,
+  "fin": 143.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "sont",
+  "debut": 143.18,
+  "fin": 143.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "financièrement",
+  "debut": 143.6,
+  "fin": 144.36,
+  "proba": 0.99
+ },
+ {
+  "mot": "à",
+  "debut": 144.36,
+  "fin": 144.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "l",
+  "debut": 144.58,
+  "fin": 144.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "'aise",
+  "debut": 144.68,
+  "fin": 144.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 144.9,
+  "fin": 145.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "Est",
+  "debut": 145.14,
+  "fin": 145.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "-ce",
+  "debut": 145.46,
+  "fin": 145.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 145.54,
+  "fin": 145.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "ta",
+  "debut": 145.58,
+  "fin": 145.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "famille",
+  "debut": 145.76,
+  "fin": 146.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "dispose",
+  "debut": 146.18,
+  "fin": 146.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 146.78,
+  "fin": 147.0,
+  "proba": 0.28
+ },
+ {
+  "mot": "relations",
+  "debut": 147.0,
+  "fin": 147.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "influentes",
+  "debut": 147.44,
+  "fin": 148.0,
+  "proba": 0.98
+ },
+ {
+  "mot": "?",
+  "debut": 148.0,
+  "fin": 148.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "Est",
+  "debut": 148.22,
+  "fin": 148.56,
+  "proba": 0.88
+ },
+ {
+  "mot": "-ce",
+  "debut": 148.56,
+  "fin": 148.62,
+  "proba": 0.99
+ },
+ {
+  "mot": "que",
+  "debut": 148.62,
+  "fin": 148.72,
+  "proba": 0.99
+ },
+ {
+  "mot": "tu",
+  "debut": 148.72,
+  "fin": 148.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "as",
+  "debut": 148.84,
+  "fin": 149.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "déjà",
+  "debut": 149.08,
+  "fin": 149.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 149.5,
+  "fin": 150.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "réseau",
+  "debut": 150.04,
+  "fin": 150.48,
+  "proba": 1.0
+ },
+ {
+  "mot": "professionnel",
+  "debut": 150.48,
+  "fin": 151.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "capable",
+  "debut": 151.06,
+  "fin": 151.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 151.52,
+  "fin": 151.78,
+  "proba": 0.77
+ },
+ {
+  "mot": "t",
+  "debut": 151.78,
+  "fin": 151.92,
+  "proba": 0.97
+ },
+ {
+  "mot": "'ouvrir",
+  "debut": 151.92,
+  "fin": 152.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "certaines",
+  "debut": 152.12,
+  "fin": 152.4,
+  "proba": 0.89
+ },
+ {
+  "mot": "portes",
+  "debut": 152.4,
+  "fin": 152.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 152.84,
+  "fin": 152.98,
+  "proba": 0.58
+ },
+ {
+  "mot": "Si",
+  "debut": 153.74,
+  "fin": 154.0,
+  "proba": 0.99
+ },
+ {
+  "mot": "tu",
+  "debut": 154.0,
+  "fin": 154.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "n",
+  "debut": 154.12,
+  "fin": 154.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "'as",
+  "debut": 154.22,
+  "fin": 154.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "aucun",
+  "debut": 154.28,
+  "fin": 154.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 154.76,
+  "fin": 154.98,
+  "proba": 0.99
+ },
+ {
+  "mot": "ces",
+  "debut": 154.98,
+  "fin": 155.1,
+  "proba": 0.99
+ },
+ {
+  "mot": "avantages,",
+  "debut": 155.1,
+  "fin": 155.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 156.02,
+  "fin": 156.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "dois",
+  "debut": 156.36,
+  "fin": 156.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "comprendre",
+  "debut": 156.6,
+  "fin": 157.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 157.16,
+  "fin": 157.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "chose.",
+  "debut": 157.4,
+  "fin": 157.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "Tu",
+  "debut": 158.04,
+  "fin": 158.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 158.32,
+  "fin": 158.48,
+  "proba": 1.0
+ },
+ {
+  "mot": "peux",
+  "debut": 158.48,
+  "fin": 158.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 158.74,
+  "fin": 159.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 159.04,
+  "fin": 159.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "permettre",
+  "debut": 159.24,
+  "fin": 159.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 159.78,
+  "fin": 160.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "construire",
+  "debut": 160.06,
+  "fin": 160.5,
+  "proba": 0.99
+ },
+ {
+  "mot": "ton",
+  "debut": 160.5,
+  "fin": 160.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "avenir",
+  "debut": 160.66,
+  "fin": 161.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "uniquement",
+  "debut": 161.06,
+  "fin": 161.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "sur",
+  "debut": 161.68,
+  "fin": 162.06,
+  "proba": 0.99
+ },
+ {
+  "mot": "l",
+  "debut": 162.06,
+  "fin": 162.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "'espoir",
+  "debut": 162.24,
+  "fin": 162.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 162.62,
+  "fin": 162.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "décrocher",
+  "debut": 162.74,
+  "fin": 163.18,
+  "proba": 0.98
+ },
+ {
+  "mot": "un",
+  "debut": 163.18,
+  "fin": 163.32,
+  "proba": 0.73
+ },
+ {
+  "mot": "emploi",
+  "debut": 163.32,
+  "fin": 163.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "après",
+  "debut": 163.62,
+  "fin": 164.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "tes",
+  "debut": 164.1,
+  "fin": 164.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "études.",
+  "debut": 164.28,
+  "fin": 164.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "Je",
+  "debut": 165.14,
+  "fin": 165.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 165.38,
+  "fin": 165.48,
+  "proba": 0.98
+ },
+ {
+  "mot": "parle",
+  "debut": 165.48,
+  "fin": 165.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "sincèrement,",
+  "debut": 165.72,
+  "fin": 166.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "je",
+  "debut": 166.5,
+  "fin": 166.58,
+  "proba": 0.96
+ },
+ {
+  "mot": "n",
+  "debut": 166.58,
+  "fin": 166.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "'ai",
+  "debut": 166.68,
+  "fin": 166.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "aucun",
+  "debut": 166.7,
+  "fin": 166.94,
+  "proba": 0.99
+ },
+ {
+  "mot": "intérêt",
+  "debut": 166.94,
+  "fin": 167.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 167.26,
+  "fin": 167.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 167.36,
+  "fin": 167.46,
+  "proba": 0.99
+ },
+ {
+  "mot": "mentir.",
+  "debut": 167.46,
+  "fin": 167.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "Ce",
+  "debut": 168.94,
+  "fin": 169.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "qui",
+  "debut": 169.46,
+  "fin": 169.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "me",
+  "debut": 169.54,
+  "fin": 169.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "fait",
+  "debut": 169.64,
+  "fin": 169.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "particulièrement",
+  "debut": 169.78,
+  "fin": 170.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "mal,",
+  "debut": 170.46,
+  "fin": 170.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "c",
+  "debut": 170.9,
+  "fin": 170.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "'est",
+  "debut": 170.94,
+  "fin": 171.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 171.02,
+  "fin": 171.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "constater",
+  "debut": 171.14,
+  "fin": 171.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 171.9,
+  "fin": 172.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "pendant",
+  "debut": 172.08,
+  "fin": 172.42,
+  "proba": 0.98
+ },
+ {
+  "mot": "que",
+  "debut": 172.42,
+  "fin": 172.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "certaines",
+  "debut": 172.66,
+  "fin": 173.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "personnes",
+  "debut": 173.18,
+  "fin": 173.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "construisent",
+  "debut": 173.74,
+  "fin": 174.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "leur",
+  "debut": 174.2,
+  "fin": 174.42,
+  "proba": 0.54
+ },
+ {
+  "mot": "richesse",
+  "debut": 174.42,
+  "fin": 174.74,
+  "proba": 0.99
+ },
+ {
+  "mot": "au",
+  "debut": 174.74,
+  "fin": 174.9,
+  "proba": 0.97
+ },
+ {
+  "mot": "Togo,",
+  "debut": 174.9,
+  "fin": 175.12,
+  "proba": 0.99
+ },
+ {
+  "mot": "d",
+  "debut": 175.12,
+  "fin": 175.6,
+  "proba": 0.25
+ },
+ {
+  "mot": "'autres",
+  "debut": 175.6,
+  "fin": 175.72,
+  "proba": 0.85
+ },
+ {
+  "mot": "s",
+  "debut": 175.72,
+  "fin": 176.16,
+  "proba": 0.91
+ },
+ {
+  "mot": "'enfoncent",
+  "debut": 176.16,
+  "fin": 176.66,
+  "proba": 0.99
+ },
+ {
+  "mot": "progressivement",
+  "debut": 176.66,
+  "fin": 177.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "dans",
+  "debut": 177.4,
+  "fin": 177.86,
+  "proba": 0.99
+ },
+ {
+  "mot": "la",
+  "debut": 177.86,
+  "fin": 177.94,
+  "proba": 0.91
+ },
+ {
+  "mot": "difficulté",
+  "debut": 177.94,
+  "fin": 178.4,
+  "proba": 0.97
+ },
+ {
+  "mot": "financière.",
+  "debut": 178.4,
+  "fin": 179.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "Et",
+  "debut": 179.54,
+  "fin": 179.9,
+  "proba": 0.56
+ },
+ {
+  "mot": "le",
+  "debut": 179.9,
+  "fin": 180.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "plus",
+  "debut": 180.0,
+  "fin": 180.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "inquiétant,",
+  "debut": 180.28,
+  "fin": 181.0,
+  "proba": 0.99
+ },
+ {
+  "mot": "c",
+  "debut": 181.14,
+  "fin": 181.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "'est",
+  "debut": 181.22,
+  "fin": 181.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 181.3,
+  "fin": 181.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "ceux",
+  "debut": 181.5,
+  "fin": 182.08,
+  "proba": 0.93
+ },
+ {
+  "mot": "qui",
+  "debut": 182.08,
+  "fin": 182.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "parviennent",
+  "debut": 182.24,
+  "fin": 182.76,
+  "proba": 0.99
+ },
+ {
+  "mot": "à",
+  "debut": 182.76,
+  "fin": 182.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "véritablement",
+  "debut": 182.98,
+  "fin": 183.6,
+  "proba": 0.93
+ },
+ {
+  "mot": "sortir",
+  "debut": 183.6,
+  "fin": 184.0,
+  "proba": 0.98
+ },
+ {
+  "mot": "du",
+  "debut": 184.0,
+  "fin": 184.18,
+  "proba": 0.66
+ },
+ {
+  "mot": "lot",
+  "debut": 184.18,
+  "fin": 184.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "restent",
+  "debut": 184.38,
+  "fin": 185.16,
+  "proba": 0.99
+ },
+ {
+  "mot": "minoritaires.",
+  "debut": 185.16,
+  "fin": 185.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "Mais",
+  "debut": 186.08,
+  "fin": 186.36,
+  "proba": 0.99
+ },
+ {
+  "mot": "pourquoi",
+  "debut": 186.36,
+  "fin": 186.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 186.64,
+  "fin": 187.02,
+  "proba": 0.33
+ },
+ {
+  "mot": "Parce",
+  "debut": 187.56,
+  "fin": 187.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 187.88,
+  "fin": 188.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "beaucoup",
+  "debut": 188.04,
+  "fin": 188.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 188.52,
+  "fin": 188.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "jeunes",
+  "debut": 188.68,
+  "fin": 188.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "continuent",
+  "debut": 188.94,
+  "fin": 189.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 189.54,
+  "fin": 189.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "suivre",
+  "debut": 189.7,
+  "fin": 190.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "aveuglement",
+  "debut": 190.08,
+  "fin": 190.96,
+  "proba": 0.94
+ },
+ {
+  "mot": "un",
+  "debut": 190.96,
+  "fin": 191.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "parcours",
+  "debut": 191.5,
+  "fin": 192.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 192.04,
+  "fin": 192.2,
+  "proba": 0.99
+ },
+ {
+  "mot": "le",
+  "debut": 192.2,
+  "fin": 192.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "système",
+  "debut": 192.3,
+  "fin": 192.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "leur",
+  "debut": 192.68,
+  "fin": 193.14,
+  "proba": 0.99
+ },
+ {
+  "mot": "a",
+  "debut": 193.14,
+  "fin": 193.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "présenté",
+  "debut": 193.28,
+  "fin": 193.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "comme",
+  "debut": 193.72,
+  "fin": 193.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "étant",
+  "debut": 193.9,
+  "fin": 194.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 194.24,
+  "fin": 194.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "seule",
+  "debut": 194.42,
+  "fin": 194.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "voie",
+  "debut": 194.66,
+  "fin": 194.96,
+  "proba": 0.76
+ },
+ {
+  "mot": "vers",
+  "debut": 194.96,
+  "fin": 195.12,
+  "proba": 0.87
+ },
+ {
+  "mot": "la",
+  "debut": 195.12,
+  "fin": 195.24,
+  "proba": 0.98
+ },
+ {
+  "mot": "réussite.",
+  "debut": 195.24,
+  "fin": 195.62,
+  "proba": 0.97
+ },
+ {
+  "mot": "Faites",
+  "debut": 197.34,
+  "fin": 198.04,
+  "proba": 0.97
+ },
+ {
+  "mot": "parce",
+  "debut": 200.92,
+  "fin": 201.62,
+  "proba": 0.4
+ },
+ {
+  "mot": "que",
+  "debut": 201.62,
+  "fin": 201.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "beaucoup",
+  "debut": 201.94,
+  "fin": 202.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 202.36,
+  "fin": 202.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "jeunes",
+  "debut": 202.52,
+  "fin": 202.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "continuent",
+  "debut": 202.72,
+  "fin": 203.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 203.2,
+  "fin": 203.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "suivre",
+  "debut": 203.36,
+  "fin": 203.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "aveuglement",
+  "debut": 203.68,
+  "fin": 204.3,
+  "proba": 0.56
+ },
+ {
+  "mot": "un",
+  "debut": 204.3,
+  "fin": 204.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "parcours",
+  "debut": 204.62,
+  "fin": 205.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 205.1,
+  "fin": 205.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "le",
+  "debut": 205.28,
+  "fin": 205.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "système",
+  "debut": 205.42,
+  "fin": 205.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "leur",
+  "debut": 205.82,
+  "fin": 206.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "a",
+  "debut": 206.04,
+  "fin": 206.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "présenté",
+  "debut": 206.16,
+  "fin": 206.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "comme",
+  "debut": 206.68,
+  "fin": 207.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "étant",
+  "debut": 207.06,
+  "fin": 207.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 207.44,
+  "fin": 207.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "seule",
+  "debut": 207.7,
+  "fin": 207.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "voie",
+  "debut": 207.96,
+  "fin": 208.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "vers",
+  "debut": 208.28,
+  "fin": 208.46,
+  "proba": 0.99
+ },
+ {
+  "mot": "la",
+  "debut": 208.46,
+  "fin": 208.58,
+  "proba": 0.99
+ },
+ {
+  "mot": "réussite.",
+  "debut": 208.58,
+  "fin": 209.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "Faire",
+  "debut": 209.79,
+  "fin": 210.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 210.14,
+  "fin": 210.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "études,",
+  "debut": 210.34,
+  "fin": 210.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "obtenir",
+  "debut": 211.04,
+  "fin": 211.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 211.46,
+  "fin": 211.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "diplôme,",
+  "debut": 211.6,
+  "fin": 211.98,
+  "proba": 0.99
+ },
+ {
+  "mot": "chercher",
+  "debut": 212.32,
+  "fin": 212.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 212.66,
+  "fin": 213.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "stage,",
+  "debut": 213.08,
+  "fin": 213.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "déposer",
+  "debut": 214.04,
+  "fin": 214.48,
+  "proba": 0.99
+ },
+ {
+  "mot": "des",
+  "debut": 214.48,
+  "fin": 214.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "dossiers,",
+  "debut": 214.64,
+  "fin": 215.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "attendre",
+  "debut": 215.26,
+  "fin": 215.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "effectivement",
+  "debut": 215.64,
+  "fin": 216.06,
+  "proba": 0.09
+ },
+ {
+  "mot": "et",
+  "debut": 216.06,
+  "fin": 216.6,
+  "proba": 0.97
+ },
+ {
+  "mot": "espérer",
+  "debut": 216.6,
+  "fin": 217.1,
+  "proba": 0.98
+ },
+ {
+  "mot": "décrocher",
+  "debut": 217.1,
+  "fin": 217.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "un",
+  "debut": 217.64,
+  "fin": 217.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "salaire",
+  "debut": 217.86,
+  "fin": 218.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "qui",
+  "debut": 218.16,
+  "fin": 218.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "permettra",
+  "debut": 218.34,
+  "fin": 218.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 218.9,
+  "fin": 219.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "vivre",
+  "debut": 219.08,
+  "fin": 219.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "correctement.",
+  "debut": 219.32,
+  "fin": 219.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "Attention,",
+  "debut": 220.6,
+  "fin": 221.16,
+  "proba": 0.96
+ },
+ {
+  "mot": "je",
+  "debut": 221.88,
+  "fin": 222.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 222.24,
+  "fin": 222.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 222.38,
+  "fin": 222.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 222.44,
+  "fin": 222.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "contre",
+  "debut": 222.74,
+  "fin": 223.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 223.14,
+  "fin": 223.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "études,",
+  "debut": 223.34,
+  "fin": 223.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "je",
+  "debut": 224.0,
+  "fin": 224.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 224.3,
+  "fin": 224.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 224.4,
+  "fin": 224.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 224.56,
+  "fin": 224.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "contre",
+  "debut": 224.76,
+  "fin": 225.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 225.06,
+  "fin": 225.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "diplômes,",
+  "debut": 225.2,
+  "fin": 225.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "je",
+  "debut": 225.82,
+  "fin": 225.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 225.94,
+  "fin": 226.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 226.06,
+  "fin": 226.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 226.18,
+  "fin": 226.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "non",
+  "debut": 226.54,
+  "fin": 226.74,
+  "proba": 0.91
+ },
+ {
+  "mot": "plus",
+  "debut": 226.74,
+  "fin": 226.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "contre",
+  "debut": 226.94,
+  "fin": 227.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 227.22,
+  "fin": 227.38,
+  "proba": 0.99
+ },
+ {
+  "mot": "formations",
+  "debut": 227.38,
+  "fin": 227.72,
+  "proba": 0.99
+ },
+ {
+  "mot": "professionnelles.",
+  "debut": 227.72,
+  "fin": 228.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "Au",
+  "debut": 228.82,
+  "fin": 228.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "contraire,",
+  "debut": 228.88,
+  "fin": 229.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 229.82,
+  "fin": 229.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "connaissances",
+  "debut": 229.96,
+  "fin": 230.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 230.64,
+  "fin": 230.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 230.94,
+  "fin": 231.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "compétences",
+  "debut": 231.04,
+  "fin": 231.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "sont",
+  "debut": 231.7,
+  "fin": 232.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "indispensables.",
+  "debut": 232.32,
+  "fin": 232.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "Mais",
+  "debut": 233.74,
+  "fin": 234.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "le",
+  "debut": 234.14,
+  "fin": 234.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "problème,",
+  "debut": 234.26,
+  "fin": 234.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "c",
+  "debut": 234.76,
+  "fin": 235.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "'est",
+  "debut": 235.02,
+  "fin": 235.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 235.06,
+  "fin": 235.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "croire",
+  "debut": 235.18,
+  "fin": 235.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 235.58,
+  "fin": 235.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "le",
+  "debut": 235.74,
+  "fin": 235.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "diplôme",
+  "debut": 235.84,
+  "fin": 236.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "a",
+  "debut": 236.26,
+  "fin": 236.46,
+  "proba": 0.97
+ },
+ {
+  "mot": "lui",
+  "debut": 236.46,
+  "fin": 236.6,
+  "proba": 0.96
+ },
+ {
+  "mot": "seul",
+  "debut": 236.6,
+  "fin": 236.78,
+  "proba": 0.96
+ },
+ {
+  "mot": "garantie",
+  "debut": 236.78,
+  "fin": 237.26,
+  "proba": 0.61
+ },
+ {
+  "mot": "ton",
+  "debut": 237.26,
+  "fin": 237.4,
+  "proba": 0.64
+ },
+ {
+  "mot": "avenir",
+  "debut": 237.4,
+  "fin": 237.72,
+  "proba": 0.99
+ },
+ {
+  "mot": "financier.",
+  "debut": 237.72,
+  "fin": 238.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "Nous",
+  "debut": 238.66,
+  "fin": 238.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "sommes",
+  "debut": 238.88,
+  "fin": 239.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "en",
+  "debut": 239.14,
+  "fin": 239.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "2026",
+  "debut": 239.28,
+  "fin": 239.9,
+  "proba": 0.99
+ },
+ {
+  "mot": "et",
+  "debut": 239.9,
+  "fin": 240.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "2027",
+  "debut": 240.18,
+  "fin": 240.86,
+  "proba": 0.99
+ },
+ {
+  "mot": "approche.",
+  "debut": 240.86,
+  "fin": 241.44,
+  "proba": 0.77
+ },
+ {
+  "mot": "Le",
+  "debut": 243.92,
+  "fin": 244.44,
+  "proba": 0.05
+ },
+ {
+  "mot": "monde",
+  "debut": 244.44,
+  "fin": 244.7,
+  "proba": 0.98
+ },
+ {
+  "mot": "du",
+  "debut": 244.7,
+  "fin": 244.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "travail",
+  "debut": 244.9,
+  "fin": 245.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "évolue,",
+  "debut": 245.16,
+  "fin": 245.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "les",
+  "debut": 246.4,
+  "fin": 247.32,
+  "proba": 0.95
+ },
+ {
+  "mot": "entreprises",
+  "debut": 247.32,
+  "fin": 247.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "changent",
+  "debut": 247.7,
+  "fin": 248.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "leurs",
+  "debut": 248.26,
+  "fin": 248.44,
+  "proba": 0.67
+ },
+ {
+  "mot": "méthodes",
+  "debut": 248.44,
+  "fin": 248.82,
+  "proba": 0.96
+ },
+ {
+  "mot": "de",
+  "debut": 248.82,
+  "fin": 248.98,
+  "proba": 0.83
+ },
+ {
+  "mot": "recrutement,",
+  "debut": 248.98,
+  "fin": 249.4,
+  "proba": 0.99
+ },
+ {
+  "mot": "les",
+  "debut": 249.86,
+  "fin": 249.96,
+  "proba": 0.96
+ },
+ {
+  "mot": "nouvelles",
+  "debut": 249.96,
+  "fin": 250.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "technologies",
+  "debut": 250.2,
+  "fin": 250.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "transforment",
+  "debut": 250.84,
+  "fin": 251.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 251.6,
+  "fin": 251.74,
+  "proba": 0.98
+ },
+ {
+  "mot": "métiers,",
+  "debut": 251.74,
+  "fin": 252.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "le",
+  "debut": 252.52,
+  "fin": 252.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "coût",
+  "debut": 252.64,
+  "fin": 252.84,
+  "proba": 0.99
+ },
+ {
+  "mot": "de",
+  "debut": 252.84,
+  "fin": 252.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 252.96,
+  "fin": 253.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "vie",
+  "debut": 253.08,
+  "fin": 253.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "augmente",
+  "debut": 253.26,
+  "fin": 253.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 253.86,
+  "fin": 253.98,
+  "proba": 0.98
+ },
+ {
+  "mot": "le",
+  "debut": 253.98,
+  "fin": 254.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "pouvoir",
+  "debut": 254.1,
+  "fin": 254.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "d",
+  "debut": 254.4,
+  "fin": 254.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "'achat",
+  "debut": 254.56,
+  "fin": 254.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "reste",
+  "debut": 254.9,
+  "fin": 255.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 255.22,
+  "fin": 255.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "véritable",
+  "debut": 255.5,
+  "fin": 256.14,
+  "proba": 0.99
+ },
+ {
+  "mot": "préoccupation",
+  "debut": 256.14,
+  "fin": 257.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 257.16,
+  "fin": 257.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "de",
+  "debut": 257.64,
+  "fin": 257.74,
+  "proba": 0.99
+ },
+ {
+  "mot": "nombreuses",
+  "debut": 257.74,
+  "fin": 258.18,
+  "proba": 0.99
+ },
+ {
+  "mot": "familles.",
+  "debut": 258.18,
+  "fin": 258.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "Les",
+  "debut": 259.38,
+  "fin": 259.5,
+  "proba": 0.98
+ },
+ {
+  "mot": "réalités",
+  "debut": 259.5,
+  "fin": 259.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "d",
+  "debut": 259.92,
+  "fin": 260.06,
+  "proba": 0.9
+ },
+ {
+  "mot": "'aujourd",
+  "debut": 260.06,
+  "fin": 260.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "'hui",
+  "debut": 260.26,
+  "fin": 260.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 260.4,
+  "fin": 260.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "sont",
+  "debut": 260.64,
+  "fin": 260.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "plus",
+  "debut": 260.78,
+  "fin": 261.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "celles",
+  "debut": 261.02,
+  "fin": 261.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "d",
+  "debut": 261.3,
+  "fin": 261.44,
+  "proba": 0.98
+ },
+ {
+  "mot": "'hier.",
+  "debut": 261.44,
+  "fin": 261.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "Tu",
+  "debut": 262.28,
+  "fin": 262.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 262.42,
+  "fin": 262.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "peux",
+  "debut": 262.54,
+  "fin": 262.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "donc",
+  "debut": 262.72,
+  "fin": 262.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 262.96,
+  "fin": 263.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "continuer",
+  "debut": 263.18,
+  "fin": 263.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 263.64,
+  "fin": 264.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "préparer",
+  "debut": 264.0,
+  "fin": 264.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "ton",
+  "debut": 264.76,
+  "fin": 264.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "avenir",
+  "debut": 264.92,
+  "fin": 265.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "avec",
+  "debut": 265.34,
+  "fin": 265.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 265.58,
+  "fin": 265.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "mentalité",
+  "debut": 265.76,
+  "fin": 266.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "qui",
+  "debut": 266.38,
+  "fin": 266.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 266.5,
+  "fin": 266.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "tient",
+  "debut": 266.68,
+  "fin": 266.94,
+  "proba": 0.99
+ },
+ {
+  "mot": "pas",
+  "debut": 266.94,
+  "fin": 267.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "compte",
+  "debut": 267.18,
+  "fin": 267.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 267.7,
+  "fin": 267.92,
+  "proba": 0.98
+ },
+ {
+  "mot": "nouvelles",
+  "debut": 267.92,
+  "fin": 268.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "réalités",
+  "debut": 268.36,
+  "fin": 268.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "économiques.",
+  "debut": 268.84,
+  "fin": 269.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "Si",
+  "debut": 269.68,
+  "fin": 270.76,
+  "proba": 0.87
+ },
+ {
+  "mot": "tu",
+  "debut": 270.76,
+  "fin": 270.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "es",
+  "debut": 270.96,
+  "fin": 271.18,
+  "proba": 0.99
+ },
+ {
+  "mot": "vraiment",
+  "debut": 271.18,
+  "fin": 271.54,
+  "proba": 0.99
+ },
+ {
+  "mot": "ambitieux,",
+  "debut": 271.54,
+  "fin": 272.0,
+  "proba": 0.96
+ },
+ {
+  "mot": "si",
+  "debut": 272.36,
+  "fin": 272.48,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 272.48,
+  "fin": 272.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "as",
+  "debut": 272.62,
+  "fin": 272.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 272.8,
+  "fin": 272.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "rêves",
+  "debut": 272.96,
+  "fin": 273.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 273.42,
+  "fin": 273.94,
+  "proba": 0.82
+ },
+ {
+  "mot": "si",
+  "debut": 273.94,
+  "fin": 274.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 274.12,
+  "fin": 274.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "veux",
+  "debut": 274.22,
+  "fin": 274.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "véritablement",
+  "debut": 274.44,
+  "fin": 275.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "changer",
+  "debut": 275.26,
+  "fin": 275.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "ta",
+  "debut": 275.6,
+  "fin": 275.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "situation",
+  "debut": 275.8,
+  "fin": 276.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "financière,",
+  "debut": 276.1,
+  "fin": 276.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 276.92,
+  "fin": 277.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "dois",
+  "debut": 277.16,
+  "fin": 277.32,
+  "proba": 0.99
+ },
+ {
+  "mot": "commencer",
+  "debut": 277.32,
+  "fin": 277.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 277.74,
+  "fin": 278.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "réfléchir",
+  "debut": 278.08,
+  "fin": 278.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "autrement.",
+  "debut": 278.76,
+  "fin": 279.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "Tu",
+  "debut": 279.46,
+  "fin": 279.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "dois",
+  "debut": 279.78,
+  "fin": 280.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "avoir",
+  "debut": 280.02,
+  "fin": 280.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 280.42,
+  "fin": 280.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "vision",
+  "debut": 280.64,
+  "fin": 280.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "claire",
+  "debut": 280.98,
+  "fin": 281.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 281.44,
+  "fin": 281.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "ce",
+  "debut": 281.78,
+  "fin": 281.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 281.9,
+  "fin": 281.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 281.96,
+  "fin": 282.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "veux",
+  "debut": 282.06,
+  "fin": 282.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "devenir.",
+  "debut": 282.18,
+  "fin": 282.48,
+  "proba": 1.0
+ },
+ {
+  "mot": "Tu",
+  "debut": 282.86,
+  "fin": 282.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "dois",
+  "debut": 282.96,
+  "fin": 283.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "développer",
+  "debut": 283.5,
+  "fin": 284.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 284.54,
+  "fin": 284.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "compétences",
+  "debut": 284.68,
+  "fin": 285.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "qui",
+  "debut": 285.2,
+  "fin": 285.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "ont",
+  "debut": 285.36,
+  "fin": 285.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 285.52,
+  "fin": 285.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "réelle",
+  "debut": 285.72,
+  "fin": 286.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "valeur",
+  "debut": 286.14,
+  "fin": 286.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "sur",
+  "debut": 286.44,
+  "fin": 286.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "le",
+  "debut": 286.62,
+  "fin": 286.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "marché.",
+  "debut": 286.7,
+  "fin": 286.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "Tu",
+  "debut": 287.36,
+  "fin": 287.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "dois",
+  "debut": 287.46,
+  "fin": 287.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "apprendre",
+  "debut": 287.74,
+  "fin": 288.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 288.26,
+  "fin": 288.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "créer",
+  "debut": 288.56,
+  "fin": 288.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 288.86,
+  "fin": 289.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "opportunités,",
+  "debut": 289.08,
+  "fin": 289.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 289.88,
+  "fin": 290.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "résoudre",
+  "debut": 290.22,
+  "fin": 290.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 290.66,
+  "fin": 290.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "problèmes",
+  "debut": 290.82,
+  "fin": 291.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 291.16,
+  "fin": 291.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 291.6,
+  "fin": 291.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "générer",
+  "debut": 291.8,
+  "fin": 292.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 292.26,
+  "fin": 292.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "revenus.",
+  "debut": 292.42,
+  "fin": 292.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "Et",
+  "debut": 292.94,
+  "fin": 293.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "surtout,",
+  "debut": 293.16,
+  "fin": 293.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 293.78,
+  "fin": 293.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "dois",
+  "debut": 293.88,
+  "fin": 294.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "commencer",
+  "debut": 294.16,
+  "fin": 294.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "dès",
+  "debut": 294.82,
+  "fin": 295.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "maintenant.",
+  "debut": 295.18,
+  "fin": 295.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "Parce",
+  "debut": 295.66,
+  "fin": 296.24,
+  "proba": 0.86
+ },
+ {
+  "mot": "que",
+  "debut": 296.24,
+  "fin": 296.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "si",
+  "debut": 296.38,
+  "fin": 296.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 296.52,
+  "fin": 296.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "passes",
+  "debut": 296.64,
+  "fin": 297.08,
+  "proba": 0.99
+ },
+ {
+  "mot": "toutes",
+  "debut": 297.08,
+  "fin": 297.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "ces",
+  "debut": 297.52,
+  "fin": 297.7,
+  "proba": 0.99
+ },
+ {
+  "mot": "années",
+  "debut": 297.7,
+  "fin": 298.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 298.02,
+  "fin": 298.44,
+  "proba": 0.99
+ },
+ {
+  "mot": "étudier",
+  "debut": 298.44,
+  "fin": 298.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "sans",
+  "debut": 298.82,
+  "fin": 299.06,
+  "proba": 0.99
+ },
+ {
+  "mot": "construire",
+  "debut": 299.06,
+  "fin": 299.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "quelque",
+  "debut": 299.42,
+  "fin": 299.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "chose",
+  "debut": 299.6,
+  "fin": 299.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 299.86,
+  "fin": 300.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "côté,",
+  "debut": 300.0,
+  "fin": 300.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "sans",
+  "debut": 300.54,
+  "fin": 300.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "développer",
+  "debut": 300.72,
+  "fin": 301.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "une",
+  "debut": 301.18,
+  "fin": 301.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "compétence",
+  "debut": 301.3,
+  "fin": 302.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "recherchée,",
+  "debut": 302.16,
+  "fin": 302.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "sans",
+  "debut": 303.04,
+  "fin": 303.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "apprendre",
+  "debut": 303.32,
+  "fin": 303.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 303.7,
+  "fin": 303.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "vendre",
+  "debut": 303.96,
+  "fin": 304.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "tes",
+  "debut": 304.3,
+  "fin": 304.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "services",
+  "debut": 304.42,
+  "fin": 304.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 304.76,
+  "fin": 304.98,
+  "proba": 0.99
+ },
+ {
+  "mot": "sans",
+  "debut": 304.98,
+  "fin": 305.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "préparer",
+  "debut": 305.16,
+  "fin": 305.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "ton",
+  "debut": 305.8,
+  "fin": 306.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "indépendance",
+  "debut": 306.12,
+  "fin": 306.7,
+  "proba": 0.99
+ },
+ {
+  "mot": "financière,",
+  "debut": 306.7,
+  "fin": 307.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 307.44,
+  "fin": 307.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "risques",
+  "debut": 307.76,
+  "fin": 308.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 308.18,
+  "fin": 308.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "terminer",
+  "debut": 308.4,
+  "fin": 308.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "tes",
+  "debut": 308.86,
+  "fin": 309.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "études",
+  "debut": 309.04,
+  "fin": 309.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "avec",
+  "debut": 309.38,
+  "fin": 309.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "un",
+  "debut": 309.62,
+  "fin": 309.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "diplôme",
+  "debut": 309.78,
+  "fin": 310.18,
+  "proba": 1.0
+ },
+ {
+  "mot": "mais",
+  "debut": 310.18,
+  "fin": 310.58,
+  "proba": 0.51
+ },
+ {
+  "mot": "sans",
+  "debut": 310.58,
+  "fin": 310.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "véritable",
+  "debut": 310.8,
+  "fin": 311.16,
+  "proba": 0.98
+ },
+ {
+  "mot": "stratégie",
+  "debut": 311.16,
+  "fin": 312.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 312.02,
+  "fin": 312.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "construire",
+  "debut": 312.36,
+  "fin": 312.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 312.78,
+  "fin": 312.92,
+  "proba": 0.97
+ },
+ {
+  "mot": "vie",
+  "debut": 312.92,
+  "fin": 313.0,
+  "proba": 0.99
+ },
+ {
+  "mot": "que",
+  "debut": 313.0,
+  "fin": 313.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 313.12,
+  "fin": 313.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "souhaites.",
+  "debut": 313.2,
+  "fin": 313.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "Mon",
+  "debut": 314.02,
+  "fin": 314.38,
+  "proba": 0.97
+ },
+ {
+  "mot": "frère,",
+  "debut": 314.38,
+  "fin": 314.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "ma",
+  "debut": 315.62,
+  "fin": 316.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "soeur,",
+  "debut": 316.04,
+  "fin": 316.36,
+  "proba": 0.82
+ },
+ {
+  "mot": "je",
+  "debut": 316.94,
+  "fin": 317.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 317.08,
+  "fin": 317.22,
+  "proba": 0.98
+ },
+ {
+  "mot": "te",
+  "debut": 317.22,
+  "fin": 317.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "dis",
+  "debut": 317.24,
+  "fin": 317.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 317.38,
+  "fin": 317.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "tout",
+  "debut": 317.54,
+  "fin": 317.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "cela",
+  "debut": 317.68,
+  "fin": 317.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 317.94,
+  "fin": 318.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 318.24,
+  "fin": 318.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "décourager.",
+  "debut": 318.58,
+  "fin": 319.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "Tu",
+  "debut": 319.08,
+  "fin": 319.68,
+  "proba": 0.65
+ },
+ {
+  "mot": "te",
+  "debut": 319.68,
+  "fin": 319.8,
+  "proba": 0.97
+ },
+ {
+  "mot": "le",
+  "debut": 319.8,
+  "fin": 319.86,
+  "proba": 0.98
+ },
+ {
+  "mot": "dis",
+  "debut": 319.86,
+  "fin": 319.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "parce",
+  "debut": 319.98,
+  "fin": 320.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 320.2,
+  "fin": 320.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "ton",
+  "debut": 320.34,
+  "fin": 320.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "avenir",
+  "debut": 320.56,
+  "fin": 321.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "mérite",
+  "debut": 321.02,
+  "fin": 321.46,
+  "proba": 0.94
+ },
+ {
+  "mot": "mieux",
+  "debut": 321.46,
+  "fin": 321.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 321.74,
+  "fin": 322.52,
+  "proba": 0.99
+ },
+ {
+  "mot": "des",
+  "debut": 322.52,
+  "fin": 322.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "promesses",
+  "debut": 322.68,
+  "fin": 323.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 323.26,
+  "fin": 323.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 323.62,
+  "fin": 323.78,
+  "proba": 0.99
+ },
+ {
+  "mot": "espérances.",
+  "debut": 323.78,
+  "fin": 324.38,
+  "proba": 0.99
+ },
+ {
+  "mot": "Mais",
+  "debut": 324.58,
+  "fin": 324.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "alors,",
+  "debut": 324.98,
+  "fin": 325.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "qu",
+  "debut": 325.44,
+  "fin": 325.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "'est",
+  "debut": 325.78,
+  "fin": 325.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "-ce",
+  "debut": 325.84,
+  "fin": 325.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "qu",
+  "debut": 325.88,
+  "fin": 325.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "'un",
+  "debut": 325.96,
+  "fin": 326.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "jeune",
+  "debut": 326.06,
+  "fin": 326.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "Togolais",
+  "debut": 326.24,
+  "fin": 326.64,
+  "proba": 0.89
+ },
+ {
+  "mot": "doit",
+  "debut": 326.64,
+  "fin": 326.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "réellement",
+  "debut": 326.92,
+  "fin": 327.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "faire",
+  "debut": 327.34,
+  "fin": 327.56,
+  "proba": 1.0
+ },
+ {
+  "mot": "aujourd",
+  "debut": 327.56,
+  "fin": 327.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "'hui",
+  "debut": 327.8,
+  "fin": 327.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 327.96,
+  "fin": 328.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "réussir",
+  "debut": 328.12,
+  "fin": 328.46,
+  "proba": 1.0
+ },
+ {
+  "mot": "financièrement",
+  "debut": 328.46,
+  "fin": 329.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 329.1,
+  "fin": 329.68,
+  "proba": 0.51
+ },
+ {
+  "mot": "Quelles",
+  "debut": 329.68,
+  "fin": 330.02,
+  "proba": 0.94
+ },
+ {
+  "mot": "compétences",
+  "debut": 330.02,
+  "fin": 330.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "doit",
+  "debut": 330.7,
+  "fin": 330.92,
+  "proba": 0.98
+ },
+ {
+  "mot": "-il",
+  "debut": 330.92,
+  "fin": 331.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "apprendre",
+  "debut": 331.1,
+  "fin": 331.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 331.4,
+  "fin": 331.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "Quel",
+  "debut": 331.68,
+  "fin": 331.9,
+  "proba": 0.98
+ },
+ {
+  "mot": "business",
+  "debut": 331.9,
+  "fin": 332.42,
+  "proba": 0.99
+ },
+ {
+  "mot": "peut",
+  "debut": 332.42,
+  "fin": 332.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "-il",
+  "debut": 332.74,
+  "fin": 332.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "lancer",
+  "debut": 332.86,
+  "fin": 333.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "?",
+  "debut": 333.24,
+  "fin": 333.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "Comment",
+  "debut": 333.4,
+  "fin": 333.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "peut",
+  "debut": 333.76,
+  "fin": 334.04,
+  "proba": 1.0
+ },
+ {
+  "mot": "-il",
+  "debut": 334.04,
+  "fin": 334.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "utiliser",
+  "debut": 334.22,
+  "fin": 334.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 334.66,
+  "fin": 334.84,
+  "proba": 0.4
+ },
+ {
+  "mot": "nouvelles",
+  "debut": 334.84,
+  "fin": 335.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "technologies,",
+  "debut": 335.14,
+  "fin": 335.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "notamment",
+  "debut": 335.86,
+  "fin": 336.26,
+  "proba": 1.0
+ },
+ {
+  "mot": "l",
+  "debut": 336.26,
+  "fin": 336.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "'intelligence",
+  "debut": 336.52,
+  "fin": 336.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "artificielle,",
+  "debut": 336.92,
+  "fin": 337.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 337.44,
+  "fin": 337.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "créer",
+  "debut": 337.7,
+  "fin": 338.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 338.02,
+  "fin": 338.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "opportunités",
+  "debut": 338.24,
+  "fin": 338.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 338.8,
+  "fin": 338.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "devenir",
+  "debut": 338.98,
+  "fin": 339.28,
+  "proba": 0.98
+ },
+ {
+  "mot": "financièrement",
+  "debut": 339.28,
+  "fin": 340.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "indépendant",
+  "debut": 340.06,
+  "fin": 341.0,
+  "proba": 0.99
+ },
+ {
+  "mot": "?",
+  "debut": 341.0,
+  "fin": 341.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "C",
+  "debut": 341.16,
+  "fin": 341.7,
+  "proba": 0.81
+ },
+ {
+  "mot": "'est",
+  "debut": 341.7,
+  "fin": 341.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "exactement",
+  "debut": 341.76,
+  "fin": 342.1,
+  "proba": 0.97
+ },
+ {
+  "mot": "ce",
+  "debut": 342.1,
+  "fin": 342.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 342.34,
+  "fin": 342.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "je",
+  "debut": 342.44,
+  "fin": 342.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "vais",
+  "debut": 342.54,
+  "fin": 342.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 342.8,
+  "fin": 343.7,
+  "proba": 0.99
+ },
+ {
+  "mot": "dévoiler",
+  "debut": 343.7,
+  "fin": 344.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "dans",
+  "debut": 344.44,
+  "fin": 344.92,
+  "proba": 0.99
+ },
+ {
+  "mot": "la",
+  "debut": 344.92,
+  "fin": 345.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "deuxième",
+  "debut": 345.08,
+  "fin": 345.44,
+  "proba": 0.98
+ },
+ {
+  "mot": "partie",
+  "debut": 345.44,
+  "fin": 345.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 345.8,
+  "fin": 345.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "cette",
+  "debut": 345.9,
+  "fin": 346.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "vidéo.",
+  "debut": 346.08,
+  "fin": 346.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "Je",
+  "debut": 346.66,
+  "fin": 347.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "vais",
+  "debut": 347.02,
+  "fin": 347.28,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 347.28,
+  "fin": 347.84,
+  "proba": 1.0
+ },
+ {
+  "mot": "parler",
+  "debut": 347.84,
+  "fin": 348.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 348.32,
+  "fin": 348.64,
+  "proba": 0.99
+ },
+ {
+  "mot": "véritables",
+  "debut": 348.64,
+  "fin": 349.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "opportunités,",
+  "debut": 349.3,
+  "fin": 349.88,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 350.02,
+  "fin": 350.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "compétences",
+  "debut": 350.08,
+  "fin": 350.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 350.68,
+  "fin": 350.78,
+  "proba": 1.0
+ },
+ {
+  "mot": "développer",
+  "debut": 350.78,
+  "fin": 351.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 351.2,
+  "fin": 351.62,
+  "proba": 0.92
+ },
+ {
+  "mot": "surtout",
+  "debut": 351.62,
+  "fin": 351.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 351.9,
+  "fin": 352.06,
+  "proba": 1.0
+ },
+ {
+  "mot": "stratégies",
+  "debut": 352.06,
+  "fin": 352.7,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 352.7,
+  "fin": 353.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 353.08,
+  "fin": 353.2,
+  "proba": 1.0
+ },
+ {
+  "mot": "peux",
+  "debut": 353.2,
+  "fin": 353.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "commencer",
+  "debut": 353.36,
+  "fin": 353.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 353.86,
+  "fin": 354.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "appliquer",
+  "debut": 354.12,
+  "fin": 354.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "même",
+  "debut": 354.66,
+  "fin": 355.14,
+  "proba": 0.97
+ },
+ {
+  "mot": "si",
+  "debut": 355.14,
+  "fin": 355.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 355.34,
+  "fin": 355.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "n",
+  "debut": 355.36,
+  "fin": 355.62,
+  "proba": 0.11
+ },
+ {
+  "mot": "'es",
+  "debut": 355.62,
+  "fin": 355.62,
+  "proba": 0.87
+ },
+ {
+  "mot": "pas",
+  "debut": 355.62,
+  "fin": 355.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 355.62,
+  "fin": 355.8,
+  "proba": 0.9
+ },
+ {
+  "mot": "zéro.",
+  "debut": 355.8,
+  "fin": 356.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "Je",
+  "debut": 356.44,
+  "fin": 356.96,
+  "proba": 1.0
+ },
+ {
+  "mot": "ne",
+  "debut": 356.96,
+  "fin": 357.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "suis",
+  "debut": 357.1,
+  "fin": 357.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 357.16,
+  "fin": 357.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "là",
+  "debut": 357.36,
+  "fin": 357.6,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 357.6,
+  "fin": 357.86,
+  "proba": 1.0
+ },
+ {
+  "mot": "te",
+  "debut": 357.86,
+  "fin": 357.96,
+  "proba": 0.99
+ },
+ {
+  "mot": "vendre",
+  "debut": 357.96,
+  "fin": 358.36,
+  "proba": 0.99
+ },
+ {
+  "mot": "du",
+  "debut": 358.36,
+  "fin": 358.46,
+  "proba": 0.98
+ },
+ {
+  "mot": "rêve.",
+  "debut": 358.46,
+  "fin": 358.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "Je",
+  "debut": 358.76,
+  "fin": 358.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "veux",
+  "debut": 358.82,
+  "fin": 359.14,
+  "proba": 0.99
+ },
+ {
+  "mot": "te",
+  "debut": 359.14,
+  "fin": 359.4,
+  "proba": 1.0
+ },
+ {
+  "mot": "montrer",
+  "debut": 359.4,
+  "fin": 360.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "des",
+  "debut": 360.02,
+  "fin": 360.5,
+  "proba": 1.0
+ },
+ {
+  "mot": "pistes",
+  "debut": 360.5,
+  "fin": 360.9,
+  "proba": 0.99
+ },
+ {
+  "mot": "concrètes",
+  "debut": 360.9,
+  "fin": 361.44,
+  "proba": 1.0
+ },
+ {
+  "mot": "que",
+  "debut": 361.44,
+  "fin": 361.86,
+  "proba": 0.62
+ },
+ {
+  "mot": "tu",
+  "debut": 361.86,
+  "fin": 362.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "puisses",
+  "debut": 362.0,
+  "fin": 362.38,
+  "proba": 0.99
+ },
+ {
+  "mot": "prendre",
+  "debut": 362.38,
+  "fin": 363.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "ton",
+  "debut": 363.08,
+  "fin": 363.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "avenir",
+  "debut": 363.3,
+  "fin": 363.66,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 363.66,
+  "fin": 363.82,
+  "proba": 0.81
+ },
+ {
+  "mot": "main.",
+  "debut": 363.82,
+  "fin": 363.92,
+  "proba": 0.96
+ },
+ {
+  "mot": "Alors,",
+  "debut": 363.92,
+  "fin": 364.52,
+  "proba": 0.87
+ },
+ {
+  "mot": "si",
+  "debut": 364.78,
+  "fin": 365.02,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 365.02,
+  "fin": 365.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "n",
+  "debut": 365.14,
+  "fin": 365.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "'as",
+  "debut": 365.22,
+  "fin": 365.3,
+  "proba": 1.0
+ },
+ {
+  "mot": "pas",
+  "debut": 365.3,
+  "fin": 365.48,
+  "proba": 1.0
+ },
+ {
+  "mot": "encore",
+  "debut": 365.48,
+  "fin": 365.82,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 365.82,
+  "fin": 366.16,
+  "proba": 0.99
+ },
+ {
+  "mot": "projet",
+  "debut": 366.16,
+  "fin": 366.52,
+  "proba": 0.9
+ },
+ {
+  "mot": "de",
+  "debut": 366.52,
+  "fin": 366.72,
+  "proba": 0.99
+ },
+ {
+  "mot": "voyage",
+  "debut": 366.72,
+  "fin": 367.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 367.14,
+  "fin": 367.5,
+  "proba": 0.99
+ },
+ {
+  "mot": "l",
+  "debut": 367.5,
+  "fin": 367.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "'étranger",
+  "debut": 367.58,
+  "fin": 367.92,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 367.92,
+  "fin": 368.04,
+  "proba": 0.94
+ },
+ {
+  "mot": "que",
+  "debut": 368.04,
+  "fin": 368.12,
+  "proba": 1.0
+ },
+ {
+  "mot": "tu",
+  "debut": 368.12,
+  "fin": 368.22,
+  "proba": 1.0
+ },
+ {
+  "mot": "souhaites",
+  "debut": 368.22,
+  "fin": 368.58,
+  "proba": 1.0
+ },
+ {
+  "mot": "construire",
+  "debut": 368.58,
+  "fin": 368.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "quelque",
+  "debut": 368.94,
+  "fin": 369.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "chose",
+  "debut": 369.08,
+  "fin": 369.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "ici",
+  "debut": 369.34,
+  "fin": 369.68,
+  "proba": 1.0
+ },
+ {
+  "mot": "au",
+  "debut": 369.68,
+  "fin": 370.04,
+  "proba": 0.81
+ },
+ {
+  "mot": "Togo,",
+  "debut": 370.04,
+  "fin": 370.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "cette",
+  "debut": 370.8,
+  "fin": 370.98,
+  "proba": 0.99
+ },
+ {
+  "mot": "deuxième",
+  "debut": 370.98,
+  "fin": 371.3,
+  "proba": 0.99
+ },
+ {
+  "mot": "partie",
+  "debut": 371.3,
+  "fin": 371.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "est",
+  "debut": 371.72,
+  "fin": 372.1,
+  "proba": 1.0
+ },
+ {
+  "mot": "particulièrement",
+  "debut": 372.1,
+  "fin": 373.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "importante",
+  "debut": 373.08,
+  "fin": 373.74,
+  "proba": 1.0
+ },
+ {
+  "mot": "pour",
+  "debut": 373.74,
+  "fin": 373.94,
+  "proba": 1.0
+ },
+ {
+  "mot": "toi.",
+  "debut": 373.94,
+  "fin": 374.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "Abonne",
+  "debut": 374.7,
+  "fin": 375.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "-toi",
+  "debut": 375.14,
+  "fin": 375.28,
+  "proba": 0.98
+ },
+ {
+  "mot": "à",
+  "debut": 375.28,
+  "fin": 375.38,
+  "proba": 0.45
+ },
+ {
+  "mot": "mon",
+  "debut": 375.38,
+  "fin": 375.42,
+  "proba": 0.91
+ },
+ {
+  "mot": "compte",
+  "debut": 375.42,
+  "fin": 375.68,
+  "proba": 0.89
+ },
+ {
+  "mot": "et",
+  "debut": 375.68,
+  "fin": 375.8,
+  "proba": 0.11
+ },
+ {
+  "mot": "écris",
+  "debut": 375.8,
+  "fin": 376.48,
+  "proba": 0.88
+ },
+ {
+  "mot": "partie",
+  "debut": 376.48,
+  "fin": 376.8,
+  "proba": 0.53
+ },
+ {
+  "mot": "2",
+  "debut": 376.8,
+  "fin": 377.0,
+  "proba": 0.93
+ },
+ {
+  "mot": "dans",
+  "debut": 377.0,
+  "fin": 377.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "les",
+  "debut": 377.14,
+  "fin": 377.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "commentaires.",
+  "debut": 377.24,
+  "fin": 377.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "Je",
+  "debut": 378.04,
+  "fin": 378.36,
+  "proba": 1.0
+ },
+ {
+  "mot": "veux",
+  "debut": 378.36,
+  "fin": 378.56,
+  "proba": 0.72
+ },
+ {
+  "mot": "voir",
+  "debut": 378.56,
+  "fin": 378.76,
+  "proba": 1.0
+ },
+ {
+  "mot": "combien",
+  "debut": 378.76,
+  "fin": 379.0,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 379.0,
+  "fin": 379.38,
+  "proba": 1.0
+ },
+ {
+  "mot": "jeunes",
+  "debut": 379.38,
+  "fin": 379.62,
+  "proba": 1.0
+ },
+ {
+  "mot": "sont",
+  "debut": 379.62,
+  "fin": 379.9,
+  "proba": 1.0
+ },
+ {
+  "mot": "réellement",
+  "debut": 379.9,
+  "fin": 380.32,
+  "proba": 1.0
+ },
+ {
+  "mot": "prêts",
+  "debut": 380.32,
+  "fin": 380.72,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 380.72,
+  "fin": 381.48,
+  "proba": 0.66
+ },
+ {
+  "mot": "ouvrir",
+  "debut": 381.48,
+  "fin": 381.86,
+  "proba": 0.99
+ },
+ {
+  "mot": "les",
+  "debut": 381.86,
+  "fin": 382.06,
+  "proba": 0.99
+ },
+ {
+  "mot": "yeux,",
+  "debut": 382.06,
+  "fin": 382.24,
+  "proba": 1.0
+ },
+ {
+  "mot": "à",
+  "debut": 382.46,
+  "fin": 383.14,
+  "proba": 1.0
+ },
+ {
+  "mot": "changer",
+  "debut": 383.14,
+  "fin": 383.64,
+  "proba": 1.0
+ },
+ {
+  "mot": "de",
+  "debut": 383.64,
+  "fin": 383.8,
+  "proba": 1.0
+ },
+ {
+  "mot": "stratégie",
+  "debut": 383.8,
+  "fin": 384.42,
+  "proba": 1.0
+ },
+ {
+  "mot": "et",
+  "debut": 384.42,
+  "fin": 384.9,
+  "proba": 0.99
+ },
+ {
+  "mot": "à",
+  "debut": 384.9,
+  "fin": 385.08,
+  "proba": 0.98
+ },
+ {
+  "mot": "prendre",
+  "debut": 385.08,
+  "fin": 385.4,
+  "proba": 0.93
+ },
+ {
+  "mot": "leur",
+  "debut": 385.4,
+  "fin": 385.64,
+  "proba": 0.95
+ },
+ {
+  "mot": "avenir",
+  "debut": 385.64,
+  "fin": 386.08,
+  "proba": 1.0
+ },
+ {
+  "mot": "au",
+  "debut": 386.08,
+  "fin": 386.28,
+  "proba": 0.83
+ },
+ {
+  "mot": "suru.",
+  "debut": 386.28,
+  "fin": 386.52,
+  "proba": 0.17
+ },
+ {
+  "mot": "Rendez",
+  "debut": 386.8,
+  "fin": 387.34,
+  "proba": 1.0
+ },
+ {
+  "mot": "-vous",
+  "debut": 387.34,
+  "fin": 387.52,
+  "proba": 1.0
+ },
+ {
+  "mot": "dans",
+  "debut": 387.52,
+  "fin": 387.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "la",
+  "debut": 387.98,
+  "fin": 388.16,
+  "proba": 1.0
+ },
+ {
+  "mot": "deuxième",
+  "debut": 388.16,
+  "fin": 388.54,
+  "proba": 1.0
+ },
+ {
+  "mot": "partie.",
+  "debut": 388.54,
+  "fin": 388.98,
+  "proba": 1.0
+ },
+ {
+  "mot": "Merci.",
+  "debut": 389.46,
+  "fin": 390.06,
+  "proba": 1.0
+ }
+]

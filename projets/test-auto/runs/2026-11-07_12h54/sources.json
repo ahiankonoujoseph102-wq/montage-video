@@ -1,0 +1,80 @@
+[
+ {
+  "type": "logo + capture",
+  "outil": "ChatGPT",
+  "source": "Wikimedia Commons",
+  "licence": "Logo montré seulement pour identifier l'outil (marque de son propriétaire), aucune affiliation ; capture de la page publique"
+ },
+ {
+  "type": "photo",
+  "recherche": "african person scrolling smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "Peter Mooney",
+  "page": "https://www.flickr.com/photos/25874444@N00/15038691509",
+  "licence": "CC BY 2.0 (attribution : Peter Mooney)",
+  "recherche_utilisee": "person scrolling smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african team working desk",
+  "source": "Openverse / flickr",
+  "auteur": "US Army Africa",
+  "page": "https://www.flickr.com/photos/36281822@N08/3819692239",
+  "licence": "CC BY 2.0 (attribution : US Army Africa)",
+  "recherche_utilisee": "african team working desk"
+ },
+ {
+  "type": "photo",
+  "recherche": "african man smiling office",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/30849316687",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african man smiling office"
+ },
+ {
+  "type": "photo",
+  "recherche": "african person social media feed",
+  "source": "Openverse / flickr",
+  "auteur": "Eric Seneca Kim",
+  "page": "https://www.flickr.com/photos/77356818@N00/33453921961",
+  "licence": "Domaine public (PDM)",
+  "recherche_utilisee": "person social media feed"
+ },
+ {
+  "type": "photo",
+  "recherche": "african woman looking smartphone",
+  "source": "Openverse / flickr",
+  "auteur": "Stemack Street",
+  "page": "https://www.flickr.com/photos/76597495@N06/9724845490",
+  "licence": "CC BY 2.0 (attribution : Stemack Street)",
+  "recherche_utilisee": "woman looking smartphone"
+ },
+ {
+  "type": "photo",
+  "recherche": "african business woman thinking",
+  "source": "Openverse / flickr",
+  "auteur": "Rawpixel Ltd",
+  "page": "https://www.flickr.com/photos/147875007@N03/45739275862",
+  "licence": "CC BY 2.0 (attribution : Rawpixel Ltd)",
+  "recherche_utilisee": "african business woman thinking"
+ },
+ {
+  "type": "photo",
+  "recherche": "african speaker teaching students",
+  "source": "Openverse / flickr",
+  "auteur": "Jirka Matousek",
+  "page": "https://www.flickr.com/photos/28415633@N00/8481220337",
+  "licence": "CC BY 2.0 (attribution : Jirka Matousek)",
+  "recherche_utilisee": "speaker teaching students"
+ },
+ {
+  "type": "photo",
+  "recherche": "african customer success celebrating",
+  "source": "Openverse / flickr",
+  "auteur": "USAG-Humphreys",
+  "page": "https://www.flickr.com/photos/31687107@N07/7253749004",
+  "licence": "CC BY 2.0 (attribution : USAG-Humphreys)",
+  "recherche_utilisee": "customer success celebrating"
+ }
+]

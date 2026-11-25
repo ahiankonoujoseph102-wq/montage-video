@@ -1,0 +1,107 @@
+{
+ "tendances": [
+  {
+   "titre": "How I Built a $10k/mo AI Automation Agency",
+   "createur": "Liam Ottley",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example1",
+   "pourquoi": "Promesse financière forte, démonstration concrète sans théorie, étude de cas réelle d'un service IA à haute valeur ajoutée."
+  },
+  {
+   "titre": "Flux.1 : L'IA gratuite qui détruit Midjourney",
+   "createur": "Micode / Tech AI",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example2",
+   "pourquoi": "Effet de rareté et gratuité, comparaison directe avec le leader du marché, preuves visuelles immédiates et spectaculaires."
+  },
+  {
+   "titre": "Create 100 Instagram Reels in 10 Minutes with ChatGPT & Canva",
+   "createur": "Digital Hustle AI",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@example3",
+   "pourquoi": "Résolution d'un problème quotidien (le manque de temps), chiffres d'impact fort dans l'accroche (100 en 10 min), workflow très visuel."
+  },
+  {
+   "titre": "Le Mode Vocal de ChatGPT 4o est un prof d'anglais gratuit",
+   "createur": "@superbon.ia",
+   "plateforme": "TikTok",
+   "vues": "non vérifié",
+   "lien": "https://www.tiktok.com/@example4",
+   "pourquoi": "Démonstration immersive en direct, réponse à un besoin universel (apprendre l'anglais sans payer d'école), effet bluffant de l’IA parlante."
+  },
+  {
+   "titre": "Design a Professional Vector Logo in 30 Seconds with Recraft AI",
+   "createur": "Webcafe AI",
+   "plateforme": "Instagram Reels",
+   "vues": "non vérifié",
+   "lien": "https://www.instagram.com/reels/example5",
+   "pourquoi": "Résout une douleur coûteuse (payer un graphiste), montre le résultat en moins de 5 secondes, démarche pas-à-pas directement utilisable."
+  },
+  {
+   "titre": "Turn 50-Page PDF Contracts into Audio Podcasts with NotebookLM",
+   "createur": "Matt Wolfe",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example6",
+   "pourquoi": "Utilisation de la fonctionnalité 'Audio Overview' virale, simplification d'une tâche rébarbative (lire des contrats/documents longs)."
+  },
+  {
+   "titre": "Crée des affiches de vente WhatsApp professionnelles avec l'IA",
+   "createur": "IA Académie Afrique",
+   "plateforme": "Facebook Watch",
+   "vues": "non vérifié",
+   "lien": "https://www.facebook.com/watch/example7",
+   "pourquoi": "Ultra ciblé pour le commerce local, résultat instantané et exploitable sur le canal de vente n°1 en Afrique (WhatsApp)."
+  },
+  {
+   "titre": "Vapi AI Voice Agent Demo: Real Estate Receptionist",
+   "createur": "Brett Malinowski",
+   "plateforme": "YouTube",
+   "vues": "non vérifié",
+   "lien": "https://www.youtube.com/watch?v=example8",
+   "pourquoi": "Effet de démonstration en direct (appel téléphonique réel reçu par l'IA), valeur commerciale directe pour les petites entreprises."
+  }
+ ],
+ "sujet": {
+  "titre": "Crée le logo vectoriel pro et la charte graphique de ta marque avec Recraft AI (depuis ton téléphone)",
+  "angle": "Permettre aux entrepreneurs et commerçants d'obtenir un identité visuelle complète et un vrai logo vectoriel (prêt à imprimer sur cartes, enseignes, emballages, t-shirts) sans payer un graphiste cher et sans ordinateur.",
+  "pourquoi_maintenant": "Recraft.ai vient d'être élu meilleur outil de génération graphique IA. Contrairement à Midjourney ou Dall-E, il écrit le texte sans fautes, exporte en fichier vectoriel SVG (indéformable) et fonctionne parfaitement sur navigateur web mobile avec un forfait gratuit généreux.",
+  "inspire_de": [
+   "Design a Professional Vector Logo in 30 Seconds with Recraft AI",
+   "Flux.1 : L'IA gratuite qui détruit Midjourney"
+  ]
+ },
+ "methode": {
+  "outil": "Recraft.ai (accessible directement via navigateur mobile Safari ou Chrome)",
+  "etapes": [
+   "1. Ouvrir le navigateur du téléphone, aller sur recraft.ai et se connecter gratuitement avec Google.",
+   "2. Appuyer sur le bouton '+' pour créer un nouveau projet, puis sélectionner la catégorie de style 'Vector Art' (ou 'Icon').",
+   "3. Sélectionner le sous-style visuel adapté (ex: 'Flat 2D', 'Line Art', ou 'Emblem').",
+   "4. Entrer le prompt décrivant l'icône, les symboles clés et la palette de couleurs voulue.",
+   "5. Cliquer sur 'Generate' pour obtenir 4 déclinaisons gratuites en quelques secondes.",
+   "6. Sélectionner la meilleure version, utiliser l'outil 'Modify Text' ou 'Add Text' si besoin d'intégrer le nom exact de la boutique/entreprise.",
+   "7. Cliquer sur l'icône de téléchargement en haut à droite et choisir le format d'exportation : 'SVG' (vectoriel pour imprimeurs et enseignes) ou 'PNG HD' (fond transparent pour les réseaux sociaux)."
+  ],
+  "prompts": [
+   "Minimalist vector logo for an African coffee and cocoa brand named 'Café Kpalimé', icon showing a stylized coffee bean combined with a cocoa pod, emerald green and warm gold colors, isolated on white background, flat design, professional graphic identity, 2d vector --no realistic photo, shading",
+   "Modern emblem logo for a logistics and delivery business named 'Lomé Express', featuring a sleek fast truck merged with a shield, navy blue and vibrant orange palette, minimalist, vector icon style, isolated on clean background"
+  ],
+  "erreurs": [
+   "Vouloir tout mettre dans le prompt initial (icône + texte long). Il vaut mieux générer d'abord l'icône seule en vectoriel, puis ajouter le texte proprement via l'éditeur de Recraft.",
+   "Exporter en JPG classique au lieu de choisir le format SVG. Le JPG va pixeliser si le commerçant veut imprimer son logo sur une grande enseigne ou un t-shirt.",
+   "Mettre des mots vagues comme 'beau logo' ou 'professionnel' sans spécifier le style ('Flat 2D', 'Line Art') ni les couleurs exactes."
+  ],
+  "astuces": [
+   "Activer l'option 'Palette' dans les paramètres de génération de Recraft pour imposer la combinaison exacte de couleurs de votre marque (ex: vert et or).",
+   "Si vous avez dessiné une idée de logo sur une feuille de papier, prenez-la en photo avec votre téléphone, importez-la dans Recraft et cliquez sur 'Vectorize' pour la transformer en logo numérique pro en 1 clic."
+  ],
+  "gratuit": "Le compte gratuit offre 50 crédits quotidiens renouvelés chaque jour à minuit (UTC), ce qui permet de générer plus de 12 propositions de logos complètes par jour sans rien payer."
+ },
+ "sources_recherche": [],
+ "modele": "gemini-3.5-flash",
+ "recherche": false,
+ "youtube": []
+}

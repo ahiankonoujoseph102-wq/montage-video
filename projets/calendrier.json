@@ -1,0 +1,13 @@
+{
+  "_note": "Rubriques des mini-formations Lomé IA School (public : Afrique francophone), en rotation : chaque vidéo prend la rubrique qui suit celle de la dernière vidéo de projets/test-auto/historique.json. Un sujet précis et pratique par vidéo, jamais deux fois le même. Durée : 3 à 4 minutes.",
+  "rubriques": [
+    {"id": "sites", "nom": "Créer un site web avec l'IA", "idees": "site vitrine d'une boutique ou d'un restaurant, page de vente, portfolio, site d'une école ou d'une ONG ; avec Claude, ChatGPT, Gemini, Replit ou WordPress ; mise en ligne, nom de domaine, erreurs à éviter"},
+    {"id": "astuce", "nom": "Astuce IA de pro", "idees": "une technique précise avec un prompt complet montré à l'écran : rôle + contexte + format, faire relire un texte, transformer une photo de document en tableau, préparer un rendez-vous client"},
+    {"id": "agents", "nom": "Les agents IA", "idees": "ce qu'est un agent IA, exemples concrets (répondre aux clients sur WhatsApp, prendre des rendez-vous, suivre des commandes), comment en créer un simple, limites et précautions"},
+    {"id": "automatisation", "nom": "Automatiser son travail avec l'IA", "idees": "n8n, Make ou Zapier : relancer des clients, enregistrer les commandes dans Google Sheets, publier automatiquement, recevoir un résumé chaque matin"},
+    {"id": "applications", "nom": "Créer une application avec l'IA", "idees": "application web simple sans savoir coder (gestion de stock, prise de commandes, quiz pour élèves) : décrire l'idée, générer, tester, corriger, partager le lien"},
+    {"id": "pourquoi", "nom": "Pourquoi apprendre l'IA maintenant", "idees": "les compétences IA recherchées, les métiers qui changent, les opportunités pour les jeunes et les entreprises africaines, par où commencer concrètement (sans peur ni chiffre inventé)"},
+    {"id": "business", "nom": "L'IA pour son business", "idees": "marketing sur Facebook, TikTok et WhatsApp, fiches produits, service client, devis et factures, idées de contenus pour une petite entreprise africaine"},
+    {"id": "panorama", "nom": "Ce que l'IA sait faire aujourd'hui", "idees": "un métier ou un domaine à la fois (commerce, éducation, santé administrative, couture, restauration) : ce que l'IA fait déjà concrètement, avec quels outils, et comment s'y mettre"}
+  ]
+}

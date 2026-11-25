@@ -1,0 +1,588 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.1
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.3
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.6-flash",
+   "secondes": 14.9,
+   "erreurs": [
+    "Ton script fait 290 mots, il en faut entre 449 et 649 : ajoute environ 159 mots (par exemple 12 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "25 phrases : il en faut entre 34 et 56.",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil).",
+    "Phrase 11 : « % » est interdit.",
+    "Phrase 11 : nombre « 40 » interdit (aucun chiffre non vérifié).",
+    "Phrase 18 : « % » est interdit.",
+    "Phrase 20 : « % » est interdit.",
+    "Phrase 20 : nombre « 100 » interdit (aucun chiffre non vérifié)."
+   ]
+  },
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 1.0
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "TimeoutError('The read operation timed out')",
+   "secondes": 150.1
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 8.7
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.5-flash",
+   "secondes": 17.4,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "PAS DE MICRO",
+    "PUB VIDÉO PRO",
+    "SANS COMÉDIEN"
+   ],
+   "cle": "PUB"
+  },
+  "titre": "Crée un spot vidéo avec voix IA pro pour ta boutique (depuis ton mobile)",
+  "description": "Tu veux une publicité vidéo avec une voix professionnelle sans payer un studio ? Voici la méthode exacte avec ChatGPT, ElevenLabs et CapCut sur ton téléphone.",
+  "hashtags": [
+   "#IA",
+   "#MarketingIA",
+   "#WhatsAppBusiness",
+   "#TikTokAfrique",
+   "#ElevenLabs",
+   "#CapCut",
+   "#LomeIASchool"
+  ],
+  "prompt": "Tu es un expert en rédaction publicitaire vidéo pour le marché africain francophone. Produit : [Chaussures en cuir pour hommes]. Cible : [Jeunes professionnels]. Objectif : Inciter à commander sur WhatsApp. Contrainte : Script court de 60 mots maximum. Structure : 1. Question choc (0-3s), 2. Présentation et bénéfices (3-15s), 3. Promotion spéciale (15-22s), 4. Appel à l'action WhatsApp (22-30s). Texte brut uniquement, sans indications entre parenthèses.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tes vidéos WhatsApp ou TikTok n'attirent aucun client à cause d'une mauvaise voix ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Tu n'as ni micro professionnel, ni budget pour payer un studio ou un comédien ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Le problème n'est pas ton produit, mais la qualité de ta présentation vidéo."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, de Lomé IA School.",
+    "dit": "Je suis Joseph, de Lomé i-a Skoul."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Tu vas apprendre à créer un spot vidéo publicitaire captivant depuis ton téléphone."
+   },
+   {
+    "partie": "r1",
+    "texte": "Étape 1 : générer un script percutant sur l'application mobile gratuite ChatGPT.",
+    "dit": "Étape 1, générer un script percutant sur l'application mobile gratuite Tchat-gé-pé-té."
+   },
+   {
+    "partie": "r1",
+    "texte": "Demande à ChatGPT de rédiger un texte court avec la méthode marketing AIDA.",
+    "dit": "Demande à Tchat-gé-pé-té de rédiger un texte court avec la méthode marketing AIDA."
+   },
+   {
+    "partie": "r1",
+    "texte": "Regarde cette démonstration où l'IA génère un texte de vente très efficace.",
+    "dit": "Regarde cette démonstration où l'i-a génère un texte de vente très efficace."
+   },
+   {
+    "partie": "r1",
+    "texte": "Une bonne accroche capte l'attention dès les trois premières secondes du spectateur."
+   },
+   {
+    "partie": "r1",
+    "texte": "Précise bien le produit et le numéro WhatsApp de ta boutique dans ta demande."
+   },
+   {
+    "partie": "r2",
+    "texte": "Étape 2 : générer une voix-off ultra réaliste sur le site elevenlabs.io.",
+    "dit": "Étape 2, générer une voix-off ultra réaliste sur le site elevenlabs.io."
+   },
+   {
+    "partie": "r2",
+    "texte": "Ouvre ton navigateur mobile, connecte-toi gratuitement et va dans le menu nommé Speech."
+   },
+   {
+    "partie": "r2",
+    "texte": "Sélectionne une voix francophone naturelle comme Brian ou Adam pour lire le script."
+   },
+   {
+    "partie": "r2",
+    "texte": "Règle le curseur de stabilité à un niveau moyen pour garder de l'émotion."
+   },
+   {
+    "partie": "r2",
+    "texte": "Voici la démonstration directe sur le site pour enregistrer le fichier audio MP3."
+   },
+   {
+    "partie": "r2",
+    "texte": "Télécharge directement ce fichier audio dans la mémoire interne de ton téléphone mobile."
+   },
+   {
+    "partie": "r3",
+    "texte": "Étape 3 : assembler les visuels et l'audio dans l'application gratuite CapCut.",
+    "dit": "Étape 3, assembler les visuels et l'audio dans l'application gratuite CapCut."
+   },
+   {
+    "partie": "r3",
+    "texte": "Importe les meilleures photos de ta boutique ou de tes produits de qualité."
+   },
+   {
+    "partie": "r3",
+    "texte": "Ajoute le fichier audio téléchargé depuis le dossier de ton appareil mobile."
+   },
+   {
+    "partie": "r3",
+    "texte": "Coupe chaque séquence vidéo sur le rythme exact de la voix-off générée."
+   },
+   {
+    "partie": "r3",
+    "texte": "Vérifie que les transitions entre les photos sont bien fluides et rapides."
+   },
+   {
+    "partie": "r4",
+    "texte": "Étape 4 : ajouter des sous-titres animés et un fond sonore très léger.",
+    "dit": "Étape 4, ajouter des sous-titres animés et un fond sonore très léger."
+   },
+   {
+    "partie": "r4",
+    "texte": "Utilise l'option Légendes automatiques en français dans CapCut pour afficher le texte."
+   },
+   {
+    "partie": "r4",
+    "texte": "Choisis un style de sous-titres dynamiques mot par mot bien lisible à l'écran."
+   },
+   {
+    "partie": "r4",
+    "texte": "Ajoute une musique douce avec un niveau de volume réglé très bas."
+   },
+   {
+    "partie": "r4",
+    "texte": "Assure-toi que la voix principale reste parfaitement audible par-dessus la musique."
+   },
+   {
+    "partie": "r4",
+    "texte": "Exporte ta vidéo finale en haute définition pour la publier immédiatement."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Une erreur fréquente consiste à laisser la stabilité d'ElevenLabs au maximum."
+   },
+   {
+    "partie": "erreur",
+    "texte": "La voix devient alors monotone et manque cruellement d'émotion pour convaincre."
+   },
+   {
+    "partie": "erreur",
+    "texte": "N'oublie pas de supprimer le logo de fin par défaut sur CapCut."
+   },
+   {
+    "partie": "astuce",
+    "texte": "L'astuce de pro consiste à ajouter des virgules pour forcer des pauses naturelles."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Ces courtes pauses permettent au spectateur de bien comprendre chaque bénéfice."
+   },
+   {
+    "partie": "recap",
+    "texte": "En résumé : script sur ChatGPT, voix sur ElevenLabs, et montage sur CapCut.",
+    "dit": "En résumé, script sur Tchat-gé-pé-té, voix sur ElevenLabs, et montage sur CapCut."
+   },
+   {
+    "partie": "recap",
+    "texte": "Tu obtiens une publicité professionnelle sans dépenser de l'argent en matériel."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+    "dit": "L'i-a change déjà le travail , ceux qui l'apprennent prennent de l'avance."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+    "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur frustrated looking at smartphone",
+    "texte": "VOIX MAUVAISE",
+    "geste": "bras-croises",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "african merchant in shop lome togo",
+    "texte": "PAS DE MICRO",
+    "expression": "neutre"
+   },
+   {
+    "type": "alerte",
+    "texte": "LE SOUCI\nC'EST LE SON",
+    "emoji": "26a0_fe0f",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "FORMATEUR",
+    "texte": "JOSEPH\nLOMÉ IA SCHOOL",
+    "emoji": "1f3af",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "OBJECTIF",
+    "texte": "SPOT PUBLICITAIRE\nSUR MOBILE",
+    "emoji": "1f680",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "GÉNÉRER LE SCRIPT\nSUR CHATGPT",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "prompt",
+    "texte": "Rédige un script publicitaire AIDA de 60 mots pour des chaussures à Lomé.",
+    "geste": "designe"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Rédige un script publicitaire AIDA très court pour ma boutique de chaussures.",
+    "reponse": "Marre des chaussures qui se gâtent vite ?\nDécouvrez nos modèles en cuir pur à Lomé.\nÉlégance et durabilité garanties pour le bureau.\nCommandez vite sur WhatsApp, livraison offerte !",
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman watching smartphone intently",
+    "texte": "ACCROCHE CHOC",
+    "geste": "designe",
+    "expression": "surpris"
+   },
+   {
+    "type": "photo",
+    "recherche": "african store owner writing whatsapp message",
+    "texte": "DÉTAILS BOUTIQUE",
+    "expression": "neutre"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "GÉNÉRER LA VOIX\nSUR ELEVENLABS",
+    "emoji": "1f442",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "outil",
+    "outil": "chatgpt"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "Voix Brian",
+     "ok": true
+    },
+    "droite": {
+     "texte": "Voix Adam",
+     "ok": true
+    },
+    "a": [
+     "Brian",
+     "Adam"
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "RÉGLAGE",
+    "texte": "STABILITÉ MOYENNE\nVOIX NATURELLE",
+    "emoji": "1f4a1",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Colle ton script dans ElevenLabs pour générer la voix synthétique.",
+    "reponse": "Lecture de la voix IA en cours...\nAudio généré avec succès en format MP3.\nVoix claire, naturelle et expressive.",
+    "expression": "sourire"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Fichier MP3 téléchargé dans le téléphone.",
+    "emoji": "2705"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "ASSEMBLER VISUELS\nET AUDIO CAPCUT",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "photo",
+    "recherche": "african fashion products shoes bags",
+    "texte": "IMPORTE IMAGES",
+    "expression": "neutre"
+   },
+   {
+    "type": "photo",
+    "recherche": "smartphone screen audio file selection",
+    "texte": "AJOUTE AUDIO",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "photo",
+    "recherche": "editing video on smartphone screen african hands",
+    "texte": "COUPE SUR LE RYTHME",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "MONTAGE",
+    "texte": "TRANSITIONS\nFLUIDES",
+    "emoji": "2728",
+    "expression": "neutre"
+   },
+   {
+    "type": "numero",
+    "n": 4,
+    "texte": "SOUS-TITRES ET\nFOND SONORE",
+    "emoji": "2728",
+    "geste": "compte",
+    "doigts": 4
+   },
+   {
+    "type": "carte",
+    "kicker": "CAPCUT",
+    "texte": "LÉGENDES\nAUTOMATIQUES",
+    "emoji": "1f4ac",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "STYLE TEXTE",
+    "texte": "SOUS-TITRES\nMOT PAR MOT",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "RÉGLAGE",
+    "texte": "MUSIQUE DOUCE\nVOLUME BAS",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "alerte",
+    "texte": "VOIX CLAIRE\nSANS BRUIT",
+    "emoji": "2705",
+    "geste": "pouce",
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african man happy showing smartphone screen",
+    "texte": "EXPORT 1080P",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ERREUR : STABILITÉ\nTROP HAUTE",
+    "emoji": "274c",
+    "geste": "bras-croises",
+    "expression": "grimace"
+   },
+   {
+    "type": "question",
+    "texte": "VOIX ROBOTIQUE ?",
+    "sous": "Baisser la stabilité",
+    "emoji": "1f914"
+   },
+   {
+    "type": "carte",
+    "kicker": "CAPCUT",
+    "texte": "SUPPRIME LA\nSÉQUENCE DE FIN",
+    "emoji": "274c",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "ASTUCE",
+    "texte": "AJOUTE DES VIRGULES\nPOUR RESPIRER",
+    "emoji": "1f4a1",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman listening to audio on smartphone",
+    "texte": "PAUSES NATURELLES",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "liste",
+    "titre": "TROIS OUTILS GRATUITS",
+    "items": [
+     {
+      "texte": "ChatGPT : Script",
+      "a": "ChatGPT,"
+     },
+     {
+      "texte": "ElevenLabs : Voix",
+      "a": "ElevenLabs,"
+     },
+     {
+      "texte": "CapCut : Montage",
+      "a": "CapCut."
+     }
+    ]
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur smiling with smartphone in market",
+    "texte": "PUB PRO GRATUITE",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "MESSAGE CLÉ",
+    "texte": "L'IA CHANGE LE TRAVAIL\nPRENDS DE L'AVANCE",
+    "emoji": "1f680",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "bleu",
+   "violet",
+   "nuit",
+   "orange",
+   "vert",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "veille",
+ "secondes": 193.2
+}

@@ -91,6 +91,25 @@ y poser le morceau correspondant de `public/<projet>/mix.wav`, puis les enchaîn
 - **Rythme** : jamais plus de 12 s sans événement visuel (scène, transition, doré, autocollant, carton) ; à vérifier
   sur `props.json` après `preparer.py`.
 
+## Publicités (composition `PubTalkami3` = la v1 `PubTalkami` optimisée ; la v2 violette `PubTalkami2` est abandonnée)
+
+Version finale (v3) : style bleu de la v1, **bande fixe de sous-titres en bas** (1 300 → 1 600 px, deux lignes vers
+1 430 px, jamais sur un écran ni un visage), **téléphones géants** (écran à 80 %, qui glissent et zooment derrière la
+bande), professeurs **cadrés serré** sur le visage (`VISAGES` dans `src/pub/PubTalkami3.tsx`), aucun plan immobile,
+emojis animés Noto (lottie, CC BY 4.0), fin animée de 2,5 s au plus. Voix : `scripts/voix_pub3.py` (naturelle / radio).
+
+Ancienne description (v1) :
+
+Publicité courte (~29 s) montée à partir d'un kit d'images et d'une voix off, sans visage filmé : projet
+`projets/talkami-pub/` (kit copié dans `pub-kit/`, plan de montage dans `plan.json`, sources et licences dans
+`SOURCES_ET_LICENCES.md`). `python3 scripts/pub_talkami.py` copie le kit dans `public/talkami-pub/`, écrit les props,
+traite la voix (débruitage doux, chaleur 180 Hz, clarté 3,3 kHz, désesseur, compression 3:1), compose la musique
+(synthèse, Sol mineur, 116 BPM, entrée du groupe sur le logo), place les effets et mixe à −14 LUFS (musique 16 LU sous
+la voix, +6 dB dans les respirations). Rendu : `npx remotion render src/index.ts PubTalkami … --muted`, puis ajouter
+`public/talkami-pub/mix.wav`. Zone sûre commune Facebook / Instagram / TikTok : rien au-dessus de 270 px, sous
+1 270 px ni à droite de 950 px ; sous-titres au **texte exact** de Joseph (pas la transcription), centrés sur x 500
+vers 1 165 px, mots clés en orange. Jamais « intelligence artificielle », ni fausse promesse, ni faux témoignage.
+
 ## Méthode pour chaque vidéo (à suivre dans l'ordre)
 
 1. **Il envoie un lien Google Drive** et, s'il l'a, son script.
@@ -262,3 +281,52 @@ partout ; « Lomé IA School » ne change pas.
 - `projets/<projet>/` : script, `montage.json`, transcriptions, rapport (la vidéo source n'est pas versionnée).
 - `src/` : composition Remotion `Montage` (props lues dans `public/<projet>/props.json`).
 - `public/<projet>/`, `out/` : fichiers générés, non versionnés.
+
+## Vidéo par e-mail (automatisation principale)
+
+Joseph écrit à l'adresse de l'automatisation : texte (+ voix off en pièce jointe, + consignes éventuelles). Workflow
+`.github/workflows/courriel.yml` (toutes les 10 min, GitHub Actions + Gemini, indépendant de Claude) :
+`scripts/courriel_boite.py` relève la boîte, répond « ✅ Reçu, je commence », met la demande en file
+(`projets/courriel/demandes/`) ; `scripts/courriel_preparer.py` prépare script et plan (Gemini) ; voix de Joseph si
+fournie, **toujours retravaillée en voix radio** (`scripts/voix_radio.py` : nettoyage, timbre radio, énergie,
+−14 LUFS, crêtes ≤ −1,5 dBTP, rythme intact) et **jamais coupée** : découpe contiguë aux instants calmes
+(`VOIX_TRAITEE=1` dans `decouper_voix.py`), rien de rogné ni ajouté (`VOIX_CONTINUE=1` dans `test_auto.py`) ; vérifié
+en retranscrivant le rendu (aucun mot perdu), sinon voix IA Gemini (Puck homme / Kore femme), **jamais sa voix clonée** ; rendu `VideoAuto` ; Release
+`courriel-<id>` ; `scripts/courriel_livrer.py` renvoie la vidéo avec titre, description et hashtags. Une réponse à cet
+e-mail = demande de correction, refaite et renvoyée.
+- **Déclenchement** : la programmation de GitHub part ici avec des heures de retard ; le **veilleur**
+  (`.github/workflows/veilleur.yml`) regarde la boîte toutes les 3 min (`courriel_boite.py regarder`, en-têtes seulement)
+  et lance `courriel.yml` dès qu'un e-mail arrive ou qu'une demande est à reprendre ; il dure ~5 h 40 puis se relance
+  lui-même (secours : programmation horaire). Gemini saturé (503) : nouveaux essais pendant 7 min, modèle Pro en
+  préversion en secours, modèles retirés (404) écartés.
+- **Montage (moteur `VideoAuto`)** : trois mises en page qui alternent à chaque phrase (`mise` dans le plan, sinon
+  choisie d'après le type) — `plein` (illustration ou photo sur tout l'écran, poussée de caméra), `double` (le double en
+  grand dans son studio, l'idée affichée sur le grand écran derrière lui), `partage` (illustration en haut, double en
+  bas) ; jamais 3 fois de suite la même, le double en grand au moins toutes les 20 s, écran partagé pendant l'ouverture ;
+  phrase de plus de 7 s coupée en plans de 3,5 s au moins qui changent de mise (`plans`) ;
+  illustration entière sur l'écran du studio (jamais coupée) ; coup de zoom + éclair blanc à chaque changement, cadrage du double alterné à chaque phrase ; texte trop long coupé en
+  deux lignes équilibrées (`Gros`).
+- **Marque et fin** : logo Lomé IA School (`projets/marque/logo.jpg`, copié de la série animée) en haut à gauche
+  pendant toute la vidéo ; carton de fin habituel de 4 s après la voix (logo qui flotte, « ABONNE-TOI / LIKE •
+  PARTAGE », « Consultation gratuite », « Lien dans la bio », WhatsApp), effet `carton`.
+- **Début et voix** : parole dès la première image (0,05 s avant le premier mot), silences de plus de 0,6 s ramenés
+  à 0,35 s ; chaîne radio sans porte de bruit, compression lente, gain constant (mesuré : plus de « coupures »).
+- **Images créées par l'IA** (`image_ia` dans `scripts/medias.py`) : pour chaque scène photo, image verticale
+  créée d'après la phrase (clé `image` du plan, description en anglais écrite par Gemini) avec Cloudflare Workers AI
+  (`flux-1-schnell` en premier : ~60 neurones par image, quota gratuit de 10 000 par jour ; `lucid-origin` en secours, trop cher : 4 images épuisaient le quota ; quota épuisé, code 4006 → Gemini `gemini-2.5-flash-image` si la facturation est activée sur la clé, sinon **montage reporté après minuit UTC** (`ATTENDRE_IMAGES_IA`, `pas_avant` dans la demande, e-mail « ⏳ » à Joseph) : jamais de photos approximatives à la place) ; secrets `CLOUDFLARE_ACCOUNT_ID`,
+  `CLOUDFLARE_API_TOKEN` ; sans eux ou en cas d'échec, banques d'images. Relais texte quand Gemini est saturé :
+  Groq (`GROQ_API_KEY`, `openai/gpt-oss-120b`, en-tête User-Agent obligatoire sinon 403).
+  Ces 4 clés (Pixabay, Cloudflare ×2, Groq) sont **chiffrées dans `projets/courriel/cles.enc`** (AES-256, openssl
+  `-pbkdf2 -iter 200000`) et ouvertes au lancement par le seul secret `CLES_MONTAGE` ; jamais de clé en clair dans
+  le dépôt (public). Pour changer une clé : déchiffrer, modifier, rechiffrer avec la même phrase.
+- **Photos** : tout texte incrusté (crédit, site, filigrane) flouté automatiquement (`flouter_textes`, Tesseract) ;
+  ordre : Pexels (`PEXELS_API_KEY` ; nouvelles clés suspendues par Pexels en 11/2026), Pixabay (`PIXABAY_API_KEY`,
+  gratuit, sans filigrane), Openverse/Flickr en dernier recours ; crédit jamais affiché sur l'image (crédits CC BY
+  donnés dans l'e-mail de livraison).
+- **Qualité du plan** (`QUALITE`, `verifier_plan`, `reparer` dans `scripts/courriel_preparer.py`, tirées des remarques
+  de Joseph) : plan fait par paquets de 10 phrases (jamais de scène manquante) ; vérifications automatiques puis
+  relecture Gemini (orthographe, textes trop longs, liste au bon nombre d'éléments, tous les outils cités affichés,
+  numéro affiché quand il est dit, pas deux scènes identiques de suite, mises variées, pédagogie : chaque idée
+  expliquée par un exemple montré, animation plutôt qu'une photo approximative) ; jamais de carte de secours
+  au texte d'une autre phrase. Mode d'emploi : `projets/courriel/MODE-EMPLOI.md`. L'ancienne
+automatisation quotidienne (`video-test.yml`) est gardée en lancement manuel.

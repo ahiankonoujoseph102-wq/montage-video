@@ -1,0 +1,311 @@
+{
+ "scenes": [
+  {
+   "type": "carte",
+   "texte": "BOUTIQUE LOME"
+  },
+  {
+   "type": "question",
+   "texte": "SITE BOUTIQUE",
+   "sous": "SANS CODER",
+   "emoji": "1f4a1"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMERCE",
+   "texte": "CREE TA PAGE\nSANS FORTERESSE\nDE BUDGET",
+   "sous": "ACCESSIBLE"
+  },
+  {
+   "type": "carte",
+   "texte": "RAPIDE ET SIMPLE"
+  },
+  {
+   "type": "carte",
+   "texte": "JOSEPH LOME IA"
+  },
+  {
+   "type": "carte",
+   "kicker": "FORMATION",
+   "texte": "CREE TES PROPRES\nSOLUTIONS WEB\nSANS CODER",
+   "sous": "LOME IA SCHOOL",
+   "emoji": "1f3af"
+  },
+  {
+   "type": "carte",
+   "kicker": "OBJECTIF",
+   "texte": "PUBLIE TON SITE\nEN QUELQUES\nMINUTES",
+   "sous": "PRACTIQUE",
+   "emoji": "1f680"
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "ALLER SUR\nCLAUDE.AI",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "claude",
+     "nom": "Claude",
+     "site": "claude.ai",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Site vitrine : page web qui présente tes articles aux clients."
+  },
+  {
+   "type": "carte",
+   "kicker": "CONNEXION",
+   "texte": "UTILISE TON\nCOMPTE GOOGLE\nGRATUITEMENT",
+   "sous": "ACCES DIRECT",
+   "emoji": "2705"
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "COLLER LE PROMPT\nPOUR LE CODE",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "prompt",
+   "texte": "Rédige le code HTML et CSS d'un site vitrine avec bouton WhatsApp",
+   "geste": "designe"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Claude génère le code complet HTML et CSS réutilisable.",
+   "emoji": "2728"
+  },
+  {
+   "type": "demo",
+   "outil": "claude",
+   "prompt": "Code site vitrine boutique Lomé",
+   "reponse": "<!DOCTYPE html>\n<html>\n<head><title>Boutique Adidogomé</title></head>\n<body>\n<h1>Nos Vêtements à Lomé</h1>\n<a href='https://wa.me/22872240231'>Commander sur WhatsApp</a>\n</body>\n</html>",
+   "nom": "Claude",
+   "logo": true
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "COPIER LE CODE\nSUR L'ÉCRAN",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "carte",
+   "kicker": "COLLER",
+   "texte": "OUVRE TON\nBLOC-NOTES ET\nCOLLE LE CODE",
+   "sous": "EDITION"
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Éditeur de texte : outil simple pour traiter des fichiers informatiques."
+  },
+  {
+   "type": "carte",
+   "kicker": "NOM DU FICHIER",
+   "texte": "ENREGISTRE SOUS\nINDEX.HTML SUR\nTON APPAREIL",
+   "sous": "IMPORTANT"
+  },
+  {
+   "type": "numero",
+   "n": 4,
+   "texte": "OUVRIR ET TESTER\nDANS NAVIGATEUR",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "carte",
+   "texte": "TEST WHATSAPP"
+  },
+  {
+   "type": "carte",
+   "kicker": "VERIFICATION",
+   "texte": "VALIDE LE LIEN\nAVANT DE\nPUBLIER",
+   "sous": "LOME",
+   "emoji": "2705"
+  },
+  {
+   "type": "carte",
+   "texte": "COMMANDE EN LIGNE"
+  },
+  {
+   "type": "numero",
+   "n": 5,
+   "texte": "PUBLIER SUR\nREPLIT.COM",
+   "geste": "compte",
+   "doigts": 4
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Hébergeur : ordinateur distant qui affiche ton site sur Internet."
+  },
+  {
+   "type": "carte",
+   "kicker": "LIEN PUBLIC",
+   "texte": "PARTAGE TON LIEN\nSUR TES PAGES\nET STATUTS",
+   "sous": "VISIBILITE"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "whatsapp",
+     "nom": "WhatsApp",
+     "site": "",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "alerte",
+   "texte": "SANS INDICATIF\nLE LIEN ECHOUE",
+   "emoji": "274c"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "claude",
+     "nom": "Claude",
+     "site": "claude.ai",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "carte",
+   "texte": "VENTES DIRECTES"
+  },
+  {
+   "type": "liste",
+   "titre": "RECAPITULATIF",
+   "items": [
+    {
+     "texte": "Claude.ai",
+     "a": "Claude,"
+    },
+    {
+     "texte": "Prompt",
+     "a": "prompt,"
+    },
+    {
+     "texte": "Enregistrer",
+     "a": "enregistres"
+    },
+    {
+     "texte": "Replit",
+     "a": "Replit."
+    }
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "SUCCES",
+   "texte": "CINQ ETAPES\nPOUR TON SITE\nPROFESSIONNEL",
+   "sous": "BOUTIQUE",
+   "emoji": "1f389"
+  },
+  {
+   "type": "demo",
+   "outil": "claude",
+   "prompt": "Application Talkami créée sans coder",
+   "reponse": "Talkami : application pour parler anglais à l'oral avec Teacher Joe ou Teacher Rose depuis son téléphone.",
+   "nom": "Claude",
+   "logo": true
+  },
+  {
+   "type": "carte",
+   "kicker": "AVENIR",
+   "texte": "L'IA CHANGE\nDEJA LE\nTRAVAIL",
+   "sous": "LOME IA SCHOOL",
+   "emoji": "1f680"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "nuit",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "nuit",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "nuit",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "nuit",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "nuit",
+  "rose",
+  "bleu",
+  "violet",
+  "orange",
+  "vert",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

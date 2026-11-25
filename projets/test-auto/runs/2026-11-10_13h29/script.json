@@ -1,0 +1,176 @@
+{
+ "accroche": {
+  "lignes": [
+   "TON LOGO",
+   "SANS GRAPHISTE",
+   "EN VECTORIEL"
+  ],
+  "cle": "VECTORIEL"
+ },
+ "titre": "Crée le logo vectoriel de ta marque sur ton téléphone avec Recraft AI",
+ "description": "Apprends à créer une identité visuelle complète et un vrai logo vectoriel imprimable pour ta boutique sans payer un graphiste. Méthode pas à pas gratuite depuis ton téléphone avec l'IA Recraft.",
+ "hashtags": "#RecraftAI #LogoIA #LomeIASchool #GraphismeMobile #EntrepreneursAfrique #AstuceIA",
+ "prompt": "Minimalist vector logo for an African coffee and cocoa brand named 'Café Kpalimé', icon showing a stylized coffee bean combined with a cocoa pod, emerald green and warm gold colors, isolated on white background, flat design, professional graphic identity, 2d vector --no realistic photo, shading",
+ "description_tiktok": "Apprends à créer une identité visuelle complète et un vrai logo vectoriel imprimable pour ta boutique sans payer un graphiste. Méthode pas à pas gratuite depuis ton téléphone avec l'IA Recraft. #RecraftAI #LogoIA #LomeIASchool #GraphismeMobile #EntrepreneursAfrique #AstuceIA",
+ "rubrique": "veille",
+ "date": "2026-11-10",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu veux un vrai logo professionnel pour ta boutique sans payer des sommes énormes à un graphiste ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Le problème des images créées par l'IA classique est qu'elles flouent complètement à l'impression grand format.",
+   "dit": "Le problème des images créées par l'i-a classique est qu'elles flouent complètement à l'impression grand format."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Quand tu veux imprimer ton logo sur une grande enseigne à Lomé, l'image devient pixelisée et floue."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Je vais te montrer comment créer un logo vectoriel haute définition directement depuis ton simple téléphone portable."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School, et voici la méthode étape par étape avec le site gratuit Recraft.",
+   "dit": "Je suis Joseph, de Lomé i-a Skoul, et voici la méthode étape par étape avec le site gratuit Recraft."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Le format vectoriel signifie que ton image est dessinée par des lignes mathématiques, qui ne pixelisent jamais."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Première étape, ouvre le navigateur web de ton téléphone et tape l'adresse recraft.ai pour te connecter."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Connecte-toi gratuitement avec ton compte Google pour obtenir immédiatement tes cinquante crédits offerts tous les jours."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Cette recharge quotidienne te permet d'essayer plus de dix propositions complètes sans dépenser un seul franc."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Deuxième étape, appuie sur le bouton plus puis sélectionne la catégorie de style appelée Vector Art."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Sélectionne ensuite un sous-style très propre comme Flat 2D ou Line Art pour éviter l'effet photo."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Ce réglage garantit des contours nets, parfaits pour imprimer sur des t-shirts ou des emballages de produits."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Troisième étape, écris un prompt précis décrivant l'icône, les symboles et la palette de couleurs voulue."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Prenons l'exemple d'une marque de café et cacao à Kpalimé avec du vert émeraude et de l'or."
+  },
+  {
+   "partie": "etape3",
+   "texte": "Voici le prompt exact : logo vectoriel minimaliste, grain de café et cabosse de cacao, vert émeraude et or.",
+   "dit": "Voici le prompt exact, logo vectoriel minimaliste, grain de café et cabosse de cacao, vert émeraude et or."
+  },
+  {
+   "partie": "etape3",
+   "texte": "L'outil génère automatiquement quatre propositions visuelles différentes en quelques secondes directement sur ton écran de téléphone."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Quatrième étape, choisis le meilleur dessin puis utilise l'outil d'édition de texte pour ajouter ton nom."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Sélectionne l'option Add Text ou Modify Text pour intégrer proprement le nom exact de ton entreprise."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Voici la demande tapée pour placer le nom en dessous du symbole avec une écriture moderne."
+  },
+  {
+   "partie": "etape4",
+   "texte": "Cette étape évite les fautes d'orthographe que les générateurs d'images font souvent sur les textes longs."
+  },
+  {
+   "partie": "etape5",
+   "texte": "Cinquième étape, touche l'icône de téléchargement en haut à droite puis choisis le format d'exportation SVG."
+  },
+  {
+   "partie": "etape5",
+   "texte": "Le fichier SVG est le format vectoriel exigé par tous les imprimeurs pour vos cartes et enseignes."
+  },
+  {
+   "partie": "etape5",
+   "texte": "Tu peux aussi exporter une version PNG HD avec fond transparent pour tes publications sur WhatsApp et Facebook."
+  },
+  {
+   "partie": "erreur",
+   "texte": "L'erreur classique des débutants est de taper un prompt vague comme beau logo sans spécifier le style."
+  },
+  {
+   "partie": "erreur",
+   "texte": "Autre erreur : exporter en JPG classique au lieu de choisir SVG, ce qui détruit la qualité d'impression.",
+   "dit": "Autre erreur, exporter en JPG classique au lieu de choisir SVG, ce qui détruit la qualité d'impression."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Voici l'astuce de pro : active l'option Palette dans Recraft pour imposer les couleurs exactes de ta marque.",
+   "dit": "Voici l'astuce de pro, active l'option Palette dans Recraft pour imposer les couleurs exactes de ta marque."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Si tu as un dessin sur papier, prends-le en photo et clique sur Vectorize pour le transformer."
+  },
+  {
+   "partie": "recap",
+   "texte": "Première étape, ouvre recraft.ai et connecte-toi gratuitement pour récupérer tes cinquante crédits quotidiens."
+  },
+  {
+   "partie": "recap",
+   "texte": "Deuxième étape, choisis la catégorie Vector Art et le sous-style Flat 2D pour un rendu propre."
+  },
+  {
+   "partie": "recap",
+   "texte": "Troisième étape, décris ton icône puis ajoute le nom de ta boutique avec l'outil de texte."
+  },
+  {
+   "partie": "recap",
+   "texte": "Quatrième étape, télécharge ton fichier final au format SVG pour conserver une netteté parfaite à l'impression."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail , ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+   "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ],
+ "historique": {
+  "titre": "Crée le logo vectoriel de ta marque sur ton téléphone avec Recraft AI",
+  "rubrique": "veille",
+  "date": "2026-11-10"
+ }
+}

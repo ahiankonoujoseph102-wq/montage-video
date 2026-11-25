@@ -1,0 +1,290 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "recherche": "african teen scrolling tiktok smartphone",
+   "texte": "TROIS SECONDES",
+   "geste": "explique",
+   "expression": "surpris",
+   "fichier": "test-auto/photos/00.jpg",
+   "credit": "Photo : Chris Yarzab · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "EXISTER OU\nDISPARAÎTRE",
+   "emoji": "1f6a8",
+   "geste": "designe"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": true
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "PARTIES\nESSENTIELLES",
+   "emoji": "1f4a1",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "numero",
+   "n": 1,
+   "texte": "L'ACCROCHE\nCHOC",
+   "emoji": "1f525",
+   "geste": "compte",
+   "doigts": 1
+  },
+  {
+   "type": "numero",
+   "n": 2,
+   "texte": "LE CORPS\nSANS TEMPS MORT",
+   "emoji": "2728",
+   "geste": "compte",
+   "doigts": 2
+  },
+  {
+   "type": "numero",
+   "n": 3,
+   "texte": "L'APPEL\nÀ L'ACTION",
+   "emoji": "1f449",
+   "geste": "compte",
+   "doigts": 3
+  },
+  {
+   "type": "carte",
+   "kicker": "ATTENTION",
+   "texte": "SANS CTA\nL'ÉLAN RETOMBE",
+   "emoji": "26a0",
+   "geste": "bras-croises"
+  },
+  {
+   "type": "outil",
+   "outils": [
+    {
+     "id": "chatgpt",
+     "nom": "ChatGPT",
+     "site": "chatgpt.com",
+     "logo": true,
+     "capture": false
+    }
+   ],
+   "geste": "designe"
+  },
+  {
+   "type": "prompt",
+   "texte": "Écris un script TikTok de 30s sur : 3 erreurs qui te gardent pauvre",
+   "geste": "designe"
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Accroche choc dans les 3 premières secondes, 3 points rapides, ton énergique.",
+   "reponse": "Stop ! Tu perds un temps fou chaque jour.\n1. Automatise toutes tes tâches.\n2. Double ta vitesse de travail.\n3. Gagne deux heures quotidiennes.\nPrêt à transformer tes résultats ?",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "demo",
+   "outil": "chatgpt",
+   "prompt": "Tu es un expert en contenu viral TikTok. Écris un script de vidéo de 30 secondes sur le thème « [ton thème] ». Structure obligatoire :…",
+   "reponse": "Voici ton script TikTok sur mesure.\n[Écran: visage choqué / Texte: STOP!]\nArrête tout ! Tu fais cette erreur ?\nVoici 3 secrets pour tout changer.\n[Écran: démo rapide / Texte: N°1]",
+   "prompt_complet": "Tu es un expert en contenu viral TikTok. Écris un script de vidéo de 30 secondes sur le thème « [ton thème] ». Structure obligatoire : une accroche choc dans les 3 premières secondes qui interpelle directement le spectateur, puis 3 points rapides et percutants, et enfin un appel à l'action à la fin. Ton direct, énergique. Pour chaque partie, indique entre crochets ce que je dois montrer à l'écran et le texte à incruster. Le tout doit se lire en environ 30 secondes à voix haute.",
+   "note": "Réponse réelle obtenue avec Gemini",
+   "nom": "ChatGPT",
+   "logo": true
+  },
+  {
+   "type": "reponseIA",
+   "texte": "Plan vidéo généré image par image !",
+   "emoji": "1f929"
+  },
+  {
+   "type": "carte",
+   "kicker": "STRATÉGIE",
+   "texte": "5 FORMATS\nGAGNANTS",
+   "emoji": "1f3af",
+   "geste": "explique"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Liste rapide",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Erreurs à éviter",
+    "ok": true
+   },
+   "a": [
+    "rapide",
+    "éviter."
+   ]
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Mythe croyance",
+    "ok": false
+   },
+   "droite": {
+    "texte": "La Vérité",
+    "ok": true
+   },
+   "a": [
+    "crois",
+    "vérité."
+   ]
+  },
+  {
+   "type": "photo",
+   "recherche": "african creator telling story storytelling",
+   "texte": "HISTOIRE EXPRESS",
+   "geste": "explique",
+   "fichier": "test-auto/photos/16.jpg",
+   "credit": "Photo : Het Nieuwe Instituut · CC BY 2.0"
+  },
+  {
+   "type": "deux",
+   "gauche": {
+    "texte": "Tuto Minute",
+    "ok": true
+   },
+   "droite": {
+    "texte": "Avant / Après",
+    "ok": true
+   },
+   "a": [
+    "minute,",
+    "après."
+   ]
+  },
+  {
+   "type": "carte",
+   "kicker": "ASTUCE PRO",
+   "texte": "NE DEMANDE PAS\n1 SEUL SCRIPT",
+   "emoji": "1f4a1",
+   "geste": "designe"
+  },
+  {
+   "type": "prompt",
+   "texte": "Demande 5 scripts d'un coup, un par format, sur ton thème.",
+   "geste": "designe"
+  },
+  {
+   "type": "photo",
+   "recherche": "african man filming smartphone tripod",
+   "texte": "CHRONO ET ENREGISTRE",
+   "geste": "pouce",
+   "fichier": "test-auto/photos/20.jpg",
+   "credit": "Photo : fixedandfrailing · CC BY 2.0"
+  },
+  {
+   "type": "carte",
+   "texte": "PUBLIE SOUVENT"
+  },
+  {
+   "type": "liste",
+   "titre": "RÉCAPITULATIF",
+   "items": [
+    {
+     "texte": "Accroche",
+     "a": "accroche,"
+    },
+    {
+     "texte": "Corps",
+     "a": "corps,"
+    },
+    {
+     "texte": "CTA",
+     "a": "action,"
+    },
+    {
+     "texte": "Visuels entre [ ]",
+     "a": "crochets."
+    }
+   ]
+  },
+  {
+   "type": "photo",
+   "recherche": "african people modern office artificial intelligence",
+   "texte": "PRENDS L'AVANCE",
+   "geste": "bras-croises",
+   "expression": "sourire",
+   "fichier": "test-auto/photos/23.jpg",
+   "credit": "Photo : CoreForce · CC BY 2.0"
+  },
+  {
+   "type": "alerte",
+   "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+   "emoji": "1f44d",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "COMMENTE",
+   "texte": "PROMPT",
+   "sous": "Je t'envoie le prompt en privé",
+   "emoji": "1f4ac",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "carte",
+   "kicker": "CONSULTATION",
+   "texte": "GRATUITE",
+   "sous": "Lien dans la bio",
+   "emoji": "1f381",
+   "geste": "explique",
+   "expression": "sourire"
+  },
+  {
+   "type": "telephone",
+   "texte": "+228 72 24 02 31",
+   "sous": "WhatsApp",
+   "geste": "pouce",
+   "expression": "sourire"
+  }
+ ],
+ "fond": [
+  "nuit",
+  "orange",
+  "bleu",
+  "violet",
+  "nuit",
+  "vert",
+  "orange",
+  "rose",
+  "nuit",
+  "violet",
+  "bleu",
+  "nuit",
+  "vert",
+  "orange",
+  "violet",
+  "bleu",
+  "nuit",
+  "rose",
+  "orange",
+  "nuit",
+  "vert",
+  "bleu",
+  "violet",
+  "nuit",
+  "rose",
+  "violet",
+  "orange",
+  "vert"
+ ]
+}

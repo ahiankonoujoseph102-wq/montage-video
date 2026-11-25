@@ -1,6 +1,16 @@
-# Reprise du projet — état au 7 octobre 2026
+# Reprise du projet — état au 30 octobre 2026
 
 À lire avec `CLAUDE.md` (méthode, style, son, bibliothèque des scènes illustrées), qui fait foi.
+## Publicité Talkami (30 octobre)
+
+- **Version finale v3 livrée** : `projets/talkami-pub/livrable/talkami-pub-v3-finale-1080x1920.mp4` (24,1 s,
+  1080 × 1920, 21 Mo, −14,0 LUFS, voix « radio » choisie par Joseph). Composition `PubTalkami3`,
+  `python3 scripts/pub_talkami3.py radio`, voix `scripts/voix_pub3.py`.
+- Dernières corrections : bande des sous-titres réduite (1 300 → 1 600 px, deux lignes jusqu'à 104 px, l'image continue
+  dessous), visages et téléphones un peu plus grands, rond du doigt déplacé sur le bord droit du bouton « Passer mon
+  évaluation gratuite » (le rond d'origine est masqué par la capture propre du kit), bouton de fin dans la zone sûre.
+- Historique : v1 (`PubTalkami`) et v2 violette (`PubTalkami2`) non retenues ; la v3 reprend le style de la v1.
+- En attente : l'avis de Joseph sur la version finale.
 
 ## État exact
 

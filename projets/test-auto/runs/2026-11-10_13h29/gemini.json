@@ -1,0 +1,530 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.5-flash",
+   "secondes": 43.5,
+   "erreurs": [
+    "Ton script fait 281 mots, il en faut entre 449 et 649 : ajoute environ 168 mots (par exemple 12 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "18 phrases : il en faut entre 34 et 56.",
+    "[visuel] Seulement 4 scènes « photo » : il en faut 6 à 10 (vraies photos des situations).",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil)."
+   ]
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.5-flash",
+   "secondes": 32.4,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "TON LOGO",
+    "SANS GRAPHISTE",
+    "EN VECTORIEL"
+   ],
+   "cle": "VECTORIEL"
+  },
+  "titre": "Crée le logo vectoriel de ta marque sur ton téléphone avec Recraft AI",
+  "description": "Apprends à créer une identité visuelle complète et un vrai logo vectoriel imprimable pour ta boutique sans payer un graphiste. Méthode pas à pas gratuite depuis ton téléphone avec l'IA Recraft.",
+  "hashtags": [
+   "#RecraftAI",
+   "#LogoIA",
+   "#LomeIASchool",
+   "#GraphismeMobile",
+   "#EntrepreneursAfrique",
+   "#AstuceIA"
+  ],
+  "prompt": "Minimalist vector logo for an African coffee and cocoa brand named 'Café Kpalimé', icon showing a stylized coffee bean combined with a cocoa pod, emerald green and warm gold colors, isolated on white background, flat design, professional graphic identity, 2d vector --no realistic photo, shading",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tu veux un vrai logo professionnel pour ta boutique sans payer des sommes énormes à un graphiste ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Le problème des logos gratuits générés par l'IA classique est qu'ils flouent complètement à l'impression grand format.",
+    "dit": "Le problème des logos gratuits générés par l'i-a classique est qu'ils flouent complètement à l'impression grand format."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Quand tu veux imprimer ton logo sur une grande enseigne à Lomé, la qualité baisse immédiatement avec une image basique."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Je vais te montrer comment créer un logo vectoriel haute définition directement depuis ton simple téléphone portable."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, de Lomé IA School, et voici la méthode étape par étape avec la plateforme gratuite Recraft.",
+    "dit": "Je suis Joseph, de Lomé i-a Skoul, et voici la méthode étape par étape avec la plateforme gratuite Recraft."
+   },
+   {
+    "partie": "presentation",
+    "texte": "À la fin de cette vidéo, tu sauras créer toute ta charte graphique et exporter tes fichiers prêt pour l'imprimeur."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Première étape, ouvre le navigateur web de ton téléphone et tape l'adresse exacte recraft.ai pour te connecter."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Connecte-toi gratuitement avec ton compte Google pour obtenir immédiatement tes cinquante crédits offerts tous les jours."
+   },
+   {
+    "partie": "etape1",
+    "texte": "Cette recharge quotidienne automatique te permet d'essayer plusieurs idées sans dépenser un seul franc pour ton entreprise."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Deuxième étape, appuie sur le bouton plus puis choisis le style visuel Vector Art ou la catégorie Icon."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Sélectionne ensuite un sous-style très propre comme Flat 2D ou Line Art pour éviter définitivement l'effet photo."
+   },
+   {
+    "partie": "etape2",
+    "texte": "Ce choix de style garantit que les formes de ton logo resteront géométriques, nettes et faciles à découper sur t-shirt."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Troisième étape, tape un prompt précis en décrivant l'icône, les symboles et les deux couleurs principales voulues."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Regarde cette démonstration pour une marque locale de café avec des teintes vert émeraude et or chaud."
+   },
+   {
+    "partie": "etape3",
+    "texte": "Voici le prompt exact à saisir dans la case de génération pour obtenir cette première proposition visuelle propre."
+   },
+   {
+    "partie": "etape3",
+    "texte": "L'outil traite ta demande en quelques secondes et propose directement quatre variantes visuelles prêtes à l'emploi sur ton écran."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Quatrième étape, clique sur Generate puis choisis la meilleure image parmi les quatre propositions créées en secondes."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Regarde maintenant cette deuxième démonstration pour ajouter le texte du nom de ta marque sur l'icône retenue."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Voici la demande tapée pour intégrer le nom exact avec une typographie moderne, lisible et parfaitement alignée."
+   },
+   {
+    "partie": "etape4",
+    "texte": "Utilise l'outil de texte de la plateforme pour ajuster la position sans déformer le symbole visuel principal."
+   },
+   {
+    "partie": "etape5",
+    "texte": "Cinquième étape, clique sur le bouton de téléchargement puis choisis absolument le format d'exportation SVG."
+   },
+   {
+    "partie": "etape5",
+    "texte": "Un fichier SVG est une image vectorielle qui ne pixelise jamais, même imprimée sur une grande enseigne extérieure."
+   },
+   {
+    "partie": "etape5",
+    "texte": "Tu peux aussi télécharger une version PNG au fond transparent pour l'ajouter facilement sur tes visuels WhatsApp."
+   },
+   {
+    "partie": "erreur",
+    "texte": "L'erreur classique des débutants est d'écrire des mots vagues comme beau logo sans préciser le style visuel."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Ne cherche pas à mettre tout le texte de ta boutique dès la première demande d'image."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Voici l'astuce de pro : prends en photo ton croquis papier et utilise l'option Vectorize de l'application.",
+    "dit": "Voici l'astuce de pro, prends en photo ton croquis papier et utilise l'option Vectorize de l'application."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Active également l'option Palette dans les paramètres pour imposer exactement le code couleur officiel de ta marque."
+   },
+   {
+    "partie": "recap",
+    "texte": "Première étape, connecte-toi gratuitement sur le site internet officiel recraft.ai depuis ton téléphone mobile."
+   },
+   {
+    "partie": "recap",
+    "texte": "Deuxième étape, sélectionne le style Vector Art avec la catégorie Flat 2D pour un rendu très professionnel."
+   },
+   {
+    "partie": "recap",
+    "texte": "Troisième étape, rédige un prompt précis détaillant ton icône et choisis la meilleure variante parmi les propositions."
+   },
+   {
+    "partie": "recap",
+    "texte": "Quatrième étape, ajoute le nom de ta marque puis exporte ton fichier final au format vectoriel SVG."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+    "dit": "L'i-a change déjà le travail , ceux qui l'apprennent prennent de l'avance."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+    "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur boutique storefront",
+    "texte": "TON LOGO PRO",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "alerte",
+    "texte": "IMAGE FLOUSE\nÀ L'IMPRESSION",
+    "emoji": "26a0_fe0f",
+    "geste": "bras-croises",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "african print shop sign banner street",
+    "texte": "ENSEIGNE À LOMÉ",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african person holding smartphone design",
+    "texte": "DEPUIS LE TELEPHONE",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "EXPERT IA",
+    "texte": "JOSEPH\nLOMÉ IA SCHOOL",
+    "emoji": "1f3af",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african business owner tailor shop",
+    "texte": "CHARTE GRAPHIQUE",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "OUVRE RECRAFT.AI\nSUR SAFARI OU CHROME",
+    "emoji": "1f680",
+    "geste": "compte",
+    "doigts": 1,
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "GRATUIT",
+    "texte": "50 CRÉDITS\nCHAQUE JOUR",
+    "emoji": "1f381",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman working on mobile phone shop",
+    "texte": "SANS RIEN PAYER",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "CHOISIS LE STYLE\nVECTOR ART",
+    "geste": "compte",
+    "doigts": 2,
+    "expression": "parle"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "FLAT 2D",
+     "ok": true
+    },
+    "droite": {
+     "texte": "PHOTO REALISTE",
+     "ok": false
+    },
+    "a": [
+     "Flat",
+     "photo."
+    ]
+   },
+   {
+    "type": "photo",
+    "recherche": "african fashion designer workshop clothes",
+    "texte": "IMPRESSION T-SHIRT",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "ÉCRIS LE PROMPT\nAVEC VRAIES COULEURS",
+    "emoji": "1f4ac",
+    "geste": "compte",
+    "doigts": 3,
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african coffee beans harvesting bag",
+    "texte": "CAFÉ KPALIMÉ",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Minimalist vector logo for an African coffee brand, coffee bean and cocoa pod, emerald green and warm gold colors, isolated, flat 2d",
+    "reponse": "Génération de 4 déclinaisons vectorielles...\n- Option 1: Grain de café fusionné avec cabosse de cacao (Vert & Or)\n- Option 2: Lignes épurées style écusson\n- Option 3: Style minimaliste plat"
+   },
+   {
+    "type": "photo",
+    "recherche": "african student looking smartphone display",
+    "texte": "RÉSULTAT INSTANTANÉ",
+    "geste": "pouce",
+    "expression": "surpris"
+   },
+   {
+    "type": "numero",
+    "n": 4,
+    "texte": "GÉNÈRE ET AJOUTE\nLE NOM EXACT",
+    "emoji": "2728",
+    "geste": "compte",
+    "doigts": 4,
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african coffee shop packaging logo",
+    "texte": "TEXTE NET ET PRO",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Add text 'Café Kpalimé' to the generated vector icon, modern clean typography, emerald green color, centered alignment",
+    "reponse": "Mise à jour du logo vectoriel...\n- Typographie intégrée sous l'icône\n- Alignement parfait au centre\n- Export disponible"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉDITEUR",
+    "texte": "POSITION DU TEXTE\nSANS DÉFORMER",
+    "emoji": "1f3af",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 5,
+    "texte": "ÉXPORTE EN FORMAT\nVECTORIEL SVG",
+    "geste": "compte",
+    "doigts": 4,
+    "expression": "parle"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "FORMAT SVG (NET)",
+     "ok": true
+    },
+    "droite": {
+     "texte": "FORMAT JPG (FLOU)",
+     "ok": false
+    },
+    "a": [
+     "SVG",
+     "extérieur."
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "FOND TRANSPARENT",
+    "texte": "FORMAT PNG HD\nPOUR WHATSAPP",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "NE DIS PAS juste\nBEAU LOGO PRO",
+    "emoji": "274c",
+    "geste": "bras-croises",
+    "expression": "grimace"
+   },
+   {
+    "type": "question",
+    "texte": "SÉPARE L ICONE\nET LE TEXTE",
+    "sous": "MEILLEUR RÉSULTAT",
+    "emoji": "1f914"
+   },
+   {
+    "type": "carte",
+    "kicker": "ASTUCE PRO",
+    "texte": "OPTION VECTORIZE\nDEPUIS CROQUIS",
+    "emoji": "1f4a1",
+    "geste": "pouce",
+    "expression": "surpris"
+   },
+   {
+    "type": "carte",
+    "kicker": "COULEURS",
+    "texte": "OPTION PALETTE\nVERT ET OR",
+    "emoji": "2728",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉTAPE 1",
+    "texte": "OUVRE RECRAFT.AI\nSUR MOBILES",
+    "emoji": "1f680",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉTAPE 2",
+    "texte": "STYLE VECTOR ART\nET FLAT 2D",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉTAPE 3",
+    "texte": "PROMPT DÉTAILLÉ\nAVEC ICÔNE",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "ÉTAPE 4",
+    "texte": "AJOUTE LE NOM\nEXPORT EN SVG",
+    "geste": "designe",
+    "expression": "parle"
+   },
+   {
+    "type": "photo",
+    "recherche": "african businessman success smartphone",
+    "texte": "PRENEZ DE L AVANCE",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "orange",
+   "nuit",
+   "vert",
+   "violet",
+   "rose",
+   "orange",
+   "bleu",
+   "nuit",
+   "vert",
+   "violet",
+   "rose",
+   "orange",
+   "bleu",
+   "vert",
+   "nuit",
+   "orange",
+   "violet",
+   "bleu",
+   "rose",
+   "vert",
+   "nuit",
+   "orange",
+   "violet",
+   "bleu",
+   "vert",
+   "rose",
+   "orange",
+   "nuit",
+   "vert",
+   "violet",
+   "bleu",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "veille",
+ "secondes": 76.4
+}

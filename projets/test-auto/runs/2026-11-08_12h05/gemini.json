@@ -1,0 +1,553 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "TimeoutError('The read operation timed out')",
+   "secondes": 150.1
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.6-flash",
+   "secondes": 11.7,
+   "erreurs": [
+    "Ton script fait 343 mots, il en faut entre 449 et 649 : ajoute environ 106 mots (par exemple 8 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "22 phrases : il en faut entre 34 et 56."
+   ]
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.6-flash",
+   "secondes": 13.3,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "DEVIS",
+    "DE LUXE",
+    "EN 2 MIN"
+   ],
+   "cle": "LUXE"
+  },
+  "titre": "Crée une proposition commerciale de luxe sur ton téléphone avec Gamma App",
+  "description": "Transforme un simple texte ou une idée de service en un document commercial interactif et professionnel à envoyer à tes clients fortunés. Réalise une présentation haut de gamme en deux minutes depuis ton smartphone.",
+  "hashtags": [
+   "#GammaApp",
+   "#BusinessAfrique",
+   "#IA",
+   "#LomeIASchool",
+   "#Entrepreneuriat",
+   "#AstuceIA",
+   "#WhatsAppBusiness"
+  ],
+  "prompt": "Rédige une proposition commerciale persuasive pour un client potentiel. Prestataire : [Nom de ta boutique]. Service proposé : [Création de visuels publicitaires à Lomé]. Cible : le Directeur Général. Structure attendue : 1. Compréhension des défis du client. 2. Solution sur mesure recommandée. 3. Plan d'action en 3 phases. 4. Grille tarifaire détaillée avec option Standard et option Premium. 5. Présentation de nos garanties. 6. Appel à l'action. Ton : professionnel, direct, haut de gamme.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tes devis envoyés sur WhatsApp ressemblent à de simples messages bruts et peu convaincants ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Les clients fortunés recherchent une présentation visuelle élégante qui inspire confiance dès le premier coup d'œil."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Tu perds des contrats importants parce que tes propositions commerciales n'ont pas l'air assez professionnelles."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Envoyer un simple texte brut donne l'impression d'un manque d'organisation et de rigueur commerciale."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph, de Lomé IA School, et je vais te montrer comment créer une proposition commerciale luxueuse.",
+    "dit": "Je suis Joseph, de Lomé i-a Skoul, et je vais te montrer comment créer une proposition commerciale luxueuse."
+   },
+   {
+    "partie": "r1",
+    "texte": "Aujourd'hui, tu vas apprendre à générer une présentation interactive complète depuis ton smartphone sans logiciel complexe."
+   },
+   {
+    "partie": "r1",
+    "texte": "Cette méthode te permettra d'élever instantanément le niveau perçu de tes prestations auprès des entreprises."
+   },
+   {
+    "partie": "r1",
+    "texte": "Étape 1 : ouvre le navigateur de ton téléphone sur le site gamma.app et connecte-toi gratuitement.",
+    "dit": "Étape 1, ouvre le navigateur de ton téléphone sur le site gamma.app et connecte-toi gratuitement."
+   },
+   {
+    "partie": "r1",
+    "texte": "Gamma App est une intelligence artificielle capable de créer des documents défilants comme des pages web interactives."
+   },
+   {
+    "partie": "r1",
+    "texte": "À l'inscription, l'outil te donne immédiatement quatre cents crédits gratuits pour créer tes premiers documents."
+   },
+   {
+    "partie": "r1",
+    "texte": "Sur ton tableau de bord, appuie sur le bouton bleu Nouveau avec l'IA puis sélectionne Générer.",
+    "dit": "Sur ton tableau de bord, appuie sur le bouton bleu Nouveau avec l'i-a puis sélectionne Générer."
+   },
+   {
+    "partie": "r2",
+    "texte": "Étape 2 : choisis le format Document pour permettre un défilement vertical naturel sur un écran mobile.",
+    "dit": "Étape 2, choisis le format Document pour permettre un défilement vertical naturel sur un écran mobile."
+   },
+   {
+    "partie": "r2",
+    "texte": "Ce format est idéal pour les clients qui lisent leurs propositions commerciales directement sur leur téléphone."
+   },
+   {
+    "partie": "r2",
+    "texte": "Dans le champ de demande, colle un brief clair décrivant ton entreprise, ton service et tes tarifs."
+   },
+   {
+    "partie": "demo1",
+    "texte": "Écris par exemple : Rédige une proposition commerciale complète pour un service de création de visuels à Lomé.",
+    "dit": "Écris par exemple, Rédige une proposition commerciale complète pour un service de création de visuels à Lomé."
+   },
+   {
+    "partie": "demo1",
+    "texte": "Précise de structurer le document avec les enjeux du client, les phases du projet et les tarifs."
+   },
+   {
+    "partie": "demo1",
+    "texte": "Ajoute également tes solide et une grille tarifaire claire avec deux options bien distinctes."
+   },
+   {
+    "partie": "r2",
+    "texte": "Vérifie le plan automatique généré en huit cartes puis valide pour passer au choix du design."
+   },
+   {
+    "partie": "r3",
+    "texte": "Étape 3 : sélectionne un thème visuel sombre et moderne comme le style Onyx pour un rendu premium.",
+    "dit": "Étape 3, sélectionne un thème visuel sombre et moderne comme le style Onyx pour un rendu premium."
+   },
+   {
+    "partie": "demo2",
+    "texte": "Appuie sur le bouton Générer et observe l'intelligence artificielle concevoir les textes, titres et visuels."
+   },
+   {
+    "partie": "demo2",
+    "texte": "L'outil organise la mise en page tout seul avec des blocs clairs et une typographie très soignée."
+   },
+   {
+    "partie": "r3",
+    "texte": "En moins d'une minute, tu obtiens un document défilant prêt à impressionner tes futurs clients."
+   },
+   {
+    "partie": "r3",
+    "texte": "Tu peux remplacer chaque image générée en un clic avec tes propres photos enregistrées sur ton téléphone."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Une erreur fréquente est de laisser l'IA inventer tes prix sans relire attentivement la grille tarifaire.",
+    "dit": "Une erreur fréquente est de laisser l'i-a inventer tes prix sans relire attentivement la grille tarifaire."
+   },
+   {
+    "partie": "erreur",
+    "texte": "L'intelligence artificielle exécute tes instructions mais elle ne connaît pas exactement la valeur de tes prestations."
+   },
+   {
+    "partie": "erreur",
+    "texte": "Prends toujours trente secondes pour ajuster les montants avant d'envoyer le lien final à ton client."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Astuce de pro : partage directement le lien web interactif sur WhatsApp au lieu d'un fichier lourd.",
+    "dit": "Astuce de pro, partage directement le lien web interactif sur WhatsApp au lieu d'un fichier lourd."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Le client voit une page animée et tu peux suivre l'affichage de ton document en temps réel."
+   },
+   {
+    "partie": "astuce",
+    "texte": "Si le client préfère un format classique, tu peux aussi exporter la présentation en PDF sans aucun filigrane."
+   },
+   {
+    "partie": "recap",
+    "texte": "Étape 1 : ouvre gamma.app et connecte-toi gratuitement sur ton téléphone.",
+    "dit": "Étape 1, ouvre gamma.app et connecte-toi gratuitement sur ton téléphone."
+   },
+   {
+    "partie": "recap",
+    "texte": "Étape 2 : choisis le format document et colle un prompt structuré avec tes offres.",
+    "dit": "Étape 2, choisis le format document et colle un prompt structuré avec tes offres."
+   },
+   {
+    "partie": "recap",
+    "texte": "Étape 3 : sélectionne le thème Onyx, génère puis partage le lien interactif à ton prospect.",
+    "dit": "Étape 3, sélectionne le thème Onyx, génère puis partage le lien interactif à ton prospect."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'intelligence artificielle transforme tes compétences en opportunités professionnelles ; prends dès maintenant une longueur d'avance.",
+    "dit": "L'intelligence artificielle transforme tes compétences en opportunités professionnelles , prends dès maintenant une longueur d'avance."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+    "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african businessman looking at phone doubt",
+    "texte": "DEVIS BANAL",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "luxury modern office building africa",
+    "texte": "CLIENTS PREMIUM",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "PROBLÈME",
+    "texte": "VENTES\nMANQUÉES",
+    "emoji": "274c",
+    "geste": "bras-croises",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "african entrepreneur frustrated holding phone",
+    "texte": "TEXTE BRUT",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "african instructor smiling front laptop",
+    "texte": "JOSEPH AHIANKONOU",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "OBJECTIF",
+    "texte": "DOCUMENT\nDE LUXE",
+    "emoji": "1f3af",
+    "geste": "explique"
+   },
+   {
+    "type": "photo",
+    "recherche": "african businesswoman showing presentation screen",
+    "texte": "IMAGE PRO",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "OUVRIR\nGAMMA.APP",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "carte",
+    "kicker": "OUTIL IA",
+    "texte": "GAMMA\nAPP",
+    "emoji": "2728",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "GRATUIT",
+    "texte": "400 CRÉDITS\nOFFERTS",
+    "emoji": "1f381",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman using smartphone screen",
+    "texte": "CRÉER NOUVEAU",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "CHOISIR\nDOCUMENT",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "photo",
+    "recherche": "person scrolling smartphone vertical screen",
+    "texte": "DEFILEMENT MOBILE",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "prompt",
+    "texte": "Rédige une proposition commerciale persuasive pour [Nom boutique]. Service : [Visuels].",
+    "geste": "designe"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Rédige une proposition commerciale complète pour un service de création de visuels à Lomé.",
+    "reponse": "PROPOSITION COMMERCIALES\n\n1. Enjeux clients\n2. Notre Solution\n3. Tarifs et Packs"
+   },
+   {
+    "type": "carte",
+    "kicker": "STRUCTURE",
+    "texte": "ENJEUX ET\nTARIFS",
+    "emoji": "1f4ac",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "liste",
+    "titre": "CONTENU",
+    "items": [
+     {
+      "texte": "Garanties",
+      "a": "garanties"
+     },
+     {
+      "texte": "Grille tarifaire",
+      "a": "tarifaire"
+     },
+     {
+      "texte": "Deux options",
+      "a": "options"
+     }
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "VALIDATION",
+    "texte": "PLAN EN\n8 CARTES",
+    "emoji": "2705",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "THÈME\nONYX",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Générer la présentation commerciale au format Onyx premium.",
+    "reponse": "Document généré avec succès !\nDesign : Onyx\nStatut : Prêt à partager"
+   },
+   {
+    "type": "carte",
+    "kicker": "DESIGN",
+    "texte": "MISE EN PAGE\nPRO",
+    "emoji": "2728",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman entrepreneur smiling phone",
+    "texte": "RÉSULTAT PRO",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african designer changing photos on smartphone",
+    "texte": "PHOTOS SUR MESURE",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION AUX\nTARIFS FICTIFS",
+    "emoji": "26a0"
+   },
+   {
+    "type": "carte",
+    "kicker": "RÈGLE D'OR",
+    "texte": "L'IA\nEXÉCUTE",
+    "emoji": "1f512",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "carte",
+    "kicker": "VÉRIFICATION",
+    "texte": "AJUSTE LES\nPRIX",
+    "emoji": "1f50e",
+    "geste": "explique",
+    "expression": "neutre"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "PDF LOURD",
+     "ok": false
+    },
+    "droite": {
+     "texte": "LIEN WEB",
+     "ok": true
+    },
+    "a": [
+     "WhatsApp"
+    ]
+   },
+   {
+    "type": "photo",
+    "recherche": "african client reading smartphone surprise",
+    "texte": "PAGE ANIMÉE",
+    "geste": "pouce",
+    "expression": "surpris"
+   },
+   {
+    "type": "carte",
+    "kicker": "EXPORT",
+    "texte": "OPTION PDF\nINCLUSE",
+    "emoji": "2705",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "GAMMA.APP",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "FORMAT ET\nBRIEF",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "ONYX ET\nPARTAGE",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "photo",
+    "recherche": "african youth learning technology future",
+    "texte": "LOMÉ IA SCHOOL",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "bleu",
+   "nuit",
+   "orange",
+   "bleu",
+   "nuit",
+   "violet",
+   "vert",
+   "bleu",
+   "nuit",
+   "orange",
+   "bleu",
+   "vert",
+   "nuit",
+   "bleu",
+   "orange",
+   "vert",
+   "nuit",
+   "orange",
+   "bleu",
+   "vert",
+   "nuit",
+   "orange",
+   "bleu",
+   "nuit",
+   "orange",
+   "bleu",
+   "vert",
+   "nuit",
+   "orange",
+   "bleu",
+   "vert",
+   "nuit",
+   "bleu",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "veille",
+ "secondes": 175.8
+}

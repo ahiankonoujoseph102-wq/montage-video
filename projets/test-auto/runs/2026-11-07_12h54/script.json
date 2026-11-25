@@ -1,0 +1,153 @@
+{
+ "accroche": {
+  "lignes": [
+   "10 JOURS",
+   "DE POSTS",
+   "EN 2 PROMPTS"
+  ],
+  "cle": "POSTS"
+ },
+ "titre": "10 jours de posts Facebook en 2 prompts avec ChatGPT",
+ "description": "La méthode en deux temps pour ne plus jamais manquer d'idées sur Facebook : une réserve de dix idées, puis le post complet. Prompts à copier.",
+ "hashtags": "#Facebook #ChatGPT #IA #Entrepreneur #Lomé #Afrique",
+ "prompt": "Tu es un expert en contenu des réseaux sociaux. Donne-moi 10 idées de posts Facebook pour [ton activité] qui s'adresse à [ta cible, ex. : jeunes adultes africains de 20 à 35 ans]. Chaque idée doit être accrocheuse, apporter de la valeur et donner envie de cliquer. Présente-les sous forme de liste numérotée avec pour chacune un titre court.\n\nPuis : Développe l'idée numéro [X] en un post Facebook complet. Ton [inspirant et motivant], comme si je parlais directement à un ami. Commence par une accroche forte qui interpelle dès la première ligne. Courts paragraphes faciles à lire sur téléphone. Quelques émojis pertinents. Termine par une question ouverte pour engager les commentaires. Maximum 150 mots.",
+ "description_tiktok": "La méthode en deux temps pour ne plus jamais manquer d'idées sur Facebook : une réserve de dix idées, puis le post complet. Prompts à copier. #Facebook #ChatGPT #IA #Entrepreneur #Lomé #Afrique",
+ "rubrique": "script",
+ "date": "2026-11-07",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu ne sais jamais quoi publier sur ta page Facebook ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Avec deux prompts, tu prépares dix jours de publications en quelques minutes."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, de Lomé IA School. Voici ma méthode en deux temps.",
+   "dit": "Je suis Joseph, de Lomé i-a Skoul. Voici ma méthode en deux temps."
+  },
+  {
+   "partie": "pourquoi",
+   "texte": "D'abord, comprends le terrain. Sur Facebook, les gens font défiler très vite."
+  },
+  {
+   "partie": "pourquoi",
+   "texte": "Tu as environ une seconde pour les arrêter, avec ton image et ta première phrase."
+  },
+  {
+   "partie": "pourquoi",
+   "texte": "C'est pour ça qu'on sépare le travail en deux : d'abord les idées, ensuite le post complet.",
+   "dit": "C'est pour ça qu'on sépare le travail en deux, d'abord les idées, ensuite le post complet."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Étape un : la réserve d'idées. Ouvre ChatGPT et colle ce prompt.",
+   "dit": "Étape un, la réserve d'idées. Ouvre Tchat-gé-pé-té et colle ce prompt."
+  },
+  {
+   "partie": "etape1",
+   "texte": "« Tu es un expert en contenu des réseaux sociaux. Donne-moi dix idées de posts Facebook pour un coach qui s'adresse aux jeunes adultes africains de vingt à trente-cinq ans. »",
+   "dit": "Tu es un expert en contenu des réseaux sociaux. Donne-moi dix idées de posts Facebook pour un coach qui s'adresse aux jeunes adultes africains de vingt à trente-cinq ans."
+  },
+  {
+   "partie": "etape1",
+   "texte": "« Chaque idée doit être accrocheuse, apporter de la valeur et donner envie de cliquer. Liste numérotée, avec un titre court pour chacune. »",
+   "dit": "Chaque idée doit être accrocheuse, apporter de la valeur et donner envie de cliquer. Liste numérotée, avec un titre court pour chacune."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Résultat : dix idées. De quoi alimenter ta page pendant dix jours.",
+   "dit": "Résultat, dix idées. De quoi alimenter ta page pendant dix jours."
+  },
+  {
+   "partie": "etape1",
+   "texte": "Garde seulement celles qui parlent vraiment à tes clients."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Étape deux : développer une idée en post complet.",
+   "dit": "Étape deux, développer une idée en post complet."
+  },
+  {
+   "partie": "etape2",
+   "texte": "« Développe l'idée numéro trois en un post Facebook complet, ton inspirant, comme si je parlais à un ami qui doute de lui. »",
+   "dit": "Développe l'idée numéro trois en un post Facebook complet, ton inspirant, comme si je parlais à un ami qui doute de lui."
+  },
+  {
+   "partie": "etape2",
+   "texte": "« Commence par une accroche forte, courts paragraphes faciles à lire sur téléphone, quelques émojis, et termine par une question ouverte. Cent cinquante mots au maximum. »",
+   "dit": "Commence par une accroche forte, courts paragraphes faciles à lire sur téléphone, quelques émojis, et termine par une question ouverte. Cent cinquante mots au maximum."
+  },
+  {
+   "partie": "etape2",
+   "texte": "Regarde : une première ligne qui interpelle, un texte aéré, et une question qui fait réagir.",
+   "dit": "Regarde, une première ligne qui interpelle, un texte aéré, et une question qui fait réagir."
+  },
+  {
+   "partie": "types",
+   "texte": "Maintenant, varie tes publications. Il y a quatre types de posts."
+  },
+  {
+   "partie": "types",
+   "texte": "Le post de valeur, qui enseigne. Le post de preuve, qui montre un résultat."
+  },
+  {
+   "partie": "types",
+   "texte": "Le post d'histoire, qui crée le lien. Et le post d'offre, qui vend."
+  },
+  {
+   "partie": "types",
+   "texte": "La règle : pour un post qui vend, publie au moins trois posts qui donnent de la valeur, une histoire ou une preuve.",
+   "dit": "La règle, pour un post qui vend, publie au moins trois posts qui donnent de la valeur, une histoire ou une preuve."
+  },
+  {
+   "partie": "types",
+   "texte": "Une page qui ne fait que vendre fait fuir. Une page qui donne d'abord gagne la confiance."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Mon astuce de pro : demande sept accroches différentes, choisis la meilleure, et teste-en deux sur deux jours.",
+   "dit": "Mon astuce de pro, demande sept accroches différentes, choisis la meilleure, et teste-en deux sur deux jours."
+  },
+  {
+   "partie": "astuce",
+   "texte": "Tu verras vite ce qui marche avec TON audience."
+  },
+  {
+   "partie": "recap",
+   "texte": "Récapitulons : dix idées en un prompt, le post complet en un deuxième, et l'équilibre trois pour un.",
+   "dit": "Récapitulons, dix idées en un prompt, le post complet en un deuxième, et l'équilibre trois pour un."
+  },
+  {
+   "partie": "recap",
+   "texte": "L'IA change déjà le travail. Ceux qui l'apprennent prennent de l'avance.",
+   "dit": "L'i-a change déjà le travail. Ceux qui l'apprennent prennent de l'avance."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio.",
+   "dit": "Et ta consultation est gratuite, réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ],
+ "historique": {
+  "titre": "10 jours de posts Facebook en 2 prompts avec ChatGPT",
+  "rubrique": "script",
+  "script": "02-facebook",
+  "date": "2026-11-07"
+ }
+}

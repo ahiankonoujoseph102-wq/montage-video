@@ -1,0 +1,196 @@
+{
+ "accroche": {
+  "lignes": [
+   "CREE",
+   "UN AGENT IA",
+   "SUR WHATSAPP"
+  ],
+  "cle": "AGENT"
+ },
+ "titre": "Crée ton agent IA pour répondre aux clients",
+ "description": "Apprends à configurer un assistant intelligent pour automatiser les réponses à tes clients sur WhatsApp.",
+ "hashtags": "#IA #Lome #Togo #WhatsApp #Business #Astuce",
+ "prompt": "Tu es l'assistant virtuel de ma boutique à Lomé. Ton rôle est de répondre aux clients sur WhatsApp en donnant les prix, les horaires et les disponibilités des articles. Sois poli, clair et concis dans tes réponses.",
+ "description_tiktok": "Apprends à configurer un assistant intelligent pour automatiser les réponses à tes clients sur WhatsApp. #IA #Lome #Togo #WhatsApp #Business #Astuce",
+ "rubrique": "agents",
+ "date": "2026-11-07",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "Tu perds des heures précieuses à répéter les mêmes prix sur WhatsApp chaque jour ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Tes fidèles clients attendent parfois trop longtemps avant d'avoir une réponse claire."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Les commandes s'accumulent rapidement pendant que tu gères ton stock physique à la boutique."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Il est grand temps de confier cette tâche répétitive à un assistant intelligent."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Je suis Joseph, formateur professionnel en intelligence artificielle chez Lomé IA School au Togo.",
+   "dit": "Je suis Joseph, formateur professionnel en intelligence artificielle chez Lomé i-a School au Togo."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Aujourd'hui nous allons apprendre ensemble à créer ton tout premier agent IA personnalisé.",
+   "dit": "Aujourd'hui nous allons apprendre ensemble à créer ton tout premier agent i-a personnalisé."
+  },
+  {
+   "partie": "presentation",
+   "texte": "Cette méthode simple va transformer complètement ta façon de gérer ta petite entreprise."
+  },
+  {
+   "partie": "r1",
+   "texte": "Un agent IA est un assistant virtuel qui agit directement à ta place pour répondre.",
+   "dit": "Un agent i-a est un assistant virtuel qui agit directement à ta place pour répondre."
+  },
+  {
+   "partie": "r1",
+   "texte": "Il utilise des instructions fixes pour guider et aider tes clients du mieux possible."
+  },
+  {
+   "partie": "r1",
+   "texte": "Il classe les messages reçus et envoie rapidement les informations les plus utiles."
+  },
+  {
+   "partie": "r1",
+   "texte": "C'est exactement comme avoir un employé disponible vingt-quatre heures sur vingt-quatre sans pause."
+  },
+  {
+   "partie": "r2",
+   "texte": "Pour la première étape, ouvre l'outil gratuit des Gems de Gemini sur ton écran."
+  },
+  {
+   "partie": "r2",
+   "texte": "Cet outil formidable permet de concevoir un assistant personnalisé en quelques clics seulement."
+  },
+  {
+   "partie": "r2",
+   "texte": "Connecte-toi simplement avec ton compte Google habituel pour accéder à cette interface."
+  },
+  {
+   "partie": "r2",
+   "texte": "Clique ensuite sur le bouton de création pour démarrer ton nouveau projet d'assistant."
+  },
+  {
+   "partie": "r3",
+   "texte": "Pour la deuxième étape, écris des instructions précises et claires pour ton commerce."
+  },
+  {
+   "partie": "r3",
+   "texte": "Explique clairement à l'intelligence artificielle les produits et les horaires de ta boutique."
+  },
+  {
+   "partie": "r3",
+   "texte": "Donne des exemples concrets pour bien guider ses futures réponses envers les acheteurs."
+  },
+  {
+   "partie": "r3",
+   "texte": "Précise le ton à adopter pour rester toujours chaleureux, poli et professionnel."
+  },
+  {
+   "partie": "r4",
+   "texte": "Pour la troisième étape, teste ton nouvel agent avant de le lancer publiquement."
+  },
+  {
+   "partie": "r4",
+   "texte": "Pose toi-même des questions de clients pour vérifier la qualité de ses réponses."
+  },
+  {
+   "partie": "r4",
+   "texte": "Corrige immédiatement si l'assistant fait une petite erreur dans ses explications."
+  },
+  {
+   "partie": "r4",
+   "texte": "Assure-toi que les informations fournies correspondent exactement à la réalité de ton stock."
+  },
+  {
+   "partie": "r5",
+   "texte": "Pour la quatrième étape, utilise l'application gratuite WhatsApp Business pour la base."
+  },
+  {
+   "partie": "r5",
+   "texte": "Configure soigneusement les messages d'absence automatiques pour rassurer tes acheteurs."
+  },
+  {
+   "partie": "r5",
+   "texte": "Ajoute ton catalogue complet pour que tout le monde puisse voir tes beaux articles."
+  },
+  {
+   "partie": "r5",
+   "texte": "Utilise les réponses rapides pour gagner un temps précieux lors des fortes affluences."
+  },
+  {
+   "partie": "morale",
+   "texte": "Évite surtout l'erreur classique de laisser l'intelligence artificielle répondre sans aucune surveillance humaine."
+  },
+  {
+   "partie": "morale",
+   "texte": "Garde toujours un œil attentif sur les messages importants pour maintenir la confiance."
+  },
+  {
+   "partie": "morale",
+   "texte": "Retiens bien que l'IA change déjà le travail et que ceux qui l'apprennent avancent vite.",
+   "dit": "Retiens bien que l'i-a change déjà le travail et que ceux qui l'apprennent avancent vite."
+  },
+  {
+   "partie": "morale",
+   "texte": "Maîtrise ces outils puissants pour développer durablement ton activité au Togo et partout ailleurs."
+  },
+  {
+   "partie": "morale",
+   "texte": "Tu disposes maintenant de toutes les bases nécessaires pour réussir ton automatisation."
+  },
+  {
+   "partie": "morale",
+   "texte": "Continue de pratiquer régulièrement pour t'améliorer chaque jour avec ton assistant."
+  },
+  {
+   "partie": "morale",
+   "texte": "L'avenir appartient à ceux qui adoptent ces nouvelles compétences numériques très tôt."
+  },
+  {
+   "partie": "morale",
+   "texte": "N'oublie pas que chaque petit effort compte pour moderniser ton entreprise locale."
+  },
+  {
+   "partie": "morale",
+   "texte": "Sois fier du travail accompli pour propulser ton commerce vers de nouveaux sommets."
+  },
+  {
+   "partie": "morale",
+   "texte": "Partage cette méthode autour de toi pour aider d'autres entrepreneurs motivés."
+  },
+  {
+   "partie": "morale",
+   "texte": "Ensemble, faisons progresser l'usage des technologies utiles dans notre beau pays."
+  },
+  {
+   "partie": "morale",
+   "texte": "Prépare-toi pour notre prochaine formation exclusive dédiée aux outils numériques."
+  },
+  {
+   "partie": "fin",
+   "texte": "Abonne-toi, like et partage."
+  },
+  {
+   "partie": "fin",
+   "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+  },
+  {
+   "partie": "fin",
+   "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+  },
+  {
+   "partie": "fin",
+   "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+   "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  }
+ ]
+}

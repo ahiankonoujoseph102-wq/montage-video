@@ -1,0 +1,128 @@
+{
+ "_note": "Vidéo de test (étape 1) : script écrit par Claude (la clé Gemini n'a pas été fournie), règles de Joseph respectées : aucune promesse, aucun chiffre inventé, contacts vérifiés seulement. 'dit' = texte prononcé par la voix si différent de l'affiché.",
+ "titre": "4 réflexes pour vérifier une réponse de l'IA",
+ "description_tiktok": "L'IA peut se tromper… avec beaucoup d'assurance. Voici 4 réflexes simples pour vérifier une réponse avant de t'en servir. Réserve ta consultation gratuite : lien dans la bio. Lomé IA School, Adidogomé. #IA #intelligenceartificielle #ChatGPT #astuce #LoméIASchool #Togo #Lomé",
+ "phrases": [
+  {
+   "partie": "accroche",
+   "texte": "L'IA vient de te répondre avec beaucoup d'assurance."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Mais est-ce que sa réponse est juste ?"
+  },
+  {
+   "partie": "accroche",
+   "texte": "Attention : une IA peut se tromper, et parfois avec une grande confiance."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Je suis Joseph, de Lomé IA School."
+  },
+  {
+   "partie": "accroche",
+   "texte": "Voici quatre réflexes simples pour vérifier une réponse de l'IA, avant de t'en servir."
+  },
+  {
+   "partie": "r1",
+   "texte": "Premier réflexe : demande-lui ses sources."
+  },
+  {
+   "partie": "r1",
+   "texte": "Écris simplement : d'où vient cette information ? Donne-moi tes sources."
+  },
+  {
+   "partie": "r1",
+   "texte": "Ensuite, ouvre ces sources toi-même."
+  },
+  {
+   "partie": "r1",
+   "texte": "Une IA peut inventer un titre d'article, ou un lien qui n'existe pas."
+  },
+  {
+   "partie": "r1",
+   "texte": "Si le lien n'existe pas, ou s'il ne dit pas la même chose, méfie-toi de la réponse."
+  },
+  {
+   "partie": "r2",
+   "texte": "Deuxième réflexe : pose la même question autrement."
+  },
+  {
+   "partie": "r2",
+   "texte": "Change les mots, change l'ordre, puis compare les deux réponses."
+  },
+  {
+   "partie": "r2",
+   "texte": "Par exemple : demande d'abord quels sont les avantages, puis quels sont les risques."
+  },
+  {
+   "partie": "r2",
+   "texte": "Si elles se contredisent, c'est un signal d'alerte : il faut creuser avant de faire confiance."
+  },
+  {
+   "partie": "r3",
+   "texte": "Troisième réflexe : vérifie toujours les chiffres, les dates et les noms."
+  },
+  {
+   "partie": "r3",
+   "texte": "Un prix, une loi, une date d'examen, le nom d'une personne : ce sont des détails où une erreur coûte cher."
+  },
+  {
+   "partie": "r3",
+   "texte": "Compare avec un site officiel, ou avec quelqu'un qui connaît vraiment le sujet."
+  },
+  {
+   "partie": "r3",
+   "texte": "Ne copie jamais un chiffre sans l'avoir vérifié."
+  },
+  {
+   "partie": "r4",
+   "texte": "Quatrième réflexe : demande-lui de se relire."
+  },
+  {
+   "partie": "r4",
+   "texte": "Écris : relis ta réponse, et dis-moi ce dont tu n'es pas sûr."
+  },
+  {
+   "partie": "r4",
+   "texte": "Tu peux aussi lui demander : quelles sont les limites de ta réponse ?"
+  },
+  {
+   "partie": "r4",
+   "texte": "Elle peut alors corriger certaines erreurs, ou te montrer où elle hésite. Mais c'est toi qui gardes le dernier mot."
+  },
+  {
+   "partie": "morale",
+   "texte": "Retiens bien ceci : l'IA est un assistant, pas un juge."
+  },
+  {
+   "partie": "morale",
+   "texte": "Elle t'aide à aller plus vite, mais c'est toi qui décides."
+  },
+  {
+   "partie": "morale",
+   "texte": "Plus tu sais l'utiliser, plus tu sais aussi la vérifier."
+  },
+  {
+   "partie": "morale",
+   "texte": "C'est exactement ce que nous apprenons à Lomé IA School : bien utiliser l'IA, et garder son esprit critique."
+  },
+  {
+   "partie": "appel",
+   "texte": "Tu veux progresser ? Réserve ta consultation gratuite : le lien est dans la bio."
+  },
+  {
+   "partie": "appel",
+   "texte": "Ou écris-nous sur WhatsApp, au +228 72 24 02 31.",
+   "dit": "Ou écris-nous sur WhatsApp, au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+  },
+  {
+   "partie": "appel",
+   "texte": "Et dis-moi en commentaire : quelle réponse de l'IA t'a déjà surpris ?"
+  },
+  {
+   "partie": "appel",
+   "texte": "Lomé IA School : maîtrisez l'IA, et transformez vos compétences en opportunités."
+  }
+ ]
+}

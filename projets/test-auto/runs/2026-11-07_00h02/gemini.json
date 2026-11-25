@@ -1,0 +1,590 @@
+{
+ "journal": [
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "essai": 1,
+   "modele": "gemini-3.6-flash",
+   "secondes": 13.3,
+   "erreurs": [
+    "Ton script fait 277 mots, il en faut entre 463 et 663 : ajoute environ 186 mots (par exemple 14 phrases de plus dans le contenu, avec leurs scènes et leurs fonds) en gardant le reste.",
+    "19 phrases : il en faut entre 34 et 56.",
+    "[visuel] Seulement 3 scènes « photo » : il en faut 6 à 10 (vraies photos des situations).",
+    "[visuel] Il faut au moins 2 scènes « demo » (prompt tapé et réponse de l'outil).",
+    "[visuel] Trop de cartes de texte (7) : remplace-les par des photos, démonstrations, listes ou outils."
+   ]
+  },
+  {
+   "modele": "gemini-3.6-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 1.1
+  },
+  {
+   "modele": "gemini-2.5-pro",
+   "erreur": "HTTP 404 NOT_FOUND : This model models/gemini-2.5-pro is no longer available to new users. Please update your code to use models/gemini-3.1-pro-preview for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-pro-latest",
+   "erreur": "HTTP 429 RESOURCE_EXHAUSTED : You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/g",
+   "secondes": 0.2
+  },
+  {
+   "modele": "gemini-3.8-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 2.2
+  },
+  {
+   "modele": "gemini-3.7-flash",
+   "erreur": "HTTP 503 UNAVAILABLE : This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+   "secondes": 3.6
+  },
+  {
+   "essai": 2,
+   "modele": "gemini-3.5-flash",
+   "secondes": 17.4,
+   "erreurs": []
+  }
+ ],
+ "reponse": {
+  "accroche": {
+   "lignes": [
+    "TRANSFORME TES",
+    "DOCUMENTS EN",
+    "TABLEAU EXCEL"
+   ],
+   "cle": "DOCUMENTS"
+  },
+  "titre": "Convertis n'importe quelle photo de document en tableau propre avec l'IA",
+  "description": "Tu perds du temps à recopier tes factures ou tes cahiers de compte ? Découvre cette méthode simple et gratuite avec ChatGPT.",
+  "hashtags": [
+   "#IA",
+   "#ChatGPT",
+   "#Productivite",
+   "#Afrique",
+   "#LomeIASchool",
+   "#AstuceIA"
+  ],
+  "prompt": "Tu es un expert en saisie et analyse de données financières et comptables. Voici la photo d'une feuille de comptes manuelle d'une boutique. Analyse l'image attentivement et extrait toutes les informations sous forme de tableau propre. Le tableau doit contenir quatre colonnes précises : Date, Description du produit, Quantité vendue, et Prix total. Si un texte sur la photo est difficile à lire, indique lisibilité incertaine sans inventer d'information.",
+  "phrases": [
+   {
+    "partie": "accroche",
+    "texte": "Tu perds des heures chaque soir à recopier tes factures manuscrites dans ton ordinateur ?"
+   },
+   {
+    "partie": "accroche",
+    "texte": "Que tu gères une boutique à Lomé ou un salon de coiffure cette tâche te fatigue."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Cette méthode répétitive te fait perdre un temps très précieux que tu pourrais utiliser autrement."
+   },
+   {
+    "partie": "accroche",
+    "texte": "Heureusement une simple photo prise avec ton téléphone portable va tout résoudre en quelques secondes."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Je suis Joseph de Lomé IA School et nous formons les entrepreneurs aux outils modernes.",
+    "dit": "Je suis Joseph de Lomé i-a School et nous formons les entrepreneurs aux outils modernes."
+   },
+   {
+    "partie": "presentation",
+    "texte": "Aujourd'hui tu vas apprendre à transformer n'importe quelle photo de document en tableau propre."
+   },
+   {
+    "partie": "r1",
+    "texte": "Un modèle de vision c'est une IA capable de lire le texte sur une image.",
+    "dit": "Un modèle de vision c'est une i-a capable de lire le texte sur une image."
+   },
+   {
+    "partie": "r1",
+    "texte": "Étape un ouvre l'application gratuite ChatGPT sur ton téléphone pour commencer cette manipulation simple."
+   },
+   {
+    "partie": "r1",
+    "texte": "Appuie directement sur le petit icône d'appareil photo situé au bas de ton écran."
+   },
+   {
+    "partie": "r1",
+    "texte": "Prends une photo bien claire et bien éclairée de ton registre de ventes du jour."
+   },
+   {
+    "partie": "r1",
+    "texte": "Assure-toi que toutes les écritures manuscrites soient lisibles pour éviter les erreurs de lecture."
+   },
+   {
+    "partie": "r2",
+    "texte": "Étape deux écris un prompt professionnel en précisant le rôle le contexte et le format."
+   },
+   {
+    "partie": "r2",
+    "texte": "Un prompt c'est l'instruction précise que tu donnes à l'intelligence artificielle pour travailler."
+   },
+   {
+    "partie": "r2",
+    "texte": "Dis à l'IA qu'elle est une secrétaire comptable rigoureuse chargée d'analyser ce document.",
+    "dit": "Dis à l'i-a qu'elle est une secrétaire comptable rigoureuse chargée d'analyser ce document."
+   },
+   {
+    "partie": "r2",
+    "texte": "Demande-lui d'extraire les articles vendus avec les quantités et les montants correspondants."
+   },
+   {
+    "partie": "r2",
+    "texte": "Précise clairement que la réponse doit être présentée sous la forme d'un tableau structuré."
+   },
+   {
+    "partie": "r3",
+    "texte": "Regarde la démonstration à l'écran avec le prompt complet préparé pour ton activité commerciale."
+   },
+   {
+    "partie": "r3",
+    "texte": "ChatGPT analyse la photo et génère instantanément toutes les lignes de tes comptes quotidiens."
+   },
+   {
+    "partie": "r3",
+    "texte": "Étape trois valide le texte puis copie le résultat directement dans ton presse-papier."
+   },
+   {
+    "partie": "r3",
+    "texte": "Tu peux coller ce tableau directement dans Google Sheets ou dans un fichier Excel."
+   },
+   {
+    "partie": "r3",
+    "texte": "Cette méthode te fait gagner un temps colossal sur toute ta gestion de stock."
+   },
+   {
+    "partie": "r4",
+    "texte": "Voyons maintenant une deuxième démonstration sur une facture de fournisseur écrite à la main."
+   },
+   {
+    "partie": "r4",
+    "texte": "L'IA repère les totaux les dates et classe chaque dépense dans les bonnes colonnes.",
+    "dit": "L'i-a repère les totaux les dates et classe chaque dépense dans les bonnes colonnes."
+   },
+   {
+    "partie": "r4",
+    "texte": "Tu n'as plus besoin de taper chaque chiffre manuellement avec ton clavier de téléphone."
+   },
+   {
+    "partie": "r5",
+    "texte": "Voici l'erreur fréquente à éviter absolument quand tu utilises cette technique de travail rapide."
+   },
+   {
+    "partie": "r5",
+    "texte": "Ne colle jamais des données très sensibles ou des mots de passe personnels dans l'application."
+   },
+   {
+    "partie": "r5",
+    "texte": "Protège toujours les informations confidentielles de tes clients pour garder leur entière confiance."
+   },
+   {
+    "partie": "r6",
+    "texte": "Voici mon astuce de pro demande toujours à l'IA de poser ses questions en d'ombre.",
+    "dit": "Voici mon astuce de pro demande toujours à l'i-a de poser ses questions en d'ombre."
+   },
+   {
+    "partie": "r6",
+    "texte": "Demande-lui de signaler poliment les mots ou les chiffres difficiles à lire sur l'image."
+   },
+   {
+    "partie": "r6",
+    "texte": "Cela t'évite d'avoir des informations inventées dans tes tableaux de gestion finale."
+   },
+   {
+    "partie": "r7",
+    "texte": "En résumé prends une photo écris ton prompt structuré puis valide ton tableau instantanément."
+   },
+   {
+    "partie": "r7",
+    "texte": "Tu transformes ainsi ton smartphone en un véritable assistant administratif disponible à tout moment."
+   },
+   {
+    "partie": "r7",
+    "texte": "Cette compétence pratique te permet de moderniser ton entreprise sans dépenser aucun argent."
+   },
+   {
+    "partie": "morale",
+    "texte": "L'IA change déjà le travail ; ceux qui l'apprennent prennent de l'avance.",
+    "dit": "L'i-a change déjà le travail ; ceux qui l'apprennent prennent de l'avance."
+   },
+   {
+    "partie": "fin",
+    "texte": "Abonne-toi, like et partage."
+   },
+   {
+    "partie": "fin",
+    "texte": "Commente PROMPT et je t'envoie le prompt en message privé."
+   },
+   {
+    "partie": "fin",
+    "texte": "Et ta consultation est gratuite : réserve-la avec le lien dans la bio."
+   },
+   {
+    "partie": "fin",
+    "texte": "Ou écris-moi sur WhatsApp au +228 72 24 02 31.",
+    "dit": "Ou écris-moi sur WhatsApp au plus deux cent vingt-huit, soixante-douze, vingt-quatre, zéro deux, trente et un."
+   }
+  ],
+  "scenes": [
+   {
+    "type": "photo",
+    "recherche": "african merchant shop ledger pencil",
+    "texte": "PERDRE DU TEMPS",
+    "geste": "repos",
+    "expression": "neutre"
+   },
+   {
+    "type": "photo",
+    "recherche": "african hair salon owner smartphone",
+    "texte": "BOUTIQUE OU SALON",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "TÂCHE LOURDE",
+    "texte": "RECOPIER LES\nFACTURES",
+    "emoji": "1f62c",
+    "geste": "explique",
+    "expression": "grimace"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman holding smartphone camera",
+    "texte": "UNE SIMPLE PHOTO",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african teacher smiling classroom",
+    "texte": "JOSEPH AHIANKONOU",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "liste",
+    "titre": "AU PROGRAMME",
+    "items": [
+     {
+      "texte": "Prendre photo",
+      "a": "photo"
+     },
+     {
+      "texte": "Créer tableau",
+      "a": "tableau"
+     }
+    ]
+   },
+   {
+    "type": "carte",
+    "kicker": "DÉFINITION",
+    "texte": "MODÈLE DE VISION\nLIT LES IMAGES",
+    "emoji": "1f9e0",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "numero",
+    "n": 1,
+    "texte": "OUVRE CHATGPT\nSUR SMARTPHONE",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 1
+   },
+   {
+    "type": "outil",
+    "outil": "chatgpt"
+   },
+   {
+    "type": "photo",
+    "recherche": "african student taking picture document",
+    "texte": "PHOTO DU REGISTRE",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "photo",
+    "recherche": "african businesswoman writing notebook daylight",
+    "texte": "IMAGE BIEN CLAIRE",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "numero",
+    "n": 2,
+    "texte": "ÉCRIS LE PROMPT\nSTRUCTURE PRO",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 2
+   },
+   {
+    "type": "liste",
+    "titre": "PROMPT PARFAIT",
+    "items": [
+     {
+      "texte": "Rôle exact",
+      "a": "rôle"
+     },
+     {
+      "texte": "Contexte clair",
+      "a": "contexte"
+     },
+     {
+      "texte": "Format tableau",
+      "a": "format"
+     }
+    ]
+   },
+   {
+    "type": "prompt",
+    "texte": "Tu es une secrétaire comptable rigoureuse. Extrais les données de la photo.",
+    "geste": "designe"
+   },
+   {
+    "type": "photo",
+    "recherche": "african tailor workshop measuring tape",
+    "texte": "ARTICLES ET PRIX",
+    "geste": "explique",
+    "expression": "parle"
+   },
+   {
+    "type": "carte",
+    "kicker": "FORMAT",
+    "texte": "EXIGE UN TABLEAU\nAVEC COLONNES",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "neutre"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Extrais les données sous forme de tableau avec colonnes Date, Produit, Quantité, Prix.",
+    "reponse": "Voici votre tableau :\n- Date | Produit | Qté | Prix\n- 12/05 | Sac de riz | 2 | 25000\n- 12/05 | Huile 5L | 1 | 6500"
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Analyse terminée. 3 lignes extraites avec succès sous forme de tableau.",
+    "emoji": "2705"
+   },
+   {
+    "type": "numero",
+    "n": 3,
+    "texte": "VALIDE ET COPIE\nLE RESULTAT",
+    "emoji": "1f4a1",
+    "geste": "compte",
+    "doigts": 3
+   },
+   {
+    "type": "photo",
+    "recherche": "african man working laptop desk",
+    "texte": "EXCEL ET SHEETS",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african market stall vendor smiling",
+    "texte": "GAIN DE TEMPS",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "demo",
+    "outil": "chatgpt",
+    "prompt": "Analyse cette facture manuscrite et liste les dépenses par catégorie.",
+    "reponse": "Facture Fournisseur :\n- Transport | 5000 FCFA\n- Emballage | 2500 FCFA\nTotal extrais : 7500 FCFA"
+   },
+   {
+    "type": "photo",
+    "recherche": "african woman entrepreneur office phone",
+    "texte": "TOUT EST CLASSÉ",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african young man smartphone typing fast",
+    "texte": "FINI LE CLAVIER",
+    "geste": "repos",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ATTENTION A\nL ERREUR",
+    "emoji": "26a0_fe0f"
+   },
+   {
+    "type": "deux",
+    "gauche": {
+     "texte": "Photo reçue",
+     "ok": true
+    },
+    "droite": {
+     "texte": "Mot de passe",
+     "ok": false
+    },
+    "a": [
+     "données",
+     "mots"
+    ]
+   },
+   {
+    "type": "photo",
+    "recherche": "african business people shaking hands",
+    "texte": "DONNÉES SECRÈTES",
+    "geste": "bras-croises",
+    "expression": "neutre"
+   },
+   {
+    "type": "liste",
+    "titre": "ASTUCE DE PRO",
+    "items": [
+     {
+      "texte": "Signaler doutes",
+      "a": "questions"
+     },
+     {
+      "texte": "Vérifier prix",
+      "a": "chiffres"
+     }
+    ]
+   },
+   {
+    "type": "reponseIA",
+    "texte": "Attention : la ligne 3 contient un montant peu lisible. Veuillez vérifier.",
+    "emoji": "26a0"
+   },
+   {
+    "type": "photo",
+    "recherche": "african accountant calculating desk",
+    "texte": "AUCUNE ERREUR",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "liste",
+    "titre": "RESUME RAPIDE",
+    "items": [
+     {
+      "texte": "1. Photographier",
+      "a": "photo"
+     },
+     {
+      "texte": "2. Prompt structuré",
+      "a": "prompt"
+     },
+     {
+      "texte": "3. Exporter tableau",
+      "a": "tableau"
+     }
+    ]
+   },
+   {
+    "type": "photo",
+    "recherche": "african student smiling smartphone outside",
+    "texte": "ASSISTANT POCHE",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african modern shop owner success",
+    "texte": "MODERNISE TOI",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "photo",
+    "recherche": "african team success office high five",
+    "texte": "PRENDS L AVANCE",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "alerte",
+    "texte": "ABONNE-TOI\nLIKE ET PARTAGE",
+    "emoji": "1f44d",
+    "geste": "pouce",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "COMMENTE",
+    "texte": "PROMPT",
+    "sous": "Je t'envoie le prompt en privé",
+    "emoji": "1f4ac",
+    "geste": "designe",
+    "expression": "sourire"
+   },
+   {
+    "type": "carte",
+    "kicker": "CONSULTATION",
+    "texte": "GRATUITE",
+    "sous": "Lien dans la bio",
+    "emoji": "1f381",
+    "geste": "explique",
+    "expression": "sourire"
+   },
+   {
+    "type": "telephone",
+    "texte": "+228 72 24 02 31",
+    "sous": "WhatsApp",
+    "geste": "pouce",
+    "expression": "sourire"
+   }
+  ],
+  "fond": [
+   "orange",
+   "orange",
+   "bleu",
+   "bleu",
+   "violet",
+   "nuit",
+   "vert",
+   "vert",
+   "violet",
+   "nuit",
+   "bleu",
+   "bleu",
+   "vert",
+   "vert",
+   "orange",
+   "orange",
+   "rose",
+   "violet",
+   "bleu",
+   "nuit",
+   "vert",
+   "bleu",
+   "orange",
+   "violet",
+   "orange",
+   "rose",
+   "nuit",
+   "vert",
+   "bleu",
+   "orange",
+   "violet",
+   "nuit",
+   "vert",
+   "bleu",
+   "rose",
+   "violet",
+   "orange",
+   "vert"
+  ]
+ },
+ "rubrique": "astuce",
+ "secondes": 38.5
+}
