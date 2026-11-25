@@ -1,7 +1,8 @@
 {
  "voix": [
   "Puck",
-  "Fenrir"
+  "Fenrir",
+  "Charon"
  ],
  "images": [
   {
@@ -106,5 +107,6 @@
    "nom": "succes",
    "recherche": "businessman happy phone"
   }
- ]
+ ],
+ "seulement": "voix"
 }

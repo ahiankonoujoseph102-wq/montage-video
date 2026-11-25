@@ -36,12 +36,19 @@ export type Scene = {type: string; texte?: string; kicker?: string; sous?: strin
   eteint?: boolean; depart?: number;
   calc?: {texte: string; montant: number; a: string; total?: boolean}[]; etapes?: {texte: string; a: string; doute?: boolean}[];
   cartes?: {texte: string; a: string}[]; de?: number; vers?: number;
-  fichier2?: string; fondVideo?: string};
+  fichier2?: string; fondVideo?: string;
+  // Pub Zéro Perte : démonstration de l'appli (enregistrement d'écran dans un téléphone), repères, étiquettes.
+  clips?: ClipApp[]; cadres?: CadreApp[]; reperes?: RepereApp[]; badges?: BadgeApp[];
+  notif?: {a: string; titre: string; texte: string}; numeros?: string[]};
+export type ClipApp = {a?: string; fichier: string; de: number; vitesse?: number};
+export type CadreApp = {a?: string; x?: number; y: number; e: number};
+export type RepereApp = {a: string; x: number; y: number; l: number; h: number; couleur?: string; jusqua?: string};
+export type BadgeApp = {a: string; texte: string; couleur?: string; emoji?: string; y?: number; jusqua?: string};
 export type OutilScene = {id: string; nom: string; site: string; logo: boolean; capture: boolean};
 export type MotAuto = {t: string; ph: number; a: number; b: number};
 export type AutoProps = {duree: number; phrases: {a: number; b: number}[]; mots: MotAuto[]; motsFrames: Mot[];
   masques: [number, number][]; visemes: string; bouche: number[]; scenes: Scene[]; fonds: string[]; emojis: string[];
-  decalageDouble: number; titre?: {lignes: string[]; cle?: string}; carton?: {debut: number; whatsapp?: string}; logos?: Record<string, {nom: string; couleur: string}>};
+  decalageDouble: number; titre?: {lignes: string[]; cle?: string}; carton?: {debut: number; whatsapp?: string}; marque?: 'zeroperte'; logoDes?: number; logos?: Record<string, {nom: string; couleur: string}>};
 
 const pop = (f: number, a = 0, raide = 220, amorti = 10) =>
   f < a ? 0 : spring({frame: f - a, fps: FPS, config: {damping: amorti, stiffness: raide, mass: 0.7}});
@@ -436,6 +443,14 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
         </>
       );
     }
+    case 'app':
+      return <SceneApp s={s} c={c} />;
+    case 'logo':
+      return <SceneLogo c={c} />;
+    case 'appareils':
+      return <SceneAppareils s={s} c={c} />;
+    case 'contact':
+      return <SceneContact s={s} c={c} />;
     case 'final':
       return (
         <>
@@ -742,7 +757,7 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
             if (b <= a || m === 'double') return null;
             const sens = k % 3;
             if (m === 'plein') {
-              const photo = s.type === 'photo';
+              const photo = PLEIN_NATIF.includes(s.type);
               return (
                 <Sequence key={k} from={a} durationInFrames={b - a}>
                   <Entree sens={sens} hauteur={1920}>
@@ -786,10 +801,11 @@ export const VideoAuto: React.FC<AutoProps> = (p) => {
           partages={partages} />
         {eclair > 0 ? <AbsoluteFill style={{background: '#fff', opacity: eclair}} /> : null}
         {/* Logo Lomé IA School pendant toute la vidéo (zone sûre : sous les 10 % du haut, à gauche). */}
-        {!p.carton || f < p.carton.debut ? <LogoCoin /> : null}
+        {(!p.carton || f < p.carton.debut) && p.marque !== 'zeroperte' ? <LogoCoin /> : null}
+        {p.marque === 'zeroperte' && f >= (p.logoDes ?? 0) && (!p.carton || f < p.carton.debut) ? <LogoCoinZP /> : null}
         {p.carton ? (
           <Sequence from={p.carton.debut}>
-            <CartonFinAuto whatsapp={p.carton.whatsapp ?? '+228 72 24 02 31'} />
+            {p.marque === 'zeroperte' ? <CartonZeroPerte /> : <CartonFinAuto whatsapp={p.carton.whatsapp ?? '+228 72 24 02 31'} />}
           </Sequence>
         ) : null}
         {/* Flash blanc léger à l'impact d'ouverture. */}
@@ -967,4 +983,291 @@ const Entree: React.FC<React.PropsWithChildren<{sens: number; hauteur?: number}>
   const p = interpolate(f, [0, 7], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   const tr = sens === 0 ? `translateX(${(1 - p) * 1080}px)` : sens === 1 ? `scale(${1.25 - 0.25 * p})` : `translateY(${(1 - p) * -hauteur}px)`;
   return <AbsoluteFill style={{transform: tr, opacity: sens === 1 ? p : 1}}>{children}</AbsoluteFill>;
+};
+
+// ======================================================================================================
+// Pub Zéro Perte : scènes propres à la publicité (démonstration de l'appli, logo, appareils, contact, carton).
+// ======================================================================================================
+const PLEIN_NATIF = ['photo', 'app', 'logo', 'appareils', 'contact'];
+const ZP_VERT = '#22C55E';
+const ZP_VERT_FONCE = '#15803D';
+const ZP_NUIT = '#0B1530';
+const REC = {l: 824, h: 1830}; // enregistrement d'écran du téléphone de Joseph
+const lisse = (f: number, a: number, d = 10) => interpolate(f, [a, a + d], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
+
+// Logo Zéro Perte : pastille verte (pièce barrée d'une coche) + « ZÉRO PERTE ».
+const PastilleZP: React.FC<{taille: number}> = ({taille}) => (
+  <svg width={taille} height={taille} viewBox="0 0 200 200">
+    <defs>
+      <linearGradient id="zpg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#4ADE80" /><stop offset="1" stopColor={ZP_VERT_FONCE} /></linearGradient>
+    </defs>
+    <rect x="6" y="6" width="188" height="188" rx="46" fill="url(#zpg)" stroke="#fff" strokeWidth="8" />
+    <circle cx="100" cy="100" r="58" fill="none" stroke="#fff" strokeWidth="20" />
+    <path d="M70 102 L92 124 L134 78" fill="none" stroke="#FFD43B" strokeWidth="20" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const MotZP: React.FC<{taille: number}> = ({taille}) => (
+  <div style={{fontFamily: POLICE, fontWeight: 900, fontSize: taille, lineHeight: 1, whiteSpace: 'nowrap',
+    filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.5))'}}>
+    <span style={{color: '#fff', WebkitTextStroke: `${Math.round(taille * 0.12)}px ${ZP_NUIT}`, paintOrder: 'stroke fill'}}>ZÉRO </span>
+    <span style={{color: ZP_VERT, WebkitTextStroke: `${Math.round(taille * 0.12)}px ${ZP_NUIT}`, paintOrder: 'stroke fill'}}>PERTE</span>
+  </div>
+);
+
+// Téléphone qui joue l'enregistrement d'écran ; la caméra se cale sur une zone (cadres) à chaque mot donné,
+// repères lumineux autour des éléments importants, étiquettes qui claquent sur leur mot.
+const SceneApp: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
+  const f = useCurrentFrame();
+  const h = c.h ?? HAUT;
+  const plein = h > HAUT;
+  const quand = (m?: string) => (m ? c.motA(m) : 0);
+  // Cadrage : interpolation douce d'un cadre au suivant (10 images).
+  const cadres = (s.cadres?.length ? s.cadres : [{y: REC.h / 2, e: plein ? 0.56 : 0.5}]).map((k) => ({...k, t: quand(k.a)}));
+  let cx = cadres[0].x ?? REC.l / 2;
+  let cy = cadres[0].y;
+  let e = cadres[0].e;
+  for (let i = 1; i < cadres.length; i++) {
+    const p = lisse(f, cadres[i].t - 3, 12);
+    cx += ((cadres[i].x ?? REC.l / 2) - cx) * p;
+    cy += (cadres[i].y - cy) * p;
+    e += (cadres[i].e - e) * p;
+  }
+  e *= 1 + 0.025 * Math.min(1, f / 120); // lente poussée
+  const centreY = plein ? 760 : h / 2;
+  const entree = interpolate(f, [0, 10], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const rot = (1 - entree) * 28 + Math.sin(f / 40) * 1.2;
+  const tx = CX - cx * e;
+  const ty = centreY - cy * e + (1 - entree) * 400;
+  const clips = (s.clips ?? []).map((k) => ({...k, t: quand(k.a)}));
+  const bord = 34;
+  return (
+    <AbsoluteFill style={{perspective: 2200}}>
+      <AbsoluteFill style={{background: plein ? 'radial-gradient(circle at 50% 40%, rgba(34,197,94,0.25), rgba(0,0,0,0) 60%)' : undefined}} />
+      <div style={{position: 'absolute', left: tx, top: ty, width: REC.l * e, height: REC.h * e,
+        transform: `rotateY(${rot}deg) rotateX(${(1 - entree) * 10}deg)`, transformOrigin: '50% 30%'}}>
+        <div style={{position: 'absolute', left: -bord * e, top: -bord * e, width: (REC.l + 2 * bord) * e, height: (REC.h + 2 * bord) * e,
+          borderRadius: 110 * e, background: 'linear-gradient(145deg, #3A4256, #0B0F1A 45%, #2B3242)',
+          boxShadow: `0 ${50 * e}px ${120 * e}px rgba(0,0,0,0.65), 0 0 0 ${4 * e}px #5B6478 inset`}} />
+        <div style={{position: 'absolute', left: 0, top: 0, width: REC.l * e, height: REC.h * e, borderRadius: 80 * e,
+          overflow: 'hidden', background: '#0A1022'}}>
+          {clips.map((k, i) => {
+            const debut = Math.max(0, k.t);
+            const fin = i + 1 < clips.length ? Math.max(debut + 1, clips[i + 1].t) : 100000;
+            return (
+              <Sequence key={i} from={debut} durationInFrames={fin - debut} layout="none">
+                <OffthreadVideo src={staticFile(k.fichier)} muted trimBefore={Math.round(k.de * FPS)}
+                  playbackRate={k.vitesse ?? 1} style={{width: REC.l * e, height: REC.h * e, display: 'block'}} />
+                {i > 0 ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f - debut, [0, 4], [0.5, 0], clamp)}} /> : null}
+              </Sequence>
+            );
+          })}
+          <AbsoluteFill style={{background: 'linear-gradient(125deg, rgba(255,255,255,0.10), rgba(255,255,255,0) 35%)'}} />
+        </div>
+        {/* Repères : cadre lumineux qui se dessine autour de l'élément montré. */}
+        {(s.reperes ?? []).map((r, i) => {
+          const a = quand(r.a);
+          const z = r.jusqua ? quand(r.jusqua) : 100000;
+          if (f < a || f >= z) return null;
+          const k = pop(f, a, 260, 11);
+          const coul = r.couleur ?? '#FFD43B';
+          const pulse = 0.6 + 0.4 * Math.sin((f - a) / 4);
+          return (
+            <div key={i} style={{position: 'absolute', left: (r.x - 14) * e, top: (r.y - 14) * e, width: (r.l + 28) * e,
+              height: (r.h + 28) * e, borderRadius: 26 * e, border: `${Math.max(6, 10 * e)}px solid ${coul}`,
+              boxShadow: `0 0 ${30 * pulse}px ${coul}, inset 0 0 ${20 * pulse}px ${coul}66`, transform: `scale(${1.25 - 0.25 * Math.min(1, k)})`,
+              opacity: Math.min(1, k)}} />
+          );
+        })}
+      </div>
+      {(s.badges ?? []).map((b, i) => {
+        const a = quand(b.a);
+        const z = b.jusqua ? quand(b.jusqua) : 100000;
+        if (f < a || f >= z) return null;
+        const k = pop(f, a, 280, 10);
+        const y = b.y ?? (plein ? 1090 : 690);
+        const coul = b.couleur ?? ZP_VERT;
+        return (
+          <div key={i} style={{position: 'absolute', left: CX - 440, width: 880, top: y, display: 'flex', justifyContent: 'center',
+            transform: `scale(${k}) rotate(${-2 + Math.sin((f - a) / 9)}deg)`}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: 18, background: coul, border: '7px solid #fff', borderRadius: 34,
+              padding: '14px 34px', boxShadow: '0 18px 36px rgba(0,0,0,0.5)', fontFamily: POLICE, fontWeight: 900, fontSize: 60,
+              color: coul === '#FFD43B' || coul === OR ? '#14141F' : '#fff', whiteSpace: 'nowrap', letterSpacing: 0.5}}>
+              {b.emoji ? <span style={{fontSize: 62}}>{b.emoji}</span> : null}{b.texte}
+            </div>
+          </div>
+        );
+      })}
+      {s.emoji ? <Emoji code={s.emoji} x={plein ? 860 : 880} y={plein ? 330 : 190} taille={plein ? 210 : 160} a={quand(s.a as string | undefined) + 6} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+// Révélation du nom : éclair, rayons qui tournent, pastille qui tombe et rebondit, nom qui claque, slogan.
+const SceneLogo: React.FC<{c: Ctx}> = ({c}) => {
+  const f = useCurrentFrame();
+  const h = c.h ?? HAUT;
+  const plein = h > HAUT;
+  const cy = plein ? 640 : 400;
+  const k = pop(f, 2, 240, 9);
+  const km = pop(f, 9, 260, 10);
+  const ks = pop(f, c.motA('Zéro') + 4, 200, 12);
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(circle at 50% ${cy / (plein ? 19.2 : 9)}%, #1E7A45 0%, #0B3D24 35%, ${ZP_NUIT} 75%)`}}>
+      <svg width={1080} height={h} style={{position: 'absolute'}}>
+        <g transform={`translate(${CX} ${cy}) rotate(${f * 1.2})`} opacity={0.22 * Math.min(1, k)}>
+          {Array.from({length: 16}).map((_, i) => <path key={i} d="M 0 0 L -70 -1400 L 70 -1400 Z" fill="#fff" transform={`rotate(${i * 22.5})`} />)}
+        </g>
+      </svg>
+      <div style={{position: 'absolute', left: CX - 190, top: cy - 300, transform: `scale(${k}) rotate(${(1 - Math.min(1, k)) * -30}deg)`,
+        filter: `drop-shadow(0 0 ${40 + 20 * Math.sin(f / 6)}px rgba(74,222,128,0.8))`}}><PastilleZP taille={380} /></div>
+      <div style={{position: 'absolute', left: 0, width: 1000, top: cy + 120, display: 'flex', justifyContent: 'center',
+        transform: `scale(${km})`}}><MotZP taille={150} /></div>
+      {plein ? (
+        <div style={{position: 'absolute', left: CX - 420, width: 840, top: cy + 330, textAlign: 'center', transform: `scale(${ks})`,
+          fontFamily: POLICE, fontWeight: 900, fontSize: 52, color: '#FFD43B', lineHeight: 1.15,
+          WebkitTextStroke: `7px ${ZP_NUIT}`, paintOrder: 'stroke fill'}}>L'APPLI QUI PROTÈGE<br />VOTRE ARGENT</div>
+      ) : null}
+      <Confettis f={f} a={6} />
+      <AbsoluteFill style={{background: '#fff', opacity: interpolate(f, [0, 5], [0.85, 0], clamp)}} />
+    </AbsoluteFill>
+  );
+};
+
+const Confettis: React.FC<{f: number; a: number; x?: number; y?: number}> = ({f, a, x = CX, y = 600}) => {
+  if (f < a) return null;
+  const u = f - a;
+  const couleurs = ['#FFD43B', '#4ADE80', '#38BDF8', '#fff', '#F472B6', '#FB923C'];
+  return (
+    <svg width={1080} height={1920} style={{position: 'absolute', left: 0, top: 0}}>
+      {Array.from({length: 46}).map((_, i) => {
+        const ang = (i / 46) * Math.PI * 2 + Math.sin(i * 7.3) * 0.4;
+        const v = 16 + ((i * 37) % 14);
+        const px = x + Math.cos(ang) * v * u * 0.9;
+        const py = y + Math.sin(ang) * v * u * 0.9 + 0.6 * u * u;
+        return <rect key={i} x={px - 14} y={py - 7} width={28} height={14} rx={4} fill={couleurs[i % couleurs.length]}
+          opacity={Math.max(0, 1 - u / 45)} transform={`rotate(${u * (8 + (i % 5) * 4)} ${px} ${py})`} />;
+      })}
+    </svg>
+  );
+};
+
+// Téléphone, tablette et ordinateur qui arrivent l'un après l'autre (vrais écrans de l'appli), et « SANS INTERNET ».
+const SceneAppareils: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
+  const f = useCurrentFrame();
+  const h = c.h ?? HAUT;
+  const plein = h > HAUT;
+  const y0 = plein ? 360 : 150;
+  const ech = plein ? 1 : 0.72;
+  const [m1 = '', m2 = '', m3 = '', m4 = ''] = (s.a as string[] | undefined) ?? [];
+  const kInt = pop(f, c.motA(m1), 240, 10);
+  const kTel = pop(f, c.motA(m2) - 2, 220, 11);
+  const kTab = pop(f, c.motA(m3) - 2, 220, 11);
+  const kPc = pop(f, c.motA(m4) - 2, 220, 11);
+  const ecran = (src: string, de: number, l: number, hh: number) => (
+    <OffthreadVideo src={staticFile(src)} muted trimBefore={Math.round(de * FPS)} style={{width: l, height: hh, objectFit: 'cover', display: 'block'}} />
+  );
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 0, top: y0, width: 1000, height: 900, transform: `scale(${ech})`, transformOrigin: '500px 0'}}>
+        {/* Ordinateur portable */}
+        <div style={{position: 'absolute', left: 150, top: 120, width: 700, transform: `scale(${kPc})`, transformOrigin: '50% 100%'}}>
+          <div style={{width: 700, height: 410, background: '#111827', borderRadius: '24px 24px 0 0', padding: 16, boxShadow: '0 30px 60px rgba(0,0,0,0.5)'}}>
+            <div style={{width: 668, height: 378, overflow: 'hidden', borderRadius: 6}}>{ecran('test-auto/app/pc.mp4', 0.5, 668, 378)}</div>
+          </div>
+          <div style={{width: 820, marginLeft: -60, height: 34, background: 'linear-gradient(#D1D5DB, #9CA3AF)', borderRadius: '0 0 30px 30px'}} />
+        </div>
+        {/* Tablette */}
+        <div style={{position: 'absolute', left: 20, top: 330, width: 330, height: 470, background: '#1F2937', borderRadius: 34, padding: 16,
+          transform: `scale(${kTab}) rotate(-6deg)`, boxShadow: '0 30px 60px rgba(0,0,0,0.55)'}}>
+          <div style={{width: 298, height: 438, overflow: 'hidden', borderRadius: 18}}>{ecran('test-auto/app/06_benefice.mp4', 3, 298, 662)}</div>
+        </div>
+        {/* Téléphone */}
+        <div style={{position: 'absolute', left: 700, top: 340, width: 230, height: 490, background: '#0B0F1A', borderRadius: 40, padding: 11,
+          transform: `scale(${kTel}) rotate(7deg)`, boxShadow: '0 30px 60px rgba(0,0,0,0.55)'}}>
+          <div style={{width: 208, height: 468, overflow: 'hidden', borderRadius: 30}}>{ecran('test-auto/app/02_vendre.mp4', 12, 208, 462)}</div>
+        </div>
+      </div>
+      {/* Wi-Fi barré + SANS INTERNET */}
+      <div style={{position: 'absolute', left: 0, width: 1000, top: plein ? 180 : 40, display: 'flex', justifyContent: 'center',
+        transform: `scale(${kInt})`}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: 22, background: '#fff', borderRadius: 999, padding: '14px 40px 14px 24px',
+          boxShadow: '0 16px 36px rgba(0,0,0,0.45)'}}>
+          <svg width={92} height={92} viewBox="0 0 100 100">
+            <path d="M10 40 Q50 5 90 40" stroke="#1F2937" strokeWidth={10} fill="none" strokeLinecap="round" />
+            <path d="M24 56 Q50 32 76 56" stroke="#1F2937" strokeWidth={10} fill="none" strokeLinecap="round" />
+            <circle cx={50} cy={74} r={9} fill="#1F2937" />
+            <line x1={14} y1={14} x2={86} y2={86} stroke="#EF4444" strokeWidth={12} strokeLinecap="round" />
+          </svg>
+          <span style={{fontFamily: POLICE, fontWeight: 900, fontSize: plein ? 76 : 60, color: ZP_NUIT}}>SANS INTERNET</span>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// Contact : bulle WhatsApp verte, numéro qui s'écrit chiffre par chiffre, second numéro, « Joseph Ahiankonou ».
+const SceneContact: React.FC<{s: Scene; c: Ctx}> = ({s, c}) => {
+  const f = useCurrentFrame();
+  const h = c.h ?? HAUT;
+  const plein = h > HAUT;
+  const [n1 = '', n2 = ''] = s.numeros ?? [];
+  const a = c.motA((s.a as string) ?? '');
+  const visibles = Math.max(0, Math.floor((f - a) / 1.5));
+  const y = plein ? 330 : 120;
+  const k = pop(f, 0, 220, 10);
+  const pulse = 1 + 0.04 * Math.sin(f / 4);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: CX - 150, top: y, width: 300, height: 300, transform: `scale(${k * pulse})`}}>
+        <div style={{width: 300, height: 300, borderRadius: 150, background: '#25D366', border: '12px solid #fff',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: `0 0 ${50 + 30 * Math.sin(f / 4)}px rgba(37,211,102,0.8)`}}>
+          <svg width={170} height={170} viewBox="0 0 100 100">
+            <path d="M30 18 C24 18 18 26 20 36 C24 56 44 76 64 80 C74 82 82 76 82 70 L82 62 L66 56 L60 64 C50 60 40 50 36 40 L44 34 L38 18 Z" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+      <div style={{position: 'absolute', left: CX - 230, top: y + 330, width: 460, textAlign: 'center', transform: `scale(${pop(f, 5)})`,
+        fontFamily: POLICE, fontWeight: 900, fontSize: 56, color: '#fff', WebkitTextStroke: `8px ${ZP_NUIT}`, paintOrder: 'stroke fill'}}>WhatsApp / Appel</div>
+      <div style={{position: 'absolute', left: CX - 460, width: 920, top: y + 430, textAlign: 'center', fontFamily: POLICE, fontWeight: 900,
+        fontSize: 118, color: '#1E5BFF', WebkitTextStroke: '22px #fff', paintOrder: 'stroke fill', whiteSpace: 'pre',
+        filter: 'drop-shadow(0 8px 14px rgba(0,0,0,0.5))'}}>
+        {n1.split('').map((ch, i) => <span key={i} style={{opacity: i < visibles ? 1 : 0}}>{ch}</span>)}
+      </div>
+      {n2 ? <div style={{position: 'absolute', left: CX - 460, width: 920, top: y + 590, textAlign: 'center', fontFamily: POLICE, fontWeight: 900,
+        fontSize: 70, color: '#fff', WebkitTextStroke: `10px ${ZP_NUIT}`, paintOrder: 'stroke fill', transform: `scale(${pop(f, a + 26)})`}}>ou {n2}</div> : null}
+    </AbsoluteFill>
+  );
+};
+
+// Logo discret en haut à gauche pendant la pub (après la révélation du nom).
+export const LogoCoinZP: React.FC = () => (
+  <div style={{position: 'absolute', left: 40, top: 205, display: 'flex', alignItems: 'center', gap: 12, opacity: 0.95,
+    filter: 'drop-shadow(0 6px 14px rgba(0,0,0,0.5))'}}>
+    <PastilleZP taille={92} />
+  </div>
+);
+
+// Carton de fin Zéro Perte (fond vert nuit, pastille, nom, slogan, numéros, « Payez une seule fois »).
+const CartonZeroPerte: React.FC = () => {
+  const f = useCurrentFrame();
+  const t = f / FPS;
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(circle at ${50 + Math.sin(t * 1.3) * 10}% ${32 + Math.cos(t * 1.1) * 6}%, #166534 0%, #0B2A1C 40%, ${ZP_NUIT} 80%)`,
+      opacity: interpolate(f, [0, 6], [0, 1], clamp)}}>
+      <div style={{position: 'absolute', left: CX - 150, top: 250, transform: `translateY(${Math.sin(t * 2.2) * 12}px) scale(${pop(f, 2, 200)})`,
+        filter: 'drop-shadow(0 0 40px rgba(74,222,128,0.7))'}}><PastilleZP taille={300} /></div>
+      <div style={{position: 'absolute', left: 0, width: 1000, top: 590, display: 'flex', justifyContent: 'center', transform: `scale(${pop(f, 8)})`}}>
+        <MotZP taille={140} />
+      </div>
+      <Gros texte={'Votre boutique sous contrôle,\nmême quand vous n\'êtes pas là.'} y={770} max={50} couleur="#FFD43B" k={pop(f, 14)} />
+      <div style={{position: 'absolute', left: CX - 400, width: 800, top: 935, display: 'flex', justifyContent: 'center', transform: `scale(${pop(f, 20)})`}}>
+        <div style={{background: '#25D366', color: '#fff', borderRadius: 999, padding: '14px 40px', fontFamily: POLICE, fontWeight: 900, fontSize: 50,
+          border: '6px solid #fff', boxShadow: `0 0 ${24 + 16 * Math.sin(t * 6)}px rgba(37,211,102,0.9)`}}>WhatsApp / Appel</div>
+      </div>
+      <Gros texte={'+228 72 24 02 31\n+228 79 16 23 90'} y={1060} max={80} k={pop(f, 26)} />
+      <Gros texte={'Payez une seule fois • Sans abonnement'} y={1300} max={44} couleur="#86EFAC" k={pop(f, 34)} />
+      <Gros texte={'Joseph Ahiankonou, créateur de Zéro Perte'} y={1380} max={36} k={pop(f, 40)} />
+    </AbsoluteFill>
+  );
 };

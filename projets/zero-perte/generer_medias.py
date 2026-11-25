@@ -22,13 +22,7 @@ out = Path(sys.argv[1])
 m = json.loads((P / "medias.json").read_text())
 sources = {}
 
-CONSIGNE = ("Lis ce texte en français, mot pour mot, comme la voix off d'une publicité radio haut de gamme : voix "
-            "masculine chaleureuse, énergique et convaincante, sourire dans la voix, articulation parfaite, rythme "
-            "dynamique mais jamais précipité, petites pauses naturelles entre les phrases. Ton intrigué sur les "
-            "questions du début, ton inquiet sur les problèmes, ton de grande révélation sur « Voici Zéro Perte », "
-            "ton enthousiaste sur les avantages, ton décidé et motivant à la fin. Prononce « Flooz » comme « flouz », "
-            "« Mixx » comme « mix », « WhatsApp » à la française, « 61 000 » « soixante et un mille », et le numéro "
-            "par paires : soixante-douze, vingt-quatre, zéro deux, trente et un. Texte :\n\n")
+CONSIGNE = "Lis sur un ton de publicité radio, enthousiaste, chaleureux et souriant :\n\n"
 for voix in m["voix"]:
     dest = out / f"voix_{voix}.wav"
     env = {**os.environ, "VOIX_GEMINI": voix, "CONSIGNE_VOIX": CONSIGNE}
@@ -36,7 +30,8 @@ for voix in m["voix"]:
                        env=env)
     sources[dest.name] = {"source": f"Voix Gemini ({voix})", "ok": r.returncode == 0}
 
-for im in m["images"]:
+SEUL = m.get("seulement")
+for im in (m["images"] if SEUL != "voix" else []):
     dest = out / "images" / f"{im['nom']}.jpg"
     try:
         s = medias.image_ia(im["prompt"], dest)
@@ -47,7 +42,7 @@ for im in m["images"]:
     sources[f"images/{dest.name}"] = s
 
 cle = os.environ.get("PIXABAY_API_KEY", "").strip()
-for v in m["videos"]:
+for v in (m["videos"] if SEUL != "voix" else []):
     dest = out / "videos" / f"{v['nom']}.mp4"
     s = None
     if cle:

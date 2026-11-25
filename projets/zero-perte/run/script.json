@@ -1,0 +1,101 @@
+{
+ "titre": "Zéro Perte",
+ "accroche": {
+  "lignes": [
+   "COMBIEN",
+   "VOUS GAGNEZ",
+   "VRAIMENT ?"
+  ],
+  "cle": "GAGNEZ"
+ },
+ "phrases": [
+  {
+   "partie": "p0",
+   "texte": "Commerçants ! Savez-vous vraiment combien vous gagnez chaque jour ?"
+  },
+  {
+   "partie": "p1",
+   "texte": "Vous vendez toute la journée… mais le soir, la caisse ne tombe pas juste."
+  },
+  {
+   "partie": "p1",
+   "texte": "Il manque 1 000 francs. Et personne ne sait pourquoi."
+  },
+  {
+   "partie": "p1",
+   "texte": "Un client a pris à crédit… et plus personne ne se souvient du montant."
+  },
+  {
+   "partie": "p1",
+   "texte": "Un carton disparaît du magasin."
+  },
+  {
+   "partie": "p1",
+   "texte": "Au total, une boutique ordinaire peut perdre 61 000 francs en un seul mois. Sans même le savoir !"
+  },
+  {
+   "partie": "p2",
+   "texte": "Stop ! Voici Zéro Perte."
+  },
+  {
+   "partie": "p2",
+   "texte": "L'application qui met votre boutique sous contrôle, même quand vous n'êtes pas là."
+  },
+  {
+   "partie": "p3",
+   "texte": "Espèces, Flooz, Mixx ou crédit : chaque vente s'enregistre en quelques secondes."
+  },
+  {
+   "partie": "p3",
+   "texte": "Et depuis votre téléphone, au marché, au port ou au village, vous suivez vos ventes en temps réel."
+  },
+  {
+   "partie": "p3",
+   "texte": "Vous connaissez enfin votre vrai bénéfice."
+  },
+  {
+   "partie": "p4",
+   "texte": "Le soir, votre vendeur compte la caisse sans connaître le montant attendu."
+  },
+  {
+   "partie": "p4",
+   "texte": "S'il manque de l'argent, Zéro Perte vous le signale immédiatement."
+  },
+  {
+   "partie": "p4",
+   "texte": "Les crédits ne s'oublient plus : chaque client a sa fiche, et un rappel part sur WhatsApp en un clic."
+  },
+  {
+   "partie": "p5",
+   "texte": "Votre stock se calcule tout seul, au détail comme en gros : boîte, carton ou casier."
+  },
+  {
+   "partie": "p5",
+   "texte": "Chaque vendeur a son propre code : vous savez qui a vendu quoi."
+  },
+  {
+   "partie": "p5",
+   "texte": "Vous vendez même sans Internet, sur Android, tablette et ordinateur."
+  },
+  {
+   "partie": "p6",
+   "texte": "Et vous payez une seule fois. Aucun abonnement !"
+  },
+  {
+   "partie": "p6",
+   "texte": "Une seule erreur de caisse, un seul crédit oublié… et c'est votre argent qui s'envole."
+  },
+  {
+   "partie": "p7",
+   "texte": "Contactez Joseph dès maintenant sur WhatsApp, au 72 24 02 31."
+  },
+  {
+   "partie": "p7",
+   "texte": "Installation et prise en main en seulement 10 minutes !"
+  },
+  {
+   "partie": "p7",
+   "texte": "Zéro Perte : votre boutique sous contrôle, même quand vous n'êtes pas là."
+  }
+ ]
+}

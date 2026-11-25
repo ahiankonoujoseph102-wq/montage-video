@@ -1,0 +1,491 @@
+{
+ "scenes": [
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/accroche.jpg",
+   "mise": "partage",
+   "expression": "surpris",
+   "geste": "explique"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/journee.jpg",
+   "fichier2": "test-auto/zp/images/caisse_soir.jpg",
+   "mise": "plein"
+  },
+  {
+   "type": "chiffre",
+   "kicker": "LE SOIR",
+   "texte": "– 1 000 F",
+   "sous": "Personne ne sait pourquoi",
+   "emoji": "1f631",
+   "mise": "double",
+   "expression": "grimace",
+   "geste": "explique"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/cahier.jpg",
+   "texte": "CRÉDIT OUBLIÉ",
+   "mise": "plein"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/carton.jpg",
+   "texte": "CARTON DISPARU",
+   "mise": "plein"
+  },
+  {
+   "type": "chiffre",
+   "kicker": "EN UN SEUL MOIS",
+   "texte": "61 000 F",
+   "sous": "perdus sans le savoir",
+   "emoji": "1f4b8",
+   "fondVideo": "test-auto/zp/videos/billets.mp4",
+   "mise": "partage",
+   "expression": "surpris",
+   "geste": "explique"
+  },
+  {
+   "type": "logo",
+   "mise": "plein"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/06_benefice.mp4",
+     "de": 0,
+     "vitesse": 0.4
+    }
+   ],
+   "cadres": [
+    {
+     "y": 915,
+     "e": 0.62
+    },
+    {
+     "a": "contrôle,",
+     "y": 330,
+     "e": 1.05
+    }
+   ],
+   "reperes": [
+    {
+     "a": "contrôle,",
+     "x": 29,
+     "y": 150,
+     "l": 757,
+     "h": 230
+    }
+   ],
+   "badges": [
+    {
+     "a": "contrôle,",
+     "texte": "SOUS CONTRÔLE"
+    }
+   ],
+   "mise": "partage",
+   "geste": "designe",
+   "expression": "sourire"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/02_vendre.mp4",
+     "de": 30.5
+    },
+    {
+     "a": "chaque",
+     "fichier": "test-auto/app/02_vendre.mp4",
+     "de": 38.6,
+     "vitesse": 2.2
+    }
+   ],
+   "cadres": [
+    {
+     "y": 330,
+     "e": 1.15
+    },
+    {
+     "a": "chaque",
+     "y": 620,
+     "e": 0.75
+    },
+    {
+     "a": "quelques",
+     "y": 420,
+     "e": 0.95
+    }
+   ],
+   "reperes": [
+    {
+     "a": "Espèces,",
+     "x": 32,
+     "y": 311,
+     "l": 757,
+     "h": 127,
+     "jusqua": "chaque"
+    }
+   ],
+   "badges": [
+    {
+     "a": "secondes.",
+     "texte": "VENTE ENREGISTRÉE"
+    }
+   ],
+   "emoji": "2705",
+   "a": "secondes.",
+   "mise": "plein"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/marche.jpg",
+   "fichier2": "test-auto/zp/images/port.jpg",
+   "texte": "EN TEMPS RÉEL",
+   "mise": "plein"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/06_benefice.mp4",
+     "de": 2.6
+    }
+   ],
+   "cadres": [
+    {
+     "y": 620,
+     "e": 0.75
+    },
+    {
+     "a": "vrai",
+     "y": 860,
+     "e": 1.1
+    }
+   ],
+   "reperes": [
+    {
+     "a": "vrai",
+     "x": 29,
+     "y": 763,
+     "l": 757,
+     "h": 245
+    }
+   ],
+   "badges": [
+    {
+     "a": "bénéfice.",
+     "texte": "BÉNÉFICE : 3 580 F",
+     "couleur": "#FFC83D"
+    }
+   ],
+   "mise": "partage",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/vendeur_soir.jpg",
+   "texte": "IL COMPTE\nÀ L'AVEUGLE",
+   "mise": "plein"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/04_caisse.mp4",
+     "de": 57.8
+    },
+    {
+     "a": "immédiatement.",
+     "fichier": "test-auto/app/04_caisse.mp4",
+     "de": 68.6
+    }
+   ],
+   "cadres": [
+    {
+     "y": 420,
+     "e": 1.1
+    },
+    {
+     "a": "immédiatement.",
+     "x": 560,
+     "y": 300,
+     "e": 1.25
+    }
+   ],
+   "reperes": [
+    {
+     "a": "manque",
+     "x": 29,
+     "y": 225,
+     "l": 754,
+     "h": 337,
+     "couleur": "#EF4444",
+     "jusqua": "immédiatement."
+    },
+    {
+     "a": "immédiatement.",
+     "x": 541,
+     "y": 164,
+     "l": 245,
+     "h": 210,
+     "couleur": "#EF4444"
+    }
+   ],
+   "badges": [
+    {
+     "a": "signale",
+     "texte": "IL MANQUE 1 100 F",
+     "couleur": "#EF4444"
+    }
+   ],
+   "emoji": "1f6a8",
+   "a": "signale",
+   "mise": "plein"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/03_credit.mp4",
+     "de": 30.6
+    },
+    {
+     "a": "rappel",
+     "fichier": "test-auto/app/03_credit.mp4",
+     "de": 51.0
+    }
+   ],
+   "cadres": [
+    {
+     "y": 470,
+     "e": 1.0
+    },
+    {
+     "a": "rappel",
+     "y": 330,
+     "e": 1.1
+    }
+   ],
+   "reperes": [
+    {
+     "a": "fiche,",
+     "x": 29,
+     "y": 446,
+     "l": 757,
+     "h": 309,
+     "jusqua": "rappel"
+    },
+    {
+     "a": "WhatsApp",
+     "x": 29,
+     "y": 340,
+     "l": 510,
+     "h": 98,
+     "couleur": "#25D366"
+    }
+   ],
+   "badges": [
+    {
+     "a": "clic.",
+     "texte": "RAPPEL EN 1 CLIC",
+     "couleur": "#25D366"
+    }
+   ],
+   "mise": "partage",
+   "geste": "designe"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/05_gestion.mp4",
+     "de": 13,
+     "vitesse": 1.2
+    },
+    {
+     "a": "boîte,",
+     "fichier": "test-auto/app/05_gestion.mp4",
+     "de": 33
+    }
+   ],
+   "cadres": [
+    {
+     "y": 380,
+     "e": 1.1
+    },
+    {
+     "a": "boîte,",
+     "y": 560,
+     "e": 0.9
+    }
+   ],
+   "reperes": [
+    {
+     "a": "détail",
+     "x": 32,
+     "y": 397,
+     "l": 544,
+     "h": 87,
+     "jusqua": "boîte,"
+    },
+    {
+     "a": "boîte,",
+     "x": 29,
+     "y": 541,
+     "l": 757,
+     "h": 150
+    }
+   ],
+   "badges": [
+    {
+     "a": "casier.",
+     "texte": "STOCK CALCULÉ"
+    }
+   ],
+   "emoji": "1f4e6",
+   "a": "stock",
+   "mise": "plein"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/07_ajouter_vendeur.mp4",
+     "de": 8.5
+    },
+    {
+     "a": "code",
+     "fichier": "test-auto/app/08_vendeur.mp4",
+     "de": 6.5
+    }
+   ],
+   "cadres": [
+    {
+     "y": 560,
+     "e": 0.75
+    },
+    {
+     "a": "code",
+     "y": 700,
+     "e": 0.95
+    }
+   ],
+   "reperes": [
+    {
+     "a": "savez",
+     "x": 40,
+     "y": 576,
+     "l": 735,
+     "h": 351
+    }
+   ],
+   "badges": [
+    {
+     "a": "quoi.",
+     "texte": "CHAQUE VENTE À SON NOM"
+    }
+   ],
+   "mise": "partage",
+   "geste": "explique"
+  },
+  {
+   "type": "appareils",
+   "a": [
+    "sans",
+    "Android,",
+    "tablette",
+    "ordinateur."
+   ],
+   "mise": "plein"
+  },
+  {
+   "type": "carte",
+   "kicker": "UN SEUL PAIEMENT",
+   "texte": "PAYEZ\n1 SEULE FOIS",
+   "sous": "Aucun abonnement",
+   "emoji": "1f389",
+   "fondVideo": "test-auto/zp/videos/pieces.mp4",
+   "mise": "double",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/argent_perdu.jpg",
+   "fichier2": "test-auto/zp/videos/billets.mp4",
+   "texte": "",
+   "mise": "plein"
+  },
+  {
+   "type": "contact",
+   "numeros": [
+    "72 24 02 31",
+    "79 16 23 90"
+   ],
+   "a": "au",
+   "mise": "plein"
+  },
+  {
+   "type": "app",
+   "clips": [
+    {
+     "fichier": "test-auto/app/01_installation.mp4",
+     "de": 0,
+     "vitesse": 7
+    }
+   ],
+   "cadres": [
+    {
+     "y": 915,
+     "e": 0.62
+    }
+   ],
+   "badges": [
+    {
+     "a": "minutes",
+     "texte": "PRÊT EN 10 MINUTES",
+     "couleur": "#FFC83D"
+    }
+   ],
+   "emoji": "1f680",
+   "a": "minutes",
+   "mise": "partage",
+   "geste": "pouce",
+   "expression": "sourire"
+  },
+  {
+   "type": "photo",
+   "fichier": "test-auto/zp/images/commercante_fin.jpg",
+   "texte": "SOUS CONTRÔLE",
+   "mise": "plein"
+  }
+ ],
+ "fond": [
+  "nuit",
+  "nuit",
+  "orange",
+  "nuit",
+  "nuit",
+  "orange",
+  "nuit",
+  "vert",
+  "nuit",
+  "nuit",
+  "vert",
+  "nuit",
+  "nuit",
+  "bleu",
+  "violet",
+  "bleu",
+  "nuit",
+  "vert",
+  "nuit",
+  "vert",
+  "bleu",
+  "nuit"
+ ]
+}
