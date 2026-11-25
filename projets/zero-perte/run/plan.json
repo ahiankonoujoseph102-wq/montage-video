@@ -32,7 +32,7 @@
   {
    "type": "photo",
    "fichier": "test-auto/zp/images/carton.jpg",
-   "texte": "CARTON DISPARU",
+   "clair": true,
    "mise": "plein"
   },
   {
@@ -41,7 +41,6 @@
    "texte": "61 000 F",
    "sous": "PERDUS !",
    "emoji": "1f4b8",
-   "fondVideo": "test-auto/zp/videos/billets.mp4",
    "mise": "partage",
    "expression": "surpris",
    "geste": "explique"
@@ -408,16 +407,14 @@
    "texte": "PAYEZ\n1 SEULE FOIS",
    "sous": "Aucun abonnement",
    "emoji": "1f389",
-   "fondVideo": "test-auto/zp/videos/pieces.mp4",
    "mise": "double",
    "geste": "pouce",
    "expression": "sourire"
   },
   {
    "type": "photo",
-   "fichier": "test-auto/zp/images/argent_perdu.jpg",
-   "fichier2": "test-auto/zp/videos/billets.mp4",
-   "texte": "",
+   "fichier": "test-auto/zp/videos/pieces.mp4",
+   "texte": "ARGENT PERDU",
    "mise": "plein"
   },
   {

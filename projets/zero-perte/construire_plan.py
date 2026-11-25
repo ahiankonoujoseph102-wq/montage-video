@@ -32,10 +32,10 @@ ph("p1", "Il manque 1 000 francs. Et personne ne sait pourquoi.", "orange",
 ph("p1", "Un client a pris à crédit… et plus personne ne se souvient du montant.",
    type="photo", fichier=IM("credit_client"), texte="CRÉDIT OUBLIÉ", mise="plein")
 ph("p1", "Un carton disparaît du magasin.",
-   type="photo", fichier=IM("carton"), texte="CARTON DISPARU", mise="plein")
+   type="photo", fichier=IM("carton"), clair=True, mise="plein")
 ph("p1", "Au total, une boutique ordinaire peut perdre 61 000 francs en un seul mois. Sans même le savoir !", "orange",
    type="chiffre", kicker="EN UN SEUL MOIS", texte="61 000 F", sous="PERDUS !", emoji="1f4b8",
-   fondVideo=VI("billets"), mise="partage", expression="surpris", geste="explique")
+   mise="partage", expression="surpris", geste="explique")
 # --- La solution
 ph("p2", "Stop ! Voici Zéro Perte.", type="logo", mise="plein")
 ph("p2", "L'application qui met votre boutique sous contrôle, même quand vous n'êtes pas là.", "vert",
@@ -85,9 +85,9 @@ ph("p5", "Vous vendez même sans Internet, sur Android, tablette et ordinateur."
    type="appareils", a=["sans", "vendez", "Android,", "tablette"], mise="plein")
 ph("p6", "Et vous payez une seule fois. Aucun abonnement !", "vert",
    type="carte", kicker="UN SEUL PAIEMENT", texte="PAYEZ\n1 SEULE FOIS", sous="Aucun abonnement", emoji="1f389",
-   fondVideo=VI("pieces"), mise="double", geste="pouce", expression="sourire")
+   mise="double", geste="pouce", expression="sourire")
 ph("p6", "Une seule erreur de caisse, un seul crédit oublié… et c'est votre argent qui s'envole.",
-   type="photo", fichier=IM("argent_perdu"), fichier2=VI("billets"), texte="", mise="plein")
+   type="photo", fichier=VI("pieces"), texte="ARGENT PERDU", mise="plein")
 # --- Appel à l'action
 ph("p7", "Contactez Joseph dès maintenant sur WhatsApp, au 72 24 02 31.", "vert",
    type="contact", numeros=["72 24 02 31", "79 16 23 90"], a="au", mise="plein")

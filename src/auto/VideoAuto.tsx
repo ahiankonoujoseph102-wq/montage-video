@@ -39,7 +39,7 @@ export type Scene = {type: string; texte?: string; kicker?: string; sous?: strin
   fichier2?: string; fondVideo?: string;
   // Pub Zéro Perte : démonstration de l'appli (enregistrement d'écran dans un téléphone), repères, étiquettes.
   clips?: ClipApp[]; cadres?: CadreApp[]; reperes?: RepereApp[]; badges?: BadgeApp[];
-  notif?: {a: string; titre: string; texte: string}; numeros?: string[]};
+  notif?: {a: string; titre: string; texte: string}; numeros?: string[]; clair?: boolean};
 export type ClipApp = {a?: string; fichier: string; de: number; vitesse?: number};
 export type CadreApp = {a?: string; x?: number; y: number; e: number};
 export type RepereApp = {a: string; x: number; y: number; l: number; h: number; couleur?: string; jusqua?: string};
@@ -426,7 +426,7 @@ const SceneVue: React.FC<{s: Scene; c: Ctx}> = ({s: brute, c}) => {
       const dx = mv === 2 ? -50 + 100 * prog : mv === 3 ? 50 - 100 * prog : 0;
       const gris = s.eteint ? interpolate(f, [duree * 0.45, Math.max(duree * 0.45 + 1, duree - 4)], [0, 1], clamp) : 0;
       const style: React.CSSProperties = {width: 1080, height: h, objectFit: 'cover', transform: `scale(${z}) translateX(${dx}px)`,
-        filter: gris ? `grayscale(${gris}) brightness(${1 - 0.45 * gris})` : undefined};
+        filter: gris ? `grayscale(${gris}) brightness(${1 - 0.45 * gris})` : s.clair && !second ? 'brightness(1.45) contrast(1.05)' : undefined};
       const src = staticFile(fichier);
       const flash = second ? interpolate(t, [milieu, milieu + 5], [0.5, 0], clamp) : 0;
       return (
