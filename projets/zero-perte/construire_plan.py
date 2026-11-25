@@ -30,7 +30,7 @@ ph("p1", "Il manque 1 000 francs. Et personne ne sait pourquoi.", "orange",
    type="chiffre", kicker="LE SOIR", texte="– 1 000 F", sous="Personne ne sait pourquoi", emoji="1f631",
    mise="double", expression="grimace", geste="explique")
 ph("p1", "Un client a pris à crédit… et plus personne ne se souvient du montant.",
-   type="photo", fichier=IM("cahier"), texte="CRÉDIT OUBLIÉ", mise="plein")
+   type="photo", fichier=IM("credit_client"), texte="CRÉDIT OUBLIÉ", mise="plein")
 ph("p1", "Un carton disparaît du magasin.",
    type="photo", fichier=IM("carton"), texte="CARTON DISPARU", mise="plein")
 ph("p1", "Au total, une boutique ordinaire peut perdre 61 000 francs en un seul mois. Sans même le savoir !", "orange",
