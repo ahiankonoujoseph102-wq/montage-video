@@ -1,0 +1,55 @@
+name: Médias Zéro Perte (voix, images IA, vidéos libres)
+# Lancé quand projets/zero-perte/medias.json change sur la branche de travail de la pub Zéro Perte.
+# Résultat : une pré-publication GitHub « medias-zero-perte-<n> » avec medias.tar.gz.
+on:
+  push:
+    branches: [claude/hopeful-mayer-q47x7i]
+    paths: [projets/zero-perte/medias.json, projets/zero-perte/script_voix.json]
+permissions:
+  contents: write
+jobs:
+  medias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Clés des services (chiffrées dans le dépôt)
+        env:
+          CLES: ${{ secrets.CLES_MONTAGE }}
+        run: |
+          if [ -n "$CLES" ] && [ -f projets/courriel/cles.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -a -in projets/courriel/cles.enc -pass env:CLES > "$RUNNER_TEMP/cles.env"
+            while IFS='=' read -r k v; do
+              [ -n "$k" ] || continue
+              echo "::add-mask::$v"
+              echo "$k=$v" >> "$GITHUB_ENV"
+            done < "$RUNNER_TEMP/cles.env"
+            rm -f "$RUNNER_TEMP/cles.env"
+            echo "Clés chargées"
+          else
+            echo "Secret CLES_MONTAGE absent"
+          fi
+      - name: Outils
+        timeout-minutes: 12
+        run: |
+          timeout 300 sudo apt-get update -qq || true
+          timeout 300 sudo apt-get install -y -qq --no-install-recommends ffmpeg tesseract-ocr > /dev/null || true
+          if ! command -v ffmpeg > /dev/null; then
+            curl -sSL --retry 3 -m 300 https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | tar -xJ -C "$RUNNER_TEMP"
+            sudo cp "$RUNNER_TEMP"/ffmpeg-*-static/ffmpeg "$RUNNER_TEMP"/ffmpeg-*-static/ffprobe /usr/local/bin/
+          fi
+          pip install -q pillow numpy
+      - name: Voix, images et vidéos
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python projets/zero-perte/generer_medias.py "$RUNNER_TEMP/medias"
+      - name: Publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd "$RUNNER_TEMP" && tar -czf medias.tar.gz medias && ls -la medias medias/images medias/videos
+          gh release create "medias-zero-perte-${{ github.run_number }}" medias.tar.gz --prerelease \
+            --target "${{ github.sha }}" --title "Médias Zéro Perte ${{ github.run_number }}" --notes "Voix, images IA, vidéos libres" -R "${{ github.repository }}"

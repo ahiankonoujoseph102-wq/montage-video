@@ -1,0 +1,110 @@
+{
+ "voix": [
+  "Puck",
+  "Fenrir"
+ ],
+ "images": [
+  {
+   "nom": "accroche",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A Togolese woman shopkeeper in her colorful small grocery boutique in Lomé, standing behind a wooden counter full of rice bags, oil bottles, milk cans and soap, looking at the camera with a puzzled questioning face, one hand on her chin."
+  },
+  {
+   "nom": "journee",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A busy small grocery shop in Lomé during the day, the Togolese shop owner handing a bag of goods to a smiling customer, other customers waiting, lively atmosphere."
+  },
+  {
+   "nom": "caisse_soir",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. Evening inside a small Lomé shop lit by a single bulb, a worried Togolese shop owner counting CFA franc banknotes and coins from an open wooden cash drawer, frowning, money spread on the counter."
+  },
+  {
+   "nom": "cahier",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. Close-up of a worn school notebook used as a credit ledger on a shop counter, messy handwritten columns crossed out, a pen and a few coins on it, a confused hand scratching a head in soft focus behind, blurred handwriting."
+  },
+  {
+   "nom": "carton",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A dim storeroom of a small African shop with shelves of stacked cardboard boxes of milk cans and soap, one obvious empty gap on the shelf where a box is missing, dust in the light beam."
+  },
+  {
+   "nom": "argent_perdu",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. CFA franc banknotes flying away in the wind out of an open hand above a shop counter, motion blur, dramatic light."
+  },
+  {
+   "nom": "port",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A confident Togolese businessman at the busy port of Lomé with containers and cranes behind him, smiling while looking at his smartphone."
+  },
+  {
+   "nom": "marche",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A Togolese wholesaler woman in a busy open-air market in Lomé (Adawlato), colorful fabrics around, smiling at her smartphone in her hand."
+  },
+  {
+   "nom": "village",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A Togolese man sitting on a wooden bench in a peaceful village under a mango tree, relaxed and smiling at his smartphone."
+  },
+  {
+   "nom": "vendeur_soir",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A young Togolese shop assistant counting banknotes carefully at the shop counter in the evening, a smartphone lying next to the money, serious honest face."
+  },
+  {
+   "nom": "credit_client",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A smiling Togolese customer leaving a small grocery shop with a bag of goods, the shop owner waving goodbye, warm afternoon light."
+  },
+  {
+   "nom": "stock",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. Inside a small wholesale warehouse in Lomé, stacks of cardboard boxes, sacks of rice and crates of soft drinks, a Togolese manager with a tablet checking the stock, organized."
+  },
+  {
+   "nom": "equipe",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. Two young Togolese shop assistants serving customers in a modern small supermarket in Lomé, each one with a smartphone, friendly."
+  },
+  {
+   "nom": "patron_heureux",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A happy relaxed Togolese shop owner in his tidy boutique in the evening, smiling broadly at his smartphone, thumbs up, success."
+  },
+  {
+   "nom": "commercante_fin",
+   "prompt": "Photorealistic cinematic vertical photo, Lomé, Togo, West Africa, warm natural light, shallow depth of field, documentary advertising style, no text, no letters, no logos. A proud smiling Togolese woman shop owner standing in front of her well organised shop in Lomé, holding her smartphone, confident, golden hour."
+  }
+ ],
+ "videos": [
+  {
+   "nom": "marche",
+   "recherche": "african market"
+  },
+  {
+   "nom": "billets",
+   "recherche": "counting money banknotes"
+  },
+  {
+   "nom": "caisse",
+   "recherche": "cash register shop"
+  },
+  {
+   "nom": "cartons",
+   "recherche": "warehouse boxes"
+  },
+  {
+   "nom": "port",
+   "recherche": "port containers cranes"
+  },
+  {
+   "nom": "telephone",
+   "recherche": "hand smartphone scrolling"
+  },
+  {
+   "nom": "boutique",
+   "recherche": "grocery store shelves"
+  },
+  {
+   "nom": "pieces",
+   "recherche": "coins falling"
+  },
+  {
+   "nom": "ville",
+   "recherche": "africa city street traffic"
+  },
+  {
+   "nom": "succes",
+   "recherche": "businessman happy phone"
+  }
+ ]
+}
